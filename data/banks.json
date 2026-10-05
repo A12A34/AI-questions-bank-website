@@ -1,0 +1,9 @@
+{
+  "banks": [
+    {
+      "id": "sample",
+      "title": "Sample mixed bank",
+      "file": "sample.json"
+    }
+  ]
+}

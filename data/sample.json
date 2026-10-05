@@ -1,0 +1,53 @@
+{
+  "id": "sample",
+  "title": "Sample mixed bank",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "prompt": "What is 2 + 2?",
+      "choices": ["3", "4", "5"],
+      "answer": 1,
+      "explanation": "2 + 2 = 4"
+    },
+    {
+      "id": "q2",
+      "type": "tf",
+      "prompt": "HTML is a programming language.",
+      "answer": false,
+      "explanation": "HTML is a markup language."
+    },
+    {
+      "id": "q3",
+      "type": "multi",
+      "prompt": "اختر كل الإجابات الصحيحة",
+      "choices": ["Python لغة برمجة", "CSS لغة ترميز بالكامل", "HTTP بروتوكول"],
+      "answer": [0, 2],
+      "explanation": "Python لغة برمجة وHTTP بروتوكول. CSS لغة أنماط وليست لغة ترميز بالكامل."
+    },
+    {
+      "id": "q4",
+      "type": "match",
+      "prompt": "Match each term with its meaning.",
+      "pairs": [
+        { "left": "HTTP", "right": "Hypertext Transfer Protocol" },
+        { "left": "CSS", "right": "Cascading Style Sheets" },
+        { "left": "الذكاء الاصطناعي", "right": "Artificial Intelligence" }
+      ]
+    },
+    {
+      "id": "q5",
+      "type": "writing",
+      "prompt": "Explain overfitting in one paragraph.",
+      "modelAnswer": "Overfitting happens when a model memorizes training data—including noise—so it scores well on that data but generalizes poorly to new examples."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "prompt": "ما ناتج 3 × 3؟",
+      "choices": ["6", "9", "12"],
+      "answer": 1,
+      "explanation": "3 × 3 = 9"
+    }
+  ]
+}

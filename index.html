@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Question Bank</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>Question Bank</span>
+        </div>
+        <p class="tagline">Practice or test — English UI, mixed-language questions</p>
+      </header>
+
+      <main id="view-home" class="view">
+        <h1>Choose a bank</h1>
+        <p class="lede">Open a set of questions, then switch between Practice (feedback after each item) and Test (score after you submit).</p>
+        <ul id="bank-list" class="bank-list"></ul>
+        <p id="home-status" class="status" hidden></p>
+      </main>
+
+      <main id="view-quiz" class="view" hidden>
+        <div class="quiz-header">
+          <div class="quiz-header-row">
+            <button type="button" id="btn-back" class="btn btn-ghost">← Banks</button>
+            <h1 id="quiz-title" class="quiz-title"></h1>
+          </div>
+          <div class="meta-row">
+            <p id="progress" class="progress"></p>
+            <p id="score-banner" class="score-banner" hidden></p>
+          </div>
+          <div class="controls">
+            <fieldset class="segmented">
+              <legend class="sr-only">Mode</legend>
+              <label>
+                <input type="radio" name="mode" value="practice" checked />
+                Practice
+              </label>
+              <label>
+                <input type="radio" name="mode" value="test" />
+                Test
+              </label>
+            </fieldset>
+            <label class="toggle">
+              <input type="checkbox" id="shuffle-questions" />
+              Shuffle questions
+            </label>
+            <label class="toggle">
+              <input type="checkbox" id="shuffle-choices" />
+              Shuffle choices
+            </label>
+          </div>
+        </div>
+
+        <nav id="jump-nav" class="jump-nav" aria-label="Jump to question">
+          <div class="jump-toolbar">
+            <p class="jump-label">Jump to question</p>
+            <label class="toggle">
+              <input type="checkbox" id="bookmarks-only" />
+              Bookmarks only
+            </label>
+          </div>
+          <div id="jump-grid" class="jump-grid"></div>
+        </nav>
+
+        <div id="question-list" class="question-list"></div>
+        <p id="empty-filter" class="empty-filter" hidden>No bookmarked questions yet. Star a question to save it here.</p>
+
+        <div class="quiz-actions">
+          <button type="button" id="btn-submit" class="btn btn-primary" hidden>Submit</button>
+        </div>
+      </main>
+    </div>
+    <script src="./js/app.js" type="module"></script>
+  </body>
+</html>
