@@ -33,6 +33,7 @@
         <div class="quiz-header">
           <div class="quiz-header-row">
             <button type="button" id="btn-back" class="btn btn-ghost">← Banks</button>
+            <button type="button" id="btn-export-html" class="btn btn-secondary">Download HTML</button>
             <h1 id="quiz-title" class="quiz-title"></h1>
           </div>
           <div class="meta-row">
@@ -62,22 +63,26 @@
           </div>
         </div>
 
-        <nav id="jump-nav" class="jump-nav" aria-label="Jump to question">
-          <div class="jump-toolbar">
-            <p class="jump-label">Jump to question</p>
-            <label class="toggle">
-              <input type="checkbox" id="bookmarks-only" />
-              Bookmarks only
-            </label>
+        <div class="quiz-layout">
+          <nav id="jump-nav" class="jump-nav" aria-label="Jump to question">
+            <div class="jump-toolbar">
+              <p class="jump-label">Jump to question</p>
+              <label class="toggle">
+                <input type="checkbox" id="bookmarks-only" />
+                Bookmarks only
+              </label>
+            </div>
+            <div id="jump-grid" class="jump-grid"></div>
+          </nav>
+
+          <div class="quiz-content">
+            <div id="question-list" class="question-list"></div>
+            <p id="empty-filter" class="empty-filter" hidden>No bookmarked questions yet. Star a question to save it here.</p>
+
+            <div class="quiz-actions">
+              <button type="button" id="btn-submit" class="btn btn-primary" hidden>Submit</button>
+            </div>
           </div>
-          <div id="jump-grid" class="jump-grid"></div>
-        </nav>
-
-        <div id="question-list" class="question-list"></div>
-        <p id="empty-filter" class="empty-filter" hidden>No bookmarked questions yet. Star a question to save it here.</p>
-
-        <div class="quiz-actions">
-          <button type="button" id="btn-submit" class="btn btn-primary" hidden>Submit</button>
         </div>
       </main>
     </div>

@@ -4,6 +4,11 @@
       "id": "sample",
       "title": "Sample mixed bank",
       "file": "sample.json"
+    },
+    {
+      "id": "iot-quiz",
+      "title": "IoT Quiz (100 Questions)",
+      "file": "iot-quiz.json"
     }
   ]
 }

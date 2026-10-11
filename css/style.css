@@ -213,22 +213,47 @@ h1 {
   cursor: pointer;
 }
 
+.quiz-layout {
+  display: grid;
+  grid-template-columns: minmax(120px, 150px) minmax(0, 1fr);
+  gap: 0.8rem;
+  align-items: start;
+  margin-left: 0;
+  justify-items: start;
+}
+
+.quiz-content {
+  min-width: 0;
+  width: 100%;
+}
+
 .jump-nav {
   position: sticky;
-  top: 0;
+  top: 1rem;
   z-index: 5;
-  margin: 0 0 1.15rem;
-  padding: 0.75rem 0 0.85rem;
-  background: linear-gradient(to bottom, var(--bg) 72%, transparent);
+  margin: 0;
+  padding: 0.7rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-elev);
+  box-shadow: var(--shadow);
+  width: 100%;
+  max-width: 150px;
+  align-self: start;
+}
+
+.quiz-content {
+  min-width: 0;
+  width: 100%;
+  overflow: visible;
 }
 
 .jump-toolbar {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem 1rem;
-  margin-bottom: 0.55rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.55rem;
+  margin-bottom: 0.75rem;
 }
 
 .jump-label {
@@ -239,9 +264,9 @@ h1 {
 }
 
 .jump-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.35rem;
 }
 
 .jump-btn {
@@ -302,6 +327,10 @@ h1 {
 
 .question-card {
   scroll-margin-top: 7.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .question-card.is-hidden {
@@ -534,6 +563,11 @@ select.incorrect,
   padding: 0.55rem 1.05rem;
   border: 1px solid transparent;
   cursor: pointer;
+}
+
+.btn-small {
+  padding: 0.45rem 0.8rem;
+  font-size: 0.9rem;
 }
 
 .btn:disabled {

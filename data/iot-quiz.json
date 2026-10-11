@@ -1,0 +1,1306 @@
+{
+  "id": "iot-quiz",
+  "title": "IoT Quiz",
+  "questions": [
+    {
+      "id": "iot-q1",
+      "type": "mcq",
+      "prompt": "Which statement best defines the Internet of Things (IoT)?",
+      "choices": [
+        "A system used only for connecting computers to the internet",
+        "A network of physical devices that can collect, send, receive, and use data",
+        "A program used to control websites remotely",
+        "A network used only for entertainment devices"
+      ],
+      "answer": 1,
+      "explanation": "IoT connects physical devices so they can collect, exchange, and use data."
+    },
+    {
+      "id": "iot-q2",
+      "type": "mcq",
+      "prompt": "What is the main difference between an IoT system and an IoT service?",
+      "choices": [
+        "A system is always wireless, while a service is always wired",
+        "A system contains connected components, while a service is a function delivered through that system",
+        "A system only contains sensors, while a service only contains actuators",
+        "There is no difference"
+      ],
+      "answer": 1,
+      "explanation": "An IoT system is the connected setup, while an IoT service provides functions such as monitoring, tracking, or remote control."
+    },
+    {
+      "id": "iot-q3",
+      "type": "mcq",
+      "prompt": "Which of the following is an IoT service?",
+      "choices": [
+        "Remote monitoring",
+        "GPIO pin",
+        "Processor",
+        "Resistor"
+      ],
+      "answer": 0,
+      "explanation": "Remote monitoring is a function delivered through an IoT system."
+    },
+    {
+      "id": "iot-q4",
+      "type": "mcq",
+      "prompt": "Which sector commonly uses wearable health monitors?",
+      "choices": [
+        "Retail",
+        "Healthcare",
+        "Transport",
+        "Entertainment"
+      ],
+      "answer": 1,
+      "explanation": "Wearable health monitors can continuously measure health information such as heart rate."
+    },
+    {
+      "id": "iot-q5",
+      "type": "mcq",
+      "prompt": "What is the purpose of a connected traffic-light system?",
+      "choices": [
+        "To measure soil moisture",
+        "To adjust signal timing using live traffic data",
+        "To control home entertainment",
+        "To monitor patient heart rate"
+      ],
+      "answer": 1,
+      "explanation": "Connected traffic lights can use live traffic data to improve traffic flow."
+    },
+    {
+      "id": "iot-q6",
+      "type": "mcq",
+      "prompt": "A smart shelf detects low stock and alerts employees. Which sector does this mainly belong to?",
+      "choices": [
+        "Retail",
+        "Healthcare",
+        "Agriculture",
+        "Security"
+      ],
+      "answer": 0,
+      "explanation": "Connected stock-monitoring systems are used in retail."
+    },
+    {
+      "id": "iot-q7",
+      "type": "mcq",
+      "prompt": "Which IoT application uses soil-moisture data to decide when crops need water?",
+      "choices": [
+        "Smart lock",
+        "Smart irrigation system",
+        "Smart speaker",
+        "Vehicle tracking system"
+      ],
+      "answer": 1,
+      "explanation": "Smart irrigation can reduce water waste by watering crops only when needed."
+    },
+    {
+      "id": "iot-q8",
+      "type": "mcq",
+      "prompt": "Which system can provide remote alerts or live video when activity is detected?",
+      "choices": [
+        "Smart security camera",
+        "Smart irrigation system",
+        "Connected checkout",
+        "Vehicle tracking system"
+      ],
+      "answer": 0,
+      "explanation": "Smart security cameras provide continuous or event-based monitoring and remote alerts."
+    },
+    {
+      "id": "iot-q9",
+      "type": "mcq",
+      "prompt": "Which consideration focuses on helping an organisation complete more useful work or increase output?",
+      "choices": [
+        "Safety and security",
+        "Productivity",
+        "User experience and satisfaction",
+        "Efficiency and effectiveness"
+      ],
+      "answer": 1,
+      "explanation": "Productivity focuses on useful work, output, and supporting staff."
+    },
+    {
+      "id": "iot-q10",
+      "type": "mcq",
+      "prompt": "Which consideration focuses on protecting people, property, systems, or data?",
+      "choices": [
+        "Productivity",
+        "Efficiency",
+        "Safety and security",
+        "User experience"
+      ],
+      "answer": 2,
+      "explanation": "Safety and security concerns hazards, threats, unauthorised access, and protection."
+    },
+    {
+      "id": "iot-q11",
+      "type": "mcq",
+      "prompt": "Reducing wasted time, cost, energy, and effort is mainly related to:",
+      "choices": [
+        "Productivity",
+        "Efficiency and effectiveness",
+        "User experience",
+        "Connectivity"
+      ],
+      "answer": 1,
+      "explanation": "Efficiency and effectiveness aim to achieve the intended result while reducing wasted resources."
+    },
+    {
+      "id": "iot-q12",
+      "type": "mcq",
+      "prompt": "Making a service easier, faster, more convenient, or personalised mainly improves:",
+      "choices": [
+        "User experience and satisfaction",
+        "Productivity",
+        "Security",
+        "Processing power"
+      ],
+      "answer": 0,
+      "explanation": "This consideration focuses on the user's experience."
+    },
+    {
+      "id": "iot-q13",
+      "type": "mcq",
+      "prompt": "Which sequence correctly represents the IoT decision process?",
+      "choices": [
+        "ACT → DECIDE → COLLECT → PROCESS",
+        "COLLECT → ANALYSE/PROCESS → DECIDE → ACT",
+        "DECIDE → COLLECT → ACT → PROCESS",
+        "PROCESS → ACT → COLLECT → DECIDE"
+      ],
+      "answer": 1,
+      "explanation": "The worksheet defines the flow as COLLECT → ANALYSE/PROCESS → DECIDE → ACT."
+    },
+    {
+      "id": "iot-q14",
+      "type": "mcq",
+      "prompt": "A greenhouse sensor measures temperature. The controller compares it with 30°C. Which stage is this comparison?",
+      "choices": [
+        "Collect",
+        "Analyse/process",
+        "Decide",
+        "Act"
+      ],
+      "answer": 1,
+      "explanation": "Processing involves analysing the reading and comparing it with a programmed threshold."
+    },
+    {
+      "id": "iot-q15",
+      "type": "mcq",
+      "prompt": "If a greenhouse temperature is above the programmed limit and the system determines cooling is required, this is the:",
+      "choices": [
+        "Collect stage",
+        "Analyse stage",
+        "Decide stage",
+        "Storage stage"
+      ],
+      "answer": 2,
+      "explanation": "The system decides whether cooling is required after analysing the reading."
+    },
+    {
+      "id": "iot-q16",
+      "type": "mcq",
+      "prompt": "What is the purpose of always-on connectivity?",
+      "choices": [
+        "To prevent sensors from collecting data",
+        "To allow continuous or near-real-time communication",
+        "To remove the need for processors",
+        "To make every device wired"
+      ],
+      "answer": 1,
+      "explanation": "Always-on connectivity allows data, monitoring, alerts, and actions to occur quickly."
+    },
+    {
+      "id": "iot-q17",
+      "type": "mcq",
+      "prompt": "What does internet and telecommunications infrastructure provide to IoT?",
+      "choices": [
+        "Physical housing for sensors",
+        "Connectivity for exchanging data",
+        "Electricity for all actuators",
+        "Only local storage"
+      ],
+      "answer": 1,
+      "explanation": "It allows devices, platforms, and users to exchange data remotely or in real time."
+    },
+    {
+      "id": "iot-q18",
+      "type": "mcq",
+      "prompt": "Which is a possible risk of a smart security camera?",
+      "choices": [
+        "Improved remote monitoring",
+        "Quick alerts",
+        "Unauthorised access to the camera or data",
+        "Better convenience"
+      ],
+      "answer": 2,
+      "explanation": "Hacking and privacy loss are possible IoT risks."
+    },
+    {
+      "id": "iot-q19",
+      "type": "mcq",
+      "prompt": "Why is encryption important in IoT systems?",
+      "choices": [
+        "It increases GPIO pins",
+        "It helps prevent intercepted data from being read by unauthorised people",
+        "It increases the processor's clock speed",
+        "It replaces the sensor"
+      ],
+      "answer": 1,
+      "explanation": "Encryption helps protect data during transmission."
+    },
+    {
+      "id": "iot-q20",
+      "type": "mcq",
+      "prompt": "Which is mainly a privacy concern?",
+      "choices": [
+        "How personal data is collected, stored, accessed, shared, and used",
+        "How fast the CPU operates",
+        "How many USB ports exist",
+        "How many GPIO pins exist"
+      ],
+      "answer": 0,
+      "explanation": "Privacy concerns the handling and use of personal data."
+    },
+    {
+      "id": "iot-q21",
+      "type": "mcq",
+      "prompt": "A smart lock records when a door is accessed. Which concern becomes especially important?",
+      "choices": [
+        "Privacy and security",
+        "Display resolution",
+        "GPU performance",
+        "CPU architecture"
+      ],
+      "answer": 0,
+      "explanation": "Access records contain potentially sensitive information and must be protected."
+    },
+    {
+      "id": "iot-q22",
+      "type": "mcq",
+      "prompt": "Which IoT system is most directly associated with monitoring vehicles in real time?",
+      "choices": [
+        "Smart speaker",
+        "Vehicle tracking system",
+        "Smart shelf",
+        "Smart lock"
+      ],
+      "answer": 1,
+      "explanation": "Vehicle tracking uses location data to monitor vehicles and help plan routes."
+    },
+    {
+      "id": "iot-q23",
+      "type": "mcq",
+      "prompt": "Which IoT application can provide personalised recommendations?",
+      "choices": [
+        "Connected streaming device / smart TV",
+        "Smart irrigation system",
+        "Smart lock",
+        "Traffic-light system"
+      ],
+      "answer": 0,
+      "explanation": "Connected streaming devices can use user data for personalised recommendations."
+    },
+    {
+      "id": "iot-q24",
+      "type": "mcq",
+      "prompt": "A connected self-checkout reduces staff intervention and waiting time. Which consideration is most relevant?",
+      "choices": [
+        "User experience and satisfaction",
+        "Safety and security",
+        "Privacy",
+        "Connectivity"
+      ],
+      "answer": 0,
+      "explanation": "Shorter waiting and easier service mainly improve user experience."
+    },
+    {
+      "id": "iot-q25",
+      "type": "mcq",
+      "prompt": "A smart irrigation system reduces water waste. Which consideration is most directly demonstrated?",
+      "choices": [
+        "Efficiency and effectiveness",
+        "User experience",
+        "Safety and security",
+        "Productivity only"
+      ],
+      "answer": 0,
+      "explanation": "Reducing water waste demonstrates efficient use of resources."
+    },
+    {
+      "id": "iot-q26",
+      "type": "mcq",
+      "prompt": "What is a sensor?",
+      "choices": [
+        "An output component that performs an action",
+        "An input component that detects or measures a physical condition",
+        "A network connection",
+        "A storage device"
+      ],
+      "answer": 1,
+      "explanation": "Sensors provide input by detecting or measuring environmental conditions."
+    },
+    {
+      "id": "iot-q27",
+      "type": "mcq",
+      "prompt": "Which sensor measures temperature?",
+      "choices": [
+        "Temperature sensor",
+        "PIR sensor",
+        "Ultrasonic sensor",
+        "Gas sensor"
+      ],
+      "answer": 0,
+      "explanation": "A temperature sensor measures temperature."
+    },
+    {
+      "id": "iot-q28",
+      "type": "mcq",
+      "prompt": "Which sensor detects movement?",
+      "choices": [
+        "Humidity sensor",
+        "PIR/motion sensor",
+        "Pressure sensor",
+        "Soil-moisture sensor"
+      ],
+      "answer": 1,
+      "explanation": "PIR/motion sensors detect movement."
+    },
+    {
+      "id": "iot-q29",
+      "type": "mcq",
+      "prompt": "Which sensor measures distance?",
+      "choices": [
+        "Ultrasonic sensor",
+        "Temperature sensor",
+        "Gas sensor",
+        "Sound sensor"
+      ],
+      "answer": 0,
+      "explanation": "Ultrasonic sensors can measure distance."
+    },
+    {
+      "id": "iot-q30",
+      "type": "mcq",
+      "prompt": "Which sensor is suitable for a smart irrigation system?",
+      "choices": [
+        "Soil-moisture sensor",
+        "Sound sensor",
+        "Accelerometer",
+        "Proximity sensor"
+      ],
+      "answer": 0,
+      "explanation": "A soil-moisture sensor helps detect when crops need water."
+    },
+    {
+      "id": "iot-q31",
+      "type": "mcq",
+      "prompt": "Which sensor detects whether an object is nearby?",
+      "choices": [
+        "Pressure sensor",
+        "Proximity sensor",
+        "Temperature sensor",
+        "Humidity sensor"
+      ],
+      "answer": 1,
+      "explanation": "A proximity sensor detects whether an object is nearby."
+    },
+    {
+      "id": "iot-q32",
+      "type": "mcq",
+      "prompt": "What is an actuator?",
+      "choices": [
+        "An input component that measures the environment",
+        "An output component that receives a control signal and causes a physical action",
+        "A storage device",
+        "A communication protocol"
+      ],
+      "answer": 1,
+      "explanation": "Actuators allow an IoT system to act on the physical world."
+    },
+    {
+      "id": "iot-q33",
+      "type": "mcq",
+      "prompt": "Which device produces light and can act as an actuator/output?",
+      "choices": [
+        "LED",
+        "Sensor",
+        "ADC",
+        "Processor"
+      ],
+      "answer": 0,
+      "explanation": "An LED emits light when driven by an electrical signal."
+    },
+    {
+      "id": "iot-q34",
+      "type": "mcq",
+      "prompt": "Which actuator produces sound?",
+      "choices": [
+        "Servo motor",
+        "Buzzer",
+        "Relay",
+        "LED"
+      ],
+      "answer": 1,
+      "explanation": "A buzzer produces sound as an output actuator."
+    },
+    {
+      "id": "iot-q35",
+      "type": "mcq",
+      "prompt": "Which actuator produces continuous rotational movement?",
+      "choices": [
+        "DC motor",
+        "LED",
+        "Relay",
+        "Buzzer"
+      ],
+      "answer": 0,
+      "explanation": "A DC motor produces continuous rotational movement."
+    },
+    {
+      "id": "iot-q36",
+      "type": "mcq",
+      "prompt": "Which actuator moves to a controlled position or angle?",
+      "choices": [
+        "DC motor",
+        "Servo motor",
+        "Relay",
+        "LED"
+      ],
+      "answer": 1,
+      "explanation": "A servo motor moves to a controlled position or angle."
+    },
+    {
+      "id": "iot-q37",
+      "type": "mcq",
+      "prompt": "Which device switches another electrical device or circuit on/off?",
+      "choices": [
+        "Relay",
+        "Temperature sensor",
+        "ADC",
+        "Accelerometer"
+      ],
+      "answer": 0,
+      "explanation": "A relay is used to switch another electrical device or circuit on or off."
+    },
+    {
+      "id": "iot-q38",
+      "type": "mcq",
+      "prompt": "What is the simplest distinction between sensors and actuators?",
+      "choices": [
+        "Sensors act; actuators measure",
+        "Sensors provide input; actuators provide output",
+        "Both only provide input",
+        "Both only provide output"
+      ],
+      "answer": 1,
+      "explanation": "Sensors sense the environment, while actuators perform actions."
+    },
+    {
+      "id": "iot-q39",
+      "type": "mcq",
+      "prompt": "What does the processing/control unit do?",
+      "choices": [
+        "Only stores electricity",
+        "Receives sensor data, processes it, makes decisions, and controls outputs",
+        "Only measures temperature",
+        "Only provides internet access"
+      ],
+      "answer": 1,
+      "explanation": "The processing unit receives data, applies rules, makes decisions, and sends instructions to actuators."
+    },
+    {
+      "id": "iot-q40",
+      "type": "mcq",
+      "prompt": "Which technology is commonly used for short-range wireless communication?",
+      "choices": [
+        "Ethernet",
+        "Bluetooth",
+        "HDMI",
+        "GPIO"
+      ],
+      "answer": 1,
+      "explanation": "Bluetooth is commonly used for short-range wireless communication."
+    },
+    {
+      "id": "iot-q41",
+      "type": "mcq",
+      "prompt": "Which is a wired network communication method?",
+      "choices": [
+        "Bluetooth",
+        "Wi-Fi",
+        "Ethernet",
+        "BLE"
+      ],
+      "answer": 2,
+      "explanation": "Ethernet provides a stable wired network connection."
+    },
+    {
+      "id": "iot-q42",
+      "type": "mcq",
+      "prompt": "What is an analog signal?",
+      "choices": [
+        "A signal that only has 0 and 1",
+        "A signal that varies continuously across a range of values",
+        "A signal that cannot change",
+        "A signal used only by computers"
+      ],
+      "answer": 1,
+      "explanation": "Analog signals can vary continuously."
+    },
+    {
+      "id": "iot-q43",
+      "type": "mcq",
+      "prompt": "What is a digital signal commonly represented by?",
+      "choices": [
+        "Any continuous value",
+        "0 and 1",
+        "Temperature only",
+        "Sound waves only"
+      ],
+      "answer": 1,
+      "explanation": "Digital signals are commonly represented using binary values, 0 and 1."
+    },
+    {
+      "id": "iot-q44",
+      "type": "mcq",
+      "prompt": "Which signal is most closely associated with continuously changing temperature?",
+      "choices": [
+        "Digital",
+        "Analog",
+        "Binary only",
+        "Ethernet"
+      ],
+      "answer": 1,
+      "explanation": "Temperature can change continuously across a range, which is analog."
+    },
+    {
+      "id": "iot-q45",
+      "type": "mcq",
+      "prompt": "What type of data does a digital processor require?",
+      "choices": [
+        "Digital data",
+        "Only mechanical data",
+        "Only analog voltage",
+        "Physical movement"
+      ],
+      "answer": 0,
+      "explanation": "Digital processors process digital data, typically represented using binary."
+    },
+    {
+      "id": "iot-q46",
+      "type": "mcq",
+      "prompt": "What does ADC stand for?",
+      "choices": [
+        "Automatic Digital Controller",
+        "Analog-to-Digital Converter",
+        "Analog Device Controller",
+        "Automatic Data Converter"
+      ],
+      "answer": 1,
+      "explanation": "ADC stands for Analog-to-Digital Converter."
+    },
+    {
+      "id": "iot-q47",
+      "type": "mcq",
+      "prompt": "What is the purpose of an ADC?",
+      "choices": [
+        "Converts digital data into analog data",
+        "Converts an analog signal into digital data",
+        "Controls an LED directly",
+        "Connects to Wi‑Fi"
+      ],
+      "answer": 1,
+      "explanation": "ADC converts analog sensor signals into digital data for the processor."
+    },
+    {
+      "id": "iot-q48",
+      "type": "mcq",
+      "prompt": "What does DAC stand for?",
+      "choices": [
+        "Digital-to-Analog Converter",
+        "Data Access Controller",
+        "Digital Automatic Circuit",
+        "Device Analog Connector"
+      ],
+      "answer": 0,
+      "explanation": "DAC stands for Digital-to-Analog Converter."
+    },
+    {
+      "id": "iot-q49",
+      "type": "mcq",
+      "prompt": "What does a DAC do?",
+      "choices": [
+        "Converts analog signals to digital",
+        "Converts digital data into an analog signal",
+        "Measures temperature",
+        "Detects movement"
+      ],
+      "answer": 1,
+      "explanation": "DAC converts processor digital data into an analog signal when required."
+    },
+    {
+      "id": "iot-q50",
+      "type": "mcq",
+      "prompt": "Which sequence represents the complete measurement/control cycle?",
+      "choices": [
+        "Sensor → Processor → Real-world quantity → Actuator",
+        "Real-world quantity → Sensor → ADC → Processor → DAC → Actuator → Real-world action",
+        "Actuator → ADC → Sensor → Processor",
+        "Processor → Sensor → DAC → ADC"
+      ],
+      "answer": 1,
+      "explanation": "This is the measurement/control cycle described in the worksheet."
+    },
+    {
+      "id": "iot-q51",
+      "type": "mcq",
+      "prompt": "Why are ADC and DAC not always required as separate components?",
+      "choices": [
+        "Processors cannot use them",
+        "Conversion may already be built into another component",
+        "Sensors never produce analog signals",
+        "Actuators never use signals"
+      ],
+      "answer": 1,
+      "explanation": "ADC/DAC functionality may already be built into sensors, controllers, or output modules."
+    },
+    {
+      "id": "iot-q52",
+      "type": "mcq",
+      "prompt": "A soil-moisture sensor produces an analog voltage. What does a digital controller need before processing it?",
+      "choices": [
+        "DAC",
+        "ADC",
+        "Relay only",
+        "Ethernet"
+      ],
+      "answer": 1,
+      "explanation": "The analog voltage must be converted to digital data."
+    },
+    {
+      "id": "iot-q53",
+      "type": "mcq",
+      "prompt": "Is a DAC necessarily required to activate a water pump?",
+      "choices": [
+        "Yes, always",
+        "No, a digital signal can control it through a relay/transistor/driver",
+        "Yes, because every actuator is analog",
+        "No, because processors cannot control pumps"
+      ],
+      "answer": 1,
+      "explanation": "A DAC is only required when the output specifically needs a true analog control signal."
+    },
+    {
+      "id": "iot-q54",
+      "type": "mcq",
+      "prompt": "What is the main difference between a processor and a development board?",
+      "choices": [
+        "A processor is the whole computer board",
+        "A development board is the entire board containing/connecting processing and other components",
+        "They are exactly the same",
+        "A development board cannot contain memory"
+      ],
+      "answer": 1,
+      "explanation": "A processor executes instructions, while the board contains the processor and supporting components."
+    },
+    {
+      "id": "iot-q55",
+      "type": "mcq",
+      "prompt": "What does MCU stand for?",
+      "choices": [
+        "Main Computing Unit",
+        "Microcontroller Unit",
+        "Machine Control Utility",
+        "Memory Control Unit"
+      ],
+      "answer": 1,
+      "explanation": "MCU stands for Microcontroller Unit."
+    },
+    {
+      "id": "iot-q56",
+      "type": "mcq",
+      "prompt": "Which description best matches a microcontroller?",
+      "choices": [
+        "Processor only, normally requiring external components",
+        "Processor, memory, and I/O peripherals usually combined on one chip",
+        "A display connector",
+        "A storage device"
+      ],
+      "answer": 1,
+      "explanation": "MCUs combine processor, memory, and I/O on one chip."
+    },
+    {
+      "id": "iot-q57",
+      "type": "mcq",
+      "prompt": "Which is generally a reason for using a microcontroller in IoT?",
+      "choices": [
+        "High power consumption",
+        "Large physical size",
+        "Low power consumption",
+        "Requirement for a full desktop OS"
+      ],
+      "answer": 2,
+      "explanation": "Microcontrollers are commonly compact, low-power, and low-cost."
+    },
+    {
+      "id": "iot-q58",
+      "type": "mcq",
+      "prompt": "Which board is classified as a Single-Board Computer?",
+      "choices": [
+        "Raspberry Pi 5",
+        "Raspberry Pi Pico 2 W",
+        "Arduino UNO R4 WiFi",
+        "ESP32-C3 development board"
+      ],
+      "answer": 0,
+      "explanation": "Raspberry Pi 5 is an SBC, while the other listed boards are microcontroller boards."
+    },
+    {
+      "id": "iot-q59",
+      "type": "mcq",
+      "prompt": "Which board is a microcontroller board?",
+      "choices": [
+        "Raspberry Pi 5",
+        "Raspberry Pi Pico 2 W",
+        "Raspberry Pi 4 Model B",
+        "None"
+      ],
+      "answer": 1,
+      "explanation": "Raspberry Pi Pico 2 W is a microcontroller board."
+    },
+    {
+      "id": "iot-q60",
+      "type": "mcq",
+      "prompt": "When would a Raspberry Pi 5 generally be more suitable than a small microcontroller?",
+      "choices": [
+        "When only a very simple low-power control task is needed",
+        "When a full operating system and more processing power are required",
+        "When the device must use no memory",
+        "When no networking is needed"
+      ],
+      "answer": 1,
+      "explanation": "Pi 5 is suitable for full OS use, greater processing power, multiple applications, and advanced networking."
+    },
+    {
+      "id": "iot-q61",
+      "type": "mcq",
+      "prompt": "What type of device is Raspberry Pi 5?",
+      "choices": [
+        "Microcontroller",
+        "Single-Board Computer",
+        "Sensor",
+        "Actuator"
+      ],
+      "answer": 1,
+      "explanation": "Raspberry Pi 5 is classified as a Single-Board Computer."
+    },
+    {
+      "id": "iot-q62",
+      "type": "mcq",
+      "prompt": "What year was Raspberry Pi 5 released?",
+      "choices": [
+        "2019",
+        "2021",
+        "2023",
+        "2024"
+      ],
+      "answer": 2,
+      "explanation": "Raspberry Pi 5 was released in 2023."
+    },
+    {
+      "id": "iot-q63",
+      "type": "mcq",
+      "prompt": "What year was Raspberry Pi 4 Model B released?",
+      "choices": [
+        "2019",
+        "2020",
+        "2021",
+        "2023"
+      ],
+      "answer": 0,
+      "explanation": "Raspberry Pi 4 Model B was released in 2019."
+    },
+    {
+      "id": "iot-q64",
+      "type": "mcq",
+      "prompt": "Which processor is used by Raspberry Pi 5?",
+      "choices": [
+        "BCM2711",
+        "BCM2712",
+        "BCM2835",
+        "ESP32-C3"
+      ],
+      "answer": 1,
+      "explanation": "Pi 5 uses the Broadcom BCM2712."
+    },
+    {
+      "id": "iot-q65",
+      "type": "mcq",
+      "prompt": "What CPU architecture does Raspberry Pi 5 use?",
+      "choices": [
+        "Cortex-A72",
+        "Cortex-A76",
+        "Cortex-M0",
+        "x86-64"
+      ],
+      "answer": 1,
+      "explanation": "Raspberry Pi 5 uses a 64-bit ARM Cortex-A76-based CPU."
+    },
+    {
+      "id": "iot-q66",
+      "type": "mcq",
+      "prompt": "How many CPU cores does the Raspberry Pi 5 have?",
+      "choices": [
+        "2",
+        "4",
+        "6",
+        "8"
+      ],
+      "answer": 1,
+      "explanation": "BCM2712 has four Cortex-A76 CPU cores."
+    },
+    {
+      "id": "iot-q67",
+      "type": "mcq",
+      "prompt": "What is the approximate CPU clock speed of Raspberry Pi 5?",
+      "choices": [
+        "1.2 GHz",
+        "1.8 GHz",
+        "2.4 GHz",
+        "5.0 GHz"
+      ],
+      "answer": 2,
+      "explanation": "Raspberry Pi 5 typically runs at around 2.4 GHz."
+    },
+    {
+      "id": "iot-q68",
+      "type": "mcq",
+      "prompt": "Which GPU is used by Raspberry Pi 5?",
+      "choices": [
+        "VideoCore VI",
+        "VideoCore VII",
+        "RTX GPU",
+        "Mali-G76"
+      ],
+      "answer": 1,
+      "explanation": "Raspberry Pi 5 uses VideoCore VII."
+    },
+    {
+      "id": "iot-q69",
+      "type": "mcq",
+      "prompt": "How many micro-HDMI ports does Raspberry Pi 5 have?",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "explanation": "Raspberry Pi 5 includes two micro-HDMI ports."
+    },
+    {
+      "id": "iot-q70",
+      "type": "mcq",
+      "prompt": "What display capability can Raspberry Pi 5 support?",
+      "choices": [
+        "One 720p display only",
+        "Two 4K displays at up to 60 frames per second",
+        "Two 1080p displays only",
+        "One 8K display only"
+      ],
+      "answer": 1,
+      "explanation": "Pi 5 supports dual 4Kp60 displays."
+    },
+    {
+      "id": "iot-q71",
+      "type": "mcq",
+      "prompt": "Which RAM type is used by Raspberry Pi 5?",
+      "choices": [
+        "DDR3",
+        "LPDDR4",
+        "LPDDR4X",
+        "DDR5 only"
+      ],
+      "answer": 2,
+      "explanation": "Raspberry Pi 5 uses LPDDR4X memory."
+    },
+    {
+      "id": "iot-q72",
+      "type": "mcq",
+      "prompt": "Which is NOT an available Raspberry Pi 5 RAM capacity listed in the worksheet?",
+      "choices": [
+        "2 GB",
+        "4 GB",
+        "8 GB",
+        "32 GB"
+      ],
+      "answer": 3,
+      "explanation": "The listed capacities are 1 GB, 2 GB, 4 GB, 8 GB, and 16 GB."
+    },
+    {
+      "id": "iot-q73",
+      "type": "mcq",
+      "prompt": "What is the purpose of the microSD card slot?",
+      "choices": [
+        "It is mainly used for the operating system, booting, and storage",
+        "It is used only for networking",
+        "It is used only for connecting sensors",
+        "It supplies power to the Pi"
+      ],
+      "answer": 0,
+      "explanation": "microSD is the common storage and boot option."
+    },
+    {
+      "id": "iot-q74",
+      "type": "mcq",
+      "prompt": "What is the purpose of the 40-pin GPIO interface?",
+      "choices": [
+        "Connecting displays only",
+        "Connecting electronic components such as sensors and actuators",
+        "Storing the operating system",
+        "Providing wireless internet"
+      ],
+      "answer": 1,
+      "explanation": "GPIO allows the Pi to monitor inputs and control outputs."
+    },
+    {
+      "id": "iot-q75",
+      "type": "mcq",
+      "prompt": "What does GPIO stand for?",
+      "choices": [
+        "General-Purpose Input/Output",
+        "General Processing Internet Output",
+        "Graphic Processing Input Operation",
+        "General Peripheral Internal Output"
+      ],
+      "answer": 0,
+      "explanation": "GPIO stands for General-Purpose Input/Output."
+    },
+    {
+      "id": "iot-q76",
+      "type": "mcq",
+      "prompt": "Which connection provides wired network access on Raspberry Pi 5?",
+      "choices": [
+        "micro-HDMI",
+        "Gigabit Ethernet",
+        "GPIO",
+        "MIPI"
+      ],
+      "answer": 1,
+      "explanation": "Gigabit Ethernet provides wired network access."
+    },
+    {
+      "id": "iot-q77",
+      "type": "mcq",
+      "prompt": "What is the maximum stated data transfer speed of USB 3.0 Type-A on Raspberry Pi 5?",
+      "choices": [
+        "480 Mbps",
+        "1 Gbps",
+        "Up to 5 Gbps",
+        "10 Mbps"
+      ],
+      "answer": 2,
+      "explanation": "The worksheet states up to 5 Gbps for USB 3.0."
+    },
+    {
+      "id": "iot-q78",
+      "type": "mcq",
+      "prompt": "Which Raspberry Pi 5 port is primarily used to supply power?",
+      "choices": [
+        "USB Type-C",
+        "micro-HDMI",
+        "Ethernet",
+        "GPIO"
+      ],
+      "answer": 0,
+      "explanation": "The USB Type-C port is used to supply power."
+    },
+    {
+      "id": "iot-q79",
+      "type": "mcq",
+      "prompt": "Which wireless standard does Raspberry Pi 5 support?",
+      "choices": [
+        "Wi‑Fi 5 / 802.11ac",
+        "Wi‑Fi 1 only",
+        "Wi‑Fi 7 only",
+        "802.11b only"
+      ],
+      "answer": 0,
+      "explanation": "Pi 5 supports dual-band 802.11ac (Wi‑Fi 5)."
+    },
+    {
+      "id": "iot-q80",
+      "type": "mcq",
+      "prompt": "Which frequency bands are supported by Pi 5 Wi‑Fi?",
+      "choices": [
+        "900 MHz and 1 GHz",
+        "2.4 GHz and 5 GHz",
+        "5 GHz and 10 GHz",
+        "2 GHz only"
+      ],
+      "answer": 1,
+      "explanation": "The board supports 2.4 GHz and 5 GHz Wi‑Fi bands."
+    },
+    {
+      "id": "iot-q81",
+      "type": "mcq",
+      "prompt": "Which Bluetooth version is built into Raspberry Pi 5?",
+      "choices": [
+        "Bluetooth 2.0",
+        "Bluetooth 3.0",
+        "Bluetooth 5.0 with BLE",
+        "Bluetooth 1.0"
+      ],
+      "answer": 2,
+      "explanation": "Pi 5 includes Bluetooth 5.0 with BLE."
+    },
+    {
+      "id": "iot-q82",
+      "type": "mcq",
+      "prompt": "What does MIPI stand for?",
+      "choices": [
+        "Mobile Industry Processor Interface",
+        "Main Internet Processing Interface",
+        "Micro Input Peripheral Interface",
+        "Mobile Internet Peripheral Input"
+      ],
+      "answer": 0,
+      "explanation": "MIPI stands for Mobile Industry Processor Interface."
+    },
+    {
+      "id": "iot-q83",
+      "type": "mcq",
+      "prompt": "What can the two MIPI connectors on Raspberry Pi 5 connect?",
+      "choices": [
+        "Only Ethernet cables",
+        "Compatible camera modules or displays",
+        "Only USB keyboards",
+        "Only microSD cards"
+      ],
+      "answer": 1,
+      "explanation": "The MIPI connectors can connect compatible camera modules or displays."
+    },
+    {
+      "id": "iot-q84",
+      "type": "mcq",
+      "prompt": "What does HAT stand for?",
+      "choices": [
+        "Hardware Attached on Top",
+        "Hardware Access Terminal",
+        "High-speed Attached Technology",
+        "Hardware Analog Transmitter"
+      ],
+      "answer": 0,
+      "explanation": "A HAT is an add-on board that connects to the Pi's GPIO pins."
+    },
+    {
+      "id": "iot-q85",
+      "type": "mcq",
+      "prompt": "Which Raspberry Pi 5 feature can provide a high-speed connection for an NVMe SSD?",
+      "choices": [
+        "PCIe connector",
+        "micro-HDMI",
+        "GPIO",
+        "Bluetooth"
+      ],
+      "answer": 0,
+      "explanation": "The PCIe connector allows a high-speed NVMe SSD connection."
+    },
+    {
+      "id": "iot-q86",
+      "type": "mcq",
+      "prompt": "What is the purpose of the RTC support?",
+      "choices": [
+        "It controls the GPU",
+        "It keeps track of date and time when powered off if a backup battery is connected",
+        "It provides Wi-Fi",
+        "It increases RAM"
+      ],
+      "answer": 1,
+      "explanation": "RTC support maintains time while the Pi is powered off when backed by a battery."
+    },
+    {
+      "id": "iot-q87",
+      "type": "mcq",
+      "prompt": "What new feature allows a compatible cooling fan to connect directly to Raspberry Pi 5?",
+      "choices": [
+        "Dedicated fan connector",
+        "MIPI connector",
+        "Ethernet port",
+        "PCIe connector"
+      ],
+      "answer": 0,
+      "explanation": "Pi 5 includes a dedicated fan connector."
+    },
+    {
+      "id": "iot-q88",
+      "type": "mcq",
+      "prompt": "What is one new physical feature of Raspberry Pi 5 compared with Pi 4 Model B?",
+      "choices": [
+        "Power button",
+        "Ethernet",
+        "USB Type-C",
+        "40-pin GPIO"
+      ],
+      "answer": 0,
+      "explanation": "Pi 5 introduced a built-in power button."
+    },
+    {
+      "id": "iot-q89",
+      "type": "mcq",
+      "prompt": "What power supply is specified for Raspberry Pi 5 for full peripheral power?",
+      "choices": [
+        "5 V / 1 A",
+        "5 V / 2 A",
+        "5 V / 3 A",
+        "5 V / 5 A"
+      ],
+      "answer": 3,
+      "explanation": "Pi 5 supports a 5 V / 5 A supply for full peripheral power."
+    },
+    {
+      "id": "iot-q90",
+      "type": "mcq",
+      "prompt": "Which statement correctly compares Pi 4 and Pi 5 processors?",
+      "choices": [
+        "Pi 4 uses BCM2712 and Pi 5 uses BCM2711",
+        "Both use BCM2711",
+        "Pi 4 uses BCM2711 while Pi 5 uses BCM2712",
+        "Both use BCM2712"
+      ],
+      "answer": 2,
+      "explanation": "Pi 4 uses BCM2711, while Pi 5 uses the newer BCM2712."
+    },
+    {
+      "id": "iot-q91",
+      "type": "mcq",
+      "prompt": "Which component is NOT listed as a required component for the WS4 LED circuit?",
+      "choices": [
+        "Raspberry Pi motherboard",
+        "LED",
+        "330-ohm resistor",
+        "Temperature sensor"
+      ],
+      "answer": 3,
+      "explanation": "The required components include Raspberry Pi, LED, jumper cables, 330-ohm resistor, and breadboard."
+    },
+    {
+      "id": "iot-q92",
+      "type": "mcq",
+      "prompt": "What resistor value is specified for the LED circuit?",
+      "choices": [
+        "100 ohms",
+        "220 ohms",
+        "330 ohms",
+        "1 kΩ"
+      ],
+      "answer": 2,
+      "explanation": "WS4 specifies a 330-ohm resistor."
+    },
+    {
+      "id": "iot-q93",
+      "type": "mcq",
+      "prompt": "Which program was used to interact with the Raspberry Pi for the LED task?",
+      "choices": [
+        "Excel",
+        "Terminal",
+        "PowerPoint",
+        "Photoshop"
+      ],
+      "answer": 1,
+      "explanation": "The worksheet identifies Terminal as the program used."
+    },
+    {
+      "id": "iot-q94",
+      "type": "mcq",
+      "prompt": "How can you access a Python interpreter using the terminal according to the worksheet?",
+      "choices": [
+        "python",
+        "start python.exe /safe",
+        "run-python",
+        "open.py"
+      ],
+      "answer": 0,
+      "explanation": "Writing python opens the Python interpreter."
+    },
+    {
+      "id": "iot-q95",
+      "type": "mcq",
+      "prompt": "Which library provides the LED class used in the worksheet?",
+      "choices": [
+        "numpy",
+        "pandas",
+        "gpiozero",
+        "matplotlib"
+      ],
+      "answer": 2,
+      "explanation": "gpiozero provides the LED class for controlling LEDs connected to GPIO pins."
+    },
+    {
+      "id": "iot-q96",
+      "type": "mcq",
+      "prompt": "Which command turns an LED on?",
+      "choices": [
+        "led.start()",
+        "led.on()",
+        "led.open()",
+        "led.power()"
+      ],
+      "answer": 1,
+      "explanation": "The LED object uses the on() method to turn it on."
+    },
+    {
+      "id": "iot-q97",
+      "type": "mcq",
+      "prompt": "Which command switches an LED to the opposite state?",
+      "choices": [
+        "led.change()",
+        "led.switch()",
+        "led.toggle()",
+        "led.reverse()"
+      ],
+      "answer": 2,
+      "explanation": "led.toggle() changes on to off or off to on."
+    },
+    {
+      "id": "iot-q98",
+      "type": "mcq",
+      "prompt": "Which line correctly creates an LED object using from gpiozero import LED?",
+      "choices": [
+        "LED = led(17)",
+        "led = LED(17)",
+        "led = gpio(17)",
+        "LED = GPIO(17)"
+      ],
+      "answer": 1,
+      "explanation": "The worksheet uses led = LED(17), where 17 is the GPIO pin number."
+    },
+    {
+      "id": "iot-q99",
+      "type": "mcq",
+      "prompt": "Which command creates and opens a new Python file in the terminal?",
+      "choices": [
+        "python new.py",
+        "sudo nano filename.py",
+        "open filename.py",
+        "create python filename.py"
+      ],
+      "answer": 1,
+      "explanation": "The worksheet gives sudo nano filename.py as the command."
+    },
+    {
+      "id": "iot-q100",
+      "type": "mcq",
+      "prompt": "Which code correctly makes an LED blink forever?",
+      "choices": [
+        "while False: led.on() led.off()",
+        "for _ in range(1): led.on() led.off()",
+        "while True: led.on() time.sleep(0.5) led.off() time.sleep(0.5)",
+        "if True: led.on()"
+      ],
+      "answer": 2,
+      "explanation": "while True repeatedly runs the LED on/off sequence indefinitely."
+    }
+  ]
+}

@@ -1,3 +1,5 @@
+import { downloadOfflineQuizHtml } from "./offline-export.js";
+
 const STORAGE_KEYS = {
   shuffleQuestions: "qb-shuffle-questions",
   shuffleChoices: "qb-shuffle-choices",
@@ -20,6 +22,7 @@ const els = {
   emptyFilter: document.getElementById("empty-filter"),
   btnBack: document.getElementById("btn-back"),
   btnSubmit: document.getElementById("btn-submit"),
+  btnExport: document.getElementById("btn-export-html"),
   shuffleQuestions: document.getElementById("shuffle-questions"),
   shuffleChoices: document.getElementById("shuffle-choices"),
   bookmarksOnly: document.getElementById("bookmarks-only"),
@@ -186,6 +189,11 @@ function renderHome() {
     item.append(button);
     els.bankList.append(item);
   });
+}
+
+function exportCurrentBank() {
+  if (!state.bank) return;
+  downloadOfflineQuizHtml(state.bank);
 }
 
 async function openBank(meta) {
@@ -683,6 +691,9 @@ function bindControls() {
     renderHome();
   });
   els.btnSubmit.addEventListener("click", submitTest);
+  if (els.btnExport) {
+    els.btnExport.addEventListener("click", exportCurrentBank);
+  }
 }
 
 async function init() {
