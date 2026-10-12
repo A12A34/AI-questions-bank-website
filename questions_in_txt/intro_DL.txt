@@ -1,0 +1,502 @@
+50 Multiple-Choice Questions
+1. What is an Artificial Neural Network (ANN)?
+A. A database used to store images
+B. A Machine Learning model inspired by biological neurons
+C. A programming language
+D. A type of computer hardware  
+Answer: B
+Reason: An ANN is a Machine Learning model inspired by networks of biological neurons.     1-Introduction to Deep Learning
+2. Artificial Neural Networks are at the core of which field?
+A. Database Management
+B. Web Development
+C. Deep Learning
+D. Operating Systems  
+Answer: C
+Reason: The slides state that ANNs are at the very core of Deep Learning.     1-Introduction to Deep Learning
+3. Which characteristic makes ANNs suitable for large Machine Learning tasks?
+A. They are versatile, powerful, and scalable
+B. They only work with small datasets
+C. They do not require data
+D. They only perform mathematical addition  
+Answer: A
+Reason: The slides describe ANNs as versatile, powerful, and scalable.     1-Introduction to Deep Learning
+4. Which is an example of a task that ANNs can perform?
+A. Classifying images
+B. Physically repairing computers
+C. Manufacturing CPUs
+D. Replacing computer memory  
+Answer: A
+Reason: The slides give image classification as an example of a complex task handled by ANNs.     1-Introduction to Deep Learning
+5. Which service is given as an example of speech recognition using ANNs?
+A. YouTube
+B. Siri
+C. Google Images
+D. AlphaGo  
+Answer: B
+Reason: The slides mention speech recognition services such as Siri.     1-Introduction to Deep Learning
+6. Why have ANNs become more successful?
+A. There is less available data
+B. Computing power decreased
+C. Data, computing power, algorithms, and investment improved
+D. Neural networks stopped requiring training  
+Answer: C
+Reason: The rise of ANNs resulted from more data, better hardware, improved training algorithms, and increasing investment.     1-Introduction to Deep Learning
+7. Why is the availability of large amounts of data important?
+A. Neural networks can use it for training
+B. It removes the need for weights
+C. It removes the need for predictions
+D. It makes every problem linear  
+Answer: A
+Reason: Large quantities of data are available to train neural networks.     1-Introduction to Deep Learning
+8. What has made it possible to train large neural networks in a reasonable amount of time?
+A. Reduced data
+B. Increased computing power
+C. Removing activation functions
+D. Removing weights  
+Answer: B
+Reason: Increased computing power has made training large neural networks practical.     1-Introduction to Deep Learning
+9. Which hardware is particularly useful for neural-network computation?
+A. GPU
+B. Keyboard
+C. Monitor
+D. Printer  
+Answer: A
+Reason: The slides specifically mention powerful GPU cards as part of the increase in computing power.     1-Introduction to Deep Learning
+10. What have cloud platforms helped provide?
+A. Access to computing power
+B. More biological neurons
+C. Physical storage only
+D. Automatic elimination of errors  
+Answer: A
+Reason: Cloud platforms have made computing power accessible to everyone.     1-Introduction to Deep Learning
+11. Which factor has improved the performance of ANNs?
+A. Improved training algorithms
+B. Fewer training examples
+C. Removing inputs
+D. Removing outputs  
+Answer: A
+Reason: The slides specifically identify improved training algorithms as a factor in the rise of ANNs.     1-Introduction to Deep Learning
+12. What does the artificial neuron model?
+A. A biological neuron in a simplified mathematical form
+B. A computer monitor
+C. A database table
+D. A GPU  
+Answer: A
+Reason: The artificial neuron is described as a simple model of a biological neuron.     1-Introduction to Deep Learning
+13. In the basic artificial neuron described in the slides, inputs are:
+A. Continuous only
+B. Binary ON/OFF values
+C. Text only
+D. Images only  
+Answer: B
+Reason: The artificial neuron has binary ON/OFF inputs.     1-Introduction to Deep Learning
+14. What type of output does the basic artificial neuron produce?
+A. Binary output
+B. Audio output
+C. Text paragraph
+D. Image  
+Answer: A
+Reason: The artificial neuron described has one binary output.     1-Introduction to Deep Learning
+15. When does the basic artificial neuron activate?
+A. When no inputs are active
+B. When more than a certain number of inputs are active
+C. Only when all inputs are zero
+D. Randomly  
+Answer: B
+Reason: The neuron activates its output when more than a certain number of inputs are active.     1-Introduction to Deep Learning
+16. In the logical-computation example, when is the neuron activated?
+A. When at least two inputs are active
+B. When exactly zero inputs are active
+C. When all inputs are inactive
+D. Only when one input is active  
+Answer: A
+Reason: The example assumes activation when at least two inputs are active.     1-Introduction to Deep Learning
+17. Which logical operation activates the output only when both inputs are active?
+A. OR
+B. NOT
+C. AND
+D. Identity  
+Answer: C
+Reason: In the AND operation, the output is activated only when both inputs are activated.     1-Introduction to Deep Learning
+18. What happens in an OR operation?
+A. Both inputs must be inactive
+B. Either input can activate the output
+C. The output is always zero
+D. The output is always the opposite of both inputs  
+Answer: B
+Reason: The OR network activates when either input is activated.     1-Introduction to Deep Learning
+19. What does the identity function do?
+A. Reverses the input
+B. Produces the same activation state as the input
+C. Requires both inputs to be active
+D. Always produces 1  
+Answer: B
+Reason: In the identity network, when neuron A is active, neuron C becomes active; when A is off, C is off.     1-Introduction to Deep Learning
+20. In a NOT operation, what happens to the output when the input is OFF?
+A. The output is OFF
+B. The output is ON
+C. The output is removed
+D. Nothing happens  
+Answer: B
+Reason: The slides describe NOT as producing an active output when the input is off, and vice versa.     1-Introduction to Deep Learning
+21. What is a Perceptron?
+A. One of the simplest ANN architectures
+B. A type of database
+C. A GPU
+D. A programming language  
+Answer: A
+Reason: The slides describe the Perceptron as one of the simplest ANN architectures.     1-Introduction to Deep Learning
+22. What type of artificial neuron does a Perceptron use?
+A. TLU
+B. CPU
+C. GPU
+D. RAM  
+Answer: A
+Reason: The Perceptron is based on a Threshold Logic Unit (TLU), also called an LTU.     1-Introduction to Deep Learning
+23. What does TLU stand for?
+A. Training Learning Utility
+B. Threshold Logic Unit
+C. Tensor Learning Unit
+D. Training Logic Utility  
+Answer: B
+Reason: TLU stands for Threshold Logic Unit.     1-Introduction to Deep Learning
+24. In a Perceptron, inputs and outputs are represented as:
+A. Numbers
+B. Images only
+C. Audio only
+D. Text only  
+Answer: A
+Reason: The slides state that the inputs and output are numbers rather than binary ON/OFF values.     1-Introduction to Deep Learning
+25. What is associated with each input connection?
+A. A weight
+B. A color
+C. A file
+D. A password  
+Answer: A
+Reason: Each input connection in the Perceptron is associated with a weight.     1-Introduction to Deep Learning
+26. What does a TLU calculate first?
+A. A weighted sum
+B. A random number
+C. A text string
+D. A database query  
+Answer: A
+Reason: The TLU computes a weighted sum of its inputs.     1-Introduction to Deep Learning
+27. Which formula represents the weighted sum?
+A. \(z=x+w\)
+B. \(z=w_1x_1+w_2x_2+\dots+w_nx_n\)
+C. \(z=x/w\)
+D. \(z=x-w\)  
+Answer: B
+Reason: This is the weighted-sum formula shown in the slides.     1-Introduction to Deep Learning
+28. What does the TLU apply after calculating the weighted sum?
+A. A step function
+B. A database filter
+C. A text parser
+D. A sorting algorithm  
+Answer: A
+Reason: The TLU applies a step function to the weighted sum.     1-Introduction to Deep Learning
+29. Which is the most common step function used in Perceptrons according to the slides?
+A. Heaviside function
+B. Identity function
+C. OR function
+D. AND function  
+Answer: A
+Reason: The slides identify the Heaviside step function as the most common one used in Perceptrons.     1-Introduction to Deep Learning
+30. According to the Heaviside function, what is the output when \(z<0\)?
+A. 0
+B. 1
+C. -1 only
+D. 2  
+Answer: A
+Reason: The Heaviside function gives 0 when \(z<0\).     1-Introduction to Deep Learning
+31. According to the Heaviside function, what is the output when \(z\geq0\)?
+A. -1
+B. 0
+C. 1
+D. 2  
+Answer: C
+Reason: The Heaviside function gives 1 when \(z\geq0\).     1-Introduction to Deep Learning
+32. What other function may sometimes be used instead of the Heaviside function?
+A. Sign function
+B. Square function
+C. Average function
+D. Sorting function  
+Answer: A
+Reason: The slides state that the sign function can also be used.     1-Introduction to Deep Learning
+33. A single TLU can be used for:
+A. Simple linear binary classification
+B. Only image storage
+C. Audio compression
+D. Database indexing  
+Answer: A
+Reason: A single TLU can perform simple linear binary classification.     1-Introduction to Deep Learning
+34. What happens if the linear combination exceeds the threshold?
+A. The positive class is output
+B. The negative class is always output
+C. The network shuts down
+D. The weights are deleted  
+Answer: A
+Reason: If the result exceeds the threshold, the TLU outputs the positive class.     1-Introduction to Deep Learning
+35. What happens if the result does not exceed the threshold?
+A. The negative class is output
+B. The positive class is always output
+C. The input is deleted
+D. The network stops training  
+Answer: A
+Reason: Otherwise, the TLU outputs the negative class.     1-Introduction to Deep Learning
+36. What is a fully connected layer?
+A. Every neuron connects to every neuron in the previous layer
+B. Only one neuron has connections
+C. No neurons have connections
+D. Only bias neurons are connected  
+Answer: A
+Reason: A layer is fully connected when every neuron connects to every neuron in the previous layer.     1-Introduction to Deep Learning
+37. What is another name for a fully connected layer?
+A. Dense layer
+B. Empty layer
+C. Binary layer
+D. Input-only layer  
+Answer: A
+Reason: The slides use both “fully connected layer” and “dense layer.”     1-Introduction to Deep Learning
+38. What do input neurons do?
+A. They output whatever input they receive
+B. They always output zero
+C. They always output one
+D. They change all weights  
+Answer: A
+Reason: Input neurons are passthrough neurons that output whatever input they are fed.     1-Introduction to Deep Learning
+39. What is the bias feature generally set to?
+A. \(x_0=0\)
+B. \(x_0=1\)
+C. \(x_0=-1\)
+D. \(x_0=10\)  
+Answer: B
+Reason: The slides state that an extra bias feature is generally added with \(x_0=1\).     1-Introduction to Deep Learning
+40. What does a bias neuron output?
+A. 0 all the time
+B. 1 all the time
+C. Random values
+D. The input value  
+Answer: B
+Reason: The bias neuron outputs 1 all the time.     1-Introduction to Deep Learning
+41. In \(h_{W,b}(X)=\phi(XW+b)\), what does \(X\) represent?
+A. Matrix of input features
+B. Bias only
+C. Output only
+D. Learning rate  
+Answer: A
+Reason: X represents the matrix of input features.     1-Introduction to Deep Learning
+42. In the input matrix \(X\), what does each row represent?
+A. An instance
+B. A weight
+C. An output neuron
+D. A bias  
+Answer: A
+Reason: X has one row per instance.     1-Introduction to Deep Learning
+43. In \(X\), what does each column represent?
+A. A feature
+B. A bias neuron
+C. An output
+D. A learning rate  
+Answer: A
+Reason: X has one column per feature.     1-Introduction to Deep Learning
+44. What does the weight matrix \(W\) contain?
+A. Connection weights
+B. Only input values
+C. Only target outputs
+D. Only learning rates  
+Answer: A
+Reason: W contains the connection weights except those from the bias neuron.     1-Introduction to Deep Learning
+45. What does the bias vector \(b\) contain?
+A. Weights connected from the bias neuron to artificial neurons
+B. Input features
+C. Target values
+D. Training examples  
+Answer: A
+Reason: The bias vector contains the connection weights between the bias neuron and artificial neurons.     1-Introduction to Deep Learning
+46. What is \(\phi\) in the equation?
+A. Activation function
+B. Input matrix
+C. Weight matrix
+D. Learning rate  
+Answer: A
+Reason: The slides identify \(\phi\) as the activation function.     1-Introduction to Deep Learning
+47. How does a Perceptron learn?
+A. By adjusting its connections when it makes mistakes
+B. By never changing its weights
+C. By deleting incorrect training examples
+D. By randomly changing every weight  
+Answer: A
+Reason: The Perceptron adjusts its connections when it makes mistakes.     1-Introduction to Deep Learning
+48. What happens if the Perceptron predicts 0 when the correct answer is 1?
+A. Relevant active-input weights are increased
+B. All weights are deleted
+C. Relevant weights are decreased
+D. Training stops  
+Answer: A
+Reason: If the prediction is too low, the weights for active inputs are increased.     1-Introduction to Deep Learning
+49. What happens if the prediction is correct?
+A. The weights are left unchanged
+B. All weights are doubled
+C. All weights become zero
+D. The input is removed  
+Answer: A
+Reason: Correct predictions leave the weights unchanged.     1-Introduction to Deep Learning
+50. Why can a basic Perceptron not learn complex patterns?
+A. Its decision boundary is linear
+B. It has too much data
+C. It has no inputs
+D. It always uses random weights  
+Answer: A
+Reason: The decision boundary of each output neuron is linear, making the basic Perceptron unable to learn complex patterns.     1-Introduction to Deep Learning
+50 True / False Questions
+1. An ANN is a Machine Learning model inspired by biological neurons.
+Answer: True
+Reason: The slides define an ANN as a Machine Learning model inspired by biological neurons.     1-Introduction to Deep Learning
+2. ANNs are unrelated to Deep Learning.
+Answer: False
+Reason: ANNs are described as being at the very core of Deep Learning.     1-Introduction to Deep Learning
+3. ANNs can be used for large and complex Machine Learning tasks.
+Answer: True
+Reason: Their versatility, power, and scalability make them suitable for large and complex tasks.     1-Introduction to Deep Learning
+4. ANNs can be used for image classification.
+Answer: True
+Reason: Image classification is specifically given as an ANN application.     1-Introduction to Deep Learning
+5. ANNs can be used for speech recognition.
+Answer: True
+Reason: Speech recognition is one of the examples provided in the slides.     1-Introduction to Deep Learning
+6. ANNs can be used for video recommendations.
+Answer: True
+Reason: The slides mention recommending videos as an ANN application.     1-Introduction to Deep Learning
+7. More available data has helped ANNs become more successful.
+Answer: True
+Reason: The growth of available data is listed as an important factor.     1-Introduction to Deep Learning
+8. Increased computing power has made training large neural networks more practical.
+Answer: True
+Reason: Increased computing power allows large neural networks to be trained in a reasonable amount of time.     1-Introduction to Deep Learning
+9. GPUs have no connection to the increase in computing power mentioned in the slides.
+Answer: False
+Reason: The slides specifically mention powerful GPU cards as part of the increase in computing power.     1-Introduction to Deep Learning
+10. Cloud platforms have helped make computing power more accessible.
+Answer: True
+Reason: The slides state that cloud platforms have made this computing power accessible to everyone.     1-Introduction to Deep Learning
+11. Training algorithms have improved.
+Answer: True
+Reason: Improved training algorithms are listed as one reason for the rise of ANNs.     1-Introduction to Deep Learning
+12. The slides state that theoretical limitations always prevent ANNs from working.
+Answer: False
+Reason: Some theoretical limitations were found to be less harmful in practice than expected.     1-Introduction to Deep Learning
+13. The artificial neuron is a simplified model of a biological neuron.
+Answer: True
+Reason: The slides describe the artificial neuron as a simple model of a biological neuron.     1-Introduction to Deep Learning
+14. The basic artificial neuron described has binary inputs.
+Answer: True
+Reason: Its inputs are binary ON/OFF values.     1-Introduction to Deep Learning
+15. The basic artificial neuron described has a binary output.
+Answer: True
+Reason: The slides state that it has one binary output.     1-Introduction to Deep Learning
+16. The artificial neuron activates randomly.
+Answer: False
+Reason: It activates when more than a certain number of inputs are active.     1-Introduction to Deep Learning
+17. In the example, the neuron activates when at least two inputs are active.
+Answer: True
+Reason: This is the activation condition used in the logical-computation example.     1-Introduction to Deep Learning
+18. An AND operation requires both inputs to be active.
+Answer: True
+Reason: The output is activated only when both inputs are activated.     1-Introduction to Deep Learning
+19. An OR operation requires both inputs to be active.
+Answer: False
+Reason: OR activates when either input is activated.     1-Introduction to Deep Learning
+20. An identity function keeps the activation state of the input.
+Answer: True
+Reason: The identity network activates its output when the input is activated and keeps it off when the input is off.     1-Introduction to Deep Learning
+21. A NOT operation can produce an active output when its input is off.
+Answer: True
+Reason: The slides explain that the output is active when the input is off and vice versa.     1-Introduction to Deep Learning
+22. A Perceptron is an ANN architecture.
+Answer: True
+Reason: The slides describe the Perceptron as one of the simplest ANN architectures.     1-Introduction to Deep Learning
+23. A Perceptron is based on a Threshold Logic Unit.
+Answer: True
+Reason: The Perceptron is based on a TLU, also called an LTU.     1-Introduction to Deep Learning
+24. A TLU calculates a weighted sum of its inputs.
+Answer: True
+Reason: Calculating the weighted sum is the first major operation of the TLU.     1-Introduction to Deep Learning
+25. Every input connection in the Perceptron has an associated weight.
+Answer: True
+Reason: The slides state that each input connection is associated with a weight.     1-Introduction to Deep Learning
+26. The weighted sum is calculated using subtraction only.
+Answer: False
+Reason: The weighted sum multiplies each input by its corresponding weight and adds the results.     1-Introduction to Deep Learning
+27. The TLU applies a step function after calculating the weighted sum.
+Answer: True
+Reason: The slides state that the TLU applies a step function to the weighted sum.     1-Introduction to Deep Learning
+28. The Heaviside function outputs 0 when \(z<0\).
+Answer: True
+Reason: This is the condition shown for the Heaviside function.     1-Introduction to Deep Learning
+29. The Heaviside function outputs 1 when \(z\geq0\).
+Answer: True
+Reason: The Heaviside function gives 1 when z is greater than or equal to zero.     1-Introduction to Deep Learning
+30. The sign function is never used with Perceptrons.
+Answer: False
+Reason: The slides state that the sign function can sometimes be used.     1-Introduction to Deep Learning
+31. A single TLU can perform simple linear binary classification.
+Answer: True
+Reason: The slides explicitly describe this capability.     1-Introduction to Deep Learning
+32. A fully connected layer means every neuron is connected to every neuron in the previous layer.
+Answer: True
+Reason: This is the definition given in the slides.     1-Introduction to Deep Learning
+33. A dense layer is another name for a fully connected layer.
+Answer: True
+Reason: The slides use “fully connected layer” and “dense layer” for the same structure.     1-Introduction to Deep Learning
+34. Input neurons change the input before passing it forward.
+Answer: False
+Reason: Input neurons are passthrough neurons that output whatever input they receive.     1-Introduction to Deep Learning
+35. The bias feature is generally represented using \(x_0=1\).
+Answer: True
+Reason: The slides specify that an extra bias feature is generally added as \(x_0=1\).     1-Introduction to Deep Learning
+36. A bias neuron always outputs 0.
+Answer: False
+Reason: A bias neuron outputs 1 all the time.     1-Introduction to Deep Learning
+37. In the equation \(h_{W,b}(X)=\phi(XW+b)\), \(X\) represents input features.
+Answer: True
+Reason: X represents the matrix of input features.     1-Introduction to Deep Learning
+38. Each row of X represents a training instance.
+Answer: True
+Reason: The slides state that X has one row per instance.     1-Introduction to Deep Learning
+39. Each column of X represents a feature.
+Answer: True
+Reason: X has one column per feature.     1-Introduction to Deep Learning
+40. The weight matrix contains the connection weights except those from the bias neuron.
+Answer: True
+Reason: This is how the slides define W.     1-Introduction to Deep Learning
+41. The bias vector contains the weights connecting the bias neuron to artificial neurons.
+Answer: True
+Reason: This is the definition of the bias vector \(b\).     1-Introduction to Deep Learning
+42. The symbol \(\phi\) represents the activation function.
+Answer: True
+Reason: The slides identify \(\phi\) as the activation function.     1-Introduction to Deep Learning
+43. A Perceptron changes its weights even when its prediction is correct.
+Answer: False
+Reason: If the prediction is correct, the weights are left unchanged.     1-Introduction to Deep Learning
+44. If the Perceptron predicts too low, the weights of active inputs are increased.
+Answer: True
+Reason: The slides state that weights are increased when the prediction is too low.     1-Introduction to Deep Learning
+45. If the Perceptron predicts too high, the weights of active inputs are decreased.
+Answer: True
+Reason: The slides state that weights are decreased when the prediction is too high.     1-Introduction to Deep Learning
+46. The Perceptron learns through trial and error.
+Answer: True
+Reason: The slides explicitly describe Perceptron learning as trial and error.     1-Introduction to Deep Learning
+47. If \(z=-1.1\), the Heaviside step function produces an output of 1.
+Answer: False
+Reason: Since \(-1.1<0\), the Heaviside function produces 0.     1-Introduction to Deep Learning
+48. If the weighted sum is positive, the Heaviside function produces 1.
+Answer: True
+Reason: A positive value satisfies \(z\geq0\), so the Heaviside output is 1.     1-Introduction to Deep Learning
+49. The learning rate is represented by \(\eta\).
+Answer: True
+Reason: The Perceptron Learning Rule defines \(\eta\) as the learning rate.     1-Introduction to Deep Learning
+50. A basic Perceptron can learn every type of complex pattern.
+Answer: False
+Reason: Its decision boundary is linear, so it cannot learn complex patterns that are not linearly separable. It can converge when the training instances are linearly separable.

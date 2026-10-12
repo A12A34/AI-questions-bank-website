@@ -9,6 +9,11 @@
       "id": "iot-quiz",
       "title": "IoT Quiz (100 Questions)",
       "file": "iot-quiz.json"
+    },
+    {
+      "id": "intro-dl",
+      "title": "Introduction to Deep Learning",
+      "file": "intro-dl.json"
     }
   ]
 }

@@ -1,0 +1,1006 @@
+{
+  "id": "intro-dl",
+  "title": "Introduction to Deep Learning",
+  "questions": [
+    {
+      "id": "intro-dl-mcq-1",
+      "type": "mcq",
+      "prompt": "What is an Artificial Neural Network (ANN)?",
+      "choices": [
+        "A database used to store images",
+        "A Machine Learning model inspired by biological neurons",
+        "A programming language",
+        "A type of computer hardware"
+      ],
+      "answer": 1,
+      "explanation": "An ANN is a Machine Learning model inspired by networks of biological neurons."
+    },
+    {
+      "id": "intro-dl-mcq-2",
+      "type": "mcq",
+      "prompt": "Artificial Neural Networks are at the core of which field?",
+      "choices": [
+        "Database Management",
+        "Web Development",
+        "Deep Learning",
+        "Operating Systems"
+      ],
+      "answer": 2,
+      "explanation": "The slides state that ANNs are at the very core of Deep Learning."
+    },
+    {
+      "id": "intro-dl-mcq-3",
+      "type": "mcq",
+      "prompt": "Which characteristic makes ANNs suitable for large Machine Learning tasks?",
+      "choices": [
+        "They are versatile, powerful, and scalable",
+        "They only work with small datasets",
+        "They do not require data",
+        "They only perform mathematical addition"
+      ],
+      "answer": 0,
+      "explanation": "The slides describe ANNs as versatile, powerful, and scalable."
+    },
+    {
+      "id": "intro-dl-mcq-4",
+      "type": "mcq",
+      "prompt": "Which is an example of a task that ANNs can perform?",
+      "choices": [
+        "Classifying images",
+        "Physically repairing computers",
+        "Manufacturing CPUs",
+        "Replacing computer memory"
+      ],
+      "answer": 0,
+      "explanation": "The slides give image classification as an example of a complex task handled by ANNs."
+    },
+    {
+      "id": "intro-dl-mcq-5",
+      "type": "mcq",
+      "prompt": "Which service is given as an example of speech recognition using ANNs?",
+      "choices": [
+        "YouTube",
+        "Siri",
+        "Google Images",
+        "AlphaGo"
+      ],
+      "answer": 1,
+      "explanation": "The slides mention speech recognition services such as Siri."
+    },
+    {
+      "id": "intro-dl-mcq-6",
+      "type": "mcq",
+      "prompt": "Why have ANNs become more successful?",
+      "choices": [
+        "There is less available data",
+        "Computing power decreased",
+        "Data, computing power, algorithms, and investment improved",
+        "Neural networks stopped requiring training"
+      ],
+      "answer": 2,
+      "explanation": "The rise of ANNs resulted from more data, better hardware, improved training algorithms, and increasing investment."
+    },
+    {
+      "id": "intro-dl-mcq-7",
+      "type": "mcq",
+      "prompt": "Why is the availability of large amounts of data important?",
+      "choices": [
+        "Neural networks can use it for training",
+        "It removes the need for weights",
+        "It removes the need for predictions",
+        "It makes every problem linear"
+      ],
+      "answer": 0,
+      "explanation": "Large quantities of data are available to train neural networks."
+    },
+    {
+      "id": "intro-dl-mcq-8",
+      "type": "mcq",
+      "prompt": "What has made it possible to train large neural networks in a reasonable amount of time?",
+      "choices": [
+        "Reduced data",
+        "Increased computing power",
+        "Removing activation functions",
+        "Removing weights"
+      ],
+      "answer": 1,
+      "explanation": "Increased computing power has made training large neural networks practical."
+    },
+    {
+      "id": "intro-dl-mcq-9",
+      "type": "mcq",
+      "prompt": "Which hardware is particularly useful for neural-network computation?",
+      "choices": [
+        "GPU",
+        "Keyboard",
+        "Monitor",
+        "Printer"
+      ],
+      "answer": 0,
+      "explanation": "The slides specifically mention powerful GPU cards as part of the increase in computing power."
+    },
+    {
+      "id": "intro-dl-mcq-10",
+      "type": "mcq",
+      "prompt": "What have cloud platforms helped provide?",
+      "choices": [
+        "Access to computing power",
+        "More biological neurons",
+        "Physical storage only",
+        "Automatic elimination of errors"
+      ],
+      "answer": 0,
+      "explanation": "Cloud platforms have made computing power accessible to everyone."
+    },
+    {
+      "id": "intro-dl-mcq-11",
+      "type": "mcq",
+      "prompt": "Which factor has improved the performance of ANNs?",
+      "choices": [
+        "Improved training algorithms",
+        "Fewer training examples",
+        "Removing inputs",
+        "Removing outputs"
+      ],
+      "answer": 0,
+      "explanation": "The slides specifically identify improved training algorithms as a factor in the rise of ANNs."
+    },
+    {
+      "id": "intro-dl-mcq-12",
+      "type": "mcq",
+      "prompt": "What does the artificial neuron model?",
+      "choices": [
+        "A biological neuron in a simplified mathematical form",
+        "A computer monitor",
+        "A database table",
+        "A GPU"
+      ],
+      "answer": 0,
+      "explanation": "The artificial neuron is described as a simple model of a biological neuron."
+    },
+    {
+      "id": "intro-dl-mcq-13",
+      "type": "mcq",
+      "prompt": "In the basic artificial neuron described in the slides, inputs are:",
+      "choices": [
+        "Continuous only",
+        "Binary ON/OFF values",
+        "Text only",
+        "Images only"
+      ],
+      "answer": 1,
+      "explanation": "The artificial neuron has binary ON/OFF inputs."
+    },
+    {
+      "id": "intro-dl-mcq-14",
+      "type": "mcq",
+      "prompt": "What type of output does the basic artificial neuron produce?",
+      "choices": [
+        "Binary output",
+        "Audio output",
+        "Text paragraph",
+        "Image"
+      ],
+      "answer": 0,
+      "explanation": "The artificial neuron described has one binary output."
+    },
+    {
+      "id": "intro-dl-mcq-15",
+      "type": "mcq",
+      "prompt": "When does the basic artificial neuron activate?",
+      "choices": [
+        "When no inputs are active",
+        "When more than a certain number of inputs are active",
+        "Only when all inputs are zero",
+        "Randomly"
+      ],
+      "answer": 1,
+      "explanation": "The neuron activates its output when more than a certain number of inputs are active."
+    },
+    {
+      "id": "intro-dl-mcq-16",
+      "type": "mcq",
+      "prompt": "In the logical-computation example, when is the neuron activated?",
+      "choices": [
+        "When at least two inputs are active",
+        "When exactly zero inputs are active",
+        "When all inputs are inactive",
+        "Only when one input is active"
+      ],
+      "answer": 0,
+      "explanation": "The example assumes activation when at least two inputs are active."
+    },
+    {
+      "id": "intro-dl-mcq-17",
+      "type": "mcq",
+      "prompt": "Which logical operation activates the output only when both inputs are active?",
+      "choices": [
+        "OR",
+        "NOT",
+        "AND",
+        "Identity"
+      ],
+      "answer": 2,
+      "explanation": "In the AND operation, the output is activated only when both inputs are activated."
+    },
+    {
+      "id": "intro-dl-mcq-18",
+      "type": "mcq",
+      "prompt": "What happens in an OR operation?",
+      "choices": [
+        "Both inputs must be inactive",
+        "Either input can activate the output",
+        "The output is always zero",
+        "The output is always the opposite of both inputs"
+      ],
+      "answer": 1,
+      "explanation": "The OR network activates when either input is activated."
+    },
+    {
+      "id": "intro-dl-mcq-19",
+      "type": "mcq",
+      "prompt": "What does the identity function do?",
+      "choices": [
+        "Reverses the input",
+        "Produces the same activation state as the input",
+        "Requires both inputs to be active",
+        "Always produces 1"
+      ],
+      "answer": 1,
+      "explanation": "In the identity network, when neuron A is active, neuron C becomes active; when A is off, C is off."
+    },
+    {
+      "id": "intro-dl-mcq-20",
+      "type": "mcq",
+      "prompt": "In a NOT operation, what happens to the output when the input is OFF?",
+      "choices": [
+        "The output is OFF",
+        "The output is ON",
+        "The output is removed",
+        "Nothing happens"
+      ],
+      "answer": 1,
+      "explanation": "The slides describe NOT as producing an active output when the input is off, and vice versa."
+    },
+    {
+      "id": "intro-dl-mcq-21",
+      "type": "mcq",
+      "prompt": "What is a Perceptron?",
+      "choices": [
+        "One of the simplest ANN architectures",
+        "A type of database",
+        "A GPU",
+        "A programming language"
+      ],
+      "answer": 0,
+      "explanation": "The slides describe the Perceptron as one of the simplest ANN architectures."
+    },
+    {
+      "id": "intro-dl-mcq-22",
+      "type": "mcq",
+      "prompt": "What type of artificial neuron does a Perceptron use?",
+      "choices": [
+        "TLU",
+        "CPU",
+        "GPU",
+        "RAM"
+      ],
+      "answer": 0,
+      "explanation": "The Perceptron is based on a Threshold Logic Unit (TLU), also called an LTU."
+    },
+    {
+      "id": "intro-dl-mcq-23",
+      "type": "mcq",
+      "prompt": "What does TLU stand for?",
+      "choices": [
+        "Training Learning Utility",
+        "Threshold Logic Unit",
+        "Tensor Learning Unit",
+        "Training Logic Utility"
+      ],
+      "answer": 1,
+      "explanation": "TLU stands for Threshold Logic Unit."
+    },
+    {
+      "id": "intro-dl-mcq-24",
+      "type": "mcq",
+      "prompt": "In a Perceptron, inputs and outputs are represented as:",
+      "choices": [
+        "Numbers",
+        "Images only",
+        "Audio only",
+        "Text only"
+      ],
+      "answer": 0,
+      "explanation": "The slides state that the inputs and output are numbers rather than binary ON/OFF values."
+    },
+    {
+      "id": "intro-dl-mcq-25",
+      "type": "mcq",
+      "prompt": "What is associated with each input connection?",
+      "choices": [
+        "A weight",
+        "A color",
+        "A file",
+        "A password"
+      ],
+      "answer": 0,
+      "explanation": "Each input connection in the Perceptron is associated with a weight."
+    },
+    {
+      "id": "intro-dl-mcq-26",
+      "type": "mcq",
+      "prompt": "What does a TLU calculate first?",
+      "choices": [
+        "A weighted sum",
+        "A random number",
+        "A text string",
+        "A database query"
+      ],
+      "answer": 0,
+      "explanation": "The TLU computes a weighted sum of its inputs."
+    },
+    {
+      "id": "intro-dl-mcq-27",
+      "type": "mcq",
+      "prompt": "Which formula represents the weighted sum?",
+      "choices": [
+        "z = x + w",
+        "z = w1x1 + w2x2 + ... + wnxn",
+        "z = x / w",
+        "z = x - w"
+      ],
+      "answer": 1,
+      "explanation": "This is the weighted-sum formula shown in the slides."
+    },
+    {
+      "id": "intro-dl-mcq-28",
+      "type": "mcq",
+      "prompt": "What does the TLU apply after calculating the weighted sum?",
+      "choices": [
+        "A step function",
+        "A database filter",
+        "A text parser",
+        "A sorting algorithm"
+      ],
+      "answer": 0,
+      "explanation": "The TLU applies a step function to the weighted sum."
+    },
+    {
+      "id": "intro-dl-mcq-29",
+      "type": "mcq",
+      "prompt": "Which is the most common step function used in Perceptrons according to the slides?",
+      "choices": [
+        "Heaviside function",
+        "Identity function",
+        "OR function",
+        "AND function"
+      ],
+      "answer": 0,
+      "explanation": "The slides identify the Heaviside step function as the most common one used in Perceptrons."
+    },
+    {
+      "id": "intro-dl-mcq-30",
+      "type": "mcq",
+      "prompt": "According to the Heaviside function, what is the output when z < 0?",
+      "choices": [
+        "0",
+        "1",
+        "-1 only",
+        "2"
+      ],
+      "answer": 0,
+      "explanation": "The Heaviside function gives 0 when z < 0."
+    },
+    {
+      "id": "intro-dl-mcq-31",
+      "type": "mcq",
+      "prompt": "According to the Heaviside function, what is the output when z >= 0?",
+      "choices": [
+        "-1",
+        "0",
+        "1",
+        "2"
+      ],
+      "answer": 2,
+      "explanation": "The Heaviside function gives 1 when z >= 0."
+    },
+    {
+      "id": "intro-dl-mcq-32",
+      "type": "mcq",
+      "prompt": "What other function may sometimes be used instead of the Heaviside function?",
+      "choices": [
+        "Sign function",
+        "Square function",
+        "Average function",
+        "Sorting function"
+      ],
+      "answer": 0,
+      "explanation": "The slides state that the sign function can also be used."
+    },
+    {
+      "id": "intro-dl-mcq-33",
+      "type": "mcq",
+      "prompt": "A single TLU can be used for:",
+      "choices": [
+        "Simple linear binary classification",
+        "Only image storage",
+        "Audio compression",
+        "Database indexing"
+      ],
+      "answer": 0,
+      "explanation": "A single TLU can perform simple linear binary classification."
+    },
+    {
+      "id": "intro-dl-mcq-34",
+      "type": "mcq",
+      "prompt": "What happens if the linear combination exceeds the threshold?",
+      "choices": [
+        "The positive class is output",
+        "The negative class is always output",
+        "The network shuts down",
+        "The weights are deleted"
+      ],
+      "answer": 0,
+      "explanation": "If the result exceeds the threshold, the TLU outputs the positive class."
+    },
+    {
+      "id": "intro-dl-mcq-35",
+      "type": "mcq",
+      "prompt": "What happens if the result does not exceed the threshold?",
+      "choices": [
+        "The negative class is output",
+        "The positive class is always output",
+        "The input is deleted",
+        "The network stops training"
+      ],
+      "answer": 0,
+      "explanation": "Otherwise, the TLU outputs the negative class."
+    },
+    {
+      "id": "intro-dl-mcq-36",
+      "type": "mcq",
+      "prompt": "What is a fully connected layer?",
+      "choices": [
+        "Every neuron connects to every neuron in the previous layer",
+        "Only one neuron has connections",
+        "No neurons have connections",
+        "Only bias neurons are connected"
+      ],
+      "answer": 0,
+      "explanation": "A layer is fully connected when every neuron connects to every neuron in the previous layer."
+    },
+    {
+      "id": "intro-dl-mcq-37",
+      "type": "mcq",
+      "prompt": "What is another name for a fully connected layer?",
+      "choices": [
+        "Dense layer",
+        "Empty layer",
+        "Binary layer",
+        "Input-only layer"
+      ],
+      "answer": 0,
+      "explanation": "The slides use both “fully connected layer” and “dense layer.”"
+    },
+    {
+      "id": "intro-dl-mcq-38",
+      "type": "mcq",
+      "prompt": "What do input neurons do?",
+      "choices": [
+        "They output whatever input they receive",
+        "They always output zero",
+        "They always output one",
+        "They change all weights"
+      ],
+      "answer": 0,
+      "explanation": "Input neurons are passthrough neurons that output whatever input they are fed."
+    },
+    {
+      "id": "intro-dl-mcq-39",
+      "type": "mcq",
+      "prompt": "What is the bias feature generally set to?",
+      "choices": [
+        "x0 = 0",
+        "x0 = 1",
+        "x0 = -1",
+        "x0 = 10"
+      ],
+      "answer": 1,
+      "explanation": "The slides state that an extra bias feature is generally added with x0 = 1."
+    },
+    {
+      "id": "intro-dl-mcq-40",
+      "type": "mcq",
+      "prompt": "What does a bias neuron output?",
+      "choices": [
+        "0 all the time",
+        "1 all the time",
+        "Random values",
+        "The input value"
+      ],
+      "answer": 1,
+      "explanation": "The bias neuron outputs 1 all the time."
+    },
+    {
+      "id": "intro-dl-mcq-41",
+      "type": "mcq",
+      "prompt": "In h(W,b)(X) = phi(XW + b), what does X represent?",
+      "choices": [
+        "Matrix of input features",
+        "Bias only",
+        "Output only",
+        "Learning rate"
+      ],
+      "answer": 0,
+      "explanation": "X represents the matrix of input features."
+    },
+    {
+      "id": "intro-dl-mcq-42",
+      "type": "mcq",
+      "prompt": "In the input matrix X, what does each row represent?",
+      "choices": [
+        "An instance",
+        "A weight",
+        "An output neuron",
+        "A bias"
+      ],
+      "answer": 0,
+      "explanation": "X has one row per instance."
+    },
+    {
+      "id": "intro-dl-mcq-43",
+      "type": "mcq",
+      "prompt": "In X, what does each column represent?",
+      "choices": [
+        "A feature",
+        "A bias neuron",
+        "An output",
+        "A learning rate"
+      ],
+      "answer": 0,
+      "explanation": "X has one column per feature."
+    },
+    {
+      "id": "intro-dl-mcq-44",
+      "type": "mcq",
+      "prompt": "What does the weight matrix W contain?",
+      "choices": [
+        "Connection weights",
+        "Only input values",
+        "Only target outputs",
+        "Only learning rates"
+      ],
+      "answer": 0,
+      "explanation": "W contains the connection weights except those from the bias neuron."
+    },
+    {
+      "id": "intro-dl-mcq-45",
+      "type": "mcq",
+      "prompt": "What does the bias vector b contain?",
+      "choices": [
+        "Weights connected from the bias neuron to artificial neurons",
+        "Input features",
+        "Target values",
+        "Training examples"
+      ],
+      "answer": 0,
+      "explanation": "The bias vector contains the connection weights between the bias neuron and artificial neurons."
+    },
+    {
+      "id": "intro-dl-mcq-46",
+      "type": "mcq",
+      "prompt": "What is phi in the equation?",
+      "choices": [
+        "Activation function",
+        "Input matrix",
+        "Weight matrix",
+        "Learning rate"
+      ],
+      "answer": 0,
+      "explanation": "The slides identify phi as the activation function."
+    },
+    {
+      "id": "intro-dl-mcq-47",
+      "type": "mcq",
+      "prompt": "How does a Perceptron learn?",
+      "choices": [
+        "By adjusting its connections when it makes mistakes",
+        "By never changing its weights",
+        "By deleting incorrect training examples",
+        "By randomly changing every weight"
+      ],
+      "answer": 0,
+      "explanation": "The Perceptron adjusts its connections when it makes mistakes."
+    },
+    {
+      "id": "intro-dl-mcq-48",
+      "type": "mcq",
+      "prompt": "What happens if the Perceptron predicts 0 when the correct answer is 1?",
+      "choices": [
+        "Relevant active-input weights are increased",
+        "All weights are deleted",
+        "Relevant weights are decreased",
+        "Training stops"
+      ],
+      "answer": 0,
+      "explanation": "If the prediction is too low, the weights for active inputs are increased."
+    },
+    {
+      "id": "intro-dl-mcq-49",
+      "type": "mcq",
+      "prompt": "What happens if the prediction is correct?",
+      "choices": [
+        "The weights are left unchanged",
+        "All weights are doubled",
+        "All weights become zero",
+        "The input is removed"
+      ],
+      "answer": 0,
+      "explanation": "Correct predictions leave the weights unchanged."
+    },
+    {
+      "id": "intro-dl-mcq-50",
+      "type": "mcq",
+      "prompt": "Why can a basic Perceptron not learn complex patterns?",
+      "choices": [
+        "Its decision boundary is linear",
+        "It has too much data",
+        "It has no inputs",
+        "It always uses random weights"
+      ],
+      "answer": 0,
+      "explanation": "The decision boundary of each output neuron is linear, making the basic Perceptron unable to learn complex patterns."
+    },
+    {
+      "id": "intro-dl-tf-1",
+      "type": "tf",
+      "prompt": "An ANN is a Machine Learning model inspired by biological neurons.",
+      "answer": true,
+      "explanation": "The slides define an ANN as a Machine Learning model inspired by biological neurons."
+    },
+    {
+      "id": "intro-dl-tf-2",
+      "type": "tf",
+      "prompt": "ANNs are unrelated to Deep Learning.",
+      "answer": false,
+      "explanation": "ANNs are described as being at the very core of Deep Learning."
+    },
+    {
+      "id": "intro-dl-tf-3",
+      "type": "tf",
+      "prompt": "ANNs can be used for large and complex Machine Learning tasks.",
+      "answer": true,
+      "explanation": "Their versatility, power, and scalability make them suitable for large and complex tasks."
+    },
+    {
+      "id": "intro-dl-tf-4",
+      "type": "tf",
+      "prompt": "ANNs can be used for image classification.",
+      "answer": true,
+      "explanation": "Image classification is specifically given as an ANN application."
+    },
+    {
+      "id": "intro-dl-tf-5",
+      "type": "tf",
+      "prompt": "ANNs can be used for speech recognition.",
+      "answer": true,
+      "explanation": "Speech recognition is one of the examples provided in the slides."
+    },
+    {
+      "id": "intro-dl-tf-6",
+      "type": "tf",
+      "prompt": "ANNs can be used for video recommendations.",
+      "answer": true,
+      "explanation": "The slides mention recommending videos as an ANN application."
+    },
+    {
+      "id": "intro-dl-tf-7",
+      "type": "tf",
+      "prompt": "More available data has helped ANNs become more successful.",
+      "answer": true,
+      "explanation": "The growth of available data is listed as an important factor."
+    },
+    {
+      "id": "intro-dl-tf-8",
+      "type": "tf",
+      "prompt": "Increased computing power has made training large neural networks more practical.",
+      "answer": true,
+      "explanation": "Increased computing power allows large neural networks to be trained in a reasonable amount of time."
+    },
+    {
+      "id": "intro-dl-tf-9",
+      "type": "tf",
+      "prompt": "GPUs have no connection to the increase in computing power mentioned in the slides.",
+      "answer": false,
+      "explanation": "The slides specifically mention powerful GPU cards as part of the increase in computing power."
+    },
+    {
+      "id": "intro-dl-tf-10",
+      "type": "tf",
+      "prompt": "Cloud platforms have helped make computing power more accessible.",
+      "answer": true,
+      "explanation": "The slides state that cloud platforms have made this computing power accessible to everyone."
+    },
+    {
+      "id": "intro-dl-tf-11",
+      "type": "tf",
+      "prompt": "Training algorithms have improved.",
+      "answer": true,
+      "explanation": "Improved training algorithms are listed as one reason for the rise of ANNs."
+    },
+    {
+      "id": "intro-dl-tf-12",
+      "type": "tf",
+      "prompt": "The slides state that theoretical limitations always prevent ANNs from working.",
+      "answer": false,
+      "explanation": "Some theoretical limitations were found to be less harmful in practice than expected."
+    },
+    {
+      "id": "intro-dl-tf-13",
+      "type": "tf",
+      "prompt": "The artificial neuron is a simplified model of a biological neuron.",
+      "answer": true,
+      "explanation": "The slides describe the artificial neuron as a simple model of a biological neuron."
+    },
+    {
+      "id": "intro-dl-tf-14",
+      "type": "tf",
+      "prompt": "The basic artificial neuron described has binary inputs.",
+      "answer": true,
+      "explanation": "Its inputs are binary ON/OFF values."
+    },
+    {
+      "id": "intro-dl-tf-15",
+      "type": "tf",
+      "prompt": "The basic artificial neuron described has a binary output.",
+      "answer": true,
+      "explanation": "The slides state that it has one binary output."
+    },
+    {
+      "id": "intro-dl-tf-16",
+      "type": "tf",
+      "prompt": "The artificial neuron activates randomly.",
+      "answer": false,
+      "explanation": "It activates when more than a certain number of inputs are active."
+    },
+    {
+      "id": "intro-dl-tf-17",
+      "type": "tf",
+      "prompt": "In the example, the neuron activates when at least two inputs are active.",
+      "answer": true,
+      "explanation": "This is the activation condition used in the logical-computation example."
+    },
+    {
+      "id": "intro-dl-tf-18",
+      "type": "tf",
+      "prompt": "An AND operation requires both inputs to be active.",
+      "answer": true,
+      "explanation": "The output is activated only when both inputs are activated."
+    },
+    {
+      "id": "intro-dl-tf-19",
+      "type": "tf",
+      "prompt": "An OR operation requires both inputs to be active.",
+      "answer": false,
+      "explanation": "OR activates when either input is activated."
+    },
+    {
+      "id": "intro-dl-tf-20",
+      "type": "tf",
+      "prompt": "An identity function keeps the activation state of the input.",
+      "answer": true,
+      "explanation": "The identity network activates its output when the input is activated and keeps it off when the input is off."
+    },
+    {
+      "id": "intro-dl-tf-21",
+      "type": "tf",
+      "prompt": "A NOT operation can produce an active output when its input is off.",
+      "answer": true,
+      "explanation": "The slides explain that the output is active when the input is off and vice versa."
+    },
+    {
+      "id": "intro-dl-tf-22",
+      "type": "tf",
+      "prompt": "A Perceptron is an ANN architecture.",
+      "answer": true,
+      "explanation": "The slides describe the Perceptron as one of the simplest ANN architectures."
+    },
+    {
+      "id": "intro-dl-tf-23",
+      "type": "tf",
+      "prompt": "A Perceptron is based on a Threshold Logic Unit.",
+      "answer": true,
+      "explanation": "The Perceptron is based on a TLU, also called an LTU."
+    },
+    {
+      "id": "intro-dl-tf-24",
+      "type": "tf",
+      "prompt": "A TLU calculates a weighted sum of its inputs.",
+      "answer": true,
+      "explanation": "Calculating the weighted sum is the first major operation of the TLU."
+    },
+    {
+      "id": "intro-dl-tf-25",
+      "type": "tf",
+      "prompt": "Every input connection in the Perceptron has an associated weight.",
+      "answer": true,
+      "explanation": "The slides state that each input connection is associated with a weight."
+    },
+    {
+      "id": "intro-dl-tf-26",
+      "type": "tf",
+      "prompt": "The weighted sum is calculated using subtraction only.",
+      "answer": false,
+      "explanation": "The weighted sum multiplies each input by its corresponding weight and adds the results."
+    },
+    {
+      "id": "intro-dl-tf-27",
+      "type": "tf",
+      "prompt": "The TLU applies a step function after calculating the weighted sum.",
+      "answer": true,
+      "explanation": "The slides state that the TLU applies a step function to the weighted sum."
+    },
+    {
+      "id": "intro-dl-tf-28",
+      "type": "tf",
+      "prompt": "The Heaviside function outputs 0 when z < 0.",
+      "answer": true,
+      "explanation": "This is the condition shown for the Heaviside function."
+    },
+    {
+      "id": "intro-dl-tf-29",
+      "type": "tf",
+      "prompt": "The Heaviside function outputs 1 when z >= 0.",
+      "answer": true,
+      "explanation": "The Heaviside function gives 1 when z is greater than or equal to zero."
+    },
+    {
+      "id": "intro-dl-tf-30",
+      "type": "tf",
+      "prompt": "The sign function is never used with Perceptrons.",
+      "answer": false,
+      "explanation": "The slides state that the sign function can sometimes be used."
+    },
+    {
+      "id": "intro-dl-tf-31",
+      "type": "tf",
+      "prompt": "A single TLU can perform simple linear binary classification.",
+      "answer": true,
+      "explanation": "The slides explicitly describe this capability."
+    },
+    {
+      "id": "intro-dl-tf-32",
+      "type": "tf",
+      "prompt": "A fully connected layer means every neuron is connected to every neuron in the previous layer.",
+      "answer": true,
+      "explanation": "This is the definition given in the slides."
+    },
+    {
+      "id": "intro-dl-tf-33",
+      "type": "tf",
+      "prompt": "A dense layer is another name for a fully connected layer.",
+      "answer": true,
+      "explanation": "The slides use “fully connected layer” and “dense layer” for the same structure."
+    },
+    {
+      "id": "intro-dl-tf-34",
+      "type": "tf",
+      "prompt": "Input neurons change the input before passing it forward.",
+      "answer": false,
+      "explanation": "Input neurons are passthrough neurons that output whatever input they receive."
+    },
+    {
+      "id": "intro-dl-tf-35",
+      "type": "tf",
+      "prompt": "The bias feature is generally represented using x0 = 1.",
+      "answer": true,
+      "explanation": "The slides specify that an extra bias feature is generally added as x0 = 1."
+    },
+    {
+      "id": "intro-dl-tf-36",
+      "type": "tf",
+      "prompt": "A bias neuron always outputs 0.",
+      "answer": false,
+      "explanation": "A bias neuron outputs 1 all the time."
+    },
+    {
+      "id": "intro-dl-tf-37",
+      "type": "tf",
+      "prompt": "In the equation h(W,b)(X) = phi(XW + b), X represents input features.",
+      "answer": true,
+      "explanation": "X represents the matrix of input features."
+    },
+    {
+      "id": "intro-dl-tf-38",
+      "type": "tf",
+      "prompt": "Each row of X represents a training instance.",
+      "answer": true,
+      "explanation": "The slides state that X has one row per instance."
+    },
+    {
+      "id": "intro-dl-tf-39",
+      "type": "tf",
+      "prompt": "Each column of X represents a feature.",
+      "answer": true,
+      "explanation": "X has one column per feature."
+    },
+    {
+      "id": "intro-dl-tf-40",
+      "type": "tf",
+      "prompt": "The weight matrix contains the connection weights except those from the bias neuron.",
+      "answer": true,
+      "explanation": "This is how the slides define W."
+    },
+    {
+      "id": "intro-dl-tf-41",
+      "type": "tf",
+      "prompt": "The bias vector contains the weights connecting the bias neuron to artificial neurons.",
+      "answer": true,
+      "explanation": "This is the definition of the bias vector b."
+    },
+    {
+      "id": "intro-dl-tf-42",
+      "type": "tf",
+      "prompt": "The symbol phi represents the activation function.",
+      "answer": true,
+      "explanation": "The slides identify phi as the activation function."
+    },
+    {
+      "id": "intro-dl-tf-43",
+      "type": "tf",
+      "prompt": "A Perceptron changes its weights even when its prediction is correct.",
+      "answer": false,
+      "explanation": "If the prediction is correct, the weights are left unchanged."
+    },
+    {
+      "id": "intro-dl-tf-44",
+      "type": "tf",
+      "prompt": "If the Perceptron predicts too low, the weights of active inputs are increased.",
+      "answer": true,
+      "explanation": "The slides state that weights are increased when the prediction is too low."
+    },
+    {
+      "id": "intro-dl-tf-45",
+      "type": "tf",
+      "prompt": "If the Perceptron predicts too high, the weights of active inputs are decreased.",
+      "answer": true,
+      "explanation": "The slides state that weights are decreased when the prediction is too high."
+    },
+    {
+      "id": "intro-dl-tf-46",
+      "type": "tf",
+      "prompt": "The Perceptron learns through trial and error.",
+      "answer": true,
+      "explanation": "The slides explicitly describe Perceptron learning as trial and error."
+    },
+    {
+      "id": "intro-dl-tf-47",
+      "type": "tf",
+      "prompt": "If z = -1.1, the Heaviside step function produces an output of 1.",
+      "answer": false,
+      "explanation": "Since -1.1 < 0, the Heaviside function produces 0."
+    },
+    {
+      "id": "intro-dl-tf-48",
+      "type": "tf",
+      "prompt": "If the weighted sum is positive, the Heaviside function produces 1.",
+      "answer": true,
+      "explanation": "A positive value satisfies z >= 0, so the Heaviside output is 1."
+    },
+    {
+      "id": "intro-dl-tf-49",
+      "type": "tf",
+      "prompt": "The learning rate is represented by eta.",
+      "answer": true,
+      "explanation": "The Perceptron Learning Rule defines eta as the learning rate."
+    },
+    {
+      "id": "intro-dl-tf-50",
+      "type": "tf",
+      "prompt": "A basic Perceptron can learn every type of complex pattern.",
+      "answer": false,
+      "explanation": "Its decision boundary is linear, so it cannot learn complex patterns that are not linearly separable. It can converge when the training instances are linearly separable."
+    }
+  ]
+}
