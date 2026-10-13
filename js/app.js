@@ -19,6 +19,8 @@ const els = {
   scoreBanner: document.getElementById("score-banner"),
   list: document.getElementById("question-list"),
   jumpGrid: document.getElementById("jump-grid"),
+  jumpPrev: document.getElementById("jump-prev"),
+  jumpNext: document.getElementById("jump-next"),
   emptyFilter: document.getElementById("empty-filter"),
   btnBack: document.getElementById("btn-back"),
   btnSubmit: document.getElementById("btn-submit"),
@@ -45,6 +47,9 @@ const state = {
 };
 
 let observer = null;
+let jumpButtons = new Map();
+let visibleJumpIds = [];
+let lastActiveId = null;
 
 function readStored(key, fallback) {
   try {
@@ -302,6 +307,8 @@ function jumpClass(question) {
 
 function updateJumpNav() {
   const items = visibleQuestions();
+  visibleJumpIds = items.map(({ question }) => question.id);
+  jumpButtons = new Map();
   els.jumpGrid.innerHTML = "";
   items.forEach(({ question, index }) => {
     const button = document.createElement("button");
@@ -310,16 +317,52 @@ function updateJumpNav() {
     button.textContent = String(index + 1);
     button.title = state.bookmarks.has(question.id) ? `Question ${index + 1} (bookmarked)` : `Question ${index + 1}`;
     button.addEventListener("click", () => jumpTo(question.id));
+    jumpButtons.set(question.id, button);
     els.jumpGrid.append(button);
   });
-  els.emptyFilter.hidden = !(state.bookmarksOnly && items.length === 0);
+  refreshJumpNav();
+}
+
+function refreshJumpNav() {
+  visibleQuestions().forEach(({ question }) => {
+    const button = jumpButtons.get(question.id);
+    if (button) button.className = jumpClass(question);
+  });
+  const visibleItems = visibleJumpIds.length;
+  const activeIndex = visibleJumpIds.indexOf(state.activeId);
+  els.emptyFilter.hidden = !(state.bookmarksOnly && visibleItems === 0);
+  if (els.jumpPrev) els.jumpPrev.disabled = activeIndex <= 0;
+  if (els.jumpNext) els.jumpNext.disabled = activeIndex === -1 || activeIndex >= visibleItems - 1;
+  lastActiveId = state.activeId;
+}
+
+function refreshActiveJumpNav() {
+  [lastActiveId, state.activeId].forEach((id) => {
+    if (!id) return;
+    const question = state.questions.find((item) => item.id === id);
+    const button = jumpButtons.get(id);
+    if (question && button) button.className = jumpClass(question);
+  });
+  const visibleItems = visibleJumpIds.length;
+  const activeIndex = visibleJumpIds.indexOf(state.activeId);
+  if (els.jumpPrev) els.jumpPrev.disabled = activeIndex <= 0;
+  if (els.jumpNext) els.jumpNext.disabled = activeIndex === -1 || activeIndex >= visibleItems - 1;
+  lastActiveId = state.activeId;
+}
+
+function moveActiveQuestion(step) {
+  if (!visibleJumpIds.length) return;
+  const currentIndex = visibleJumpIds.indexOf(state.activeId);
+  const fallbackIndex = step > 0 ? -1 : visibleJumpIds.length;
+  const nextIndex = Math.min(Math.max((currentIndex === -1 ? fallbackIndex : currentIndex) + step, 0), visibleJumpIds.length - 1);
+  jumpTo(visibleJumpIds[nextIndex]);
 }
 
 function jumpTo(id) {
   const card = document.getElementById(`question-${id}`);
   if (!card) return;
   state.activeId = id;
-  updateJumpNav();
+  refreshActiveJumpNav();
   card.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
@@ -330,8 +373,11 @@ function applyVisibility() {
     const show = !state.bookmarksOnly || state.bookmarks.has(question.id);
     card.classList.toggle("is-hidden", !show);
   });
+  const visibleIds = visibleQuestions().map(({ question }) => question.id);
+  if (visibleIds.length && !visibleIds.includes(state.activeId)) {
+    state.activeId = visibleIds[0];
+  }
   updateJumpNav();
-  els.emptyFilter.hidden = !(state.bookmarksOnly && visibleQuestions().length === 0);
 }
 
 function renderQuiz() {
@@ -631,7 +677,7 @@ function checkQuestion(question, index) {
   }
   state.revealed[question.id] = true;
   renderQuestionCard(article, question, index);
-  updateJumpNav();
+  refreshJumpNav();
 }
 
 function submitTest() {
@@ -651,7 +697,7 @@ function observeQuestions() {
       const id = visible.target.dataset.id;
       if (id && id !== state.activeId) {
         state.activeId = id;
-        updateJumpNav();
+        refreshActiveJumpNav();
       }
     },
     { rootMargin: "-20% 0px -55% 0px", threshold: [0.15, 0.4, 0.7] },
@@ -686,6 +732,12 @@ function bindControls() {
     persist(STORAGE_KEYS.bookmarksOnly, state.bookmarksOnly ? "1" : "0");
     if (state.bank) applyVisibility();
   });
+  if (els.jumpPrev) {
+    els.jumpPrev.addEventListener("click", () => moveActiveQuestion(-1));
+  }
+  if (els.jumpNext) {
+    els.jumpNext.addEventListener("click", () => moveActiveQuestion(1));
+  }
   els.btnBack.addEventListener("click", () => {
     state.bank = null;
     renderHome();

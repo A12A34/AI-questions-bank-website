@@ -239,7 +239,10 @@ h1 {
   box-shadow: var(--shadow);
   width: 100%;
   max-width: 150px;
+  max-height: calc(100vh - 2rem);
   align-self: start;
+  display: flex;
+  flex-direction: column;
 }
 
 .quiz-content {
@@ -256,6 +259,38 @@ h1 {
   margin-bottom: 0.75rem;
 }
 
+.jump-stepper {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.35rem;
+  width: 100%;
+}
+
+.jump-step-btn {
+  min-width: 0;
+  height: 2rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.jump-step-btn:hover:not(:disabled),
+.jump-step-btn:focus-visible {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.jump-step-btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
 .jump-label {
   margin: 0;
   font-size: 0.92rem;
@@ -267,6 +302,10 @@ h1 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.35rem;
+  max-height: calc(100vh - 9.5rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding-right: 0.15rem;
 }
 
 .jump-btn {
