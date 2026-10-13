@@ -1,0 +1,947 @@
+Part 1 — 50 Multiple-Choice Questions
+1. What is light?
+A. A type of sound wave
+B. A form of energy and an electromagnetic wave
+C. A mechanical wave
+D. A type of matter  
+Answer: B
+Reason: Light is electromagnetic radiation that carries energy.
+2. What does light need to travel through empty space?
+A. Air
+B. Water
+C. A material medium
+D. Nothing  
+Answer: D
+Reason: Electromagnetic waves can travel through a vacuum.
+3. What is the speed of light in vacuum?
+A. 3 × 10^6 m/s
+B. 3 × 10^7 m/s
+C. 3 × 10^8 m/s
+D. 3 × 10^9 m/s  
+Answer: C
+Reason: The speed of light is approximately 3 × 10^8 m/s.
+4. Which symbol represents the speed of light?
+A. h
+B. c
+C. f
+D. λ  
+Answer: B
+Reason: c represents the speed of light in vacuum.
+5. Which equation relates speed, frequency, and wavelength?
+A. c = fλ
+B. E = mc²
+C. E = hf
+D. p = mv  
+Answer: A
+Reason: The wave equation is c = fλ.
+6. What is wavelength?
+A. Number of waves per second
+B. Maximum height of a wave
+C. Distance between neighbouring crests
+D. Speed of a wave  
+Answer: C
+Reason: Wavelength is the distance from one crest to the next.
+7. What is frequency measured in?
+A. Metres
+B. Joules
+C. Hertz
+D. Watts  
+Answer: C
+Reason: Frequency is measured in hertz (Hz), meaning cycles per second.
+8. What does a larger amplitude of visible light generally mean?
+A. Lower speed
+B. Brighter light
+C. Higher frequency
+D. Longer wavelength  
+Answer: B
+Reason: Greater amplitude corresponds to greater brightness.
+9. Light is classified as what type of wave?
+A. Longitudinal
+B. Transverse
+C. Mechanical
+D. Sound  
+Answer: B
+Reason: The electric and magnetic fields vibrate perpendicular to the direction of travel.
+10. In an electromagnetic wave, the electric and magnetic fields are:
+A. Parallel to each other
+B. At right angles to each other
+C. In the same direction as travel
+D. Not related  
+Answer: B
+Reason: The electric and magnetic fields are perpendicular to each other and to the direction of travel.
+11. Which phenomenon is best explained by the ray model?
+A. Diffraction
+B. Interference
+C. Reflection
+D. Polarisation  
+Answer: C
+Reason: Reflection can be described using rays.
+12. What is the law of reflection?
+A. i + r = 90°
+B. i = r
+C. i = 2r
+D. i = r/2  
+Answer: B
+Reason: The angle of incidence equals the angle of reflection.
+13. What causes refraction?
+A. Light disappears
+B. Light changes speed between media
+C. Light becomes sound
+D. Light stops vibrating  
+Answer: B
+Reason: Light bends because its speed changes when it enters a different medium.
+14. Which equation gives refractive index?
+A. n = v/c
+B. n = c/v
+C. n = cv
+D. n = c + v  
+Answer: B
+Reason: n = c/v.
+15. When light enters glass from air, its frequency:
+A. Increases
+B. Decreases
+C. Stays the same
+D. Becomes zero  
+Answer: C
+Reason: Frequency does not change when light enters another medium.
+16. When light enters glass from air, its wavelength generally:
+A. Increases
+B. Decreases
+C. Stays exactly the same
+D. Becomes infinite  
+Answer: B
+Reason: The speed decreases while frequency stays constant, so wavelength decreases.
+17. Which phenomenon separates white light into different colours?
+A. Reflection
+B. Polarisation
+C. Dispersion
+D. Diffraction  
+Answer: C
+Reason: Dispersion occurs because different wavelengths bend by different amounts.
+18. Which phenomenon produces bright and dark fringes?
+A. Interference
+B. Reflection
+C. Refraction
+D. Absorption  
+Answer: A
+Reason: Interference produces regions of constructive and destructive interference.
+19. Diffraction is the:
+A. Absorption of light
+B. Spreading of waves around edges or through narrow gaps
+C. Reflection of light
+D. Conversion of light to heat  
+Answer: B
+Reason: Diffraction causes waves to spread after passing through small openings or around obstacles.
+20. What does polarisation show about light?
+A. Light is longitudinal
+B. Light is transverse
+C. Light has no energy
+D. Light needs air  
+Answer: B
+Reason: Only transverse waves can be polarised.
+21. Which is the correct order of the electromagnetic spectrum from lowest to highest frequency?
+A. Gamma, X-ray, UV, visible, IR, microwave, radio
+B. Radio, microwave, IR, visible, UV, X-ray, gamma
+C. Radio, IR, microwave, visible, X-ray, UV, gamma
+D. Visible, radio, microwave, IR, UV, gamma, X-ray  
+Answer: B
+Reason: Frequency increases from radio waves toward gamma rays.
+22. Which electromagnetic wave has the longest wavelength?
+A. Gamma
+B. X-ray
+C. Radio
+D. UV  
+Answer: C
+Reason: Radio waves have the longest wavelengths.
+23. Which electromagnetic wave has the highest frequency?
+A. Radio
+B. Visible
+C. X-ray
+D. Gamma  
+Answer: D
+Reason: Gamma rays have the highest frequencies.
+24. Which has the greatest photon energy?
+A. Radio
+B. Infrared
+C. Visible light
+D. Gamma rays  
+Answer: D
+Reason: Photon energy increases with frequency: E = hf.
+25. Which visible colour has greater photon energy?
+A. Red
+B. Orange
+C. Blue
+D. Red and blue have the same energy  
+Answer: C
+Reason: Blue has a higher frequency and therefore greater photon energy.
+26. What is the photon energy equation?
+A. E = hf
+B. E = h/f
+C. E = f/h
+D. E = mc²  
+Answer: A
+Reason: Photon energy is E = hf.
+27. Which equation can calculate photon energy using wavelength in nm?
+A. E = 1240λ
+B. E = 1240/λ
+C. E = λ/1240
+D. E = 1240 + λ  
+Answer: B
+Reason: E(eV) = 1240/λ(nm).
+28. What is a photon?
+A. A packet of light energy
+B. A proton
+C. A neutron
+D. A sound wave  
+Answer: A
+Reason: A photon is a discrete packet of electromagnetic energy.
+29. What is a blackbody?
+A. An object that reflects all radiation
+B. An ideal object that absorbs all incident radiation
+C. An object that emits only visible light
+D. An object with no temperature  
+Answer: B
+Reason: A blackbody absorbs all radiation falling on it.
+30. What determines the radiation emitted by an ideal blackbody?
+A. Its colour only
+B. Its material only
+C. Its temperature
+D. Its shape only  
+Answer: C
+Reason: Blackbody radiation depends only on temperature.
+31. As the temperature of a blackbody increases, the peak wavelength:
+A. Gets longer
+B. Gets shorter
+C. Does not change
+D. Becomes zero  
+Answer: B
+Reason: Hotter objects peak at shorter wavelengths.
+32. Which object is approximately a blackbody?
+A. The Sun
+B. A mirror
+C. A transparent window
+D. A cold piece of glass  
+Answer: A
+Reason: The Sun is a good approximate blackbody.
+33. A hotter star generally appears:
+A. More red
+B. More blue-white
+C. Completely black
+D. Invisible  
+Answer: B
+Reason: Higher temperatures shift the peak toward shorter, bluer wavelengths.
+34. What was the ultraviolet catastrophe?
+A. Light disappearing in ultraviolet
+B. Classical theory predicting unlimited energy at short wavelengths
+C. UV light being unable to travel
+D. UV light becoming sound  
+Answer: B
+Reason: Classical physics predicted increasing energy toward very short wavelengths, contrary to experiment.
+35. Who introduced the idea that energy is emitted in discrete packets?
+A. Newton
+B. Planck
+C. Hertz
+D. Young  
+Answer: B
+Reason: Planck proposed energy quanta to explain blackbody radiation.
+36. What does E = hf represent in blackbody/quantum theory?
+A. Photon energy
+B. Electron momentum
+C. Wave speed
+D. Refractive index  
+Answer: A
+Reason: Energy is quantised in packets with energy hf.
+37. What is the photoelectric effect?
+A. Light bending in glass
+B. Light knocking electrons out of a metal
+C. Light splitting into colours
+D. Electrons producing sound  
+Answer: B
+Reason: The photoelectric effect is the emission of electrons from a metal due to light.
+38. What determines the maximum kinetic energy of photoelectrons?
+A. Light intensity only
+B. Frequency of the light
+C. Distance from the metal
+D. Metal colour only  
+Answer: B
+Reason: KEmax = hf − φ, so frequency determines photon energy and electron kinetic energy.
+39. What determines how many photoelectrons are emitted?
+A. Intensity, when frequency is above threshold
+B. Frequency only
+C. Work function only
+D. Wavelength only  
+Answer: A
+Reason: Greater intensity means more photons and therefore more emitted electrons.
+40. What is the work function?
+A. Maximum electron energy
+B. Minimum energy needed to remove an electron from a metal
+C. Energy of a photon after emission
+D. Speed of an electron  
+Answer: B
+Reason: The work function φ is the minimum energy needed to free an electron.
+41. What is threshold frequency?
+A. The highest possible frequency
+B. The minimum frequency needed to eject electrons
+C. The frequency of visible light only
+D. The frequency of sound  
+Answer: B
+Reason: Below the threshold frequency, photoemission does not occur.
+42. Which equation represents the photoelectric effect?
+A. KEmax = hf − φ
+B. KEmax = hf + φ
+C. KEmax = φ − hf
+D. KEmax = h/f  
+Answer: A
+Reason: Photon energy first supplies the work function; the remainder becomes kinetic energy.
+43. What is stopping potential?
+A. Voltage that accelerates the fastest electrons
+B. Reverse voltage just sufficient to stop the fastest photoelectrons
+C. Voltage across a resistor
+D. Voltage needed to create photons  
+Answer: B
+Reason: The stopping potential prevents even the fastest photoelectrons from reaching the collector.
+44. What happens if light frequency is below the threshold frequency?
+A. More electrons are emitted if brightness increases
+B. Electrons eventually come out
+C. No photoelectrons are emitted
+D. Electrons become faster  
+Answer: C
+Reason: Each photon lacks enough energy to overcome the work function.
+45. What did de Broglie propose?
+A. Only light can behave as a wave
+B. Matter particles can also behave as waves
+C. Electrons have no mass
+D. Light has no energy  
+Answer: B
+Reason: de Broglie proposed matter waves with λ = h/p.
+46. What is the de Broglie wavelength equation?
+A. λ = hp
+B. λ = h/p
+C. λ = p/h
+D. λ = hf  
+Answer: B
+Reason: Matter-wave wavelength is inversely proportional to momentum.
+47. If a particle's momentum increases, its de Broglie wavelength:
+A. Increases
+B. Decreases
+C. Stays the same
+D. Becomes infinite  
+Answer: B
+Reason: λ = h/p.
+48. Which experiment demonstrates electron diffraction?
+A. Young's experiment
+B. Davisson-Germer experiment
+C. Photoelectric experiment
+D. Millikan experiment  
+Answer: B
+Reason: Davisson-Germer demonstrated electron diffraction. The study guide marks this experiment as NOT in the exam.
+49. Which is evidence that light behaves as a wave?
+A. Photoelectric effect
+B. Blackbody radiation
+C. Interference
+D. Photon absorption  
+Answer: C
+Reason: Interference is a wave phenomenon.
+50. Which statement best describes wave-particle duality?
+A. Light is always only a wave
+B. Matter is always only a particle
+C. Both light and matter can show wave and particle behaviour
+D. Waves and particles are completely unrelated  
+Answer: C
+Reason: Experiments show both light and matter have wave-like and particle-like behaviour.
+Part 2 — 50 True/False Questions
+51. Light can travel through a vacuum.
+Answer: True
+Reason: Electromagnetic waves do not require a material medium.
+52. Sound and light both require a material medium.
+Answer: False
+Reason: Sound needs a medium, but light can travel through vacuum.
+53. The speed of light in vacuum is approximately 3 × 10^8 m/s.
+Answer: True
+Reason: This is the value of c.
+54. Light is a longitudinal wave.
+Answer: False
+Reason: Light is a transverse electromagnetic wave.
+55. The electric and magnetic fields of an electromagnetic wave are perpendicular to each other.
+Answer: True
+Reason: They oscillate at right angles to each other.
+56. Frequency is measured in metres.
+Answer: False
+Reason: Frequency is measured in hertz.
+57. Wavelength is measured in metres.
+Answer: True
+Reason: The SI unit of wavelength is metre.
+58. The amplitude of visible light is related to its brightness.
+Answer: True
+Reason: Greater amplitude corresponds to brighter light.
+59. In vacuum, all electromagnetic waves travel at the same speed.
+Answer: True
+Reason: All EM radiation travels at 3 × 10^8 m/s in vacuum.
+60. Radio waves have a shorter wavelength than gamma rays.
+Answer: False
+Reason: Radio waves have the longest wavelengths.
+61. Gamma rays have the highest frequency in the electromagnetic spectrum.
+Answer: True
+Reason: Gamma rays are at the highest-frequency end.
+62. Infrared has a higher frequency than visible light.
+Answer: False
+Reason: Infrared has lower frequency than visible light.
+63. X-rays have greater photon energy than visible light.
+Answer: True
+Reason: X-rays have higher frequency, so E = hf gives greater energy.
+64. Red photons have more energy than blue photons.
+Answer: False
+Reason: Blue has a higher frequency and therefore higher energy.
+65. Photon energy increases when wavelength decreases.
+Answer: True
+Reason: E = hc/λ.
+66. Reflection is described using the wave model only.
+Answer: False
+Reason: Reflection is one of the properties described by the ray model in the guide.
+67. The angle of incidence equals the angle of reflection.
+Answer: True
+Reason: This is the law of reflection.
+68. Refraction occurs because light changes speed between media.
+Answer: True
+Reason: The speed changes when light enters a different medium.
+69. Light's frequency changes when it enters glass.
+Answer: False
+Reason: Frequency stays constant when crossing the boundary.
+70. Light's wavelength can change when it enters glass.
+Answer: True
+Reason: The speed changes while frequency stays constant.
+71. Polarisation proves that light is transverse.
+Answer: True
+Reason: Only transverse waves can be polarised.
+72. Diffraction is the spreading of waves through narrow gaps or around edges.
+Answer: True
+Reason: That is the definition of diffraction.
+73. Interference can create bright and dark fringes.
+Answer: True
+Reason: Constructive and destructive interference produce the fringes.
+74. Dispersion causes white light to separate into colours.
+Answer: True
+Reason: Different wavelengths bend by different amounts.
+75. A refractive index of 1.5 means light travels faster than in vacuum.
+Answer: False
+Reason: n = c/v, so n > 1 means the speed is lower than c.
+76. A blackbody reflects all radiation falling on it.
+Answer: False
+Reason: An ideal blackbody absorbs all incident radiation.
+77. Blackbody radiation depends on the object's temperature.
+Answer: True
+Reason: Temperature determines the emitted radiation spectrum.
+78. A hotter blackbody emits more total radiation.
+Answer: True
+Reason: Increasing temperature increases the total emitted energy.
+79. A hotter blackbody's peak shifts toward longer wavelengths.
+Answer: False
+Reason: The peak shifts toward shorter wavelengths.
+80. A blue-hot object is generally hotter than a red-hot object.
+Answer: True
+Reason: Higher temperature shifts radiation toward shorter wavelengths.
+81. The Sun is approximately a blackbody.
+Answer: True
+Reason: Its radiation closely resembles blackbody radiation.
+82. Wien's displacement law is required for the exam according to the study guide.
+Answer: False
+Reason: The guide specifically marks Wien's law as “NOT in Exam.”
+83. Stefan-Boltzmann's law is marked “NOT in Exam.”
+Answer: True
+Reason: The study guide explicitly excludes it.
+84. Planck proposed that energy is emitted continuously.
+Answer: False
+Reason: Planck proposed that energy is emitted and absorbed in discrete packets.
+85. The ultraviolet catastrophe was correctly predicted by classical physics.
+Answer: False
+Reason: Classical theory predicted an incorrect infinite increase at short wavelengths.
+86. The photoelectric effect involves electrons being emitted from a metal.
+Answer: True
+Reason: Light can eject electrons from a suitable metal.
+87. Increasing brightness can make below-threshold-frequency light eject electrons.
+Answer: False
+Reason: If each photon lacks enough energy, increasing the number of photons does not solve the problem.
+88. Higher-frequency light gives each photon more energy.
+Answer: True
+Reason: E = hf.
+89. Increasing light intensity above threshold usually increases the number of emitted electrons.
+Answer: True
+Reason: Greater intensity means more photons hitting the surface.
+90. Increasing intensity always increases the maximum kinetic energy of photoelectrons.
+Answer: False
+Reason: Frequency determines maximum kinetic energy; intensity mainly changes the number of electrons.
+91. The work function is the minimum energy needed to remove an electron.
+Answer: True
+Reason: That is the definition of work function.
+92. Threshold frequency is the minimum frequency required for photoemission.
+Answer: True
+Reason: Below it, photoemission does not occur.
+93. Photoelectrons can take several seconds to leave the metal after illumination.
+Answer: False
+Reason: The photoelectric effect occurs almost immediately.
+94. Stopping potential is a reverse voltage.
+Answer: True
+Reason: It opposes the motion of photoelectrons toward the collector.
+95. The maximum kinetic energy is given by KEmax = hf − φ.
+Answer: True
+Reason: Photon energy is divided between overcoming the work function and electron kinetic energy.
+96. de Broglie proposed that particles have wave properties.
+Answer: True
+Reason: Matter waves have wavelength λ = h/p.
+97. A larger momentum gives a longer de Broglie wavelength.
+Answer: False
+Reason: λ = h/p, so larger momentum means shorter wavelength.
+98. A moving electron can have a wavelength.
+Answer: True
+Reason: Electrons have matter-wave properties.
+99. A cricket ball has a noticeable de Broglie wavelength.
+Answer: False
+Reason: Its large momentum gives an extremely tiny wavelength.
+100. Wave-particle duality applies only to light.
+Answer: False
+Reason: Matter particles such as electrons also show wave-particle duality.
+Part 3 — 50 Calculation MCQs
+Use these constants where needed:
+c = 3 × 10^8 m/s
+h = 6.63 × 10^-34 J·s
+h = 4.14 × 10^-15 eV·s
+E(eV) = 1240/λ(nm)
+1 eV = 1.6 × 10^-19 J
+1 nm = 10^-9 m
+n = c/v
+λ = h/p
+p = mv
+λ = 1.23/√V nm for an electron accelerated through V volts.
+101. A light wave has a wavelength of 600 nm. What is its frequency?
+A. 5 × 10^12 Hz
+B. 5 × 10^14 Hz
+C. 2 × 10^14 Hz
+D. 1.8 × 10^17 Hz
+Answer: B
+Reason:
+λ = 600 nm = 6 × 10^-7 m
+f = c/λ
+f = (3 × 10^8)/(6 × 10^-7) = 5 × 10^14 Hz.
+102. What is the wavelength of a 100 MHz radio wave?
+A. 0.3 m
+B. 3 m
+C. 30 m
+D. 300 m
+Answer: B
+Reason:
+100 MHz = 1 × 10^8 Hz
+λ = c/f = (3 × 10^8)/(1 × 10^8) = 3 m.
+103. A light wave has a frequency of 6 × 10^14 Hz. What is its wavelength?
+A. 50 nm
+B. 500 nm
+C. 5000 nm
+D. 0.5 nm
+Answer: B
+Reason:
+λ = c/f
+λ = (3 × 10^8)/(6 × 10^14) = 5 × 10^-7 m = 500 nm.
+104. What is the frequency of 700 nm red light?
+A. 4.3 × 10^14 Hz
+B. 4.3 × 10^16 Hz
+C. 2.1 × 10^14 Hz
+D. 7 × 10^14 Hz
+Answer: A
+Reason:
+f = c/λ = (3 × 10^8)/(700 × 10^-9) ≈ 4.3 × 10^14 Hz.
+105. Light travels through glass with refractive index 1.5. What is its speed?
+A. 1 × 10^8 m/s
+B. 2 × 10^8 m/s
+C. 3 × 10^8 m/s
+D. 4.5 × 10^8 m/s
+Answer: B
+Reason:
+n = c/v
+v = c/n = (3 × 10^8)/1.5 = 2 × 10^8 m/s.
+106. Light of wavelength 600 nm enters glass with n = 1.5. What is its wavelength in glass?
+A. 200 nm
+B. 300 nm
+C. 400 nm
+D. 900 nm
+Answer: C
+Reason: Frequency stays the same, so:
+λglass = λair/n = 600/1.5 = 400 nm.
+107. If the frequency of light is 5 × 10^14 Hz, what is its wavelength in vacuum?
+A. 60 nm
+B. 600 nm
+C. 60 μm
+D. 6 nm
+Answer: B
+Reason:
+λ = c/f
+λ = (3 × 10^8)/(5 × 10^14) = 6 × 10^-7 m = 600 nm.
+108. What is the energy of a 620 nm photon?
+A. 1.0 eV
+B. 2.0 eV
+C. 3.0 eV
+D. 4.0 eV
+Answer: B
+Reason:
+E = 1240/λ
+E = 1240/620 = 2.0 eV.
+109. What is the energy of a 400 nm photon?
+A. 1.55 eV
+B. 2.1 eV
+C. 3.1 eV
+D. 4.1 eV
+Answer: C
+Reason:
+E = 1240/400 = 3.1 eV.
+110. What is the energy of a 100 nm photon?
+A. 1.24 eV
+B. 12.4 eV
+C. 124 eV
+D. 1240 eV
+Answer: C
+Reason:
+E = 1240/100 = 12.4 eV.
+Correction: 12.4 eV is the calculated result, so the correct choice is B.
+111. What is the energy of a 0.1 nm X-ray photon?
+A. 12.4 eV
+B. 124 eV
+C. 1240 eV
+D. 12,400 eV
+Answer: D
+Reason:
+E = 1240/0.1 = 12,400 eV = 12.4 keV.
+112. A photon has energy 4 eV. Approximately what is its wavelength?
+A. 31 nm
+B. 124 nm
+C. 310 nm
+D. 4960 nm
+Answer: C
+Reason:
+λ = 1240/E = 1240/4 = 310 nm.
+113. A photon has wavelength 500 nm. What is its energy?
+A. 1.24 eV
+B. 2.48 eV
+C. 3.10 eV
+D. 4.96 eV
+Answer: B
+Reason:
+E = 1240/500 = 2.48 eV.
+114. What is the energy in joules of a 2 eV photon?
+A. 3.2 × 10^-19 J
+B. 1.6 × 10^-19 J
+C. 3.2 × 10^-17 J
+D. 2 × 10^-19 J
+Answer: A
+Reason:
+2 eV × 1.6 × 10^-19 J/eV = 3.2 × 10^-19 J.
+115. A blackbody is at 727°C. What is its temperature in Kelvin?
+A. 727 K
+B. 800 K
+C. 1000 K
+D. 1273 K
+Answer: C
+Reason:
+K = °C + 273
+K = 727 + 273 = 1000 K.
+116. A blackbody has a temperature of 1000 K. What is approximately its peak wavelength using Wien's law?
+A. 2.9 × 10^-3 m
+B. 2.9 × 10^-6 m
+C. 2.9 × 10^-9 m
+D. 2.9 × 10^-12 m
+Answer: B
+Reason:
+λmax = 2.898 × 10^-3 / 1000
+= 2.898 × 10^-6 m.
+Note: The study guide marks Wien's law as NOT in Exam.
+117. A star peaks at 483 nm. What is its approximate temperature using Wien's law?
+A. 600 K
+B. 6000 K
+C. 60,000 K
+D. 4830 K
+Answer: B
+Reason:
+T = 2.898 × 10^-3 / 483 × 10^-9 ≈ 6000 K.
+118. Which temperature is hotter?
+A. 1000 K
+B. 2000 K
+C. Both are the same
+D. Cannot be determined
+Answer: B
+Reason: Higher Kelvin temperature means a hotter object.
+119. If a blackbody's temperature increases, its peak wavelength moves toward:
+A. Longer wavelengths
+B. Shorter wavelengths
+C. Zero frequency
+D. No change
+Answer: B
+Reason: Wien's law shows λmax is inversely proportional to temperature.
+120. A metal has a work function of 2.3 eV. What is the threshold wavelength?
+A. 124 nm
+B. 264 nm
+C. 540 nm
+D. 780 nm
+Answer: B
+Reason:
+λ0 = 1240/φ
+λ0 = 1240/2.3 ≈ 539 nm.
+Correction: The correct answer is C, 539 nm, approximately 540 nm.
+121. Sodium has a work function of 2.3 eV. A 400 nm photon hits it. What is the maximum kinetic energy?
+A. 0.3 eV
+B. 0.8 eV
+C. 2.3 eV
+D. 3.1 eV
+Answer: B
+Reason:
+Photon energy:
+E = 1240/400 = 3.1 eV
+KEmax = 3.1 − 2.3 = 0.8 eV.
+122. A metal has a work function of 4.7 eV. What is its approximate threshold wavelength?
+A. 124 nm
+B. 264 nm
+C. 470 nm
+D. 780 nm
+Answer: B
+Reason:
+λ0 = 1240/4.7 ≈ 264 nm.
+123. A 500 nm photon hits a metal with work function 2 eV. What is the maximum kinetic energy?
+A. 0.48 eV
+B. 1.48 eV
+C. 2.48 eV
+D. 4.48 eV
+Answer: B
+Reason:
+E = 1240/500 = 2.48 eV
+KEmax = 2.48 − 2 = 0.48 eV.
+Correction: The correct answer is A, 0.48 eV.
+124. A photon has frequency 8 × 10^14 Hz. What is its energy?
+A. 0.33 eV
+B. 1.65 eV
+C. 3.31 eV
+D. 8.0 eV
+Answer: C
+Reason:
+E = hf
+E = (4.14 × 10^-15)(8 × 10^14) ≈ 3.31 eV.
+125. Sodium has a work function of 2.3 eV. If the photon energy is 3.3 eV, what is the maximum kinetic energy?
+A. 1.0 eV
+B. 2.3 eV
+C. 3.3 eV
+D. 5.6 eV
+Answer: A
+Reason:
+KEmax = 3.3 − 2.3 = 1.0 eV.
+126. If the maximum kinetic energy of a photoelectron is 1.0 eV, what is the stopping potential?
+A. 0.1 V
+B. 1.0 V
+C. 10 V
+D. 100 V
+Answer: B
+Reason: Numerically, electron kinetic energy in eV equals stopping potential in volts.
+127. A photon has frequency 5 × 10^14 Hz. What is its energy in eV?
+A. 0.207 eV
+B. 2.07 eV
+C. 5.0 eV
+D. 20.7 eV
+Answer: B
+Reason:
+E = hf
+E = 4.14 × 10^-15 × 5 × 10^14 ≈ 2.07 eV.
+128. A metal has a work function of 3 eV. Light provides photons of 2 eV. What happens?
+A. Electrons leave with 1 eV
+B. Electrons leave with 5 eV
+C. No photoelectrons are emitted
+D. Electrons leave with 3 eV
+Answer: C
+Reason: Photon energy is less than the work function.
+129. A metal has a work function of 2 eV. Photons have energy 5 eV. What is KEmax?
+A. 2 eV
+B. 3 eV
+C. 5 eV
+D. 7 eV
+Answer: B
+Reason:
+KEmax = 5 − 2 = 3 eV.
+130. What happens to the maximum kinetic energy if the light frequency increases?
+A. It decreases
+B. It increases
+C. It stays constant
+D. It becomes zero
+Answer: B
+Reason: KEmax = hf − φ, so increasing f increases KEmax.
+131. An electron has a mass of 9.1 × 10^-31 kg and speed 1 × 10^6 m/s. What is its momentum?
+A. 9.1 × 10^-37 kg m/s
+B. 9.1 × 10^-25 kg m/s
+C. 9.1 × 10^-19 kg m/s
+D. 1 × 10^-6 kg m/s
+Answer: B
+Reason:
+p = mv
+p = (9.1 × 10^-31)(1 × 10^6)
+= 9.1 × 10^-25 kg m/s.
+132. An electron has momentum 9.1 × 10^-25 kg m/s. What is its de Broglie wavelength?
+A. 7.3 × 10^-10 m
+B. 7.3 × 10^-19 m
+C. 1.2 × 10^-9 m
+D. 9.1 × 10^-25 m
+Answer: A
+Reason:
+λ = h/p
+λ = 6.63 × 10^-34 / 9.1 × 10^-25
+≈ 7.3 × 10^-10 m.
+133. A particle has mass 0.15 kg and speed 30 m/s. What is its momentum?
+A. 0.5 kg m/s
+B. 4.5 kg m/s
+C. 15 kg m/s
+D. 30.15 kg m/s
+Answer: B
+Reason:
+p = mv = 0.15 × 30 = 4.5 kg m/s.
+134. What is the de Broglie wavelength of the particle in Question 133?
+A. 1.5 × 10^-34 m
+B. 1.5 × 10^-24 m
+C. 4.5 × 10^-34 m
+D. 6.63 × 10^-34 m
+Answer: A
+Reason:
+λ = h/p
+λ = 6.63 × 10^-34 / 4.5
+≈ 1.47 × 10^-34 m.
+135. An electron is accelerated through 100 V. What is its approximate wavelength?
+A. 1.23 nm
+B. 0.123 nm
+C. 12.3 nm
+D. 123 nm
+Answer: B
+Reason:
+λ = 1.23/√V
+λ = 1.23/√100 = 1.23/10 = 0.123 nm.
+136. An electron is accelerated through 10,000 V. What is its approximate wavelength?
+A. 0.123 nm
+B. 0.0123 nm
+C. 1.23 nm
+D. 12.3 nm
+Answer: B
+Reason:
+λ = 1.23/√10000
+= 1.23/100 = 0.0123 nm.
+137. An electron is accelerated through 25 V. What is its approximate wavelength?
+A. 0.246 nm
+B. 0.123 nm
+C. 0.0492 nm
+D. 2.46 nm
+Answer: A
+Reason:
+√25 = 5
+λ = 1.23/5 = 0.246 nm.
+138. An electron has a de Broglie wavelength of 0.123 nm. Approximately what accelerating voltage produced it?
+A. 10 V
+B. 50 V
+C. 100 V
+D. 1000 V
+Answer: C
+Reason:
+λ = 1.23/√V
+0.123 = 1.23/√V
+√V = 10
+V = 100 V.
+139. A double-slit experiment uses light of wavelength 600 nm. The screen is 1 m away and slit separation is 0.2 mm. What is the fringe spacing?
+A. 0.3 mm
+B. 3 mm
+C. 30 mm
+D. 300 mm
+Answer: B
+Reason:
+β = λD/d
+β = (600 × 10^-9 × 1)/(0.2 × 10^-3)
+= 3 × 10^-3 m = 3 mm.
+140. In a double-slit experiment, what happens to fringe spacing if wavelength increases?
+A. It decreases
+B. It increases
+C. It becomes zero
+D. It does not change
+Answer: B
+Reason: β = λD/d, so fringe spacing is directly proportional to wavelength.
+141. In a double-slit experiment, if slit separation increases, fringe spacing:
+A. Increases
+B. Decreases
+C. Stays the same
+D. Becomes infinite
+Answer: B
+Reason: β = λD/d, so increasing d decreases β.
+142. Light has a wavelength of 500 nm. What is its photon energy?
+A. 1.24 eV
+B. 2.48 eV
+C. 3.48 eV
+D. 5.00 eV
+Answer: B
+Reason:
+E = 1240/500 = 2.48 eV.
+143. A photon has energy 3.1 eV. What is its approximate wavelength?
+A. 200 nm
+B. 300 nm
+C. 400 nm
+D. 500 nm
+Answer: C
+Reason:
+λ = 1240/3.1 = 400 nm.
+144. A metal has work function 2.1 eV. What is its threshold wavelength?
+A. 290 nm
+B. 400 nm
+C. 590 nm
+D. 1240 nm
+Answer: C
+Reason:
+λ0 = 1240/2.1 ≈ 590 nm.
+145. A 500 nm photon hits a metal with work function 2.1 eV. What is the maximum kinetic energy?
+A. 0.38 eV
+B. 2.10 eV
+C. 2.48 eV
+D. 4.58 eV
+Answer: A
+Reason:
+E = 1240/500 = 2.48 eV
+KEmax = 2.48 − 2.10 = 0.38 eV.
+146. What stopping potential corresponds to a maximum kinetic energy of 0.38 eV?
+A. 0.038 V
+B. 0.38 V
+C. 3.8 V
+D. 38 V
+Answer: B
+Reason: KEmax(eV) has the same numerical value as V0 in volts.
+147. Light has frequency 7 × 10^14 Hz. What is its wavelength?
+A. 43 nm
+B. 429 nm
+C. 700 nm
+D. 2.1 μm
+Answer: B
+Reason:
+λ = c/f
+λ = (3 × 10^8)/(7 × 10^14)
+≈ 4.29 × 10^-7 m = 429 nm.
+148. A photon has frequency 1 × 10^15 Hz. Approximately what is its energy?
+A. 0.414 eV
+B. 4.14 eV
+C. 41.4 eV
+D. 414 eV
+Answer: B
+Reason:
+E = hf
+E = 4.14 × 10^-15 × 10^15 = 4.14 eV.
+149. An electron moves at 2 × 10^6 m/s. What is its momentum?
+A. 1.82 × 10^-24 kg m/s
+B. 9.1 × 10^-25 kg m/s
+C. 1.82 × 10^-25 kg m/s
+D. 2 × 10^-31 kg m/s
+Answer: A
+Reason:
+p = mv
+p = (9.1 × 10^-31)(2 × 10^6)
+= 1.82 × 10^-24 kg m/s.
+150. Using the momentum from Question 149, what is the electron's de Broglie wavelength?
+A. 3.64 × 10^-10 m
+B. 7.3 × 10^-10 m
+C. 1.82 × 10^-24 m
+D. 6.63 × 10^-34 m
+Answer: A
+Reason:
+λ = h/p
+λ = (6.63 × 10^-34)/(1.82 × 10^-24)
+≈ 3.64 × 10^-10 m.

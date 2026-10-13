@@ -14,6 +14,11 @@
       "id": "intro-dl",
       "title": "Introduction to Deep Learning",
       "file": "intro-dl.json"
+    },
+    {
+      "id": "physics-test1",
+      "title": "Physics Test 1 (150 Questions)",
+      "file": "physics-test1.json"
     }
   ]
 }

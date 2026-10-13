@@ -1,0 +1,1656 @@
+{
+  "id": "physics-test1",
+  "title": "Physics Test 1",
+  "questions": [
+    {
+      "id": "phy-mcq-1",
+      "type": "mcq",
+      "prompt": "What is light?",
+      "choices": [
+        "A type of sound wave",
+        "A form of energy and an electromagnetic wave",
+        "A mechanical wave",
+        "A type of matter"
+      ],
+      "answer": 1,
+      "explanation": "Light is electromagnetic radiation that carries energy."
+    },
+    {
+      "id": "phy-mcq-2",
+      "type": "mcq",
+      "prompt": "What does light need to travel through empty space?",
+      "choices": [
+        "Air",
+        "Water",
+        "A material medium",
+        "Nothing"
+      ],
+      "answer": 3,
+      "explanation": "Electromagnetic waves can travel through a vacuum."
+    },
+    {
+      "id": "phy-mcq-3",
+      "type": "mcq",
+      "prompt": "What is the speed of light in vacuum?",
+      "choices": [
+        "3 × 10^6 m/s",
+        "3 × 10^7 m/s",
+        "3 × 10^8 m/s",
+        "3 × 10^9 m/s"
+      ],
+      "answer": 2,
+      "explanation": "The speed of light is approximately 3 × 10^8 m/s."
+    },
+    {
+      "id": "phy-mcq-4",
+      "type": "mcq",
+      "prompt": "Which symbol represents the speed of light?",
+      "choices": [
+        "h",
+        "c",
+        "f",
+        "λ"
+      ],
+      "answer": 1,
+      "explanation": "c represents the speed of light in vacuum."
+    },
+    {
+      "id": "phy-mcq-5",
+      "type": "mcq",
+      "prompt": "Which equation relates speed, frequency, and wavelength?",
+      "choices": [
+        "c = fλ",
+        "E = mc²",
+        "E = hf",
+        "p = mv"
+      ],
+      "answer": 0,
+      "explanation": "The wave equation is c = fλ."
+    },
+    {
+      "id": "phy-mcq-6",
+      "type": "mcq",
+      "prompt": "What is wavelength?",
+      "choices": [
+        "Number of waves per second",
+        "Maximum height of a wave",
+        "Distance between neighbouring crests",
+        "Speed of a wave"
+      ],
+      "answer": 2,
+      "explanation": "Wavelength is the distance from one crest to the next."
+    },
+    {
+      "id": "phy-mcq-7",
+      "type": "mcq",
+      "prompt": "What is frequency measured in?",
+      "choices": [
+        "Metres",
+        "Joules",
+        "Hertz",
+        "Watts"
+      ],
+      "answer": 2,
+      "explanation": "Frequency is measured in hertz (Hz), meaning cycles per second."
+    },
+    {
+      "id": "phy-mcq-8",
+      "type": "mcq",
+      "prompt": "What does a larger amplitude of visible light generally mean?",
+      "choices": [
+        "Lower speed",
+        "Brighter light",
+        "Higher frequency",
+        "Longer wavelength"
+      ],
+      "answer": 1,
+      "explanation": "Greater amplitude corresponds to greater brightness."
+    },
+    {
+      "id": "phy-mcq-9",
+      "type": "mcq",
+      "prompt": "Light is classified as what type of wave?",
+      "choices": [
+        "Longitudinal",
+        "Transverse",
+        "Mechanical",
+        "Sound"
+      ],
+      "answer": 1,
+      "explanation": "The electric and magnetic fields vibrate perpendicular to the direction of travel."
+    },
+    {
+      "id": "phy-mcq-10",
+      "type": "mcq",
+      "prompt": "In an electromagnetic wave, the electric and magnetic fields are:",
+      "choices": [
+        "Parallel to each other",
+        "At right angles to each other",
+        "In the same direction as travel",
+        "Not related"
+      ],
+      "answer": 1,
+      "explanation": "The electric and magnetic fields are perpendicular to each other and to the direction of travel."
+    },
+    {
+      "id": "phy-mcq-11",
+      "type": "mcq",
+      "prompt": "Which phenomenon is best explained by the ray model?",
+      "choices": [
+        "Diffraction",
+        "Interference",
+        "Reflection",
+        "Polarisation"
+      ],
+      "answer": 2,
+      "explanation": "Reflection can be described using rays."
+    },
+    {
+      "id": "phy-mcq-12",
+      "type": "mcq",
+      "prompt": "What is the law of reflection?",
+      "choices": [
+        "i + r = 90°",
+        "i = r",
+        "i = 2r",
+        "i = r/2"
+      ],
+      "answer": 1,
+      "explanation": "The angle of incidence equals the angle of reflection."
+    },
+    {
+      "id": "phy-mcq-13",
+      "type": "mcq",
+      "prompt": "What causes refraction?",
+      "choices": [
+        "Light disappears",
+        "Light changes speed between media",
+        "Light becomes sound",
+        "Light stops vibrating"
+      ],
+      "answer": 1,
+      "explanation": "Light bends because its speed changes when it enters a different medium."
+    },
+    {
+      "id": "phy-mcq-14",
+      "type": "mcq",
+      "prompt": "Which equation gives refractive index?",
+      "choices": [
+        "n = v/c",
+        "n = c/v",
+        "n = cv",
+        "n = c + v"
+      ],
+      "answer": 1,
+      "explanation": "n = c/v."
+    },
+    {
+      "id": "phy-mcq-15",
+      "type": "mcq",
+      "prompt": "When light enters glass from air, its frequency:",
+      "choices": [
+        "Increases",
+        "Decreases",
+        "Stays the same",
+        "Becomes zero"
+      ],
+      "answer": 2,
+      "explanation": "Frequency does not change when light enters another medium."
+    },
+    {
+      "id": "phy-mcq-16",
+      "type": "mcq",
+      "prompt": "When light enters glass from air, its wavelength generally:",
+      "choices": [
+        "Increases",
+        "Decreases",
+        "Stays exactly the same",
+        "Becomes infinite"
+      ],
+      "answer": 1,
+      "explanation": "The speed decreases while frequency stays constant, so wavelength decreases."
+    },
+    {
+      "id": "phy-mcq-17",
+      "type": "mcq",
+      "prompt": "Which phenomenon separates white light into different colours?",
+      "choices": [
+        "Reflection",
+        "Polarisation",
+        "Dispersion",
+        "Diffraction"
+      ],
+      "answer": 2,
+      "explanation": "Dispersion occurs because different wavelengths bend by different amounts."
+    },
+    {
+      "id": "phy-mcq-18",
+      "type": "mcq",
+      "prompt": "Which phenomenon produces bright and dark fringes?",
+      "choices": [
+        "Interference",
+        "Reflection",
+        "Refraction",
+        "Absorption"
+      ],
+      "answer": 0,
+      "explanation": "Interference produces regions of constructive and destructive interference."
+    },
+    {
+      "id": "phy-mcq-19",
+      "type": "mcq",
+      "prompt": "Diffraction is the:",
+      "choices": [
+        "Absorption of light",
+        "Spreading of waves around edges or through narrow gaps",
+        "Reflection of light",
+        "Conversion of light to heat"
+      ],
+      "answer": 1,
+      "explanation": "Diffraction causes waves to spread after passing through small openings or around obstacles."
+    },
+    {
+      "id": "phy-mcq-20",
+      "type": "mcq",
+      "prompt": "What does polarisation show about light?",
+      "choices": [
+        "Light is longitudinal",
+        "Light is transverse",
+        "Light has no energy",
+        "Light needs air"
+      ],
+      "answer": 1,
+      "explanation": "Only transverse waves can be polarised."
+    },
+    {
+      "id": "phy-mcq-21",
+      "type": "mcq",
+      "prompt": "Which is the correct order of the electromagnetic spectrum from lowest to highest frequency?",
+      "choices": [
+        "Gamma, X-ray, UV, visible, IR, microwave, radio",
+        "Radio, microwave, IR, visible, UV, X-ray, gamma",
+        "Radio, IR, microwave, visible, X-ray, UV, gamma",
+        "Visible, radio, microwave, IR, UV, gamma, X-ray"
+      ],
+      "answer": 1,
+      "explanation": "Frequency increases from radio waves toward gamma rays."
+    },
+    {
+      "id": "phy-mcq-22",
+      "type": "mcq",
+      "prompt": "Which electromagnetic wave has the longest wavelength?",
+      "choices": [
+        "Gamma",
+        "X-ray",
+        "Radio",
+        "UV"
+      ],
+      "answer": 2,
+      "explanation": "Radio waves have the longest wavelengths."
+    },
+    {
+      "id": "phy-mcq-23",
+      "type": "mcq",
+      "prompt": "Which electromagnetic wave has the highest frequency?",
+      "choices": [
+        "Radio",
+        "Visible",
+        "X-ray",
+        "Gamma"
+      ],
+      "answer": 3,
+      "explanation": "Gamma rays have the highest frequencies."
+    },
+    {
+      "id": "phy-mcq-24",
+      "type": "mcq",
+      "prompt": "Which has the greatest photon energy?",
+      "choices": [
+        "Radio",
+        "Infrared",
+        "Visible light",
+        "Gamma rays"
+      ],
+      "answer": 3,
+      "explanation": "Photon energy increases with frequency: E = hf."
+    },
+    {
+      "id": "phy-mcq-25",
+      "type": "mcq",
+      "prompt": "Which visible colour has greater photon energy?",
+      "choices": [
+        "Red",
+        "Orange",
+        "Blue",
+        "Red and blue have the same energy"
+      ],
+      "answer": 2,
+      "explanation": "Blue has a higher frequency and therefore greater photon energy."
+    },
+    {
+      "id": "phy-mcq-26",
+      "type": "mcq",
+      "prompt": "What is the photon energy equation?",
+      "choices": [
+        "E = hf",
+        "E = h/f",
+        "E = f/h",
+        "E = mc²"
+      ],
+      "answer": 0,
+      "explanation": "Photon energy is E = hf."
+    },
+    {
+      "id": "phy-mcq-27",
+      "type": "mcq",
+      "prompt": "Which equation can calculate photon energy using wavelength in nm?",
+      "choices": [
+        "E = 1240λ",
+        "E = 1240/λ",
+        "E = λ/1240",
+        "E = 1240 + λ"
+      ],
+      "answer": 1,
+      "explanation": "E(eV) = 1240/λ(nm)."
+    },
+    {
+      "id": "phy-mcq-28",
+      "type": "mcq",
+      "prompt": "What is a photon?",
+      "choices": [
+        "A packet of light energy",
+        "A proton",
+        "A neutron",
+        "A sound wave"
+      ],
+      "answer": 0,
+      "explanation": "A photon is a discrete packet of electromagnetic energy."
+    },
+    {
+      "id": "phy-mcq-29",
+      "type": "mcq",
+      "prompt": "What is a blackbody?",
+      "choices": [
+        "An object that reflects all radiation",
+        "An ideal object that absorbs all incident radiation",
+        "An object that emits only visible light",
+        "An object with no temperature"
+      ],
+      "answer": 1,
+      "explanation": "A blackbody absorbs all radiation falling on it."
+    },
+    {
+      "id": "phy-mcq-30",
+      "type": "mcq",
+      "prompt": "What determines the radiation emitted by an ideal blackbody?",
+      "choices": [
+        "Its colour only",
+        "Its material only",
+        "Its temperature",
+        "Its shape only"
+      ],
+      "answer": 2,
+      "explanation": "Blackbody radiation depends only on temperature."
+    },
+    {
+      "id": "phy-mcq-31",
+      "type": "mcq",
+      "prompt": "As the temperature of a blackbody increases, the peak wavelength:",
+      "choices": [
+        "Gets longer",
+        "Gets shorter",
+        "Does not change",
+        "Becomes zero"
+      ],
+      "answer": 1,
+      "explanation": "Hotter objects peak at shorter wavelengths."
+    },
+    {
+      "id": "phy-mcq-32",
+      "type": "mcq",
+      "prompt": "Which object is approximately a blackbody?",
+      "choices": [
+        "The Sun",
+        "A mirror",
+        "A transparent window",
+        "A cold piece of glass"
+      ],
+      "answer": 0,
+      "explanation": "The Sun is a good approximate blackbody."
+    },
+    {
+      "id": "phy-mcq-33",
+      "type": "mcq",
+      "prompt": "A hotter star generally appears:",
+      "choices": [
+        "More red",
+        "More blue-white",
+        "Completely black",
+        "Invisible"
+      ],
+      "answer": 1,
+      "explanation": "Higher temperatures shift the peak toward shorter, bluer wavelengths."
+    },
+    {
+      "id": "phy-mcq-34",
+      "type": "mcq",
+      "prompt": "What was the ultraviolet catastrophe?",
+      "choices": [
+        "Light disappearing in ultraviolet",
+        "Classical theory predicting unlimited energy at short wavelengths",
+        "UV light being unable to travel",
+        "UV light becoming sound"
+      ],
+      "answer": 1,
+      "explanation": "Classical physics predicted increasing energy toward very short wavelengths, contrary to experiment."
+    },
+    {
+      "id": "phy-mcq-35",
+      "type": "mcq",
+      "prompt": "Who introduced the idea that energy is emitted in discrete packets?",
+      "choices": [
+        "Newton",
+        "Planck",
+        "Hertz",
+        "Young"
+      ],
+      "answer": 1,
+      "explanation": "Planck proposed energy quanta to explain blackbody radiation."
+    },
+    {
+      "id": "phy-mcq-36",
+      "type": "mcq",
+      "prompt": "What does E = hf represent in blackbody/quantum theory?",
+      "choices": [
+        "Photon energy",
+        "Electron momentum",
+        "Wave speed",
+        "Refractive index"
+      ],
+      "answer": 0,
+      "explanation": "Energy is quantised in packets with energy hf."
+    },
+    {
+      "id": "phy-mcq-37",
+      "type": "mcq",
+      "prompt": "What is the photoelectric effect?",
+      "choices": [
+        "Light bending in glass",
+        "Light knocking electrons out of a metal",
+        "Light splitting into colours",
+        "Electrons producing sound"
+      ],
+      "answer": 1,
+      "explanation": "The photoelectric effect is the emission of electrons from a metal due to light."
+    },
+    {
+      "id": "phy-mcq-38",
+      "type": "mcq",
+      "prompt": "What determines the maximum kinetic energy of photoelectrons?",
+      "choices": [
+        "Light intensity only",
+        "Frequency of the light",
+        "Distance from the metal",
+        "Metal colour only"
+      ],
+      "answer": 1,
+      "explanation": "KEmax = hf − φ, so frequency determines photon energy and electron kinetic energy."
+    },
+    {
+      "id": "phy-mcq-39",
+      "type": "mcq",
+      "prompt": "What determines how many photoelectrons are emitted?",
+      "choices": [
+        "Intensity, when frequency is above threshold",
+        "Frequency only",
+        "Work function only",
+        "Wavelength only"
+      ],
+      "answer": 0,
+      "explanation": "Greater intensity means more photons and therefore more emitted electrons."
+    },
+    {
+      "id": "phy-mcq-40",
+      "type": "mcq",
+      "prompt": "What is the work function?",
+      "choices": [
+        "Maximum electron energy",
+        "Minimum energy needed to remove an electron from a metal",
+        "Energy of a photon after emission",
+        "Speed of an electron"
+      ],
+      "answer": 1,
+      "explanation": "The work function φ is the minimum energy needed to free an electron."
+    },
+    {
+      "id": "phy-mcq-41",
+      "type": "mcq",
+      "prompt": "What is threshold frequency?",
+      "choices": [
+        "The highest possible frequency",
+        "The minimum frequency needed to eject electrons",
+        "The frequency of visible light only",
+        "The frequency of sound"
+      ],
+      "answer": 1,
+      "explanation": "Below the threshold frequency, photoemission does not occur."
+    },
+    {
+      "id": "phy-mcq-42",
+      "type": "mcq",
+      "prompt": "Which equation represents the photoelectric effect?",
+      "choices": [
+        "KEmax = hf − φ",
+        "KEmax = hf + φ",
+        "KEmax = φ − hf",
+        "KEmax = h/f"
+      ],
+      "answer": 0,
+      "explanation": "Photon energy first supplies the work function; the remainder becomes kinetic energy."
+    },
+    {
+      "id": "phy-mcq-43",
+      "type": "mcq",
+      "prompt": "What is stopping potential?",
+      "choices": [
+        "Voltage that accelerates the fastest electrons",
+        "Reverse voltage just sufficient to stop the fastest photoelectrons",
+        "Voltage across a resistor",
+        "Voltage needed to create photons"
+      ],
+      "answer": 1,
+      "explanation": "The stopping potential prevents even the fastest photoelectrons from reaching the collector."
+    },
+    {
+      "id": "phy-mcq-44",
+      "type": "mcq",
+      "prompt": "What happens if light frequency is below the threshold frequency?",
+      "choices": [
+        "More electrons are emitted if brightness increases",
+        "Electrons eventually come out",
+        "No photoelectrons are emitted",
+        "Electrons become faster"
+      ],
+      "answer": 2,
+      "explanation": "Each photon lacks enough energy to overcome the work function."
+    },
+    {
+      "id": "phy-mcq-45",
+      "type": "mcq",
+      "prompt": "What did de Broglie propose?",
+      "choices": [
+        "Only light can behave as a wave",
+        "Matter particles can also behave as waves",
+        "Electrons have no mass",
+        "Light has no energy"
+      ],
+      "answer": 1,
+      "explanation": "de Broglie proposed matter waves with λ = h/p."
+    },
+    {
+      "id": "phy-mcq-46",
+      "type": "mcq",
+      "prompt": "What is the de Broglie wavelength equation?",
+      "choices": [
+        "λ = hp",
+        "λ = h/p",
+        "λ = p/h",
+        "λ = hf"
+      ],
+      "answer": 1,
+      "explanation": "Matter-wave wavelength is inversely proportional to momentum."
+    },
+    {
+      "id": "phy-mcq-47",
+      "type": "mcq",
+      "prompt": "If a particle's momentum increases, its de Broglie wavelength:",
+      "choices": [
+        "Increases",
+        "Decreases",
+        "Stays the same",
+        "Becomes infinite"
+      ],
+      "answer": 1,
+      "explanation": "λ = h/p."
+    },
+    {
+      "id": "phy-mcq-48",
+      "type": "mcq",
+      "prompt": "Which experiment demonstrates electron diffraction?",
+      "choices": [
+        "Young's experiment",
+        "Davisson-Germer experiment",
+        "Photoelectric experiment",
+        "Millikan experiment"
+      ],
+      "answer": 1,
+      "explanation": "Davisson-Germer demonstrated electron diffraction. The study guide marks this experiment as NOT in the exam."
+    },
+    {
+      "id": "phy-mcq-49",
+      "type": "mcq",
+      "prompt": "Which is evidence that light behaves as a wave?",
+      "choices": [
+        "Photoelectric effect",
+        "Blackbody radiation",
+        "Interference",
+        "Photon absorption"
+      ],
+      "answer": 2,
+      "explanation": "Interference is a wave phenomenon."
+    },
+    {
+      "id": "phy-mcq-50",
+      "type": "mcq",
+      "prompt": "Which statement best describes wave-particle duality?",
+      "choices": [
+        "Light is always only a wave",
+        "Matter is always only a particle",
+        "Both light and matter can show wave and particle behaviour",
+        "Waves and particles are completely unrelated"
+      ],
+      "answer": 2,
+      "explanation": "Experiments show both light and matter have wave-like and particle-like behaviour.\r\nPart 2 — 50 True/False Questions"
+    },
+    {
+      "id": "phy-tf-51",
+      "type": "tf",
+      "prompt": "Light can travel through a vacuum.",
+      "answer": true,
+      "explanation": "Electromagnetic waves do not require a material medium."
+    },
+    {
+      "id": "phy-tf-52",
+      "type": "tf",
+      "prompt": "Sound and light both require a material medium.",
+      "answer": false,
+      "explanation": "Sound needs a medium, but light can travel through vacuum."
+    },
+    {
+      "id": "phy-tf-53",
+      "type": "tf",
+      "prompt": "The speed of light in vacuum is approximately 3 × 10^8 m/s.",
+      "answer": true,
+      "explanation": "This is the value of c."
+    },
+    {
+      "id": "phy-tf-54",
+      "type": "tf",
+      "prompt": "Light is a longitudinal wave.",
+      "answer": false,
+      "explanation": "Light is a transverse electromagnetic wave."
+    },
+    {
+      "id": "phy-tf-55",
+      "type": "tf",
+      "prompt": "The electric and magnetic fields of an electromagnetic wave are perpendicular to each other.",
+      "answer": true,
+      "explanation": "They oscillate at right angles to each other."
+    },
+    {
+      "id": "phy-tf-56",
+      "type": "tf",
+      "prompt": "Frequency is measured in metres.",
+      "answer": false,
+      "explanation": "Frequency is measured in hertz."
+    },
+    {
+      "id": "phy-tf-57",
+      "type": "tf",
+      "prompt": "Wavelength is measured in metres.",
+      "answer": true,
+      "explanation": "The SI unit of wavelength is metre."
+    },
+    {
+      "id": "phy-tf-58",
+      "type": "tf",
+      "prompt": "The amplitude of visible light is related to its brightness.",
+      "answer": true,
+      "explanation": "Greater amplitude corresponds to brighter light."
+    },
+    {
+      "id": "phy-tf-59",
+      "type": "tf",
+      "prompt": "In vacuum, all electromagnetic waves travel at the same speed.",
+      "answer": true,
+      "explanation": "All EM radiation travels at 3 × 10^8 m/s in vacuum."
+    },
+    {
+      "id": "phy-tf-60",
+      "type": "tf",
+      "prompt": "Radio waves have a shorter wavelength than gamma rays.",
+      "answer": false,
+      "explanation": "Radio waves have the longest wavelengths."
+    },
+    {
+      "id": "phy-tf-61",
+      "type": "tf",
+      "prompt": "Gamma rays have the highest frequency in the electromagnetic spectrum.",
+      "answer": true,
+      "explanation": "Gamma rays are at the highest-frequency end."
+    },
+    {
+      "id": "phy-tf-62",
+      "type": "tf",
+      "prompt": "Infrared has a higher frequency than visible light.",
+      "answer": false,
+      "explanation": "Infrared has lower frequency than visible light."
+    },
+    {
+      "id": "phy-tf-63",
+      "type": "tf",
+      "prompt": "X-rays have greater photon energy than visible light.",
+      "answer": true,
+      "explanation": "X-rays have higher frequency, so E = hf gives greater energy."
+    },
+    {
+      "id": "phy-tf-64",
+      "type": "tf",
+      "prompt": "Red photons have more energy than blue photons.",
+      "answer": false,
+      "explanation": "Blue has a higher frequency and therefore higher energy."
+    },
+    {
+      "id": "phy-tf-65",
+      "type": "tf",
+      "prompt": "Photon energy increases when wavelength decreases.",
+      "answer": true,
+      "explanation": "E = hc/λ."
+    },
+    {
+      "id": "phy-tf-66",
+      "type": "tf",
+      "prompt": "Reflection is described using the wave model only.",
+      "answer": false,
+      "explanation": "Reflection is one of the properties described by the ray model in the guide."
+    },
+    {
+      "id": "phy-tf-67",
+      "type": "tf",
+      "prompt": "The angle of incidence equals the angle of reflection.",
+      "answer": true,
+      "explanation": "This is the law of reflection."
+    },
+    {
+      "id": "phy-tf-68",
+      "type": "tf",
+      "prompt": "Refraction occurs because light changes speed between media.",
+      "answer": true,
+      "explanation": "The speed changes when light enters a different medium."
+    },
+    {
+      "id": "phy-tf-69",
+      "type": "tf",
+      "prompt": "Light's frequency changes when it enters glass.",
+      "answer": false,
+      "explanation": "Frequency stays constant when crossing the boundary."
+    },
+    {
+      "id": "phy-tf-70",
+      "type": "tf",
+      "prompt": "Light's wavelength can change when it enters glass.",
+      "answer": true,
+      "explanation": "The speed changes while frequency stays constant."
+    },
+    {
+      "id": "phy-tf-71",
+      "type": "tf",
+      "prompt": "Polarisation proves that light is transverse.",
+      "answer": true,
+      "explanation": "Only transverse waves can be polarised."
+    },
+    {
+      "id": "phy-tf-72",
+      "type": "tf",
+      "prompt": "Diffraction is the spreading of waves through narrow gaps or around edges.",
+      "answer": true,
+      "explanation": "That is the definition of diffraction."
+    },
+    {
+      "id": "phy-tf-73",
+      "type": "tf",
+      "prompt": "Interference can create bright and dark fringes.",
+      "answer": true,
+      "explanation": "Constructive and destructive interference produce the fringes."
+    },
+    {
+      "id": "phy-tf-74",
+      "type": "tf",
+      "prompt": "Dispersion causes white light to separate into colours.",
+      "answer": true,
+      "explanation": "Different wavelengths bend by different amounts."
+    },
+    {
+      "id": "phy-tf-75",
+      "type": "tf",
+      "prompt": "A refractive index of 1.5 means light travels faster than in vacuum.",
+      "answer": false,
+      "explanation": "n = c/v, so n > 1 means the speed is lower than c."
+    },
+    {
+      "id": "phy-tf-76",
+      "type": "tf",
+      "prompt": "A blackbody reflects all radiation falling on it.",
+      "answer": false,
+      "explanation": "An ideal blackbody absorbs all incident radiation."
+    },
+    {
+      "id": "phy-tf-77",
+      "type": "tf",
+      "prompt": "Blackbody radiation depends on the object's temperature.",
+      "answer": true,
+      "explanation": "Temperature determines the emitted radiation spectrum."
+    },
+    {
+      "id": "phy-tf-78",
+      "type": "tf",
+      "prompt": "A hotter blackbody emits more total radiation.",
+      "answer": true,
+      "explanation": "Increasing temperature increases the total emitted energy."
+    },
+    {
+      "id": "phy-tf-79",
+      "type": "tf",
+      "prompt": "A hotter blackbody's peak shifts toward longer wavelengths.",
+      "answer": false,
+      "explanation": "The peak shifts toward shorter wavelengths."
+    },
+    {
+      "id": "phy-tf-80",
+      "type": "tf",
+      "prompt": "A blue-hot object is generally hotter than a red-hot object.",
+      "answer": true,
+      "explanation": "Higher temperature shifts radiation toward shorter wavelengths."
+    },
+    {
+      "id": "phy-tf-81",
+      "type": "tf",
+      "prompt": "The Sun is approximately a blackbody.",
+      "answer": true,
+      "explanation": "Its radiation closely resembles blackbody radiation."
+    },
+    {
+      "id": "phy-tf-82",
+      "type": "tf",
+      "prompt": "Wien's displacement law is required for the exam according to the study guide.",
+      "answer": false,
+      "explanation": "The guide specifically marks Wien's law as “NOT in Exam.”"
+    },
+    {
+      "id": "phy-tf-83",
+      "type": "tf",
+      "prompt": "Stefan-Boltzmann's law is marked “NOT in Exam.”",
+      "answer": true,
+      "explanation": "The study guide explicitly excludes it."
+    },
+    {
+      "id": "phy-tf-84",
+      "type": "tf",
+      "prompt": "Planck proposed that energy is emitted continuously.",
+      "answer": false,
+      "explanation": "Planck proposed that energy is emitted and absorbed in discrete packets."
+    },
+    {
+      "id": "phy-tf-85",
+      "type": "tf",
+      "prompt": "The ultraviolet catastrophe was correctly predicted by classical physics.",
+      "answer": false,
+      "explanation": "Classical theory predicted an incorrect infinite increase at short wavelengths."
+    },
+    {
+      "id": "phy-tf-86",
+      "type": "tf",
+      "prompt": "The photoelectric effect involves electrons being emitted from a metal.",
+      "answer": true,
+      "explanation": "Light can eject electrons from a suitable metal."
+    },
+    {
+      "id": "phy-tf-87",
+      "type": "tf",
+      "prompt": "Increasing brightness can make below-threshold-frequency light eject electrons.",
+      "answer": false,
+      "explanation": "If each photon lacks enough energy, increasing the number of photons does not solve the problem."
+    },
+    {
+      "id": "phy-tf-88",
+      "type": "tf",
+      "prompt": "Higher-frequency light gives each photon more energy.",
+      "answer": true,
+      "explanation": "E = hf."
+    },
+    {
+      "id": "phy-tf-89",
+      "type": "tf",
+      "prompt": "Increasing light intensity above threshold usually increases the number of emitted electrons.",
+      "answer": true,
+      "explanation": "Greater intensity means more photons hitting the surface."
+    },
+    {
+      "id": "phy-tf-90",
+      "type": "tf",
+      "prompt": "Increasing intensity always increases the maximum kinetic energy of photoelectrons.",
+      "answer": false,
+      "explanation": "Frequency determines maximum kinetic energy; intensity mainly changes the number of electrons."
+    },
+    {
+      "id": "phy-tf-91",
+      "type": "tf",
+      "prompt": "The work function is the minimum energy needed to remove an electron.",
+      "answer": true,
+      "explanation": "That is the definition of work function."
+    },
+    {
+      "id": "phy-tf-92",
+      "type": "tf",
+      "prompt": "Threshold frequency is the minimum frequency required for photoemission.",
+      "answer": true,
+      "explanation": "Below it, photoemission does not occur."
+    },
+    {
+      "id": "phy-tf-93",
+      "type": "tf",
+      "prompt": "Photoelectrons can take several seconds to leave the metal after illumination.",
+      "answer": false,
+      "explanation": "The photoelectric effect occurs almost immediately."
+    },
+    {
+      "id": "phy-tf-94",
+      "type": "tf",
+      "prompt": "Stopping potential is a reverse voltage.",
+      "answer": true,
+      "explanation": "It opposes the motion of photoelectrons toward the collector."
+    },
+    {
+      "id": "phy-tf-95",
+      "type": "tf",
+      "prompt": "The maximum kinetic energy is given by KEmax = hf − φ.",
+      "answer": true,
+      "explanation": "Photon energy is divided between overcoming the work function and electron kinetic energy."
+    },
+    {
+      "id": "phy-tf-96",
+      "type": "tf",
+      "prompt": "de Broglie proposed that particles have wave properties.",
+      "answer": true,
+      "explanation": "Matter waves have wavelength λ = h/p."
+    },
+    {
+      "id": "phy-tf-97",
+      "type": "tf",
+      "prompt": "A larger momentum gives a longer de Broglie wavelength.",
+      "answer": false,
+      "explanation": "λ = h/p, so larger momentum means shorter wavelength."
+    },
+    {
+      "id": "phy-tf-98",
+      "type": "tf",
+      "prompt": "A moving electron can have a wavelength.",
+      "answer": true,
+      "explanation": "Electrons have matter-wave properties."
+    },
+    {
+      "id": "phy-tf-99",
+      "type": "tf",
+      "prompt": "A cricket ball has a noticeable de Broglie wavelength.",
+      "answer": false,
+      "explanation": "Its large momentum gives an extremely tiny wavelength."
+    },
+    {
+      "id": "phy-tf-100",
+      "type": "tf",
+      "prompt": "Wave-particle duality applies only to light.",
+      "answer": false,
+      "explanation": "Matter particles such as electrons also show wave-particle duality.\r\nPart 3 — 50 Calculation MCQs\r\nUse these constants where needed:\r\nc = 3 × 10^8 m/s\r\nh = 6.63 × 10^-34 J·s\r\nh = 4.14 × 10^-15 eV·s\r\nE(eV) = 1240/λ(nm)\r\n1 eV = 1.6 × 10^-19 J\r\n1 nm = 10^-9 m\r\nn = c/v\r\nλ = h/p\r\np = mv\r\nλ = 1.23/√V nm for an electron accelerated through V volts."
+    },
+    {
+      "id": "phy-mcq-101",
+      "type": "mcq",
+      "prompt": "A light wave has a wavelength of 600 nm. What is its frequency?",
+      "choices": [
+        "5 × 10^12 Hz",
+        "5 × 10^14 Hz",
+        "2 × 10^14 Hz",
+        "1.8 × 10^17 Hz"
+      ],
+      "answer": 1,
+      "explanation": "λ = 600 nm = 6 × 10^-7 m\r\nf = c/λ\r\nf = (3 × 10^8)/(6 × 10^-7) = 5 × 10^14 Hz."
+    },
+    {
+      "id": "phy-mcq-102",
+      "type": "mcq",
+      "prompt": "What is the wavelength of a 100 MHz radio wave?",
+      "choices": [
+        "0.3 m",
+        "3 m",
+        "30 m",
+        "300 m"
+      ],
+      "answer": 1,
+      "explanation": "100 MHz = 1 × 10^8 Hz\r\nλ = c/f = (3 × 10^8)/(1 × 10^8) = 3 m."
+    },
+    {
+      "id": "phy-mcq-103",
+      "type": "mcq",
+      "prompt": "A light wave has a frequency of 6 × 10^14 Hz. What is its wavelength?",
+      "choices": [
+        "50 nm",
+        "500 nm",
+        "5000 nm",
+        "0.5 nm"
+      ],
+      "answer": 1,
+      "explanation": "λ = c/f\r\nλ = (3 × 10^8)/(6 × 10^14) = 5 × 10^-7 m = 500 nm."
+    },
+    {
+      "id": "phy-mcq-104",
+      "type": "mcq",
+      "prompt": "What is the frequency of 700 nm red light?",
+      "choices": [
+        "4.3 × 10^14 Hz",
+        "4.3 × 10^16 Hz",
+        "2.1 × 10^14 Hz",
+        "7 × 10^14 Hz"
+      ],
+      "answer": 0,
+      "explanation": "f = c/λ = (3 × 10^8)/(700 × 10^-9) ≈ 4.3 × 10^14 Hz."
+    },
+    {
+      "id": "phy-mcq-105",
+      "type": "mcq",
+      "prompt": "Light travels through glass with refractive index 1.5. What is its speed?",
+      "choices": [
+        "1 × 10^8 m/s",
+        "2 × 10^8 m/s",
+        "3 × 10^8 m/s",
+        "4.5 × 10^8 m/s"
+      ],
+      "answer": 1,
+      "explanation": "n = c/v\r\nv = c/n = (3 × 10^8)/1.5 = 2 × 10^8 m/s."
+    },
+    {
+      "id": "phy-mcq-106",
+      "type": "mcq",
+      "prompt": "Light of wavelength 600 nm enters glass with n = 1.5. What is its wavelength in glass?",
+      "choices": [
+        "200 nm",
+        "300 nm",
+        "400 nm",
+        "900 nm"
+      ],
+      "answer": 2,
+      "explanation": "Frequency stays the same, so:\r\nλglass = λair/n = 600/1.5 = 400 nm."
+    },
+    {
+      "id": "phy-mcq-107",
+      "type": "mcq",
+      "prompt": "If the frequency of light is 5 × 10^14 Hz, what is its wavelength in vacuum?",
+      "choices": [
+        "60 nm",
+        "600 nm",
+        "60 μm",
+        "6 nm"
+      ],
+      "answer": 1,
+      "explanation": "λ = c/f\r\nλ = (3 × 10^8)/(5 × 10^14) = 6 × 10^-7 m = 600 nm."
+    },
+    {
+      "id": "phy-mcq-108",
+      "type": "mcq",
+      "prompt": "What is the energy of a 620 nm photon?",
+      "choices": [
+        "1.0 eV",
+        "2.0 eV",
+        "3.0 eV",
+        "4.0 eV"
+      ],
+      "answer": 1,
+      "explanation": "E = 1240/λ\r\nE = 1240/620 = 2.0 eV."
+    },
+    {
+      "id": "phy-mcq-109",
+      "type": "mcq",
+      "prompt": "What is the energy of a 400 nm photon?",
+      "choices": [
+        "1.55 eV",
+        "2.1 eV",
+        "3.1 eV",
+        "4.1 eV"
+      ],
+      "answer": 2,
+      "explanation": "E = 1240/400 = 3.1 eV."
+    },
+    {
+      "id": "phy-mcq-110",
+      "type": "mcq",
+      "prompt": "What is the energy of a 100 nm photon?",
+      "choices": [
+        "1.24 eV",
+        "12.4 eV",
+        "124 eV",
+        "1240 eV"
+      ],
+      "answer": 1,
+      "explanation": "E = 1240/100 = 12.4 eV.\r\nCorrection: 12.4 eV is the calculated result, so the correct choice is B."
+    },
+    {
+      "id": "phy-mcq-111",
+      "type": "mcq",
+      "prompt": "What is the energy of a 0.1 nm X-ray photon?",
+      "choices": [
+        "12.4 eV",
+        "124 eV",
+        "1240 eV",
+        "12,400 eV"
+      ],
+      "answer": 3,
+      "explanation": "E = 1240/0.1 = 12,400 eV = 12.4 keV."
+    },
+    {
+      "id": "phy-mcq-112",
+      "type": "mcq",
+      "prompt": "A photon has energy 4 eV. Approximately what is its wavelength?",
+      "choices": [
+        "31 nm",
+        "124 nm",
+        "310 nm",
+        "4960 nm"
+      ],
+      "answer": 2,
+      "explanation": "λ = 1240/E = 1240/4 = 310 nm."
+    },
+    {
+      "id": "phy-mcq-113",
+      "type": "mcq",
+      "prompt": "A photon has wavelength 500 nm. What is its energy?",
+      "choices": [
+        "1.24 eV",
+        "2.48 eV",
+        "3.10 eV",
+        "4.96 eV"
+      ],
+      "answer": 1,
+      "explanation": "E = 1240/500 = 2.48 eV."
+    },
+    {
+      "id": "phy-mcq-114",
+      "type": "mcq",
+      "prompt": "What is the energy in joules of a 2 eV photon?",
+      "choices": [
+        "3.2 × 10^-19 J",
+        "1.6 × 10^-19 J",
+        "3.2 × 10^-17 J",
+        "2 × 10^-19 J"
+      ],
+      "answer": 0,
+      "explanation": "2 eV × 1.6 × 10^-19 J/eV = 3.2 × 10^-19 J."
+    },
+    {
+      "id": "phy-mcq-115",
+      "type": "mcq",
+      "prompt": "A blackbody is at 727°C. What is its temperature in Kelvin?",
+      "choices": [
+        "727 K",
+        "800 K",
+        "1000 K",
+        "1273 K"
+      ],
+      "answer": 2,
+      "explanation": "K = °C + 273\r\nK = 727 + 273 = 1000 K."
+    },
+    {
+      "id": "phy-mcq-116",
+      "type": "mcq",
+      "prompt": "A blackbody has a temperature of 1000 K. What is approximately its peak wavelength using Wien's law?",
+      "choices": [
+        "2.9 × 10^-3 m",
+        "2.9 × 10^-6 m",
+        "2.9 × 10^-9 m",
+        "2.9 × 10^-12 m"
+      ],
+      "answer": 1,
+      "explanation": "λmax = 2.898 × 10^-3 / 1000\r\n= 2.898 × 10^-6 m.\r\nNote: The study guide marks Wien's law as NOT in Exam."
+    },
+    {
+      "id": "phy-mcq-117",
+      "type": "mcq",
+      "prompt": "A star peaks at 483 nm. What is its approximate temperature using Wien's law?",
+      "choices": [
+        "600 K",
+        "6000 K",
+        "60,000 K",
+        "4830 K"
+      ],
+      "answer": 1,
+      "explanation": "T = 2.898 × 10^-3 / 483 × 10^-9 ≈ 6000 K."
+    },
+    {
+      "id": "phy-mcq-118",
+      "type": "mcq",
+      "prompt": "Which temperature is hotter?",
+      "choices": [
+        "1000 K",
+        "2000 K",
+        "Both are the same",
+        "Cannot be determined"
+      ],
+      "answer": 1,
+      "explanation": "Higher Kelvin temperature means a hotter object."
+    },
+    {
+      "id": "phy-mcq-119",
+      "type": "mcq",
+      "prompt": "If a blackbody's temperature increases, its peak wavelength moves toward:",
+      "choices": [
+        "Longer wavelengths",
+        "Shorter wavelengths",
+        "Zero frequency",
+        "No change"
+      ],
+      "answer": 1,
+      "explanation": "Wien's law shows λmax is inversely proportional to temperature."
+    },
+    {
+      "id": "phy-mcq-120",
+      "type": "mcq",
+      "prompt": "A metal has a work function of 2.3 eV. What is the threshold wavelength?",
+      "choices": [
+        "124 nm",
+        "264 nm",
+        "540 nm",
+        "780 nm"
+      ],
+      "answer": 2,
+      "explanation": "λ0 = 1240/φ\r\nλ0 = 1240/2.3 ≈ 539 nm.\r\nCorrection: The correct answer is C, 539 nm, approximately 540 nm."
+    },
+    {
+      "id": "phy-mcq-121",
+      "type": "mcq",
+      "prompt": "Sodium has a work function of 2.3 eV. A 400 nm photon hits it. What is the maximum kinetic energy?",
+      "choices": [
+        "0.3 eV",
+        "0.8 eV",
+        "2.3 eV",
+        "3.1 eV"
+      ],
+      "answer": 1,
+      "explanation": "Photon energy:\r\nE = 1240/400 = 3.1 eV\r\nKEmax = 3.1 − 2.3 = 0.8 eV."
+    },
+    {
+      "id": "phy-mcq-122",
+      "type": "mcq",
+      "prompt": "A metal has a work function of 4.7 eV. What is its approximate threshold wavelength?",
+      "choices": [
+        "124 nm",
+        "264 nm",
+        "470 nm",
+        "780 nm"
+      ],
+      "answer": 1,
+      "explanation": "λ0 = 1240/4.7 ≈ 264 nm."
+    },
+    {
+      "id": "phy-mcq-123",
+      "type": "mcq",
+      "prompt": "A 500 nm photon hits a metal with work function 2 eV. What is the maximum kinetic energy?",
+      "choices": [
+        "0.48 eV",
+        "1.48 eV",
+        "2.48 eV",
+        "4.48 eV"
+      ],
+      "answer": 0,
+      "explanation": "E = 1240/500 = 2.48 eV\r\nKEmax = 2.48 − 2 = 0.48 eV.\r\nCorrection: The correct answer is A, 0.48 eV."
+    },
+    {
+      "id": "phy-mcq-124",
+      "type": "mcq",
+      "prompt": "A photon has frequency 8 × 10^14 Hz. What is its energy?",
+      "choices": [
+        "0.33 eV",
+        "1.65 eV",
+        "3.31 eV",
+        "8.0 eV"
+      ],
+      "answer": 2,
+      "explanation": "E = hf\r\nE = (4.14 × 10^-15)(8 × 10^14) ≈ 3.31 eV."
+    },
+    {
+      "id": "phy-mcq-125",
+      "type": "mcq",
+      "prompt": "Sodium has a work function of 2.3 eV. If the photon energy is 3.3 eV, what is the maximum kinetic energy?",
+      "choices": [
+        "1.0 eV",
+        "2.3 eV",
+        "3.3 eV",
+        "5.6 eV"
+      ],
+      "answer": 0,
+      "explanation": "KEmax = 3.3 − 2.3 = 1.0 eV."
+    },
+    {
+      "id": "phy-mcq-126",
+      "type": "mcq",
+      "prompt": "If the maximum kinetic energy of a photoelectron is 1.0 eV, what is the stopping potential?",
+      "choices": [
+        "0.1 V",
+        "1.0 V",
+        "10 V",
+        "100 V"
+      ],
+      "answer": 1,
+      "explanation": "Numerically, electron kinetic energy in eV equals stopping potential in volts."
+    },
+    {
+      "id": "phy-mcq-127",
+      "type": "mcq",
+      "prompt": "A photon has frequency 5 × 10^14 Hz. What is its energy in eV?",
+      "choices": [
+        "0.207 eV",
+        "2.07 eV",
+        "5.0 eV",
+        "20.7 eV"
+      ],
+      "answer": 1,
+      "explanation": "E = hf\r\nE = 4.14 × 10^-15 × 5 × 10^14 ≈ 2.07 eV."
+    },
+    {
+      "id": "phy-mcq-128",
+      "type": "mcq",
+      "prompt": "A metal has a work function of 3 eV. Light provides photons of 2 eV. What happens?",
+      "choices": [
+        "Electrons leave with 1 eV",
+        "Electrons leave with 5 eV",
+        "No photoelectrons are emitted",
+        "Electrons leave with 3 eV"
+      ],
+      "answer": 2,
+      "explanation": "Photon energy is less than the work function."
+    },
+    {
+      "id": "phy-mcq-129",
+      "type": "mcq",
+      "prompt": "A metal has a work function of 2 eV. Photons have energy 5 eV. What is KEmax?",
+      "choices": [
+        "2 eV",
+        "3 eV",
+        "5 eV",
+        "7 eV"
+      ],
+      "answer": 1,
+      "explanation": "KEmax = 5 − 2 = 3 eV."
+    },
+    {
+      "id": "phy-mcq-130",
+      "type": "mcq",
+      "prompt": "What happens to the maximum kinetic energy if the light frequency increases?",
+      "choices": [
+        "It decreases",
+        "It increases",
+        "It stays constant",
+        "It becomes zero"
+      ],
+      "answer": 1,
+      "explanation": "KEmax = hf − φ, so increasing f increases KEmax."
+    },
+    {
+      "id": "phy-mcq-131",
+      "type": "mcq",
+      "prompt": "An electron has a mass of 9.1 × 10^-31 kg and speed 1 × 10^6 m/s. What is its momentum?",
+      "choices": [
+        "9.1 × 10^-37 kg m/s",
+        "9.1 × 10^-25 kg m/s",
+        "9.1 × 10^-19 kg m/s",
+        "1 × 10^-6 kg m/s"
+      ],
+      "answer": 1,
+      "explanation": "p = mv\r\np = (9.1 × 10^-31)(1 × 10^6)\r\n= 9.1 × 10^-25 kg m/s."
+    },
+    {
+      "id": "phy-mcq-132",
+      "type": "mcq",
+      "prompt": "An electron has momentum 9.1 × 10^-25 kg m/s. What is its de Broglie wavelength?",
+      "choices": [
+        "7.3 × 10^-10 m",
+        "7.3 × 10^-19 m",
+        "1.2 × 10^-9 m",
+        "9.1 × 10^-25 m"
+      ],
+      "answer": 0,
+      "explanation": "λ = h/p\r\nλ = 6.63 × 10^-34 / 9.1 × 10^-25\r\n≈ 7.3 × 10^-10 m."
+    },
+    {
+      "id": "phy-mcq-133",
+      "type": "mcq",
+      "prompt": "A particle has mass 0.15 kg and speed 30 m/s. What is its momentum?",
+      "choices": [
+        "0.5 kg m/s",
+        "4.5 kg m/s",
+        "15 kg m/s",
+        "30.15 kg m/s"
+      ],
+      "answer": 1,
+      "explanation": "p = mv = 0.15 × 30 = 4.5 kg m/s."
+    },
+    {
+      "id": "phy-mcq-134",
+      "type": "mcq",
+      "prompt": "What is the de Broglie wavelength of the particle in Question 133?",
+      "choices": [
+        "1.5 × 10^-34 m",
+        "1.5 × 10^-24 m",
+        "4.5 × 10^-34 m",
+        "6.63 × 10^-34 m"
+      ],
+      "answer": 0,
+      "explanation": "λ = h/p\r\nλ = 6.63 × 10^-34 / 4.5\r\n≈ 1.47 × 10^-34 m."
+    },
+    {
+      "id": "phy-mcq-135",
+      "type": "mcq",
+      "prompt": "An electron is accelerated through 100 V. What is its approximate wavelength?",
+      "choices": [
+        "1.23 nm",
+        "0.123 nm",
+        "12.3 nm",
+        "123 nm"
+      ],
+      "answer": 1,
+      "explanation": "λ = 1.23/√V\r\nλ = 1.23/√100 = 1.23/10 = 0.123 nm."
+    },
+    {
+      "id": "phy-mcq-136",
+      "type": "mcq",
+      "prompt": "An electron is accelerated through 10,000 V. What is its approximate wavelength?",
+      "choices": [
+        "0.123 nm",
+        "0.0123 nm",
+        "1.23 nm",
+        "12.3 nm"
+      ],
+      "answer": 1,
+      "explanation": "λ = 1.23/√10000\r\n= 1.23/100 = 0.0123 nm."
+    },
+    {
+      "id": "phy-mcq-137",
+      "type": "mcq",
+      "prompt": "An electron is accelerated through 25 V. What is its approximate wavelength?",
+      "choices": [
+        "0.246 nm",
+        "0.123 nm",
+        "0.0492 nm",
+        "2.46 nm"
+      ],
+      "answer": 0,
+      "explanation": "√25 = 5\r\nλ = 1.23/5 = 0.246 nm."
+    },
+    {
+      "id": "phy-mcq-138",
+      "type": "mcq",
+      "prompt": "An electron has a de Broglie wavelength of 0.123 nm. Approximately what accelerating voltage produced it?",
+      "choices": [
+        "10 V",
+        "50 V",
+        "100 V",
+        "1000 V"
+      ],
+      "answer": 2,
+      "explanation": "λ = 1.23/√V\r\n0.123 = 1.23/√V\r\n√V = 10\r\nV = 100 V."
+    },
+    {
+      "id": "phy-mcq-139",
+      "type": "mcq",
+      "prompt": "A double-slit experiment uses light of wavelength 600 nm. The screen is 1 m away and slit separation is 0.2 mm. What is the fringe spacing?",
+      "choices": [
+        "0.3 mm",
+        "3 mm",
+        "30 mm",
+        "300 mm"
+      ],
+      "answer": 1,
+      "explanation": "β = λD/d\r\nβ = (600 × 10^-9 × 1)/(0.2 × 10^-3)\r\n= 3 × 10^-3 m = 3 mm."
+    },
+    {
+      "id": "phy-mcq-140",
+      "type": "mcq",
+      "prompt": "In a double-slit experiment, what happens to fringe spacing if wavelength increases?",
+      "choices": [
+        "It decreases",
+        "It increases",
+        "It becomes zero",
+        "It does not change"
+      ],
+      "answer": 1,
+      "explanation": "β = λD/d, so fringe spacing is directly proportional to wavelength."
+    },
+    {
+      "id": "phy-mcq-141",
+      "type": "mcq",
+      "prompt": "In a double-slit experiment, if slit separation increases, fringe spacing:",
+      "choices": [
+        "Increases",
+        "Decreases",
+        "Stays the same",
+        "Becomes infinite"
+      ],
+      "answer": 1,
+      "explanation": "β = λD/d, so increasing d decreases β."
+    },
+    {
+      "id": "phy-mcq-142",
+      "type": "mcq",
+      "prompt": "Light has a wavelength of 500 nm. What is its photon energy?",
+      "choices": [
+        "1.24 eV",
+        "2.48 eV",
+        "3.48 eV",
+        "5.00 eV"
+      ],
+      "answer": 1,
+      "explanation": "E = 1240/500 = 2.48 eV."
+    },
+    {
+      "id": "phy-mcq-143",
+      "type": "mcq",
+      "prompt": "A photon has energy 3.1 eV. What is its approximate wavelength?",
+      "choices": [
+        "200 nm",
+        "300 nm",
+        "400 nm",
+        "500 nm"
+      ],
+      "answer": 2,
+      "explanation": "λ = 1240/3.1 = 400 nm."
+    },
+    {
+      "id": "phy-mcq-144",
+      "type": "mcq",
+      "prompt": "A metal has work function 2.1 eV. What is its threshold wavelength?",
+      "choices": [
+        "290 nm",
+        "400 nm",
+        "590 nm",
+        "1240 nm"
+      ],
+      "answer": 2,
+      "explanation": "λ0 = 1240/2.1 ≈ 590 nm."
+    },
+    {
+      "id": "phy-mcq-145",
+      "type": "mcq",
+      "prompt": "A 500 nm photon hits a metal with work function 2.1 eV. What is the maximum kinetic energy?",
+      "choices": [
+        "0.38 eV",
+        "2.10 eV",
+        "2.48 eV",
+        "4.58 eV"
+      ],
+      "answer": 0,
+      "explanation": "E = 1240/500 = 2.48 eV\r\nKEmax = 2.48 − 2.10 = 0.38 eV."
+    },
+    {
+      "id": "phy-mcq-146",
+      "type": "mcq",
+      "prompt": "What stopping potential corresponds to a maximum kinetic energy of 0.38 eV?",
+      "choices": [
+        "0.038 V",
+        "0.38 V",
+        "3.8 V",
+        "38 V"
+      ],
+      "answer": 1,
+      "explanation": "KEmax(eV) has the same numerical value as V0 in volts."
+    },
+    {
+      "id": "phy-mcq-147",
+      "type": "mcq",
+      "prompt": "Light has frequency 7 × 10^14 Hz. What is its wavelength?",
+      "choices": [
+        "43 nm",
+        "429 nm",
+        "700 nm",
+        "2.1 μm"
+      ],
+      "answer": 1,
+      "explanation": "λ = c/f\r\nλ = (3 × 10^8)/(7 × 10^14)\r\n≈ 4.29 × 10^-7 m = 429 nm."
+    },
+    {
+      "id": "phy-mcq-148",
+      "type": "mcq",
+      "prompt": "A photon has frequency 1 × 10^15 Hz. Approximately what is its energy?",
+      "choices": [
+        "0.414 eV",
+        "4.14 eV",
+        "41.4 eV",
+        "414 eV"
+      ],
+      "answer": 1,
+      "explanation": "E = hf\r\nE = 4.14 × 10^-15 × 10^15 = 4.14 eV."
+    },
+    {
+      "id": "phy-mcq-149",
+      "type": "mcq",
+      "prompt": "An electron moves at 2 × 10^6 m/s. What is its momentum?",
+      "choices": [
+        "1.82 × 10^-24 kg m/s",
+        "9.1 × 10^-25 kg m/s",
+        "1.82 × 10^-25 kg m/s",
+        "2 × 10^-31 kg m/s"
+      ],
+      "answer": 0,
+      "explanation": "p = mv\r\np = (9.1 × 10^-31)(2 × 10^6)\r\n= 1.82 × 10^-24 kg m/s."
+    },
+    {
+      "id": "phy-mcq-150",
+      "type": "mcq",
+      "prompt": "Using the momentum from Question 149, what is the electron's de Broglie wavelength?",
+      "choices": [
+        "3.64 × 10^-10 m",
+        "7.3 × 10^-10 m",
+        "1.82 × 10^-24 m",
+        "6.63 × 10^-34 m"
+      ],
+      "answer": 0,
+      "explanation": "λ = h/p\r\nλ = (6.63 × 10^-34)/(1.82 × 10^-24)\r\n≈ 3.64 × 10^-10 m."
+    }
+  ]
+}
