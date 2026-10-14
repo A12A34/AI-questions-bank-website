@@ -24,6 +24,11 @@
       "id": "alhaqiqa-al-murra",
       "title": "الحقيقة المرة (عبد الله الزايد)",
       "file": "alhaqiqa-al-murra-quiz.json"
+    },
+    {
+      "id": "alhaqiqa-al-murra-2",
+      "title": "الحقيقة المرة — المقطع الثاني (عبد الله الزايد)",
+      "file": "alhaqiqa-al-murra-quiz-2.json"
     }
   ]
 }
