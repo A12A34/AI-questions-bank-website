@@ -19,6 +19,11 @@
       "id": "physics-test1",
       "title": "Physics Test 1 (150 Questions)",
       "file": "physics-test1.json"
+    },
+    {
+      "id": "alhaqiqa-al-murra",
+      "title": "الحقيقة المرة (عبد الله الزايد)",
+      "file": "alhaqiqa-al-murra-quiz.json"
     }
   ]
 }
