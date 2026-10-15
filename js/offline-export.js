@@ -89,6 +89,7 @@ export function buildOfflineQuizHtml(bank) {
       .feedback.warn, .explanation, .model-answer { color: var(--muted); }
       .explanation, .model-answer { border-left: 3px solid var(--accent); margin: 16px 0 0; padding: 8px 12px; }
       .explanation strong, .model-answer strong { display: block; color: var(--text); }
+      .submit-actions { display: flex; justify-content: flex-end; margin-top: 18px; }
       .empty { color: var(--muted); text-align: center; }
       @media (max-width: 600px) {
         .match-row { align-items: stretch; flex-direction: column; gap: 4px; }
@@ -107,11 +108,13 @@ export function buildOfflineQuizHtml(bank) {
           <label><input type="checkbox" id="shuffle-questions"> Shuffle questions</label>
           <label><input type="checkbox" id="shuffle-choices"> Shuffle choices</label>
           <label><input type="checkbox" id="bookmarks-only"> Bookmarks only</label>
-          <button type="button" id="submit" class="btn btn-primary" hidden>Submit test</button>
         </div>
       </header>
       <main id="questions"></main>
       <p id="empty" class="empty" hidden>No bookmarked questions yet.</p>
+      <div class="submit-actions">
+        <button type="button" id="submit" class="btn btn-primary" hidden>Submit test</button>
+      </div>
     </div>
     <script>
       const bank = ${data};
