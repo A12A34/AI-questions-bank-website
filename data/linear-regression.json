@@ -1,0 +1,1006 @@
+{
+  "id": "linear-regression",
+  "title": "Linear Regression (100 Questions)",
+  "questions": [
+    {
+      "id": "lr-mcq-1",
+      "type": "mcq",
+      "prompt": "What is the equation for Linear Regression given in the slides?",
+      "choices": [
+        "y = x + w + b",
+        "y = w.x + b",
+        "y = w/x + b",
+        "y = b.x + w"
+      ],
+      "answer": 1,
+      "explanation": "The slide defines Linear Regression using y = w.x + b, where y is the dependent variable, x is the independent variable, w is the weight/coefficient, and b is the bias."
+    },
+    {
+      "id": "lr-mcq-2",
+      "type": "mcq",
+      "prompt": "In the equation y = w.x + b, what does y represent?",
+      "choices": [
+        "The independent variable",
+        "The weight",
+        "The dependent variable",
+        "The bias"
+      ],
+      "answer": 2,
+      "explanation": "y is the dependent variable, meaning the variable that the model is trying to predict."
+    },
+    {
+      "id": "lr-mcq-3",
+      "type": "mcq",
+      "prompt": "In Linear Regression, what is x?",
+      "choices": [
+        "The dependent variable",
+        "The independent variable",
+        "The bias",
+        "The residual"
+      ],
+      "answer": 1,
+      "explanation": "x is the independent variable, also described as the feature used by the model."
+    },
+    {
+      "id": "lr-mcq-4",
+      "type": "mcq",
+      "prompt": "What does w represent in y = w.x + b?",
+      "choices": [
+        "The dependent variable",
+        "The residual",
+        "The weight or coefficient",
+        "The predicted value"
+      ],
+      "answer": 2,
+      "explanation": "w is the weight or coefficient of the Linear Regression model. It is one of the values the model learns."
+    },
+    {
+      "id": "lr-mcq-5",
+      "type": "mcq",
+      "prompt": "What does b represent?",
+      "choices": [
+        "Bias term",
+        "Independent variable",
+        "Residual",
+        "Prediction error"
+      ],
+      "answer": 0,
+      "explanation": "b is the bias term in the Linear Regression equation."
+    },
+    {
+      "id": "lr-mcq-6",
+      "type": "mcq",
+      "prompt": "What is the main task in Linear Regression?",
+      "choices": [
+        "Remove all independent variables",
+        "Fit the data onto the model",
+        "Make every residual equal to 1",
+        "Maximize the residuals"
+      ],
+      "answer": 1,
+      "explanation": "The task is to fit the data onto the model by finding coefficients that give predictions closest to the actual y values."
+    },
+    {
+      "id": "lr-mcq-7",
+      "type": "mcq",
+      "prompt": "When fitting a Linear Regression model, what are we trying to find?",
+      "choices": [
+        "Coefficients that give the best predictions",
+        "The largest possible residuals",
+        "Only the value of x",
+        "A random line"
+      ],
+      "answer": 0,
+      "explanation": "The goal is to find coefficients that produce predictions for y that are closest to the actual values."
+    },
+    {
+      "id": "lr-mcq-8",
+      "type": "mcq",
+      "prompt": "Which variable is the model trying to predict?",
+      "choices": [
+        "x",
+        "w",
+        "b",
+        "y"
+      ],
+      "answer": 3,
+      "explanation": "The dependent variable y is the variable the model attempts to predict."
+    },
+    {
+      "id": "lr-mcq-9",
+      "type": "mcq",
+      "prompt": "Which of the following is an assumption of Linear Regression?",
+      "choices": [
+        "Linear relationship",
+        "Random relationship",
+        "No relationship",
+        "Exponential relationship"
+      ],
+      "answer": 0,
+      "explanation": "One of the four assumptions is that there is a linear relationship between the dependent and independent variables."
+    },
+    {
+      "id": "lr-mcq-10",
+      "type": "mcq",
+      "prompt": "How many rules/assumptions are stated in the slides?",
+      "choices": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": 2,
+      "explanation": "The slides state that there are four rules assumed to be true when making Linear Regression models."
+    },
+    {
+      "id": "lr-mcq-11",
+      "type": "mcq",
+      "prompt": "Which of the following is NOT one of the four assumptions listed?",
+      "choices": [
+        "Normality",
+        "Multicollinearity",
+        "Homoscedasticity",
+        "Accuracy"
+      ],
+      "answer": 3,
+      "explanation": "The four listed assumptions are Linear Relationship, Normality, Multicollinearity, and Homoscedasticity."
+    },
+    {
+      "id": "lr-mcq-12",
+      "type": "mcq",
+      "prompt": "What does the Linear Relationship assumption mean?",
+      "choices": [
+        "x and y must always have identical values",
+        "There should be a linear relationship between the dependent and independent variables",
+        "There should be no relationship between x and y",
+        "Only y should be linear"
+      ],
+      "answer": 1,
+      "explanation": "Linear Regression assumes a linear relationship between the dependent variable and the independent variable."
+    },
+    {
+      "id": "lr-mcq-13",
+      "type": "mcq",
+      "prompt": "Which graph can be used to check the Linear Relationship assumption?",
+      "choices": [
+        "Histogram",
+        "Correlation matrix",
+        "Scatter plot",
+        "Pie chart"
+      ],
+      "answer": 2,
+      "explanation": "The slides state that a scatter plot can be used to check the linear relationship. It should indicate a straight-line relationship."
+    },
+    {
+      "id": "lr-mcq-14",
+      "type": "mcq",
+      "prompt": "A scatter plot shows a clear straight-line pattern between x and y. Which assumption does this support?",
+      "choices": [
+        "Normality",
+        "Linear Relationship",
+        "Homoscedasticity",
+        "Multicollinearity"
+      ],
+      "answer": 1,
+      "explanation": "A scatter plot indicating a straight-line relationship supports the Linear Relationship assumption."
+    },
+    {
+      "id": "lr-mcq-15",
+      "type": "mcq",
+      "prompt": "What does the Normality assumption concern?",
+      "choices": [
+        "The independent variables",
+        "The coefficients",
+        "The residuals",
+        "The bias"
+      ],
+      "answer": 2,
+      "explanation": "The Normality assumption states that the residuals follow a normal distribution."
+    },
+    {
+      "id": "lr-mcq-16",
+      "type": "mcq",
+      "prompt": "What are residuals?",
+      "choices": [
+        "Differences between observed and predicted values",
+        "Differences between x and w",
+        "The average of x values",
+        "The bias term"
+      ],
+      "answer": 0,
+      "explanation": "The slides define residuals as the differences between observed values and predicted values."
+    },
+    {
+      "id": "lr-mcq-17",
+      "type": "mcq",
+      "prompt": "Which tool is mentioned for evaluating Normality?",
+      "choices": [
+        "Scatter plot",
+        "Histogram",
+        "Correlation matrix",
+        "Line graph"
+      ],
+      "answer": 1,
+      "explanation": "The slides state that Normality can be evaluated using histograms."
+    },
+    {
+      "id": "lr-mcq-18",
+      "type": "mcq",
+      "prompt": "A researcher wants to check whether residuals follow a normal distribution. Which should they use?",
+      "choices": [
+        "Histogram",
+        "Scatter plot",
+        "Correlation matrix",
+        "Regression equation only"
+      ],
+      "answer": 0,
+      "explanation": "A histogram is the method specified in the slides for evaluating the Normality assumption."
+    },
+    {
+      "id": "lr-mcq-19",
+      "type": "mcq",
+      "prompt": "What does Multicollinearity refer to?",
+      "choices": [
+        "Residuals being normally distributed",
+        "Independent variables being excessively correlated with one another",
+        "y being independent of x",
+        "The line having a large slope"
+      ],
+      "answer": 1,
+      "explanation": "Multicollinearity occurs when independent variables are excessively correlated with one another."
+    },
+    {
+      "id": "lr-mcq-20",
+      "type": "mcq",
+      "prompt": "Which tool can be used to assess Multicollinearity?",
+      "choices": [
+        "Histogram",
+        "Scatter plot",
+        "Correlation matrix",
+        "Residual equation"
+      ],
+      "answer": 2,
+      "explanation": "The slides state that Multicollinearity can be assessed using Correlation Matrices."
+    },
+    {
+      "id": "lr-mcq-21",
+      "type": "mcq",
+      "prompt": "Two independent variables are strongly correlated with each other. What problem may this indicate?",
+      "choices": [
+        "Normality",
+        "Multicollinearity",
+        "Homoscedasticity",
+        "Bias"
+      ],
+      "answer": 1,
+      "explanation": "Excessive correlation between independent variables is called Multicollinearity."
+    },
+    {
+      "id": "lr-mcq-22",
+      "type": "mcq",
+      "prompt": "What does Homoscedasticity refer to?",
+      "choices": [
+        "Consistent variance of errors/residuals",
+        "Normally distributed x values",
+        "A straight line in every dataset",
+        "High correlation between independent variables"
+      ],
+      "answer": 0,
+      "explanation": "Homoscedasticity means the variance of errors or residuals is consistent across all levels of the independent variables."
+    },
+    {
+      "id": "lr-mcq-23",
+      "type": "mcq",
+      "prompt": "In simple terms, Homoscedasticity means:",
+      "choices": [
+        "Residuals are always zero",
+        "The spread of residuals is consistent",
+        "x and y are identical",
+        "All variables are highly correlated"
+      ],
+      "answer": 1,
+      "explanation": "The slides describe it simply as the spread or scatter of residuals being consistent regardless of the value of the independent variables."
+    },
+    {
+      "id": "lr-mcq-24",
+      "type": "mcq",
+      "prompt": "Which assumption is concerned with consistent residual spread?",
+      "choices": [
+        "Normality",
+        "Multicollinearity",
+        "Homoscedasticity",
+        "Linear Relationship"
+      ],
+      "answer": 2,
+      "explanation": "Consistent residual variance/spread is the definition of Homoscedasticity."
+    },
+    {
+      "id": "lr-mcq-25",
+      "type": "mcq",
+      "prompt": "Which assumption is checked using a scatter plot according to the slides?",
+      "choices": [
+        "Linear Relationship",
+        "Normality",
+        "Multicollinearity",
+        "None"
+      ],
+      "answer": 0,
+      "explanation": "The slides specifically state that a scatter plot can be used to check the Linear Relationship."
+    },
+    {
+      "id": "lr-mcq-26",
+      "type": "mcq",
+      "prompt": "Which assumption is evaluated using histograms?",
+      "choices": [
+        "Linear Relationship",
+        "Normality",
+        "Multicollinearity",
+        "Homoscedasticity"
+      ],
+      "answer": 1,
+      "explanation": "Histograms are used to evaluate the Normality assumption."
+    },
+    {
+      "id": "lr-mcq-27",
+      "type": "mcq",
+      "prompt": "Which assumption is assessed using correlation matrices?",
+      "choices": [
+        "Normality",
+        "Homoscedasticity",
+        "Multicollinearity",
+        "Linear Relationship"
+      ],
+      "answer": 2,
+      "explanation": "Correlation matrices are used to assess Multicollinearity."
+    },
+    {
+      "id": "lr-mcq-28",
+      "type": "mcq",
+      "prompt": "What method is used to fit a line to the data?",
+      "choices": [
+        "Maximum Distance",
+        "Least-Squares",
+        "Random Search",
+        "Histogram Method"
+      ],
+      "answer": 1,
+      "explanation": "The slides state that Least-Squares is used to fit a line to the data."
+    },
+    {
+      "id": "lr-mcq-29",
+      "type": "mcq",
+      "prompt": "What is a residual in the Least-Squares process?",
+      "choices": [
+        "Distance between the line and a data point",
+        "Distance between two independent variables",
+        "The slope of the line",
+        "The y-intercept"
+      ],
+      "answer": 0,
+      "explanation": "The distance between the line and a data point is called a residual."
+    },
+    {
+      "id": "lr-mcq-30",
+      "type": "mcq",
+      "prompt": "Why are residuals squared?",
+      "choices": [
+        "To make each term positive",
+        "To make every residual zero",
+        "To increase the error",
+        "To remove x"
+      ],
+      "answer": 0,
+      "explanation": "Squaring the terms ensures that each term is positive."
+    },
+    {
+      "id": "lr-mcq-31",
+      "type": "mcq",
+      "prompt": "What is the Sum of Squared Residuals?",
+      "choices": [
+        "The sum of x values",
+        "The squared differences between the real data and the line, added together",
+        "The average of y",
+        "The slope multiplied by the intercept"
+      ],
+      "answer": 1,
+      "explanation": "It is called the Sum of Squared Residuals because residuals are differences between real data and the line, and those differences are squared and summed."
+    },
+    {
+      "id": "lr-mcq-32",
+      "type": "mcq",
+      "prompt": "What happens to the Sum of Squared Residuals when the line initially rotates toward a better fit?",
+      "choices": [
+        "It increases",
+        "It decreases",
+        "It becomes undefined",
+        "It always remains zero"
+      ],
+      "answer": 1,
+      "explanation": "As the line is rotated toward the optimal fit, the Sum of Squared Residuals decreases."
+    },
+    {
+      "id": "lr-mcq-33",
+      "type": "mcq",
+      "prompt": "What happens if the line is rotated too much?",
+      "choices": [
+        "The Sum of Squared Residuals increases again",
+        "It remains zero",
+        "It always decreases",
+        "The residuals disappear"
+      ],
+      "answer": 0,
+      "explanation": "If the line is rotated too far, the Sum of Squared Residuals increases again."
+    },
+    {
+      "id": "lr-mcq-34",
+      "type": "mcq",
+      "prompt": "What does Least-Squares try to minimize?",
+      "choices": [
+        "x",
+        "y",
+        "Sum of Squared Residuals",
+        "Number of observations"
+      ],
+      "answer": 2,
+      "explanation": "Least-Squares finds values of w and b that minimize the Sum of Squared Residuals."
+    },
+    {
+      "id": "lr-mcq-35",
+      "type": "mcq",
+      "prompt": "In the equation y = w.x + b, what is w described as in the Least-Squares slides?",
+      "choices": [
+        "y-intercept",
+        "Slope",
+        "Residual",
+        "Mean"
+      ],
+      "answer": 1,
+      "explanation": "The slide identifies w as the slope of the line."
+    },
+    {
+      "id": "lr-mcq-36",
+      "type": "mcq",
+      "prompt": "What is b in terms of the graph?",
+      "choices": [
+        "x-intercept",
+        "Slope",
+        "y-intercept",
+        "Residual"
+      ],
+      "answer": 2,
+      "explanation": "b is the y-intercept, where the line crosses the y-axis when x equals 0."
+    },
+    {
+      "id": "lr-mcq-37",
+      "type": "mcq",
+      "prompt": "What does the slope tell us?",
+      "choices": [
+        "How much the dependent variable is likely to change when the independent variable increases",
+        "The number of observations",
+        "The average residual",
+        "The normality of residuals"
+      ],
+      "answer": 0,
+      "explanation": "The slope indicates how much the dependent variable is likely to change when the independent variable increases."
+    },
+    {
+      "id": "lr-mcq-38",
+      "type": "mcq",
+      "prompt": "If x equals 0, where does the line cross the y-axis?",
+      "choices": [
+        "At w",
+        "At x",
+        "At b",
+        "At the residual"
+      ],
+      "answer": 2,
+      "explanation": "b is the y-intercept, which is the location where the line crosses the y-axis when x = 0."
+    },
+    {
+      "id": "lr-mcq-39",
+      "type": "mcq",
+      "prompt": "The horizontal line through the average y value is described as:",
+      "choices": [
+        "The best possible fit",
+        "Probably the worst fit",
+        "Always the optimal fit",
+        "The residual line"
+      ],
+      "answer": 1,
+      "explanation": "The slide says the horizontal line through the average y value is probably the worst fit, although it provides a useful starting point."
+    },
+    {
+      "id": "lr-mcq-40",
+      "type": "mcq",
+      "prompt": "What two parameters does Least-Squares estimate?",
+      "choices": [
+        "x and y",
+        "w and b",
+        "x and b",
+        "y and w only"
+      ],
+      "answer": 1,
+      "explanation": "Least-Squares estimates the two parameters w and b."
+    },
+    {
+      "id": "lr-mcq-41",
+      "type": "mcq",
+      "prompt": "Which expression represents the Sum of Squared Residuals?",
+      "choices": [
+        "Σ(x − y)",
+        "Σ((w.x + b) − y)²",
+        "Σ(w + b)",
+        "Σ(x + y)²"
+      ],
+      "answer": 1,
+      "explanation": "The slides give the Sum of Squared Residuals as the squared differences between the predicted line values and observed y values."
+    },
+    {
+      "id": "lr-mcq-42",
+      "type": "mcq",
+      "prompt": "If a predicted value is 10 and the observed value is 13, what is the residual using predicted − observed?",
+      "choices": [
+        "−3",
+        "3",
+        "23",
+        "130"
+      ],
+      "answer": 0,
+      "explanation": "Using the slide's form predicted − observed, the residual is 10 − 13 = −3."
+    },
+    {
+      "id": "lr-mcq-43",
+      "type": "mcq",
+      "prompt": "If a residual is −4, what is its squared value?",
+      "choices": [
+        "−16",
+        "0",
+        "8",
+        "16"
+      ],
+      "answer": 3,
+      "explanation": "(−4)² = 16. Squaring makes the value positive."
+    },
+    {
+      "id": "lr-mcq-44",
+      "type": "mcq",
+      "prompt": "Suppose the squared residuals are 4, 9, and 16. What is their Sum of Squared Residuals?",
+      "choices": [
+        "19",
+        "25",
+        "29",
+        "64"
+      ],
+      "answer": 2,
+      "explanation": "Add the squared residuals: 4 + 9 + 16 = 29."
+    },
+    {
+      "id": "lr-mcq-45",
+      "type": "mcq",
+      "prompt": "Suppose a line has residuals −2, 3, and −4. What is the Sum of Squared Residuals?",
+      "choices": [
+        "9",
+        "29",
+        "−3",
+        "5"
+      ],
+      "answer": 1,
+      "explanation": "Square each residual: (−2)² + 3² + (−4)² = 4 + 9 + 16 = 29."
+    },
+    {
+      "id": "lr-mcq-46",
+      "type": "mcq",
+      "prompt": "Why does Least-Squares use squared residuals instead of simply adding residuals?",
+      "choices": [
+        "Squaring ensures each term is positive",
+        "Squaring removes the data",
+        "Squaring makes x disappear",
+        "Squaring always makes the line horizontal"
+      ],
+      "answer": 0,
+      "explanation": "Squaring ensures that the individual terms are positive, preventing positive and negative residuals from canceling each other."
+    },
+    {
+      "id": "lr-mcq-47",
+      "type": "mcq",
+      "prompt": "What is the main goal when selecting w and b?",
+      "choices": [
+        "Maximize the Sum of Squared Residuals",
+        "Minimize the Sum of Squared Residuals",
+        "Make b equal to zero",
+        "Make w equal to zero"
+      ],
+      "answer": 1,
+      "explanation": "The optimal w and b are the values that minimize the Sum of Squared Residuals."
+    },
+    {
+      "id": "lr-mcq-48",
+      "type": "mcq",
+      "prompt": "What mathematical operation is used to determine where the optimal values occur?",
+      "choices": [
+        "Addition",
+        "Multiplication",
+        "Derivative",
+        "Division only"
+      ],
+      "answer": 2,
+      "explanation": "The slides explain that derivatives are taken to determine where the function reaches its optimal point."
+    },
+    {
+      "id": "lr-mcq-49",
+      "type": "mcq",
+      "prompt": "At the best point of the Sum of Squared Residuals function, what is the slope of the function?",
+      "choices": [
+        "100",
+        "1",
+        "−1",
+        "0"
+      ],
+      "answer": 3,
+      "explanation": "At the best point, the slope is zero. This indicates the optimal point of the function."
+    },
+    {
+      "id": "lr-mcq-50",
+      "type": "mcq",
+      "prompt": "Which statement best describes the Line of Best Fit?",
+      "choices": [
+        "It maximizes the errors",
+        "It minimizes the sum of squares between itself and the observed data",
+        "It always has a slope of zero",
+        "It ignores the observed data"
+      ],
+      "answer": 1,
+      "explanation": "The Line of Best Fit is the final line that minimizes the Sum of Squared Residuals between itself and the observed data."
+    },
+    {
+      "id": "lr-tf-1",
+      "type": "tf",
+      "prompt": "Linear Regression uses the equation y = w.x + b.",
+      "answer": true,
+      "explanation": "This is the Linear Regression equation given in Slide 4."
+    },
+    {
+      "id": "lr-tf-2",
+      "type": "tf",
+      "prompt": "In Linear Regression, x is the dependent variable.",
+      "answer": false,
+      "explanation": "x is the independent variable. y is the dependent variable."
+    },
+    {
+      "id": "lr-tf-3",
+      "type": "tf",
+      "prompt": "The variable y is the variable that the model is trying to predict.",
+      "answer": true,
+      "explanation": "y is the dependent variable, which the model attempts to predict."
+    },
+    {
+      "id": "lr-tf-4",
+      "type": "tf",
+      "prompt": "The variable w is the bias term.",
+      "answer": false,
+      "explanation": "w is the weight/coefficient. The bias term is b."
+    },
+    {
+      "id": "lr-tf-5",
+      "type": "tf",
+      "prompt": "The value b represents the bias term.",
+      "answer": true,
+      "explanation": "b is the bias term in y = w.x + b."
+    },
+    {
+      "id": "lr-tf-6",
+      "type": "tf",
+      "prompt": "The goal of Linear Regression is to find coefficients that give predictions close to actual values.",
+      "answer": true,
+      "explanation": "Fitting the data means finding coefficients that produce predictions for y closest to the actual values."
+    },
+    {
+      "id": "lr-tf-7",
+      "type": "tf",
+      "prompt": "Linear Regression assumes that there is no relationship between the independent and dependent variables.",
+      "answer": false,
+      "explanation": "It assumes a linear relationship between them."
+    },
+    {
+      "id": "lr-tf-8",
+      "type": "tf",
+      "prompt": "There are four assumptions listed in the Linear Regression slides.",
+      "answer": true,
+      "explanation": "The slides identify four rules: Linear Relationship, Normality, Multicollinearity, and Homoscedasticity."
+    },
+    {
+      "id": "lr-tf-9",
+      "type": "tf",
+      "prompt": "A scatter plot can be used to check the Linear Relationship assumption.",
+      "answer": true,
+      "explanation": "The slides specifically mention a scatter plot for checking the linear relationship."
+    },
+    {
+      "id": "lr-tf-10",
+      "type": "tf",
+      "prompt": "The scatter plot for a linear relationship should indicate a straight-line relationship.",
+      "answer": true,
+      "explanation": "A straight-line relationship in the scatter plot supports the Linear Relationship assumption."
+    },
+    {
+      "id": "lr-tf-11",
+      "type": "tf",
+      "prompt": "Normality means that the independent variables must be normally distributed.",
+      "answer": false,
+      "explanation": "The slide says that the residuals should follow a normal distribution."
+    },
+    {
+      "id": "lr-tf-12",
+      "type": "tf",
+      "prompt": "Residuals are differences between observed and predicted values.",
+      "answer": true,
+      "explanation": "This is the definition given in the Normality assumption slide."
+    },
+    {
+      "id": "lr-tf-13",
+      "type": "tf",
+      "prompt": "Histograms can be used to evaluate Normality.",
+      "answer": true,
+      "explanation": "The slides explicitly state that Normality can be evaluated using histograms."
+    },
+    {
+      "id": "lr-tf-14",
+      "type": "tf",
+      "prompt": "A correlation matrix is the tool specified for checking Normality.",
+      "answer": false,
+      "explanation": "The slides specify histograms for Normality. Correlation matrices are used for Multicollinearity."
+    },
+    {
+      "id": "lr-tf-15",
+      "type": "tf",
+      "prompt": "Multicollinearity occurs when independent variables are excessively correlated with each other.",
+      "answer": true,
+      "explanation": "This is the definition of Multicollinearity in the slides."
+    },
+    {
+      "id": "lr-tf-16",
+      "type": "tf",
+      "prompt": "Multicollinearity refers to excessive correlation between the dependent variable and residuals.",
+      "answer": false,
+      "explanation": "It refers to excessive correlation among independent variables."
+    },
+    {
+      "id": "lr-tf-17",
+      "type": "tf",
+      "prompt": "Correlation matrices can be used to assess Multicollinearity.",
+      "answer": true,
+      "explanation": "The slides specifically identify correlation matrices for assessing Multicollinearity."
+    },
+    {
+      "id": "lr-tf-18",
+      "type": "tf",
+      "prompt": "Homoscedasticity means that the variance of errors or residuals is consistent across all levels of the independent variables.",
+      "answer": true,
+      "explanation": "This is the definition provided on Slide 8."
+    },
+    {
+      "id": "lr-tf-19",
+      "type": "tf",
+      "prompt": "Homoscedasticity means that residuals must have completely different spreads at different x values.",
+      "answer": false,
+      "explanation": "Homoscedasticity means the residual spread is consistent across values of the independent variables."
+    },
+    {
+      "id": "lr-tf-20",
+      "type": "tf",
+      "prompt": "The spread or scatter of residuals should be consistent for Homoscedasticity.",
+      "answer": true,
+      "explanation": "This is the simple explanation of Homoscedasticity given in the slides."
+    },
+    {
+      "id": "lr-tf-21",
+      "type": "tf",
+      "prompt": "Least-Squares is used to fit a line to the data.",
+      "answer": true,
+      "explanation": "The slides identify Least-Squares as the method used to fit a line to data."
+    },
+    {
+      "id": "lr-tf-22",
+      "type": "tf",
+      "prompt": "A residual is the distance between a line and a data point.",
+      "answer": true,
+      "explanation": "The slide explicitly calls the distance between the line and data point a residual."
+    },
+    {
+      "id": "lr-tf-23",
+      "type": "tf",
+      "prompt": "Residuals are always positive before they are squared.",
+      "answer": false,
+      "explanation": "Residuals can be negative. The slides even point out that some differences are negative."
+    },
+    {
+      "id": "lr-tf-24",
+      "type": "tf",
+      "prompt": "Squaring residuals ensures that each squared term is positive.",
+      "answer": true,
+      "explanation": "This is one reason the slides give for squaring the terms."
+    },
+    {
+      "id": "lr-tf-25",
+      "type": "tf",
+      "prompt": "The Sum of Squared Residuals adds the residuals without squaring them.",
+      "answer": false,
+      "explanation": "The residuals are squared and then added together."
+    },
+    {
+      "id": "lr-tf-26",
+      "type": "tf",
+      "prompt": "The Sum of Squared Residuals measures how close the line is to the data points.",
+      "answer": true,
+      "explanation": "The slides explain that the fit can be measured by seeing how close the line is to the data points."
+    },
+    {
+      "id": "lr-tf-27",
+      "type": "tf",
+      "prompt": "A smaller Sum of Squared Residuals generally indicates a better fit.",
+      "answer": true,
+      "explanation": "Least-Squares searches for the values of w and b that minimize the Sum of Squared Residuals."
+    },
+    {
+      "id": "lr-tf-28",
+      "type": "tf",
+      "prompt": "Least-Squares tries to maximize the Sum of Squared Residuals.",
+      "answer": false,
+      "explanation": "It tries to minimize the Sum of Squared Residuals."
+    },
+    {
+      "id": "lr-tf-29",
+      "type": "tf",
+      "prompt": "Rotating the line toward a better fit can decrease the Sum of Squared Residuals.",
+      "answer": true,
+      "explanation": "The slides show that the Sum of Squared Residuals decreases as the line is rotated toward the optimal position."
+    },
+    {
+      "id": "lr-tf-30",
+      "type": "tf",
+      "prompt": "The Sum of Squared Residuals will always decrease no matter how far the line is rotated.",
+      "answer": false,
+      "explanation": "If the line is rotated too far, the Sum of Squared Residuals increases again."
+    },
+    {
+      "id": "lr-tf-31",
+      "type": "tf",
+      "prompt": "w represents the slope of the line.",
+      "answer": true,
+      "explanation": "The Least-Squares slide identifies w as the slope."
+    },
+    {
+      "id": "lr-tf-32",
+      "type": "tf",
+      "prompt": "b represents the y-intercept.",
+      "answer": true,
+      "explanation": "b is the y-intercept, where the line crosses the y-axis when x = 0."
+    },
+    {
+      "id": "lr-tf-33",
+      "type": "tf",
+      "prompt": "The slope tells us how much the dependent variable is likely to change when the independent variable increases.",
+      "answer": true,
+      "explanation": "This is how the slide explains the meaning of the slope."
+    },
+    {
+      "id": "lr-tf-34",
+      "type": "tf",
+      "prompt": "The y-intercept is where the line crosses the y-axis when x equals 1.",
+      "answer": false,
+      "explanation": "The y-intercept b is where the line crosses the y-axis when x = 0."
+    },
+    {
+      "id": "lr-tf-35",
+      "type": "tf",
+      "prompt": "The horizontal line through the average y value is probably the best possible fit.",
+      "answer": false,
+      "explanation": "The slide describes it as probably the worst fit, although it is a useful starting point."
+    },
+    {
+      "id": "lr-tf-36",
+      "type": "tf",
+      "prompt": "The horizontal line through the average y value can provide a starting point for finding the optimal line.",
+      "answer": true,
+      "explanation": "The slides describe this horizontal line as a good starting point for finding the optimal line."
+    },
+    {
+      "id": "lr-tf-37",
+      "type": "tf",
+      "prompt": "Least-Squares estimates w and b.",
+      "answer": true,
+      "explanation": "The summary states that Least-Squares estimates two parameters: w and b."
+    },
+    {
+      "id": "lr-tf-38",
+      "type": "tf",
+      "prompt": "Least-Squares estimates x and y instead of w and b.",
+      "answer": false,
+      "explanation": "x and y are variables in the model; Least-Squares estimates w and b."
+    },
+    {
+      "id": "lr-tf-39",
+      "type": "tf",
+      "prompt": "The Sum of Squared Residuals is calculated using the distance between the line and observed values.",
+      "answer": true,
+      "explanation": "The slides state that the calculation measures the distance between the line and the observed value."
+    },
+    {
+      "id": "lr-tf-40",
+      "type": "tf",
+      "prompt": "The Least-Squares method finds the values of w and b that give the largest Sum of Squared Residuals.",
+      "answer": false,
+      "explanation": "It finds the values that give the smallest Sum of Squared Residuals."
+    },
+    {
+      "id": "lr-tf-41",
+      "type": "tf",
+      "prompt": "The method is called Least-Squares because it searches for the smallest sum of squares.",
+      "answer": true,
+      "explanation": "The slides state that because we want the line with the smallest sum of squares, the method is called Least-Squares."
+    },
+    {
+      "id": "lr-tf-42",
+      "type": "tf",
+      "prompt": "A residual of −5 becomes 25 after squaring.",
+      "answer": true,
+      "explanation": "(−5)² = 25."
+    },
+    {
+      "id": "lr-tf-43",
+      "type": "tf",
+      "prompt": "A residual of 5 and a residual of −5 produce different squared values.",
+      "answer": false,
+      "explanation": "Both produce 25: 5² = 25 and (−5)² = 25."
+    },
+    {
+      "id": "lr-tf-44",
+      "type": "tf",
+      "prompt": "The derivative tells us the slope of the function at every point.",
+      "answer": true,
+      "explanation": "The slides state that the derivative tells us the slope of the function at every point."
+    },
+    {
+      "id": "lr-tf-45",
+      "type": "tf",
+      "prompt": "The slope of the Sum of Squared Residuals function is zero at the best point.",
+      "answer": true,
+      "explanation": "At the best point, the slide shows that the slope of the function is zero."
+    },
+    {
+      "id": "lr-tf-46",
+      "type": "tf",
+      "prompt": "Taking derivatives helps determine the optimal values for the best fit.",
+      "answer": true,
+      "explanation": "The slides explain that taking derivatives of the slope and intercept helps identify the optimal values."
+    },
+    {
+      "id": "lr-tf-47",
+      "type": "tf",
+      "prompt": "The final line that minimizes the sum of squares is called the Line of Best Fit.",
+      "answer": true,
+      "explanation": "The summary explicitly identifies the final minimum-sum-of-squares line as the Line of Best Fit."
+    },
+    {
+      "id": "lr-tf-48",
+      "type": "tf",
+      "prompt": "The Line of Best Fit is the line with the largest possible residuals.",
+      "answer": false,
+      "explanation": "The Line of Best Fit minimizes the sum of squared residuals."
+    },
+    {
+      "id": "lr-tf-49",
+      "type": "tf",
+      "prompt": "If the Sum of Squared Residuals starts increasing after rotating the line, the line may have been rotated too far.",
+      "answer": true,
+      "explanation": "The slides explicitly state that rotating the line too far causes the Sum of Squared Residuals to increase again."
+    },
+    {
+      "id": "lr-tf-50",
+      "type": "tf",
+      "prompt": "The Least-Squares method aims to find the line that best fits the observed data by minimizing squared distances.",
+      "answer": true,
+      "explanation": "Least-Squares minimizes the squared distances between the observed values and the regression line, producing the Line of Best Fit."
+    }
+  ]
+}

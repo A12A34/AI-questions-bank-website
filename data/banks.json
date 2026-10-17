@@ -39,6 +39,11 @@
       "id": "istifham-2-1",
       "title": "04. النشاط الرابع: أسلوب الاستفهام 2.1",
       "file": "istifham-2-1-quiz.json"
+    },
+    {
+      "id": "linear-regression",
+      "title": "Linear Regression (100 Questions)",
+      "file": "linear-regression.json"
     }
   ]
 }
