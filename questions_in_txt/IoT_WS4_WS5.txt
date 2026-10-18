@@ -1,0 +1,1217 @@
+# IoT WS4 & WS5 — 100 Practice Quiz Questions
+
+The quiz is based on your uploaded worksheets: WS4 – Controlling LEDs and WS5 – Control Raspberry Pi with a Button. It includes code-tracing questions, logical scenarios, hardware problems, and questions about Python commands.
+
+The quiz contains:
+
+- Questions 1–50: Multiple choice (MCQ), with four options per question.
+- Questions 51–100: True or false.
+- Every question: The correct answer and an explanation immediately after it.
+- Code questions: Focus on what the program actually does, including errors, timing, loops, and button behavior.
+
+## Part 1: Multiple-choice questions (1–50)
+
+Choose the best answer for each question. Read the code carefully before answering.
+
+### 1. What happens when this program runs?
+
+```python
+from gpiozero import LED
+import time
+
+led = LED(17)
+for _ in range(5):
+    led.on()
+    time.sleep(0.5)
+    led.off()
+```
+
+A. The LED stays on continuously for five seconds.
+B. The LED flashes five times with visible off periods.
+C. The LED turns on and off rapidly without an off delay.
+D. The program stops because the loop has no counter.
+
+Correct answer: C.
+
+Explanation: The LED turns on for 0.5 seconds, then turns off briefly before the next iteration starts. There is no `time.sleep()` after `led.off()`, so the off periods are extremely short and may not be visible. The loop repeats five times.
+
+### 2. What happens when this code runs?
+
+```python
+import gpiozero
+import time
+
+led = LED(17)
+```
+
+A. The LED object is created successfully on GPIO 17.
+B. The LED turns on and stays on until the program ends.
+C. The program creates an LED object on GPIO 2.
+D. The program raises a `NameError` because `LED` is undefined.
+
+Correct answer: D.
+
+Explanation: `import gpiozero` imports the module, but it does not make `LED` available as a standalone name. Use `gpiozero.LED(17)` or `from gpiozero import LED` before writing `LED(17)`.
+
+### 3. Which import statement correctly supports `led = LED(17)`?
+
+A. `from time import LED`
+B. `from gpiozero import LED`
+C. `import LED from gpiozero`
+D. `from gpiozero import time`
+
+Correct answer: B.
+
+Explanation: This statement imports the `LED` class directly from `gpiozero`. You can then create an object using `led = LED(17)`.
+
+### 4. Which statement turns an LED off?
+
+A. `led.stop()`
+B. `led.close()`
+C. `led.off()`
+D. `led.sleep()`
+
+Correct answer: C.
+
+Explanation: `led.off()` turns the LED off. `led.on()` turns it on, while `led.toggle()` switches it to the opposite state.
+
+### 5. What does `led.toggle()` do when the LED is already on?
+
+A. It switches the LED off.
+B. It increases the LED brightness.
+C. It restarts the Python program.
+D. It disconnects the GPIO pin.
+
+Correct answer: A.
+
+Explanation: `toggle()` changes the LED's current state. An LED that is on becomes off, and an LED that is off becomes on.
+
+### 6. How many times does this loop execute its body?
+
+```python
+for _ in range(5):
+    led.on()
+    led.off()
+```
+
+A. Three times, because the LED has two commands.
+B. Four times, because counting starts at one.
+C. Five times, because the range contains five values.
+D. Six times, because the first iteration is additional.
+
+Correct answer: C.
+
+Explanation: `range(5)` produces five iterations. The underscore is a valid variable name conventionally used when the loop variable itself is not needed.
+
+### 7. What is the total programmed sleep time in this code?
+
+```python
+for _ in range(5):
+    led.on()
+    time.sleep(0.5)
+    led.off()
+    time.sleep(0.5)
+```
+
+A. 0.5 seconds
+B. 2.5 seconds
+C. 4 seconds
+D. 5 seconds
+
+Correct answer: D.
+
+Explanation: Each iteration contains two delays of 0.5 seconds. The total is \(5 \times (0.5 + 0.5) = 5\) seconds, excluding the small time needed to execute the other instructions.
+
+### 8. Which code makes the LED flash ten times with a 0.1-second on period and a 0.1-second off period?
+
+A.
+
+```python
+for _ in range(10):
+    led.on()
+    time.sleep(0.1)
+    led.off()
+    time.sleep(0.1)
+```
+
+B.
+
+```python
+for _ in range(10):
+    led.on()
+    led.off()
+    time.sleep(1)
+```
+
+C.
+
+```python
+for _ in range(5):
+    led.on()
+    time.sleep(0.1)
+    led.off()
+```
+
+D.
+
+```python
+while True:
+    led.on()
+    time.sleep(10)
+    led.off()
+```
+
+Correct answer: A.
+
+Explanation: The loop runs ten times, and both the on and off periods last 0.1 seconds. The total programmed delay is two seconds.
+
+### 9. Which module must be imported to use `time.sleep(0.5)`?
+
+A. `import signal`
+B. `import time`
+C. `import button`
+D. `import terminal`
+
+Correct answer: B.
+
+Explanation: `import time` makes the `time.sleep()` function available. Alternatively, `from time import sleep` allows you to write `sleep(0.5)`.
+
+### 10. What happens when the following code executes?
+
+```python
+from gpiozero import LED
+
+led = LED(17)
+led.on()
+```
+
+A. The LED flashes five times and stops.
+B. The LED remains off until a button is pressed.
+C. The LED is turned on, with no programmed off command.
+D. The program waits until GPIO 17 becomes an input.
+
+Correct answer: C.
+
+Explanation: `led.on()` turns the LED on. There is no instruction to turn it off, and no delay or loop is required for the on command itself.
+
+### 11. Which command creates and opens a Python file using the Nano editor, as shown in WS4?
+
+A. `python filename.py`
+B. `sudo nano filename.py`
+C. `gpiozero filename.py`
+D. `time.sleep(filename.py)`
+
+Correct answer: B.
+
+Explanation: `sudo nano filename.py` opens the file in Nano and creates it if it does not already exist.
+
+### 12. Which command runs a Python file from the terminal according to WS4?
+
+A. `python filename.py`
+B. `nano python filename.py`
+C. `import filename.py`
+D. `run gpiozero filename.py`
+
+Correct answer: A.
+
+Explanation: The command `python filename.py` runs the Python script named `filename.py`.
+
+### 13. Which shortcut saves a file in Nano using the alternative method listed in WS4?
+
+A. Ctrl + X, then Ctrl + S
+B. Ctrl + Z, then Enter
+C. Ctrl + O, then Enter
+D. Ctrl + C, then Ctrl + O
+
+Correct answer: C.
+
+Explanation: In Nano, Ctrl + O writes the file. Press Enter to confirm the filename. Ctrl + X exits the editor.
+
+### 14. Which GPIO pin is used by this LED object?
+
+```python
+led = LED(17)
+```
+
+A. GPIO 2
+B. GPIO 17
+C. GPIO 5
+D. GPIO 27
+
+Correct answer: B.
+
+Explanation: The number `17` identifies the GPIO pin assigned to the LED object in this example.
+
+### 15. What is the purpose of `while True:` in an LED program?
+
+A. It repeats the loop until its condition becomes false.
+B. It executes the loop body exactly five times.
+C. It delays each instruction by one second.
+D. It waits for a button before executing the loop.
+
+Correct answer: A.
+
+Explanation: `while True:` creates a loop that continues indefinitely unless the program is interrupted or otherwise exits the loop.
+
+### 16. What is the most likely result of this program?
+
+```python
+from gpiozero import LED
+import time
+
+led = LED(17)
+while True:
+    led.on()
+    time.sleep(0.5)
+    led.off()
+    time.sleep(0.5)
+```
+
+A. The LED flashes continuously until the program is stopped.
+B. The LED flashes exactly five times before stopping.
+C. The LED stays on because the loop never ends.
+D. The program immediately raises a `NameError`.
+
+Correct answer: A.
+
+Explanation: `while True:` repeats the on-delay-off-delay sequence indefinitely. Both states have a delay, so the LED repeatedly flashes.
+
+### 17. In WS5, what does this line create?
+
+```python
+button = Button(2)
+```
+
+A. An LED object assigned to GPIO 2.
+B. A button object assigned to GPIO 2.
+C. A delay object assigned to GPIO 2.
+D. A terminal window assigned to GPIO 2.
+
+Correct answer: B.
+
+Explanation: `Button(2)` creates a button object using GPIO 2. The variable `button` is the name used to control or check that object.
+
+### 18. Which import supports both `Button(2)` and `LED(17)`?
+
+A. `from gpiozero import Button, LED`
+B. `from time import Button, LED`
+C. `import Button, LED from gpiozero`
+D. `from gpiozero import time, signal`
+
+Correct answer: A.
+
+Explanation: Both classes are imported from `gpiozero`, allowing the program to create button and LED objects directly.
+
+### 19. What happens when this program runs?
+
+```python
+from gpiozero import Button
+
+button = Button(2)
+button.wait_for_press()
+print("THE BUTTON WAS PRESSED!")
+```
+
+A. The message appears immediately, before any button press.
+B. The program waits for a press, then prints the message.
+C. The program waits for release, then turns on an LED.
+D. The program prints the message five times continuously.
+
+Correct answer: B.
+
+Explanation: `wait_for_press()` pauses the program until the button is pressed. Only then does Python execute the `print()` statement.
+
+### 20. What happens if the button is never pressed in Question 19?
+
+A. The program prints the message after one second.
+B. The program automatically treats the button as pressed.
+C. The program remains waiting at `wait_for_press()`.
+D. The program creates an LED to replace the button.
+
+Correct answer: C.
+
+Explanation: The statement waits for the specified button press. If no press occurs, the program does not move to the next statement.
+
+### 21. Which method waits until a button is released?
+
+A. `button.off()`
+B. `button.toggle()`
+C. `button.wait_for_press()`
+D. `button.wait_for_release()`
+
+Correct answer: D.
+
+Explanation: `wait_for_release()` pauses program execution until the button is released. `wait_for_press()` waits for the opposite event.
+
+### 22. What happens when the button is pressed in a correctly connected button circuit, according to WS5?
+
+A. The circuit completes and current can flow.
+B. The circuit opens and current always increases.
+C. The GPIO pin changes into a power supply.
+D. The resistor automatically disconnects from the circuit.
+
+Correct answer: A.
+
+Explanation: In the worksheet's circuit explanation, pressing the button completes the circuit, allowing current to flow. Releasing it disconnects the circuit and stops current flow through that path.
+
+### 23. What is the main purpose of a resistor connected in series with an LED?
+
+A. It makes the GPIO pin generate a higher voltage.
+B. It limits current and helps protect the LED and Pi.
+C. It makes Python repeat the program automatically.
+D. It changes an analog signal into a digital signal.
+
+Correct answer: B.
+
+Explanation: A current-limiting resistor reduces the current flowing through the LED and helps protect the LED and Raspberry Pi GPIO pin from damage.
+
+### 24. What is the expected effect of a resistor with too high a resistance?
+
+A. The LED becomes brighter and draws more current.
+B. The LED flashes faster because the loop accelerates.
+C. The LED becomes dim or may not light up.
+D. The LED changes the GPIO pin into an output driver.
+
+Correct answer: C.
+
+Explanation: A higher resistance allows less current to flow. The LED may appear very dim or may not light up.
+
+### 25. What is the main risk of using a resistor with too low a resistance?
+
+A. The LED may draw excessive current and cause damage.
+B. The button may automatically wait for a release.
+C. The LED must remain off for a longer period.
+D. The program will convert Python into machine code incorrectly.
+
+Correct answer: A.
+
+Explanation: Too little resistance may allow excessive current, potentially damaging the LED or the GPIO pin.
+
+### 26. Which resistor value is recommended for the standard indicator LEDs in WS5?
+
+A. 33 Ω
+B. 330 Ω
+C. 3,300 Ω
+D. 33,000 Ω
+
+Correct answer: B.
+
+Explanation: WS5 specifies a 330 Ω resistor as a safe standard choice for the LEDs used in the activity. The ideal value can vary depending on the LED.
+
+### 27. How can you identify an LED's negative lead using its lead length?
+
+A. The longer lead is negative.
+B. Both leads are always the same length.
+C. The shorter lead is negative.
+D. The shorter lead is always positive.
+
+Correct answer: C.
+
+Explanation: According to WS5, the shorter lead is the cathode, or negative side. The longer lead is the anode, or positive side.
+
+### 28. Which LED feature identifies its negative side using the body shape?
+
+A. The flat side or notch indicates the negative side.
+B. The rounded side indicates the negative side.
+C. The transparent side indicates the negative side.
+D. The brightest side indicates the negative side.
+
+Correct answer: A.
+
+Explanation: The flat side or notch identifies the cathode, which is the negative side of a standard LED.
+
+### 29. What does this statement do?
+
+```python
+led.toggle()
+```
+
+A. It waits until the LED's power supply is connected.
+B. It turns the LED off regardless of its current state.
+C. It changes the LED from its current state to the opposite state.
+D. It repeats the LED's previous state five times.
+
+Correct answer: C.
+
+Explanation: `toggle()` changes the state: on becomes off, and off becomes on.
+
+### 30. What is the main effect of this WS5 code?
+
+```python
+button = Button(2)
+led = LED(17)
+
+while True:
+    button.wait_for_press()
+    led.toggle()
+```
+
+A. Every detected button press requests the LED to switch state.
+B. The LED remains on only while the button is held down.
+C. The LED flashes continuously without checking the button.
+D. The button controls the LED's brightness using an analog signal.
+
+Correct answer: A.
+
+Explanation: The loop waits for a button press and then toggles the LED. Each successfully detected press changes the LED's state. Real hardware and button timing can affect how presses are detected.
+
+### 31. What is the role of `time.sleep(0.5)` in the WS5 toggle example?
+
+A. It makes the button permanently unavailable.
+B. It introduces a half-second delay after the toggle.
+C. It makes the LED switch on five separate times.
+D. It exits the infinite loop after half a second.
+
+Correct answer: B.
+
+Explanation: The delay pauses the program for 0.5 seconds. In the worksheet, it provides a short delay before the program checks for another button press.
+
+### 32. What is the most likely problem with this code?
+
+```python
+from gpiozero import Button, LED
+
+button = Button(2)
+led = LED(17)
+
+button.when_pressed = led.on
+button.when_released = led.off
+```
+
+A. It always causes a syntax error because callbacks are unsupported.
+B. It turns the LED on when released and off when pressed.
+C. It defines event callbacks but has no command to keep the script running.
+D. It makes the LED toggle five times after every button press.
+
+Correct answer: C.
+
+Explanation: The callbacks specify what should happen on press and release. However, the code has no `pause()` call or other continuing execution mechanism. When the script reaches its end, it can terminate before the callbacks remain active.
+
+### 33. What does `button.when_pressed = led.on` mean?
+
+A. Wait until the button is pressed, then execute `led.on()` once in sequence.
+B. Register `led.on` as the function to call when the button is pressed.
+C. Make the button object use the LED's GPIO pin number.
+D. Make the LED act as a button that waits for release.
+
+Correct answer: B.
+
+Explanation: This assigns a callback to the button's press event. The function is registered without parentheses; `led.on` is passed as the function to call when the event occurs.
+
+### 34. Why is `pause()` used in the WS5 callback program?
+
+A. It repeatedly toggles the LED while the button is idle.
+B. It waits for the button to be released before importing GPIOZero.
+C. It keeps the program running so it can respond to button events.
+D. It forces the Raspberry Pi to shut down when the LED turns on.
+
+Correct answer: C.
+
+Explanation: `pause()` keeps the program running. Without it, the script could reach its end and terminate, so it would no longer respond to the callbacks.
+
+### 35. Which import supports the `pause()` command used in WS5?
+
+A. `from time import pause`
+B. `from signal import pause`
+C. `from gpiozero import pause`
+D. `import pause from signal`
+
+Correct answer: B.
+
+Explanation: WS5 uses `from signal import pause`.
+
+### 36. What happens in this program when the button is pressed and then released?
+
+```python
+button.when_pressed = led.on
+button.when_released = led.off
+pause()
+```
+
+A. The LED turns on while pressed and turns off when released.
+B. The LED turns off while pressed and turns on when released.
+C. The LED toggles once when pressed and never responds again.
+D. The LED flashes continuously regardless of the button state.
+
+Correct answer: A.
+
+Explanation: The press callback calls `led.on()`, and the release callback calls `led.off()`. The `pause()` call keeps the script running so it can respond to these events.
+
+### 37. Which command waits for a button press before continuing?
+
+A. `button.when_pressed`
+B. `button.wait_for_press()`
+C. `button.when_released`
+D. `button.wait_for_release()`
+
+Correct answer: B.
+
+Explanation: `wait_for_press()` blocks the current program flow until the button is pressed. By contrast, `when_pressed` registers a callback.
+
+### 38. What is the key difference between `wait_for_press()` and `when_pressed`?
+
+A. Both commands always stop the entire Raspberry Pi.
+B. The first registers a callback; the second creates a button object.
+C. The first waits in sequence; the second registers an event callback.
+D. The first turns an LED on; the second turns an LED off.
+
+Correct answer: C.
+
+Explanation: `wait_for_press()` blocks the current sequence until a press happens. `when_pressed` registers a function that runs in response to the press event.
+
+### 39. What is wrong with this code if the goal is to create a button object?
+
+```python
+from gpiozero import LED
+
+button = Button(2)
+```
+
+A. `Button` was not imported or otherwise defined.
+B. GPIO 2 cannot be used for a button under any circumstances.
+C. `LED` must always be assigned to GPIO 2 before a button.
+D. Python does not allow the word `button` as a variable name.
+
+Correct answer: A.
+
+Explanation: Only `LED` was imported. The code must also import `Button`, for example with `from gpiozero import Button`, or import both classes together.
+
+### 40. Which code correctly uses the whole `gpiozero` module to create a button?
+
+A.
+
+```python
+import gpiozero
+button = Button(2)
+```
+
+B.
+
+```python
+import gpiozero
+button = gpiozero.Button(2)
+```
+
+C.
+
+```python
+from gpiozero import Button
+button = gpiozero(2)
+```
+
+D.
+
+```python
+import gpiozero
+button = GPIO(2)
+```
+
+Correct answer: B.
+
+Explanation: When importing the entire module with `import gpiozero`, refer to its class as `gpiozero.Button`.
+
+### 41. What is the output behavior of this program?
+
+```python
+from gpiozero import Button
+
+button = Button(2)
+print("Ready")
+button.wait_for_press()
+print("Pressed")
+```
+
+A. It prints both messages before the button is pressed.
+B. It prints `Pressed` first and then waits for `Ready`.
+C. It prints `Ready`, waits for a press, then prints `Pressed`.
+D. It prints `Ready` continuously until the button is released.
+
+Correct answer: C.
+
+Explanation: Python executes statements in order. The first message appears before the program waits; the second appears only after the press is detected.
+
+### 42. Which wiring choice best protects a standard LED connected to a Raspberry Pi GPIO output?
+
+A. Connect the LED directly between GPIO and ground without resistance.
+B. Connect a suitable current-limiting resistor in series with the LED.
+C. Connect the resistor in a separate circuit that bypasses the LED.
+D. Connect the LED directly to a GPIO pin configured as an input.
+
+Correct answer: B.
+
+Explanation: A resistor in series with the LED limits the current. WS5 recommends 330 Ω for the standard LEDs used in its activity.
+
+### 43. What happens if the LED's GPIO number in the code does not match the pin used in the circuit?
+
+A. The program automatically identifies and fixes the wiring.
+B. The LED always flashes on the correct physical pin.
+C. The program may control a different pin than the one connected to the LED.
+D. Python changes the assigned GPIO number based on the LED colour.
+
+Correct answer: C.
+
+Explanation: The GPIO number in the program must match the pin used in the circuit. A mismatch means the program may control the wrong pin.
+
+### 44. Which statement about `button.wait_for_release()` is correct?
+
+A. It pauses until the button is released.
+B. It toggles the LED when the button is released.
+C. It registers the LED as the release callback.
+D. It keeps the program running forever after a press.
+
+Correct answer: A.
+
+Explanation: The command waits until the button is released. It does not automatically change an LED's state.
+
+### 45. A student wants to print a message once after the first detected press and then stop. Which code best matches that goal?
+
+A.
+
+```python
+button.wait_for_press()
+print("Pressed")
+```
+
+B.
+
+```python
+while True:
+    print("Pressed")
+```
+
+C.
+
+```python
+button.when_pressed = print("Pressed")
+pause()
+```
+
+D.
+
+```python
+button.wait_for_release()
+led.toggle()
+```
+
+Correct answer: A.
+
+Explanation: The first program waits for a press, prints the message, and then reaches the end. Option C calls `print()` immediately during assignment rather than registering it as a callback function.
+
+### 46. What is wrong with the following callback assignment?
+
+```python
+button.when_pressed = led.on()
+```
+
+A. The callback must be registered without immediately calling the function.
+B. `led.on()` always returns a new LED object that replaces the button.
+C. `when_pressed` only works with `time.sleep()` statements.
+D. A button callback cannot control an LED in `gpiozero`.
+
+Correct answer: A.
+
+Explanation: `led.on()` executes immediately. For a callback, assign the function itself: `button.when_pressed = led.on`.
+
+### 47. What happens when this code runs?
+
+```python
+from gpiozero import LED
+
+led = LED(17)
+led.on()
+led.off()
+```
+
+A. The LED flashes for five seconds.
+B. The LED is turned on and then turned off immediately afterward.
+C. The LED stays on until the program is manually stopped.
+D. The program waits until the LED is physically disconnected.
+
+Correct answer: B.
+
+Explanation: Python executes `led.on()` and then `led.off()` in sequence. There is no delay between them, so the on state may be too brief to notice.
+
+### 48. Which statement best describes the purpose of `from gpiozero import *`?
+
+A. It imports only the LED class and nothing else.
+B. It imports every Python module installed on the Pi.
+C. It imports publicly exported names from `gpiozero` into the current namespace.
+D. It automatically connects every GPIO pin to an LED.
+
+Correct answer: C.
+
+Explanation: The worksheet lists this as an alternative import method. It allows names such as `LED` and `Button` to be used directly, although explicit imports are usually clearer.
+
+### 49. What is the main purpose of the button in WS5's interactive circuit?
+
+A. To supply all power to the Raspberry Pi.
+B. To provide an input event that the program can detect.
+C. To convert Python statements into GPIO voltage.
+D. To store the LED's previous brightness permanently.
+
+Correct answer: B.
+
+Explanation: The button is an input component. The program responds to its press or release by printing a message or controlling an LED.
+
+### 50. Which program correctly makes an LED respond to a button being pressed and released?
+
+A.
+
+```python
+from gpiozero import LED, Button
+from signal import pause
+
+button = Button(2)
+led = LED(17)
+
+button.when_pressed = led.on
+button.when_released = led.off
+
+pause()
+```
+
+B.
+
+```python
+from gpiozero import LED
+from signal import pause
+
+led = LED(17)
+button.when_pressed = led.on
+
+pause()
+```
+
+C.
+
+```python
+from gpiozero import Button, LED
+
+button = Button(2)
+led = LED(17)
+
+button.when_pressed = led.on()
+button.when_released = led.off()
+```
+
+D.
+
+```python
+from gpiozero import Button, LED
+
+button = Button(2)
+led = LED(17)
+
+while True:
+    button.wait_for_press()
+    led.on()
+    led.off()
+```
+
+Correct answer: A.
+
+Explanation: The program imports both classes, creates the button and LED objects, registers the correct callback functions, and uses `pause()` to keep the program running.
+
+## Part 2: True or false (51–100)
+
+Decide whether each statement is true or false. Some questions test small details in the code, so read them carefully.
+
+### 51. The following code makes the LED visibly flash five times with equal on and off periods.
+
+```python
+from gpiozero import LED
+import time
+
+led = LED(17)
+for _ in range(5):
+    led.on()
+    time.sleep(0.5)
+    led.off()
+```
+
+Answer: False.
+
+Explanation: There is no delay after `led.off()`. The LED is turned off, but the off period is extremely short before the next iteration starts. The off state may not be visibly noticeable.
+
+### 52. This code works because importing `gpiozero` automatically defines `LED` as a standalone name.
+
+```python
+import gpiozero
+led = LED(17)
+```
+
+Answer: False.
+
+Explanation: `import gpiozero` does not import `LED` directly into the current namespace. Use `gpiozero.LED(17)` or `from gpiozero import LED` followed by `LED(17)`.
+
+### 53. `from gpiozero import LED` allows you to create an LED object using `LED(17)`.
+
+Answer: True.
+
+Explanation: The statement imports the `LED` class directly from the `gpiozero` library.
+
+### 54. The command `led.on()` turns the LED off.
+
+Answer: False.
+
+Explanation: `led.on()` turns the LED on. The command `led.off()` turns it off.
+
+### 55. If an LED is off, calling `led.toggle()` changes it to the on state.
+
+Answer: True.
+
+Explanation: `toggle()` switches the LED to the opposite state.
+
+### 56. The loop `for _ in range(5):` executes its body five times.
+
+Answer: True.
+
+Explanation: `range(5)` generates five values, from 0 to 4. The loop body executes once for each value.
+
+### 57. Two `time.sleep(0.5)` statements in each iteration of a five-iteration loop create a total programmed delay of 2.5 seconds.
+
+Answer: False.
+
+Explanation: Each iteration has two half-second delays, making one second per iteration. Five iterations create five seconds of programmed delay, excluding execution overhead.
+
+### 58. Adding `time.sleep(0.5)` after `led.off()` creates a longer, visible off period.
+
+Answer: True.
+
+Explanation: The delay keeps the LED off for approximately half a second before the next iteration continues.
+
+### 59. The `time` module must be imported before using `time.sleep()` in a program.
+
+Answer: True.
+
+Explanation: The statement `import time` makes `time.sleep()` available. Another valid approach is `from time import sleep`, followed by `sleep(0.5)`.
+
+### 60. The command `python filename.py` is used to execute a Python script from the terminal.
+
+Answer: True.
+
+Explanation: This command runs the specified Python file.
+
+### 61. The command `sudo nano filename.py` opens a Python file in the Nano editor.
+
+Answer: True.
+
+Explanation: Nano is a text editor used to create or edit the file. The `sudo` prefix runs the command with elevated privileges.
+
+### 62. In Nano, Ctrl + X is the shortcut used to exit the editor.
+
+Answer: True.
+
+Explanation: Ctrl + X exits Nano. If there are unsaved changes, Nano may ask whether you want to save them.
+
+### 63. In Nano, Ctrl + O followed by Enter can save the current file.
+
+Answer: True.
+
+Explanation: Ctrl + O opens the write-out operation, and Enter confirms the filename.
+
+### 64. In `led = LED(17)`, the number 17 is the number of times the LED will flash.
+
+Answer: False.
+
+Explanation: The number 17 identifies the GPIO pin assigned to the LED object. The number of flashes is controlled by the loop.
+
+### 65. A `while True:` loop is suitable for making an LED blink continuously.
+
+Answer: True.
+
+Explanation: The loop repeats indefinitely while its condition remains true. An LED can blink continuously by placing the on, delay, off, and delay commands inside it.
+
+### 66. A program using `while True:` always stops automatically after five iterations.
+
+Answer: False.
+
+Explanation: `while True:` has no built-in limit of five iterations. It continues until the program is interrupted or exits the loop through other logic.
+
+### 67. In WS5, `Button(2)` creates a button object associated with GPIO 2.
+
+Answer: True.
+
+Explanation: The value `2` specifies the GPIO pin used by the button object.
+
+### 68. `button.wait_for_press()` allows the next statement to execute before the button is pressed.
+
+Answer: False.
+
+Explanation: The method waits for a button press before the program continues to the next statement.
+
+### 69. If the button is never pressed, a program waiting at `button.wait_for_press()` will remain waiting there.
+
+Answer: True.
+
+Explanation: The program does not proceed past that statement until the button press is detected.
+
+### 70. `button.wait_for_release()` waits until the button is released.
+
+Answer: True.
+
+Explanation: This method pauses the current program sequence until the release event occurs.
+
+### 71. In the worksheet's button circuit, pressing the button completes the circuit and allows current to flow.
+
+Answer: True.
+
+Explanation: The worksheet explains that pressing the button completes the circuit, while releasing it disconnects the circuit.
+
+### 72. A button is an output device because it produces light when pressed.
+
+Answer: False.
+
+Explanation: The button is an input component. It provides an event that the program can detect. An LED is an output component.
+
+### 73. A current-limiting resistor helps protect both the LED and the Raspberry Pi GPIO pin.
+
+Answer: True.
+
+Explanation: The resistor limits current and reduces the risk of damage caused by excessive current.
+
+### 74. Connecting an LED directly to a Raspberry Pi GPIO pin without a suitable current-limiting resistor can cause damage.
+
+Answer: True.
+
+Explanation: Excessive current can damage the LED or the GPIO pin and potentially cause permanent hardware damage.
+
+### 75. A resistor with too high a resistance can make an LED very dim or prevent it from lighting.
+
+Answer: True.
+
+Explanation: Higher resistance reduces the current flowing through the LED.
+
+### 76. A resistor with too low a resistance is always safer because it makes the LED brighter.
+
+Answer: False.
+
+Explanation: Too little resistance can allow excessive current. This may damage the LED or GPIO pin.
+
+### 77. The WS5 worksheet recommends a 330 Ω resistor for the standard indicator LEDs in the activity.
+
+Answer: True.
+
+Explanation: The worksheet identifies 330 Ω as a suitable standard value for the LEDs used in the exercise.
+
+### 78. The longer lead of a standard LED is normally its negative lead.
+
+Answer: False.
+
+Explanation: The longer lead is the positive anode. The shorter lead is the negative cathode.
+
+### 79. The flat side or notch on a standard LED identifies its negative side.
+
+Answer: True.
+
+Explanation: The flat edge indicates the cathode, which is the negative side.
+
+### 80. Every LED colour must use exactly the same resistor value in every circuit.
+
+Answer: False.
+
+Explanation: The ideal resistance depends on factors such as the LED's colour, forward voltage, and current rating. The worksheet uses 330 Ω as a standard choice for its activity.
+
+### 81. The following code toggles the LED once after each detected button press.
+
+```python
+button.wait_for_press()
+led.toggle()
+```
+
+Answer: True.
+
+Explanation: The program waits for a press and then changes the LED to its opposite state. As written, the sequence does not repeat unless placed inside a loop.
+
+### 82. Adding `time.sleep(0.5)` after `led.toggle()` creates a half-second delay before the next statement executes.
+
+Answer: True.
+
+Explanation: `time.sleep(0.5)` pauses the program for approximately half a second.
+
+### 83. The following assignment registers `led.on` as a callback without immediately calling it.
+
+```python
+button.when_pressed = led.on
+```
+
+Answer: True.
+
+Explanation: The function is assigned without parentheses. It will be called when the button press event occurs.
+
+### 84. The following code calls `led.on()` immediately when Python reaches the assignment.
+
+```python
+button.when_pressed = led.on()
+```
+
+Answer: True.
+
+Explanation: The parentheses execute `led.on()` immediately. The expression's return value is then assigned to `when_pressed`, rather than registering the `led.on` function itself. This is not the correct callback pattern.
+
+### 85. The callback `button.when_released = led.off` tells the program to turn the LED off when the button is released.
+
+Answer: True.
+
+Explanation: The `when_released` event is associated with the `led.off` function.
+
+### 86. `button.when_pressed` and `button.when_released` are the same command and respond to the same event.
+
+Answer: False.
+
+Explanation: `when_pressed` responds to a press, while `when_released` responds to a release.
+
+### 87. The statement `from signal import pause` imports the `pause()` function used in WS5.
+
+Answer: True.
+
+Explanation: This is the import method shown in the worksheet.
+
+### 88. Without `pause()` or another mechanism that keeps the program running, a callback-based script may terminate before it can continue responding to button events.
+
+Answer: True.
+
+Explanation: Reaching the end of the script can terminate the program. `pause()` keeps it running so the registered event callbacks can respond.
+
+### 89. `pause()` automatically turns an LED on and off at regular intervals.
+
+Answer: False.
+
+Explanation: `pause()` keeps the program running; it does not generate LED blinking behavior. The program's callbacks determine how the LED responds.
+
+### 90. The following program turns an LED on when the button is pressed and off when it is released, while the script remains active.
+
+```python
+from gpiozero import Button, LED
+from signal import pause
+
+button = Button(2)
+led = LED(17)
+
+button.when_pressed = led.on
+button.when_released = led.off
+
+pause()
+```
+
+Answer: True.
+
+Explanation: The callbacks control the LED according to the button events, and `pause()` keeps the program running.
+
+### 91. `import gpiozero` and `from gpiozero import Button, LED` are both valid import methods, but they use different naming styles.
+
+Answer: True.
+
+Explanation: With `import gpiozero`, use names such as `gpiozero.Button(2)`. With direct imports, use `Button(2)`.
+
+### 92. The following program correctly creates a button object.
+
+```python
+from gpiozero import LED
+
+button = Button(2)
+```
+
+Answer: False.
+
+Explanation: The code imports only `LED`. The name `Button` has not been imported or defined, so Python will raise a `NameError` when it reaches `Button(2)`.
+
+### 93. The `button` variable must always be named `button`; using another valid variable name is impossible.
+
+Answer: False.
+
+Explanation: You can use another valid name, such as `button1`. The name used in the code must simply be consistent.
+
+### 94. If an LED object uses GPIO 17, the LED must physically be connected to the corresponding GPIO 17 pin for the program to control it as intended.
+
+Answer: True.
+
+Explanation: The software's GPIO assignment must match the physical wiring. Otherwise, the program may control a different pin from the one connected to the LED.
+
+### 95. The following program prints the message before waiting for a button press.
+
+```python
+from gpiozero import Button
+
+button = Button(2)
+print("Ready")
+button.wait_for_press()
+print("Pressed")
+```
+
+Answer: True.
+
+Explanation: Python executes statements in order. It prints `Ready`, waits for a press, and then prints `Pressed`.
+
+### 96. The following code makes the LED toggle continuously without requiring any button press.
+
+```python
+button = Button(2)
+led = LED(17)
+
+while True:
+    button.wait_for_press()
+    led.toggle()
+```
+
+Answer: False.
+
+Explanation: The loop waits for a button press before toggling the LED. It does not toggle continuously without button input.
+
+### 97. In WS5, an LED's positive lead should be identified by its shorter lead, while the longer lead is negative.
+
+Answer: False.
+
+Explanation: The longer lead is positive, and the shorter lead is negative. The flat side or notch also identifies the negative side.
+
+### 98. A program containing `led.on()` followed immediately by `led.off()` may turn the LED on for too short a time for a person to notice.
+
+Answer: True.
+
+Explanation: The LED is switched on and then off immediately, with no programmed delay between the commands. The on period may be too short to see clearly.
+
+### 99. A Python loop that flashes an LED ten times with a 0.1-second on delay and a 0.1-second off delay has two seconds of programmed sleep time.
+
+Answer: True.
+
+Explanation: Each iteration contains two 0.1-second delays. Ten iterations give \(10 \times (0.1 + 0.1) = 2\) seconds of programmed sleep time, excluding execution overhead.
+
+### 100. The following code correctly uses a callback to turn on an LED when a button is pressed, and keeps the program running.
+
+```python
+from gpiozero import Button, LED
+from signal import pause
+
+button = Button(2)
+led = LED(17)
+
+button.when_pressed = led.on
+pause()
+```
+
+Answer: True.
+
+Explanation: The code imports both required classes, creates the button and LED objects, registers `led.on` as the button-press callback, and calls `pause()` so the program remains active.
+
+## Final revision checklist
+
+Before your WS4 and WS5 assessment, make sure you can explain these points without looking at the answers.
+
+Revision progress
+
+0 of 12
+
+- Explain the difference between `led.on()`, `led.off()`, and `led.toggle()`.
+- Explain why an LED may appear not to turn off when there is no delay after `led.off()`.
+- Identify the error caused by using `LED(17)` after importing only `gpiozero`.
+- Calculate the total programmed delay in a `for` loop.
+- Use `import time` and `time.sleep()` correctly.
+- Create and run a Python file using Nano and the terminal.
+- Explain how GPIO numbers connect the code to the physical circuit.
+- Identify the positive and negative sides of an LED.
+- Explain why a resistor is needed and what happens when its resistance is too high or too low.
+- Explain the difference between `wait_for_press()`, `wait_for_release()`, and event callbacks.
+- Explain why callback assignments use `led.on` rather than `led.on()`.
+- Explain why `pause()` is used in a callback-based program.
+
+Important code distinction: `button.wait_for_press()` waits for a press in the current sequence, whereas `button.when_pressed = led.on` registers an event callback. For a callback-based program, use `pause()` to keep the program running.

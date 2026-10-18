@@ -44,6 +44,11 @@
       "id": "linear-regression",
       "title": "Linear Regression (100 Questions)",
       "file": "linear-regression.json"
+    },
+    {
+      "id": "iot-ws4-ws5",
+      "title": "IoT WS4 & WS5 (100 Questions)",
+      "file": "iot-ws4-ws5.json"
     }
   ]
 }

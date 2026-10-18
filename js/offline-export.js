@@ -72,9 +72,9 @@ export function buildOfflineQuizHtml(bank) {
       .question-top { display: flex; justify-content: space-between; gap: 12px; }
       .question-number { color: var(--muted); font-weight: 700; margin: 0; }
       .bookmark { background: transparent; border: 0; color: var(--accent); padding: 0; }
-      .prompt { font-size: 1.08rem; font-weight: 700; margin: 10px 0 14px; }
+      .prompt { font-size: 1.08rem; font-weight: 700; margin: 10px 0 14px; white-space: pre-wrap; }
       .choices { display: grid; gap: 8px; list-style: none; margin: 0; padding: 0; }
-      .choice { display: block; padding: 10px 12px; }
+      .choice { display: block; padding: 10px 12px; white-space: pre-wrap; }
       .choice input { margin-right: 8px; }
       .choice.correct { border-color: var(--correct); color: var(--correct); }
       .choice.incorrect { border-color: var(--incorrect); color: var(--incorrect); }
@@ -87,7 +87,7 @@ export function buildOfflineQuizHtml(bank) {
       .feedback.ok { color: var(--correct); }
       .feedback.err { color: var(--incorrect); }
       .feedback.warn, .explanation, .model-answer { color: var(--muted); }
-      .explanation, .model-answer { border-left: 3px solid var(--accent); margin: 16px 0 0; padding: 8px 12px; }
+      .explanation, .model-answer { border-left: 3px solid var(--accent); margin: 16px 0 0; padding: 8px 12px; white-space: pre-wrap; }
       .explanation strong, .model-answer strong { display: block; color: var(--text); }
       .submit-actions { display: flex; justify-content: flex-end; margin-top: 18px; }
       .empty { color: var(--muted); text-align: center; }

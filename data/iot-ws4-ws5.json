@@ -1,0 +1,1006 @@
+{
+  "id": "iot-ws4-ws5",
+  "title": "IoT WS4 & WS5 (100 Questions)",
+  "questions": [
+    {
+      "id": "iot-ws4-ws5-q1",
+      "type": "mcq",
+      "prompt": "What happens when this program runs?\n\nfrom gpiozero import LED\nimport time\n\nled = LED(17)\nfor _ in range(5):\n    led.on()\n    time.sleep(0.5)\n    led.off()",
+      "choices": [
+        "The LED stays on continuously for five seconds.",
+        "The LED flashes five times with visible off periods.",
+        "The LED turns on and off rapidly without an off delay.",
+        "The program stops because the loop has no counter."
+      ],
+      "answer": 2,
+      "explanation": "The LED turns on for 0.5 seconds, then turns off briefly before the next iteration starts. There is no time.sleep() after led.off(), so the off periods are extremely short and may not be visible. The loop repeats five times."
+    },
+    {
+      "id": "iot-ws4-ws5-q2",
+      "type": "mcq",
+      "prompt": "What happens when this code runs?\n\nimport gpiozero\nimport time\n\nled = LED(17)",
+      "choices": [
+        "The LED object is created successfully on GPIO 17.",
+        "The LED turns on and stays on until the program ends.",
+        "The program creates an LED object on GPIO 2.",
+        "The program raises a NameError because LED is undefined."
+      ],
+      "answer": 3,
+      "explanation": "import gpiozero imports the module, but it does not make LED available as a standalone name. Use gpiozero.LED(17) or from gpiozero import LED before writing LED(17)."
+    },
+    {
+      "id": "iot-ws4-ws5-q3",
+      "type": "mcq",
+      "prompt": "Which import statement correctly supports led = LED(17)?",
+      "choices": [
+        "from time import LED",
+        "from gpiozero import LED",
+        "import LED from gpiozero",
+        "from gpiozero import time"
+      ],
+      "answer": 1,
+      "explanation": "This statement imports the LED class directly from gpiozero. You can then create an object using led = LED(17)."
+    },
+    {
+      "id": "iot-ws4-ws5-q4",
+      "type": "mcq",
+      "prompt": "Which statement turns an LED off?",
+      "choices": [
+        "led.stop()",
+        "led.close()",
+        "led.off()",
+        "led.sleep()"
+      ],
+      "answer": 2,
+      "explanation": "led.off() turns the LED off. led.on() turns it on, while led.toggle() switches it to the opposite state."
+    },
+    {
+      "id": "iot-ws4-ws5-q5",
+      "type": "mcq",
+      "prompt": "What does led.toggle() do when the LED is already on?",
+      "choices": [
+        "It switches the LED off.",
+        "It increases the LED brightness.",
+        "It restarts the Python program.",
+        "It disconnects the GPIO pin."
+      ],
+      "answer": 0,
+      "explanation": "toggle() changes the LED's current state. An LED that is on becomes off, and an LED that is off becomes on."
+    },
+    {
+      "id": "iot-ws4-ws5-q6",
+      "type": "mcq",
+      "prompt": "How many times does this loop execute its body?\n\nfor _ in range(5):\n    led.on()\n    led.off()",
+      "choices": [
+        "Three times, because the LED has two commands.",
+        "Four times, because counting starts at one.",
+        "Five times, because the range contains five values.",
+        "Six times, because the first iteration is additional."
+      ],
+      "answer": 2,
+      "explanation": "range(5) produces five iterations. The underscore is a valid variable name conventionally used when the loop variable itself is not needed."
+    },
+    {
+      "id": "iot-ws4-ws5-q7",
+      "type": "mcq",
+      "prompt": "What is the total programmed sleep time in this code?\n\nfor _ in range(5):\n    led.on()\n    time.sleep(0.5)\n    led.off()\n    time.sleep(0.5)",
+      "choices": [
+        "0.5 seconds",
+        "2.5 seconds",
+        "4 seconds",
+        "5 seconds"
+      ],
+      "answer": 3,
+      "explanation": "Each iteration contains two delays of 0.5 seconds. The total is 5 × (0.5 + 0.5) = 5 seconds, excluding the small time needed to execute the other instructions."
+    },
+    {
+      "id": "iot-ws4-ws5-q8",
+      "type": "mcq",
+      "prompt": "Which code makes the LED flash ten times with a 0.1-second on period and a 0.1-second off period?",
+      "choices": [
+        "for _ in range(10):\n    led.on()\n    time.sleep(0.1)\n    led.off()\n    time.sleep(0.1)",
+        "for _ in range(10):\n    led.on()\n    led.off()\n    time.sleep(1)",
+        "for _ in range(5):\n    led.on()\n    time.sleep(0.1)\n    led.off()",
+        "while True:\n    led.on()\n    time.sleep(10)\n    led.off()"
+      ],
+      "answer": 0,
+      "explanation": "The loop runs ten times, and both the on and off periods last 0.1 seconds. The total programmed delay is two seconds."
+    },
+    {
+      "id": "iot-ws4-ws5-q9",
+      "type": "mcq",
+      "prompt": "Which module must be imported to use time.sleep(0.5)?",
+      "choices": [
+        "import signal",
+        "import time",
+        "import button",
+        "import terminal"
+      ],
+      "answer": 1,
+      "explanation": "import time makes the time.sleep() function available. Alternatively, from time import sleep allows you to write sleep(0.5)."
+    },
+    {
+      "id": "iot-ws4-ws5-q10",
+      "type": "mcq",
+      "prompt": "What happens when the following code executes?\n\nfrom gpiozero import LED\n\nled = LED(17)\nled.on()",
+      "choices": [
+        "The LED flashes five times and stops.",
+        "The LED remains off until a button is pressed.",
+        "The LED is turned on, with no programmed off command.",
+        "The program waits until GPIO 17 becomes an input."
+      ],
+      "answer": 2,
+      "explanation": "led.on() turns the LED on. There is no instruction to turn it off, and no delay or loop is required for the on command itself."
+    },
+    {
+      "id": "iot-ws4-ws5-q11",
+      "type": "mcq",
+      "prompt": "Which command creates and opens a Python file using the Nano editor, as shown in WS4?",
+      "choices": [
+        "python filename.py",
+        "sudo nano filename.py",
+        "gpiozero filename.py",
+        "time.sleep(filename.py)"
+      ],
+      "answer": 1,
+      "explanation": "sudo nano filename.py opens the file in Nano and creates it if it does not already exist."
+    },
+    {
+      "id": "iot-ws4-ws5-q12",
+      "type": "mcq",
+      "prompt": "Which command runs a Python file from the terminal according to WS4?",
+      "choices": [
+        "python filename.py",
+        "nano python filename.py",
+        "import filename.py",
+        "run gpiozero filename.py"
+      ],
+      "answer": 0,
+      "explanation": "The command python filename.py runs the Python script named filename.py."
+    },
+    {
+      "id": "iot-ws4-ws5-q13",
+      "type": "mcq",
+      "prompt": "Which shortcut saves a file in Nano using the alternative method listed in WS4?",
+      "choices": [
+        "Ctrl + X, then Ctrl + S",
+        "Ctrl + Z, then Enter",
+        "Ctrl + O, then Enter",
+        "Ctrl + C, then Ctrl + O"
+      ],
+      "answer": 2,
+      "explanation": "In Nano, Ctrl + O writes the file. Press Enter to confirm the filename. Ctrl + X exits the editor."
+    },
+    {
+      "id": "iot-ws4-ws5-q14",
+      "type": "mcq",
+      "prompt": "Which GPIO pin is used by this LED object?\n\nled = LED(17)",
+      "choices": [
+        "GPIO 2",
+        "GPIO 17",
+        "GPIO 5",
+        "GPIO 27"
+      ],
+      "answer": 1,
+      "explanation": "The number 17 identifies the GPIO pin assigned to the LED object in this example."
+    },
+    {
+      "id": "iot-ws4-ws5-q15",
+      "type": "mcq",
+      "prompt": "What is the purpose of while True: in an LED program?",
+      "choices": [
+        "It repeats the loop until its condition becomes false.",
+        "It executes the loop body exactly five times.",
+        "It delays each instruction by one second.",
+        "It waits for a button before executing the loop."
+      ],
+      "answer": 0,
+      "explanation": "while True: creates a loop that continues indefinitely unless the program is interrupted or otherwise exits the loop."
+    },
+    {
+      "id": "iot-ws4-ws5-q16",
+      "type": "mcq",
+      "prompt": "What is the most likely result of this program?\n\nfrom gpiozero import LED\nimport time\n\nled = LED(17)\nwhile True:\n    led.on()\n    time.sleep(0.5)\n    led.off()\n    time.sleep(0.5)",
+      "choices": [
+        "The LED flashes continuously until the program is stopped.",
+        "The LED flashes exactly five times before stopping.",
+        "The LED stays on because the loop never ends.",
+        "The program immediately raises a NameError."
+      ],
+      "answer": 0,
+      "explanation": "while True: repeats the on-delay-off-delay sequence indefinitely. Both states have a delay, so the LED repeatedly flashes."
+    },
+    {
+      "id": "iot-ws4-ws5-q17",
+      "type": "mcq",
+      "prompt": "In WS5, what does this line create?\n\nbutton = Button(2)",
+      "choices": [
+        "An LED object assigned to GPIO 2.",
+        "A button object assigned to GPIO 2.",
+        "A delay object assigned to GPIO 2.",
+        "A terminal window assigned to GPIO 2."
+      ],
+      "answer": 1,
+      "explanation": "Button(2) creates a button object using GPIO 2. The variable button is the name used to control or check that object."
+    },
+    {
+      "id": "iot-ws4-ws5-q18",
+      "type": "mcq",
+      "prompt": "Which import supports both Button(2) and LED(17)?",
+      "choices": [
+        "from gpiozero import Button, LED",
+        "from time import Button, LED",
+        "import Button, LED from gpiozero",
+        "from gpiozero import time, signal"
+      ],
+      "answer": 0,
+      "explanation": "Both classes are imported from gpiozero, allowing the program to create button and LED objects directly."
+    },
+    {
+      "id": "iot-ws4-ws5-q19",
+      "type": "mcq",
+      "prompt": "What happens when this program runs?\n\nfrom gpiozero import Button\n\nbutton = Button(2)\nbutton.wait_for_press()\nprint(\"THE BUTTON WAS PRESSED!\")",
+      "choices": [
+        "The message appears immediately, before any button press.",
+        "The program waits for a press, then prints the message.",
+        "The program waits for release, then turns on an LED.",
+        "The program prints the message five times continuously."
+      ],
+      "answer": 1,
+      "explanation": "wait_for_press() pauses the program until the button is pressed. Only then does Python execute the print() statement."
+    },
+    {
+      "id": "iot-ws4-ws5-q20",
+      "type": "mcq",
+      "prompt": "What happens if the button is never pressed in Question 19?",
+      "choices": [
+        "The program prints the message after one second.",
+        "The program automatically treats the button as pressed.",
+        "The program remains waiting at wait_for_press().",
+        "The program creates an LED to replace the button."
+      ],
+      "answer": 2,
+      "explanation": "The statement waits for the specified button press. If no press occurs, the program does not move to the next statement."
+    },
+    {
+      "id": "iot-ws4-ws5-q21",
+      "type": "mcq",
+      "prompt": "Which method waits until a button is released?",
+      "choices": [
+        "button.off()",
+        "button.toggle()",
+        "button.wait_for_press()",
+        "button.wait_for_release()"
+      ],
+      "answer": 3,
+      "explanation": "wait_for_release() pauses program execution until the button is released. wait_for_press() waits for the opposite event."
+    },
+    {
+      "id": "iot-ws4-ws5-q22",
+      "type": "mcq",
+      "prompt": "What happens when the button is pressed in a correctly connected button circuit, according to WS5?",
+      "choices": [
+        "The circuit completes and current can flow.",
+        "The circuit opens and current always increases.",
+        "The GPIO pin changes into a power supply.",
+        "The resistor automatically disconnects from the circuit."
+      ],
+      "answer": 0,
+      "explanation": "In the worksheet's circuit explanation, pressing the button completes the circuit, allowing current to flow. Releasing it disconnects the circuit and stops current flow through that path."
+    },
+    {
+      "id": "iot-ws4-ws5-q23",
+      "type": "mcq",
+      "prompt": "What is the main purpose of a resistor connected in series with an LED?",
+      "choices": [
+        "It makes the GPIO pin generate a higher voltage.",
+        "It limits current and helps protect the LED and Pi.",
+        "It makes Python repeat the program automatically.",
+        "It changes an analog signal into a digital signal."
+      ],
+      "answer": 1,
+      "explanation": "A current-limiting resistor reduces the current flowing through the LED and helps protect the LED and Raspberry Pi GPIO pin from damage."
+    },
+    {
+      "id": "iot-ws4-ws5-q24",
+      "type": "mcq",
+      "prompt": "What is the expected effect of a resistor with too high a resistance?",
+      "choices": [
+        "The LED becomes brighter and draws more current.",
+        "The LED flashes faster because the loop accelerates.",
+        "The LED becomes dim or may not light up.",
+        "The LED changes the GPIO pin into an output driver."
+      ],
+      "answer": 2,
+      "explanation": "A higher resistance allows less current to flow. The LED may appear very dim or may not light up."
+    },
+    {
+      "id": "iot-ws4-ws5-q25",
+      "type": "mcq",
+      "prompt": "What is the main risk of using a resistor with too low a resistance?",
+      "choices": [
+        "The LED may draw excessive current and cause damage.",
+        "The button may automatically wait for a release.",
+        "The LED must remain off for a longer period.",
+        "The program will convert Python into machine code incorrectly."
+      ],
+      "answer": 0,
+      "explanation": "Too little resistance may allow excessive current, potentially damaging the LED or the GPIO pin."
+    },
+    {
+      "id": "iot-ws4-ws5-q26",
+      "type": "mcq",
+      "prompt": "Which resistor value is recommended for the standard indicator LEDs in WS5?",
+      "choices": [
+        "33 Ω",
+        "330 Ω",
+        "3,300 Ω",
+        "33,000 Ω"
+      ],
+      "answer": 1,
+      "explanation": "WS5 specifies a 330 Ω resistor as a safe standard choice for the LEDs used in the activity. The ideal value can vary depending on the LED."
+    },
+    {
+      "id": "iot-ws4-ws5-q27",
+      "type": "mcq",
+      "prompt": "How can you identify an LED's negative lead using its lead length?",
+      "choices": [
+        "The longer lead is negative.",
+        "Both leads are always the same length.",
+        "The shorter lead is negative.",
+        "The shorter lead is always positive."
+      ],
+      "answer": 2,
+      "explanation": "According to WS5, the shorter lead is the cathode, or negative side. The longer lead is the anode, or positive side."
+    },
+    {
+      "id": "iot-ws4-ws5-q28",
+      "type": "mcq",
+      "prompt": "Which LED feature identifies its negative side using the body shape?",
+      "choices": [
+        "The flat side or notch indicates the negative side.",
+        "The rounded side indicates the negative side.",
+        "The transparent side indicates the negative side.",
+        "The brightest side indicates the negative side."
+      ],
+      "answer": 0,
+      "explanation": "The flat side or notch identifies the cathode, which is the negative side of a standard LED."
+    },
+    {
+      "id": "iot-ws4-ws5-q29",
+      "type": "mcq",
+      "prompt": "What does this statement do?\n\nled.toggle()",
+      "choices": [
+        "It waits until the LED's power supply is connected.",
+        "It turns the LED off regardless of its current state.",
+        "It changes the LED from its current state to the opposite state.",
+        "It repeats the LED's previous state five times."
+      ],
+      "answer": 2,
+      "explanation": "toggle() changes the state: on becomes off, and off becomes on."
+    },
+    {
+      "id": "iot-ws4-ws5-q30",
+      "type": "mcq",
+      "prompt": "What is the main effect of this WS5 code?\n\nbutton = Button(2)\nled = LED(17)\n\nwhile True:\n    button.wait_for_press()\n    led.toggle()",
+      "choices": [
+        "Every detected button press requests the LED to switch state.",
+        "The LED remains on only while the button is held down.",
+        "The LED flashes continuously without checking the button.",
+        "The button controls the LED's brightness using an analog signal."
+      ],
+      "answer": 0,
+      "explanation": "The loop waits for a button press and then toggles the LED. Each successfully detected press changes the LED's state. Real hardware and button timing can affect how presses are detected."
+    },
+    {
+      "id": "iot-ws4-ws5-q31",
+      "type": "mcq",
+      "prompt": "What is the role of time.sleep(0.5) in the WS5 toggle example?",
+      "choices": [
+        "It makes the button permanently unavailable.",
+        "It introduces a half-second delay after the toggle.",
+        "It makes the LED switch on five separate times.",
+        "It exits the infinite loop after half a second."
+      ],
+      "answer": 1,
+      "explanation": "The delay pauses the program for 0.5 seconds. In the worksheet, it provides a short delay before the program checks for another button press."
+    },
+    {
+      "id": "iot-ws4-ws5-q32",
+      "type": "mcq",
+      "prompt": "What is the most likely problem with this code?\n\nfrom gpiozero import Button, LED\n\nbutton = Button(2)\nled = LED(17)\n\nbutton.when_pressed = led.on\nbutton.when_released = led.off",
+      "choices": [
+        "It always causes a syntax error because callbacks are unsupported.",
+        "It turns the LED on when released and off when pressed.",
+        "It defines event callbacks but has no command to keep the script running.",
+        "It makes the LED toggle five times after every button press."
+      ],
+      "answer": 2,
+      "explanation": "The callbacks specify what should happen on press and release. However, the code has no pause() call or other continuing execution mechanism. When the script reaches its end, it can terminate before the callbacks remain active."
+    },
+    {
+      "id": "iot-ws4-ws5-q33",
+      "type": "mcq",
+      "prompt": "What does button.when_pressed = led.on mean?",
+      "choices": [
+        "Wait until the button is pressed, then execute led.on() once in sequence.",
+        "Register led.on as the function to call when the button is pressed.",
+        "Make the button object use the LED's GPIO pin number.",
+        "Make the LED act as a button that waits for release."
+      ],
+      "answer": 1,
+      "explanation": "This assigns a callback to the button's press event. The function is registered without parentheses; led.on is passed as the function to call when the event occurs."
+    },
+    {
+      "id": "iot-ws4-ws5-q34",
+      "type": "mcq",
+      "prompt": "Why is pause() used in the WS5 callback program?",
+      "choices": [
+        "It repeatedly toggles the LED while the button is idle.",
+        "It waits for the button to be released before importing GPIOZero.",
+        "It keeps the program running so it can respond to button events.",
+        "It forces the Raspberry Pi to shut down when the LED turns on."
+      ],
+      "answer": 2,
+      "explanation": "pause() keeps the program running. Without it, the script could reach its end and terminate, so it would no longer respond to the callbacks."
+    },
+    {
+      "id": "iot-ws4-ws5-q35",
+      "type": "mcq",
+      "prompt": "Which import supports the pause() command used in WS5?",
+      "choices": [
+        "from time import pause",
+        "from signal import pause",
+        "from gpiozero import pause",
+        "import pause from signal"
+      ],
+      "answer": 1,
+      "explanation": "WS5 uses from signal import pause."
+    },
+    {
+      "id": "iot-ws4-ws5-q36",
+      "type": "mcq",
+      "prompt": "What happens in this program when the button is pressed and then released?\n\nbutton.when_pressed = led.on\nbutton.when_released = led.off\npause()",
+      "choices": [
+        "The LED turns on while pressed and turns off when released.",
+        "The LED turns off while pressed and turns on when released.",
+        "The LED toggles once when pressed and never responds again.",
+        "The LED flashes continuously regardless of the button state."
+      ],
+      "answer": 0,
+      "explanation": "The press callback calls led.on(), and the release callback calls led.off(). The pause() call keeps the script running so it can respond to these events."
+    },
+    {
+      "id": "iot-ws4-ws5-q37",
+      "type": "mcq",
+      "prompt": "Which command waits for a button press before continuing?",
+      "choices": [
+        "button.when_pressed",
+        "button.wait_for_press()",
+        "button.when_released",
+        "button.wait_for_release()"
+      ],
+      "answer": 1,
+      "explanation": "wait_for_press() blocks the current program flow until the button is pressed. By contrast, when_pressed registers a callback."
+    },
+    {
+      "id": "iot-ws4-ws5-q38",
+      "type": "mcq",
+      "prompt": "What is the key difference between wait_for_press() and when_pressed?",
+      "choices": [
+        "Both commands always stop the entire Raspberry Pi.",
+        "The first registers a callback; the second creates a button object.",
+        "The first waits in sequence; the second registers an event callback.",
+        "The first turns an LED on; the second turns an LED off."
+      ],
+      "answer": 2,
+      "explanation": "wait_for_press() blocks the current sequence until a press happens. when_pressed registers a function that runs in response to the press event."
+    },
+    {
+      "id": "iot-ws4-ws5-q39",
+      "type": "mcq",
+      "prompt": "What is wrong with this code if the goal is to create a button object?\n\nfrom gpiozero import LED\n\nbutton = Button(2)",
+      "choices": [
+        "Button was not imported or otherwise defined.",
+        "GPIO 2 cannot be used for a button under any circumstances.",
+        "LED must always be assigned to GPIO 2 before a button.",
+        "Python does not allow the word button as a variable name."
+      ],
+      "answer": 0,
+      "explanation": "Only LED was imported. The code must also import Button, for example with from gpiozero import Button, or import both classes together."
+    },
+    {
+      "id": "iot-ws4-ws5-q40",
+      "type": "mcq",
+      "prompt": "Which code correctly uses the whole gpiozero module to create a button?",
+      "choices": [
+        "import gpiozero\nbutton = Button(2)",
+        "import gpiozero\nbutton = gpiozero.Button(2)",
+        "from gpiozero import Button\nbutton = gpiozero(2)",
+        "import gpiozero\nbutton = GPIO(2)"
+      ],
+      "answer": 1,
+      "explanation": "When importing the entire module with import gpiozero, refer to its class as gpiozero.Button."
+    },
+    {
+      "id": "iot-ws4-ws5-q41",
+      "type": "mcq",
+      "prompt": "What is the output behavior of this program?\n\nfrom gpiozero import Button\n\nbutton = Button(2)\nprint(\"Ready\")\nbutton.wait_for_press()\nprint(\"Pressed\")",
+      "choices": [
+        "It prints both messages before the button is pressed.",
+        "It prints Pressed first and then waits for Ready.",
+        "It prints Ready, waits for a press, then prints Pressed.",
+        "It prints Ready continuously until the button is released."
+      ],
+      "answer": 2,
+      "explanation": "Python executes statements in order. The first message appears before the program waits; the second appears only after the press is detected."
+    },
+    {
+      "id": "iot-ws4-ws5-q42",
+      "type": "mcq",
+      "prompt": "Which wiring choice best protects a standard LED connected to a Raspberry Pi GPIO output?",
+      "choices": [
+        "Connect the LED directly between GPIO and ground without resistance.",
+        "Connect a suitable current-limiting resistor in series with the LED.",
+        "Connect the resistor in a separate circuit that bypasses the LED.",
+        "Connect the LED directly to a GPIO pin configured as an input."
+      ],
+      "answer": 1,
+      "explanation": "A resistor in series with the LED limits the current. WS5 recommends 330 Ω for the standard LEDs used in its activity."
+    },
+    {
+      "id": "iot-ws4-ws5-q43",
+      "type": "mcq",
+      "prompt": "What happens if the LED's GPIO number in the code does not match the pin used in the circuit?",
+      "choices": [
+        "The program automatically identifies and fixes the wiring.",
+        "The LED always flashes on the correct physical pin.",
+        "The program may control a different pin than the one connected to the LED.",
+        "Python changes the assigned GPIO number based on the LED colour."
+      ],
+      "answer": 2,
+      "explanation": "The GPIO number in the program must match the pin used in the circuit. A mismatch means the program may control the wrong pin."
+    },
+    {
+      "id": "iot-ws4-ws5-q44",
+      "type": "mcq",
+      "prompt": "Which statement about button.wait_for_release() is correct?",
+      "choices": [
+        "It pauses until the button is released.",
+        "It toggles the LED when the button is released.",
+        "It registers the LED as the release callback.",
+        "It keeps the program running forever after a press."
+      ],
+      "answer": 0,
+      "explanation": "The command waits until the button is released. It does not automatically change an LED's state."
+    },
+    {
+      "id": "iot-ws4-ws5-q45",
+      "type": "mcq",
+      "prompt": "A student wants to print a message once after the first detected press and then stop. Which code best matches that goal?",
+      "choices": [
+        "button.wait_for_press()\nprint(\"Pressed\")",
+        "while True:\n    print(\"Pressed\")",
+        "button.when_pressed = print(\"Pressed\")\npause()",
+        "button.wait_for_release()\nled.toggle()"
+      ],
+      "answer": 0,
+      "explanation": "The first program waits for a press, prints the message, and then reaches the end. Option C calls print() immediately during assignment rather than registering it as a callback function."
+    },
+    {
+      "id": "iot-ws4-ws5-q46",
+      "type": "mcq",
+      "prompt": "What is wrong with the following callback assignment?\n\nbutton.when_pressed = led.on()",
+      "choices": [
+        "The callback must be registered without immediately calling the function.",
+        "led.on() always returns a new LED object that replaces the button.",
+        "when_pressed only works with time.sleep() statements.",
+        "A button callback cannot control an LED in gpiozero."
+      ],
+      "answer": 0,
+      "explanation": "led.on() executes immediately. For a callback, assign the function itself: button.when_pressed = led.on."
+    },
+    {
+      "id": "iot-ws4-ws5-q47",
+      "type": "mcq",
+      "prompt": "What happens when this code runs?\n\nfrom gpiozero import LED\n\nled = LED(17)\nled.on()\nled.off()",
+      "choices": [
+        "The LED flashes for five seconds.",
+        "The LED is turned on and then turned off immediately afterward.",
+        "The LED stays on until the program is manually stopped.",
+        "The program waits until the LED is physically disconnected."
+      ],
+      "answer": 1,
+      "explanation": "Python executes led.on() and then led.off() in sequence. There is no delay between them, so the on state may be too brief to notice."
+    },
+    {
+      "id": "iot-ws4-ws5-q48",
+      "type": "mcq",
+      "prompt": "Which statement best describes the purpose of from gpiozero import *?",
+      "choices": [
+        "It imports only the LED class and nothing else.",
+        "It imports every Python module installed on the Pi.",
+        "It imports publicly exported names from gpiozero into the current namespace.",
+        "It automatically connects every GPIO pin to an LED."
+      ],
+      "answer": 2,
+      "explanation": "The worksheet lists this as an alternative import method. It allows names such as LED and Button to be used directly, although explicit imports are usually clearer."
+    },
+    {
+      "id": "iot-ws4-ws5-q49",
+      "type": "mcq",
+      "prompt": "What is the main purpose of the button in WS5's interactive circuit?",
+      "choices": [
+        "To supply all power to the Raspberry Pi.",
+        "To provide an input event that the program can detect.",
+        "To convert Python statements into GPIO voltage.",
+        "To store the LED's previous brightness permanently."
+      ],
+      "answer": 1,
+      "explanation": "The button is an input component. The program responds to its press or release by printing a message or controlling an LED."
+    },
+    {
+      "id": "iot-ws4-ws5-q50",
+      "type": "mcq",
+      "prompt": "Which program correctly makes an LED respond to a button being pressed and released?",
+      "choices": [
+        "from gpiozero import LED, Button\nfrom signal import pause\n\nbutton = Button(2)\nled = LED(17)\n\nbutton.when_pressed = led.on\nbutton.when_released = led.off\n\npause()",
+        "from gpiozero import LED\nfrom signal import pause\n\nled = LED(17)\nbutton.when_pressed = led.on\n\npause()",
+        "from gpiozero import Button, LED\n\nbutton = Button(2)\nled = LED(17)\n\nbutton.when_pressed = led.on()\nbutton.when_released = led.off()",
+        "from gpiozero import Button, LED\n\nbutton = Button(2)\nled = LED(17)\n\nwhile True:\n    button.wait_for_press()\n    led.on()\n    led.off()"
+      ],
+      "answer": 0,
+      "explanation": "The program imports both classes, creates the button and LED objects, registers the correct callback functions, and uses pause() to keep the program running."
+    },
+    {
+      "id": "iot-ws4-ws5-q51",
+      "type": "tf",
+      "prompt": "The following code makes the LED visibly flash five times with equal on and off periods.\n\nfrom gpiozero import LED\nimport time\n\nled = LED(17)\nfor _ in range(5):\n    led.on()\n    time.sleep(0.5)\n    led.off()",
+      "answer": false,
+      "explanation": "There is no delay after led.off(). The LED is turned off, but the off period is extremely short before the next iteration starts. The off state may not be visibly noticeable."
+    },
+    {
+      "id": "iot-ws4-ws5-q52",
+      "type": "tf",
+      "prompt": "This code works because importing gpiozero automatically defines LED as a standalone name.\n\nimport gpiozero\nled = LED(17)",
+      "answer": false,
+      "explanation": "import gpiozero does not import LED directly into the current namespace. Use gpiozero.LED(17) or from gpiozero import LED followed by LED(17)."
+    },
+    {
+      "id": "iot-ws4-ws5-q53",
+      "type": "tf",
+      "prompt": "from gpiozero import LED allows you to create an LED object using LED(17).",
+      "answer": true,
+      "explanation": "The statement imports the LED class directly from the gpiozero library."
+    },
+    {
+      "id": "iot-ws4-ws5-q54",
+      "type": "tf",
+      "prompt": "The command led.on() turns the LED off.",
+      "answer": false,
+      "explanation": "led.on() turns the LED on. The command led.off() turns it off."
+    },
+    {
+      "id": "iot-ws4-ws5-q55",
+      "type": "tf",
+      "prompt": "If an LED is off, calling led.toggle() changes it to the on state.",
+      "answer": true,
+      "explanation": "toggle() switches the LED to the opposite state."
+    },
+    {
+      "id": "iot-ws4-ws5-q56",
+      "type": "tf",
+      "prompt": "The loop for _ in range(5): executes its body five times.",
+      "answer": true,
+      "explanation": "range(5) generates five values, from 0 to 4. The loop body executes once for each value."
+    },
+    {
+      "id": "iot-ws4-ws5-q57",
+      "type": "tf",
+      "prompt": "Two time.sleep(0.5) statements in each iteration of a five-iteration loop create a total programmed delay of 2.5 seconds.",
+      "answer": false,
+      "explanation": "Each iteration has two half-second delays, making one second per iteration. Five iterations create five seconds of programmed delay, excluding execution overhead."
+    },
+    {
+      "id": "iot-ws4-ws5-q58",
+      "type": "tf",
+      "prompt": "Adding time.sleep(0.5) after led.off() creates a longer, visible off period.",
+      "answer": true,
+      "explanation": "The delay keeps the LED off for approximately half a second before the next iteration continues."
+    },
+    {
+      "id": "iot-ws4-ws5-q59",
+      "type": "tf",
+      "prompt": "The time module must be imported before using time.sleep() in a program.",
+      "answer": true,
+      "explanation": "The statement import time makes time.sleep() available. Another valid approach is from time import sleep, followed by sleep(0.5)."
+    },
+    {
+      "id": "iot-ws4-ws5-q60",
+      "type": "tf",
+      "prompt": "The command python filename.py is used to execute a Python script from the terminal.",
+      "answer": true,
+      "explanation": "This command runs the specified Python file."
+    },
+    {
+      "id": "iot-ws4-ws5-q61",
+      "type": "tf",
+      "prompt": "The command sudo nano filename.py opens a Python file in the Nano editor.",
+      "answer": true,
+      "explanation": "Nano is a text editor used to create or edit the file. The sudo prefix runs the command with elevated privileges."
+    },
+    {
+      "id": "iot-ws4-ws5-q62",
+      "type": "tf",
+      "prompt": "In Nano, Ctrl + X is the shortcut used to exit the editor.",
+      "answer": true,
+      "explanation": "Ctrl + X exits Nano. If there are unsaved changes, Nano may ask whether you want to save them."
+    },
+    {
+      "id": "iot-ws4-ws5-q63",
+      "type": "tf",
+      "prompt": "In Nano, Ctrl + O followed by Enter can save the current file.",
+      "answer": true,
+      "explanation": "Ctrl + O opens the write-out operation, and Enter confirms the filename."
+    },
+    {
+      "id": "iot-ws4-ws5-q64",
+      "type": "tf",
+      "prompt": "In led = LED(17), the number 17 is the number of times the LED will flash.",
+      "answer": false,
+      "explanation": "The number 17 identifies the GPIO pin assigned to the LED object. The number of flashes is controlled by the loop."
+    },
+    {
+      "id": "iot-ws4-ws5-q65",
+      "type": "tf",
+      "prompt": "A while True: loop is suitable for making an LED blink continuously.",
+      "answer": true,
+      "explanation": "The loop repeats indefinitely while its condition remains true. An LED can blink continuously by placing the on, delay, off, and delay commands inside it."
+    },
+    {
+      "id": "iot-ws4-ws5-q66",
+      "type": "tf",
+      "prompt": "A program using while True: always stops automatically after five iterations.",
+      "answer": false,
+      "explanation": "while True: has no built-in limit of five iterations. It continues until the program is interrupted or exits the loop through other logic."
+    },
+    {
+      "id": "iot-ws4-ws5-q67",
+      "type": "tf",
+      "prompt": "In WS5, Button(2) creates a button object associated with GPIO 2.",
+      "answer": true,
+      "explanation": "The value 2 specifies the GPIO pin used by the button object."
+    },
+    {
+      "id": "iot-ws4-ws5-q68",
+      "type": "tf",
+      "prompt": "button.wait_for_press() allows the next statement to execute before the button is pressed.",
+      "answer": false,
+      "explanation": "The method waits for a button press before the program continues to the next statement."
+    },
+    {
+      "id": "iot-ws4-ws5-q69",
+      "type": "tf",
+      "prompt": "If the button is never pressed, a program waiting at button.wait_for_press() will remain waiting there.",
+      "answer": true,
+      "explanation": "The program does not proceed past that statement until the button press is detected."
+    },
+    {
+      "id": "iot-ws4-ws5-q70",
+      "type": "tf",
+      "prompt": "button.wait_for_release() waits until the button is released.",
+      "answer": true,
+      "explanation": "This method pauses the current program sequence until the release event occurs."
+    },
+    {
+      "id": "iot-ws4-ws5-q71",
+      "type": "tf",
+      "prompt": "In the worksheet's button circuit, pressing the button completes the circuit and allows current to flow.",
+      "answer": true,
+      "explanation": "The worksheet explains that pressing the button completes the circuit, while releasing it disconnects the circuit."
+    },
+    {
+      "id": "iot-ws4-ws5-q72",
+      "type": "tf",
+      "prompt": "A button is an output device because it produces light when pressed.",
+      "answer": false,
+      "explanation": "The button is an input component. It provides an event that the program can detect. An LED is an output component."
+    },
+    {
+      "id": "iot-ws4-ws5-q73",
+      "type": "tf",
+      "prompt": "A current-limiting resistor helps protect both the LED and the Raspberry Pi GPIO pin.",
+      "answer": true,
+      "explanation": "The resistor limits current and reduces the risk of damage caused by excessive current."
+    },
+    {
+      "id": "iot-ws4-ws5-q74",
+      "type": "tf",
+      "prompt": "Connecting an LED directly to a Raspberry Pi GPIO pin without a suitable current-limiting resistor can cause damage.",
+      "answer": true,
+      "explanation": "Excessive current can damage the LED or the GPIO pin and potentially cause permanent hardware damage."
+    },
+    {
+      "id": "iot-ws4-ws5-q75",
+      "type": "tf",
+      "prompt": "A resistor with too high a resistance can make an LED very dim or prevent it from lighting.",
+      "answer": true,
+      "explanation": "Higher resistance reduces the current flowing through the LED."
+    },
+    {
+      "id": "iot-ws4-ws5-q76",
+      "type": "tf",
+      "prompt": "A resistor with too low a resistance is always safer because it makes the LED brighter.",
+      "answer": false,
+      "explanation": "Too little resistance can allow excessive current. This may damage the LED or GPIO pin."
+    },
+    {
+      "id": "iot-ws4-ws5-q77",
+      "type": "tf",
+      "prompt": "The WS5 worksheet recommends a 330 Ω resistor for the standard indicator LEDs in the activity.",
+      "answer": true,
+      "explanation": "The worksheet identifies 330 Ω as a suitable standard value for the LEDs used in the exercise."
+    },
+    {
+      "id": "iot-ws4-ws5-q78",
+      "type": "tf",
+      "prompt": "The longer lead of a standard LED is normally its negative lead.",
+      "answer": false,
+      "explanation": "The longer lead is the positive anode. The shorter lead is the negative cathode."
+    },
+    {
+      "id": "iot-ws4-ws5-q79",
+      "type": "tf",
+      "prompt": "The flat side or notch on a standard LED identifies its negative side.",
+      "answer": true,
+      "explanation": "The flat edge indicates the cathode, which is the negative side."
+    },
+    {
+      "id": "iot-ws4-ws5-q80",
+      "type": "tf",
+      "prompt": "Every LED colour must use exactly the same resistor value in every circuit.",
+      "answer": false,
+      "explanation": "The ideal resistance depends on factors such as the LED's colour, forward voltage, and current rating. The worksheet uses 330 Ω as a standard choice for its activity."
+    },
+    {
+      "id": "iot-ws4-ws5-q81",
+      "type": "tf",
+      "prompt": "The following code toggles the LED once after each detected button press.\n\nbutton.wait_for_press()\nled.toggle()",
+      "answer": true,
+      "explanation": "The program waits for a press and then changes the LED to its opposite state. As written, the sequence does not repeat unless placed inside a loop."
+    },
+    {
+      "id": "iot-ws4-ws5-q82",
+      "type": "tf",
+      "prompt": "Adding time.sleep(0.5) after led.toggle() creates a half-second delay before the next statement executes.",
+      "answer": true,
+      "explanation": "time.sleep(0.5) pauses the program for approximately half a second."
+    },
+    {
+      "id": "iot-ws4-ws5-q83",
+      "type": "tf",
+      "prompt": "The following assignment registers led.on as a callback without immediately calling it.\n\nbutton.when_pressed = led.on",
+      "answer": true,
+      "explanation": "The function is assigned without parentheses. It will be called when the button press event occurs."
+    },
+    {
+      "id": "iot-ws4-ws5-q84",
+      "type": "tf",
+      "prompt": "The following code calls led.on() immediately when Python reaches the assignment.\n\nbutton.when_pressed = led.on()",
+      "answer": true,
+      "explanation": "The parentheses execute led.on() immediately. The expression's return value is then assigned to when_pressed, rather than registering the led.on function itself. This is not the correct callback pattern."
+    },
+    {
+      "id": "iot-ws4-ws5-q85",
+      "type": "tf",
+      "prompt": "The callback button.when_released = led.off tells the program to turn the LED off when the button is released.",
+      "answer": true,
+      "explanation": "The when_released event is associated with the led.off function."
+    },
+    {
+      "id": "iot-ws4-ws5-q86",
+      "type": "tf",
+      "prompt": "button.when_pressed and button.when_released are the same command and respond to the same event.",
+      "answer": false,
+      "explanation": "when_pressed responds to a press, while when_released responds to a release."
+    },
+    {
+      "id": "iot-ws4-ws5-q87",
+      "type": "tf",
+      "prompt": "The statement from signal import pause imports the pause() function used in WS5.",
+      "answer": true,
+      "explanation": "This is the import method shown in the worksheet."
+    },
+    {
+      "id": "iot-ws4-ws5-q88",
+      "type": "tf",
+      "prompt": "Without pause() or another mechanism that keeps the program running, a callback-based script may terminate before it can continue responding to button events.",
+      "answer": true,
+      "explanation": "Reaching the end of the script can terminate the program. pause() keeps it running so the registered event callbacks can respond."
+    },
+    {
+      "id": "iot-ws4-ws5-q89",
+      "type": "tf",
+      "prompt": "pause() automatically turns an LED on and off at regular intervals.",
+      "answer": false,
+      "explanation": "pause() keeps the program running; it does not generate LED blinking behavior. The program's callbacks determine how the LED responds."
+    },
+    {
+      "id": "iot-ws4-ws5-q90",
+      "type": "tf",
+      "prompt": "The following program turns an LED on when the button is pressed and off when it is released, while the script remains active.\n\nfrom gpiozero import Button, LED\nfrom signal import pause\n\nbutton = Button(2)\nled = LED(17)\n\nbutton.when_pressed = led.on\nbutton.when_released = led.off\n\npause()",
+      "answer": true,
+      "explanation": "The callbacks control the LED according to the button events, and pause() keeps the program running."
+    },
+    {
+      "id": "iot-ws4-ws5-q91",
+      "type": "tf",
+      "prompt": "import gpiozero and from gpiozero import Button, LED are both valid import methods, but they use different naming styles.",
+      "answer": true,
+      "explanation": "With import gpiozero, use names such as gpiozero.Button(2). With direct imports, use Button(2)."
+    },
+    {
+      "id": "iot-ws4-ws5-q92",
+      "type": "tf",
+      "prompt": "The following program correctly creates a button object.\n\nfrom gpiozero import LED\n\nbutton = Button(2)",
+      "answer": false,
+      "explanation": "The code imports only LED. The name Button has not been imported or defined, so Python will raise a NameError when it reaches Button(2)."
+    },
+    {
+      "id": "iot-ws4-ws5-q93",
+      "type": "tf",
+      "prompt": "The button variable must always be named button; using another valid variable name is impossible.",
+      "answer": false,
+      "explanation": "You can use another valid name, such as button1. The name used in the code must simply be consistent."
+    },
+    {
+      "id": "iot-ws4-ws5-q94",
+      "type": "tf",
+      "prompt": "If an LED object uses GPIO 17, the LED must physically be connected to the corresponding GPIO 17 pin for the program to control it as intended.",
+      "answer": true,
+      "explanation": "The software's GPIO assignment must match the physical wiring. Otherwise, the program may control a different pin from the one connected to the LED."
+    },
+    {
+      "id": "iot-ws4-ws5-q95",
+      "type": "tf",
+      "prompt": "The following program prints the message before waiting for a button press.\n\nfrom gpiozero import Button\n\nbutton = Button(2)\nprint(\"Ready\")\nbutton.wait_for_press()\nprint(\"Pressed\")",
+      "answer": true,
+      "explanation": "Python executes statements in order. It prints Ready, waits for a press, and then prints Pressed."
+    },
+    {
+      "id": "iot-ws4-ws5-q96",
+      "type": "tf",
+      "prompt": "The following code makes the LED toggle continuously without requiring any button press.\n\nbutton = Button(2)\nled = LED(17)\n\nwhile True:\n    button.wait_for_press()\n    led.toggle()",
+      "answer": false,
+      "explanation": "The loop waits for a button press before toggling the LED. It does not toggle continuously without button input."
+    },
+    {
+      "id": "iot-ws4-ws5-q97",
+      "type": "tf",
+      "prompt": "In WS5, an LED's positive lead should be identified by its shorter lead, while the longer lead is negative.",
+      "answer": false,
+      "explanation": "The longer lead is positive, and the shorter lead is negative. The flat side or notch also identifies the negative side."
+    },
+    {
+      "id": "iot-ws4-ws5-q98",
+      "type": "tf",
+      "prompt": "A program containing led.on() followed immediately by led.off() may turn the LED on for too short a time for a person to notice.",
+      "answer": true,
+      "explanation": "The LED is switched on and then off immediately, with no programmed delay between the commands. The on period may be too short to see clearly."
+    },
+    {
+      "id": "iot-ws4-ws5-q99",
+      "type": "tf",
+      "prompt": "A Python loop that flashes an LED ten times with a 0.1-second on delay and a 0.1-second off delay has two seconds of programmed sleep time.",
+      "answer": true,
+      "explanation": "Each iteration contains two 0.1-second delays. Ten iterations give 10 × (0.1 + 0.1) = 2 seconds of programmed sleep time, excluding execution overhead."
+    },
+    {
+      "id": "iot-ws4-ws5-q100",
+      "type": "tf",
+      "prompt": "The following code correctly uses a callback to turn on an LED when a button is pressed, and keeps the program running.\n\nfrom gpiozero import Button, LED\nfrom signal import pause\n\nbutton = Button(2)\nled = LED(17)\n\nbutton.when_pressed = led.on\npause()",
+      "answer": true,
+      "explanation": "The code imports both required classes, creates the button and LED objects, registers led.on as the button-press callback, and calls pause() so the program remains active."
+    }
+  ]
+}

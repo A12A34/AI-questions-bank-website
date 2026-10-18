@@ -432,6 +432,7 @@ html {
   margin: 0 0 1rem;
   font-size: 1.15rem;
   font-weight: 600;
+  white-space: pre-wrap;
 }
 
 .dir-rtl,
@@ -461,6 +462,7 @@ html {
   border-radius: 10px;
   background: var(--bg-elev);
   cursor: pointer;
+  white-space: pre-wrap;
 }
 
 .choice:hover {
@@ -546,6 +548,7 @@ select.incorrect,
   margin: 0.9rem 0 0;
   padding: 0.75rem 0.85rem;
   border-radius: 10px;
+  white-space: pre-wrap;
   background: var(--bg-elev);
   border: 1px solid var(--border);
 }
