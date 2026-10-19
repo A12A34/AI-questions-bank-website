@@ -49,6 +49,11 @@
       "id": "iot-ws4-ws5",
       "title": "IoT WS4 & WS5 (100 Questions)",
       "file": "iot-ws4-ws5.json"
+    },
+    {
+      "id": "iris-perceptron-coding",
+      "title": "Iris + Perceptron Coding (30 Questions)",
+      "file": "iris-perceptron-coding.json"
     }
   ]
 }

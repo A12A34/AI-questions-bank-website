@@ -1,0 +1,121 @@
+30 Coding-Writing Questions — Iris + Perceptron
+
+1. Write the code to import the NumPy library and give it the alias np.
+Answer: import numpy as np
+Explanation: Imports NumPy and allows you to use it as np.
+
+2. Write the code to import the Pandas library and give it the alias pd.
+Answer: import pandas as pd
+Explanation: Imports Pandas and allows you to use it as pd.
+
+3. Write the code to import the load_iris function from sklearn.datasets.
+Answer: from sklearn.datasets import load_iris
+Explanation: Imports the function used to load the Iris dataset.
+
+4. Write the code to import the Perceptron class from sklearn.linear_model.
+Answer: from sklearn.linear_model import Perceptron
+Explanation: Imports the Perceptron machine-learning classifier.
+
+5. Write the code to load the Iris dataset using load_iris() and store the complete dataset object in a variable called iris_data.
+Answer: iris_data = load_iris()
+Explanation: Loads the Iris dataset and stores it in iris_data.
+
+6. Write the code to create a Pandas DataFrame called df using the feature data from iris_data.data and use iris_data.feature_names as the column names.
+Answer: df = pd.DataFrame(iris_data.data, columns=iris_data.feature_names)
+Explanation: Creates df using the Iris feature values and their original feature names.
+
+7. Write the code to add the target values from the loaded Iris dataset (iris_data.target) to df and name the new column species_class.
+Answer: df["species_class"] = iris_data.target
+Explanation: Adds the original Iris target/class values to df.
+
+8. Write the code to display the first five rows of the DataFrame df.
+Answer: df.head()
+Explanation: head() displays the first five rows of df by default.
+
+9. Write the code to select columns 2 and 3 from iris_data.data, representing petal length and petal width, and store them in a variable called X.
+Answer: X = iris_data.data[:, (2, 3)]
+Explanation: Columns 2 and 3 contain petal length and petal width.
+
+10. Write the code to create a binary target variable called y where the Iris target value 0 (Setosa) becomes 1 and every other Iris target becomes 0.
+Answer: y = (iris_data.target == 0).astype(int)
+Explanation: The comparison identifies Setosa, and astype(int) converts True/False into 1/0.
+
+11. Write the code to create a new DataFrame called df1 using the data stored in X and name its two columns exactly petal length (cm) and petal width (cm).
+Answer: df1 = pd.DataFrame(X, columns=['petal length (cm)', 'petal width (cm)'])
+Explanation: Creates df1 using the two petal features stored in X.
+
+12. Write the code to add the binary target stored in y to df1 using the column name species_class.
+Answer: df1['species_class'] = y
+Explanation: Adds the Setosa/not-Setosa classification to df1.
+
+13. Write the code to find the unique values in the species_class column of df1.
+Answer: df1["species_class"].unique()
+Explanation: Returns the different class values stored in df1["species_class"].
+
+14. Write the code to create a Perceptron object and store it in a variable called perceptron_clf.
+Answer: perceptron_clf = Perceptron()
+Explanation: Creates a Perceptron classifier and stores it in perceptron_clf.
+
+15. Write the code to train the Perceptron stored in perceptron_clf using the input features stored in X and the target stored in y.
+Answer: perceptron_clf.fit(X, y)
+Explanation: fit() trains the Perceptron using X as inputs and y as the target.
+
+16. Write the code to use the trained perceptron_clf to predict the class of a flower whose petal length is 1.4 cm and petal width is 0.3 cm.
+Answer: perceptron_clf.predict([[1.4, 0.3]])
+Explanation: The two values match the two features used in X: petal length and petal width.
+
+17. Write the code to store the prediction for a flower with petal length 1.4 cm and petal width 0.3 cm in a variable called y_pred.
+Answer: y_pred = perceptron_clf.predict([[1.4, 0.3]])
+Explanation: The prediction is stored in y_pred.
+
+18. Write the code to print the prediction stored in y_pred.
+Answer: print(y_pred)
+Explanation: Displays the value stored in y_pred.
+
+19. Write the code to create a new Perceptron classifier called perceptron_clf and immediately train it using X and y in one line.
+Answer: perceptron_clf = Perceptron().fit(X, y)
+Explanation: Creates the Perceptron and trains it using X and y in one statement.
+
+20. Write the code to select the first two features (columns 0 and 1) from iris_data.data and store them in a variable called X.
+Answer: X = iris_data.data[:, (0, 1)]
+Explanation: Columns 0 and 1 are sepal length and sepal width.
+
+21. Write the code to select only the petal length feature (column 2) from iris_data.data and store it in X.
+Answer: X = iris_data.data[:, (2,)]
+Explanation: Column 2 represents petal length.
+
+22. Write the code to create a binary target variable called y where Iris target value 2 (Virginica) becomes 1 and all other species become 0.
+Answer: y = (iris_data.target == 2).astype(int)
+Explanation: Virginica has target value 2, so the comparison identifies Virginica as 1.
+
+23. Write the code to create a binary target variable called y where Iris target value 1 (Versicolor) becomes 1 and all other species become 0.
+Answer: y = (iris_data.target == 1).astype(int)
+Explanation: Versicolor has target value 1 in the Iris dataset.
+
+24. Write the code to display the dimensions of the input feature variable X.
+Answer: print(X.shape)
+Explanation: .shape shows the number of rows and columns in X.
+
+25. Write the code to display the dimensions of the target variable y.
+Answer: print(y.shape)
+Explanation: .shape shows the size of the target array.
+
+26. Write the code to display the unique values of the target variable y using NumPy's unique() function.
+Answer: print(np.unique(y))
+Explanation: np.unique(y) finds the different values contained in y.
+
+27. Write the code to use the trained perceptron_clf to predict two flowers: the first has petal length 1.4 cm and petal width 0.3 cm, and the second has petal length 5.0 cm and petal width 1.5 cm.
+Answer: perceptron_clf.predict([[1.4, 0.3], [5.0, 1.5]])
+Explanation: Each inner list represents one flower with the same two features used during training.
+
+28. Write the code to create a Pandas DataFrame called df1 from the feature variable X, using petal_length and petal_width as the two column names.
+Answer: df1 = pd.DataFrame(X, columns=['petal_length', 'petal_width'])
+Explanation: Creates df1 from X and gives the two features clear column names.
+
+29. Write the code to use iris_data.target to create a Setosa-versus-not-Setosa target called y, train perceptron_clf using X and y, and predict a flower with petal length 1.5 cm and petal width 0.2 cm.
+Answer: y = (iris_data.target == 0).astype(int); perceptron_clf = Perceptron(); perceptron_clf.fit(X, y); perceptron_clf.predict([[1.5, 0.2]])
+Explanation: The code creates the binary target, trains the Perceptron, and then predicts the new flower.
+
+30. Write the complete code to import NumPy as np, import Pandas as pd, import load_iris from sklearn.datasets, import Perceptron from sklearn.linear_model, load the Iris dataset into iris_data, select petal length and petal width into X, create y where Setosa (target 0) is 1 and all other species are 0, create perceptron_clf, train it with X and y, and predict [1.4, 0.3].
+Answer: import numpy as np; import pandas as pd; from sklearn.datasets import load_iris; from sklearn.linear_model import Perceptron; iris_data = load_iris(); X = iris_data.data[:, (2, 3)]; y = (iris_data.target == 0).astype(int); perceptron_clf = Perceptron(); perceptron_clf.fit(X, y); print(perceptron_clf.predict([[1.4, 0.3]]))
+Explanation: This tests the complete workflow: imports → load Iris → select features → create target → create Perceptron → train → predict.

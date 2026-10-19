@@ -81,14 +81,25 @@ export function buildOfflineQuizHtml(bank) {
       .match-row { display: flex; align-items: center; gap: 12px; margin: 8px 0; }
       .match-row span { flex: 1; }
       select { padding: 8px; flex: 1; }
-      textarea { display: block; min-height: 120px; padding: 10px; resize: vertical; width: 100%; }
+      textarea {
+        display: block;
+        min-height: 120px;
+        padding: 10px;
+        resize: vertical;
+        width: 100%;
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        tab-size: 4;
+      }
       .actions { align-items: center; display: flex; gap: 12px; margin-top: 14px; }
       .feedback { font-weight: 700; margin: 0; }
       .feedback.ok { color: var(--correct); }
       .feedback.err { color: var(--incorrect); }
       .feedback.warn, .explanation, .model-answer { color: var(--muted); }
       .explanation, .model-answer { border-left: 3px solid var(--accent); margin: 16px 0 0; padding: 8px 12px; white-space: pre-wrap; }
-      .explanation strong, .model-answer strong { display: block; color: var(--text); }
+      .model-answer:not([dir="rtl"]) { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+      .explanation strong, .model-answer strong { display: block; color: var(--text); font-family: Arial, sans-serif; }
       .submit-actions { display: flex; justify-content: flex-end; margin-top: 18px; }
       .empty { color: var(--muted); text-align: center; }
       @media (max-width: 600px) {
@@ -349,7 +360,12 @@ export function buildOfflineQuizHtml(bank) {
         $("#progress").textContent = state.questions.length + " questions · " + answered + " answered · " + state.bookmarks.size + " bookmarked";
         $("#submit").hidden = state.mode !== "test" || state.submitted;
         $("#score").hidden = !state.submitted;
-        if (state.submitted) $("#score").textContent = "Score: " + state.score.correct + " / " + state.score.total + " (writing items excluded)";
+        if (state.submitted) {
+          $("#score").textContent =
+            state.score.total === 0
+              ? "Submitted — writing questions are self-graded against the model answers."
+              : "Score: " + state.score.correct + " / " + state.score.total + " (writing items excluded)";
+        }
         questionsHost.replaceChildren(...state.questions.map(renderQuestion));
         $("#empty").hidden = !(state.bookmarksOnly && state.questions.every((question) => !state.bookmarks.has(question.id)));
       }

@@ -517,6 +517,10 @@ textarea {
 textarea {
   min-height: 8rem;
   resize: vertical;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  tab-size: 4;
 }
 
 select:disabled,
@@ -553,11 +557,18 @@ select.incorrect,
   border: 1px solid var(--border);
 }
 
+.model-answer:not(.dir-rtl) {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
 .model-answer strong,
 .explanation strong {
   display: block;
   margin-bottom: 0.3rem;
   color: var(--muted);
+  font-family: var(--font);
   font-size: 0.85rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;

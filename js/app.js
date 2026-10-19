@@ -283,7 +283,10 @@ function updateProgress() {
   els.progress.textContent = `${state.questions.length} questions · ${answered} answered · ${bookmarked} bookmarked`;
   if (state.submitted && state.score) {
     els.scoreBanner.hidden = false;
-    els.scoreBanner.textContent = `Score: ${state.score.correct} / ${state.score.total} (writing items excluded)`;
+    els.scoreBanner.textContent =
+      state.score.total === 0
+        ? "Submitted — writing questions are self-graded against the model answers."
+        : `Score: ${state.score.correct} / ${state.score.total} (writing items excluded)`;
   } else {
     els.scoreBanner.hidden = true;
   }
