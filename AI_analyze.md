@@ -110,6 +110,9 @@ The JSON schema supports **five question types**:
 - **GitHub Pages** via `actions/deploy-pages@v5`.
 - Simple push-to-`main` triggers deployment — no build step needed.
 - The entire repository root is deployed as-is.
+- always after finishing commit and push always run this command : 
+
+
 
 ---
 
