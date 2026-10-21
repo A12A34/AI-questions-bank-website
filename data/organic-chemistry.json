@@ -1,0 +1,1156 @@
+{
+  "id": "organic-chemistry",
+  "title": "Organic Chemistry and Alkanes (100 Questions)",
+  "questions": [
+    {
+      "id": "organic-chemistry-q1",
+      "type": "mcq",
+      "prompt": "What is organic chemistry mainly the study of?",
+      "choices": [
+        "Metals and their compounds",
+        "Carbon and its compounds",
+        "Acids and bases only",
+        "Ionic compounds only"
+      ],
+      "answer": 1,
+      "explanation": "Organic chemistry is the study of carbon and its compounds."
+    },
+    {
+      "id": "organic-chemistry-q2",
+      "type": "mcq",
+      "prompt": "Which elements are found in a hydrocarbon?",
+      "choices": [
+        "Carbon and oxygen",
+        "Hydrogen and oxygen",
+        "Carbon and hydrogen",
+        "Carbon, hydrogen, and oxygen"
+      ],
+      "answer": 2,
+      "explanation": "A hydrocarbon contains only carbon and hydrogen."
+    },
+    {
+      "id": "organic-chemistry-q3",
+      "type": "mcq",
+      "prompt": "Which statement is correct?",
+      "choices": [
+        "All organic compounds are hydrocarbons.",
+        "All hydrocarbons are organic compounds.",
+        "Hydrocarbons contain oxygen.",
+        "Hydrocarbons contain nitrogen."
+      ],
+      "answer": 1,
+      "explanation": "Hydrocarbons are organic compounds, but not every organic compound is a hydrocarbon."
+    },
+    {
+      "id": "organic-chemistry-q4",
+      "type": "mcq",
+      "prompt": "Which substance is a hydrocarbon?",
+      "choices": [
+        "C2H4",
+        "C2H5OH",
+        "CH3COOH",
+        "CH3Cl"
+      ],
+      "answer": 0,
+      "explanation": "C2H4 contains only carbon and hydrogen."
+    },
+    {
+      "id": "organic-chemistry-q5",
+      "type": "mcq",
+      "prompt": "Which substance is NOT a hydrocarbon?",
+      "choices": [
+        "CH4",
+        "C3H8",
+        "C2H4",
+        "C2H5OH"
+      ],
+      "answer": 3,
+      "explanation": "Ethanol contains oxygen, so it is organic but not a hydrocarbon."
+    },
+    {
+      "id": "organic-chemistry-q6",
+      "type": "mcq",
+      "prompt": "Why is carbon able to form many compounds?",
+      "choices": [
+        "It has 1 valence electron.",
+        "It has 2 valence electrons.",
+        "It has 4 valence electrons.",
+        "It has 8 valence electrons."
+      ],
+      "answer": 2,
+      "explanation": "Carbon has four valence electrons and can form four bonds."
+    },
+    {
+      "id": "organic-chemistry-q7",
+      "type": "mcq",
+      "prompt": "How many bonds can carbon normally form to achieve a stable octet?",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 3,
+      "explanation": "Carbon normally forms four bonds."
+    },
+    {
+      "id": "organic-chemistry-q8",
+      "type": "mcq",
+      "prompt": "Which is a property of organic compounds?",
+      "choices": [
+        "They usually conduct electricity well.",
+        "They are usually high-melting solids.",
+        "They are nonelectrolytes.",
+        "They are always soluble in water."
+      ],
+      "answer": 2,
+      "explanation": "Organic compounds are generally nonelectrolytes."
+    },
+    {
+      "id": "organic-chemistry-q9",
+      "type": "mcq",
+      "prompt": "Why do many organic compounds react slowly?",
+      "choices": [
+        "They are ionic.",
+        "They are covalent.",
+        "They contain metals.",
+        "They contain salts."
+      ],
+      "answer": 1,
+      "explanation": "Many organic compounds react slowly because they are covalent."
+    },
+    {
+      "id": "organic-chemistry-q10",
+      "type": "mcq",
+      "prompt": "Which statement about melting and boiling points is generally correct?",
+      "choices": [
+        "Usually high",
+        "Usually low",
+        "Always zero",
+        "Always extremely high"
+      ],
+      "answer": 1,
+      "explanation": "Organic compounds usually have low melting and boiling points."
+    },
+    {
+      "id": "organic-chemistry-q11",
+      "type": "mcq",
+      "prompt": "Which statement about organic compounds and water is correct?",
+      "choices": [
+        "They are usually soluble and miscible.",
+        "They are usually insoluble and immiscible.",
+        "They always react with water.",
+        "They are always ionic in water."
+      ],
+      "answer": 1,
+      "explanation": "Organic compounds are usually insoluble and immiscible in water."
+    },
+    {
+      "id": "organic-chemistry-q12",
+      "type": "mcq",
+      "prompt": "Which of the following is an organic compound?",
+      "choices": [
+        "NaCl",
+        "Methanol",
+        "Fe2O3",
+        "NH4Cl"
+      ],
+      "answer": 1,
+      "explanation": "Methanol is an organic compound."
+    },
+    {
+      "id": "organic-chemistry-q13",
+      "type": "mcq",
+      "prompt": "Which of the following is a hydrocarbon?",
+      "choices": [
+        "Ethanol",
+        "Phenol",
+        "Ethene",
+        "Methanol"
+      ],
+      "answer": 2,
+      "explanation": "Ethene contains only carbon and hydrogen."
+    },
+    {
+      "id": "organic-chemistry-q14",
+      "type": "mcq",
+      "prompt": "Which pair contains only hydrocarbons?",
+      "choices": [
+        "Propane and butane",
+        "Ethanol and propane",
+        "Phenol and methane",
+        "Methanol and ethene"
+      ],
+      "answer": 0,
+      "explanation": "Both propane and butane contain only carbon and hydrogen."
+    },
+    {
+      "id": "organic-chemistry-q15",
+      "type": "mcq",
+      "prompt": "Which pair contains only organic compounds but not necessarily hydrocarbons?",
+      "choices": [
+        "Glucose and benzene",
+        "Sodium chloride and benzene",
+        "Calcium carbonate and propane",
+        "Ammonium chloride and butane"
+      ],
+      "answer": 0,
+      "explanation": "Glucose and benzene are organic compounds; glucose contains oxygen."
+    },
+    {
+      "id": "organic-chemistry-q16",
+      "type": "mcq",
+      "prompt": "What does a molecular formula show?",
+      "choices": [
+        "Only the arrangement of atoms",
+        "The number of atoms of each element",
+        "Only the bonds between atoms",
+        "The shape of the molecule"
+      ],
+      "answer": 1,
+      "explanation": "A molecular formula shows the number of atoms of each element."
+    },
+    {
+      "id": "organic-chemistry-q17",
+      "type": "mcq",
+      "prompt": "What is the molecular formula of propane?",
+      "choices": [
+        "CH4",
+        "C2H6",
+        "C3H8",
+        "C4H10"
+      ],
+      "answer": 2,
+      "explanation": "Propane is C3H8."
+    },
+    {
+      "id": "organic-chemistry-q18",
+      "type": "mcq",
+      "prompt": "Which type of formula shows the arrangement of atoms?",
+      "choices": [
+        "Molecular formula",
+        "Structural formula",
+        "Empirical formula",
+        "Numerical formula"
+      ],
+      "answer": 1,
+      "explanation": "A structural formula shows atom arrangement."
+    },
+    {
+      "id": "organic-chemistry-q19",
+      "type": "mcq",
+      "prompt": "Which formula is the most informative?",
+      "choices": [
+        "Molecular formula",
+        "Structural formula",
+        "Condensed formula",
+        "General formula"
+      ],
+      "answer": 1,
+      "explanation": "A structural formula shows both atoms and their arrangement."
+    },
+    {
+      "id": "organic-chemistry-q20",
+      "type": "mcq",
+      "prompt": "What is the condensed formula of propane?",
+      "choices": [
+        "C3H8",
+        "CH3CH2CH3",
+        "CH4",
+        "C2H6"
+      ],
+      "answer": 1,
+      "explanation": "The condensed formula of propane is CH3CH2CH3."
+    },
+    {
+      "id": "organic-chemistry-q21",
+      "type": "mcq",
+      "prompt": "What does a condensed formula combine?",
+      "choices": [
+        "Ionic and covalent formulas",
+        "Structural and molecular formulas",
+        "Acid and base formulas",
+        "Empirical and ionic formulas"
+      ],
+      "answer": 1,
+      "explanation": "A condensed formula combines structural and molecular information."
+    },
+    {
+      "id": "organic-chemistry-q22",
+      "type": "mcq",
+      "prompt": "What is a homologous series?",
+      "choices": [
+        "A group of unrelated compounds",
+        "A sequence of organic compounds with similar characteristics",
+        "A group containing only metals",
+        "A group containing only acids"
+      ],
+      "answer": 1,
+      "explanation": "It is a sequence with the same general formula and similar chemical properties."
+    },
+    {
+      "id": "organic-chemistry-q23",
+      "type": "mcq",
+      "prompt": "Members of a homologous series usually differ by:",
+      "choices": [
+        "CH",
+        "CH2",
+        "H2O",
+        "CO2"
+      ],
+      "answer": 1,
+      "explanation": "Successive members usually differ by one CH2 unit."
+    },
+    {
+      "id": "organic-chemistry-q24",
+      "type": "mcq",
+      "prompt": "Why do members of a homologous series have similar chemical properties?",
+      "choices": [
+        "They have identical molecular masses.",
+        "They contain the same functional group.",
+        "They have exactly the same formula.",
+        "They contain different elements."
+      ],
+      "answer": 1,
+      "explanation": "Similar chemical properties result from the same functional group."
+    },
+    {
+      "id": "organic-chemistry-q25",
+      "type": "mcq",
+      "prompt": "Which property gradually changes as molecular mass increases?",
+      "choices": [
+        "Atomic number",
+        "Boiling point",
+        "Number of elements",
+        "Functional group"
+      ],
+      "answer": 1,
+      "explanation": "Physical properties such as boiling point gradually change."
+    },
+    {
+      "id": "organic-chemistry-q26",
+      "type": "mcq",
+      "prompt": "Which belongs to the alkane homologous series?",
+      "choices": [
+        "CH4",
+        "C2H4",
+        "C2H2",
+        "C3H6"
+      ],
+      "answer": 0,
+      "explanation": "Methane is an alkane."
+    },
+    {
+      "id": "organic-chemistry-q27",
+      "type": "mcq",
+      "prompt": "What is the general formula for alkanes?",
+      "choices": [
+        "CnH2n",
+        "CnH2n-2",
+        "CnH2n+2",
+        "CnHn"
+      ],
+      "answer": 2,
+      "explanation": "Alkanes follow CnH2n+2."
+    },
+    {
+      "id": "organic-chemistry-q28",
+      "type": "mcq",
+      "prompt": "Which type of bond exists between carbon atoms in alkanes?",
+      "choices": [
+        "C=C",
+        "C triple bond C",
+        "C-C",
+        "C=O"
+      ],
+      "answer": 2,
+      "explanation": "Alkanes contain C-C single bonds."
+    },
+    {
+      "id": "organic-chemistry-q29",
+      "type": "mcq",
+      "prompt": "Alkanes are described as:",
+      "choices": [
+        "Unsaturated",
+        "Saturated",
+        "Ionic",
+        "Aromatic only"
+      ],
+      "answer": 1,
+      "explanation": "Alkanes are saturated hydrocarbons."
+    },
+    {
+      "id": "organic-chemistry-q30",
+      "type": "mcq",
+      "prompt": "What does saturated mean for an alkane?",
+      "choices": [
+        "It contains the maximum number of hydrogen atoms.",
+        "It contains oxygen.",
+        "It has double bonds.",
+        "It has triple bonds."
+      ],
+      "answer": 0,
+      "explanation": "Saturated alkanes have the maximum number of hydrogens."
+    },
+    {
+      "id": "organic-chemistry-q31",
+      "type": "mcq",
+      "prompt": "Which is the first member of the alkane series?",
+      "choices": [
+        "Ethane",
+        "Propane",
+        "Methane",
+        "Butane"
+      ],
+      "answer": 2,
+      "explanation": "Methane is first."
+    },
+    {
+      "id": "organic-chemistry-q32",
+      "type": "mcq",
+      "prompt": "Which sequence is in the correct order?",
+      "choices": [
+        "Methane -> ethane -> propane -> butane",
+        "Ethane -> methane -> butane -> propane",
+        "Propane -> methane -> ethane -> butane",
+        "Butane -> propane -> ethane -> methane"
+      ],
+      "answer": 0,
+      "explanation": "This is the correct alkane order."
+    },
+    {
+      "id": "organic-chemistry-q33",
+      "type": "mcq",
+      "prompt": "Which formula represents methane?",
+      "choices": [
+        "CH4",
+        "C2H6",
+        "C3H8",
+        "C4H10"
+      ],
+      "answer": 0,
+      "explanation": "Methane is CH4."
+    },
+    {
+      "id": "organic-chemistry-q34",
+      "type": "mcq",
+      "prompt": "Which formula represents ethane?",
+      "choices": [
+        "CH4",
+        "C2H6",
+        "C3H8",
+        "C4H10"
+      ],
+      "answer": 1,
+      "explanation": "Ethane is C2H6."
+    },
+    {
+      "id": "organic-chemistry-q35",
+      "type": "mcq",
+      "prompt": "Which formula represents butane?",
+      "choices": [
+        "C2H6",
+        "C3H8",
+        "C4H10",
+        "C5H12"
+      ],
+      "answer": 2,
+      "explanation": "Butane is C4H10."
+    },
+    {
+      "id": "organic-chemistry-q36",
+      "type": "mcq",
+      "prompt": "What is the difference between CH4 and C2H6?",
+      "choices": [
+        "CH",
+        "CH2",
+        "C2H2",
+        "H2O"
+      ],
+      "answer": 1,
+      "explanation": "Successive alkanes differ by CH2."
+    },
+    {
+      "id": "organic-chemistry-q37",
+      "type": "mcq",
+      "prompt": "What is the difference between C2H6 and C3H8?",
+      "choices": [
+        "CH",
+        "CH2",
+        "C2H4",
+        "H2"
+      ],
+      "answer": 1,
+      "explanation": "Each successive alkane differs by CH2."
+    },
+    {
+      "id": "organic-chemistry-q38",
+      "type": "mcq",
+      "prompt": "Which statement about a homologous series is FALSE?",
+      "choices": [
+        "Members have the same general formula.",
+        "Members have similar chemical properties.",
+        "Members differ by CH2.",
+        "Every member has exactly the same molecular formula."
+      ],
+      "answer": 3,
+      "explanation": "Members have different molecular formulas."
+    },
+    {
+      "id": "organic-chemistry-q39",
+      "type": "mcq",
+      "prompt": "Which formula is a molecular formula?",
+      "choices": [
+        "C3H8",
+        "CH3CH2CH3",
+        "C-C-C",
+        "A displayed structural diagram"
+      ],
+      "answer": 0,
+      "explanation": "C3H8 gives the number of each atom."
+    },
+    {
+      "id": "organic-chemistry-q40",
+      "type": "mcq",
+      "prompt": "Which formula is a condensed formula?",
+      "choices": [
+        "C3H8",
+        "CH3CH2CH3",
+        "C-C-C",
+        "C3H8O"
+      ],
+      "answer": 1,
+      "explanation": "CH3CH2CH3 is condensed propane."
+    },
+    {
+      "id": "organic-chemistry-q41",
+      "type": "mcq",
+      "prompt": "Which statement about molecular formulas is correct?",
+      "choices": [
+        "They show the exact arrangement of atoms.",
+        "They show the number of each type of atom.",
+        "They only show carbon atoms.",
+        "They only show hydrogen atoms."
+      ],
+      "answer": 1,
+      "explanation": "Molecular formulas show atom counts."
+    },
+    {
+      "id": "organic-chemistry-q42",
+      "type": "mcq",
+      "prompt": "Which formula gives more information about atom arrangement?",
+      "choices": [
+        "Molecular formula",
+        "Structural formula",
+        "General formula",
+        "Numerical formula"
+      ],
+      "answer": 1,
+      "explanation": "Structural formulas show arrangement."
+    },
+    {
+      "id": "organic-chemistry-q43",
+      "type": "mcq",
+      "prompt": "A compound contains only carbon and hydrogen. What can it be classified as?",
+      "choices": [
+        "Hydrocarbon",
+        "Alcohol",
+        "Salt",
+        "Acid"
+      ],
+      "answer": 0,
+      "explanation": "Hydrocarbons contain only carbon and hydrogen."
+    },
+    {
+      "id": "organic-chemistry-q44",
+      "type": "mcq",
+      "prompt": "A compound contains C, H, and O. Can it be a hydrocarbon?",
+      "choices": [
+        "Yes, always",
+        "Yes, if it has more carbon",
+        "No",
+        "Only if it is a gas"
+      ],
+      "answer": 2,
+      "explanation": "A hydrocarbon contains only carbon and hydrogen."
+    },
+    {
+      "id": "organic-chemistry-q45",
+      "type": "mcq",
+      "prompt": "Which of these is an example of a hydrocarbon?",
+      "choices": [
+        "Glucose",
+        "Benzene",
+        "Phenol",
+        "Methanol"
+      ],
+      "answer": 1,
+      "explanation": "Benzene contains only carbon and hydrogen."
+    },
+    {
+      "id": "organic-chemistry-q46",
+      "type": "mcq",
+      "prompt": "Which compound contains oxygen and therefore is not a hydrocarbon?",
+      "choices": [
+        "Propane",
+        "Butane",
+        "Phenol",
+        "Toluene"
+      ],
+      "answer": 2,
+      "explanation": "Phenol contains oxygen."
+    },
+    {
+      "id": "organic-chemistry-q47",
+      "type": "mcq",
+      "prompt": "Which change would you expect across a homologous series as molecular mass increases?",
+      "choices": [
+        "Physical properties gradually change.",
+        "The functional group changes completely.",
+        "All chemical properties become unrelated.",
+        "The number of elements changes."
+      ],
+      "answer": 0,
+      "explanation": "Boiling point, melting point, and density can change gradually."
+    },
+    {
+      "id": "organic-chemistry-q48",
+      "type": "mcq",
+      "prompt": "Which statement best explains why members of a homologous series react similarly?",
+      "choices": [
+        "They have the same molecular mass.",
+        "They contain the same functional group.",
+        "They all contain the same number of atoms.",
+        "They all have the same physical properties."
+      ],
+      "answer": 1,
+      "explanation": "The same functional group gives similar chemical properties."
+    },
+    {
+      "id": "organic-chemistry-q49",
+      "type": "mcq",
+      "prompt": "Which of the following is NOT an alkane?",
+      "choices": [
+        "CH4",
+        "C2H6",
+        "C3H8",
+        "C3H6"
+      ],
+      "answer": 3,
+      "explanation": "For three carbons, an alkane is C3H8."
+    },
+    {
+      "id": "organic-chemistry-q50",
+      "type": "mcq",
+      "prompt": "Which statement summarizes the alkane series correctly?",
+      "choices": [
+        "Alkanes contain C=C bonds and follow CnH2n.",
+        "Alkanes contain C-C single bonds and follow CnH2n+2.",
+        "Alkanes contain C triple bond C and follow CnH2n-2.",
+        "Alkanes contain oxygen and follow CnH2n+2."
+      ],
+      "answer": 1,
+      "explanation": "Alkanes are saturated hydrocarbons with C-C single bonds and CnH2n+2."
+    },
+    {
+      "id": "organic-chemistry-q51",
+      "type": "tf",
+      "prompt": "Organic chemistry is the study of carbon and its compounds.",
+      "answer": true,
+      "explanation": "This is the definition of organic chemistry."
+    },
+    {
+      "id": "organic-chemistry-q52",
+      "type": "tf",
+      "prompt": "All organic compounds are hydrocarbons.",
+      "answer": false,
+      "explanation": "Hydrocarbons are organic, but not all organic compounds are hydrocarbons."
+    },
+    {
+      "id": "organic-chemistry-q53",
+      "type": "tf",
+      "prompt": "Hydrocarbons contain only carbon and hydrogen.",
+      "answer": true,
+      "explanation": "That is the definition of a hydrocarbon."
+    },
+    {
+      "id": "organic-chemistry-q54",
+      "type": "tf",
+      "prompt": "Carbon has four valence electrons.",
+      "answer": true,
+      "explanation": "Carbon can form four bonds."
+    },
+    {
+      "id": "organic-chemistry-q55",
+      "type": "tf",
+      "prompt": "Carbon normally forms only one bond.",
+      "answer": false,
+      "explanation": "Carbon normally forms four bonds."
+    },
+    {
+      "id": "organic-chemistry-q56",
+      "type": "tf",
+      "prompt": "Organic compounds are usually electrolytes.",
+      "answer": false,
+      "explanation": "They are generally nonelectrolytes."
+    },
+    {
+      "id": "organic-chemistry-q57",
+      "type": "tf",
+      "prompt": "Organic compounds usually have low melting and boiling points.",
+      "answer": true,
+      "explanation": "This is a general property."
+    },
+    {
+      "id": "organic-chemistry-q58",
+      "type": "tf",
+      "prompt": "Organic compounds are usually soluble in water.",
+      "answer": false,
+      "explanation": "They are usually insoluble and immiscible in water."
+    },
+    {
+      "id": "organic-chemistry-q59",
+      "type": "tf",
+      "prompt": "A molecular formula shows the number of atoms of each element.",
+      "answer": true,
+      "explanation": "That is its purpose."
+    },
+    {
+      "id": "organic-chemistry-q60",
+      "type": "tf",
+      "prompt": "A structural formula shows the arrangement of atoms.",
+      "answer": true,
+      "explanation": "Structural formulas show arrangement."
+    },
+    {
+      "id": "organic-chemistry-q61",
+      "type": "tf",
+      "prompt": "CH3CH2CH3 is the molecular formula of propane.",
+      "answer": false,
+      "explanation": "It is the condensed formula; C3H8 is molecular."
+    },
+    {
+      "id": "organic-chemistry-q62",
+      "type": "tf",
+      "prompt": "A homologous series contains compounds with similar chemical properties.",
+      "answer": true,
+      "explanation": "The same functional group gives similar properties."
+    },
+    {
+      "id": "organic-chemistry-q63",
+      "type": "tf",
+      "prompt": "Successive members of a homologous series usually differ by CH2.",
+      "answer": true,
+      "explanation": "Each successive member generally adds CH2."
+    },
+    {
+      "id": "organic-chemistry-q64",
+      "type": "tf",
+      "prompt": "Members of a homologous series all have exactly the same molecular formula.",
+      "answer": false,
+      "explanation": "They share a general formula but have different molecular formulas."
+    },
+    {
+      "id": "organic-chemistry-q65",
+      "type": "tf",
+      "prompt": "Physical properties can gradually change across a homologous series.",
+      "answer": true,
+      "explanation": "Boiling point, melting point, and density can change."
+    },
+    {
+      "id": "organic-chemistry-q66",
+      "type": "tf",
+      "prompt": "Alkanes contain carbon-carbon double bonds.",
+      "answer": false,
+      "explanation": "Alkanes contain C-C single bonds."
+    },
+    {
+      "id": "organic-chemistry-q67",
+      "type": "tf",
+      "prompt": "Alkanes are saturated hydrocarbons.",
+      "answer": true,
+      "explanation": "They contain the maximum number of hydrogens."
+    },
+    {
+      "id": "organic-chemistry-q68",
+      "type": "tf",
+      "prompt": "The general formula of alkanes is CnH2n+2.",
+      "answer": true,
+      "explanation": "This is the alkane formula."
+    },
+    {
+      "id": "organic-chemistry-q69",
+      "type": "tf",
+      "prompt": "Methane is part of the alkane homologous series.",
+      "answer": true,
+      "explanation": "Methane is the first alkane."
+    },
+    {
+      "id": "organic-chemistry-q70",
+      "type": "tf",
+      "prompt": "Ethane has the molecular formula C2H4.",
+      "answer": false,
+      "explanation": "Ethane is C2H6."
+    },
+    {
+      "id": "organic-chemistry-q71",
+      "type": "tf",
+      "prompt": "Propane has the molecular formula C3H8.",
+      "answer": true,
+      "explanation": "Propane is C3H8."
+    },
+    {
+      "id": "organic-chemistry-q72",
+      "type": "tf",
+      "prompt": "Butane has the molecular formula C4H10.",
+      "answer": true,
+      "explanation": "Butane is C4H10."
+    },
+    {
+      "id": "organic-chemistry-q73",
+      "type": "tf",
+      "prompt": "Phenol is a hydrocarbon.",
+      "answer": false,
+      "explanation": "Phenol contains oxygen."
+    },
+    {
+      "id": "organic-chemistry-q74",
+      "type": "tf",
+      "prompt": "Benzene is a hydrocarbon.",
+      "answer": true,
+      "explanation": "Benzene is C6H6."
+    },
+    {
+      "id": "organic-chemistry-q75",
+      "type": "tf",
+      "prompt": "Each bond represents one pair of shared electrons.",
+      "answer": true,
+      "explanation": "A bond represents two shared electrons."
+    },
+    {
+      "id": "organic-chemistry-q76",
+      "type": "mcq",
+      "prompt": "What is the molecular formula of an alkane with 1 carbon atom?",
+      "choices": [
+        "CH2",
+        "CH3",
+        "CH4",
+        "C2H4"
+      ],
+      "answer": 2,
+      "explanation": "H = 2(1) + 2 = 4."
+    },
+    {
+      "id": "organic-chemistry-q77",
+      "type": "mcq",
+      "prompt": "What is the molecular formula of an alkane with 2 carbon atoms?",
+      "choices": [
+        "C2H4",
+        "C2H6",
+        "C2H8",
+        "C2H2"
+      ],
+      "answer": 1,
+      "explanation": "H = 2(2) + 2 = 6."
+    },
+    {
+      "id": "organic-chemistry-q78",
+      "type": "mcq",
+      "prompt": "What is the molecular formula of an alkane with 3 carbon atoms?",
+      "choices": [
+        "C3H6",
+        "C3H7",
+        "C3H8",
+        "C3H10"
+      ],
+      "answer": 2,
+      "explanation": "H = 2(3) + 2 = 8."
+    },
+    {
+      "id": "organic-chemistry-q79",
+      "type": "mcq",
+      "prompt": "What is the molecular formula of an alkane with 4 carbon atoms?",
+      "choices": [
+        "C4H8",
+        "C4H10",
+        "C4H12",
+        "C4H6"
+      ],
+      "answer": 1,
+      "explanation": "H = 2(4) + 2 = 10."
+    },
+    {
+      "id": "organic-chemistry-q80",
+      "type": "mcq",
+      "prompt": "What is the molecular formula of an alkane with 5 carbon atoms?",
+      "choices": [
+        "C5H10",
+        "C5H12",
+        "C5H14",
+        "C5H8"
+      ],
+      "answer": 1,
+      "explanation": "H = 2(5) + 2 = 12."
+    },
+    {
+      "id": "organic-chemistry-q81",
+      "type": "mcq",
+      "prompt": "What is the molecular formula of an alkane with 6 carbon atoms?",
+      "choices": [
+        "C6H12",
+        "C6H14",
+        "C6H16",
+        "C6H10"
+      ],
+      "answer": 1,
+      "explanation": "H = 2(6) + 2 = 14."
+    },
+    {
+      "id": "organic-chemistry-q82",
+      "type": "mcq",
+      "prompt": "What is the molecular formula of an alkane with 7 carbon atoms?",
+      "choices": [
+        "C7H14",
+        "C7H16",
+        "C7H18",
+        "C7H12"
+      ],
+      "answer": 1,
+      "explanation": "H = 2(7) + 2 = 16."
+    },
+    {
+      "id": "organic-chemistry-q83",
+      "type": "mcq",
+      "prompt": "What is the molecular formula of an alkane with 8 carbon atoms?",
+      "choices": [
+        "C8H16",
+        "C8H18",
+        "C8H20",
+        "C8H14"
+      ],
+      "answer": 1,
+      "explanation": "H = 2(8) + 2 = 18."
+    },
+    {
+      "id": "organic-chemistry-q84",
+      "type": "mcq",
+      "prompt": "What is the molecular formula of an alkane with 10 carbon atoms?",
+      "choices": [
+        "C10H20",
+        "C10H22",
+        "C10H18",
+        "C10H24"
+      ],
+      "answer": 1,
+      "explanation": "H = 2(10) + 2 = 22."
+    },
+    {
+      "id": "organic-chemistry-q85",
+      "type": "mcq",
+      "prompt": "Which alkane has the formula C6H14?",
+      "choices": [
+        "4 carbons",
+        "5 carbons",
+        "6 carbons",
+        "7 carbons"
+      ],
+      "answer": 2,
+      "explanation": "The carbon subscript gives n = 6."
+    },
+    {
+      "id": "organic-chemistry-q86",
+      "type": "mcq",
+      "prompt": "Which alkane has the formula C7H16?",
+      "choices": [
+        "5 carbons",
+        "6 carbons",
+        "7 carbons",
+        "8 carbons"
+      ],
+      "answer": 2,
+      "explanation": "C7 means seven carbon atoms."
+    },
+    {
+      "id": "organic-chemistry-q87",
+      "type": "mcq",
+      "prompt": "Which alkane has the formula C9H20?",
+      "choices": [
+        "Nonane",
+        "Octane",
+        "Heptane",
+        "Decane"
+      ],
+      "answer": 0,
+      "explanation": "An alkane with nine carbons is nonane."
+    },
+    {
+      "id": "organic-chemistry-q88",
+      "type": "mcq",
+      "prompt": "Which formula is NOT consistent with the alkane formula?",
+      "choices": [
+        "CH4",
+        "C2H6",
+        "C3H8",
+        "C4H8"
+      ],
+      "answer": 3,
+      "explanation": "For n = 4, the formula is C4H10."
+    },
+    {
+      "id": "organic-chemistry-q89",
+      "type": "mcq",
+      "prompt": "Which formula is an alkane?",
+      "choices": [
+        "C5H12",
+        "C5H10",
+        "C5H8",
+        "C5H6"
+      ],
+      "answer": 0,
+      "explanation": "C5H12 follows CnH2n+2."
+    },
+    {
+      "id": "organic-chemistry-q90",
+      "type": "mcq",
+      "prompt": "Which formula is an alkane?",
+      "choices": [
+        "C8H16",
+        "C8H18",
+        "C8H14",
+        "C8H20"
+      ],
+      "answer": 1,
+      "explanation": "H = 2(8) + 2 = 18."
+    },
+    {
+      "id": "organic-chemistry-q91",
+      "type": "mcq",
+      "prompt": "An alkane has 12 carbon atoms. How many hydrogen atoms does it have?",
+      "choices": [
+        "22",
+        "24",
+        "26",
+        "28"
+      ],
+      "answer": 2,
+      "explanation": "H = 2(12) + 2 = 26."
+    },
+    {
+      "id": "organic-chemistry-q92",
+      "type": "mcq",
+      "prompt": "An alkane has 15 carbon atoms. What is its molecular formula?",
+      "choices": [
+        "C15H30",
+        "C15H32",
+        "C15H28",
+        "C15H34"
+      ],
+      "answer": 1,
+      "explanation": "H = 2(15) + 2 = 32."
+    },
+    {
+      "id": "organic-chemistry-q93",
+      "type": "mcq",
+      "prompt": "An alkane has 20 carbon atoms. How many hydrogen atoms are present?",
+      "choices": [
+        "40",
+        "41",
+        "42",
+        "44"
+      ],
+      "answer": 2,
+      "explanation": "H = 2(20) + 2 = 42."
+    },
+    {
+      "id": "organic-chemistry-q94",
+      "type": "mcq",
+      "prompt": "Which alkane contains 18 hydrogen atoms?",
+      "choices": [
+        "C7H18",
+        "C8H18",
+        "C9H18",
+        "C10H18"
+      ],
+      "answer": 1,
+      "explanation": "2n + 2 = 18 gives n = 8."
+    },
+    {
+      "id": "organic-chemistry-q95",
+      "type": "mcq",
+      "prompt": "Which alkane contains 22 hydrogen atoms?",
+      "choices": [
+        "C9H22",
+        "C10H22",
+        "C11H22",
+        "C12H22"
+      ],
+      "answer": 1,
+      "explanation": "2n + 2 = 22 gives n = 10."
+    },
+    {
+      "id": "organic-chemistry-q96",
+      "type": "mcq",
+      "prompt": "An alkane has 25 carbon atoms. How many hydrogen atoms does it contain?",
+      "choices": [
+        "50",
+        "51",
+        "52",
+        "48"
+      ],
+      "answer": 2,
+      "explanation": "H = 2(25) + 2 = 52."
+    },
+    {
+      "id": "organic-chemistry-q97",
+      "type": "mcq",
+      "prompt": "Which pair represents consecutive alkane members?",
+      "choices": [
+        "CH4 and C2H6",
+        "CH4 and C3H8",
+        "C2H6 and C4H10",
+        "C3H8 and C5H12"
+      ],
+      "answer": 0,
+      "explanation": "Consecutive members differ by CH2."
+    },
+    {
+      "id": "organic-chemistry-q98",
+      "type": "mcq",
+      "prompt": "Which pair differs by exactly one CH2 group?",
+      "choices": [
+        "C2H6 and C3H8",
+        "C2H6 and C4H10",
+        "C3H8 and C5H12",
+        "CH4 and C3H8"
+      ],
+      "answer": 0,
+      "explanation": "C2H6 + CH2 = C3H8."
+    },
+    {
+      "id": "organic-chemistry-q99",
+      "type": "mcq",
+      "prompt": "What happens when one CH2 unit is added to C10H22?",
+      "choices": [
+        "C11H24",
+        "C11H22",
+        "C10H24",
+        "C12H24"
+      ],
+      "answer": 0,
+      "explanation": "C10H22 + CH2 = C11H24."
+    },
+    {
+      "id": "organic-chemistry-q100",
+      "type": "mcq",
+      "prompt": "An alkane has 30 carbon atoms. Which formula is correct?",
+      "choices": [
+        "C30H58",
+        "C30H60",
+        "C30H62",
+        "C30H64"
+      ],
+      "answer": 2,
+      "explanation": "H = 2(30) + 2 = 62."
+    }
+  ]
+}

@@ -1,0 +1,703 @@
+Organic Chemistry and Alkanes — 100 Questions
+
+Questions 1–50: Multiple choice. Questions 51–75: True/False. Questions 76–100: Formula MCQs.
+
+1. What is organic chemistry mainly the study of?
+A. Metals and their compounds
+B. Carbon and its compounds
+C. Acids and bases only
+D. Ionic compounds only
+Answer: B. Carbon and its compounds
+Explanation: Organic chemistry is the study of carbon and its compounds.
+
+2. Which elements are found in a hydrocarbon?
+A. Carbon and oxygen
+B. Hydrogen and oxygen
+C. Carbon and hydrogen
+D. Carbon, hydrogen, and oxygen
+Answer: C. Carbon and hydrogen
+Explanation: A hydrocarbon contains only carbon and hydrogen.
+
+3. Which statement is correct?
+A. All organic compounds are hydrocarbons.
+B. All hydrocarbons are organic compounds.
+C. Hydrocarbons contain oxygen.
+D. Hydrocarbons contain nitrogen.
+Answer: B. All hydrocarbons are organic compounds.
+Explanation: Hydrocarbons are organic compounds, but not every organic compound is a hydrocarbon.
+
+4. Which substance is a hydrocarbon?
+A. C2H4
+B. C2H5OH
+C. CH3COOH
+D. CH3Cl
+Answer: A. C2H4
+Explanation: C2H4 contains only carbon and hydrogen.
+
+5. Which substance is NOT a hydrocarbon?
+A. CH4
+B. C3H8
+C. C2H4
+D. C2H5OH
+Answer: D. C2H5OH
+Explanation: Ethanol contains oxygen, so it is organic but not a hydrocarbon.
+
+6. Why is carbon able to form many compounds?
+A. It has 1 valence electron.
+B. It has 2 valence electrons.
+C. It has 4 valence electrons.
+D. It has 8 valence electrons.
+Answer: C. It has 4 valence electrons.
+Explanation: Carbon has four valence electrons and can form four bonds.
+
+7. How many bonds can carbon normally form to achieve a stable octet?
+A. 1
+B. 2
+C. 3
+D. 4
+Answer: D. 4
+Explanation: Carbon normally forms four bonds.
+
+8. Which is a property of organic compounds?
+A. They usually conduct electricity well.
+B. They are usually high-melting solids.
+C. They are nonelectrolytes.
+D. They are always soluble in water.
+Answer: C. They are nonelectrolytes.
+Explanation: Organic compounds are generally nonelectrolytes.
+
+9. Why do many organic compounds react slowly?
+A. They are ionic.
+B. They are covalent.
+C. They contain metals.
+D. They contain salts.
+Answer: B. They are covalent.
+Explanation: Many organic compounds react slowly because they are covalent.
+
+10. Which statement about melting and boiling points is generally correct?
+A. Usually high
+B. Usually low
+C. Always zero
+D. Always extremely high
+Answer: B. Usually low
+Explanation: Organic compounds usually have low melting and boiling points.
+
+11. Which statement about organic compounds and water is correct?
+A. They are usually soluble and miscible.
+B. They are usually insoluble and immiscible.
+C. They always react with water.
+D. They are always ionic in water.
+Answer: B. They are usually insoluble and immiscible.
+Explanation: Organic compounds are usually insoluble and immiscible in water.
+
+12. Which of the following is an organic compound?
+A. NaCl
+B. Methanol
+C. Fe2O3
+D. NH4Cl
+Answer: B. Methanol
+Explanation: Methanol is an organic compound.
+
+13. Which of the following is a hydrocarbon?
+A. Ethanol
+B. Phenol
+C. Ethene
+D. Methanol
+Answer: C. Ethene
+Explanation: Ethene contains only carbon and hydrogen.
+
+14. Which pair contains only hydrocarbons?
+A. Propane and butane
+B. Ethanol and propane
+C. Phenol and methane
+D. Methanol and ethene
+Answer: A. Propane and butane
+Explanation: Both propane and butane contain only carbon and hydrogen.
+
+15. Which pair contains only organic compounds but not necessarily hydrocarbons?
+A. Glucose and benzene
+B. Sodium chloride and benzene
+C. Calcium carbonate and propane
+D. Ammonium chloride and butane
+Answer: A. Glucose and benzene
+Explanation: Glucose and benzene are organic compounds; glucose contains oxygen.
+
+16. What does a molecular formula show?
+A. Only the arrangement of atoms
+B. The number of atoms of each element
+C. Only the bonds between atoms
+D. The shape of the molecule
+Answer: B. The number of atoms of each element
+Explanation: A molecular formula shows the number of atoms of each element.
+
+17. What is the molecular formula of propane?
+A. CH4
+B. C2H6
+C. C3H8
+D. C4H10
+Answer: C. C3H8
+Explanation: Propane is C3H8.
+
+18. Which type of formula shows the arrangement of atoms?
+A. Molecular formula
+B. Structural formula
+C. Empirical formula
+D. Numerical formula
+Answer: B. Structural formula
+Explanation: A structural formula shows atom arrangement.
+
+19. Which formula is the most informative?
+A. Molecular formula
+B. Structural formula
+C. Condensed formula
+D. General formula
+Answer: B. Structural formula
+Explanation: A structural formula shows both atoms and their arrangement.
+
+20. What is the condensed formula of propane?
+A. C3H8
+B. CH3CH2CH3
+C. CH4
+D. C2H6
+Answer: B. CH3CH2CH3
+Explanation: The condensed formula of propane is CH3CH2CH3.
+
+21. What does a condensed formula combine?
+A. Ionic and covalent formulas
+B. Structural and molecular formulas
+C. Acid and base formulas
+D. Empirical and ionic formulas
+Answer: B. Structural and molecular formulas
+Explanation: A condensed formula combines structural and molecular information.
+
+22. What is a homologous series?
+A. A group of unrelated compounds
+B. A sequence of organic compounds with similar characteristics
+C. A group containing only metals
+D. A group containing only acids
+Answer: B. A sequence of organic compounds with similar characteristics
+Explanation: It is a sequence with the same general formula and similar chemical properties.
+
+23. Members of a homologous series usually differ by:
+A. CH
+B. CH2
+C. H2O
+D. CO2
+Answer: B. CH2
+Explanation: Successive members usually differ by one CH2 unit.
+
+24. Why do members of a homologous series have similar chemical properties?
+A. They have identical molecular masses.
+B. They contain the same functional group.
+C. They have exactly the same formula.
+D. They contain different elements.
+Answer: B. They contain the same functional group.
+Explanation: Similar chemical properties result from the same functional group.
+
+25. Which property gradually changes as molecular mass increases?
+A. Atomic number
+B. Boiling point
+C. Number of elements
+D. Functional group
+Answer: B. Boiling point
+Explanation: Physical properties such as boiling point gradually change.
+
+26. Which belongs to the alkane homologous series?
+A. CH4
+B. C2H4
+C. C2H2
+D. C3H6
+Answer: A. CH4
+Explanation: Methane is an alkane.
+
+27. What is the general formula for alkanes?
+A. CnH2n
+B. CnH2n-2
+C. CnH2n+2
+D. CnHn
+Answer: C. CnH2n+2
+Explanation: Alkanes follow CnH2n+2.
+
+28. Which type of bond exists between carbon atoms in alkanes?
+A. C=C
+B. C triple bond C
+C. C-C
+D. C=O
+Answer: C. C-C
+Explanation: Alkanes contain C-C single bonds.
+
+29. Alkanes are described as:
+A. Unsaturated
+B. Saturated
+C. Ionic
+D. Aromatic only
+Answer: B. Saturated
+Explanation: Alkanes are saturated hydrocarbons.
+
+30. What does saturated mean for an alkane?
+A. It contains the maximum number of hydrogen atoms.
+B. It contains oxygen.
+C. It has double bonds.
+D. It has triple bonds.
+Answer: A. It contains the maximum number of hydrogen atoms.
+Explanation: Saturated alkanes have the maximum number of hydrogens.
+
+31. Which is the first member of the alkane series?
+A. Ethane
+B. Propane
+C. Methane
+D. Butane
+Answer: C. Methane
+Explanation: Methane is first.
+
+32. Which sequence is in the correct order?
+A. Methane -> ethane -> propane -> butane
+B. Ethane -> methane -> butane -> propane
+C. Propane -> methane -> ethane -> butane
+D. Butane -> propane -> ethane -> methane
+Answer: A. Methane -> ethane -> propane -> butane
+Explanation: This is the correct alkane order.
+
+33. Which formula represents methane?
+A. CH4
+B. C2H6
+C. C3H8
+D. C4H10
+Answer: A. CH4
+Explanation: Methane is CH4.
+
+34. Which formula represents ethane?
+A. CH4
+B. C2H6
+C. C3H8
+D. C4H10
+Answer: B. C2H6
+Explanation: Ethane is C2H6.
+
+35. Which formula represents butane?
+A. C2H6
+B. C3H8
+C. C4H10
+D. C5H12
+Answer: C. C4H10
+Explanation: Butane is C4H10.
+
+36. What is the difference between CH4 and C2H6?
+A. CH
+B. CH2
+C. C2H2
+D. H2O
+Answer: B. CH2
+Explanation: Successive alkanes differ by CH2.
+
+37. What is the difference between C2H6 and C3H8?
+A. CH
+B. CH2
+C. C2H4
+D. H2
+Answer: B. CH2
+Explanation: Each successive alkane differs by CH2.
+
+38. Which statement about a homologous series is FALSE?
+A. Members have the same general formula.
+B. Members have similar chemical properties.
+C. Members differ by CH2.
+D. Every member has exactly the same molecular formula.
+Answer: D. Every member has exactly the same molecular formula.
+Explanation: Members have different molecular formulas.
+
+39. Which formula is a molecular formula?
+A. C3H8
+B. CH3CH2CH3
+C. C-C-C
+D. A displayed structural diagram
+Answer: A. C3H8
+Explanation: C3H8 gives the number of each atom.
+
+40. Which formula is a condensed formula?
+A. C3H8
+B. CH3CH2CH3
+C. C-C-C
+D. C3H8O
+Answer: B. CH3CH2CH3
+Explanation: CH3CH2CH3 is condensed propane.
+
+41. Which statement about molecular formulas is correct?
+A. They show the exact arrangement of atoms.
+B. They show the number of each type of atom.
+C. They only show carbon atoms.
+D. They only show hydrogen atoms.
+Answer: B. They show the number of each type of atom.
+Explanation: Molecular formulas show atom counts.
+
+42. Which formula gives more information about atom arrangement?
+A. Molecular formula
+B. Structural formula
+C. General formula
+D. Numerical formula
+Answer: B. Structural formula
+Explanation: Structural formulas show arrangement.
+
+43. A compound contains only carbon and hydrogen. What can it be classified as?
+A. Hydrocarbon
+B. Alcohol
+C. Salt
+D. Acid
+Answer: A. Hydrocarbon
+Explanation: Hydrocarbons contain only carbon and hydrogen.
+
+44. A compound contains C, H, and O. Can it be a hydrocarbon?
+A. Yes, always
+B. Yes, if it has more carbon
+C. No
+D. Only if it is a gas
+Answer: C. No
+Explanation: A hydrocarbon contains only carbon and hydrogen.
+
+45. Which of these is an example of a hydrocarbon?
+A. Glucose
+B. Benzene
+C. Phenol
+D. Methanol
+Answer: B. Benzene
+Explanation: Benzene contains only carbon and hydrogen.
+
+46. Which compound contains oxygen and therefore is not a hydrocarbon?
+A. Propane
+B. Butane
+C. Phenol
+D. Toluene
+Answer: C. Phenol
+Explanation: Phenol contains oxygen.
+
+47. Which change would you expect across a homologous series as molecular mass increases?
+A. Physical properties gradually change.
+B. The functional group changes completely.
+C. All chemical properties become unrelated.
+D. The number of elements changes.
+Answer: A. Physical properties gradually change.
+Explanation: Boiling point, melting point, and density can change gradually.
+
+48. Which statement best explains why members of a homologous series react similarly?
+A. They have the same molecular mass.
+B. They contain the same functional group.
+C. They all contain the same number of atoms.
+D. They all have the same physical properties.
+Answer: B. They contain the same functional group.
+Explanation: The same functional group gives similar chemical properties.
+
+49. Which of the following is NOT an alkane?
+A. CH4
+B. C2H6
+C. C3H8
+D. C3H6
+Answer: D. C3H6
+Explanation: For three carbons, an alkane is C3H8.
+
+50. Which statement summarizes the alkane series correctly?
+A. Alkanes contain C=C bonds and follow CnH2n.
+B. Alkanes contain C-C single bonds and follow CnH2n+2.
+C. Alkanes contain C triple bond C and follow CnH2n-2.
+D. Alkanes contain oxygen and follow CnH2n+2.
+Answer: B. Alkanes contain C-C single bonds and follow CnH2n+2.
+Explanation: Alkanes are saturated hydrocarbons with C-C single bonds and CnH2n+2.
+
+51. Organic chemistry is the study of carbon and its compounds.
+Answer: True
+Explanation: This is the definition of organic chemistry.
+
+52. All organic compounds are hydrocarbons.
+Answer: False
+Explanation: Hydrocarbons are organic, but not all organic compounds are hydrocarbons.
+
+53. Hydrocarbons contain only carbon and hydrogen.
+Answer: True
+Explanation: That is the definition of a hydrocarbon.
+
+54. Carbon has four valence electrons.
+Answer: True
+Explanation: Carbon can form four bonds.
+
+55. Carbon normally forms only one bond.
+Answer: False
+Explanation: Carbon normally forms four bonds.
+
+56. Organic compounds are usually electrolytes.
+Answer: False
+Explanation: They are generally nonelectrolytes.
+
+57. Organic compounds usually have low melting and boiling points.
+Answer: True
+Explanation: This is a general property.
+
+58. Organic compounds are usually soluble in water.
+Answer: False
+Explanation: They are usually insoluble and immiscible in water.
+
+59. A molecular formula shows the number of atoms of each element.
+Answer: True
+Explanation: That is its purpose.
+
+60. A structural formula shows the arrangement of atoms.
+Answer: True
+Explanation: Structural formulas show arrangement.
+
+61. CH3CH2CH3 is the molecular formula of propane.
+Answer: False
+Explanation: It is the condensed formula; C3H8 is molecular.
+
+62. A homologous series contains compounds with similar chemical properties.
+Answer: True
+Explanation: The same functional group gives similar properties.
+
+63. Successive members of a homologous series usually differ by CH2.
+Answer: True
+Explanation: Each successive member generally adds CH2.
+
+64. Members of a homologous series all have exactly the same molecular formula.
+Answer: False
+Explanation: They share a general formula but have different molecular formulas.
+
+65. Physical properties can gradually change across a homologous series.
+Answer: True
+Explanation: Boiling point, melting point, and density can change.
+
+66. Alkanes contain carbon-carbon double bonds.
+Answer: False
+Explanation: Alkanes contain C-C single bonds.
+
+67. Alkanes are saturated hydrocarbons.
+Answer: True
+Explanation: They contain the maximum number of hydrogens.
+
+68. The general formula of alkanes is CnH2n+2.
+Answer: True
+Explanation: This is the alkane formula.
+
+69. Methane is part of the alkane homologous series.
+Answer: True
+Explanation: Methane is the first alkane.
+
+70. Ethane has the molecular formula C2H4.
+Answer: False
+Explanation: Ethane is C2H6.
+
+71. Propane has the molecular formula C3H8.
+Answer: True
+Explanation: Propane is C3H8.
+
+72. Butane has the molecular formula C4H10.
+Answer: True
+Explanation: Butane is C4H10.
+
+73. Phenol is a hydrocarbon.
+Answer: False
+Explanation: Phenol contains oxygen.
+
+74. Benzene is a hydrocarbon.
+Answer: True
+Explanation: Benzene is C6H6.
+
+75. Each bond represents one pair of shared electrons.
+Answer: True
+Explanation: A bond represents two shared electrons.
+
+76. What is the molecular formula of an alkane with 1 carbon atom?
+A. CH2
+B. CH3
+C. CH4
+D. C2H4
+Answer: C. CH4
+Explanation: H = 2(1) + 2 = 4.
+
+77. What is the molecular formula of an alkane with 2 carbon atoms?
+A. C2H4
+B. C2H6
+C. C2H8
+D. C2H2
+Answer: B. C2H6
+Explanation: H = 2(2) + 2 = 6.
+
+78. What is the molecular formula of an alkane with 3 carbon atoms?
+A. C3H6
+B. C3H7
+C. C3H8
+D. C3H10
+Answer: C. C3H8
+Explanation: H = 2(3) + 2 = 8.
+
+79. What is the molecular formula of an alkane with 4 carbon atoms?
+A. C4H8
+B. C4H10
+C. C4H12
+D. C4H6
+Answer: B. C4H10
+Explanation: H = 2(4) + 2 = 10.
+
+80. What is the molecular formula of an alkane with 5 carbon atoms?
+A. C5H10
+B. C5H12
+C. C5H14
+D. C5H8
+Answer: B. C5H12
+Explanation: H = 2(5) + 2 = 12.
+
+81. What is the molecular formula of an alkane with 6 carbon atoms?
+A. C6H12
+B. C6H14
+C. C6H16
+D. C6H10
+Answer: B. C6H14
+Explanation: H = 2(6) + 2 = 14.
+
+82. What is the molecular formula of an alkane with 7 carbon atoms?
+A. C7H14
+B. C7H16
+C. C7H18
+D. C7H12
+Answer: B. C7H16
+Explanation: H = 2(7) + 2 = 16.
+
+83. What is the molecular formula of an alkane with 8 carbon atoms?
+A. C8H16
+B. C8H18
+C. C8H20
+D. C8H14
+Answer: B. C8H18
+Explanation: H = 2(8) + 2 = 18.
+
+84. What is the molecular formula of an alkane with 10 carbon atoms?
+A. C10H20
+B. C10H22
+C. C10H18
+D. C10H24
+Answer: B. C10H22
+Explanation: H = 2(10) + 2 = 22.
+
+85. Which alkane has the formula C6H14?
+A. 4 carbons
+B. 5 carbons
+C. 6 carbons
+D. 7 carbons
+Answer: C. 6 carbons
+Explanation: The carbon subscript gives n = 6.
+
+86. Which alkane has the formula C7H16?
+A. 5 carbons
+B. 6 carbons
+C. 7 carbons
+D. 8 carbons
+Answer: C. 7 carbons
+Explanation: C7 means seven carbon atoms.
+
+87. Which alkane has the formula C9H20?
+A. Nonane
+B. Octane
+C. Heptane
+D. Decane
+Answer: A. Nonane
+Explanation: An alkane with nine carbons is nonane.
+
+88. Which formula is NOT consistent with the alkane formula?
+A. CH4
+B. C2H6
+C. C3H8
+D. C4H8
+Answer: D. C4H8
+Explanation: For n = 4, the formula is C4H10.
+
+89. Which formula is an alkane?
+A. C5H12
+B. C5H10
+C. C5H8
+D. C5H6
+Answer: A. C5H12
+Explanation: C5H12 follows CnH2n+2.
+
+90. Which formula is an alkane?
+A. C8H16
+B. C8H18
+C. C8H14
+D. C8H20
+Answer: B. C8H18
+Explanation: H = 2(8) + 2 = 18.
+
+91. An alkane has 12 carbon atoms. How many hydrogen atoms does it have?
+A. 22
+B. 24
+C. 26
+D. 28
+Answer: C. 26
+Explanation: H = 2(12) + 2 = 26.
+
+92. An alkane has 15 carbon atoms. What is its molecular formula?
+A. C15H30
+B. C15H32
+C. C15H28
+D. C15H34
+Answer: B. C15H32
+Explanation: H = 2(15) + 2 = 32.
+
+93. An alkane has 20 carbon atoms. How many hydrogen atoms are present?
+A. 40
+B. 41
+C. 42
+D. 44
+Answer: C. 42
+Explanation: H = 2(20) + 2 = 42.
+
+94. Which alkane contains 18 hydrogen atoms?
+A. C7H18
+B. C8H18
+C. C9H18
+D. C10H18
+Answer: B. C8H18
+Explanation: 2n + 2 = 18 gives n = 8.
+
+95. Which alkane contains 22 hydrogen atoms?
+A. C9H22
+B. C10H22
+C. C11H22
+D. C12H22
+Answer: B. C10H22
+Explanation: 2n + 2 = 22 gives n = 10.
+
+96. An alkane has 25 carbon atoms. How many hydrogen atoms does it contain?
+A. 50
+B. 51
+C. 52
+D. 48
+Answer: C. 52
+Explanation: H = 2(25) + 2 = 52.
+
+97. Which pair represents consecutive alkane members?
+A. CH4 and C2H6
+B. CH4 and C3H8
+C. C2H6 and C4H10
+D. C3H8 and C5H12
+Answer: A. CH4 and C2H6
+Explanation: Consecutive members differ by CH2.
+
+98. Which pair differs by exactly one CH2 group?
+A. C2H6 and C3H8
+B. C2H6 and C4H10
+C. C3H8 and C5H12
+D. CH4 and C3H8
+Answer: A. C2H6 and C3H8
+Explanation: C2H6 + CH2 = C3H8.
+
+99. What happens when one CH2 unit is added to C10H22?
+A. C11H24
+B. C11H22
+C. C10H24
+D. C12H24
+Answer: A. C11H24
+Explanation: C10H22 + CH2 = C11H24.
+
+100. An alkane has 30 carbon atoms. Which formula is correct?
+A. C30H58
+B. C30H60
+C. C30H62
+D. C30H64
+Answer: C. C30H62
+Explanation: H = 2(30) + 2 = 62.
