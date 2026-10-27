@@ -1,0 +1,1006 @@
+{
+  "id": "waterfall-methodology",
+  "title": "Waterfall Project Management (100 Questions)",
+  "questions": [
+    {
+      "id": "wf-mcq-1",
+      "type": "mcq",
+      "prompt": "What is the main idea of the Waterfall methodology?",
+      "choices": [
+        "Completing all project phases at the same time",
+        "Completing project phases in a fixed sequence",
+        "Allowing requirements to change every day",
+        "Skipping testing"
+      ],
+      "answer": 1,
+      "explanation": "Waterfall follows a sequential process where one phase is completed before the next phase begins."
+    },
+    {
+      "id": "wf-mcq-2",
+      "type": "mcq",
+      "prompt": "Which is the correct order of the five Waterfall stages?",
+      "choices": [
+        "Design → Requirements → Testing → Implementation → Operation",
+        "Requirements → Implementation → Design → Testing → Operation",
+        "Requirements → Design → Implementation → Testing → Operation",
+        "Design → Implementation → Requirements → Operation → Testing"
+      ],
+      "answer": 2,
+      "explanation": "The five stages must be completed in this order."
+    },
+    {
+      "id": "wf-mcq-3",
+      "type": "mcq",
+      "prompt": "What is the main purpose of the Requirements stage?",
+      "choices": [
+        "To deliver the product",
+        "To identify and document what the project needs",
+        "To fix bugs",
+        "To assign programmers"
+      ],
+      "answer": 1,
+      "explanation": "The project manager gathers comprehensive information and prepares a requirements document."
+    },
+    {
+      "id": "wf-mcq-4",
+      "type": "mcq",
+      "prompt": "Which activity can be used to gather requirements?",
+      "choices": [
+        "Interviews",
+        "Patching software",
+        "Releasing updates",
+        "Debugging only"
+      ],
+      "answer": 0,
+      "explanation": "Requirements can be collected through interviews, questionnaires, and brainstorming."
+    },
+    {
+      "id": "wf-mcq-5",
+      "type": "mcq",
+      "prompt": "A project manager uses questionnaires to discover what users need. Which phase is this?",
+      "choices": [
+        "Testing",
+        "Operation",
+        "Requirements",
+        "Implementation"
+      ],
+      "answer": 2,
+      "explanation": "Questionnaires are one method used to collect project requirements."
+    },
+    {
+      "id": "wf-mcq-6",
+      "type": "mcq",
+      "prompt": "What should be ready at the end of the Requirements stage?",
+      "choices": [
+        "A requirements document",
+        "A final product",
+        "A software patch",
+        "A test report"
+      ],
+      "answer": 0,
+      "explanation": "The requirements should be clear and documented for the project team."
+    },
+    {
+      "id": "wf-mcq-7",
+      "type": "mcq",
+      "prompt": "What is the main purpose of the Design stage?",
+      "choices": [
+        "To determine how the requirements will be satisfied",
+        "To deliver the product",
+        "To fix production bugs",
+        "To collect customer complaints"
+      ],
+      "answer": 0,
+      "explanation": "The team designs solutions and specifications that satisfy the project's requirements."
+    },
+    {
+      "id": "wf-mcq-8",
+      "type": "mcq",
+      "prompt": "Which activity belongs to the Design stage?",
+      "choices": [
+        "Creating project milestones",
+        "Releasing patches",
+        "Documenting production bugs",
+        "Delivering the final product"
+      ],
+      "answer": 0,
+      "explanation": "The team creates schedules, milestones, deliverables, designs, and blueprints during Design."
+    },
+    {
+      "id": "wf-mcq-9",
+      "type": "mcq",
+      "prompt": "What are project deliverables?",
+      "choices": [
+        "Problems discovered during testing",
+        "Outputs that the project is expected to produce",
+        "Employees working on the project",
+        "Customer complaints"
+      ],
+      "answer": 1,
+      "explanation": "The Design stage includes determining the project's deliverables."
+    },
+    {
+      "id": "wf-mcq-10",
+      "type": "mcq",
+      "prompt": "A team creates blueprints for a new application. Which phase are they in?",
+      "choices": [
+        "Requirements",
+        "Design",
+        "Testing",
+        "Operation"
+      ],
+      "answer": 1,
+      "explanation": "Creating designs and blueprints is part of the Design stage."
+    },
+    {
+      "id": "wf-mcq-11",
+      "type": "mcq",
+      "prompt": "When does Implementation begin?",
+      "choices": [
+        "Before requirements are gathered",
+        "After the design is finalized",
+        "After operation",
+        "Before planning"
+      ],
+      "answer": 1,
+      "explanation": "Implementation begins once the design has been finalized."
+    },
+    {
+      "id": "wf-mcq-12",
+      "type": "mcq",
+      "prompt": "What happens during Implementation?",
+      "choices": [
+        "The product is built",
+        "Requirements are first collected",
+        "The product is delivered",
+        "Customer complaints are analyzed"
+      ],
+      "answer": 0,
+      "explanation": "Implementation involves building the product according to the approved design and specifications."
+    },
+    {
+      "id": "wf-mcq-13",
+      "type": "mcq",
+      "prompt": "Which activity is part of Implementation?",
+      "choices": [
+        "Creating an implementation plan",
+        "Conducting customer interviews only",
+        "Writing test cases only",
+        "Releasing patches"
+      ],
+      "answer": 0,
+      "explanation": "The project manager creates an implementation plan and assigns tasks and resources."
+    },
+    {
+      "id": "wf-mcq-14",
+      "type": "mcq",
+      "prompt": "Why are resources allocated during Implementation?",
+      "choices": [
+        "To assign the necessary resources to project tasks",
+        "To collect requirements",
+        "To replace testing",
+        "To eliminate the Design stage"
+      ],
+      "answer": 0,
+      "explanation": "The project manager assigns tasks and allocates resources among the team."
+    },
+    {
+      "id": "wf-mcq-15",
+      "type": "mcq",
+      "prompt": "A project manager assigns different programming tasks to team members. Which phase is this?",
+      "choices": [
+        "Requirements",
+        "Design",
+        "Implementation",
+        "Operation"
+      ],
+      "answer": 2,
+      "explanation": "Assigning tasks and allocating resources are Implementation activities."
+    },
+    {
+      "id": "wf-mcq-16",
+      "type": "mcq",
+      "prompt": "What is the main purpose of Testing?",
+      "choices": [
+        "To gather requirements",
+        "To check the quality and functionality of the developed product",
+        "To create the original design",
+        "To decide the project budget"
+      ],
+      "answer": 1,
+      "explanation": "Testing is the quality-assurance stage after the product has been developed."
+    },
+    {
+      "id": "wf-mcq-17",
+      "type": "mcq",
+      "prompt": "What does quality assurance do during Testing?",
+      "choices": [
+        "Creates new requirements",
+        "Writes test cases",
+        "Creates project schedules",
+        "Assigns employees"
+      ],
+      "answer": 1,
+      "explanation": "Writing test cases is specifically listed as a Testing activity."
+    },
+    {
+      "id": "wf-mcq-18",
+      "type": "mcq",
+      "prompt": "What should happen to bugs found during Testing?",
+      "choices": [
+        "They should be documented",
+        "They should always be ignored",
+        "They should become requirements",
+        "They should be hidden from the team"
+      ],
+      "answer": 0,
+      "explanation": "The Testing stage includes documenting bugs and errors that need to be fixed."
+    },
+    {
+      "id": "wf-mcq-19",
+      "type": "mcq",
+      "prompt": "Why does Waterfall testing cover different use-case scenarios?",
+      "choices": [
+        "To ensure the product works in different situations",
+        "To avoid documenting bugs",
+        "To change the requirements",
+        "To skip quality assurance"
+      ],
+      "answer": 0,
+      "explanation": "Testing covers a variety of use cases and environments to help ensure a good user experience."
+    },
+    {
+      "id": "wf-mcq-20",
+      "type": "mcq",
+      "prompt": "Which phase comes immediately after Implementation?",
+      "choices": [
+        "Design",
+        "Requirements",
+        "Testing",
+        "Operation"
+      ],
+      "answer": 2,
+      "explanation": "After the product is developed during Implementation, it goes through Testing."
+    },
+    {
+      "id": "wf-mcq-21",
+      "type": "mcq",
+      "prompt": "What happens during Operation?",
+      "choices": [
+        "Requirements are gathered",
+        "The completed product is delivered to the client",
+        "The project design is created",
+        "The team creates the first prototype"
+      ],
+      "answer": 1,
+      "explanation": "Operation involves releasing the completed product to the client."
+    },
+    {
+      "id": "wf-mcq-22",
+      "type": "mcq",
+      "prompt": "After release, who informs the team about issues that arise?",
+      "choices": [
+        "The client",
+        "The designer only",
+        "The requirements document",
+        "The testing software"
+      ],
+      "answer": 0,
+      "explanation": "After release, the client informs the team about issues that arise."
+    },
+    {
+      "id": "wf-mcq-23",
+      "type": "mcq",
+      "prompt": "What can the team create to fix problems after release?",
+      "choices": [
+        "Requirements documents",
+        "Patches and newer versions",
+        "New milestones only",
+        "Questionnaires"
+      ],
+      "answer": 1,
+      "explanation": "During Operation, bugs may be addressed through patches and newer product versions."
+    },
+    {
+      "id": "wf-mcq-24",
+      "type": "mcq",
+      "prompt": "Which is a major characteristic of Waterfall?",
+      "choices": [
+        "Continuous changes to every phase",
+        "Sequential completion of phases",
+        "No documentation",
+        "No testing"
+      ],
+      "answer": 1,
+      "explanation": "Waterfall requires each phase to be completed before the next begins."
+    },
+    {
+      "id": "wf-mcq-25",
+      "type": "mcq",
+      "prompt": "What happens if a problem has not been resolved in a phase?",
+      "choices": [
+        "The team automatically skips it",
+        "The team must resolve it before moving forward",
+        "The client fixes it",
+        "The testing phase is removed"
+      ],
+      "answer": 1,
+      "explanation": "The team cannot move to the next phase until problems in the current phase are resolved."
+    },
+    {
+      "id": "wf-mcq-26",
+      "type": "mcq",
+      "prompt": "Why is Waterfall considered structured?",
+      "choices": [
+        "It has clearly defined sequential stages",
+        "It avoids planning",
+        "It changes requirements constantly",
+        "It has no fixed process"
+      ],
+      "answer": 0,
+      "explanation": "Waterfall follows a defined sequence from Requirements through Operation."
+    },
+    {
+      "id": "wf-mcq-27",
+      "type": "mcq",
+      "prompt": "Which benefit comes from rigorous planning?",
+      "choices": [
+        "Clear project structure",
+        "Unlimited changes",
+        "No documentation",
+        "No testing"
+      ],
+      "answer": 0,
+      "explanation": "Rigorous planning creates a clear goal and reduces confusion."
+    },
+    {
+      "id": "wf-mcq-28",
+      "type": "mcq",
+      "prompt": "Why can Waterfall have a predictable cost and schedule?",
+      "choices": [
+        "Because planning is done thoroughly before implementation",
+        "Because testing is removed",
+        "Because clients control development",
+        "Because requirements are never documented"
+      ],
+      "answer": 0,
+      "explanation": "Detailed planning allows the team to know the expected cost and schedule before implementation."
+    },
+    {
+      "id": "wf-mcq-29",
+      "type": "mcq",
+      "prompt": "Why is progress easier to track in Waterfall?",
+      "choices": [
+        "Different phases are not being worked on in parallel",
+        "There are no project phases",
+        "Clients perform the tracking",
+        "Testing happens before requirements"
+      ],
+      "answer": 0,
+      "explanation": "The sequential structure makes it easier to identify the project's current stage and progress."
+    },
+    {
+      "id": "wf-mcq-30",
+      "type": "mcq",
+      "prompt": "What does a replicable process mean?",
+      "choices": [
+        "The same successful process can be used for similar projects",
+        "The project must restart every day",
+        "Requirements are never documented",
+        "Testing is repeated forever"
+      ],
+      "answer": 0,
+      "explanation": "A successful Waterfall process can be reused for projects with similar requirements."
+    },
+    {
+      "id": "wf-mcq-31",
+      "type": "mcq",
+      "prompt": "How does Waterfall help with risk management?",
+      "choices": [
+        "Through thorough planning at the beginning",
+        "By avoiding requirements",
+        "By removing testing",
+        "By allowing unlimited changes"
+      ],
+      "answer": 0,
+      "explanation": "Early planning can help identify issues before implementation begins.     Waterfall Project Management Me²"
+    },
+    {
+      "id": "wf-mcq-32",
+      "type": "mcq",
+      "prompt": "Why can junior team members contribute more easily in Waterfall?",
+      "choices": [
+        "The process and tasks are clearly defined",
+        "They do not need instructions",
+        "There are no project requirements",
+        "They control the entire project"
+      ],
+      "answer": 0,
+      "explanation": "The structured process can make it easier for less-experienced team members to participate."
+    },
+    {
+      "id": "wf-mcq-33",
+      "type": "mcq",
+      "prompt": "Why are additional requirements less likely to delay implementation?",
+      "choices": [
+        "Requirements are established before implementation",
+        "Requirements are ignored",
+        "Testing is skipped",
+        "The client writes the code"
+      ],
+      "answer": 0,
+      "explanation": "Once implementation starts, stakeholders cannot make additional requests under the Waterfall process described in the PDF."
+    },
+    {
+      "id": "wf-mcq-34",
+      "type": "mcq",
+      "prompt": "Which type of project is most suitable for Waterfall?",
+      "choices": [
+        "A project with predictable requirements",
+        "A project where requirements change every day",
+        "A project with many unknowns",
+        "A project with no defined goal"
+      ],
+      "answer": 0,
+      "explanation": "Waterfall works well when requirements are known and stable."
+    },
+    {
+      "id": "wf-mcq-35",
+      "type": "mcq",
+      "prompt": "Why can Waterfall have longer delivery times?",
+      "choices": [
+        "Its step-by-step process is inflexible",
+        "It does not have requirements",
+        "It skips implementation",
+        "It has no project schedule"
+      ],
+      "answer": 0,
+      "explanation": "The sequential process can make final delivery take longer."
+    },
+    {
+      "id": "wf-mcq-36",
+      "type": "mcq",
+      "prompt": "What can happen when an unexpected event occurs?",
+      "choices": [
+        "The project can experience a significant setback",
+        "The project automatically becomes complete",
+        "The testing stage disappears",
+        "The requirements become unnecessary"
+      ],
+      "answer": 0,
+      "explanation": "Unexpected events can significantly affect project time and cost."
+    },
+    {
+      "id": "wf-mcq-37",
+      "type": "mcq",
+      "prompt": "What is one reason Waterfall is vulnerable to setbacks?",
+      "choices": [
+        "Each phase depends on successful completion of previous work",
+        "There are no phases",
+        "Requirements are collected after operation",
+        "Testing occurs first"
+      ],
+      "answer": 0,
+      "explanation": "A problem in one phase can prevent later phases from progressing normally."
+    },
+    {
+      "id": "wf-mcq-38",
+      "type": "mcq",
+      "prompt": "What is a limitation concerning client input?",
+      "choices": [
+        "Client feedback is limited after requirements are gathered",
+        "Clients must perform all testing",
+        "Clients design every component",
+        "Clients cannot receive the product"
+      ],
+      "answer": 0,
+      "explanation": "Once execution begins, stakeholders cannot normally add new requirements or provide ongoing feedback."
+    },
+    {
+      "id": "wf-mcq-39",
+      "type": "mcq",
+      "prompt": "Why might feature requests increase after launch?",
+      "choices": [
+        "The client may only discover desired changes after seeing the finished product",
+        "Testing is always incorrect",
+        "Requirements are never collected",
+        "Implementation does not happen"
+      ],
+      "answer": 0,
+      "explanation": "Limited client input during implementation can lead to additional requests after the product is delivered."
+    },
+    {
+      "id": "wf-mcq-40",
+      "type": "mcq",
+      "prompt": "What is deadline creep in Waterfall?",
+      "choices": [
+        "Delays caused by problems in earlier phases affecting later phases",
+        "Finishing the project earlier than planned",
+        "Removing the project schedule",
+        "Adding more employees"
+      ],
+      "answer": 0,
+      "explanation": "A problem in one phase can stop progress and push the entire schedule behind."
+    },
+    {
+      "id": "wf-mcq-41",
+      "type": "mcq",
+      "prompt": "A team discovers a major design problem before Implementation begins. What should they do?",
+      "choices": [
+        "Ignore it and continue",
+        "Resolve the problem before moving forward",
+        "Deliver the product",
+        "Skip Testing"
+      ],
+      "answer": 1,
+      "explanation": "Waterfall requires problems in the current phase to be addressed before proceeding."
+    },
+    {
+      "id": "wf-mcq-42",
+      "type": "mcq",
+      "prompt": "A company knows exactly what product it wants and expects few requirement changes. Which methodology characteristic makes Waterfall appropriate?",
+      "choices": [
+        "Predictable requirements",
+        "Constant uncertainty",
+        "Continuous redesign",
+        "Unlimited stakeholder changes"
+      ],
+      "answer": 0,
+      "explanation": "Waterfall is most suitable when requirements are predictable and stable."
+    },
+    {
+      "id": "wf-mcq-43",
+      "type": "mcq",
+      "prompt": "Which phase determines the project's schedules and milestones?",
+      "choices": [
+        "Design",
+        "Operation",
+        "Testing",
+        "Requirements"
+      ],
+      "answer": 0,
+      "explanation": "Creating schedules and project milestones is listed as a Design activity."
+    },
+    {
+      "id": "wf-mcq-44",
+      "type": "mcq",
+      "prompt": "Which phase involves collecting data or conducting research needed to build the product?",
+      "choices": [
+        "Testing",
+        "Implementation",
+        "Operation",
+        "Requirements only"
+      ],
+      "answer": 1,
+      "explanation": "Implementation can include collecting data or conducting research needed for implementation."
+    },
+    {
+      "id": "wf-mcq-45",
+      "type": "mcq",
+      "prompt": "Which phase determines quality-assurance metrics?",
+      "choices": [
+        "Requirements",
+        "Design",
+        "Testing",
+        "Operation"
+      ],
+      "answer": 2,
+      "explanation": "Determining which quality-assurance metrics to track is part of Testing."
+    },
+    {
+      "id": "wf-mcq-46",
+      "type": "mcq",
+      "prompt": "A completed product is handed to the customer. Which stage has been reached?",
+      "choices": [
+        "Requirements",
+        "Design",
+        "Implementation",
+        "Operation"
+      ],
+      "answer": 3,
+      "explanation": "Operation involves delivering the completed product to the client."
+    },
+    {
+      "id": "wf-mcq-47",
+      "type": "mcq",
+      "prompt": "Which of the following is NOT a Waterfall stage?",
+      "choices": [
+        "Requirements",
+        "Design",
+        "Marketing",
+        "Testing"
+      ],
+      "answer": 2,
+      "explanation": "The five stages are Requirements, Design, Implementation, Testing, and Operation."
+    },
+    {
+      "id": "wf-mcq-48",
+      "type": "mcq",
+      "prompt": "A team tests the application on several environments and checks different use cases. What are they trying to achieve?",
+      "choices": [
+        "Better quality assurance",
+        "Requirement collection",
+        "Project scheduling",
+        "Resource allocation"
+      ],
+      "answer": 0,
+      "explanation": "Testing should cover different use cases and environments to ensure a good user experience."
+    },
+    {
+      "id": "wf-mcq-49",
+      "type": "mcq",
+      "prompt": "Which statement best describes Waterfall's flexibility?",
+      "choices": [
+        "It is highly flexible throughout the project",
+        "It is relatively inflexible because phases follow a fixed sequence",
+        "It has no defined sequence",
+        "It allows unlimited requirement changes"
+      ],
+      "answer": 1,
+      "explanation": "The PDF specifically describes Waterfall as not flexible and requiring phases to be completed sequentially."
+    },
+    {
+      "id": "wf-mcq-50",
+      "type": "mcq",
+      "prompt": "A project has a clear goal, fixed requirements, and detailed planning. Which is a likely benefit of using Waterfall?",
+      "choices": [
+        "Clear structure and easier tracking",
+        "Unlimited requirement changes",
+        "No need for testing",
+        "No need for documentation"
+      ],
+      "answer": 0,
+      "explanation": "Rigorous planning creates a clear structure, while sequential phases make project progress easier to track."
+    },
+    {
+      "id": "wf-tf-51",
+      "type": "tf",
+      "prompt": "Waterfall consists of five main stages.",
+      "answer": true,
+      "explanation": "The five stages are Requirements, Design, Implementation, Testing, and Operation."
+    },
+    {
+      "id": "wf-tf-52",
+      "type": "tf",
+      "prompt": "The Design stage comes before the Requirements stage.",
+      "answer": false,
+      "explanation": "Requirements comes first, followed by Design."
+    },
+    {
+      "id": "wf-tf-53",
+      "type": "tf",
+      "prompt": "Implementation comes after Design.",
+      "answer": true,
+      "explanation": "The design must be finalized before implementation begins."
+    },
+    {
+      "id": "wf-tf-54",
+      "type": "tf",
+      "prompt": "Testing comes immediately after Implementation.",
+      "answer": true,
+      "explanation": "Once the product is developed, it moves into the Testing stage."
+    },
+    {
+      "id": "wf-tf-55",
+      "type": "tf",
+      "prompt": "Operation is the first stage of Waterfall.",
+      "answer": false,
+      "explanation": "Operation is the fifth and final stage."
+    },
+    {
+      "id": "wf-tf-56",
+      "type": "tf",
+      "prompt": "Requirements can be gathered using interviews.",
+      "answer": true,
+      "explanation": "Interviews are one of the methods listed for gathering requirements."
+    },
+    {
+      "id": "wf-tf-57",
+      "type": "tf",
+      "prompt": "Questionnaires can be used to gather project requirements.",
+      "answer": true,
+      "explanation": "Questionnaires are specifically mentioned as a way to collect requirements."
+    },
+    {
+      "id": "wf-tf-58",
+      "type": "tf",
+      "prompt": "Brainstorming can be used during the Requirements stage.",
+      "answer": true,
+      "explanation": "Brainstorming is another method mentioned for gathering requirements."
+    },
+    {
+      "id": "wf-tf-59",
+      "type": "tf",
+      "prompt": "The Requirements stage should result in clear requirements.",
+      "answer": true,
+      "explanation": "The requirements should be clear by the end of this stage."
+    },
+    {
+      "id": "wf-tf-60",
+      "type": "tf",
+      "prompt": "The requirements document is created during Operation.",
+      "answer": false,
+      "explanation": "The requirements document is prepared during the Requirements stage."
+    },
+    {
+      "id": "wf-tf-61",
+      "type": "tf",
+      "prompt": "The Design stage creates solutions that satisfy project requirements.",
+      "answer": true,
+      "explanation": "The team designs solutions and specifications based on the requirements."
+    },
+    {
+      "id": "wf-tf-62",
+      "type": "tf",
+      "prompt": "Project milestones can be determined during Design.",
+      "answer": true,
+      "explanation": "Creating schedules and project milestones is part of Design."
+    },
+    {
+      "id": "wf-tf-63",
+      "type": "tf",
+      "prompt": "Project deliverables are determined during the Design stage.",
+      "answer": true,
+      "explanation": "The team determines the project's deliverables during Design."
+    },
+    {
+      "id": "wf-tf-64",
+      "type": "tf",
+      "prompt": "Blueprints are part of the Design stage.",
+      "answer": true,
+      "explanation": "Creating designs and blueprints for deliverables is a Design activity."
+    },
+    {
+      "id": "wf-tf-65",
+      "type": "tf",
+      "prompt": "Implementation begins before the design is finalized.",
+      "answer": false,
+      "explanation": "Implementation starts after the design has been finalized."
+    },
+    {
+      "id": "wf-tf-66",
+      "type": "tf",
+      "prompt": "Implementation involves building the product.",
+      "answer": true,
+      "explanation": "The product is built according to the proposed design and specifications during Implementation."
+    },
+    {
+      "id": "wf-tf-67",
+      "type": "tf",
+      "prompt": "The project manager may create an implementation plan.",
+      "answer": true,
+      "explanation": "Creating an implementation plan is specifically listed as an Implementation activity."
+    },
+    {
+      "id": "wf-tf-68",
+      "type": "tf",
+      "prompt": "Assigning tasks to team members is part of Implementation.",
+      "answer": true,
+      "explanation": "The project manager assigns tasks and allocates resources during Implementation."
+    },
+    {
+      "id": "wf-tf-69",
+      "type": "tf",
+      "prompt": "Testing happens before the product is developed.",
+      "answer": false,
+      "explanation": "Testing happens after the product has been developed."
+    },
+    {
+      "id": "wf-tf-70",
+      "type": "tf",
+      "prompt": "Testing is part of quality assurance.",
+      "answer": true,
+      "explanation": "The PDF describes Testing as the stage for quality assurance."
+    },
+    {
+      "id": "wf-tf-71",
+      "type": "tf",
+      "prompt": "Test cases are written during Testing.",
+      "answer": true,
+      "explanation": "Writing test cases is one of the listed Testing activities."
+    },
+    {
+      "id": "wf-tf-72",
+      "type": "tf",
+      "prompt": "Bugs and errors should be documented during Testing.",
+      "answer": true,
+      "explanation": "Quality assurance documents bugs and errors that need to be fixed."
+    },
+    {
+      "id": "wf-tf-73",
+      "type": "tf",
+      "prompt": "Testing only one environment is always enough.",
+      "answer": false,
+      "explanation": "The Waterfall Testing stage covers a variety of use-case scenarios and environments."
+    },
+    {
+      "id": "wf-tf-74",
+      "type": "tf",
+      "prompt": "Testing can involve determining quality-assurance metrics.",
+      "answer": true,
+      "explanation": "The Testing stage includes determining which QA metrics should be tracked."
+    },
+    {
+      "id": "wf-tf-75",
+      "type": "tf",
+      "prompt": "Operation involves delivering the completed product to the client.",
+      "answer": true,
+      "explanation": "Delivery to the client occurs during Operation."
+    },
+    {
+      "id": "wf-tf-76",
+      "type": "tf",
+      "prompt": "Bugs can never be fixed after the product is released.",
+      "answer": false,
+      "explanation": "After release, the team may address bugs using patches and newer versions."
+    },
+    {
+      "id": "wf-tf-77",
+      "type": "tf",
+      "prompt": "Clients can inform the team about issues after release.",
+      "answer": true,
+      "explanation": "During Operation, the client informs the team about issues that arise."
+    },
+    {
+      "id": "wf-tf-78",
+      "type": "tf",
+      "prompt": "Patches can be released to address problems after launch.",
+      "answer": true,
+      "explanation": "The team can create patches and newer versions after release."
+    },
+    {
+      "id": "wf-tf-79",
+      "type": "tf",
+      "prompt": "Waterfall allows unlimited changes between every stage.",
+      "answer": false,
+      "explanation": "Waterfall is relatively inflexible and requires the phases to be completed sequentially."
+    },
+    {
+      "id": "wf-tf-80",
+      "type": "tf",
+      "prompt": "The team must resolve problems before moving to the next phase.",
+      "answer": true,
+      "explanation": "The team cannot move forward until problems in the current phase are resolved."
+    },
+    {
+      "id": "wf-tf-81",
+      "type": "tf",
+      "prompt": "Waterfall has a clear project structure.",
+      "answer": true,
+      "explanation": "Rigorous planning creates a clear and defined project goal."
+    },
+    {
+      "id": "wf-tf-82",
+      "type": "tf",
+      "prompt": "Waterfall planning can help establish the project's expected cost and schedule.",
+      "answer": true,
+      "explanation": "Thorough planning allows the cost and schedule to be known before implementation begins."
+    },
+    {
+      "id": "wf-tf-83",
+      "type": "tf",
+      "prompt": "Tracking progress can be easier because the phases are sequential.",
+      "answer": true,
+      "explanation": "There is no work happening across different phases in parallel, making progress easier to assess."
+    },
+    {
+      "id": "wf-tf-84",
+      "type": "tf",
+      "prompt": "A successful Waterfall process can be reused for similar projects.",
+      "answer": true,
+      "explanation": "The process can be replicated for projects with similar requirements."
+    },
+    {
+      "id": "wf-tf-85",
+      "type": "tf",
+      "prompt": "Waterfall's early planning can help identify risks before Implementation.",
+      "answer": true,
+      "explanation": "Thorough planning allows the team to identify issues before implementation begins."
+    },
+    {
+      "id": "wf-tf-86",
+      "type": "tf",
+      "prompt": "Waterfall's structured process can help less-experienced team members contribute.",
+      "answer": true,
+      "explanation": "The clear structure allows junior or less-experienced members to participate more easily."
+    },
+    {
+      "id": "wf-tf-87",
+      "type": "tf",
+      "prompt": "Stakeholders can freely add new requirements after Implementation starts.",
+      "answer": false,
+      "explanation": "The PDF states that once the team moves into Implementation, stakeholders cannot make additional requests."
+    },
+    {
+      "id": "wf-tf-88",
+      "type": "tf",
+      "prompt": "Waterfall is suitable for projects with predictable requirements.",
+      "answer": true,
+      "explanation": "The methodology works well when project requirements are predictable."
+    },
+    {
+      "id": "wf-tf-89",
+      "type": "tf",
+      "prompt": "Waterfall is ideal when a project has many unknowns and constantly changing requirements.",
+      "answer": false,
+      "explanation": "Waterfall struggles when a project contains many variables and unknowns."
+    },
+    {
+      "id": "wf-tf-90",
+      "type": "tf",
+      "prompt": "Waterfall can have longer delivery times because of its inflexible process.",
+      "answer": true,
+      "explanation": "The fixed step-by-step process can make final delivery take longer."
+    },
+    {
+      "id": "wf-tf-91",
+      "type": "tf",
+      "prompt": "An unexpected event can cause a significant setback in Waterfall.",
+      "answer": true,
+      "explanation": "Unexpected events can affect both the project's time and cost."
+    },
+    {
+      "id": "wf-tf-92",
+      "type": "tf",
+      "prompt": "Waterfall provides unlimited client input throughout implementation.",
+      "answer": false,
+      "explanation": "Client input is limited once requirements have been gathered and execution begins."
+    },
+    {
+      "id": "wf-tf-93",
+      "type": "tf",
+      "prompt": "Clients may request additional features after the product is launched.",
+      "answer": true,
+      "explanation": "Limited feedback during implementation can result in additional requests after the product is handed over."
+    },
+    {
+      "id": "wf-tf-94",
+      "type": "tf",
+      "prompt": "Additional feature requests after launch can create maintenance issues.",
+      "answer": true,
+      "explanation": "The PDF states that additional changes can create maintenance issues and delay project closing."
+    },
+    {
+      "id": "wf-tf-95",
+      "type": "tf",
+      "prompt": "A problem in one Waterfall phase can affect later phases.",
+      "answer": true,
+      "explanation": "Each phase depends on the successful completion of the previous phase, so problems can cascade."
+    },
+    {
+      "id": "wf-tf-96",
+      "type": "tf",
+      "prompt": "Deadline creep can occur when a problem causes the project schedule to fall behind.",
+      "answer": true,
+      "explanation": "Problems in one phase can stop work and push the entire project timeline further behind."
+    },
+    {
+      "id": "wf-tf-97",
+      "type": "tf",
+      "prompt": "Waterfall testing is performed before requirements are collected.",
+      "answer": false,
+      "explanation": "Requirements are the first stage, while Testing is the fourth stage."
+    },
+    {
+      "id": "wf-tf-98",
+      "type": "tf",
+      "prompt": "Waterfall's sequential structure means that phases are dependent on previous phases.",
+      "answer": true,
+      "explanation": "The team must complete one phase before starting the next, creating dependencies between stages."
+    },
+    {
+      "id": "wf-tf-99",
+      "type": "tf",
+      "prompt": "The Operation stage can include releasing newer versions of the product.",
+      "answer": true,
+      "explanation": "After release, the team can address issues by creating patches and newer versions."
+    },
+    {
+      "id": "wf-tf-100",
+      "type": "tf",
+      "prompt": "The main strength of Waterfall is its structured and well-planned sequential process.",
+      "answer": true,
+      "explanation": "Waterfall's rigorous planning provides a clear structure, defined goals, predictable planning, and easier tracking."
+    }
+  ]
+}

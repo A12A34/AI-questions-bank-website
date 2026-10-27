@@ -59,6 +59,11 @@
       "id": "organic-chemistry",
       "title": "Organic Chemistry and Alkanes (100 Questions)",
       "file": "organic-chemistry.json"
+    },
+    {
+      "id": "waterfall-methodology",
+      "title": "Waterfall Project Management (100 Questions)",
+      "file": "waterfall-methodology.json"
     }
   ]
 }
