@@ -5,14 +5,22 @@ const STORAGE_KEYS = {
   shuffleChoices: "qb-shuffle-choices",
   mode: "qb-mode",
   bookmarksOnly: "qb-bookmarks-only",
+  folderConfig: "qb-folder-config",
 };
 
 const ARABIC_RE = /[\u0600-\u06FF]/;
+const SUBJECT_FOLDERS = ["ML", "DL", "IoT", "Arabic", "Math", "GRD", "phyisics", "chemistry"];
+const DEFAULT_FOLDER_PERMISSION = "public";
 
 const els = {
   home: document.getElementById("view-home"),
   quiz: document.getElementById("view-quiz"),
   bankList: document.getElementById("bank-list"),
+  manageFolders: document.getElementById("btn-manage-folders"),
+  closeFolderManager: document.getElementById("btn-close-folder-manager"),
+  folderManager: document.getElementById("folder-manager"),
+  folderManagerList: document.getElementById("folder-manager-list"),
+  addFolder: document.getElementById("btn-add-folder"),
   homeStatus: document.getElementById("home-status"),
   title: document.getElementById("quiz-title"),
   progress: document.getElementById("progress"),
@@ -44,6 +52,8 @@ const state = {
   submitted: false,
   score: null,
   activeId: null,
+  folders: [],
+  folderAssignments: {},
 };
 
 let observer = null;
@@ -58,6 +68,43 @@ function readStored(key, fallback) {
   } catch {
     return fallback;
   }
+}
+
+function loadFolderConfig() {
+  const defaults = SUBJECT_FOLDERS.map((name) => ({ name, permission: DEFAULT_FOLDER_PERMISSION }));
+  try {
+    const raw = localStorage.getItem(STORAGE_KEYS.folderConfig);
+    if (!raw) return defaults;
+    const saved = JSON.parse(raw);
+    const folders = Array.isArray(saved) ? saved : saved.folders;
+    if (!Array.isArray(folders)) return defaults;
+    const valid = folders.filter((folder) => folder && typeof folder.name === "string" && folder.name.trim());
+    state.folderAssignments = saved.assignments && typeof saved.assignments === "object" ? saved.assignments : {};
+    return valid.length ? valid : defaults;
+  } catch {
+    return defaults;
+  }
+}
+
+function saveFolderConfig() {
+  persist(STORAGE_KEYS.folderConfig, JSON.stringify({
+    folders: state.folders,
+    assignments: state.folderAssignments,
+  }));
+}
+
+function visibleFolders() {
+  return state.folders.filter((folder) => folder.permission !== "private");
+}
+
+function folderForBank(bank) {
+  const assignedName = state.folderAssignments[bank.id] || bank.subject;
+  const configured = state.folders.find((folder) => folder.name === assignedName);
+  return configured ? configured.name : "GRD";
+}
+
+function folderNames() {
+  return state.folders.map((folder) => folder.name);
 }
 
 function readStoredBool(key, fallback) {
@@ -129,6 +176,14 @@ function isScoredType(type) {
   return type !== "writing";
 }
 
+function isCodeQuestion(question) {
+  return question.type === "code" || question.type === "code-writing";
+}
+
+function expectedCode(question) {
+  return question.answer ?? question.modelAnswer ?? "";
+}
+
 function prepareQuestion(question, shuffleChoices) {
   const prepared = {
     ...question,
@@ -176,7 +231,7 @@ function showHomeError(message) {
 }
 
 async function loadBanks() {
-  const response = await fetch("./data/banks.json");
+  const response = await fetch(`./data/banks.json?ts=${Date.now()}`);
   if (!response.ok) throw new Error("Could not load the bank list.");
   const data = await response.json();
   state.banks = data.banks ?? data;
@@ -185,15 +240,151 @@ async function loadBanks() {
 function renderHome() {
   setView("home");
   els.bankList.innerHTML = "";
+  const folders = new Map(visibleFolders().map((folder) => [folder.name, []]));
   state.banks.forEach((bank) => {
-    const item = document.createElement("li");
-    const button = document.createElement("button");
-    button.type = "button";
-    button.innerHTML = `<strong>${escapeHtml(bank.title)}</strong><span class="count">Open this set</span>`;
-    button.addEventListener("click", () => openBank(bank));
-    item.append(button);
-    els.bankList.append(item);
+    const subject = folderForBank(bank);
+    if (!folders.has(subject)) return;
+    if (!folders.has(subject)) folders.set(subject, []);
+    folders.get(subject).push(bank);
   });
+
+  [...folders.entries()].forEach(([subject, banks]) => {
+      const folder = document.createElement("details");
+      folder.className = "bank-folder";
+      folder.open = true;
+
+      const summary = document.createElement("summary");
+      summary.innerHTML = `<span class="folder-name">${escapeHtml(subject)}</span><span class="folder-count">${banks.length} ${banks.length === 1 ? "quiz" : "quizzes"}</span>`;
+      folder.append(summary);
+
+      const list = document.createElement("div");
+      list.className = "folder-quizzes";
+      banks
+        .sort((left, right) => left.title.localeCompare(right.title))
+        .forEach((bank) => {
+          const button = document.createElement("button");
+          button.type = "button";
+          button.className = "quiz-link";
+          const metadata = [bank.gradeLevel, bank.difficulty].filter(Boolean).join(" · ");
+          button.innerHTML = `<strong>${escapeHtml(bank.title)}</strong><span class="count">${escapeHtml(metadata || "Open this set")}</span>`;
+          button.addEventListener("click", () => openBank(bank));
+          list.append(button);
+        });
+      folder.append(list);
+      els.bankList.append(folder);
+    });
+}
+
+function renderFolderManager() {
+  els.folderManagerList.innerHTML = "";
+  state.folders.forEach((folder) => {
+    const row = document.createElement("div");
+    row.className = "folder-manager-row";
+    const name = document.createElement("strong");
+    name.textContent = folder.name;
+    const actions = document.createElement("div");
+    actions.className = "folder-manager-actions";
+
+    const rename = document.createElement("button");
+    rename.type = "button";
+    rename.className = "btn btn-ghost";
+    rename.textContent = "Rename";
+    rename.addEventListener("click", () => renameFolder(folder.name));
+
+    const permission = document.createElement("select");
+    permission.setAttribute("aria-label", `Permission for ${folder.name}`);
+    permission.innerHTML = '<option value="public">Everyone</option><option value="private">Private</option>';
+    permission.value = folder.permission === "private" ? "private" : "public";
+    permission.addEventListener("change", () => {
+      folder.permission = permission.value;
+      saveFolderConfig();
+      renderFolderManager();
+      renderHome();
+    });
+
+    const remove = document.createElement("button");
+    remove.type = "button";
+    remove.className = "btn btn-ghost";
+    remove.textContent = "Delete";
+    remove.disabled = state.banks.some((bank) => folderForBank(bank) === folder.name);
+    remove.title = remove.disabled ? "Move all quizzes out before deleting this folder" : "Delete folder";
+    remove.addEventListener("click", () => deleteFolder(folder.name));
+
+    actions.append(rename, permission, remove);
+    row.append(name, actions);
+    els.folderManagerList.append(row);
+  });
+  renderMoveControls();
+}
+
+function renderMoveControls() {
+  state.banks.forEach((bank) => {
+    const existing = document.getElementById(`move-${bank.id}`);
+    if (existing) existing.remove();
+  });
+  state.banks.forEach((bank) => {
+    const row = document.createElement("div");
+    row.className = "folder-manager-row";
+    const title = document.createElement("span");
+    title.textContent = bank.title;
+    const select = document.createElement("select");
+    select.id = `move-${bank.id}`;
+    select.setAttribute("aria-label", `Folder for ${bank.title}`);
+    folderNames().forEach((name) => {
+      const option = document.createElement("option");
+      option.value = name;
+      option.textContent = name;
+      option.selected = folderForBank(bank) === name;
+      select.append(option);
+    });
+    select.addEventListener("change", () => {
+      state.folderAssignments[bank.id] = select.value;
+      saveFolderConfig();
+      renderHome();
+      renderFolderManager();
+    });
+    row.append(title, select);
+    els.folderManagerList.append(row);
+  });
+}
+
+function addFolder() {
+  const name = window.prompt("New folder name:");
+  if (!name?.trim()) return;
+  const normalized = name.trim();
+  if (folderNames().some((folder) => folder.toLowerCase() === normalized.toLowerCase())) {
+    window.alert("A folder with that name already exists.");
+    return;
+  }
+  state.folders.push({ name: normalized, permission: DEFAULT_FOLDER_PERMISSION });
+  saveFolderConfig();
+  renderFolderManager();
+  renderHome();
+}
+
+function renameFolder(oldName) {
+  const nextName = window.prompt("Rename folder:", oldName);
+  if (!nextName?.trim() || nextName.trim() === oldName) return;
+  const normalized = nextName.trim();
+  if (folderNames().some((folder) => folder.toLowerCase() === normalized.toLowerCase())) {
+    window.alert("A folder with that name already exists.");
+    return;
+  }
+  state.folders.find((folder) => folder.name === oldName).name = normalized;
+  state.banks.forEach((bank) => {
+    if (folderForBank(bank) === oldName) state.folderAssignments[bank.id] = normalized;
+  });
+  saveFolderConfig();
+  renderFolderManager();
+  renderHome();
+}
+
+function deleteFolder(name) {
+  if (state.banks.some((bank) => folderForBank(bank) === name)) return;
+  state.folders = state.folders.filter((folder) => folder.name !== name);
+  saveFolderConfig();
+  renderFolderManager();
+  renderHome();
 }
 
 function exportCurrentBank() {
@@ -243,6 +434,13 @@ function gradeQuestion(question) {
   const answer = userAnswer(question);
   if (question.type === "writing") {
     return { scored: false, correct: null, answered: Boolean(String(answer ?? "").trim()) };
+  }
+  if (isCodeQuestion(question)) {
+    return {
+      scored: true,
+      correct: typeof answer === "string" && answer === expectedCode(question),
+      answered: typeof answer === "string" && answer.length > 0,
+    };
   }
   if (answer === undefined || answer === null || (Array.isArray(answer) && answer.some((item) => item === null || item === undefined || item === ""))) {
     return { scored: true, correct: false, answered: false };
@@ -435,6 +633,7 @@ function renderQuestionCard(article, question, index) {
   if (question.type === "multi") renderMulti(article, question, locked, result);
   if (question.type === "match") renderMatch(article, question, locked, result);
   if (question.type === "writing") renderWriting(article, question, locked);
+  if (isCodeQuestion(question)) renderCode(article, question, locked, result);
 
   if ((locked || state.submitted) && question.explanation) {
     const explanation = document.createElement("p");
@@ -654,6 +853,26 @@ function renderWriting(host, question, locked) {
   }
 }
 
+function renderCode(host, question, locked, result) {
+  const hint = document.createElement("p");
+  hint.className = "writing-hint";
+  hint.textContent = "Your answer must exactly match the correct code, including whitespace and line breaks.";
+  const area = document.createElement("textarea");
+  area.className = "code-answer";
+  area.value = userAnswer(question) ?? "";
+  area.placeholder = "Write your code here...";
+  area.disabled = locked || state.submitted;
+  area.addEventListener("input", () => setUserAnswer(question, area.value));
+  host.append(hint, area);
+
+  if (locked || state.submitted) {
+    const model = document.createElement("p");
+    model.className = "model-answer";
+    model.innerHTML = `<strong>Correct code</strong>${escapeHtml(expectedCode(question))}`;
+    host.append(model);
+  }
+}
+
 function toggleBookmark(id) {
   if (state.bookmarks.has(id)) state.bookmarks.delete(id);
   else state.bookmarks.add(id);
@@ -746,12 +965,21 @@ function bindControls() {
     renderHome();
   });
   els.btnSubmit.addEventListener("click", submitTest);
+  els.manageFolders.addEventListener("click", () => {
+    els.folderManager.hidden = false;
+    renderFolderManager();
+  });
+  els.closeFolderManager.addEventListener("click", () => {
+    els.folderManager.hidden = true;
+  });
+  els.addFolder.addEventListener("click", addFolder);
   if (els.btnExport) {
     els.btnExport.addEventListener("click", exportCurrentBank);
   }
 }
 
 async function init() {
+  state.folders = loadFolderConfig();
   bindControls();
   try {
     await loadBanks();

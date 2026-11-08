@@ -3,67 +3,114 @@
     {
       "id": "sample",
       "title": "Sample mixed bank",
-      "file": "sample.json"
+      "file": "sample.json",
+      "subject": "Math",
+      "gradeLevel": "Mixed",
+      "difficulty": "Beginner"
     },
     {
       "id": "iot-quiz",
       "title": "IoT Quiz (100 Questions)",
-      "file": "iot-quiz.json"
+      "file": "iot-quiz.json",
+      "subject": "IoT",
+      "gradeLevel": "University",
+      "difficulty": "Intermediate"
     },
     {
       "id": "intro-dl",
       "title": "Introduction to Deep Learning",
-      "file": "intro-dl.json"
+      "file": "intro-dl.json",
+      "subject": "DL",
+      "gradeLevel": "University",
+      "difficulty": "Intermediate"
     },
     {
       "id": "physics-test1",
       "title": "Physics Test 1 (150 Questions)",
-      "file": "physics-test1.json"
+      "file": "physics-test1.json",
+      "subject": "phyisics",
+      "gradeLevel": "High School",
+      "difficulty": "Intermediate"
     },
     {
       "id": "alhaqiqa-al-murra",
       "title": "الحقيقة المرة (عبد الله الزايد)",
-      "file": "alhaqiqa-al-murra-quiz.json"
+      "file": "alhaqiqa-al-murra-quiz.json",
+      "subject": "Arabic",
+      "gradeLevel": "High School",
+      "difficulty": "Intermediate"
     },
     {
       "id": "alhaqiqa-al-murra-2",
       "title": "الحقيقة المرة — المقطع الثاني (عبد الله الزايد)",
-      "file": "alhaqiqa-al-murra-quiz-2.json"
+      "file": "alhaqiqa-al-murra-quiz-2.json",
+      "subject": "Arabic",
+      "gradeLevel": "High School",
+      "difficulty": "Intermediate"
     },
     {
       "id": "alhaqiqa-al-murra-3",
       "title": "الحقيقة المرة — المقطع الثالث (عبد الله الزايد)",
-      "file": "alhaqiqa-al-murra-quiz-3.json"
+      "file": "alhaqiqa-al-murra-quiz-3.json",
+      "subject": "Arabic",
+      "gradeLevel": "High School",
+      "difficulty": "Intermediate"
     },
     {
       "id": "istifham-2-1",
       "title": "04. النشاط الرابع: أسلوب الاستفهام 2.1",
-      "file": "istifham-2-1-quiz.json"
+      "file": "istifham-2-1-quiz.json",
+      "subject": "Arabic",
+      "gradeLevel": "High School",
+      "difficulty": "Beginner"
     },
     {
       "id": "linear-regression",
       "title": "Linear Regression (100 Questions)",
-      "file": "linear-regression.json"
+      "file": "linear-regression.json",
+      "subject": "ML",
+      "gradeLevel": "University",
+      "difficulty": "Advanced"
     },
     {
       "id": "iot-ws4-ws5",
       "title": "IoT WS4 & WS5 (100 Questions)",
-      "file": "iot-ws4-ws5.json"
+      "file": "iot-ws4-ws5.json",
+      "subject": "IoT",
+      "gradeLevel": "University",
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "iot301-ws6-ws7",
+      "title": "IoT301 – WS6 and WS7: 150 Practice Questions",
+      "file": "iot301-ws6-ws7.json",
+      "subject": "IoT",
+      "gradeLevel": "University",
+      "difficulty": "Intermediate"
     },
     {
       "id": "iris-perceptron-coding",
       "title": "Iris + Perceptron Coding (30 Questions)",
-      "file": "iris-perceptron-coding.json"
+      "file": "iris-perceptron-coding.json",
+      "subject": "ML",
+      "gradeLevel": "University",
+      "difficulty": "Advanced"
     },
     {
       "id": "organic-chemistry",
       "title": "Organic Chemistry and Alkanes (100 Questions)",
-      "file": "organic-chemistry.json"
+      "file": "organic-chemistry.json",
+      "subject": "chemistry",
+      "gradeLevel": "University",
+      "difficulty": "Intermediate"
     },
     {
       "id": "waterfall-methodology",
       "title": "Waterfall Project Management (100 Questions)",
-      "file": "waterfall-methodology.json"
+      "file": "waterfall-methodology.json",
+      "subject": "GRD",
+      "gradeLevel": "University",
+      "difficulty": "Beginner"
     }
   ]
 }

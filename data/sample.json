@@ -42,6 +42,13 @@
       "modelAnswer": "Overfitting happens when a model memorizes training data—including noise—so it scores well on that data but generalizes poorly to new examples."
     },
     {
+      "id": "q-code",
+      "type": "code",
+      "prompt": "Write the JavaScript expression that returns the number 42.",
+      "answer": "42",
+      "explanation": "The answer is checked as an exact string, so whitespace and line breaks matter."
+    },
+    {
       "id": "q6",
       "type": "mcq",
       "prompt": "ما ناتج 3 × 3؟",

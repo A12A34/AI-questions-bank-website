@@ -25,7 +25,19 @@
       <main id="view-home" class="view">
         <h1>Choose a bank</h1>
         <p class="lede">Open a set of questions, then switch between Practice (feedback after each item) and Test (score after you submit).</p>
-        <ul id="bank-list" class="bank-list"></ul>
+        <div class="home-actions">
+          <button type="button" id="btn-manage-folders" class="btn btn-secondary">Manage folders</button>
+        </div>
+        <section id="folder-manager" class="folder-manager" hidden aria-labelledby="folder-manager-title">
+          <div class="folder-manager-header">
+            <h2 id="folder-manager-title">Manage folders</h2>
+            <button type="button" id="btn-close-folder-manager" class="btn btn-ghost">Close</button>
+          </div>
+          <p class="manager-note">Folder changes are saved in this browser. Private folders are hidden from visitors using this browser unless you make them public again.</p>
+          <div id="folder-manager-list" class="folder-manager-list"></div>
+          <button type="button" id="btn-add-folder" class="btn btn-primary">New folder</button>
+        </section>
+        <div id="bank-list" class="bank-list"></div>
         <p id="home-status" class="status" hidden></p>
       </main>
 
@@ -90,6 +102,6 @@
         </div>
       </main>
     </div>
-    <script src="./js/app.js" type="module"></script>
+    <script src="./js/app.js?v=2" type="module"></script>
   </body>
 </html>

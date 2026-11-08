@@ -153,6 +153,8 @@ export function buildOfflineQuizHtml(bank) {
         return copy;
       };
       const isWriting = (question) => question.type === "writing";
+      const isCode = (question) => question.type === "code" || question.type === "code-writing";
+      const expectedCode = (question) => question.answer ?? question.modelAnswer ?? "";
       const isLocked = (question) => state.submitted || state.revealed.has(question.id);
       const answerFor = (question) => state.answers.get(question.id);
       const sameSet = (a, b) => a.length === b.length && [...a].sort((x, y) => x - y).every((value, i) => value === [...b].sort((x, y) => x - y)[i]);
@@ -182,6 +184,10 @@ export function buildOfflineQuizHtml(bank) {
       function grade(question) {
         const answer = answerFor(question);
         if (isWriting(question)) return { answered: Boolean(String(answer || "").trim()), correct: null };
+        if (isCode(question)) return {
+          answered: typeof answer === "string" && answer.length > 0,
+          correct: typeof answer === "string" && answer === expectedCode(question)
+        };
         if (answer === undefined || answer === null || (Array.isArray(answer) && answer.some((value) => value === ""))) {
           return { answered: false, correct: false };
         }
@@ -295,9 +301,9 @@ export function buildOfflineQuizHtml(bank) {
             wrap.append(row);
           });
           card.append(wrap);
-        } else if (isWriting(question)) {
+        } else if (isWriting(question) || isCode(question)) {
           const area = document.createElement("textarea");
-          area.placeholder = "Write your answer here...";
+          area.placeholder = isCode(question) ? "Write your code here..." : "Write your answer here...";
           area.value = answerFor(question) || "";
           area.disabled = isLocked(question);
           area.addEventListener("input", () => state.answers.set(question.id, area.value));
@@ -319,6 +325,14 @@ export function buildOfflineQuizHtml(bank) {
             const heading = document.createElement("strong");
             heading.textContent = "Model answer";
             model.append(heading, document.createTextNode(question.modelAnswer));
+            card.append(model);
+          }
+          if (isCode(question)) {
+            const model = document.createElement("div");
+            model.className = "model-answer";
+            const heading = document.createElement("strong");
+            heading.textContent = "Correct code";
+            model.append(heading, document.createTextNode(expectedCode(question)));
             card.append(model);
           }
         }
@@ -363,7 +377,7 @@ export function buildOfflineQuizHtml(bank) {
         if (state.submitted) {
           $("#score").textContent =
             state.score.total === 0
-              ? "Submitted — writing questions are self-graded against the model answers."
+              ? "Submitted — no automatically scored questions."
               : "Score: " + state.score.correct + " / " + state.score.total + " (writing items excluded)";
         }
         questionsHost.replaceChildren(...state.questions.map(renderQuestion));

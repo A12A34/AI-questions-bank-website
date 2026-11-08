@@ -1,0 +1,1356 @@
+{
+  "id": "iot301-ws6-ws7",
+  "title": "IoT301 – WS6 and WS7: 150 Practice Questions",
+  "questions": [
+    {
+      "id": "iot301-ws6-ws7-q1",
+      "type": "mcq",
+      "prompt": "A traffic light is showing green. A pedestrian presses the button. What should happen first?",
+      "choices": [
+        "Red turns on immediately.",
+        "Green turns off, then yellow starts flashing.",
+        "Yellow and green stay on together.",
+        "The program stops."
+      ],
+      "answer": 1,
+      "explanation": "The WS6 sequence requires green to turn off before the yellow transition begins."
+    },
+    {
+      "id": "iot301-ws6-ws7-q2",
+      "type": "mcq",
+      "prompt": "The yellow light must flash for five seconds with 0.5 seconds ON and 0.5 seconds OFF. How many complete flashes are needed?",
+      "choices": [
+        "2",
+        "3",
+        "5",
+        "10"
+      ],
+      "answer": 2,
+      "explanation": "One complete flash takes one second, so five flashes take five seconds."
+    },
+    {
+      "id": "iot301-ws6-ws7-q3",
+      "type": "mcq",
+      "prompt": "A student changes range(5) to range(3) in the yellow-light loop. How long will yellow flash?",
+      "choices": [
+        "1 second",
+        "3 seconds",
+        "5 seconds",
+        "6 seconds"
+      ],
+      "answer": 1,
+      "explanation": "Each iteration takes one second, so three iterations take three seconds."
+    },
+    {
+      "id": "iot301-ws6-ws7-q4",
+      "type": "mcq",
+      "prompt": "A student writes sleep(5) instead of sleep(30) for the red period. What happens?",
+      "choices": [
+        "Red stays on for 30 seconds.",
+        "Red stays on for 5 seconds.",
+        "Red flashes five times.",
+        "The program waits for a button press."
+      ],
+      "answer": 1,
+      "explanation": "sleep(5) pauses the program for five seconds."
+    },
+    {
+      "id": "iot301-ws6-ws7-q5",
+      "type": "mcq",
+      "prompt": "Which instruction prevents a held pedestrian button from triggering another sequence?",
+      "choices": [
+        "green.on()",
+        "sleep(30)",
+        "pedestrian_button.wait_for_release()",
+        "yellow.off()"
+      ],
+      "answer": 2,
+      "explanation": "Waiting for release separates one button press from the next cycle."
+    },
+    {
+      "id": "iot301-ws6-ws7-q6",
+      "type": "mcq",
+      "prompt": "What is the main risk of connecting RGB channels without individual resistors?",
+      "choices": [
+        "The LED always displays white.",
+        "Excessive current may damage the LED or GPIO pins.",
+        "The button stops working.",
+        "The program runs more slowly."
+      ],
+      "answer": 1,
+      "explanation": "Each colour channel needs current limiting."
+    },
+    {
+      "id": "iot301-ws6-ws7-q7",
+      "type": "mcq",
+      "prompt": "In a common-cathode RGB LED, what happens when the red GPIO output is HIGH?",
+      "choices": [
+        "Red turns on.",
+        "Red turns off.",
+        "Blue turns on.",
+        "All channels turn off."
+      ],
+      "answer": 0,
+      "explanation": "Common-cathode channels turn on with HIGH."
+    },
+    {
+      "id": "iot301-ws6-ws7-q8",
+      "type": "mcq",
+      "prompt": "What is likely when common-anode logic is used as if the LED were common-cathode?",
+      "choices": [
+        "Colours may operate with inverted ON/OFF behaviour.",
+        "The LED produces only white.",
+        "The LED corrects the program.",
+        "The Raspberry Pi ignores the LED."
+      ],
+      "answer": 0,
+      "explanation": "Common-anode logic is inverted."
+    },
+    {
+      "id": "iot301-ws6-ws7-q9",
+      "type": "mcq",
+      "prompt": "Which RGB value displays yellow?",
+      "choices": [
+        "(0, 0, 1)",
+        "(1, 1, 0)",
+        "(1, 0, 1)",
+        "(0, 1, 1)"
+      ],
+      "answer": 1,
+      "explanation": "Yellow combines red and green."
+    },
+    {
+      "id": "iot301-ws6-ws7-q10",
+      "type": "mcq",
+      "prompt": "What colour should appear for led.color = (0, 1, 1)?",
+      "choices": [
+        "Magenta",
+        "Yellow",
+        "Cyan",
+        "White"
+      ],
+      "answer": 2,
+      "explanation": "Green and blue together produce cyan."
+    },
+    {
+      "id": "iot301-ws6-ws7-q11",
+      "type": "mcq",
+      "prompt": "Which channels are active in led.color = (1, 0, 1)?",
+      "choices": [
+        "Red and green",
+        "Green and blue",
+        "Red and blue",
+        "All three"
+      ],
+      "answer": 2,
+      "explanation": "The first and third values are active."
+    },
+    {
+      "id": "iot301-ws6-ws7-q12",
+      "type": "mcq",
+      "prompt": "Which value turns an RGB LED completely off?",
+      "choices": [
+        "(1, 1, 1)",
+        "(0, 0, 0)",
+        "(1, 0, 0)",
+        "(0, 1, 1)"
+      ],
+      "answer": 1,
+      "explanation": "All three channels must be zero."
+    },
+    {
+      "id": "iot301-ws6-ws7-q13",
+      "type": "mcq",
+      "prompt": "What does led.color = (0.5, 0, 0) mean?",
+      "choices": [
+        "Full red brightness",
+        "Half red brightness",
+        "Half blue brightness",
+        "All colours off"
+      ],
+      "answer": 1,
+      "explanation": "A channel value of 0.5 represents intermediate brightness."
+    },
+    {
+      "id": "iot301-ws6-ws7-q14",
+      "type": "mcq",
+      "prompt": "Which instruction displays white?",
+      "choices": [
+        "led.color = (1, 0, 0)",
+        "led.color = (0, 1, 0)",
+        "led.color = (0, 0, 1)",
+        "led.color = (1, 1, 1)"
+      ],
+      "answer": 3,
+      "explanation": "White activates all three channels."
+    },
+    {
+      "id": "iot301-ws6-ws7-q15",
+      "type": "mcq",
+      "prompt": "What is the total resistance of 100 ohms and 200 ohms in series?",
+      "choices": [
+        "50 ohms",
+        "100 ohms",
+        "200 ohms",
+        "300 ohms"
+      ],
+      "answer": 3,
+      "explanation": "Series resistance is the sum: 100 + 200 = 300 ohms."
+    },
+    {
+      "id": "iot301-ws6-ws7-q16",
+      "type": "mcq",
+      "prompt": "What is the approximate resistance of 100 ohms and 200 ohms in parallel?",
+      "choices": [
+        "67 ohms",
+        "100 ohms",
+        "200 ohms",
+        "300 ohms"
+      ],
+      "answer": 0,
+      "explanation": "The parallel formula gives approximately 66.7 ohms."
+    },
+    {
+      "id": "iot301-ws6-ws7-q17",
+      "type": "mcq",
+      "prompt": "What is the best correction when green and blue RGB channels have no resistors?",
+      "choices": [
+        "Remove the red resistor.",
+        "Add a separate resistor to green and blue.",
+        "Connect all channels directly to GND.",
+        "Use one resistor for the button."
+      ],
+      "answer": 1,
+      "explanation": "Each colour channel needs its own current-limiting resistor."
+    },
+    {
+      "id": "iot301-ws6-ws7-q18",
+      "type": "mcq",
+      "prompt": "What is likely if a 330-ohm resistor is replaced with much higher resistance?",
+      "choices": [
+        "The LED becomes brighter.",
+        "The LED becomes dimmer or may not light.",
+        "The LED becomes a buzzer.",
+        "The GPIO changes automatically."
+      ],
+      "answer": 1,
+      "explanation": "Higher resistance reduces current and brightness."
+    },
+    {
+      "id": "iot301-ws6-ws7-q19",
+      "type": "mcq",
+      "prompt": "Which library supports colour names such as red and blue?",
+      "choices": [
+        "time",
+        "signal",
+        "colorzero",
+        "random"
+      ],
+      "answer": 2,
+      "explanation": "colorzero provides the Color class."
+    },
+    {
+      "id": "iot301-ws6-ws7-q20",
+      "type": "mcq",
+      "prompt": "Which instruction sets an RGB LED to blue using Color?",
+      "choices": [
+        "led.color = Color(\"blue\")",
+        "led.blue = Color(\"blue\")",
+        "led = \"blue\"",
+        "Color.led(\"blue\")"
+      ],
+      "answer": 0,
+      "explanation": "Color(\"blue\") can be assigned to the color property."
+    },
+    {
+      "id": "iot301-ws6-ws7-q21",
+      "type": "mcq",
+      "prompt": "Which command starts the Python 3 interpreter on Raspberry Pi?",
+      "choices": [
+        "python",
+        "python3",
+        "gpiozero",
+        "run.py"
+      ],
+      "answer": 1,
+      "explanation": "python3 launches the Python 3 interpreter."
+    },
+    {
+      "id": "iot301-ws6-ws7-q22",
+      "type": "mcq",
+      "prompt": "In RGBLED(17, 27, 22), which channel uses GPIO27?",
+      "choices": [
+        "Red",
+        "Green",
+        "Blue",
+        "Common cathode"
+      ],
+      "answer": 1,
+      "explanation": "RGBLED arguments are red, green, then blue."
+    },
+    {
+      "id": "iot301-ws6-ws7-q23",
+      "type": "mcq",
+      "prompt": "What changes when RGBLED(17, 22, 27) is used instead of RGBLED(17, 27, 22)?",
+      "choices": [
+        "Red and green are swapped.",
+        "Green and blue are swapped.",
+        "The common cathode changes.",
+        "The button pin changes."
+      ],
+      "answer": 1,
+      "explanation": "The second and third arguments represent green and blue."
+    },
+    {
+      "id": "iot301-ws6-ws7-q24",
+      "type": "mcq",
+      "prompt": "How many ON/OFF combinations exist for three RGB channels?",
+      "choices": [
+        "3",
+        "6",
+        "8",
+        "9"
+      ],
+      "answer": 2,
+      "explanation": "There are 2^3, or eight, combinations."
+    },
+    {
+      "id": "iot301-ws6-ws7-q25",
+      "type": "mcq",
+      "prompt": "What is the purpose of three nested loops using range(2)?",
+      "choices": [
+        "Create only three colours.",
+        "Test all eight ON/OFF combinations.",
+        "Flash for two seconds.",
+        "Wait for three presses."
+      ],
+      "answer": 1,
+      "explanation": "Each loop controls one binary channel."
+    },
+    {
+      "id": "iot301-ws6-ws7-q26",
+      "type": "mcq",
+      "prompt": "What changes if time.sleep(1) becomes time.sleep(2) in the colour cycle?",
+      "choices": [
+        "Each combination displays longer.",
+        "Every second colour is skipped.",
+        "The combinations double.",
+        "The LED stays off."
+      ],
+      "answer": 0,
+      "explanation": "The delay controls display duration."
+    },
+    {
+      "id": "iot301-ws6-ws7-q27",
+      "type": "mcq",
+      "prompt": "Which value makes the RGB LED green by default?",
+      "choices": [
+        "(1, 0, 0)",
+        "(0, 1, 0)",
+        "(0, 0, 1)",
+        "(1, 1, 1)"
+      ],
+      "answer": 1,
+      "explanation": "Green is the second channel."
+    },
+    {
+      "id": "iot301-ws6-ws7-q28",
+      "type": "mcq",
+      "prompt": "Which pair starts a red flashing LED and buzzer?",
+      "choices": [
+        "led.off() and buzzer.off()",
+        "led.blink(0.2, 0.2, on_color=(1, 0, 0), off_color=(0, 0, 0)) and buzzer.beep(0.2, 0.2)",
+        "led.color = (0, 1, 0) and buzzer.off()",
+        "led.on() and buzzer.close()"
+      ],
+      "answer": 1,
+      "explanation": "These calls start matching red flashing and beeping."
+    },
+    {
+      "id": "iot301-ws6-ws7-q29",
+      "type": "mcq",
+      "prompt": "Which setting lets blink continue while the program runs the next line?",
+      "choices": [
+        "background=True",
+        "background=False",
+        "sleep=True",
+        "loop=False"
+      ],
+      "answer": 0,
+      "explanation": "background=True makes the operation non-blocking."
+    },
+    {
+      "id": "iot301-ws6-ws7-q30",
+      "type": "mcq",
+      "prompt": "What happens when an indefinite operation uses background=False?",
+      "choices": [
+        "It runs once.",
+        "The program waits and may never reach the next line.",
+        "It runs faster.",
+        "It becomes a button event."
+      ],
+      "answer": 1,
+      "explanation": "A blocking indefinite operation prevents later instructions."
+    },
+    {
+      "id": "iot301-ws6-ws7-q31",
+      "type": "mcq",
+      "prompt": "What should the second button press do in the RGB alarm project?",
+      "choices": [
+        "Restart the Raspberry Pi.",
+        "Stop the LED flashing and buzzer.",
+        "Change the LED to blue.",
+        "Start the traffic-light sequence."
+      ],
+      "answer": 1,
+      "explanation": "The second press ends the alarm state."
+    },
+    {
+      "id": "iot301-ws6-ws7-q32",
+      "type": "mcq",
+      "prompt": "Why use wait_for_release() after a button press?",
+      "choices": [
+        "It makes the LED green.",
+        "It prevents a held button affecting the next press cycle.",
+        "It makes the buzzer louder.",
+        "It changes GPIO numbers."
+      ],
+      "answer": 1,
+      "explanation": "Waiting for release separates distinct presses."
+    },
+    {
+      "id": "iot301-ws6-ws7-q33",
+      "type": "mcq",
+      "prompt": "Which structure repeats a traffic-light sequence continuously?",
+      "choices": [
+        "if False:",
+        "while True:",
+        "range(0)",
+        "break"
+      ],
+      "answer": 1,
+      "explanation": "while True creates an infinite loop."
+    },
+    {
+      "id": "iot301-ws6-ws7-q34",
+      "type": "mcq",
+      "prompt": "What should happen after the final yellow transition?",
+      "choices": [
+        "Turn green on.",
+        "Turn red on permanently.",
+        "Stop the program.",
+        "Wait before turning green on."
+      ],
+      "answer": 0,
+      "explanation": "The WS6 sequence returns to green."
+    },
+    {
+      "id": "iot301-ws6-ws7-q35",
+      "type": "mcq",
+      "prompt": "What should be corrected if red remains on while yellow flashes?",
+      "choices": [
+        "Turn red off before yellow starts.",
+        "Turn green on simultaneously.",
+        "Increase button delay.",
+        "Remove the loop."
+      ],
+      "answer": 0,
+      "explanation": "The stages should not overlap."
+    },
+    {
+      "id": "iot301-ws6-ws7-q36",
+      "type": "mcq",
+      "prompt": "Which instruction controls a 30-second red period?",
+      "choices": [
+        "range(30)",
+        "sleep(30)",
+        "Button(30)",
+        "LED(30)"
+      ],
+      "answer": 1,
+      "explanation": "sleep(30) pauses while red remains on."
+    },
+    {
+      "id": "iot301-ws6-ws7-q37",
+      "type": "mcq",
+      "prompt": "Which testing adjustment makes the traffic-light sequence faster?",
+      "choices": [
+        "Yellow delay 0.1 seconds and red duration 5 seconds.",
+        "Yellow delay 5 seconds and red duration 30 seconds.",
+        "Yellow delay 30 seconds and red duration 0.1 seconds.",
+        "Remove all delays."
+      ],
+      "answer": 0,
+      "explanation": "Short delays are suitable for testing only."
+    },
+    {
+      "id": "iot301-ws6-ws7-q38",
+      "type": "mcq",
+      "prompt": "What is the main logic change for a pedestrian-perspective traffic light?",
+      "choices": [
+        "Remove the button.",
+        "Invert the red and green roles.",
+        "Remove yellow.",
+        "Remove the loop."
+      ],
+      "answer": 1,
+      "explanation": "Pedestrian perspective uses the opposite default role."
+    },
+    {
+      "id": "iot301-ws6-ws7-q39",
+      "type": "mcq",
+      "prompt": "How long is one flash with 0.5 seconds ON and OFF?",
+      "choices": [
+        "0.5 seconds",
+        "1 second",
+        "2 seconds",
+        "5 seconds"
+      ],
+      "answer": 1,
+      "explanation": "The two half-second periods total one second."
+    },
+    {
+      "id": "iot301-ws6-ws7-q40",
+      "type": "mcq",
+      "prompt": "What should be checked first if RGB values produce the wrong colour?",
+      "choices": [
+        "RGB channel connections and GPIO assignments.",
+        "Python version only.",
+        "Buzzer sound.",
+        "Button delay."
+      ],
+      "answer": 0,
+      "explanation": "The software channel order must match the wiring."
+    },
+    {
+      "id": "iot301-ws6-ws7-q41",
+      "type": "mcq",
+      "prompt": "Which correction uses a Color object for red?",
+      "choices": [
+        "led.color = Color(\"red\")",
+        "led.color = Button(\"red\")",
+        "led.color = LED(\"red\")",
+        "led.color = sleep(\"red\")"
+      ],
+      "answer": 0,
+      "explanation": "Color(\"red\") creates the named colour value."
+    },
+    {
+      "id": "iot301-ws6-ws7-q42",
+      "type": "mcq",
+      "prompt": "With import gpiozero, which statement creates an RGB LED?",
+      "choices": [
+        "led = RGBLED(17, 27, 22)",
+        "led = gpiozero.RGBLED(17, 27, 22)",
+        "led = gpiozero(17, 27, 22)",
+        "led = gpiozero.LED(17, 27, 22)"
+      ],
+      "answer": 1,
+      "explanation": "The module prefix is required after import gpiozero."
+    },
+    {
+      "id": "iot301-ws6-ws7-q43",
+      "type": "mcq",
+      "prompt": "With from gpiozero import RGBLED, which statement is correct?",
+      "choices": [
+        "led = gpiozero.RGBLED(17, 27, 22)",
+        "led = RGBLED(17, 27, 22)",
+        "led = gpiozero(17, 27, 22)",
+        "led = RGBLED(\"red\")"
+      ],
+      "answer": 1,
+      "explanation": "Direct import allows RGBLED without a prefix."
+    },
+    {
+      "id": "iot301-ws6-ws7-q44",
+      "type": "mcq",
+      "prompt": "Which instruction displays magenta?",
+      "choices": [
+        "led.color = (1, 0, 1)",
+        "led.color = (0, 1, 0)",
+        "led.color = (0, 1, 1)",
+        "led.color = (1, 1, 0)"
+      ],
+      "answer": 0,
+      "explanation": "Magenta combines red and blue."
+    },
+    {
+      "id": "iot301-ws6-ws7-q45",
+      "type": "mcq",
+      "prompt": "Which instruction displays cyan?",
+      "choices": [
+        "led.color = (1, 0, 0)",
+        "led.color = (0, 1, 1)",
+        "led.color = (1, 1, 0)",
+        "led.color = (1, 0, 1)"
+      ],
+      "answer": 1,
+      "explanation": "Cyan combines green and blue."
+    },
+    {
+      "id": "iot301-ws6-ws7-q46",
+      "type": "mcq",
+      "prompt": "Where should a common-cathode RGB pin be connected?",
+      "choices": [
+        "Directly to GND",
+        "To the buzzer",
+        "To GPIO17",
+        "Leave it unconnected"
+      ],
+      "answer": 0,
+      "explanation": "The common cathode is the shared negative connection."
+    },
+    {
+      "id": "iot301-ws6-ws7-q47",
+      "type": "mcq",
+      "prompt": "Why use three 330-ohm resistors for an RGB LED?",
+      "choices": [
+        "Each channel gets its own current limiting.",
+        "It forces one colour.",
+        "It speeds up the button.",
+        "It removes the need for GND."
+      ],
+      "answer": 0,
+      "explanation": "Separate resistors protect each channel."
+    },
+    {
+      "id": "iot301-ws6-ws7-q48",
+      "type": "mcq",
+      "prompt": "Why are background operations useful in the RGB alarm?",
+      "choices": [
+        "They allow outputs to operate while the program executes other instructions.",
+        "They permanently stop the program.",
+        "They convert RGBLED to LED.",
+        "They remove the button."
+      ],
+      "answer": 0,
+      "explanation": "Background operations are non-blocking."
+    },
+    {
+      "id": "iot301-ws6-ws7-q49",
+      "type": "mcq",
+      "prompt": "What is the purpose of led.off() and buzzer.off() after the second press?",
+      "choices": [
+        "Activate the alarm.",
+        "Stop the LED and buzzer outputs.",
+        "Restart Python.",
+        "Turn the traffic light green."
+      ],
+      "answer": 1,
+      "explanation": "The off methods end the alarm state."
+    },
+    {
+      "id": "iot301-ws6-ws7-q50",
+      "type": "mcq",
+      "prompt": "What should happen after the RGB alarm stops?",
+      "choices": [
+        "Exit the program.",
+        "Return to green and wait for another press.",
+        "Leave the buzzer on.",
+        "Leave the LED red."
+      ],
+      "answer": 1,
+      "explanation": "The loop returns to the default state."
+    },
+    {
+      "id": "iot301-ws6-ws7-q51",
+      "type": "tf",
+      "prompt": "The program should turn green off before beginning yellow flashing.",
+      "answer": true,
+      "explanation": "This follows the required traffic-light sequence."
+    },
+    {
+      "id": "iot301-ws6-ws7-q52",
+      "type": "tf",
+      "prompt": "The final WS6 program keeps red on for five seconds.",
+      "answer": false,
+      "explanation": "The final program requires 30 seconds; five seconds is for testing."
+    },
+    {
+      "id": "iot301-ws6-ws7-q53",
+      "type": "tf",
+      "prompt": "Yellow ON for 0.5 seconds and OFF for 0.5 seconds makes a one-second flash.",
+      "answer": true,
+      "explanation": "The two delays add up to one second."
+    },
+    {
+      "id": "iot301-ws6-ws7-q54",
+      "type": "tf",
+      "prompt": "Changing range(5) to range(10) with the same delays makes the transition last ten seconds.",
+      "answer": true,
+      "explanation": "Each iteration takes one second."
+    },
+    {
+      "id": "iot301-ws6-ws7-q55",
+      "type": "tf",
+      "prompt": "sleep(30) turns the red LED on automatically.",
+      "answer": false,
+      "explanation": "sleep only pauses; red.on() turns the LED on."
+    },
+    {
+      "id": "iot301-ws6-ws7-q56",
+      "type": "tf",
+      "prompt": "The traffic-light program uses while True to repeat continuously.",
+      "answer": true,
+      "explanation": "An infinite loop keeps the system operating."
+    },
+    {
+      "id": "iot301-ws6-ws7-q57",
+      "type": "tf",
+      "prompt": "wait_for_release can prevent a held button from triggering another cycle.",
+      "answer": true,
+      "explanation": "It waits until the button is released."
+    },
+    {
+      "id": "iot301-ws6-ws7-q58",
+      "type": "tf",
+      "prompt": "The optional buzzer is required for the pedestrian simulator.",
+      "answer": false,
+      "explanation": "The buzzer is optional."
+    },
+    {
+      "id": "iot301-ws6-ws7-q59",
+      "type": "tf",
+      "prompt": "Green is the default light in the car-perspective simulator.",
+      "answer": true,
+      "explanation": "The system normally allows cars to pass."
+    },
+    {
+      "id": "iot301-ws6-ws7-q60",
+      "type": "tf",
+      "prompt": "The pedestrian-perspective version inverts red and green roles.",
+      "answer": true,
+      "explanation": "Pedestrians receive green temporarily when safe."
+    },
+    {
+      "id": "iot301-ws6-ws7-q61",
+      "type": "tf",
+      "prompt": "A common-cathode RGB LED uses HIGH to turn on a colour channel.",
+      "answer": true,
+      "explanation": "Its cathode is connected to GND."
+    },
+    {
+      "id": "iot301-ws6-ws7-q62",
+      "type": "tf",
+      "prompt": "A common-anode RGB LED uses HIGH to turn on a colour channel.",
+      "answer": false,
+      "explanation": "Common-anode logic is inverted."
+    },
+    {
+      "id": "iot301-ws6-ws7-q63",
+      "type": "tf",
+      "prompt": "A common-cathode RGB LED has three channels sharing one cathode.",
+      "answer": true,
+      "explanation": "The red, green, and blue channels share the negative connection."
+    },
+    {
+      "id": "iot301-ws6-ws7-q64",
+      "type": "tf",
+      "prompt": "The common-cathode pin should connect directly to GND.",
+      "answer": true,
+      "explanation": "That is the required WS7 connection."
+    },
+    {
+      "id": "iot301-ws6-ws7-q65",
+      "type": "tf",
+      "prompt": "One 330-ohm resistor is enough for all three RGB channels.",
+      "answer": false,
+      "explanation": "Each channel needs its own resistor."
+    },
+    {
+      "id": "iot301-ws6-ws7-q66",
+      "type": "tf",
+      "prompt": "A resistor helps protect both the LED and GPIO pins.",
+      "answer": true,
+      "explanation": "It limits current."
+    },
+    {
+      "id": "iot301-ws6-ws7-q67",
+      "type": "tf",
+      "prompt": "Very high resistance can make an LED dim or fail to light.",
+      "answer": true,
+      "explanation": "Higher resistance reduces current."
+    },
+    {
+      "id": "iot301-ws6-ws7-q68",
+      "type": "tf",
+      "prompt": "Very low resistance can risk damage to the LED and GPIO pins.",
+      "answer": true,
+      "explanation": "Too much current can flow."
+    },
+    {
+      "id": "iot301-ws6-ws7-q69",
+      "type": "tf",
+      "prompt": "100 ohms and 200 ohms in series total 200 ohms.",
+      "answer": false,
+      "explanation": "Series resistance is 300 ohms."
+    },
+    {
+      "id": "iot301-ws6-ws7-q70",
+      "type": "tf",
+      "prompt": "100 ohms and 200 ohms in parallel total approximately 67 ohms.",
+      "answer": true,
+      "explanation": "The parallel formula gives about 66.7 ohms."
+    },
+    {
+      "id": "iot301-ws6-ws7-q71",
+      "type": "tf",
+      "prompt": "In led.color = (1, 0, 0), values represent red, green, and blue in that order.",
+      "answer": true,
+      "explanation": "The tuple follows RGB order."
+    },
+    {
+      "id": "iot301-ws6-ws7-q72",
+      "type": "tf",
+      "prompt": "The value (0, 0, 1) produces red.",
+      "answer": false,
+      "explanation": "It produces blue."
+    },
+    {
+      "id": "iot301-ws6-ws7-q73",
+      "type": "tf",
+      "prompt": "The value (1, 1, 0) produces yellow.",
+      "answer": true,
+      "explanation": "Red and green combine to make yellow."
+    },
+    {
+      "id": "iot301-ws6-ws7-q74",
+      "type": "tf",
+      "prompt": "The value (1, 0, 1) produces cyan.",
+      "answer": false,
+      "explanation": "It produces magenta."
+    },
+    {
+      "id": "iot301-ws6-ws7-q75",
+      "type": "tf",
+      "prompt": "The value (1, 1, 1) activates all three channels.",
+      "answer": true,
+      "explanation": "All channels are at full brightness."
+    },
+    {
+      "id": "iot301-ws6-ws7-q76",
+      "type": "tf",
+      "prompt": "The value (0, 0, 0) turns the RGB LED off.",
+      "answer": true,
+      "explanation": "All channels are zero."
+    },
+    {
+      "id": "iot301-ws6-ws7-q77",
+      "type": "tf",
+      "prompt": "RGB channels can only use 0 or 1, never decimal values.",
+      "answer": false,
+      "explanation": "Values between 0 and 1 control intermediate brightness."
+    },
+    {
+      "id": "iot301-ws6-ws7-q78",
+      "type": "tf",
+      "prompt": "A value of 0.5 represents half brightness.",
+      "answer": true,
+      "explanation": "It is halfway between off and full brightness."
+    },
+    {
+      "id": "iot301-ws6-ws7-q79",
+      "type": "tf",
+      "prompt": "An RGB LED has eight ON/OFF combinations including OFF.",
+      "answer": true,
+      "explanation": "Three binary channels produce 2^3 combinations."
+    },
+    {
+      "id": "iot301-ws6-ws7-q80",
+      "type": "tf",
+      "prompt": "There are eight illuminated colours plus a separate OFF state with binary channels.",
+      "answer": false,
+      "explanation": "There are eight total combinations including OFF."
+    },
+    {
+      "id": "iot301-ws6-ws7-q81",
+      "type": "tf",
+      "prompt": "colorzero supports setting a colour by name.",
+      "answer": true,
+      "explanation": "The Color class accepts names such as red."
+    },
+    {
+      "id": "iot301-ws6-ws7-q82",
+      "type": "tf",
+      "prompt": "led.color = Color(\"red\") works after importing Color.",
+      "answer": true,
+      "explanation": "This is the colour-name method."
+    },
+    {
+      "id": "iot301-ws6-ws7-q83",
+      "type": "tf",
+      "prompt": "gpiozero provides the RGBLED class used in WS7.",
+      "answer": true,
+      "explanation": "RGBLED is part of gpiozero."
+    },
+    {
+      "id": "iot301-ws6-ws7-q84",
+      "type": "tf",
+      "prompt": "python3 starts the Python 3 interpreter.",
+      "answer": true,
+      "explanation": "It is the Raspberry Pi command used in the worksheet."
+    },
+    {
+      "id": "iot301-ws6-ws7-q85",
+      "type": "tf",
+      "prompt": "After import gpiozero, RGBLED can be used without a prefix.",
+      "answer": false,
+      "explanation": "Use gpiozero.RGBLED or import the class directly."
+    },
+    {
+      "id": "iot301-ws6-ws7-q86",
+      "type": "tf",
+      "prompt": "After from gpiozero import RGBLED, RGBLED(17, 27, 22) is valid.",
+      "answer": true,
+      "explanation": "The class was imported directly."
+    },
+    {
+      "id": "iot301-ws6-ws7-q87",
+      "type": "tf",
+      "prompt": "GPIO17, GPIO27, and GPIO22 represent red, green, and blue in that order.",
+      "answer": true,
+      "explanation": "This is the WS7 pin order."
+    },
+    {
+      "id": "iot301-ws6-ws7-q88",
+      "type": "tf",
+      "prompt": "Swapping green and blue GPIO connections can change displayed colours.",
+      "answer": true,
+      "explanation": "Software assumes the configured order matches wiring."
+    },
+    {
+      "id": "iot301-ws6-ws7-q89",
+      "type": "tf",
+      "prompt": "The RGB alarm LED should be green by default.",
+      "answer": true,
+      "explanation": "Green is the normal state."
+    },
+    {
+      "id": "iot301-ws6-ws7-q90",
+      "type": "tf",
+      "prompt": "The first button press should stop the buzzer.",
+      "answer": false,
+      "explanation": "The first press starts the alarm; the second stops it."
+    },
+    {
+      "id": "iot301-ws6-ws7-q91",
+      "type": "tf",
+      "prompt": "The RGB alarm uses GPIO2 for the button and GPIO3 for the buzzer.",
+      "answer": true,
+      "explanation": "These are the worksheet connections."
+    },
+    {
+      "id": "iot301-ws6-ws7-q92",
+      "type": "tf",
+      "prompt": "The alarm RGB LED uses GPIO17, GPIO27, and GPIO22.",
+      "answer": true,
+      "explanation": "These pins control red, green, and blue."
+    },
+    {
+      "id": "iot301-ws6-ws7-q93",
+      "type": "tf",
+      "prompt": "led.blink(0.2, 0.2, on_color=(1, 0, 0), off_color=(0, 0, 0)) flashes red with 0.2-second periods.",
+      "answer": true,
+      "explanation": "The ON and OFF periods are both 0.2 seconds."
+    },
+    {
+      "id": "iot301-ws6-ws7-q94",
+      "type": "tf",
+      "prompt": "buzzer.beep(0.2, 0.2) uses 0.2-second ON and OFF periods.",
+      "answer": true,
+      "explanation": "The arguments control active and inactive periods."
+    },
+    {
+      "id": "iot301-ws6-ws7-q95",
+      "type": "tf",
+      "prompt": "background=True lets blink or beep continue while other instructions execute.",
+      "answer": true,
+      "explanation": "The operation runs in the background."
+    },
+    {
+      "id": "iot301-ws6-ws7-q96",
+      "type": "tf",
+      "prompt": "background=False always lets the program continue immediately.",
+      "answer": false,
+      "explanation": "It makes the operation blocking."
+    },
+    {
+      "id": "iot301-ws6-ws7-q97",
+      "type": "tf",
+      "prompt": "An indefinite operation with background=False may never reach the next instruction.",
+      "answer": true,
+      "explanation": "The operation blocks the program."
+    },
+    {
+      "id": "iot301-ws6-ws7-q98",
+      "type": "tf",
+      "prompt": "The second button press stops both the LED flashing and buzzer.",
+      "answer": true,
+      "explanation": "The program calls the off methods."
+    },
+    {
+      "id": "iot301-ws6-ws7-q99",
+      "type": "tf",
+      "prompt": "After the alarm stops, the RGB project can repeat.",
+      "answer": true,
+      "explanation": "while True returns it to green and waits again."
+    },
+    {
+      "id": "iot301-ws6-ws7-q100",
+      "type": "tf",
+      "prompt": "Nested loops can test every RGB ON/OFF combination.",
+      "answer": true,
+      "explanation": "Each loop changes one channel between 0 and 1."
+    },
+    {
+      "id": "iot301-ws6-ws7-q101",
+      "type": "code",
+      "prompt": "Create a green LED named green connected to GPIO17.",
+      "answer": "green = LED(17)",
+      "explanation": "This creates the LED object."
+    },
+    {
+      "id": "iot301-ws6-ws7-q102",
+      "type": "code",
+      "prompt": "Create a yellow LED named yellow connected to GPIO27.",
+      "answer": "yellow = LED(27)",
+      "explanation": "This creates the yellow LED object."
+    },
+    {
+      "id": "iot301-ws6-ws7-q103",
+      "type": "code",
+      "prompt": "Create a red LED named red connected to GPIO22.",
+      "answer": "red = LED(22)",
+      "explanation": "This creates the red LED object."
+    },
+    {
+      "id": "iot301-ws6-ws7-q104",
+      "type": "code",
+      "prompt": "Create pedestrian_button connected to GPIO23.",
+      "answer": "pedestrian_button = Button(23)",
+      "explanation": "This creates the button object."
+    },
+    {
+      "id": "iot301-ws6-ws7-q105",
+      "type": "code",
+      "prompt": "Turn the green LED off.",
+      "answer": "green.off()",
+      "explanation": "off() switches the LED off."
+    },
+    {
+      "id": "iot301-ws6-ws7-q106",
+      "type": "code",
+      "prompt": "Turn the yellow LED on.",
+      "answer": "yellow.on()",
+      "explanation": "on() activates the yellow LED."
+    },
+    {
+      "id": "iot301-ws6-ws7-q107",
+      "type": "code",
+      "prompt": "Turn the yellow LED off.",
+      "answer": "yellow.off()",
+      "explanation": "This switches yellow off."
+    },
+    {
+      "id": "iot301-ws6-ws7-q108",
+      "type": "code",
+      "prompt": "Turn the red LED on.",
+      "answer": "red.on()",
+      "explanation": "This activates red."
+    },
+    {
+      "id": "iot301-ws6-ws7-q109",
+      "type": "code",
+      "prompt": "Turn the red LED off.",
+      "answer": "red.off()",
+      "explanation": "This switches red off."
+    },
+    {
+      "id": "iot301-ws6-ws7-q110",
+      "type": "code",
+      "prompt": "Keep the red LED on for 30 seconds using imported sleep.",
+      "answer": "sleep(30)",
+      "explanation": "This pauses for 30 seconds."
+    },
+    {
+      "id": "iot301-ws6-ws7-q111",
+      "type": "code",
+      "prompt": "Keep yellow on for half a second.",
+      "answer": "sleep(0.5)",
+      "explanation": "This creates a half-second delay."
+    },
+    {
+      "id": "iot301-ws6-ws7-q112",
+      "type": "code",
+      "prompt": "Write the loop header to flash yellow five times.",
+      "answer": "for _ in range(5):",
+      "explanation": "The loop repeats five times."
+    },
+    {
+      "id": "iot301-ws6-ws7-q113",
+      "type": "code",
+      "prompt": "Turn yellow on and wait 0.5 seconds.",
+      "answer": "yellow.on()\\nsleep(0.5)",
+      "explanation": "This starts the ON part of a flash."
+    },
+    {
+      "id": "iot301-ws6-ws7-q114",
+      "type": "code",
+      "prompt": "Turn yellow off and wait 0.5 seconds.",
+      "answer": "yellow.off()\\nsleep(0.5)",
+      "explanation": "This completes the OFF part."
+    },
+    {
+      "id": "iot301-ws6-ws7-q115",
+      "type": "code",
+      "prompt": "Write the loop header for continuous traffic-light operation.",
+      "answer": "while True:",
+      "explanation": "This creates an infinite loop."
+    },
+    {
+      "id": "iot301-ws6-ws7-q116",
+      "type": "code",
+      "prompt": "Wait for pedestrian_button to be pressed.",
+      "answer": "pedestrian_button.wait_for_press()",
+      "explanation": "The program pauses until a press."
+    },
+    {
+      "id": "iot301-ws6-ws7-q117",
+      "type": "code",
+      "prompt": "Wait for pedestrian_button to be released.",
+      "answer": "pedestrian_button.wait_for_release()",
+      "explanation": "This prevents held-button retriggering."
+    },
+    {
+      "id": "iot301-ws6-ws7-q118",
+      "type": "code",
+      "prompt": "Turn the default green light on.",
+      "answer": "green.on()",
+      "explanation": "This activates green."
+    },
+    {
+      "id": "iot301-ws6-ws7-q119",
+      "type": "code",
+      "prompt": "Turn yellow and red off before a new cycle.",
+      "answer": "yellow.off()\\nred.off()",
+      "explanation": "This establishes the default state."
+    },
+    {
+      "id": "iot301-ws6-ws7-q120",
+      "type": "code",
+      "prompt": "Use a five-second testing delay for red.",
+      "answer": "sleep(5)",
+      "explanation": "This is a faster testing delay."
+    },
+    {
+      "id": "iot301-ws6-ws7-q121",
+      "type": "code",
+      "prompt": "Use a 0.1-second testing ON delay for yellow.",
+      "answer": "yellow.on()\\nsleep(0.1)",
+      "explanation": "This shortens the test flash."
+    },
+    {
+      "id": "iot301-ws6-ws7-q122",
+      "type": "code",
+      "prompt": "Create led as an RGBLED on GPIO17, GPIO27, and GPIO22.",
+      "answer": "led = RGBLED(17, 27, 22)",
+      "explanation": "The arguments are red, green, and blue."
+    },
+    {
+      "id": "iot301-ws6-ws7-q123",
+      "type": "code",
+      "prompt": "Display full red.",
+      "answer": "led.color = (1, 0, 0)",
+      "explanation": "Only red is active."
+    },
+    {
+      "id": "iot301-ws6-ws7-q124",
+      "type": "code",
+      "prompt": "Display full green.",
+      "answer": "led.color = (0, 1, 0)",
+      "explanation": "Only green is active."
+    },
+    {
+      "id": "iot301-ws6-ws7-q125",
+      "type": "code",
+      "prompt": "Display full blue.",
+      "answer": "led.color = (0, 0, 1)",
+      "explanation": "Only blue is active."
+    },
+    {
+      "id": "iot301-ws6-ws7-q126",
+      "type": "code",
+      "prompt": "Display yellow.",
+      "answer": "led.color = (1, 1, 0)",
+      "explanation": "Red and green combine."
+    },
+    {
+      "id": "iot301-ws6-ws7-q127",
+      "type": "code",
+      "prompt": "Display cyan.",
+      "answer": "led.color = (0, 1, 1)",
+      "explanation": "Green and blue combine."
+    },
+    {
+      "id": "iot301-ws6-ws7-q128",
+      "type": "code",
+      "prompt": "Display magenta.",
+      "answer": "led.color = (1, 0, 1)",
+      "explanation": "Red and blue combine."
+    },
+    {
+      "id": "iot301-ws6-ws7-q129",
+      "type": "code",
+      "prompt": "Display white.",
+      "answer": "led.color = (1, 1, 1)",
+      "explanation": "All channels are active."
+    },
+    {
+      "id": "iot301-ws6-ws7-q130",
+      "type": "code",
+      "prompt": "Turn the RGB LED completely off.",
+      "answer": "led.color = (0, 0, 0)",
+      "explanation": "All channels are off."
+    },
+    {
+      "id": "iot301-ws6-ws7-q131",
+      "type": "code",
+      "prompt": "Set red to half brightness with green and blue off.",
+      "answer": "led.color = (0.5, 0, 0)",
+      "explanation": "Red is set to half brightness."
+    },
+    {
+      "id": "iot301-ws6-ws7-q132",
+      "type": "code",
+      "prompt": "Set green to half brightness with red and blue off.",
+      "answer": "led.color = (0, 0.5, 0)",
+      "explanation": "Green is set to half brightness."
+    },
+    {
+      "id": "iot301-ws6-ws7-q133",
+      "type": "code",
+      "prompt": "Set blue to half brightness with red and green off.",
+      "answer": "led.color = (0, 0, 0.5)",
+      "explanation": "Blue is set to half brightness."
+    },
+    {
+      "id": "iot301-ws6-ws7-q134",
+      "type": "code",
+      "prompt": "Set led to orange using imported Color.",
+      "answer": "led.color = Color(\"orange\")",
+      "explanation": "Color supports named colours."
+    },
+    {
+      "id": "iot301-ws6-ws7-q135",
+      "type": "code",
+      "prompt": "Set led to purple using Color.",
+      "answer": "led.color = Color(\"purple\")",
+      "explanation": "This assigns a named colour."
+    },
+    {
+      "id": "iot301-ws6-ws7-q136",
+      "type": "code",
+      "prompt": "Pause for one second using imported time.",
+      "answer": "time.sleep(1)",
+      "explanation": "This delays one second."
+    },
+    {
+      "id": "iot301-ws6-ws7-q137",
+      "type": "code",
+      "prompt": "Create the red-channel loop for the RGB cycle.",
+      "answer": "for r in range(2):",
+      "explanation": "r takes values 0 and 1."
+    },
+    {
+      "id": "iot301-ws6-ws7-q138",
+      "type": "code",
+      "prompt": "Create the green-channel loop for the RGB cycle.",
+      "answer": "for g in range(2):",
+      "explanation": "g takes values 0 and 1."
+    },
+    {
+      "id": "iot301-ws6-ws7-q139",
+      "type": "code",
+      "prompt": "Create the blue-channel loop for the RGB cycle.",
+      "answer": "for b in range(2):",
+      "explanation": "b takes values 0 and 1."
+    },
+    {
+      "id": "iot301-ws6-ws7-q140",
+      "type": "code",
+      "prompt": "Assign current r, g, and b values to led.",
+      "answer": "led.color = (r, g, b)",
+      "explanation": "This displays the current combination."
+    },
+    {
+      "id": "iot301-ws6-ws7-q141",
+      "type": "code",
+      "prompt": "Create button connected to GPIO2.",
+      "answer": "button = Button(2)",
+      "explanation": "This creates the alarm button."
+    },
+    {
+      "id": "iot301-ws6-ws7-q142",
+      "type": "code",
+      "prompt": "Create buzzer connected to GPIO3.",
+      "answer": "buzzer = Buzzer(3)",
+      "explanation": "This creates the buzzer object."
+    },
+    {
+      "id": "iot301-ws6-ws7-q143",
+      "type": "code",
+      "prompt": "Set the alarm LED green by default.",
+      "answer": "led.color = (0, 1, 0)",
+      "explanation": "Green is the normal state."
+    },
+    {
+      "id": "iot301-ws6-ws7-q144",
+      "type": "code",
+      "prompt": "Flash red for 0.2 seconds ON and OFF.",
+      "answer": "led.blink(0.2, 0.2, on_color=(1, 0, 0), off_color=(0, 0, 0))",
+      "explanation": "This flashes red."
+    },
+    {
+      "id": "iot301-ws6-ws7-q145",
+      "type": "code",
+      "prompt": "Beep for 0.2 seconds ON and OFF.",
+      "answer": "buzzer.beep(0.2, 0.2)",
+      "explanation": "This starts the repeating beep."
+    },
+    {
+      "id": "iot301-ws6-ws7-q146",
+      "type": "code",
+      "prompt": "Stop the RGB LED alarm.",
+      "answer": "led.off()",
+      "explanation": "This stops the LED output."
+    },
+    {
+      "id": "iot301-ws6-ws7-q147",
+      "type": "code",
+      "prompt": "Stop the buzzer alarm.",
+      "answer": "buzzer.off()",
+      "explanation": "This stops the buzzer."
+    },
+    {
+      "id": "iot301-ws6-ws7-q148",
+      "type": "code",
+      "prompt": "Beep in the background with 0.2-second periods.",
+      "answer": "buzzer.beep(0.2, 0.2, background=True)",
+      "explanation": "The program can continue while it beeps."
+    },
+    {
+      "id": "iot301-ws6-ws7-q149",
+      "type": "code",
+      "prompt": "Flash red in the background with 0.5-second periods.",
+      "answer": "led.blink(0.5, 0.5, on_color=(1, 0, 0), off_color=(0, 0, 0), background=True)",
+      "explanation": "The LED flashes without blocking."
+    },
+    {
+      "id": "iot301-ws6-ws7-q150",
+      "type": "code",
+      "prompt": "Wait for the second alarm button press.",
+      "answer": "button.wait_for_press()",
+      "explanation": "The program pauses for the next press."
+    }
+  ]
+}
