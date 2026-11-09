@@ -1,0 +1,216 @@
+{
+  "id": "code-practice-ws4-ws7",
+  "title": "code practice for WS4-WS7",
+  "questions": [
+    {
+      "id": "code-practice-ws4-ws7-q1",
+      "type": "code-writing",
+      "prompt": "Using door_button = Button(22) and alarm_led = LED(17), write one line so the LED turns on when the button is pressed.",
+      "answer": "door_button.when_pressed = alarm_led.on",
+      "explanation": "when_pressed runs the function after the button is pressed."
+    },
+    {
+      "id": "code-practice-ws4-ws7-q2",
+      "type": "code-writing",
+      "prompt": "Using the same button and LED, write one line so the LED turns off when the button is released.",
+      "answer": "door_button.when_released = alarm_led.off",
+      "explanation": "when_released runs after the button is released."
+    },
+    {
+      "id": "code-practice-ws4-ws7-q3",
+      "type": "code-writing",
+      "prompt": "Using bell = Buzzer(23), write one line to turn the buzzer on.",
+      "answer": "bell.on()",
+      "explanation": "Activates the buzzer continuously."
+    },
+    {
+      "id": "code-practice-ws4-ws7-q4",
+      "type": "code-writing",
+      "prompt": "Using the same buzzer, write one line to turn it off.",
+      "answer": "bell.off()",
+      "explanation": "Stops the buzzer."
+    },
+    {
+      "id": "code-practice-ws4-ws7-q5",
+      "type": "code-writing",
+      "prompt": "Using alarm = Buzzer(23), write one line to beep 0.2 seconds ON and 0.2 seconds OFF continuously.",
+      "answer": "alarm.beep(0.2, 0.2, background=True)",
+      "explanation": "background=True allows the program to continue while beeping."
+    },
+    {
+      "id": "code-practice-ws4-ws7-q6",
+      "type": "code-writing",
+      "prompt": "Using rgb = RGBLED(red=5, green=6, blue=26), write one line to make the RGB LED purple.",
+      "answer": "rgb.color = (1,0,1)",
+      "explanation": "Red plus blue produces purple."
+    },
+    {
+      "id": "code-practice-ws4-ws7-q7",
+      "type": "code-writing",
+      "prompt": "Using rgb = RGBLED(red=5, green=6, blue=26), make the RGB LED red using Color().",
+      "answer": "rgb.color = Color(\"red\")",
+      "explanation": "Changes the LED to red."
+    },
+    {
+      "id": "code-practice-ws4-ws7-q8",
+      "type": "code-writing",
+      "prompt": "Using the RGB LED object, write one line to turn it off.",
+      "answer": "rgb.off()",
+      "explanation": "All RGB colors become OFF."
+    },
+    {
+      "id": "code-practice-ws4-ws7-q9",
+      "type": "code-writing",
+      "prompt": "Using rgb, write one line to blink between blue and red every 0.5 seconds.",
+      "answer": "rgb.blink(0.5,0.5,on_color=(0,0,1),off_color=(1,0,0),background=False)",
+      "explanation": "Alternates blue and red."
+    },
+    {
+      "id": "code-practice-ws4-ws7-q10",
+      "type": "code-writing",
+      "prompt": "Using gate_button = Button(22), write one line to wait until the button is pressed.",
+      "answer": "gate_button.wait_for_press()",
+      "explanation": "The program pauses until the button is pressed."
+    },
+    {
+      "id": "code-practice-ws4-ws7-q11",
+      "type": "code-writing",
+      "prompt": "Using the same button, write one line to wait until it is released.",
+      "answer": "gate_button.wait_for_release()",
+      "explanation": "The program pauses until the button is released."
+    },
+    {
+      "id": "code-practice-ws4-ws7-q12",
+      "type": "code-writing",
+      "prompt": "Using stadium_led = LED(17), write one line to turn the LED on.",
+      "answer": "stadium_led.on()",
+      "explanation": "Turns the LED on."
+    },
+    {
+      "id": "code-practice-ws4-ws7-q13",
+      "type": "code-writing",
+      "prompt": "Using stadium_led, write one line to turn the LED off.",
+      "answer": "stadium_led.off()",
+      "explanation": "Turns the LED off."
+    },
+    {
+      "id": "code-practice-ws4-ws7-q14",
+      "type": "code-writing",
+      "prompt": "Using stadium_led, write one line to toggle the LED state.",
+      "answer": "stadium_led.toggle()",
+      "explanation": "ON becomes OFF, and OFF becomes ON."
+    },
+    {
+      "id": "code-practice-ws4-ws7-q15",
+      "type": "code-writing",
+      "prompt": "Using panic_button = Button(22) and warning_buzzer = Buzzer(23), write one line so pressing the button starts the buzzer.",
+      "answer": "panic_button.when_pressed = warning_buzzer.on",
+      "explanation": "Assigns the buzzer's on function to the button press event."
+    },
+    {
+      "id": "code-practice-ws4-ws7-q16",
+      "type": "code-writing",
+      "prompt": "Using the same button and buzzer, write one line so releasing the button stops the buzzer.",
+      "answer": "panic_button.when_released = warning_buzzer.off",
+      "explanation": "Assigns the buzzer's off function to the button release event."
+    },
+    {
+      "id": "code-practice-ws4-ws7-q17",
+      "type": "code-writing",
+      "prompt": "Using runway_rgb = RGBLED(red=5, green=6, blue=26), set the RGB LED to green.",
+      "answer": "runway_rgb.color = (0,1,0)",
+      "explanation": "Only the green channel is on."
+    },
+    {
+      "id": "code-practice-ws4-ws7-q18",
+      "type": "code-writing",
+      "prompt": "Using runway_rgb, set the RGB LED to blue.",
+      "answer": "runway_rgb.color = (0,0,1)",
+      "explanation": "Only the blue channel is on."
+    },
+    {
+      "id": "code-practice-ws4-ws7-q19",
+      "type": "code-writing",
+      "prompt": "Using runway_rgb, set the RGB LED to yellow.",
+      "answer": "runway_rgb.color = (1,1,0)",
+      "explanation": "Red plus green produces yellow."
+    },
+    {
+      "id": "code-practice-ws4-ws7-q20",
+      "type": "code-writing",
+      "prompt": "Using runway_rgb, set the RGB LED to cyan with Color().",
+      "answer": "runway_rgb.color = Color(\"cyan\")",
+      "explanation": "Sets the RGB LED to cyan."
+    },
+    {
+      "id": "code-practice-ws4-ws7-q21",
+      "type": "code-writing",
+      "prompt": "Using runway_rgb, set the RGB LED to white with Color().",
+      "answer": "runway_rgb.color = Color(\"white\")",
+      "explanation": "Sets all RGB channels to full brightness."
+    },
+    {
+      "id": "code-practice-ws4-ws7-q22",
+      "type": "code-writing",
+      "prompt": "Using safe_button = Button(22) and safe_led = LED(27), write one line to turn the LED on whenever the button is pressed.",
+      "answer": "safe_button.when_pressed = safe_led.on",
+      "explanation": "Connects the button press event to the LED's on function."
+    },
+    {
+      "id": "code-practice-ws4-ws7-q23",
+      "type": "code-writing",
+      "prompt": "Using safe_button and safe_led, write one line to turn the LED off whenever the button is released.",
+      "answer": "safe_button.when_released = safe_led.off",
+      "explanation": "Connects the button release event to the LED's off function."
+    },
+    {
+      "id": "code-practice-ws4-ws7-q24",
+      "type": "code-writing",
+      "prompt": "Using rgb, write one line to blink green and black every 0.3 seconds.",
+      "answer": "rgb.blink(0.3,0.3,on_color=(0,1,0),off_color=(0,0,0),background=False)",
+      "explanation": "Alternates green with black."
+    },
+    {
+      "id": "code-practice-ws4-ws7-q25",
+      "type": "code-writing",
+      "prompt": "Using fire_buzzer = Buzzer(23), write one line to beep with 1 second ON and 1 second OFF.",
+      "answer": "fire_buzzer.beep(1,1,background=True)",
+      "explanation": "The buzzer repeats one-second ON and OFF periods in the background."
+    },
+    {
+      "id": "code-practice-ws4-ws7-q26",
+      "type": "code-writing",
+      "prompt": "Using class_button = Button(22), write one line to wait until a student presses the button.",
+      "answer": "class_button.wait_for_press()",
+      "explanation": "Pauses until the button is pressed."
+    },
+    {
+      "id": "code-practice-ws4-ws7-q27",
+      "type": "code-writing",
+      "prompt": "Using class_button, write one line to wait until the student releases the button.",
+      "answer": "class_button.wait_for_release()",
+      "explanation": "Pauses until the button is released."
+    },
+    {
+      "id": "code-practice-ws4-ws7-q28",
+      "type": "code-writing",
+      "prompt": "Using rgb, write one line to make the RGB LED magenta.",
+      "answer": "rgb.color = Color(\"magenta\")",
+      "explanation": "Sets the RGB LED to magenta."
+    },
+    {
+      "id": "code-practice-ws4-ws7-q29",
+      "type": "code-writing",
+      "prompt": "Write one line to pause the program forever in an event-driven program.",
+      "answer": "pause()",
+      "explanation": "pause() keeps an event-driven program running."
+    },
+    {
+      "id": "code-practice-ws4-ws7-q30",
+      "type": "code-writing",
+      "prompt": "Write one line to wait for 3 seconds before continuing.",
+      "answer": "sleep(3)",
+      "explanation": "Delays execution for 3 seconds."
+    }
+  ]
+}
