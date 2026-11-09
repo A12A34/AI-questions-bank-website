@@ -154,7 +154,15 @@ export function buildOfflineQuizHtml(bank) {
       };
       const isWriting = (question) => question.type === "writing";
       const isCode = (question) => question.type === "code" || question.type === "code-writing";
-      const expectedCode = (question) => question.answer ?? question.modelAnswer ?? "";
+      const expectedCode = (question) => {
+        const answers = question.acceptedAnswers ?? question.answer ?? question.modelAnswer ?? "";
+        return Array.isArray(answers) ? answers[0] ?? "" : answers;
+      };
+      const acceptedCodeAnswers = (question) => {
+        const answers = question.acceptedAnswers ?? question.answer ?? question.modelAnswer ?? "";
+        return Array.isArray(answers) ? answers : [answers];
+      };
+      const normalizeCode = (value) => String(value ?? "").replace(/\s+/g, "");
       const isLocked = (question) => state.submitted || state.revealed.has(question.id);
       const answerFor = (question) => state.answers.get(question.id);
       const sameSet = (a, b) => a.length === b.length && [...a].sort((x, y) => x - y).every((value, i) => value === [...b].sort((x, y) => x - y)[i]);
@@ -186,7 +194,8 @@ export function buildOfflineQuizHtml(bank) {
         if (isWriting(question)) return { answered: Boolean(String(answer || "").trim()), correct: null };
         if (isCode(question)) return {
           answered: typeof answer === "string" && answer.length > 0,
-          correct: typeof answer === "string" && answer === expectedCode(question)
+          correct: typeof answer === "string"
+            && acceptedCodeAnswers(question).some((expected) => normalizeCode(answer) === normalizeCode(expected))
         };
         if (answer === undefined || answer === null || (Array.isArray(answer) && answer.some((value) => value === ""))) {
           return { answered: false, correct: false };

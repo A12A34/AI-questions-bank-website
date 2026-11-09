@@ -89,6 +89,14 @@
       "difficulty": "Intermediate"
     },
     {
+      "id": "iot301-ws6-ws7-mcq",
+      "title": "IoT301 – WS6 and WS7 MCQ Practice Test (50 Questions)",
+      "file": "iot301-ws6-ws7-mcq.json",
+      "subject": "IoT",
+      "gradeLevel": "University",
+      "difficulty": "Intermediate"
+    },
+    {
       "id": "code-practice-ws4-ws7",
       "title": "code practice for WS4-WS7",
       "file": "code-practice-ws4-ws7.json",

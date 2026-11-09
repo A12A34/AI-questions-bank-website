@@ -1,0 +1,406 @@
+{
+  "id": "iot301-ws6-ws7-mcq",
+  "title": "IoT301 – WS6 and WS7 MCQ Practice Test (50 Questions)",
+  "questions": [
+    {
+      "id": "iot301-ws6-ws7-mcq-q1",
+      "type": "mcq",
+      "prompt": "Which library is mainly used to control LEDs, buttons, and buzzers on a Raspberry Pi?",
+      "choices": ["pygame", "gpiozero", "numpy", "tkinter"],
+      "answer": 1,
+      "explanation": "The gpiozero library provides easy control of GPIO devices such as LEDs, buttons, buzzers, and RGB LEDs."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q2",
+      "type": "mcq",
+      "prompt": "How many pins does a standard RGB LED have?",
+      "choices": ["2", "3", "4", "5"],
+      "answer": 2,
+      "explanation": "A standard RGB LED has 4 pins: red, green, blue, and common."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q3",
+      "type": "mcq",
+      "prompt": "How many RGB LED module pins connect to GPIO pins?",
+      "choices": ["1", "2", "3", "4"],
+      "answer": 2,
+      "explanation": "Red, green, and blue connect to GPIO pins, while the common pin goes to GND."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q4",
+      "type": "mcq",
+      "prompt": "The common cathode pin should be connected to:",
+      "choices": ["3.3V", "5V", "GPIO", "GND"],
+      "answer": 3,
+      "explanation": "In a common-cathode RGB LED, the shared pin is connected to ground."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q5",
+      "type": "mcq",
+      "prompt": "Which GPIO pin is used for the Red channel in WS7?",
+      "choices": ["GPIO22", "GPIO17", "GPIO27", "GPIO23"],
+      "answer": 1,
+      "explanation": "The red channel uses GPIO17."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q6",
+      "type": "mcq",
+      "prompt": "Which GPIO pin is used for Green?",
+      "choices": ["GPIO17", "GPIO22", "GPIO27", "GPIO2"],
+      "answer": 2,
+      "explanation": "The green channel uses GPIO27."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q7",
+      "type": "mcq",
+      "prompt": "Which GPIO pin is used for Blue?",
+      "choices": ["GPIO22", "GPIO17", "GPIO27", "GPIO5"],
+      "answer": 0,
+      "explanation": "The blue channel uses GPIO22."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q8",
+      "type": "mcq",
+      "prompt": "Why are resistors used with LEDs?",
+      "choices": ["Increase voltage", "Store data", "Limit current", "Change colours"],
+      "answer": 2,
+      "explanation": "Resistors protect the LED and GPIO pins from excessive current."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q9",
+      "type": "mcq",
+      "prompt": "How many resistors are needed for the RGB LED module?",
+      "choices": ["1", "2", "3", "4"],
+      "answer": 2,
+      "explanation": "One resistor is needed for each colour channel."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q10",
+      "type": "mcq",
+      "prompt": "What is the recommended resistor value for each RGB channel?",
+      "choices": ["100 ohms", "220 ohms", "330 ohms", "1000 ohms"],
+      "answer": 2,
+      "explanation": "WS7 recommends 330-ohm resistors."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q11",
+      "type": "mcq",
+      "prompt": "In a common-cathode RGB LED, HIGH means:",
+      "choices": ["OFF", "ON", "FLASH", "RESET"],
+      "answer": 1,
+      "explanation": "Applying HIGH lights the corresponding LED colour."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q12",
+      "type": "mcq",
+      "prompt": "The opposite type of RGB LED is:",
+      "choices": ["Common LED", "Digital LED", "Common anode", "Infrared LED"],
+      "answer": 2,
+      "explanation": "Common anode is the other main RGB LED type."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q13",
+      "type": "mcq",
+      "prompt": "In a common-anode RGB LED, LOW means:",
+      "choices": ["ON", "OFF", "ERROR", "PAUSE"],
+      "answer": 0,
+      "explanation": "Common-anode logic is inverted compared with common-cathode logic."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q14",
+      "type": "mcq",
+      "prompt": "What is the formula for resistors in series?",
+      "choices": ["R1 x R2", "R1 + R2", "R1 / R2", "R1 squared"],
+      "answer": 1,
+      "explanation": "Series resistances add together."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q15",
+      "type": "mcq",
+      "prompt": "100 ohms + 200 ohms in series equals:",
+      "choices": ["100 ohms", "200 ohms", "300 ohms", "400 ohms"],
+      "answer": 2,
+      "explanation": "Add the resistor values: 100 + 200 = 300 ohms."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q16",
+      "type": "mcq",
+      "prompt": "Which Raspberry Pi command starts Python 3?",
+      "choices": ["python", "run", "py", "python3"],
+      "answer": 3,
+      "explanation": "python3 launches Python 3."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q17",
+      "type": "mcq",
+      "prompt": "Which statement imports only the RGBLED class?",
+      "choices": ["import rgb", "from gpiozero import RGBLED", "import RGBLED", "from RGBLED import gpiozero"],
+      "answer": 1,
+      "explanation": "This is the correct direct import statement."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q18",
+      "type": "mcq",
+      "prompt": "Which statement creates an RGB LED object?",
+      "choices": ["RGBLED(17, 27, 22)", "RGB(17, 27, 22)", "RGBLED.on()", "led = (1, 2, 3)"],
+      "answer": 0,
+      "explanation": "RGBLED(17, 27, 22) creates an RGB LED object using the three channel pins."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q19",
+      "type": "mcq",
+      "prompt": "Which statement controls RGB colour?",
+      "choices": ["led.on()", "led.off()", "led.color = (r, g, b)", "led.start()"],
+      "answer": 2,
+      "explanation": "RGB colours are assigned using the color property."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q20",
+      "type": "mcq",
+      "prompt": "What is the value range for each colour channel?",
+      "choices": ["0-10", "0-255", "0-1", "1-100"],
+      "answer": 2,
+      "explanation": "gpiozero uses values from 0 to 1 for RGB channel intensity."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q21",
+      "type": "mcq",
+      "prompt": "Which colour is represented by (1, 1, 1)?",
+      "choices": ["Red", "White", "Yellow", "Cyan"],
+      "answer": 1,
+      "explanation": "All three colours on together create white."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q22",
+      "type": "mcq",
+      "prompt": "Which library supports colour names?",
+      "choices": ["gpiozero", "numpy", "colorzero", "math"],
+      "answer": 2,
+      "explanation": "colorzero supports named colour values."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q23",
+      "type": "mcq",
+      "prompt": "Which statement sets red using a colour name?",
+      "choices": ["led.red()", "Color.red()", "led.color = Color(\"red\")", "red.color()"],
+      "answer": 2,
+      "explanation": "Color(\"red\") creates the named colour value."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q24",
+      "type": "mcq",
+      "prompt": "How many ON/OFF combinations exist for three colour channels?",
+      "choices": ["4", "6", "7", "8"],
+      "answer": 3,
+      "explanation": "There are 2^3 = 8 possible combinations."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q25",
+      "type": "mcq",
+      "prompt": "What colour is represented by (1, 0, 0)?",
+      "choices": ["Green", "Blue", "Red", "White"],
+      "answer": 2,
+      "explanation": "Only the red channel is on."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q26",
+      "type": "mcq",
+      "prompt": "What colour is represented by (0, 1, 0)?",
+      "choices": ["Red", "Green", "Blue", "White"],
+      "answer": 1,
+      "explanation": "Only the green channel is on."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q27",
+      "type": "mcq",
+      "prompt": "What colour is represented by (0, 0, 1)?",
+      "choices": ["Blue", "Green", "Red", "White"],
+      "answer": 0,
+      "explanation": "Only the blue channel is on."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q28",
+      "type": "mcq",
+      "prompt": "What colour is represented by (1, 1, 0)?",
+      "choices": ["Cyan", "White", "Yellow", "Magenta"],
+      "answer": 2,
+      "explanation": "Red plus green produces yellow."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q29",
+      "type": "mcq",
+      "prompt": "What colour is represented by (0, 1, 1)?",
+      "choices": ["Cyan", "Blue", "White", "Yellow"],
+      "answer": 0,
+      "explanation": "Green plus blue produces cyan."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q30",
+      "type": "mcq",
+      "prompt": "What colour is represented by (1, 0, 1)?",
+      "choices": ["Yellow", "Cyan", "Magenta", "White"],
+      "answer": 2,
+      "explanation": "Red plus blue produces magenta."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q31",
+      "type": "mcq",
+      "prompt": "What colour is represented by (0, 0, 0)?",
+      "choices": ["White", "Black/off", "Red", "Blue"],
+      "answer": 1,
+      "explanation": "No channels are lit, so the LED is off."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q32",
+      "type": "mcq",
+      "prompt": "Which loop structure generates all RGB ON/OFF combinations?",
+      "choices": ["while loop", "if statement", "Nested for loops", "switch statement"],
+      "answer": 2,
+      "explanation": "Three nested loops can iterate through the two possible values of each channel."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q33",
+      "type": "mcq",
+      "prompt": "What values does range(2) produce?",
+      "choices": ["1, 2", "0, 1", "0, 1, 2", "2 only"],
+      "answer": 1,
+      "explanation": "range(2) produces 0 and 1."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q34",
+      "type": "mcq",
+      "prompt": "In Task 4, what is the RGB LED initially?",
+      "choices": ["Red", "Blue", "Green", "Yellow"],
+      "answer": 2,
+      "explanation": "Green is the default colour."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q35",
+      "type": "mcq",
+      "prompt": "When the button is pressed, the LED changes to:",
+      "choices": ["White", "Blue", "Yellow", "Red"],
+      "answer": 3,
+      "explanation": "The activity flashes red when the button is pressed."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q36",
+      "type": "mcq",
+      "prompt": "Which device produces sound?",
+      "choices": ["RGB LED", "Button", "Buzzer", "Resistor"],
+      "answer": 2,
+      "explanation": "The buzzer provides the alarm sound."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q37",
+      "type": "mcq",
+      "prompt": "Which method waits for a button press?",
+      "choices": ["button.press()", "button.wait_for_press()", "button.start()", "button.click()"],
+      "answer": 1,
+      "explanation": "wait_for_press() pauses until the button is pressed."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q38",
+      "type": "mcq",
+      "prompt": "Which method waits for a button release?",
+      "choices": ["wait_for_release()", "release()", "off()", "stop()"],
+      "answer": 0,
+      "explanation": "wait_for_release() waits until the button is released."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q39",
+      "type": "mcq",
+      "prompt": "What does background=True do?",
+      "choices": ["Stops execution", "Runs concurrently", "Deletes GPIO", "Restarts the Pi"],
+      "answer": 1,
+      "explanation": "The operation runs concurrently while the program continues."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q40",
+      "type": "mcq",
+      "prompt": "The WS6 project is a:",
+      "choices": ["Calculator", "RGB mixer", "Traffic light simulator", "Weather station"],
+      "answer": 2,
+      "explanation": "WS6 is a pedestrian traffic light simulator."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q41",
+      "type": "mcq",
+      "prompt": "What is the traffic light's default colour?",
+      "choices": ["Red", "Yellow", "Green", "Blue"],
+      "answer": 2,
+      "explanation": "Cars see green by default."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q42",
+      "type": "mcq",
+      "prompt": "What triggers the traffic-light sequence?",
+      "choices": ["Keyboard", "Mouse", "Button press", "Timer"],
+      "answer": 2,
+      "explanation": "The pedestrian presses the button to start the sequence."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q43",
+      "type": "mcq",
+      "prompt": "Before red, which light flashes?",
+      "choices": ["Green", "Red", "Blue", "Yellow"],
+      "answer": 3,
+      "explanation": "Yellow flashes during the transition before red."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q44",
+      "type": "mcq",
+      "prompt": "How long does yellow flash?",
+      "choices": ["2 seconds", "5 seconds", "10 seconds", "30 seconds"],
+      "answer": 1,
+      "explanation": "The yellow transition lasts 5 seconds."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q45",
+      "type": "mcq",
+      "prompt": "How long does red stay on?",
+      "choices": ["5 seconds", "10 seconds", "20 seconds", "30 seconds"],
+      "answer": 3,
+      "explanation": "Pedestrians cross during the 30-second red period."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q46",
+      "type": "mcq",
+      "prompt": "Which GPIO pin is used for the traffic-light green LED?",
+      "choices": ["17", "22", "27", "23"],
+      "answer": 0,
+      "explanation": "The green LED uses GPIO17."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q47",
+      "type": "mcq",
+      "prompt": "Which GPIO pin is used for the yellow LED?",
+      "choices": ["17", "22", "27", "24"],
+      "answer": 2,
+      "explanation": "The yellow LED uses GPIO27."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q48",
+      "type": "mcq",
+      "prompt": "Which GPIO pin is used for the red LED?",
+      "choices": ["17", "22", "27", "23"],
+      "answer": 1,
+      "explanation": "The red LED uses GPIO22."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q49",
+      "type": "mcq",
+      "prompt": "Which GPIO pin is used for the button?",
+      "choices": ["17", "22", "27", "23"],
+      "answer": 3,
+      "explanation": "The pedestrian button uses GPIO23."
+    },
+    {
+      "id": "iot301-ws6-ws7-mcq-q50",
+      "type": "mcq",
+      "prompt": "Which statement keeps the program running forever?",
+      "choices": ["for i in range(5)", "if True", "while True", "continue"],
+      "answer": 2,
+      "explanation": "while True creates an infinite loop."
+    }
+  ]
+}

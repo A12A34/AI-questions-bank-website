@@ -181,7 +181,17 @@ function isCodeQuestion(question) {
 }
 
 function expectedCode(question) {
-  return question.answer ?? question.modelAnswer ?? "";
+  const answers = question.acceptedAnswers ?? question.answer ?? question.modelAnswer ?? "";
+  return Array.isArray(answers) ? answers[0] ?? "" : answers;
+}
+
+function acceptedCodeAnswers(question) {
+  const answers = question.acceptedAnswers ?? question.answer ?? question.modelAnswer ?? "";
+  return Array.isArray(answers) ? answers : [answers];
+}
+
+function normalizeCode(value) {
+  return String(value ?? "").replace(/\s+/g, "");
 }
 
 function prepareQuestion(question, shuffleChoices) {
@@ -438,7 +448,8 @@ function gradeQuestion(question) {
   if (isCodeQuestion(question)) {
     return {
       scored: true,
-      correct: typeof answer === "string" && answer === expectedCode(question),
+      correct: typeof answer === "string"
+        && acceptedCodeAnswers(question).some((expected) => normalizeCode(answer) === normalizeCode(expected)),
       answered: typeof answer === "string" && answer.length > 0,
     };
   }
@@ -856,7 +867,7 @@ function renderWriting(host, question, locked) {
 function renderCode(host, question, locked, result) {
   const hint = document.createElement("p");
   hint.className = "writing-hint";
-  hint.textContent = "Your answer must exactly match the correct code, including whitespace and line breaks.";
+  hint.textContent = "Enter the correct code. Spaces and line breaks are ignored when checking your answer.";
   const area = document.createElement("textarea");
   area.className = "code-answer";
   area.value = userAnswer(question) ?? "";
