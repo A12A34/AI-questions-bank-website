@@ -173,7 +173,7 @@ function sameSet(a, b) {
 }
 
 function isScoredType(type) {
-  return type !== "writing";
+  return type !== "writing" && type !== "reading";
 }
 
 function isCodeQuestion(question) {
@@ -442,6 +442,9 @@ function isAnswered(question) {
 
 function gradeQuestion(question) {
   const answer = userAnswer(question);
+  if (question.type === "reading") {
+    return { scored: false, correct: null, answered: false };
+  }
   if (question.type === "writing") {
     return { scored: false, correct: null, answered: Boolean(String(answer ?? "").trim()) };
   }
@@ -631,19 +634,22 @@ function renderQuestionCard(article, question, index) {
   top.append(kicker, bookmark);
   article.append(top);
 
-  const prompt = document.createElement("p");
-  prompt.className = "prompt";
-  prompt.textContent = question.prompt;
-  if (hasArabic(question.prompt)) {
-    prompt.dir = "rtl";
-    prompt.classList.add("dir-rtl");
+  if (question.type !== "reading") {
+    const prompt = document.createElement("p");
+    prompt.className = "prompt";
+    prompt.textContent = question.prompt;
+    if (hasArabic(question.prompt)) {
+      prompt.dir = "rtl";
+      prompt.classList.add("dir-rtl");
+    }
+    article.append(prompt);
   }
-  article.append(prompt);
 
   if (question.type === "mcq" || question.type === "tf") renderSingleChoice(article, question, locked, result);
   if (question.type === "multi") renderMulti(article, question, locked, result);
   if (question.type === "match") renderMatch(article, question, locked, result);
   if (question.type === "writing") renderWriting(article, question, locked);
+  if (question.type === "reading") renderReading(article, question);
   if (isCodeQuestion(question)) renderCode(article, question, locked, result);
 
   if ((locked || state.submitted) && question.explanation) {
@@ -659,7 +665,7 @@ function renderQuestionCard(article, question, index) {
 
   const actions = document.createElement("div");
   actions.className = "card-actions";
-  if (state.mode === "practice" && !state.submitted) {
+  if (state.mode === "practice" && !state.submitted && question.type !== "reading") {
     const check = document.createElement("button");
     check.type = "button";
     check.className = "btn btn-secondary";
@@ -668,6 +674,7 @@ function renderQuestionCard(article, question, index) {
     check.addEventListener("click", () => checkQuestion(question, index));
     actions.append(check);
   }
+
   const feedback = document.createElement("p");
   feedback.className = "feedback";
   const message = feedbackMessage(question, result);
@@ -679,6 +686,17 @@ function renderQuestionCard(article, question, index) {
   }
   actions.append(feedback);
   article.append(actions);
+}
+
+function renderReading(host, question) {
+  const reading = document.createElement("div");
+  reading.className = "reading-text";
+  reading.textContent = question.text || question.prompt || "";
+  if (hasArabic(reading.textContent)) {
+    reading.dir = "rtl";
+    reading.classList.add("dir-rtl");
+  }
+  host.append(reading);
 }
 
 function feedbackMessage(question, result) {

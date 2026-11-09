@@ -65,6 +65,22 @@
       "difficulty": "Beginner"
     },
     {
+      "id": "arabic-test-2-activities",
+      "title": "arabic test 2 activities",
+      "file": "arabic-test-2-activities.json",
+      "subject": "Arabic",
+      "gradeLevel": "High School",
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "arabic-love-bahrain-150",
+      "title": "150 سؤالًا في قصيدة «أغنيات عشق البحرين»",
+      "file": "arabic-love-bahrain-150.json",
+      "subject": "Arabic",
+      "gradeLevel": "High School",
+      "difficulty": "Intermediate"
+    },
+    {
       "id": "linear-regression",
       "title": "Linear Regression (100 Questions)",
       "file": "linear-regression.json",

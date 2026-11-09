@@ -153,6 +153,7 @@ export function buildOfflineQuizHtml(bank) {
         return copy;
       };
       const isWriting = (question) => question.type === "writing";
+      const isReading = (question) => question.type === "reading";
       const isCode = (question) => question.type === "code" || question.type === "code-writing";
       const expectedCode = (question) => {
         const answers = question.acceptedAnswers ?? question.answer ?? question.modelAnswer ?? "";
@@ -191,6 +192,7 @@ export function buildOfflineQuizHtml(bank) {
 
       function grade(question) {
         const answer = answerFor(question);
+        if (isReading(question)) return { answered: false, correct: null };
         if (isWriting(question)) return { answered: Boolean(String(answer || "").trim()), correct: null };
         if (isCode(question)) return {
           answered: typeof answer === "string" && answer.length > 0,
@@ -322,6 +324,12 @@ export function buildOfflineQuizHtml(bank) {
           area.disabled = isLocked(question);
           area.addEventListener("input", () => state.answers.set(question.id, area.value));
           card.append(area);
+        } else if (isReading(question)) {
+          const reading = document.createElement("div");
+          reading.className = "reading-text";
+          reading.dir = "rtl";
+          reading.textContent = question.text || question.prompt || "";
+          card.append(reading);
         }
 
         if (isLocked(question)) {
@@ -353,14 +361,14 @@ export function buildOfflineQuizHtml(bank) {
 
         const actions = document.createElement("div");
         actions.className = "actions";
-        if (state.mode === "practice" && !state.submitted) {
+        if (state.mode === "practice" && !state.submitted && !isReading(question)) {
           const check = document.createElement("button");
           check.type = "button";
           check.className = "btn";
           check.textContent = "Check";
           check.addEventListener("click", () => {
             const current = grade(question);
-            if (!current.answered && !isWriting(question)) {
+            if (!current.answered && !isWriting(question) && !isReading(question)) {
               feedback.textContent = "Choose an answer first.";
               feedback.className = "feedback warn";
               return;
@@ -416,7 +424,7 @@ export function buildOfflineQuizHtml(bank) {
       $("#bookmarks-only").addEventListener("change", (event) => { state.bookmarksOnly = event.target.checked; render(); });
       $("#submit").addEventListener("click", () => {
         state.submitted = true;
-        const scored = state.questions.filter((question) => !isWriting(question));
+        const scored = state.questions.filter((question) => !isWriting(question) && !isReading(question));
         state.score = { correct: scored.filter((question) => grade(question).correct).length, total: scored.length };
         render();
       });
