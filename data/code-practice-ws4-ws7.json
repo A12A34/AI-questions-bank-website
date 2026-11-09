@@ -34,15 +34,15 @@
       "id": "code-practice-ws4-ws7-q5",
       "type": "code-writing",
       "prompt": "Using alarm = Buzzer(23), write one line to beep 0.2 seconds ON and 0.2 seconds OFF continuously.",
-      "answer": "alarm.beep(0.2, 0.2, background=True)",
+      "answer": "alarm.beep(0.2, 0.2)",
       "explanation": "background=True allows the program to continue while beeping."
     },
     {
       "id": "code-practice-ws4-ws7-q6",
       "type": "code-writing",
-      "prompt": "Using rgb = RGBLED(red=5, green=6, blue=26), write one line to make the RGB LED purple.",
+      "prompt": "Using rgb = RGBLED(red=5, green=6, blue=26), write one line to make the RGB LED Magenta.",
       "answer": "rgb.color = (1,0,1)",
-      "explanation": "Red plus blue produces purple."
+      "explanation": "Red plus blue produces magenta."
     },
     {
       "id": "code-practice-ws4-ws7-q7",
@@ -62,7 +62,7 @@
       "id": "code-practice-ws4-ws7-q9",
       "type": "code-writing",
       "prompt": "Using rgb, write one line to blink between blue and red every 0.5 seconds.",
-      "answer": "rgb.blink(0.5,0.5,on_color=(0,0,1),off_color=(1,0,0),background=False)",
+      "answer": "rgb.blink(0.5,0.5,on_color=(0,0,1),off_color=(1,0,0))",
       "explanation": "Alternates blue and red."
     },
     {
@@ -167,14 +167,14 @@
       "id": "code-practice-ws4-ws7-q24",
       "type": "code-writing",
       "prompt": "Using rgb, write one line to blink green and black every 0.3 seconds.",
-      "answer": "rgb.blink(0.3,0.3,on_color=(0,1,0),off_color=(0,0,0),background=False)",
+      "answer": "rgb.blink(0.3,0.3,on_color=(0,1,0),off_color=(0,0,0))",
       "explanation": "Alternates green with black."
     },
     {
       "id": "code-practice-ws4-ws7-q25",
       "type": "code-writing",
       "prompt": "Using fire_buzzer = Buzzer(23), write one line to beep with 1 second ON and 1 second OFF.",
-      "answer": "fire_buzzer.beep(1,1,background=True)",
+      "answer": "fire_buzzer.beep(1,1)",
       "explanation": "The buzzer repeats one-second ON and OFF periods in the background."
     },
     {
@@ -195,7 +195,7 @@
       "id": "code-practice-ws4-ws7-q28",
       "type": "code-writing",
       "prompt": "Using rgb, write one line to make the RGB LED magenta.",
-      "answer": "rgb.color = Color(\"magenta\")",
+      "answer": "rgb.color = (1,0,1)",
       "explanation": "Sets the RGB LED to magenta."
     },
     {
