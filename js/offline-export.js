@@ -305,6 +305,11 @@ export function buildOfflineQuizHtml(bank) {
           const area = document.createElement("textarea");
           area.placeholder = isCode(question) ? "Write your code here..." : "Write your answer here...";
           area.value = answerFor(question) || "";
+          if (isCode(question)) {
+            area.setAttribute("autocapitalize", "off");
+            area.setAttribute("autocorrect", "off");
+            area.spellcheck = false;
+          }
           area.disabled = isLocked(question);
           area.addEventListener("input", () => state.answers.set(question.id, area.value));
           card.append(area);

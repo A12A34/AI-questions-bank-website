@@ -861,6 +861,9 @@ function renderCode(host, question, locked, result) {
   area.className = "code-answer";
   area.value = userAnswer(question) ?? "";
   area.placeholder = "Write your code here...";
+  area.setAttribute("autocapitalize", "off");
+  area.setAttribute("autocorrect", "off");
+  area.spellcheck = false;
   area.disabled = locked || state.submitted;
   area.addEventListener("input", () => setUserAnswer(question, area.value));
   host.append(hint, area);
