@@ -1,0 +1,486 @@
+{
+  "id": "it-project-management",
+  "title": "IT Project Management - 50 MCQ Questions",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "prompt": "Which of the following best defines a project?",
+      "choices": [
+        "An ongoing activity that has no defined ending.",
+        "A unique endeavor that usually includes a set of unique deliverables.",
+        "A repeated process designed to maintain daily operations.",
+        "A collection of unrelated tasks performed by an organization."
+      ],
+      "answer": 1,
+      "explanation": "A project is a unique endeavor with unique deliverables and a defined beginning and end."
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "prompt": "Which characteristic makes a project different from regular organizational operations?",
+      "choices": [
+        "It requires employees to work together.",
+        "It always requires a large budget.",
+        "It is a temporary pursuit with a defined beginning and end.",
+        "It must involve external stakeholders."
+      ],
+      "answer": 2,
+      "explanation": "A project is temporary, while regular operations are generally ongoing."
+    },
+    {
+      "id": "q3",
+      "type": "mcq",
+      "prompt": "What is the primary purpose of project management?",
+      "choices": [
+        "To increase the number of employees working on a project.",
+        "To eliminate all risks associated with a project.",
+        "To apply knowledge, skills, tools, and techniques to meet project requirements and achieve the desired outcome.",
+        "To ensure that every project finishes without any changes."
+      ],
+      "answer": 2,
+      "explanation": "Project management uses knowledge, skills, tools, and techniques to meet project requirements."
+    },
+    {
+      "id": "q4",
+      "type": "mcq",
+      "prompt": "According to the slides, what percentage of projects miss their delivery dates because of poor project management?",
+      "choices": ["31%", "48%", "43%", "56%"],
+      "answer": 1,
+      "explanation": "According to the PMI statistics shown in the slides, 48% of projects miss delivery dates."
+    },
+    {
+      "id": "q5",
+      "type": "mcq",
+      "prompt": "According to the slides, what percentage of projects miss their budget targets?",
+      "choices": ["43%", "48%", "31%", "56%"],
+      "answer": 0,
+      "explanation": "43% of projects miss their budget targets."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "prompt": "According to the slides, what percentage of projects fail to meet an organization's goals?",
+      "choices": ["48%", "43%", "31%", "56%"],
+      "answer": 2,
+      "explanation": "31% of projects fail to meet organizational goals."
+    },
+    {
+      "id": "q7",
+      "type": "mcq",
+      "prompt": "Which of the following is NOT listed as a task of a project manager?",
+      "choices": [
+        "Planning and organizing.",
+        "Managing tasks.",
+        "Budgeting.",
+        "Guaranteeing that no project risks will occur."
+      ],
+      "answer": 3,
+      "explanation": "Project managers plan, organize, manage tasks, budget, and control project costs and other factors. They cannot guarantee that risks will never occur."
+    },
+    {
+      "id": "q8",
+      "type": "mcq",
+      "prompt": "A company appoints someone to organize tasks, manage the budget, and control project costs. What is this person's role?",
+      "choices": ["Project sponsor.", "Project manager.", "Supplier.", "Customer."],
+      "answer": 1,
+      "explanation": "These responsibilities belong to the project manager."
+    },
+    {
+      "id": "q9",
+      "type": "mcq",
+      "prompt": "Which statement best describes a stakeholder?",
+      "choices": [
+        "Only an individual who directly works on project tasks.",
+        "Only an organization that provides financial resources.",
+        "Any individual, group, or organization that can affect, be affected by, or perceive themselves to be affected by a project.",
+        "Only the person responsible for approving the project."
+      ],
+      "answer": 2,
+      "explanation": "Stakeholders can have direct or indirect interests in a project's outcomes."
+    },
+    {
+      "id": "q10",
+      "type": "mcq",
+      "prompt": "Which of the following is an example of a project stakeholder?",
+      "choices": [
+        "A supplier providing materials or services.",
+        "Only the project manager.",
+        "Only employees who develop the final product.",
+        "Only the organization's senior management."
+      ],
+      "answer": 0,
+      "explanation": "Suppliers are stakeholders because they provide materials or services required by the project."
+    },
+    {
+      "id": "q11",
+      "type": "mcq",
+      "prompt": "A company provides the budget and resources needed to develop a new application. Which stakeholder role does this describe?",
+      "choices": ["Team member.", "Regulatory body.", "Project sponsor.", "Customer."],
+      "answer": 2,
+      "explanation": "A project sponsor provides the budget and resources for the project."
+    },
+    {
+      "id": "q12",
+      "type": "mcq",
+      "prompt": "A government organization checks whether a new IT system follows legal requirements. What type of stakeholder is it?",
+      "choices": ["Supplier.", "Regulatory body.", "Project sponsor.", "Team member."],
+      "answer": 1,
+      "explanation": "A regulatory body ensures that the project complies with legal requirements."
+    },
+    {
+      "id": "q13",
+      "type": "mcq",
+      "prompt": "Which statement about stakeholders is correct?",
+      "choices": [
+        "All stakeholders have the same influence and power.",
+        "Stakeholders must always participate directly in project activities.",
+        "Stakeholders only become involved after project completion.",
+        "Their involvement can vary in influence, power, expectations, and roles."
+      ],
+      "answer": 3,
+      "explanation": "Stakeholders have different levels of influence, power, expectations, and involvement."
+    },
+    {
+      "id": "q14",
+      "type": "mcq",
+      "prompt": "Which principle focuses on acting responsibly with integrity, care, and trustworthiness?",
+      "choices": ["Leadership.", "Stewardship.", "Tailoring.", "Quality."],
+      "answer": 1,
+      "explanation": "Stewardship involves responsible actions, integrity, care, trustworthiness, and compliance with guidelines."
+    },
+    {
+      "id": "q15",
+      "type": "mcq",
+      "prompt": "A project manager considers the financial, social, and environmental impacts of a project. Which principle is being applied?",
+      "choices": ["Stewardship.", "Complexity.", "Change.", "Team."],
+      "answer": 0,
+      "explanation": "Stewardship includes a broad commitment to financial, social, and environmental impacts."
+    },
+    {
+      "id": "q16",
+      "type": "mcq",
+      "prompt": "A software development team combines different skills, knowledge, and experience to achieve one shared objective. Which principle does this demonstrate?",
+      "choices": ["Risk.", "Value.", "Team.", "Tailoring."],
+      "answer": 2,
+      "explanation": "The Team principle emphasizes collaboration and using diverse skills to accomplish shared objectives."
+    },
+    {
+      "id": "q17",
+      "type": "mcq",
+      "prompt": "According to the Team principle, why can collaborative teams be more effective than individuals working alone?",
+      "choices": [
+        "They eliminate the need for project management.",
+        "They can accomplish shared objectives more effectively and efficiently.",
+        "They ensure that every team member has identical skills.",
+        "They remove the need for stakeholders."
+      ],
+      "answer": 1,
+      "explanation": "Collaboration allows individuals with different skills and knowledge to work toward a common objective."
+    },
+    {
+      "id": "q18",
+      "type": "mcq",
+      "prompt": "A project manager regularly communicates with customers and involves them when necessary to improve project success. Which principle is demonstrated?",
+      "choices": ["Stakeholders.", "Systems Thinking.", "Quality.", "Adaptability and Resilience."],
+      "answer": 0,
+      "explanation": "The Stakeholders principle focuses on proactive engagement to support project success and customer satisfaction."
+    },
+    {
+      "id": "q19",
+      "type": "mcq",
+      "prompt": "Which principle requires continually evaluating whether a project remains aligned with business objectives and intended benefits?",
+      "choices": ["Quality.", "Value.", "Leadership.", "Risk."],
+      "answer": 1,
+      "explanation": "The Value principle focuses on maintaining alignment with business objectives, benefits, and value."
+    },
+    {
+      "id": "q20",
+      "type": "mcq",
+      "prompt": "A company realizes that a project is no longer delivering the expected business benefits. The manager evaluates and adjusts the project's direction. Which principle is most relevant?",
+      "choices": ["Team.", "Stewardship.", "Value.", "Complexity."],
+      "answer": 2,
+      "explanation": "Value requires continually evaluating and adjusting project alignment with business objectives and intended benefits."
+    },
+    {
+      "id": "q21",
+      "type": "mcq",
+      "prompt": "Which principle focuses on understanding the project and its surrounding circumstances as a whole?",
+      "choices": ["Systems Thinking.", "Tailoring.", "Leadership.", "Change."],
+      "answer": 0,
+      "explanation": "Systems Thinking involves recognizing, evaluating, and responding to circumstances within and surrounding the project in a holistic way."
+    },
+    {
+      "id": "q22",
+      "type": "mcq",
+      "prompt": "A project manager studies how changes in one department could affect other departments and the overall project. Which principle is demonstrated?",
+      "choices": ["Quality.", "Systems Thinking.", "Stewardship.", "Risk."],
+      "answer": 1,
+      "explanation": "Systems Thinking considers relationships and interactions across the entire project rather than examining individual parts separately."
+    },
+    {
+      "id": "q23",
+      "type": "mcq",
+      "prompt": "A manager changes their leadership behavior depending on the needs of individual team members. Which principle does this represent?",
+      "choices": ["Tailoring.", "Team.", "Leadership.", "Adaptability and Resilience."],
+      "answer": 2,
+      "explanation": "Leadership requires demonstrating and adapting leadership behaviors to support individual and team needs."
+    },
+    {
+      "id": "q24",
+      "type": "mcq",
+      "prompt": "A project manager decides to use fewer processes for a small project instead of following unnecessary procedures. Which principle is being applied?",
+      "choices": ["Tailoring.", "Quality.", "Complexity.", "Stakeholders."],
+      "answer": 0,
+      "explanation": "Tailoring means designing the project development approach based on the project context and using just enough process to achieve the desired outcome."
+    },
+    {
+      "id": "q25",
+      "type": "mcq",
+      "prompt": "Which of the following is considered when tailoring a project development approach?",
+      "choices": [
+        "Only the project's budget and schedule.",
+        "Only the project manager's personal preferences.",
+        "The project's context, objectives, stakeholders, governance, and environment.",
+        "Only the number of team members."
+      ],
+      "answer": 2,
+      "explanation": "Tailoring considers all these factors to maximize value, manage cost, and enhance speed."
+    },
+    {
+      "id": "q26",
+      "type": "mcq",
+      "prompt": "Which principle focuses on producing deliverables that meet project objectives and stakeholder requirements?",
+      "choices": ["Value.", "Quality.", "Risk.", "Complexity."],
+      "answer": 1,
+      "explanation": "Quality ensures deliverables meet project objectives and the needs, uses, and acceptance requirements of stakeholders."
+    },
+    {
+      "id": "q27",
+      "type": "mcq",
+      "prompt": "A software application works correctly but does not meet the customer's acceptance requirements. Which principle has not been properly achieved?",
+      "choices": ["Leadership.", "Stewardship.", "Quality.", "Team."],
+      "answer": 2,
+      "explanation": "Quality is not only about whether a product works; it must also meet stakeholder needs and acceptance requirements."
+    },
+    {
+      "id": "q28",
+      "type": "mcq",
+      "prompt": "Which principle involves continually evaluating and navigating project complexity throughout the project life cycle?",
+      "choices": ["Complexity.", "Change.", "Value.", "Tailoring."],
+      "answer": 0,
+      "explanation": "Complexity focuses on evaluating project complexity and adjusting approaches and plans to navigate the project life cycle successfully."
+    },
+    {
+      "id": "q29",
+      "type": "mcq",
+      "prompt": "A project manager identifies possible opportunities and threats and evaluates their potential impact on the project. Which principle is being applied?",
+      "choices": ["Quality.", "Risk.", "Team.", "Leadership."],
+      "answer": 1,
+      "explanation": "Risk involves evaluating both opportunities and threats to maximize positive impacts and minimize negative impacts."
+    },
+    {
+      "id": "q30",
+      "type": "mcq",
+      "prompt": "What is the main objective of the Risk principle?",
+      "choices": [
+        "Eliminate every possible threat before project execution.",
+        "Focus only on negative events that could affect the project.",
+        "Maximize positive impacts and minimize negative impacts on the project and its outcomes.",
+        "Transfer all project responsibilities to stakeholders."
+      ],
+      "answer": 2,
+      "explanation": "Risk considers both opportunities (positive impacts) and threats (negative impacts)."
+    },
+    {
+      "id": "q31",
+      "type": "mcq",
+      "prompt": "A project experiences unexpected problems, but the team adjusts its approach and continues working toward the objectives. Which principle is demonstrated?",
+      "choices": ["Value.", "Adaptability and Resilience.", "Quality.", "Stewardship."],
+      "answer": 1,
+      "explanation": "Adaptability and Resilience help projects accommodate change, recover from setbacks, and advance project work."
+    },
+    {
+      "id": "q32",
+      "type": "mcq",
+      "prompt": "Which statement best explains the difference between Adaptability and Resilience?",
+      "choices": [
+        "Adaptability helps accommodate change, while resilience helps recover from setbacks.",
+        "Adaptability focuses on quality, while resilience focuses on cost.",
+        "Adaptability manages stakeholders, while resilience manages resources.",
+        "Adaptability prevents changes, while resilience eliminates risks."
+      ],
+      "answer": 0,
+      "explanation": "Both support the project team, but adaptability focuses on adjusting to change and resilience focuses on recovering from setbacks."
+    },
+    {
+      "id": "q33",
+      "type": "mcq",
+      "prompt": "A company introduces a new system and prepares employees to adopt different working behaviors and processes. Which principle is being applied?",
+      "choices": ["Complexity.", "Risk.", "Change.", "Systems Thinking."],
+      "answer": 2,
+      "explanation": "Change prepares those impacted to adopt and sustain new behaviors and processes during the transition to the intended future state."
+    },
+    {
+      "id": "q34",
+      "type": "mcq",
+      "prompt": "Which of the following correctly describes the Change principle?",
+      "choices": [
+        "Preventing employees from changing their existing working methods.",
+        "Preparing those impacted for the adoption and sustainment of new and different behaviors and processes.",
+        "Changing the project budget whenever stakeholders request it.",
+        "Allowing project teams to ignore organizational processes."
+      ],
+      "answer": 1,
+      "explanation": "The Change principle focuses on preparing people for the transition from the current state to the intended future state."
+    },
+    {
+      "id": "q35",
+      "type": "mcq",
+      "prompt": "Which of the following is NOT one of the 12 Principles of Project Management?",
+      "choices": ["Systems Thinking.", "Resource Allocation.", "Stewardship.", "Adaptability and Resilience."],
+      "answer": 1,
+      "explanation": "Resource allocation is not listed as one of the 12 principles."
+    },
+    {
+      "id": "q36",
+      "type": "mcq",
+      "prompt": "Which of the following correctly identifies the five stages of the IT Project Management Lifecycle?",
+      "choices": [
+        "Initiation, Design, Execution, Testing, Closing.",
+        "Planning, Initiation, Monitoring, Testing, Operation.",
+        "Initiation, Planning, Execution, Monitoring and Controlling, Closing.",
+        "Initiation, Budgeting, Execution, Risk Management, Closing."
+      ],
+      "answer": 2,
+      "explanation": "These are the five stages shown in slide 21."
+    },
+    {
+      "id": "q37",
+      "type": "mcq",
+      "prompt": "What is the first stage of the IT Project Management Lifecycle?",
+      "choices": ["Project Planning.", "Project Execution.", "Project Closing.", "Project Initiation."],
+      "answer": 3,
+      "explanation": "Project Initiation is the first stage of the lifecycle."
+    },
+    {
+      "id": "q38",
+      "type": "mcq",
+      "prompt": "Which stage focuses on creating a detailed roadmap that guides the project from start to completion?",
+      "choices": ["Project Initiation.", "Project Planning.", "Project Execution.", "Project Closing."],
+      "answer": 1,
+      "explanation": "Project Planning creates a detailed roadmap to guide the project."
+    },
+    {
+      "id": "q39",
+      "type": "mcq",
+      "prompt": "During which stage does the project management team focus on completing the work defined in the project management plan?",
+      "choices": ["Project Initiation.", "Project Planning.", "Project Execution.", "Project Closing."],
+      "answer": 2,
+      "explanation": "Project Execution translates the project management plan into action."
+    },
+    {
+      "id": "q40",
+      "type": "mcq",
+      "prompt": "A project manager tracks project progress, reviews performance, and takes action when problems arise. Which stage does this describe?",
+      "choices": ["Project Initiation.", "Project Closing.", "Project Planning.", "Monitoring and Controlling."],
+      "answer": 3,
+      "explanation": "Monitoring and Controlling focuses on tracking, reviewing, and regulating project progress and performance."
+    },
+    {
+      "id": "q41",
+      "type": "mcq",
+      "prompt": "Which stage ensures that all project work is finalized and deliverables are accepted?",
+      "choices": ["Project Planning.", "Project Closing.", "Project Execution.", "Project Initiation."],
+      "answer": 1,
+      "explanation": "Project Closing formally completes the project and ensures that deliverables and administrative tasks are finalized."
+    },
+    {
+      "id": "q42",
+      "type": "mcq",
+      "prompt": "A company has an idea for developing a new mobile application. Before starting, it defines the project at a high level and checks whether it aligns with organizational goals. Which stage is this?",
+      "choices": ["Project Execution.", "Project Monitoring and Controlling.", "Project Initiation.", "Project Closing."],
+      "answer": 2,
+      "explanation": "Project Initiation establishes the groundwork, defines the project at a high level, and checks alignment with strategic goals."
+    },
+    {
+      "id": "q43",
+      "type": "mcq",
+      "prompt": "A project manager needs official authorization to begin a project and authority to use organizational resources. Which document should be developed?",
+      "choices": ["Project Charter.", "Project Schedule.", "Stakeholder Register.", "Quality Management Plan."],
+      "answer": 0,
+      "explanation": "The Project Charter formally authorizes the project's existence and gives the project manager authority to apply organizational resources."
+    },
+    {
+      "id": "q44",
+      "type": "mcq",
+      "prompt": "A project manager records stakeholders' roles, expectations, and influence levels. Which document is being created?",
+      "choices": ["Project Management Plan.", "Project Scope Statement.", "Stakeholder Register.", "Project Charter."],
+      "answer": 2,
+      "explanation": "The Stakeholder Register documents stakeholder details, including their roles, expectations, and influence levels."
+    },
+    {
+      "id": "q45",
+      "type": "mcq",
+      "prompt": "Before approving a project, management analyzes its resources, budget, time, and potential constraints to determine whether it is viable. What activity is being performed?",
+      "choices": ["Stakeholder Engagement Planning.", "Feasibility Study.", "Quality Assurance.", "Project Closure."],
+      "answer": 1,
+      "explanation": "A feasibility study analyzes whether the project is viable based on resources, budget, time, and constraints."
+    },
+    {
+      "id": "q46",
+      "type": "mcq",
+      "prompt": "A project manager defines the project's purpose, key deliverables, boundaries, and success criteria at a high level. Which activity is this?",
+      "choices": ["Defining High-Level Scope.", "Developing the Project Schedule.", "Managing Project Resources.", "Monitoring Project Performance."],
+      "answer": 0,
+      "explanation": "Defining High-Level Scope establishes the project's purpose, deliverables, boundaries, and success criteria."
+    },
+    {
+      "id": "q47",
+      "type": "mcq",
+      "prompt": "A project cannot proceed because senior management has not approved the required funding and resources. Which initiation activity is incomplete?",
+      "choices": ["Identifying Stakeholders.", "Defining High-Level Scope.", "Approval and Funding.", "Performing a Feasibility Study."],
+      "answer": 2,
+      "explanation": "Approval and Funding involves obtaining the necessary approval and securing funding and resources."
+    },
+    {
+      "id": "q48",
+      "type": "mcq",
+      "prompt": "Which statement best describes the main purpose of Project Initiation?",
+      "choices": [
+        "To complete all project deliverables and obtain final acceptance.",
+        "To provide clarity on whether the project is worth pursuing and officially establish its foundation.",
+        "To monitor the project's actual spending against the budget.",
+        "To execute all tasks defined in the project management plan."
+      ],
+      "answer": 1,
+      "explanation": "Initiation determines whether a project is worth pursuing and establishes the foundation for planning and execution."
+    },
+    {
+      "id": "q49",
+      "type": "mcq",
+      "prompt": "Which statement about the Monitoring and Controlling stage is correct?",
+      "choices": [
+        "It only begins after project execution has been completed.",
+        "It replaces the project management plan when problems occur.",
+        "It runs concurrently with Project Execution to track progress and ensure the project stays on track.",
+        "It focuses only on obtaining project approval."
+      ],
+      "answer": 2,
+      "explanation": "Monitoring and Controlling runs alongside execution and helps ensure that the project meets its objectives."
+    },
+    {
+      "id": "q50",
+      "type": "mcq",
+      "prompt": "A project manager identifies that a project is not meeting its expected performance. The manager reviews progress and regulates the work to address the problem. What is the main purpose of this activity?",
+      "choices": [
+        "To establish the project's initial authorization.",
+        "To ensure that the project stays on track to meet its objectives.",
+        "To define the project's high-level scope.",
+        "To formally release project resources."
+      ],
+      "answer": 1,
+      "explanation": "Monitoring and Controlling identifies performance problems and helps take corrective action to keep the project aligned with its objectives."
+    }
+  ]
+}

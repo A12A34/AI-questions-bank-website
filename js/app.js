@@ -6,6 +6,7 @@ const STORAGE_KEYS = {
   mode: "qb-mode",
   bookmarksOnly: "qb-bookmarks-only",
   folderConfig: "qb-folder-config",
+  progress: "qb-progress",
 };
 
 const ARABIC_RE = /[\u0600-\u06FF]/;
@@ -25,13 +26,16 @@ const els = {
   title: document.getElementById("quiz-title"),
   progress: document.getElementById("progress"),
   scoreBanner: document.getElementById("score-banner"),
+  timer: document.getElementById("timer"),
   list: document.getElementById("question-list"),
+  jumpNav: document.getElementById("jump-nav"),
   jumpGrid: document.getElementById("jump-grid"),
   jumpPrev: document.getElementById("jump-prev"),
   jumpNext: document.getElementById("jump-next"),
   emptyFilter: document.getElementById("empty-filter"),
   btnBack: document.getElementById("btn-back"),
   btnSubmit: document.getElementById("btn-submit"),
+  btnNextTimed: document.getElementById("btn-next-timed"),
   btnExport: document.getElementById("btn-export-html"),
   shuffleQuestions: document.getElementById("shuffle-questions"),
   shuffleChoices: document.getElementById("shuffle-choices"),
@@ -54,6 +58,9 @@ const state = {
   activeId: null,
   folders: [],
   folderAssignments: {},
+  timedIndex: 0,
+  timedSeconds: 20,
+  timerId: null,
 };
 
 let observer = null;
@@ -261,7 +268,7 @@ function renderHome() {
   [...folders.entries()].forEach(([subject, banks]) => {
       const folder = document.createElement("details");
       folder.className = "bank-folder";
-      folder.open = true;
+      folder.open = false;
 
       const summary = document.createElement("summary");
       summary.innerHTML = `<span class="folder-name">${escapeHtml(subject)}</span><span class="folder-count">${banks.length} ${banks.length === 1 ? "quiz" : "quizzes"}</span>`;
@@ -276,7 +283,11 @@ function renderHome() {
           button.type = "button";
           button.className = "quiz-link";
           const metadata = [bank.gradeLevel, bank.difficulty].filter(Boolean).join(" · ");
-          button.innerHTML = `<strong>${escapeHtml(bank.title)}</strong><span class="count">${escapeHtml(metadata || "Open this set")}</span>`;
+          const attempts = getProgress(bank.id);
+          const history = attempts.length
+            ? ` · ${attempts.length} attempt${attempts.length === 1 ? "" : "s"} · best ${Math.max(...attempts.map((attempt) => attempt.percent))}%`
+            : "";
+          button.innerHTML = `<strong>${escapeHtml(bank.title)}</strong><span class="count">${escapeHtml((metadata || "Open this set") + history)}</span>`;
           button.addEventListener("click", () => openBank(bank));
           list.append(button);
         });
@@ -413,6 +424,7 @@ async function openBank(meta) {
 }
 
 function startAttempt(bank) {
+  stopTimedTimer();
   state.bank = bank;
   state.questions = prepareAttempt(bank);
   state.answers = {};
@@ -421,9 +433,34 @@ function startAttempt(bank) {
   state.score = null;
   state.bookmarks = loadBookmarks(bank.id);
   state.activeId = state.questions[0]?.id ?? null;
+  state.timedIndex = 0;
+  state.timedSeconds = 20;
   els.title.textContent = bank.title;
   setView("quiz");
   renderQuiz();
+}
+
+function getProgress(bankId) {
+  try {
+    const raw = localStorage.getItem(`${STORAGE_KEYS.progress}:${bankId}`);
+    const attempts = raw ? JSON.parse(raw) : [];
+    return Array.isArray(attempts) ? attempts.filter((attempt) => Number.isFinite(attempt.percent)) : [];
+  } catch {
+    return [];
+  }
+}
+
+function saveProgress() {
+  if (!state.bank || !state.score || state.score.total === 0) return;
+  const attempts = getProgress(state.bank.id);
+  attempts.push({
+    date: new Date().toISOString(),
+    correct: state.score.correct,
+    total: state.score.total,
+    percent: Math.round((state.score.correct / state.score.total) * 100),
+    mode: state.mode,
+  });
+  persist(`${STORAGE_KEYS.progress}:${state.bank.id}`, JSON.stringify(attempts.slice(-50)));
 }
 
 function userAnswer(question) {
@@ -499,6 +536,12 @@ function updateProgress() {
       state.score.total === 0
         ? "Submitted — writing questions are self-graded against the model answers."
         : `Score: ${state.score.correct} / ${state.score.total} (writing items excluded)`;
+    if (state.score.total > 0) {
+      const attempts = getProgress(state.bank.id);
+      const best = Math.max(...attempts.map((attempt) => attempt.percent), Math.round((state.score.correct / state.score.total) * 100));
+      const previous = attempts.at(-1);
+      els.scoreBanner.textContent += ` · Best: ${best}%${previous ? ` · Previous: ${previous.percent}%` : ""}`;
+    }
   } else {
     els.scoreBanner.hidden = true;
   }
@@ -597,9 +640,16 @@ function applyVisibility() {
 
 function renderQuiz() {
   updateProgress();
-  els.btnSubmit.hidden = state.mode === "practice" || state.submitted;
+  els.btnSubmit.hidden = state.mode !== "test" || state.submitted;
+  els.btnNextTimed.hidden = state.mode !== "timed" || state.submitted;
+  els.timer.hidden = state.mode !== "timed" || state.submitted;
+  els.jumpNav.hidden = state.mode === "timed";
   els.list.innerHTML = "";
-  state.questions.forEach((question, index) => {
+  const questions = state.mode === "timed"
+    ? state.questions.slice(state.timedIndex, state.timedIndex + 1)
+    : state.questions;
+  questions.forEach((question, index) => {
+    const actualIndex = state.mode === "timed" ? state.timedIndex : index;
     const article = document.createElement("article");
     article.className = "card question-card";
     article.id = `question-${question.id}`;
@@ -607,11 +657,15 @@ function renderQuiz() {
     if (state.bookmarksOnly && !state.bookmarks.has(question.id)) {
       article.classList.add("is-hidden");
     }
-    renderQuestionCard(article, question, index);
+    renderQuestionCard(article, question, actualIndex);
     els.list.append(article);
   });
   updateJumpNav();
   observeQuestions();
+  if (state.mode === "timed" && !state.submitted) {
+    els.btnNextTimed.textContent = state.timedIndex === state.questions.length - 1 ? "Finish" : "Next question";
+    startTimedTimer();
+  }
 }
 
 function renderQuestionCard(article, question, index) {
@@ -935,8 +989,44 @@ function checkQuestion(question, index) {
 }
 
 function submitTest() {
+  stopTimedTimer();
   state.submitted = true;
   state.score = computeScore();
+  saveProgress();
+  renderQuiz();
+}
+
+function startTimedTimer() {
+  stopTimedTimer();
+  state.timedSeconds = 20;
+  updateTimer();
+  state.timerId = window.setInterval(() => {
+    state.timedSeconds -= 1;
+    updateTimer();
+    if (state.timedSeconds <= 0) nextTimedQuestion();
+  }, 1000);
+}
+
+function stopTimedTimer() {
+  if (state.timerId !== null) {
+    window.clearInterval(state.timerId);
+    state.timerId = null;
+  }
+}
+
+function updateTimer() {
+  els.timer.textContent = `Time left: ${state.timedSeconds}s`;
+  els.timer.classList.toggle("timer-warning", state.timedSeconds <= 5);
+}
+
+function nextTimedQuestion() {
+  if (state.mode !== "timed" || state.submitted) return;
+  if (state.timedIndex >= state.questions.length - 1) {
+    submitTest();
+    return;
+  }
+  state.timedIndex += 1;
+  state.activeId = state.questions[state.timedIndex]?.id ?? null;
   renderQuiz();
 }
 
@@ -997,6 +1087,7 @@ function bindControls() {
     renderHome();
   });
   els.btnSubmit.addEventListener("click", submitTest);
+  els.btnNextTimed.addEventListener("click", nextTimedQuestion);
   els.manageFolders.addEventListener("click", () => {
     els.folderManager.hidden = false;
     renderFolderManager();

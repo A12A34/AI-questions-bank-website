@@ -51,6 +51,7 @@
           <div class="meta-row">
             <p id="progress" class="progress"></p>
             <p id="score-banner" class="score-banner" hidden></p>
+            <p id="timer" class="timer" hidden></p>
           </div>
           <div class="controls">
             <fieldset class="segmented">
@@ -62,6 +63,10 @@
               <label>
                 <input type="radio" name="mode" value="test" />
                 Test
+              </label>
+              <label>
+                <input type="radio" name="mode" value="timed" />
+                Timed
               </label>
             </fieldset>
             <label class="toggle">
@@ -96,6 +101,7 @@
             <p id="empty-filter" class="empty-filter" hidden>No bookmarked questions yet. Star a question to save it here.</p>
 
             <div class="quiz-actions">
+              <button type="button" id="btn-next-timed" class="btn btn-primary" hidden>Next question</button>
               <button type="button" id="btn-submit" class="btn btn-primary" hidden>Submit</button>
             </div>
           </div>

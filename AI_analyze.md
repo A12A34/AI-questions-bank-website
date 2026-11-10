@@ -144,7 +144,7 @@ The JSON schema supports **five question types**:
 
 - **No answer persistence** — refreshing the page loses all user answers (only bookmarks and preferences are saved).
 - **No search or filtering by topic** — with 663+ questions, finding specific topics requires scrolling.
-- **No progress tracking across sessions** — no way to see which banks have been completed.
+- **Progress tracking is local-only** — attempt history is retained in browser storage and is not synced between devices.
 - **No keyboard navigation** — arrow keys don't move between questions.
 - **Duplicate `.quiz-content` rule** in `style.css` (lines 225–228 and 248–252).
 - **No `<meta description>`** or Open Graph tags in `index.html` for SEO/sharing.

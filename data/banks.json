@@ -143,6 +143,14 @@
       "subject": "GRD",
       "gradeLevel": "University",
       "difficulty": "Beginner"
+    },
+    {
+      "id": "it-project-management",
+      "title": "IT Project Management (50 MCQ Questions)",
+      "file": "it-project-management.json",
+      "subject": "GRD",
+      "gradeLevel": "University",
+      "difficulty": "Intermediate"
     }
   ]
 }
