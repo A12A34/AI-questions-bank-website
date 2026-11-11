@@ -648,8 +648,16 @@ function renderQuiz() {
   const questions = state.mode === "timed"
     ? state.questions.slice(state.timedIndex, state.timedIndex + 1)
     : state.questions;
+  let previousSection = null;
   questions.forEach((question, index) => {
     const actualIndex = state.mode === "timed" ? state.timedIndex : index;
+    if (question.section && question.section !== previousSection) {
+      const heading = document.createElement("h2");
+      heading.className = "question-section";
+      heading.textContent = question.section;
+      els.list.append(heading);
+      previousSection = question.section;
+    }
     const article = document.createElement("article");
     article.className = "card question-card";
     article.id = `question-${question.id}`;

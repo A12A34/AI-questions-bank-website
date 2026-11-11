@@ -151,6 +151,14 @@
       "subject": "GRD",
       "gradeLevel": "University",
       "difficulty": "Intermediate"
+    },
+    {
+      "id": "project-management-waterfall",
+      "title": "Project Management & Waterfall - 100 Interactive MCQs",
+      "file": "project-management-waterfall.json",
+      "subject": "GRD",
+      "gradeLevel": "University",
+      "difficulty": "Intermediate"
     }
   ]
 }
