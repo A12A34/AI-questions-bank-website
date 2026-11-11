@@ -81,6 +81,14 @@
       "difficulty": "Intermediate"
     },
     {
+      "id": "islamic-marriage-activities",
+      "title": "التربية الإسلامية: الخطبة وعقد الزواج",
+      "file": "islamic-marriage-activities.json",
+      "subject": "Islamic Studies",
+      "gradeLevel": "High School",
+      "difficulty": "Intermediate"
+    },
+    {
       "id": "linear-regression",
       "title": "Linear Regression (100 Questions)",
       "file": "linear-regression.json",

@@ -10,7 +10,7 @@ const STORAGE_KEYS = {
 };
 
 const ARABIC_RE = /[\u0600-\u06FF]/;
-const SUBJECT_FOLDERS = ["ML", "DL", "IoT", "Arabic", "Math", "GRD", "phyisics", "chemistry"];
+const SUBJECT_FOLDERS = ["ML", "DL", "IoT", "Arabic", "Islamic Studies", "Math", "GRD", "phyisics", "chemistry"];
 const DEFAULT_FOLDER_PERMISSION = "public";
 
 const els = {
