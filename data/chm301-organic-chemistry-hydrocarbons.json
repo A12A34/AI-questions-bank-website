@@ -1,0 +1,2066 @@
+{
+  "id": "chm301-organic-chemistry-hydrocarbons",
+  "title": "CHM301: Organic Chemistry and Hydrocarbons (170 Questions)",
+  "questions": [
+    {
+      "id": "chm301-q1",
+      "type": "mcq",
+      "prompt": "What is organic chemistry mainly the study of?",
+      "choices": [
+        "Metals and their compounds",
+        "Carbon and its compounds",
+        "Acids and bases only",
+        "Ionic compounds only"
+      ],
+      "answer": 1,
+      "explanation": "Organic chemistry is the study of carbon and its compounds."
+    },
+    {
+      "id": "chm301-q2",
+      "type": "mcq",
+      "prompt": "Which elements are found in a hydrocarbon?",
+      "choices": [
+        "Carbon and oxygen",
+        "Hydrogen and oxygen",
+        "Carbon and hydrogen",
+        "Carbon, hydrogen, and oxygen"
+      ],
+      "answer": 2,
+      "explanation": "A hydrocarbon contains only carbon and hydrogen."
+    },
+    {
+      "id": "chm301-q3",
+      "type": "mcq",
+      "prompt": "Which statement is correct?",
+      "choices": [
+        "All organic compounds are hydrocarbons.",
+        "All hydrocarbons are organic compounds.",
+        "Hydrocarbons contain oxygen.",
+        "Hydrocarbons contain nitrogen."
+      ],
+      "answer": 1,
+      "explanation": "Hydrocarbons are organic compounds, but not every organic compound is a hydrocarbon."
+    },
+    {
+      "id": "chm301-q4",
+      "type": "mcq",
+      "prompt": "Which substance is a hydrocarbon?",
+      "choices": [
+        "C2H4",
+        "C2H5OH",
+        "CH3COOH",
+        "CH3Cl"
+      ],
+      "answer": 0,
+      "explanation": "C2H4 contains only carbon and hydrogen."
+    },
+    {
+      "id": "chm301-q5",
+      "type": "mcq",
+      "prompt": "Which substance is NOT a hydrocarbon?",
+      "choices": [
+        "CH4",
+        "C3H8",
+        "C2H4",
+        "C2H5OH"
+      ],
+      "answer": 3,
+      "explanation": "Ethanol contains oxygen, so it is organic but not a hydrocarbon."
+    },
+    {
+      "id": "chm301-q6",
+      "type": "mcq",
+      "prompt": "Why is carbon able to form many compounds?",
+      "choices": [
+        "It has 1 valence electron.",
+        "It has 2 valence electrons.",
+        "It has 4 valence electrons.",
+        "It has 8 valence electrons."
+      ],
+      "answer": 2,
+      "explanation": "Carbon has four valence electrons and can form four bonds."
+    },
+    {
+      "id": "chm301-q7",
+      "type": "mcq",
+      "prompt": "How many bonds can carbon normally form to achieve a stable octet?",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 3,
+      "explanation": "Carbon normally forms four bonds."
+    },
+    {
+      "id": "chm301-q8",
+      "type": "mcq",
+      "prompt": "Which is a property of organic compounds?",
+      "choices": [
+        "They usually conduct electricity well.",
+        "They are usually high-melting solids.",
+        "They are nonelectrolytes.",
+        "They are always soluble in water."
+      ],
+      "answer": 2,
+      "explanation": "Organic compounds are generally nonelectrolytes."
+    },
+    {
+      "id": "chm301-q9",
+      "type": "mcq",
+      "prompt": "Why do many organic compounds react slowly?",
+      "choices": [
+        "They are ionic.",
+        "They are covalent.",
+        "They contain metals.",
+        "They contain salts."
+      ],
+      "answer": 1,
+      "explanation": "Many organic compounds react slowly because they are covalent."
+    },
+    {
+      "id": "chm301-q10",
+      "type": "mcq",
+      "prompt": "Which statement about melting and boiling points is generally correct?",
+      "choices": [
+        "Usually high",
+        "Usually low",
+        "Always zero",
+        "Always extremely high"
+      ],
+      "answer": 1,
+      "explanation": "Organic compounds usually have low melting and boiling points."
+    },
+    {
+      "id": "chm301-q11",
+      "type": "mcq",
+      "prompt": "Which statement about organic compounds and water is correct?",
+      "choices": [
+        "They are usually soluble and miscible.",
+        "They are usually insoluble and immiscible.",
+        "They always react with water.",
+        "They are always ionic in water."
+      ],
+      "answer": 1,
+      "explanation": "Organic compounds are usually insoluble and immiscible in water."
+    },
+    {
+      "id": "chm301-q12",
+      "type": "mcq",
+      "prompt": "Which of the following is an organic compound?",
+      "choices": [
+        "NaCl",
+        "Methanol",
+        "Fe2O3",
+        "NH4Cl"
+      ],
+      "answer": 1,
+      "explanation": "Methanol is an organic compound."
+    },
+    {
+      "id": "chm301-q13",
+      "type": "mcq",
+      "prompt": "Which of the following is a hydrocarbon?",
+      "choices": [
+        "Ethanol",
+        "Phenol",
+        "Ethene",
+        "Methanol"
+      ],
+      "answer": 2,
+      "explanation": "Ethene contains only carbon and hydrogen."
+    },
+    {
+      "id": "chm301-q14",
+      "type": "mcq",
+      "prompt": "Which pair contains only hydrocarbons?",
+      "choices": [
+        "Propane and butane",
+        "Ethanol and propane",
+        "Phenol and methane",
+        "Methanol and ethene"
+      ],
+      "answer": 0,
+      "explanation": "Both propane and butane contain only carbon and hydrogen."
+    },
+    {
+      "id": "chm301-q15",
+      "type": "mcq",
+      "prompt": "Which pair contains only organic compounds but not necessarily hydrocarbons?",
+      "choices": [
+        "Glucose and benzene",
+        "Sodium chloride and benzene",
+        "Calcium carbonate and propane",
+        "Ammonium chloride and butane"
+      ],
+      "answer": 0,
+      "explanation": "Glucose and benzene are organic compounds; glucose contains oxygen."
+    },
+    {
+      "id": "chm301-q16",
+      "type": "mcq",
+      "prompt": "What does a molecular formula show?",
+      "choices": [
+        "Only the arrangement of atoms",
+        "The number of atoms of each element",
+        "Only the bonds between atoms",
+        "The shape of the molecule"
+      ],
+      "answer": 1,
+      "explanation": "A molecular formula shows the number of atoms of each element."
+    },
+    {
+      "id": "chm301-q17",
+      "type": "mcq",
+      "prompt": "What is the molecular formula of propane?",
+      "choices": [
+        "CH4",
+        "C2H6",
+        "C3H8",
+        "C4H10"
+      ],
+      "answer": 2,
+      "explanation": "Propane is C3H8."
+    },
+    {
+      "id": "chm301-q18",
+      "type": "mcq",
+      "prompt": "Which type of formula shows the arrangement of atoms?",
+      "choices": [
+        "Molecular formula",
+        "Structural formula",
+        "Empirical formula",
+        "Numerical formula"
+      ],
+      "answer": 1,
+      "explanation": "A structural formula shows atom arrangement."
+    },
+    {
+      "id": "chm301-q19",
+      "type": "mcq",
+      "prompt": "Which formula is the most informative?",
+      "choices": [
+        "Molecular formula",
+        "Structural formula",
+        "Condensed formula",
+        "General formula"
+      ],
+      "answer": 1,
+      "explanation": "A structural formula shows both atoms and their arrangement."
+    },
+    {
+      "id": "chm301-q20",
+      "type": "mcq",
+      "prompt": "What is the condensed formula of propane?",
+      "choices": [
+        "C3H8",
+        "CH3CH2CH3",
+        "CH4",
+        "C2H6"
+      ],
+      "answer": 1,
+      "explanation": "The condensed formula of propane is CH3CH2CH3."
+    },
+    {
+      "id": "chm301-q21",
+      "type": "mcq",
+      "prompt": "What does a condensed formula combine?",
+      "choices": [
+        "Ionic and covalent formulas",
+        "Structural and molecular formulas",
+        "Acid and base formulas",
+        "Empirical and ionic formulas"
+      ],
+      "answer": 1,
+      "explanation": "A condensed formula combines structural and molecular information."
+    },
+    {
+      "id": "chm301-q22",
+      "type": "mcq",
+      "prompt": "What is a homologous series?",
+      "choices": [
+        "A group of unrelated compounds",
+        "A sequence of organic compounds with similar characteristics",
+        "A group containing only metals",
+        "A group containing only acids"
+      ],
+      "answer": 1,
+      "explanation": "It is a sequence with the same general formula and similar chemical properties."
+    },
+    {
+      "id": "chm301-q23",
+      "type": "mcq",
+      "prompt": "Members of a homologous series usually differ by:",
+      "choices": [
+        "CH",
+        "CH2",
+        "H2O",
+        "CO2"
+      ],
+      "answer": 1,
+      "explanation": "Successive members usually differ by one CH2 unit."
+    },
+    {
+      "id": "chm301-q24",
+      "type": "mcq",
+      "prompt": "Why do members of a homologous series have similar chemical properties?",
+      "choices": [
+        "They have identical molecular masses.",
+        "They contain the same functional group.",
+        "They have exactly the same formula.",
+        "They contain different elements."
+      ],
+      "answer": 1,
+      "explanation": "Similar chemical properties result from the same functional group."
+    },
+    {
+      "id": "chm301-q25",
+      "type": "mcq",
+      "prompt": "Which property gradually changes as molecular mass increases?",
+      "choices": [
+        "Atomic number",
+        "Boiling point",
+        "Number of elements",
+        "Functional group"
+      ],
+      "answer": 1,
+      "explanation": "Physical properties such as boiling point gradually change."
+    },
+    {
+      "id": "chm301-q26",
+      "type": "mcq",
+      "prompt": "Which belongs to the alkane homologous series?",
+      "choices": [
+        "CH4",
+        "C2H4",
+        "C2H2",
+        "C3H6"
+      ],
+      "answer": 0,
+      "explanation": "Methane is an alkane."
+    },
+    {
+      "id": "chm301-q27",
+      "type": "mcq",
+      "prompt": "What is the general formula for alkanes?",
+      "choices": [
+        "CnH2n",
+        "CnH2n-2",
+        "CnH2n+2",
+        "CnHn"
+      ],
+      "answer": 2,
+      "explanation": "Alkanes follow CnH2n+2."
+    },
+    {
+      "id": "chm301-q28",
+      "type": "mcq",
+      "prompt": "Which type of bond exists between carbon atoms in alkanes?",
+      "choices": [
+        "C=C",
+        "C triple bond C",
+        "C-C",
+        "C=O"
+      ],
+      "answer": 2,
+      "explanation": "Alkanes contain C-C single bonds."
+    },
+    {
+      "id": "chm301-q29",
+      "type": "mcq",
+      "prompt": "Alkanes are described as:",
+      "choices": [
+        "Unsaturated",
+        "Saturated",
+        "Ionic",
+        "Aromatic only"
+      ],
+      "answer": 1,
+      "explanation": "Alkanes are saturated hydrocarbons."
+    },
+    {
+      "id": "chm301-q30",
+      "type": "mcq",
+      "prompt": "What does saturated mean for an alkane?",
+      "choices": [
+        "It contains the maximum number of hydrogen atoms.",
+        "It contains oxygen.",
+        "It has double bonds.",
+        "It has triple bonds."
+      ],
+      "answer": 0,
+      "explanation": "Saturated alkanes have the maximum number of hydrogens."
+    },
+    {
+      "id": "chm301-q31",
+      "type": "mcq",
+      "prompt": "Which is the first member of the alkane series?",
+      "choices": [
+        "Ethane",
+        "Propane",
+        "Methane",
+        "Butane"
+      ],
+      "answer": 2,
+      "explanation": "Methane is first."
+    },
+    {
+      "id": "chm301-q32",
+      "type": "mcq",
+      "prompt": "Which sequence is in the correct order?",
+      "choices": [
+        "Methane -> ethane -> propane -> butane",
+        "Ethane -> methane -> butane -> propane",
+        "Propane -> methane -> ethane -> butane",
+        "Butane -> propane -> ethane -> methane"
+      ],
+      "answer": 0,
+      "explanation": "This is the correct alkane order."
+    },
+    {
+      "id": "chm301-q33",
+      "type": "mcq",
+      "prompt": "Which formula represents methane?",
+      "choices": [
+        "CH4",
+        "C2H6",
+        "C3H8",
+        "C4H10"
+      ],
+      "answer": 0,
+      "explanation": "Methane is CH4."
+    },
+    {
+      "id": "chm301-q34",
+      "type": "mcq",
+      "prompt": "Which formula represents ethane?",
+      "choices": [
+        "CH4",
+        "C2H6",
+        "C3H8",
+        "C4H10"
+      ],
+      "answer": 1,
+      "explanation": "Ethane is C2H6."
+    },
+    {
+      "id": "chm301-q35",
+      "type": "mcq",
+      "prompt": "Which formula represents butane?",
+      "choices": [
+        "C2H6",
+        "C3H8",
+        "C4H10",
+        "C5H12"
+      ],
+      "answer": 2,
+      "explanation": "Butane is C4H10."
+    },
+    {
+      "id": "chm301-q36",
+      "type": "mcq",
+      "prompt": "What is the difference between CH4 and C2H6?",
+      "choices": [
+        "CH",
+        "CH2",
+        "C2H2",
+        "H2O"
+      ],
+      "answer": 1,
+      "explanation": "Successive alkanes differ by CH2."
+    },
+    {
+      "id": "chm301-q37",
+      "type": "mcq",
+      "prompt": "What is the difference between C2H6 and C3H8?",
+      "choices": [
+        "CH",
+        "CH2",
+        "C2H4",
+        "H2"
+      ],
+      "answer": 1,
+      "explanation": "Each successive alkane differs by CH2."
+    },
+    {
+      "id": "chm301-q38",
+      "type": "mcq",
+      "prompt": "Which statement about a homologous series is FALSE?",
+      "choices": [
+        "Members have the same general formula.",
+        "Members have similar chemical properties.",
+        "Members differ by CH2.",
+        "Every member has exactly the same molecular formula."
+      ],
+      "answer": 3,
+      "explanation": "Members have different molecular formulas."
+    },
+    {
+      "id": "chm301-q39",
+      "type": "mcq",
+      "prompt": "Which formula is a molecular formula?",
+      "choices": [
+        "C3H8",
+        "CH3CH2CH3",
+        "C-C-C",
+        "A displayed structural diagram"
+      ],
+      "answer": 0,
+      "explanation": "C3H8 gives the number of each atom."
+    },
+    {
+      "id": "chm301-q40",
+      "type": "mcq",
+      "prompt": "Which formula is a condensed formula?",
+      "choices": [
+        "C3H8",
+        "CH3CH2CH3",
+        "C-C-C",
+        "C3H8O"
+      ],
+      "answer": 1,
+      "explanation": "CH3CH2CH3 is condensed propane."
+    },
+    {
+      "id": "chm301-q41",
+      "type": "mcq",
+      "prompt": "Which statement about molecular formulas is correct?",
+      "choices": [
+        "They show the exact arrangement of atoms.",
+        "They show the number of each type of atom.",
+        "They only show carbon atoms.",
+        "They only show hydrogen atoms."
+      ],
+      "answer": 1,
+      "explanation": "Molecular formulas show atom counts."
+    },
+    {
+      "id": "chm301-q42",
+      "type": "mcq",
+      "prompt": "Which formula gives more information about atom arrangement?",
+      "choices": [
+        "Molecular formula",
+        "Structural formula",
+        "General formula",
+        "Numerical formula"
+      ],
+      "answer": 1,
+      "explanation": "Structural formulas show arrangement."
+    },
+    {
+      "id": "chm301-q43",
+      "type": "mcq",
+      "prompt": "A compound contains only carbon and hydrogen. What can it be classified as?",
+      "choices": [
+        "Hydrocarbon",
+        "Alcohol",
+        "Salt",
+        "Acid"
+      ],
+      "answer": 0,
+      "explanation": "Hydrocarbons contain only carbon and hydrogen."
+    },
+    {
+      "id": "chm301-q44",
+      "type": "mcq",
+      "prompt": "A compound contains C, H, and O. Can it be a hydrocarbon?",
+      "choices": [
+        "Yes, always",
+        "Yes, if it has more carbon",
+        "No",
+        "Only if it is a gas"
+      ],
+      "answer": 2,
+      "explanation": "A hydrocarbon contains only carbon and hydrogen."
+    },
+    {
+      "id": "chm301-q45",
+      "type": "mcq",
+      "prompt": "Which of these is an example of a hydrocarbon?",
+      "choices": [
+        "Glucose",
+        "Benzene",
+        "Phenol",
+        "Methanol"
+      ],
+      "answer": 1,
+      "explanation": "Benzene contains only carbon and hydrogen."
+    },
+    {
+      "id": "chm301-q46",
+      "type": "mcq",
+      "prompt": "Which compound contains oxygen and therefore is not a hydrocarbon?",
+      "choices": [
+        "Propane",
+        "Butane",
+        "Phenol",
+        "Toluene"
+      ],
+      "answer": 2,
+      "explanation": "Phenol contains oxygen."
+    },
+    {
+      "id": "chm301-q47",
+      "type": "mcq",
+      "prompt": "Which change would you expect across a homologous series as molecular mass increases?",
+      "choices": [
+        "Physical properties gradually change.",
+        "The functional group changes completely.",
+        "All chemical properties become unrelated.",
+        "The number of elements changes."
+      ],
+      "answer": 0,
+      "explanation": "Boiling point, melting point, and density can change gradually."
+    },
+    {
+      "id": "chm301-q48",
+      "type": "mcq",
+      "prompt": "Which statement best explains why members of a homologous series react similarly?",
+      "choices": [
+        "They have the same molecular mass.",
+        "They contain the same functional group.",
+        "They all contain the same number of atoms.",
+        "They all have the same physical properties."
+      ],
+      "answer": 1,
+      "explanation": "The same functional group gives similar chemical properties."
+    },
+    {
+      "id": "chm301-q49",
+      "type": "mcq",
+      "prompt": "Which of the following is NOT an alkane?",
+      "choices": [
+        "CH4",
+        "C2H6",
+        "C3H8",
+        "C3H6"
+      ],
+      "answer": 3,
+      "explanation": "For three carbons, an alkane is C3H8."
+    },
+    {
+      "id": "chm301-q50",
+      "type": "mcq",
+      "prompt": "Which statement summarizes the alkane series correctly?",
+      "choices": [
+        "Alkanes contain C=C bonds and follow CnH2n.",
+        "Alkanes contain C-C single bonds and follow CnH2n+2.",
+        "Alkanes contain C triple bond C and follow CnH2n-2.",
+        "Alkanes contain oxygen and follow CnH2n+2."
+      ],
+      "answer": 1,
+      "explanation": "Alkanes are saturated hydrocarbons with C-C single bonds and CnH2n+2."
+    },
+    {
+      "id": "chm301-q51",
+      "type": "tf",
+      "prompt": "Organic chemistry is the study of carbon and its compounds.",
+      "answer": true,
+      "explanation": "This is the definition of organic chemistry."
+    },
+    {
+      "id": "chm301-q52",
+      "type": "tf",
+      "prompt": "All organic compounds are hydrocarbons.",
+      "answer": false,
+      "explanation": "Hydrocarbons are organic, but not all organic compounds are hydrocarbons."
+    },
+    {
+      "id": "chm301-q53",
+      "type": "tf",
+      "prompt": "Hydrocarbons contain only carbon and hydrogen.",
+      "answer": true,
+      "explanation": "That is the definition of a hydrocarbon."
+    },
+    {
+      "id": "chm301-q54",
+      "type": "tf",
+      "prompt": "Carbon has four valence electrons.",
+      "answer": true,
+      "explanation": "Carbon can form four bonds."
+    },
+    {
+      "id": "chm301-q55",
+      "type": "tf",
+      "prompt": "Carbon normally forms only one bond.",
+      "answer": false,
+      "explanation": "Carbon normally forms four bonds."
+    },
+    {
+      "id": "chm301-q56",
+      "type": "tf",
+      "prompt": "Organic compounds are usually electrolytes.",
+      "answer": false,
+      "explanation": "They are generally nonelectrolytes."
+    },
+    {
+      "id": "chm301-q57",
+      "type": "tf",
+      "prompt": "Organic compounds usually have low melting and boiling points.",
+      "answer": true,
+      "explanation": "This is a general property."
+    },
+    {
+      "id": "chm301-q58",
+      "type": "tf",
+      "prompt": "Organic compounds are usually soluble in water.",
+      "answer": false,
+      "explanation": "They are usually insoluble and immiscible in water."
+    },
+    {
+      "id": "chm301-q59",
+      "type": "tf",
+      "prompt": "A molecular formula shows the number of atoms of each element.",
+      "answer": true,
+      "explanation": "That is its purpose."
+    },
+    {
+      "id": "chm301-q60",
+      "type": "tf",
+      "prompt": "A structural formula shows the arrangement of atoms.",
+      "answer": true,
+      "explanation": "Structural formulas show arrangement."
+    },
+    {
+      "id": "chm301-q61",
+      "type": "tf",
+      "prompt": "CH3CH2CH3 is the molecular formula of propane.",
+      "answer": false,
+      "explanation": "It is the condensed formula; C3H8 is molecular."
+    },
+    {
+      "id": "chm301-q62",
+      "type": "tf",
+      "prompt": "A homologous series contains compounds with similar chemical properties.",
+      "answer": true,
+      "explanation": "The same functional group gives similar properties."
+    },
+    {
+      "id": "chm301-q63",
+      "type": "tf",
+      "prompt": "Successive members of a homologous series usually differ by CH2.",
+      "answer": true,
+      "explanation": "Each successive member generally adds CH2."
+    },
+    {
+      "id": "chm301-q64",
+      "type": "tf",
+      "prompt": "Members of a homologous series all have exactly the same molecular formula.",
+      "answer": false,
+      "explanation": "They share a general formula but have different molecular formulas."
+    },
+    {
+      "id": "chm301-q65",
+      "type": "tf",
+      "prompt": "Physical properties can gradually change across a homologous series.",
+      "answer": true,
+      "explanation": "Boiling point, melting point, and density can change."
+    },
+    {
+      "id": "chm301-q66",
+      "type": "tf",
+      "prompt": "Alkanes contain carbon-carbon double bonds.",
+      "answer": false,
+      "explanation": "Alkanes contain C-C single bonds."
+    },
+    {
+      "id": "chm301-q67",
+      "type": "tf",
+      "prompt": "Alkanes are saturated hydrocarbons.",
+      "answer": true,
+      "explanation": "They contain the maximum number of hydrogens."
+    },
+    {
+      "id": "chm301-q68",
+      "type": "tf",
+      "prompt": "The general formula of alkanes is CnH2n+2.",
+      "answer": true,
+      "explanation": "This is the alkane formula."
+    },
+    {
+      "id": "chm301-q69",
+      "type": "tf",
+      "prompt": "Methane is part of the alkane homologous series.",
+      "answer": true,
+      "explanation": "Methane is the first alkane."
+    },
+    {
+      "id": "chm301-q70",
+      "type": "tf",
+      "prompt": "Ethane has the molecular formula C2H4.",
+      "answer": false,
+      "explanation": "Ethane is C2H6."
+    },
+    {
+      "id": "chm301-q71",
+      "type": "tf",
+      "prompt": "Propane has the molecular formula C3H8.",
+      "answer": true,
+      "explanation": "Propane is C3H8."
+    },
+    {
+      "id": "chm301-q72",
+      "type": "tf",
+      "prompt": "Butane has the molecular formula C4H10.",
+      "answer": true,
+      "explanation": "Butane is C4H10."
+    },
+    {
+      "id": "chm301-q73",
+      "type": "tf",
+      "prompt": "Phenol is a hydrocarbon.",
+      "answer": false,
+      "explanation": "Phenol contains oxygen."
+    },
+    {
+      "id": "chm301-q74",
+      "type": "tf",
+      "prompt": "Benzene is a hydrocarbon.",
+      "answer": true,
+      "explanation": "Benzene is C6H6."
+    },
+    {
+      "id": "chm301-q75",
+      "type": "tf",
+      "prompt": "Each bond represents one pair of shared electrons.",
+      "answer": true,
+      "explanation": "A bond represents two shared electrons."
+    },
+    {
+      "id": "chm301-q76",
+      "type": "mcq",
+      "prompt": "What is the molecular formula of an alkane with 1 carbon atom?",
+      "choices": [
+        "CH2",
+        "CH3",
+        "CH4",
+        "C2H4"
+      ],
+      "answer": 2,
+      "explanation": "H = 2(1) + 2 = 4."
+    },
+    {
+      "id": "chm301-q77",
+      "type": "mcq",
+      "prompt": "What is the molecular formula of an alkane with 2 carbon atoms?",
+      "choices": [
+        "C2H4",
+        "C2H6",
+        "C2H8",
+        "C2H2"
+      ],
+      "answer": 1,
+      "explanation": "H = 2(2) + 2 = 6."
+    },
+    {
+      "id": "chm301-q78",
+      "type": "mcq",
+      "prompt": "What is the molecular formula of an alkane with 3 carbon atoms?",
+      "choices": [
+        "C3H6",
+        "C3H7",
+        "C3H8",
+        "C3H10"
+      ],
+      "answer": 2,
+      "explanation": "H = 2(3) + 2 = 8."
+    },
+    {
+      "id": "chm301-q79",
+      "type": "mcq",
+      "prompt": "What is the molecular formula of an alkane with 4 carbon atoms?",
+      "choices": [
+        "C4H8",
+        "C4H10",
+        "C4H12",
+        "C4H6"
+      ],
+      "answer": 1,
+      "explanation": "H = 2(4) + 2 = 10."
+    },
+    {
+      "id": "chm301-q80",
+      "type": "mcq",
+      "prompt": "What is the molecular formula of an alkane with 5 carbon atoms?",
+      "choices": [
+        "C5H10",
+        "C5H12",
+        "C5H14",
+        "C5H8"
+      ],
+      "answer": 1,
+      "explanation": "H = 2(5) + 2 = 12."
+    },
+    {
+      "id": "chm301-q81",
+      "type": "mcq",
+      "prompt": "What is the molecular formula of an alkane with 6 carbon atoms?",
+      "choices": [
+        "C6H12",
+        "C6H14",
+        "C6H16",
+        "C6H10"
+      ],
+      "answer": 1,
+      "explanation": "H = 2(6) + 2 = 14."
+    },
+    {
+      "id": "chm301-q82",
+      "type": "mcq",
+      "prompt": "What is the molecular formula of an alkane with 7 carbon atoms?",
+      "choices": [
+        "C7H14",
+        "C7H16",
+        "C7H18",
+        "C7H12"
+      ],
+      "answer": 1,
+      "explanation": "H = 2(7) + 2 = 16."
+    },
+    {
+      "id": "chm301-q83",
+      "type": "mcq",
+      "prompt": "What is the molecular formula of an alkane with 8 carbon atoms?",
+      "choices": [
+        "C8H16",
+        "C8H18",
+        "C8H20",
+        "C8H14"
+      ],
+      "answer": 1,
+      "explanation": "H = 2(8) + 2 = 18."
+    },
+    {
+      "id": "chm301-q84",
+      "type": "mcq",
+      "prompt": "What is the molecular formula of an alkane with 10 carbon atoms?",
+      "choices": [
+        "C10H20",
+        "C10H22",
+        "C10H18",
+        "C10H24"
+      ],
+      "answer": 1,
+      "explanation": "H = 2(10) + 2 = 22."
+    },
+    {
+      "id": "chm301-q85",
+      "type": "mcq",
+      "prompt": "Which alkane has the formula C6H14?",
+      "choices": [
+        "4 carbons",
+        "5 carbons",
+        "6 carbons",
+        "7 carbons"
+      ],
+      "answer": 2,
+      "explanation": "The carbon subscript gives n = 6."
+    },
+    {
+      "id": "chm301-q86",
+      "type": "mcq",
+      "prompt": "Which alkane has the formula C7H16?",
+      "choices": [
+        "5 carbons",
+        "6 carbons",
+        "7 carbons",
+        "8 carbons"
+      ],
+      "answer": 2,
+      "explanation": "C7 means seven carbon atoms."
+    },
+    {
+      "id": "chm301-q87",
+      "type": "mcq",
+      "prompt": "Which alkane has the formula C9H20?",
+      "choices": [
+        "Nonane",
+        "Octane",
+        "Heptane",
+        "Decane"
+      ],
+      "answer": 0,
+      "explanation": "An alkane with nine carbons is nonane."
+    },
+    {
+      "id": "chm301-q88",
+      "type": "mcq",
+      "prompt": "Which formula is NOT consistent with the alkane formula?",
+      "choices": [
+        "CH4",
+        "C2H6",
+        "C3H8",
+        "C4H8"
+      ],
+      "answer": 3,
+      "explanation": "For n = 4, the formula is C4H10."
+    },
+    {
+      "id": "chm301-q89",
+      "type": "mcq",
+      "prompt": "Which formula is an alkane?",
+      "choices": [
+        "C5H12",
+        "C5H10",
+        "C5H8",
+        "C5H6"
+      ],
+      "answer": 0,
+      "explanation": "C5H12 follows CnH2n+2."
+    },
+    {
+      "id": "chm301-q90",
+      "type": "mcq",
+      "prompt": "Which formula is an alkane?",
+      "choices": [
+        "C8H16",
+        "C8H18",
+        "C8H14",
+        "C8H20"
+      ],
+      "answer": 1,
+      "explanation": "H = 2(8) + 2 = 18."
+    },
+    {
+      "id": "chm301-q91",
+      "type": "mcq",
+      "prompt": "An alkane has 12 carbon atoms. How many hydrogen atoms does it have?",
+      "choices": [
+        "22",
+        "24",
+        "26",
+        "28"
+      ],
+      "answer": 2,
+      "explanation": "H = 2(12) + 2 = 26."
+    },
+    {
+      "id": "chm301-q92",
+      "type": "mcq",
+      "prompt": "An alkane has 15 carbon atoms. What is its molecular formula?",
+      "choices": [
+        "C15H30",
+        "C15H32",
+        "C15H28",
+        "C15H34"
+      ],
+      "answer": 1,
+      "explanation": "H = 2(15) + 2 = 32."
+    },
+    {
+      "id": "chm301-q93",
+      "type": "mcq",
+      "prompt": "An alkane has 20 carbon atoms. How many hydrogen atoms are present?",
+      "choices": [
+        "40",
+        "41",
+        "42",
+        "44"
+      ],
+      "answer": 2,
+      "explanation": "H = 2(20) + 2 = 42."
+    },
+    {
+      "id": "chm301-q94",
+      "type": "mcq",
+      "prompt": "Which alkane contains 18 hydrogen atoms?",
+      "choices": [
+        "C7H18",
+        "C8H18",
+        "C9H18",
+        "C10H18"
+      ],
+      "answer": 1,
+      "explanation": "2n + 2 = 18 gives n = 8."
+    },
+    {
+      "id": "chm301-q95",
+      "type": "mcq",
+      "prompt": "Which alkane contains 22 hydrogen atoms?",
+      "choices": [
+        "C9H22",
+        "C10H22",
+        "C11H22",
+        "C12H22"
+      ],
+      "answer": 1,
+      "explanation": "2n + 2 = 22 gives n = 10."
+    },
+    {
+      "id": "chm301-q96",
+      "type": "mcq",
+      "prompt": "An alkane has 25 carbon atoms. How many hydrogen atoms does it contain?",
+      "choices": [
+        "50",
+        "51",
+        "52",
+        "48"
+      ],
+      "answer": 2,
+      "explanation": "H = 2(25) + 2 = 52."
+    },
+    {
+      "id": "chm301-q97",
+      "type": "mcq",
+      "prompt": "Which pair represents consecutive alkane members?",
+      "choices": [
+        "CH4 and C2H6",
+        "CH4 and C3H8",
+        "C2H6 and C4H10",
+        "C3H8 and C5H12"
+      ],
+      "answer": 0,
+      "explanation": "Consecutive members differ by CH2."
+    },
+    {
+      "id": "chm301-q98",
+      "type": "mcq",
+      "prompt": "Which pair differs by exactly one CH2 group?",
+      "choices": [
+        "C2H6 and C3H8",
+        "C2H6 and C4H10",
+        "C3H8 and C5H12",
+        "CH4 and C3H8"
+      ],
+      "answer": 0,
+      "explanation": "C2H6 + CH2 = C3H8."
+    },
+    {
+      "id": "chm301-q99",
+      "type": "mcq",
+      "prompt": "What happens when one CH2 unit is added to C10H22?",
+      "choices": [
+        "C11H24",
+        "C11H22",
+        "C10H24",
+        "C12H24"
+      ],
+      "answer": 0,
+      "explanation": "C10H22 + CH2 = C11H24."
+    },
+    {
+      "id": "chm301-q100",
+      "type": "mcq",
+      "prompt": "An alkane has 30 carbon atoms. Which formula is correct?",
+      "choices": [
+        "C30H58",
+        "C30H60",
+        "C30H62",
+        "C30H64"
+      ],
+      "answer": 2,
+      "explanation": "H = 2(30) + 2 = 62."
+    },
+    {
+      "id": "chm301-q101",
+      "type": "mcq",
+      "prompt": "What is the correct name for CH₃—CH₂—CH₃?",
+      "choices": [
+        "Ethane",
+        "Propane",
+        "Butane",
+        "Pentane"
+      ],
+      "answer": 1,
+      "explanation": "The structure has three carbon atoms connected by single bonds."
+    },
+    {
+      "id": "chm301-q102",
+      "type": "mcq",
+      "prompt": "What is the correct name for CH₃—CH₂—CH₂—CH₃?",
+      "choices": [
+        "Propane",
+        "Butane",
+        "Butene",
+        "Pentane"
+      ],
+      "answer": 1,
+      "explanation": "It has four carbon atoms and only single bonds."
+    },
+    {
+      "id": "chm301-q103",
+      "type": "mcq",
+      "prompt": "What is the correct name for CH₂=CH₂?",
+      "choices": [
+        "Ethane",
+        "Ethene",
+        "Ethyne",
+        "Methane"
+      ],
+      "answer": 1,
+      "explanation": "It has two carbon atoms and one double bond."
+    },
+    {
+      "id": "chm301-q104",
+      "type": "mcq",
+      "prompt": "What is the correct name for HC≡CH?",
+      "choices": [
+        "Ethane",
+        "Ethene",
+        "Ethyne",
+        "Propene"
+      ],
+      "answer": 2,
+      "explanation": "It has two carbon atoms and one triple bond."
+    },
+    {
+      "id": "chm301-q105",
+      "type": "mcq",
+      "prompt": "What is the correct name for CH₂=CH—CH₃?",
+      "choices": [
+        "Propane",
+        "Prop-1-ene",
+        "Prop-1-yne",
+        "But-1-ene"
+      ],
+      "answer": 1,
+      "explanation": "The structure has three carbon atoms and a double bond beginning at carbon 1."
+    },
+    {
+      "id": "chm301-q106",
+      "type": "mcq",
+      "prompt": "What is the correct name for CH₃—CH=CH—CH₃?",
+      "choices": [
+        "But-1-ene",
+        "But-2-ene",
+        "Butane",
+        "But-1-yne"
+      ],
+      "answer": 1,
+      "explanation": "The double bond starts at carbon 2."
+    },
+    {
+      "id": "chm301-q107",
+      "type": "mcq",
+      "prompt": "What is the correct name for HC≡C—CH₂—CH₃?",
+      "choices": [
+        "Butane",
+        "But-2-yne",
+        "But-1-yne",
+        "But-1-ene"
+      ],
+      "answer": 2,
+      "explanation": "The four-carbon chain has a triple bond beginning at carbon 1."
+    },
+    {
+      "id": "chm301-q108",
+      "type": "mcq",
+      "prompt": "What is the correct name for CH₂=CH—CH₂—CH₃?",
+      "choices": [
+        "But-1-ene",
+        "But-2-ene",
+        "Butane",
+        "But-1-yne"
+      ],
+      "answer": 0,
+      "explanation": "It has four carbon atoms and a double bond beginning at carbon 1."
+    },
+    {
+      "id": "chm301-q109",
+      "type": "mcq",
+      "prompt": "Which structure represents but-2-ene?",
+      "choices": [
+        "CH₂=CH—CH₂—CH₃",
+        "CH₃—CH=CH—CH₃",
+        "CH₃—CH₂—CH₂—CH₃",
+        "HC≡C—CH₂—CH₃"
+      ],
+      "answer": 1,
+      "explanation": "The double bond is between carbon 2 and carbon 3."
+    },
+    {
+      "id": "chm301-q110",
+      "type": "mcq",
+      "prompt": "A hydrocarbon has five carbon atoms and only single bonds. What is its name?",
+      "choices": [
+        "Pentene",
+        "Pentyne",
+        "Pentane",
+        "Hexane"
+      ],
+      "answer": 2,
+      "explanation": "Five carbons give pent-, and single bonds give -ane."
+    },
+    {
+      "id": "chm301-q111",
+      "type": "mcq",
+      "prompt": "A hydrocarbon has six carbon atoms and one double bond. Which family does it belong to?",
+      "choices": [
+        "Alkane",
+        "Alkene",
+        "Alkyne",
+        "Alcohol"
+      ],
+      "answer": 1,
+      "explanation": "A carbon–carbon double bond identifies an alkene."
+    },
+    {
+      "id": "chm301-q112",
+      "type": "mcq",
+      "prompt": "A straight-chain hydrocarbon has eight carbon atoms and one triple bond. What prefix should be used?",
+      "choices": [
+        "Hex-",
+        "Hept-",
+        "Oct-",
+        "Non-"
+      ],
+      "answer": 2,
+      "explanation": "Oct- represents eight carbon atoms."
+    },
+    {
+      "id": "chm301-q113",
+      "type": "mcq",
+      "prompt": "What is the correct name for a straight-chain hydrocarbon with nine carbon atoms and only single bonds?",
+      "choices": [
+        "Nonane",
+        "Nonene",
+        "Nonyne",
+        "Octane"
+      ],
+      "answer": 0,
+      "explanation": "Nine carbons give non-, and single bonds give -ane."
+    },
+    {
+      "id": "chm301-q114",
+      "type": "mcq",
+      "prompt": "Which name represents a ten-carbon alkane?",
+      "choices": [
+        "Nonane",
+        "Decane",
+        "Octane",
+        "Heptane"
+      ],
+      "answer": 1,
+      "explanation": "Dec- represents ten carbon atoms."
+    },
+    {
+      "id": "chm301-q115",
+      "type": "mcq",
+      "prompt": "A student names a four-carbon molecule containing a triple bond as butene. What is the mistake?",
+      "choices": [
+        "The prefix is incorrect.",
+        "The suffix is incorrect.",
+        "The number of carbon atoms is incorrect.",
+        "The molecule cannot contain hydrogen."
+      ],
+      "answer": 1,
+      "explanation": "A triple bond requires the suffix -yne, not -ene."
+    },
+    {
+      "id": "chm301-q116",
+      "type": "mcq",
+      "prompt": "Why is the position number important in naming some alkenes?",
+      "choices": [
+        "The double bond can occur in different positions.",
+        "All double bonds are always at carbon 1.",
+        "It identifies oxygen atoms.",
+        "It determines colour."
+      ],
+      "answer": 0,
+      "explanation": "Different positions of a double bond can produce different structures."
+    },
+    {
+      "id": "chm301-q117",
+      "type": "mcq",
+      "prompt": "Which name is correctly written for a four-carbon alkene with its double bond starting at carbon 1?",
+      "choices": [
+        "But-1-ane",
+        "But-1-ene",
+        "But-1-yne",
+        "Pent-1-ene"
+      ],
+      "answer": 1,
+      "explanation": "But- represents four carbons, 1 indicates the bond position, and -ene identifies the double bond."
+    },
+    {
+      "id": "chm301-q118",
+      "type": "mcq",
+      "prompt": "What does the number in but-2-ene represent?",
+      "choices": [
+        "The total carbon atoms",
+        "The position where the double bond starts",
+        "The hydrogen atoms",
+        "The number of branches"
+      ],
+      "answer": 1,
+      "explanation": "The number 2 indicates that the double bond starts at carbon 2."
+    },
+    {
+      "id": "chm301-q119",
+      "type": "mcq",
+      "prompt": "Which naming sequence is correct?",
+      "choices": [
+        "Identify bond → count carbons → choose prefix → name",
+        "Count longest chain → choose prefix → identify bond → number if needed → name",
+        "Count hydrogen atoms → identify oxygen → name",
+        "Find molecular mass → choose suffix → name"
+      ],
+      "answer": 1,
+      "explanation": "These are the main steps for naming simple hydrocarbons."
+    },
+    {
+      "id": "chm301-q120",
+      "type": "mcq",
+      "prompt": "What is the correct name of a three-carbon hydrocarbon containing a triple bond?",
+      "choices": [
+        "Propane",
+        "Propene",
+        "Propyne",
+        "Butyne"
+      ],
+      "answer": 2,
+      "explanation": "Prop- represents three carbon atoms and -yne represents a triple bond."
+    },
+    {
+      "id": "chm301-q121",
+      "type": "mcq",
+      "prompt": "What is a branched hydrocarbon?",
+      "choices": [
+        "A hydrocarbon with no carbon atoms",
+        "A hydrocarbon with a carbon chain containing side groups",
+        "A hydrocarbon containing only hydrogen",
+        "A hydrocarbon with only triple bonds"
+      ],
+      "answer": 1,
+      "explanation": "Branched hydrocarbons have carbon groups attached to the parent chain."
+    },
+    {
+      "id": "chm301-q122",
+      "type": "mcq",
+      "prompt": "What should you identify first when naming a branched alkane?",
+      "choices": [
+        "The shortest chain",
+        "The longest continuous carbon chain",
+        "Hydrogen atoms only",
+        "Molecular mass"
+      ],
+      "answer": 1,
+      "explanation": "The longest chain determines the parent name."
+    },
+    {
+      "id": "chm301-q123",
+      "type": "mcq",
+      "prompt": "What is the name of a one-carbon branch?",
+      "choices": [
+        "Ethyl",
+        "Propyl",
+        "Methyl",
+        "Butyl"
+      ],
+      "answer": 2,
+      "explanation": "A CH₃ branch is called methyl."
+    },
+    {
+      "id": "chm301-q124",
+      "type": "mcq",
+      "prompt": "What is the name of a two-carbon branch?",
+      "choices": [
+        "Methyl",
+        "Ethyl",
+        "Propyl",
+        "Pentyl"
+      ],
+      "answer": 1,
+      "explanation": "A two-carbon branch is called ethyl."
+    },
+    {
+      "id": "chm301-q125",
+      "type": "mcq",
+      "prompt": "From which end should a branched alkane be numbered?",
+      "choices": [
+        "The end nearest the first branch",
+        "Always left",
+        "Always right",
+        "The centre"
+      ],
+      "answer": 0,
+      "explanation": "This gives the branch the lowest possible position number."
+    },
+    {
+      "id": "chm301-q126",
+      "type": "mcq",
+      "prompt": "What is the correct name of CH₃—CH(CH₃)—CH₃?",
+      "choices": [
+        "Butane",
+        "2-methylpropane",
+        "2-methylbutane",
+        "Pentane"
+      ],
+      "answer": 1,
+      "explanation": "The longest chain has three carbon atoms, with a methyl branch on carbon 2."
+    },
+    {
+      "id": "chm301-q127",
+      "type": "mcq",
+      "prompt": "What is the parent chain in 2-methylbutane?",
+      "choices": [
+        "Methane",
+        "Ethane",
+        "Propane",
+        "Butane"
+      ],
+      "answer": 3,
+      "explanation": "The longest continuous chain contains four carbon atoms."
+    },
+    {
+      "id": "chm301-q128",
+      "type": "mcq",
+      "prompt": "In 2-methylbutane, what does the number 2 indicate?",
+      "choices": [
+        "Two carbon atoms",
+        "The methyl branch is attached to carbon 2",
+        "Two methyl branches",
+        "Two double bonds"
+      ],
+      "answer": 1,
+      "explanation": "The number indicates the position of the branch."
+    },
+    {
+      "id": "chm301-q129",
+      "type": "mcq",
+      "prompt": "Which structure represents 2-methylbutane?",
+      "choices": [
+        "CH₃—CH₂—CH₂—CH₃",
+        "CH₃—CH(CH₃)—CH₂—CH₃",
+        "CH₃—CH₂—CH₃",
+        "CH₃—CH₂—CH₂—CH₂—CH₃"
+      ],
+      "answer": 1,
+      "explanation": "It contains a four-carbon parent chain with a methyl branch at carbon 2."
+    },
+    {
+      "id": "chm301-q130",
+      "type": "mcq",
+      "prompt": "What does the prefix di- mean in a chemical name?",
+      "choices": [
+        "One branch",
+        "Two identical branches",
+        "Three identical branches",
+        "Four identical branches"
+      ],
+      "answer": 1,
+      "explanation": "Di- indicates two identical substituent groups."
+    },
+    {
+      "id": "chm301-q131",
+      "type": "mcq",
+      "prompt": "What does tri- indicate in a branched hydrocarbon name?",
+      "choices": [
+        "One branch",
+        "Two branches",
+        "Three identical branches",
+        "Four identical branches"
+      ],
+      "answer": 2,
+      "explanation": "Tri- means three identical substituent groups."
+    },
+    {
+      "id": "chm301-q132",
+      "type": "mcq",
+      "prompt": "What is the correct name of a butane chain with methyl branches on carbons 2 and 3?",
+      "choices": [
+        "2-methylbutane",
+        "3-methylbutane",
+        "2,3-dimethylbutane",
+        "2,3-diethylbutane"
+      ],
+      "answer": 2,
+      "explanation": "There are two methyl branches attached to carbons 2 and 3."
+    },
+    {
+      "id": "chm301-q133",
+      "type": "mcq",
+      "prompt": "What does dimethyl indicate?",
+      "choices": [
+        "Two methyl branches",
+        "Two ethyl branches",
+        "One methyl branch",
+        "Three methyl branches"
+      ],
+      "answer": 0,
+      "explanation": "Di- means two, and methyl identifies the branch."
+    },
+    {
+      "id": "chm301-q134",
+      "type": "mcq",
+      "prompt": "What is the correct name for a five-carbon parent chain with a methyl branch at carbon 3?",
+      "choices": [
+        "3-methylpentane",
+        "2-methylpentane",
+        "3-ethylpentane",
+        "3-methylbutane"
+      ],
+      "answer": 0,
+      "explanation": "Five parent-chain carbons give pentane, and the methyl branch is on carbon 3."
+    },
+    {
+      "id": "chm301-q135",
+      "type": "mcq",
+      "prompt": "Why identify the longest continuous chain in a branched hydrocarbon?",
+      "choices": [
+        "To determine the parent name",
+        "To determine colour",
+        "To calculate boiling point",
+        "To identify oxygen"
+      ],
+      "answer": 0,
+      "explanation": "The parent name comes from the longest continuous carbon chain."
+    },
+    {
+      "id": "chm301-q136",
+      "type": "mcq",
+      "prompt": "Which rule is used when numbering a branched alkane?",
+      "choices": [
+        "Give the branch the highest number",
+        "Give the first branch the lowest possible number",
+        "Ignore branches",
+        "Start from the middle"
+      ],
+      "answer": 1,
+      "explanation": "Numbering begins from the end nearest the first branch."
+    },
+    {
+      "id": "chm301-q137",
+      "type": "mcq",
+      "prompt": "A hydrocarbon has two identical methyl branches. Which prefix should be used?",
+      "choices": [
+        "Mono-",
+        "Di-",
+        "Tri-",
+        "Tetra-"
+      ],
+      "answer": 1,
+      "explanation": "Two identical branches are represented using di-."
+    },
+    {
+      "id": "chm301-q138",
+      "type": "mcq",
+      "prompt": "What is the correct name for CH₃—CH(CH₃)—CH₂—CH₃?",
+      "choices": [
+        "2-methylbutane",
+        "3-methylbutane",
+        "2-methylpropane",
+        "Pentane"
+      ],
+      "answer": 0,
+      "explanation": "The longest chain has four carbons, and the methyl branch is at carbon 2."
+    },
+    {
+      "id": "chm301-q139",
+      "type": "mcq",
+      "prompt": "A student numbers a branched chain from the wrong end and gets branch number 3 instead of 2. What should they do?",
+      "choices": [
+        "Keep 3",
+        "Number from the opposite end to obtain the lower number",
+        "Remove the branch",
+        "Change the parent chain to methane"
+      ],
+      "answer": 1,
+      "explanation": "The lowest possible branch position should be used."
+    },
+    {
+      "id": "chm301-q140",
+      "type": "mcq",
+      "prompt": "If numbering from either end gives the same set of locants, which numbering should be chosen?",
+      "choices": [
+        "Highest first number",
+        "Lowest number at the first point of difference",
+        "Always left-to-right",
+        "Longest name"
+      ],
+      "answer": 1,
+      "explanation": "Choose the lowest number at the first point of difference."
+    },
+    {
+      "id": "chm301-q141",
+      "type": "mcq",
+      "prompt": "A company processes crude oil to produce gasoline. Which area of chemistry is mainly involved?",
+      "choices": [
+        "Organic chemistry",
+        "Nuclear chemistry",
+        "Inorganic chemistry only",
+        "Environmental physics"
+      ],
+      "answer": 0,
+      "explanation": "Gasoline contains hydrocarbons studied in organic chemistry."
+    },
+    {
+      "id": "chm301-q142",
+      "type": "mcq",
+      "prompt": "Which is a real-life use of hydrocarbons?",
+      "choices": [
+        "Fuel for vehicles",
+        "Producing sunlight",
+        "Creating gravity",
+        "Producing oxygen directly from metals"
+      ],
+      "answer": 0,
+      "explanation": "Hydrocarbons are important components of vehicle fuels."
+    },
+    {
+      "id": "chm301-q143",
+      "type": "mcq",
+      "prompt": "Which industry uses organic compounds to manufacture plastics?",
+      "choices": [
+        "Petrochemical industry",
+        "Fishing industry",
+        "Tourism industry",
+        "Banking industry"
+      ],
+      "answer": 0,
+      "explanation": "The petrochemical industry uses petroleum-derived compounds to manufacture plastics."
+    },
+    {
+      "id": "chm301-q144",
+      "type": "mcq",
+      "prompt": "Why are hydrocarbons important in the energy industry?",
+      "choices": [
+        "They are used as fuels",
+        "They prevent reactions",
+        "They are always conductors",
+        "They cannot release energy"
+      ],
+      "answer": 0,
+      "explanation": "Many hydrocarbons release energy during combustion."
+    },
+    {
+      "id": "chm301-q145",
+      "type": "mcq",
+      "prompt": "Which statement correctly describes organic compounds and hydrocarbons?",
+      "choices": [
+        "All organic compounds are hydrocarbons.",
+        "All hydrocarbons are organic compounds, but not all organic compounds are hydrocarbons.",
+        "Neither contains carbon.",
+        "Hydrocarbons always contain oxygen."
+      ],
+      "answer": 1,
+      "explanation": "Organic compounds can contain elements other than carbon and hydrogen."
+    },
+    {
+      "id": "chm301-q146",
+      "type": "mcq",
+      "prompt": "C₆H₁₂ is assumed to be a simple open-chain hydrocarbon with one double bond. Which family?",
+      "choices": [
+        "Alkane",
+        "Alkene",
+        "Alkyne",
+        "Alcohol"
+      ],
+      "answer": 1,
+      "explanation": "It follows the alkene formula CₙH₂ₙ."
+    },
+    {
+      "id": "chm301-q147",
+      "type": "mcq",
+      "prompt": "A hydrocarbon contains seven carbon atoms and follows the alkane formula. What is its formula?",
+      "choices": [
+        "C₇H₁₂",
+        "C₇H₁₄",
+        "C₇H₁₆",
+        "C₇H₁₈"
+      ],
+      "answer": 2,
+      "explanation": "Using CₙH₂ₙ₊₂, n = 7 gives C₇H₁₆."
+    },
+    {
+      "id": "chm301-q148",
+      "type": "mcq",
+      "prompt": "A compound has five carbon atoms and belongs to the alkyne family. What is its formula?",
+      "choices": [
+        "C₅H₁₂",
+        "C₅H₁₀",
+        "C₅H₈",
+        "C₅H₆"
+      ],
+      "answer": 2,
+      "explanation": "Using CₙH₂ₙ₋₂, n = 5 gives C₅H₈."
+    },
+    {
+      "id": "chm301-q149",
+      "type": "mcq",
+      "prompt": "What do methane, ethane, propane and butane have in common?",
+      "choices": [
+        "Double bonds",
+        "They belong to the alkane homologous series",
+        "The same formula",
+        "Triple bonds"
+      ],
+      "answer": 1,
+      "explanation": "All four are alkanes and follow CₙH₂ₙ₊₂."
+    },
+    {
+      "id": "chm301-q150",
+      "type": "mcq",
+      "prompt": "Which statement best describes a homologous series?",
+      "choices": [
+        "Unrelated structures",
+        "Same general formula, similar chemical properties and successive members differing by CH₂",
+        "Elements with same atomic number",
+        "Identical molecular formulas"
+      ],
+      "answer": 1,
+      "explanation": "These are the main characteristics of a homologous series."
+    },
+    {
+      "id": "chm301-q151",
+      "type": "mcq",
+      "prompt": "What is the correct IUPAC name of CH₃–CH₂–CH(CH₃)–CH₂–CH₃?",
+      "choices": [
+        "2-Methylpentane",
+        "3-Methylpentane",
+        "3-Ethylbutane",
+        "2-Ethylbutane"
+      ],
+      "answer": 1,
+      "explanation": "The longest chain contains 5 carbon atoms and the methyl branch is at carbon 3."
+    },
+    {
+      "id": "chm301-q152",
+      "type": "mcq",
+      "prompt": "What is the correct name of CH₃–C(CH₃)₂–CH₂–CH₃?",
+      "choices": [
+        "2,3-Dimethylbutane",
+        "3,3-Dimethylbutane",
+        "2,2-Dimethylbutane",
+        "2-Methylpentane"
+      ],
+      "answer": 2,
+      "explanation": "The longest chain contains 4 carbon atoms and two methyl branches are attached to carbon 2."
+    },
+    {
+      "id": "chm301-q153",
+      "type": "mcq",
+      "prompt": "Identify the correct IUPAC name: CH₃–CH(CH₃)–CH(CH₃)–CH₂–CH₃.",
+      "choices": [
+        "2,3-Dimethylpentane",
+        "3,4-Dimethylpentane",
+        "2-Ethyl-3-methylbutane",
+        "3,3-Dimethylpentane"
+      ],
+      "answer": 0,
+      "explanation": "The longest chain contains 5 carbons with methyl branches at 2 and 3."
+    },
+    {
+      "id": "chm301-q154",
+      "type": "mcq",
+      "prompt": "What is the correct name of a pentane chain with ethyl and methyl branches both on carbon 3?",
+      "choices": [
+        "3,3-Diethylpentane",
+        "3-Ethyl-3-methylpentane",
+        "2-Ethyl-2-methylpentane",
+        "3-Propyl-3-methylbutane"
+      ],
+      "answer": 1,
+      "explanation": "Both branches are attached to carbon 3; ethyl is written before methyl alphabetically."
+    },
+    {
+      "id": "chm301-q155",
+      "type": "mcq",
+      "prompt": "What is the correct name of CH₃–CH₂–CH(CH₃)–CH₂–CH₂–CH₃?",
+      "choices": [
+        "4-Methylhexane",
+        "3-Ethylpentane",
+        "3-Methylhexane",
+        "2-Methylhexane"
+      ],
+      "answer": 2,
+      "explanation": "The longest chain contains 6 carbons; numbering from the left gives branch 3."
+    },
+    {
+      "id": "chm301-q156",
+      "type": "mcq",
+      "prompt": "What is the correct name of CH₃–CH(CH₃)–CH₂–CH(CH₂CH₃)–CH₂–CH₃?",
+      "choices": [
+        "4-Ethyl-2-methylhexane",
+        "3-Ethyl-5-methylhexane",
+        "2-Ethyl-4-methylhexane",
+        "3,5-Dimethylheptane"
+      ],
+      "answer": 0,
+      "explanation": "The longest chain has 6 carbons, with ethyl at 4 and methyl at 2."
+    },
+    {
+      "id": "chm301-q157",
+      "type": "mcq",
+      "prompt": "Identify the correct name: CH₃–CH₂–CH(CH₃)–CH(CH₃)–CH₂–CH₃.",
+      "choices": [
+        "2,3-Dimethylhexane",
+        "3,4-Dimethylhexane",
+        "3-Ethyl-4-methylpentane",
+        "2,4-Dimethylhexane"
+      ],
+      "answer": 1,
+      "explanation": "The longest chain contains 6 carbons and methyl branches are at 3 and 4."
+    },
+    {
+      "id": "chm301-q158",
+      "type": "mcq",
+      "prompt": "What is the correct name of CH₃–C(CH₃)₂–CH(CH₃)–CH₂–CH₃?",
+      "choices": [
+        "2,2,3-Trimethylpentane",
+        "2,3,3-Trimethylpentane",
+        "3-Ethyl-2-methylbutane",
+        "2,2-Dimethylhexane"
+      ],
+      "answer": 0,
+      "explanation": "The longest chain has 5 carbons with methyl branches at 2, 2 and 3."
+    },
+    {
+      "id": "chm301-q159",
+      "type": "mcq",
+      "prompt": "What is the correct name of CH₃–CH₂–CH(CH₂CH₃)–CH₂–CH₂–CH₃?",
+      "choices": [
+        "4-Ethylhexane",
+        "3-Propylpentane",
+        "3-Ethylhexane",
+        "4-Methylheptane"
+      ],
+      "answer": 2,
+      "explanation": "The longest chain contains 6 carbons and the ethyl branch is at carbon 3."
+    },
+    {
+      "id": "chm301-q160",
+      "type": "mcq",
+      "prompt": "What is the correct name of CH₃–CH(CH₃)–CH₂–C(CH₃)₂–CH₂–CH₃?",
+      "choices": [
+        "2,4,4-Trimethylhexane",
+        "3,3,5-Trimethylhexane",
+        "2,2,4-Trimethylhexane",
+        "3-Ethyl-2,4-dimethylpentane"
+      ],
+      "answer": 0,
+      "explanation": "Numbering from the left gives methyl branches at 2, 4 and 4."
+    },
+    {
+      "id": "chm301-q161",
+      "type": "mcq",
+      "prompt": "What is the correct name of CH₂=C(CH₃)–CH₂–CH₃?",
+      "choices": [
+        "3-Methylbut-1-ene",
+        "2-Methylbut-1-ene",
+        "2-Methylbut-2-ene",
+        "3-Methylbut-2-ene"
+      ],
+      "answer": 1,
+      "explanation": "The double bond starts at carbon 1 and the methyl branch is at carbon 2."
+    },
+    {
+      "id": "chm301-q162",
+      "type": "mcq",
+      "prompt": "Identify the correct name of CH₃–C(CH₃)=CH–CH₂–CH₃.",
+      "choices": [
+        "3-Methylpent-2-ene",
+        "2-Methylpent-3-ene",
+        "2-Methylpent-2-ene",
+        "3-Methylpent-3-ene"
+      ],
+      "answer": 2,
+      "explanation": "The double bond is at carbon 2 and the methyl branch is also at carbon 2."
+    },
+    {
+      "id": "chm301-q163",
+      "type": "mcq",
+      "prompt": "What is the correct name of CH₂=CH–CH(CH₃)–CH₂–CH₃?",
+      "choices": [
+        "2-Methylpent-1-ene",
+        "3-Methylpent-1-ene",
+        "3-Methylpent-2-ene",
+        "4-Methylpent-1-ene"
+      ],
+      "answer": 1,
+      "explanation": "Numbering starts at the double bond, placing it at 1 and the methyl at 3."
+    },
+    {
+      "id": "chm301-q164",
+      "type": "mcq",
+      "prompt": "Identify the correct name of CH₃–CH=CH–CH(CH₃)–CH₂–CH₃.",
+      "choices": [
+        "3-Methylhex-2-ene",
+        "4-Methylhex-2-ene",
+        "3-Methylhex-4-ene",
+        "4-Methylhex-3-ene"
+      ],
+      "answer": 1,
+      "explanation": "Numbering gives the double bond position 2 and the methyl branch position 4."
+    },
+    {
+      "id": "chm301-q165",
+      "type": "mcq",
+      "prompt": "What is the correct name of HC≡C–CH(CH₃)–CH₂–CH₃?",
+      "choices": [
+        "2-Methylpent-1-yne",
+        "3-Methylpent-1-yne",
+        "3-Methylpent-2-yne",
+        "4-Methylpent-1-yne"
+      ],
+      "answer": 1,
+      "explanation": "The triple bond starts at carbon 1 and the methyl branch is at carbon 3."
+    },
+    {
+      "id": "chm301-q166",
+      "type": "mcq",
+      "prompt": "Identify the correct name of CH₃–C≡C–CH(CH₃)–CH₂–CH₃.",
+      "choices": [
+        "4-Methylhex-2-yne",
+        "3-Methylhex-2-yne",
+        "4-Methylhex-3-yne",
+        "2-Methylhex-4-yne"
+      ],
+      "answer": 0,
+      "explanation": "The triple bond starts at carbon 2 and the methyl branch is at carbon 4."
+    },
+    {
+      "id": "chm301-q167",
+      "type": "mcq",
+      "prompt": "What is the correct name of CH₂=CH–CH₂–C≡CH?",
+      "choices": [
+        "Pent-4-en-1-yne",
+        "Pent-1-en-4-yne",
+        "Pent-2-en-4-yne",
+        "Pent-1-en-3-yne"
+      ],
+      "answer": 1,
+      "explanation": "Both numbering directions give 1,4; the double bond receives the lower number."
+    },
+    {
+      "id": "chm301-q168",
+      "type": "mcq",
+      "prompt": "Identify the correct name of CH₂=C(CH₃)–CH(CH₃)–CH₃.",
+      "choices": [
+        "2,2-Dimethylbut-1-ene",
+        "2,3-Dimethylbut-1-ene",
+        "3,3-Dimethylbut-1-ene",
+        "2,3-Dimethylbut-2-ene"
+      ],
+      "answer": 1,
+      "explanation": "The double bond starts at 1, with methyl branches at 2 and 3."
+    },
+    {
+      "id": "chm301-q169",
+      "type": "mcq",
+      "prompt": "What is the correct name of HC≡C–CH₂–CH(CH₃)–CH₂–CH₃?",
+      "choices": [
+        "3-Methylhex-1-yne",
+        "4-Methylhex-1-yne",
+        "4-Methylhex-2-yne",
+        "3-Ethylpent-1-yne"
+      ],
+      "answer": 1,
+      "explanation": "The triple bond starts at carbon 1 and the methyl branch is at carbon 4."
+    },
+    {
+      "id": "chm301-q170",
+      "type": "mcq",
+      "prompt": "Identify the correct name of CH₃–CH(CH₃)–CH=CH–CH₂–CH₃.",
+      "choices": [
+        "5-Methylhex-3-ene",
+        "2-Methylhex-3-ene",
+        "2-Methylhex-4-ene",
+        "4-Methylhex-3-ene"
+      ],
+      "answer": 1,
+      "explanation": "The double bond is at carbon 3 from either direction; the branch receives position 2."
+    }
+  ]
+}

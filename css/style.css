@@ -502,6 +502,40 @@ h1 {
   scroll-margin-top: 7.5rem;
 }
 
+.question-images,
+.answer-images,
+.choice-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 0.7rem 0;
+}
+
+.question-images img,
+.answer-images img {
+  display: block;
+  max-width: 100%;
+  max-height: 24rem;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  object-fit: contain;
+}
+
+.choice-images {
+  align-items: center;
+  display: inline-flex;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.choice-images img {
+  max-width: 12rem;
+  max-height: 7rem;
+  height: auto;
+  border-radius: 6px;
+}
+
 html {
   scroll-behavior: smooth;
 }

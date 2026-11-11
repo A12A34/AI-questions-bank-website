@@ -78,6 +78,10 @@ export function buildOfflineQuizHtml(bank) {
       .choice input { margin-right: 8px; }
       .choice.correct { border-color: var(--correct); color: var(--correct); }
       .choice.incorrect { border-color: var(--incorrect); color: var(--incorrect); }
+      .question-images, .answer-images, .choice-images { display: flex; flex-wrap: wrap; gap: 10px; margin: 10px 0; }
+      .question-images img, .answer-images img { max-width: 100%; max-height: 380px; border: 1px solid var(--border); border-radius: 8px; object-fit: contain; }
+      .choice-images { display: inline-flex; margin: 0; vertical-align: middle; }
+      .choice-images img { max-width: 180px; max-height: 100px; border-radius: 5px; }
       .match-row { display: flex; align-items: center; gap: 12px; margin: 8px 0; }
       .match-row span { flex: 1; }
       select { padding: 8px; flex: 1; }
@@ -141,6 +145,31 @@ export function buildOfflineQuizHtml(bank) {
         submitted: false,
         score: null
       };
+      const imageSources = (value) => (Array.isArray(value) ? value : value ? [value] : [])
+        .map((item) => typeof item === "string" ? { src: item, alt: "" } : item)
+        .filter((item) => item && typeof item.src === "string" && /^(https?:\/\/|\/|\.\/|\.\.\/|data:image\/)/i.test(item.src));
+      const appendImages = (host, value, className = "question-images") => {
+        const images = imageSources(value);
+        if (!images.length) return;
+        const wrap = document.createElement("div");
+        wrap.className = className;
+        images.forEach((image) => {
+          const element = document.createElement("img");
+          element.src = image.src;
+          element.alt = image.alt || "";
+          element.loading = "lazy";
+          wrap.append(element);
+        });
+        host.append(wrap);
+      };
+      const appendContent = (host, value, imageClass = "question-images") => {
+        if (value && typeof value === "object" && !Array.isArray(value)) {
+          if (value.text) host.append(document.createTextNode(String(value.text)));
+          appendImages(host, value.image ?? value.images, imageClass);
+          return;
+        }
+        host.append(document.createTextNode(String(value ?? "")));
+      };
 
       const $ = (selector) => document.querySelector(selector);
       const questionsHost = $("#questions");
@@ -170,7 +199,16 @@ export function buildOfflineQuizHtml(bank) {
 
       function prepareQuestions() {
         let questions = (bank.questions || []).map((question) => ({ ...question }));
-        if (state.shuffleQuestions) questions = shuffle(questions);
+        if (state.shuffleQuestions) {
+          const groups = new Map();
+          questions.forEach((question) => {
+            const group = question.group ?? question.section;
+            const key = group ? "group:" + group : "question:" + question.id;
+            if (!groups.has(key)) groups.set(key, []);
+            groups.get(key).push(question);
+          });
+          questions = shuffle([...groups.values()]).flat();
+        }
         return questions.map((question) => {
           const prepared = { ...question };
           if (question.type === "mcq" || question.type === "multi") {
@@ -243,7 +281,9 @@ export function buildOfflineQuizHtml(bank) {
           }
           render();
         });
-        item.append(input, document.createTextNode(label));
+        const content = document.createElement("span");
+        appendContent(content, label, "choice-images");
+        item.append(input, content);
         return item;
       }
 
@@ -270,8 +310,9 @@ export function buildOfflineQuizHtml(bank) {
         card.append(top);
         const prompt = document.createElement("p");
         prompt.className = "prompt";
-        prompt.textContent = question.prompt || "";
+        appendContent(prompt, question.prompt || "");
         card.append(prompt);
+        appendImages(card, question.image ?? question.images);
         const result = isLocked(question) ? grade(question) : null;
 
         if (question.type === "mcq" || question.type === "multi") {
@@ -290,13 +331,13 @@ export function buildOfflineQuizHtml(bank) {
             const row = document.createElement("label");
             row.className = "match-row";
             const left = document.createElement("span");
-            left.textContent = pair.left;
+            appendContent(left, pair.left, "choice-images");
             const select = document.createElement("select");
             select.innerHTML = '<option value="">Select a match</option>';
             question.rights.forEach((right) => {
               const option = document.createElement("option");
               option.value = right.index;
-              option.textContent = right.text;
+              option.textContent = typeof right.text === "object" ? right.text.text || "" : right.text;
               select.append(option);
             });
             const current = answerFor(question) || question.pairs.map(() => "");
@@ -338,7 +379,9 @@ export function buildOfflineQuizHtml(bank) {
             explanation.className = "explanation";
             const heading = document.createElement("strong");
             heading.textContent = "Explanation";
-            explanation.append(heading, document.createTextNode(question.explanation));
+            explanation.append(heading);
+            appendContent(explanation, question.explanation);
+            appendImages(explanation, question.explanationImages, "answer-images");
             card.append(explanation);
           }
           if (isWriting(question) && question.modelAnswer) {
@@ -346,7 +389,9 @@ export function buildOfflineQuizHtml(bank) {
             model.className = "model-answer";
             const heading = document.createElement("strong");
             heading.textContent = "Model answer";
-            model.append(heading, document.createTextNode(question.modelAnswer));
+            model.append(heading);
+            appendContent(model, question.modelAnswer);
+            appendImages(model, question.modelAnswerImages ?? question.answerImages, "answer-images");
             card.append(model);
           }
           if (isCode(question)) {

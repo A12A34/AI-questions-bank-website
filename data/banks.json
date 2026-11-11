@@ -167,6 +167,14 @@
       "subject": "GRD",
       "gradeLevel": "University",
       "difficulty": "Intermediate"
+    },
+    {
+      "id": "chm301-organic-chemistry-hydrocarbons",
+      "title": "CHM301: Organic Chemistry and Hydrocarbons (170 Questions)",
+      "file": "chm301-organic-chemistry-hydrocarbons.json",
+      "subject": "chemistry",
+      "gradeLevel": "University",
+      "difficulty": "Intermediate"
     }
   ]
 }

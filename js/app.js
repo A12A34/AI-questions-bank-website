@@ -151,6 +151,48 @@ function hasArabic(text) {
   return ARABIC_RE.test(String(text ?? ""));
 }
 
+function imageSources(value) {
+  const values = Array.isArray(value) ? value : value ? [value] : [];
+  return values
+    .map((item) => typeof item === "string" ? { src: item, alt: "" } : item)
+    .filter((item) => item && typeof item.src === "string" && item.src.trim())
+    .map((item) => ({ src: item.src.trim(), alt: String(item.alt ?? "") }));
+}
+
+function isSafeImageSource(src) {
+  return /^(https?:\/\/|\/|\.\/|\.\.\/|data:image\/)/i.test(src);
+}
+
+function appendImages(host, value, className = "question-images") {
+  const images = imageSources(value).filter((image) => isSafeImageSource(image.src));
+  if (!images.length) return;
+  const wrap = document.createElement("div");
+  wrap.className = className;
+  images.forEach((image) => {
+    const element = document.createElement("img");
+    element.src = image.src;
+    element.alt = image.alt;
+    element.loading = "lazy";
+    wrap.append(element);
+  });
+  host.append(wrap);
+}
+
+function appendContent(host, value, imageClass = "question-images") {
+  if (value && typeof value === "object" && !Array.isArray(value)) {
+    if (value.text) {
+      const text = document.createElement("span");
+      text.textContent = String(value.text);
+      host.append(text);
+    }
+    appendImages(host, value.image ?? value.images, imageClass);
+    return;
+  }
+  const text = document.createElement("span");
+  text.textContent = String(value ?? "");
+  host.append(text);
+}
+
 function escapeHtml(value) {
   return String(value ?? "")
     .replaceAll("&", "&amp;")
@@ -232,7 +274,20 @@ function prepareQuestion(question, shuffleChoices) {
 
 function prepareAttempt(bank) {
   let questions = bank.questions.map((question) => ({ ...question }));
-  if (state.shuffleQuestions) questions = shuffle(questions);
+  if (state.shuffleQuestions) {
+    const groups = [];
+    const groupIndexes = new Map();
+    questions.forEach((question) => {
+      const group = question.group ?? question.section;
+      const key = group ? `group:${group}` : `question:${question.id}`;
+      if (!groupIndexes.has(key)) {
+        groupIndexes.set(key, groups.length);
+        groups.push([]);
+      }
+      groups[groupIndexes.get(key)].push(question);
+    });
+    questions = shuffle(groups).flat();
+  }
   return questions.map((question) => prepareQuestion(question, state.shuffleChoices));
 }
 
@@ -699,13 +754,14 @@ function renderQuestionCard(article, question, index) {
   if (question.type !== "reading") {
     const prompt = document.createElement("p");
     prompt.className = "prompt";
-    prompt.textContent = question.prompt;
+    appendContent(prompt, question.prompt);
     if (hasArabic(question.prompt)) {
       prompt.dir = "rtl";
       prompt.classList.add("dir-rtl");
     }
     article.append(prompt);
   }
+  appendImages(article, question.image ?? question.images);
 
   if (question.type === "mcq" || question.type === "tf") renderSingleChoice(article, question, locked, result);
   if (question.type === "multi") renderMulti(article, question, locked, result);
@@ -717,7 +773,11 @@ function renderQuestionCard(article, question, index) {
   if ((locked || state.submitted) && question.explanation) {
     const explanation = document.createElement("p");
     explanation.className = "explanation";
-    explanation.innerHTML = `<strong>Explanation</strong>${escapeHtml(question.explanation)}`;
+    const heading = document.createElement("strong");
+    heading.textContent = "Explanation";
+    explanation.append(heading);
+    appendContent(explanation, question.explanation);
+    appendImages(explanation, question.explanationImages, "answer-images");
     if (hasArabic(question.explanation)) {
       explanation.dir = "rtl";
       explanation.classList.add("dir-rtl");
@@ -861,7 +921,8 @@ function choiceRow({ name, type, label, checked, disabled, className, onChange }
   const item = document.createElement("li");
   const row = document.createElement("label");
   row.className = className;
-  if (hasArabic(label)) {
+  const labelText = typeof label === "object" ? label.text ?? "" : label;
+  if (hasArabic(labelText)) {
     row.dir = "rtl";
     row.classList.add("dir-rtl");
   }
@@ -871,9 +932,9 @@ function choiceRow({ name, type, label, checked, disabled, className, onChange }
   input.checked = checked;
   input.disabled = disabled;
   input.addEventListener("change", onChange);
-  const text = document.createElement("span");
-  text.textContent = label;
-  row.append(input, text);
+  const content = document.createElement("span");
+  appendContent(content, label, "choice-images");
+  row.append(input, content);
   item.append(row);
   return item;
 }
@@ -887,8 +948,8 @@ function renderMatch(host, question, locked) {
     row.className = "match-row";
     const left = document.createElement("div");
     left.className = "match-left";
-    left.textContent = pair.left;
-    if (hasArabic(pair.left)) {
+    appendContent(left, pair.left, "choice-images");
+    if (hasArabic(typeof pair.left === "object" ? pair.left.text : pair.left)) {
       left.dir = "rtl";
       left.classList.add("dir-rtl");
     }
@@ -901,7 +962,7 @@ function renderMatch(host, question, locked) {
     question.rightOptions.forEach((option) => {
       const opt = document.createElement("option");
       opt.value = String(option.originalIndex);
-      opt.textContent = option.text;
+      opt.textContent = typeof option.text === "object" ? option.text.text ?? "" : option.text;
       select.append(opt);
     });
     select.value = current[leftIndex] === "" || current[leftIndex] === undefined ? "" : String(current[leftIndex]);
@@ -935,7 +996,11 @@ function renderWriting(host, question, locked) {
   if (locked || state.submitted) {
     const model = document.createElement("p");
     model.className = "model-answer";
-    model.innerHTML = `<strong>Model answer</strong>${escapeHtml(question.modelAnswer)}`;
+    const heading = document.createElement("strong");
+    heading.textContent = "Model answer";
+    model.append(heading);
+    appendContent(model, question.modelAnswer);
+    appendImages(model, question.modelAnswerImages ?? question.answerImages, "answer-images");
     if (hasArabic(question.modelAnswer)) {
       model.dir = "rtl";
       model.classList.add("dir-rtl");
