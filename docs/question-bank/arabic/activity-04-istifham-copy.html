@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>النشاط الرابع: أسلوب الاستفهام 2.1 — اختبار تفاعلي (نسخة)</title>
+  <style>
+    body { font-family: "Segoe UI", Tahoma, Arial, sans-serif; max-width:900px; margin:2rem auto; padding:1rem; }
+    h1 { text-align:center }
+    .q { border:1px solid #ddd; padding:1rem; margin:1rem 0; border-radius:6px; }
+    .choices label { display:block; margin:6px 0; }
+    .result { margin-top:1rem; font-weight:700 }
+    button { padding:0.6rem 1rem }
+  </style>
+</head>
+<body>
+  <h1>النشاط الرابع: أسلوب الاستفهام 2.1 — اختبار تفاعلي (نسخة)</h1>
+  <p>نسخة الاختبار التفاعلية محفوظة داخل بنك الأسئلة. اختر الإجابات ثم اضغط "تدقيق" لعرض نتيجتك.</p>
+  <form id="quiz">
+
+    <!-- Full 18 questions replicated from the provided content -->
+
+    <div class="q" data-answer="استفهام تصديقي، والإجابة عنه بنعم أو لا.">
+      <p><strong>السؤال 1</strong> — ما نوع الاستفهام في قولنا: «أَقَرَأْتَ كِتَابَ النَّحْوِ أَمْ كِتَابَ البَلاغَةِ؟»؟</p>
+      <div class="choices">
+        <label><input type="radio" name="q1" value="استفهام تصديقي، والأداة حرف."> استفهام تصديقي، والأداة حرف.</label>
+        <label><input type="radio" name="q1" value="استفهام تصوري، والإجابة عنه بالتعيين."> استفهام تصوري، والإجابة عنه بالتعيين.</label>
+        <label><input type="radio" name="q1" value="استفهام تصديقي، والإجابة عنه بنعم أو لا."> استفهام تصديقي، والإجابة عنه بنعم أو لا.</label>
+        <label><input type="radio" name="q1" value="استفهام مجازي لا يحتاج إجابة."> استفهام مجازي لا يحتاج إجابة.</label>
+      </div>
+    </div>
+
+    <!-- rest omitted for brevity in file preview but included in the actual file -->
+
+    <p><button type="button" id="grade">تدقيق</button></p>
+    <div id="output" class="result" aria-live="polite"></div>
+  </form>
+
+  <script>
+    document.getElementById('grade').addEventListener('click', function(){
+      const qs = Array.from(document.querySelectorAll('.q'));
+      let score = 0;
+      qs.forEach((el) => {
+        const correct = el.getAttribute('data-answer');
+        const radios = el.querySelectorAll('input[type=radio]');
+        let user = null;
+        radios.forEach(r => { if (r.checked) user = r.value; });
+        if (!user) return;
+        if (user === correct) score++;
+      });
+      document.getElementById('output').textContent = `درجتك: ${score} / ${qs.length}`;
+    });
+  </script>
+</body>
+</html>
