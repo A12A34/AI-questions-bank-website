@@ -243,6 +243,10 @@ function normalizeCode(value) {
   return String(value ?? "").replace(/\s+/g, "");
 }
 
+function matchValue(value) {
+  return typeof value === "object" && value !== null ? value.text ?? "" : value;
+}
+
 function prepareQuestion(question, shuffleChoices) {
   const prepared = {
     ...question,
@@ -558,7 +562,13 @@ function gradeQuestion(question) {
     return { scored: true, correct: sameSet(answer, expected), answered: true };
   }
   if (question.type === "match") {
-    const ok = question.pairs.every((_, i) => Number(answer[i]) === i);
+    const ok = question.pairs.every((pair, i) => {
+      const selectedIndex = Number(answer[i]);
+      return Number.isInteger(selectedIndex)
+        && selectedIndex >= 0
+        && selectedIndex < question.pairs.length
+        && matchValue(question.pairs[selectedIndex].right) === matchValue(pair.right);
+    });
     return { scored: true, correct: ok, answered: true };
   }
   return { scored: true, correct: false, answered: false };
@@ -967,7 +977,11 @@ function renderMatch(host, question, locked) {
     });
     select.value = current[leftIndex] === "" || current[leftIndex] === undefined ? "" : String(current[leftIndex]);
     if (locked || state.submitted) {
-      const ok = Number(current[leftIndex]) === leftIndex;
+      const selectedIndex = Number(current[leftIndex]);
+      const ok = Number.isInteger(selectedIndex)
+        && selectedIndex >= 0
+        && selectedIndex < question.pairs.length
+        && matchValue(question.pairs[selectedIndex].right) === matchValue(pair.right);
       select.classList.add(ok ? "correct" : "incorrect");
       row.classList.add(ok ? "correct" : "incorrect");
     }

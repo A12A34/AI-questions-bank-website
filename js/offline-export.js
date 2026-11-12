@@ -193,6 +193,7 @@ export function buildOfflineQuizHtml(bank) {
         return Array.isArray(answers) ? answers : [answers];
       };
       const normalizeCode = (value) => String(value ?? "").replace(/\s+/g, "");
+      const matchValue = (value) => typeof value === "object" && value !== null ? value.text ?? "" : value;
       const isLocked = (question) => state.submitted || state.revealed.has(question.id);
       const answerFor = (question) => state.answers.get(question.id);
       const sameSet = (a, b) => a.length === b.length && [...a].sort((x, y) => x - y).every((value, i) => value === [...b].sort((x, y) => x - y)[i]);
@@ -242,7 +243,18 @@ export function buildOfflineQuizHtml(bank) {
         }
         if (question.type === "mcq" || question.type === "tf") return { answered: true, correct: answer === question.answer };
         if (question.type === "multi") return { answered: true, correct: sameSet(answer, Array.isArray(question.answer) ? question.answer : [question.answer]) };
-        if (question.type === "match") return { answered: true, correct: question.pairs.every((_, index) => Number(answer[index]) === index) };
+        if (question.type === "match") {
+          return {
+            answered: true,
+            correct: question.pairs.every((pair, index) => {
+              const selectedIndex = Number(answer[index]);
+              return Number.isInteger(selectedIndex)
+                && selectedIndex >= 0
+                && selectedIndex < question.pairs.length
+                && matchValue(question.pairs[selectedIndex].right) === matchValue(pair.right);
+            }),
+          };
+        }
         return { answered: false, correct: false };
       }
 
@@ -495,5 +507,5 @@ export function downloadOfflineQuizHtml(bank) {
   document.body.appendChild(link);
   link.click();
   link.remove();
-  URL.revokeObjectURL(url);
+  window.setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
