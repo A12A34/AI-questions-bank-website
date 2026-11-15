@@ -1,6 +1,14 @@
 {
   "banks": [
     {
+      "id": "biology-grade-12",
+      "title": "Grade 12 Biology: 100 MCQs",
+      "file": "biology-grade-12.json",
+      "subject": "Biology",
+      "gradeLevel": "Grade 12",
+      "difficulty": "Intermediate"
+    },
+    {
       "id": "sample",
       "title": "Sample mixed bank",
       "file": "sample.json",
