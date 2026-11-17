@@ -950,7 +950,7 @@ function getOfflineClientScript() {
     const videos = Array.isArray(reference.videos) ? reference.videos : reference.video ? [reference.video] : [];
     videos.forEach((item) => {
       const video = typeof item === "string" ? { src: item } : item;
-      if (!video?.src || !/^(https?:\/\/|\/|\.\/|\.\.\/|data:video\/)/i.test(video.src)) return;
+      if (!video?.src || !/^(https?:\\/\\/|\\/|\.\\/|\.\.\\/|data:video\\/)/i.test(video.src)) return;
       const figure = document.createElement("figure");
       figure.className = "pinned-reference-media";
       const element = document.createElement("video");

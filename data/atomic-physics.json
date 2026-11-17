@@ -368,5 +368,8 @@
       "answer": 2,
       "explanation": "In the n = 2 state, the electron's binding energy is E₂ = -13.6/2² = -3.4 eV. Ionisation requires providing enough energy to lift the electron to n = ∞ (0 eV): E_ion = 0 - (-3.4 eV) = 3.4 eV."
     }
-  ]
+  ],
+    "pinnedReferences": {
+    "text": "1. Formula sheet\n\nClosest approach (alpha particle): r0 = 2kZe^2 / K\nClosest approach (proton): r0 = kZe^2 / K\nRydberg formula: 1/lambda = R(1/n1^2 - 1/n2^2)\nBohr radius: rn = 0.529 n^2 / Z Angstrom\nBohr speed: vn = 2.18 x 10^6 Z / n m/s\nBohr energy: En = -13.6 Z^2 / n^2 eV\nKinetic energy: KE = -E\nPotential energy: PE = 2E\nPhoton energy: E = hf = hc/lambda\nWavelength shortcut: lambda = 1240 / Delta E nm\nSpectral lines: N = n(n - 1) / 2\nde Broglie wavelength: lambda = h / mv\nde Broglie using kinetic energy: lambda = h / sqrt(2mK)\nElectron through voltage: lambda = 1.227 / sqrt(V) nm\nBohr quantum condition: mvr = nh / 2pi\nMatter-wave orbit: 2pi r = n lambda\nUncertainty principle: Delta x Delta p >= h / 4pi\nOrbitals per shell: n^2\nMaximum electrons per shell: 2n^2\nElectrons per sub-shell: 2(2l + 1)\nLaser photons per second: N = P / E\nLaser intensity: I = P / A\nCircular area: A = pi r^2\n\n2. Important constants\nPlanck constant h = 6.63 x 10^-34 J s\nSpeed of light c = 3.0 x 10^8 m/s\nElectron mass me = 9.11 x 10^-31 kg\nProton mass mp = 1.67 x 10^-27 kg\nElectron charge e = 1.6 x 10^-19 C\nCoulomb constant k = 9.0 x 10^9 N m^2/C^2\nRydberg constant R = 1.097 x 10^7 m^-1\n1 eV = 1.6 x 10^-19 J\nhc = 1240 eV nm\nh / 4pi = 5.28 x 10^-35 J s"
+  }
 }
