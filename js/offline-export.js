@@ -760,7 +760,7 @@ function getOfflineClientScript() {
   "use strict";
 
   const ARABIC_RE = /[\\u0600-\\u06FF]/;
-  const ALLOWED_TYPES = new Set(["mcq", "multi", "tf", "match", "writing", "reading", "code", "code-writing"]);
+  const ALLOWED_TYPES = new Set(["mcq", "multi", "tf", "match", "writing", "reading", "code", "code-writing", "numeric"]);
 
   const hasArabic = (text) => ARABIC_RE.test(String(text ?? ""));
 
@@ -899,8 +899,17 @@ function getOfflineClientScript() {
       } else if (item.type === "tf") {
         item.tfOptions = state.shuffleChoices ? shuffle([true, false]) : [true, false];
       } else if (item.type === "match") {
-        const pairs = Array.isArray(item.pairs) ? item.pairs : [];
-        const rights = pairs.map((p, idx) => ({ index: idx, text: p.right }));
+        let rights;
+        if (Array.isArray(item.options)) {
+          rights = item.options.map((opt, i) => ({ index: i, text: opt }));
+        } else {
+          rights = (item.pairs || []).map((p, idx) => ({ index: idx, text: p.right }));
+          if (Array.isArray(item.distractors)) {
+            item.distractors.forEach((d, di) => {
+              rights.push({ index: (item.pairs || []).length + di, text: d });
+            });
+          }
+        }
         item.shuffledRights = state.shuffleChoices ? shuffle(rights) : rights;
       }
       return item;
@@ -911,6 +920,20 @@ function getOfflineClientScript() {
     const ans = state.answers.get(q.id);
     if (q.type === "reading") return { answered: false, correct: null };
     if (q.type === "writing") return { answered: Boolean(ans && String(ans).trim()), correct: null };
+    if (q.type === "numeric") {
+      const raw = typeof ans === "string" ? ans.trim() : (ans !== undefined && ans !== null ? String(ans).trim() : "");
+      const answered = raw.length > 0;
+      if (!answered) return { answered: false, correct: false };
+      const accepted = (q.acceptedAnswers ?? [q.answer]).map(String);
+      const textMatch = accepted.some((a) => a.trim().toLowerCase() === raw.toLowerCase());
+      if (textMatch) return { answered: true, correct: true };
+      const num = parseFloat(raw);
+      const numMatch = !isNaN(num) && accepted.some((a) => {
+        const target = parseFloat(a);
+        return !isNaN(target) && Math.abs(num - target) < 1e-3;
+      });
+      return { answered: true, correct: numMatch };
+    }
     if (q.type === "code" || q.type === "code-writing") {
       const answered = typeof ans === "string" && ans.trim().length > 0;
       const correct = answered && acceptedCodeAnswers(q).some((exp) => normalizeCode(ans) === normalizeCode(exp));
@@ -919,7 +942,13 @@ function getOfflineClientScript() {
     if (ans === undefined || ans === null || (Array.isArray(ans) && ans.some((v) => v === "" || v === undefined))) {
       return { answered: false, correct: false };
     }
-    if (q.type === "mcq" || q.type === "tf") {
+    if (q.type === "mcq") {
+      const isCorrect = Array.isArray(q.answer)
+        ? q.answer.includes(ans)
+        : (q.acceptedAnswers ? q.acceptedAnswers.includes(ans) : ans === q.answer);
+      return { answered: true, correct: isCorrect };
+    }
+    if (q.type === "tf") {
       return { answered: true, correct: ans === q.answer };
     }
     if (q.type === "multi") {
@@ -930,12 +959,15 @@ function getOfflineClientScript() {
       const pairs = q.pairs || [];
       const ok = pairs.every((p, idx) => {
         const selectedIdx = Number(ans[idx]);
-        if (!Number.isInteger(selectedIdx) || selectedIdx < 0 || selectedIdx >= pairs.length) return false;
-        const selRight = pairs[selectedIdx].right;
+        if (!Number.isInteger(selectedIdx) || selectedIdx < 0) return false;
+        const opt = (q.shuffledRights || []).find((o) => o.index === selectedIdx);
+        const selRight = opt ? opt.text : (pairs[selectedIdx] ? pairs[selectedIdx].right : undefined);
         const expectedRight = p.right;
         const valA = typeof selRight === "object" ? selRight.text : selRight;
         const valB = typeof expectedRight === "object" ? expectedRight.text : expectedRight;
-        return valA === valB;
+        if (valA !== undefined && valA === valB) return true;
+        if (Array.isArray(p.acceptedMatches) && p.acceptedMatches.includes(valA)) return true;
+        return false;
       });
       return { answered: true, correct: ok };
     }
@@ -1068,7 +1100,10 @@ function getOfflineClientScript() {
         lbl.className = "choice";
 
         if (locked || state.submitted) {
-          if (origIdx === q.answer) lbl.classList.add("correct");
+          const isExpected = Array.isArray(q.answer)
+            ? q.answer.includes(origIdx)
+            : (q.acceptedAnswers ? q.acceptedAnswers.includes(origIdx) : origIdx === q.answer);
+          if (isExpected) lbl.classList.add("correct");
           else if (currentAns === origIdx && result && !result.correct) lbl.classList.add("incorrect");
         }
 
@@ -1203,9 +1238,12 @@ function getOfflineClientScript() {
 
         if (locked || state.submitted) {
           const selIdx = Number(userMatches[pairIdx]);
-          const isOk = Number.isInteger(selIdx) && selIdx >= 0 && selIdx < pairs.length &&
-            (typeof pairs[selIdx].right === "object" ? pairs[selIdx].right.text : pairs[selIdx].right) ===
-            (typeof pair.right === "object" ? pair.right.text : pair.right);
+          const opt = (q.shuffledRights || []).find((o) => o.index === selIdx);
+          const selRight = opt ? opt.text : (pairs[selIdx] ? pairs[selIdx].right : undefined);
+          const valA = typeof selRight === "object" ? selRight.text : selRight;
+          const valB = typeof pair.right === "object" ? pair.right.text : pair.right;
+          const isOk = (valA !== undefined && valA === valB)
+            || (Array.isArray(pair.acceptedMatches) && pair.acceptedMatches.includes(valA));
           select.style.borderColor = isOk ? "var(--ok)" : "var(--err)";
         }
 
@@ -1221,6 +1259,35 @@ function getOfflineClientScript() {
         wrap.append(row);
       });
       card.append(wrap);
+    } else if (q.type === "numeric") {
+      const hint = document.createElement("p");
+      hint.className = "writing-hint";
+      hint.textContent = q.hint ?? "Enter a numeric value (e.g. 121.6).";
+      const input = document.createElement("input");
+      input.type = "text";
+      input.className = "numeric-answer";
+      input.value = currentAns || "";
+      input.placeholder = "Enter your answer...";
+      input.disabled = locked || state.submitted;
+      if (locked || state.submitted) {
+        input.classList.add(result && result.correct ? "correct" : "incorrect");
+      }
+      input.addEventListener("input", () => {
+        state.answers.set(q.id, input.value);
+        renderJumpNav();
+        updateProgress();
+      });
+      card.append(hint, input);
+
+      if (locked || state.submitted) {
+        const model = document.createElement("div");
+        model.className = "model-answer";
+        const heading = document.createElement("strong");
+        heading.textContent = "Correct answer:";
+        const ansDisplay = q.answerText ?? (Array.isArray(q.acceptedAnswers) ? q.acceptedAnswers[0] : q.answer);
+        model.append(heading, document.createTextNode(" " + String(ansDisplay ?? "")));
+        card.append(model);
+      }
     } else if (q.type === "writing" || q.type === "code" || q.type === "code-writing") {
       const isCode = q.type !== "writing";
       const area = document.createElement("textarea");

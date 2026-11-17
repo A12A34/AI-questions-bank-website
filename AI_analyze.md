@@ -59,6 +59,7 @@ questions_in_txt/       ← Source text files used to generate the JSON banks
 | `linear-regression` | Linear Regression | 100 | mcq (50), tf (50) |
 | `iot-ws4-ws5` | IoT WS4 & WS5 | 100 | mcq (50), tf (50) |
 | `iris-perceptron-coding` | Iris + Perceptron Coding | 30 | writing (30) |
+| `atomic-physics` | Atomic Physics & Quantum Theory | 33 | mcq (17), tf (5), match (4), numeric (4), writing (3) |
 | **Total** | | **663** | |
 
 ### Question Type Distribution
@@ -82,6 +83,8 @@ The JSON schema supports **five question types**:
 3. **`multi`** — Multiple-choice with multiple correct answers (`answer` is an array of indices).
 4. **`match`** — Matching pairs (`pairs` array with `left`/`right` objects).
 5. **`writing`** — Free-text response with `modelAnswer` and `explanation`, not auto-scored.
+6. **`numeric`** — Numeric input with auto-scoring, tolerance evaluation, and model answer display.
+7. **`code`** / **`code-writing`** — Exact code string input with automated whitespace-insensitive check.
 
 ---
 

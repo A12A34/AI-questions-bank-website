@@ -1,0 +1,246 @@
+1. Glow-in-the-dark stickers are an example of fluorescence. (True or False)
+Options: True, False
+Correct Answer: False
+Reason: Glow-in-the-dark materials are an example of phosphorescence (slow delayed emission), not fluorescence (instantaneous emission).
+
+2. Explain why every element produces its own unique line spectrum, and how astronomers use this to find out which elements are present in a distant star. (Essay)
+Correct Answer: Each element has unique electron energy levels, emitting or absorbing specific wavelengths of light (a spectral fingerprint). Astronomers compare the lines in a star's spectrum against known laboratory spectra of elements to identify which elements are present in the star.
+
+3. As the electron in hydrogen moves to higher values of n, which quantity INCREASES? (Multiple Choice)
+Options:
+A. Kinetic energy
+B. Size of the potential energy
+C. Speed
+D. Total energy (it becomes less negative)
+Correct Answer: D. Total energy (it becomes less negative)
+Reason: As n increases, orbital speed and kinetic energy decrease, while total energy En = -13.6/n² eV becomes less negative and increases toward 0.
+
+4. Find the wavelength (in nm) of the first line of the Lyman series (n = 2 -> 1) of hydrogen. (Numeric)
+Correct Answer: 121.6
+Reason: Using 1/λ = R(1 - 1/4) = 3R/4, with R ≈ 1.097 × 10⁷ m⁻¹, λ ≈ 121.6 nm.
+
+5. The 2s orbital is smaller than the 1s orbital. (True or False)
+Options: True, False
+Correct Answer: False
+Reason: The 2s orbital corresponds to n = 2 and is larger in size and higher in energy than the 1s orbital (n = 1).
+
+6. Please Confirm! (Multiple Choice)
+Options:
+A. I confirm that I have read, understood, and agree to abide by all exam rules and academic integrity policies..
+B. I confirm that I have read, understood, and agree to abide by all exam rules and academic integrity policies.
+Correct Answer: Either option (Academic integrity confirmation)
+
+7. Find the energy of the electron in the n = 4 level of He+ (Z = 2), in eV (include the sign). (Numeric)
+Correct Answer: -3.4
+Reason: En = -13.6 × (Z² / n²) eV = -13.6 × (4 / 16) = -3.4 eV.
+
+8. Why do the electrons in the gold atoms have almost no effect on the paths of the alpha particles? (Multiple Choice)
+Options:
+A. Electrons move too slowly to meet the alpha particles
+B. Electrons are far too light to deflect the much heavier alpha particles
+C. Electrons have no charge
+D. Electrons are inside the nucleus
+Correct Answer: B. Electrons are far too light to deflect the much heavier alpha particles
+Reason: Alpha particles are roughly 7300 times heavier than electrons, so collisions with electrons do not noticeably deflect them.
+
+9. Which element was discovered in the spectrum of the Sun before it was found on Earth? (Multiple Choice)
+Options:
+A. Neon
+B. Sodium
+C. Hydrogen
+D. Helium
+Correct Answer: D. Helium
+Reason: Helium was discovered in 1868 during a solar eclipse as an unknown yellow spectral line in the Sun's chromosphere.
+
+10. The energy levels of hydrogen get closer together as n increases. (True or False)
+Options: True, False
+Correct Answer: True
+Reason: The energy gap ΔE = 13.6(1/n² - 1/(n+1)²) decreases as n grows larger, converging toward 0 eV at n = ∞.
+
+11. Match each item with its description. (Matching)
+Items: Electron, Nucleus, Photon, alpha particle
+Dropdown Options:
+- Packet of light energy, E = hf
+- Tiny, heavy, positive centre of the atom
+- Helium nucleus with charge +2e
+- Neutral particle with the mass of an electron
+- Very light particle with charge -e
+Correct Matches:
+- Electron -> Very light particle with charge -e
+- Nucleus -> Tiny, heavy, positive centre of the atom
+- Photon -> Packet of light energy, E = hf
+- alpha particle -> Helium nucleus with charge +2e
+
+12. Which equation is Bohr's quantum condition for the allowed orbits? (Multiple Choice)
+Options:
+A. mv²/r = kZe²/r²
+B. mvr = nh/(2π)
+C. E = mc²
+D. λ = h/(mv)
+Correct Answer: B. mvr = nh/(2π)
+Reason: Bohr postulated that angular momentum is quantised in integer multiples of h/(2π): L = mvr = nh/(2π).
+
+13. What does the word LASER stand for? (Multiple Choice)
+Options:
+A. Low Amplitude Stimulated Energy Radiation
+B. Light Absorption by Stimulated Emission of Rays
+C. Light Amplification by Stimulated Emission of Radiation
+D. Light Amplification by Spontaneous Emission of Radiation
+Correct Answer: C. Light Amplification by Stimulated Emission of Radiation
+
+14. A 1 mW laser pointer can permanently damage the eye, but looking briefly at a 60 W light bulb does not. Using the properties of laser light, explain why. Include a calculation or estimate to support your argument. (Essay)
+Correct Answer: A laser emits a coherent, parallel beam that the eye's lens focuses onto a tiny retinal spot (A ≈ 10⁻⁸ m²), creating a dangerous intensity (I = P/A = 0.001 W / 10⁻⁸ m² = 10⁵ W/m²). A 60 W bulb emits incoherent light in all directions, so at 1 m away its intensity spreads over a sphere (A = 4πr² ≈ 12.6 m²), yielding only I ≈ 4.8 W/m².
+
+15. What is the shape of an s orbital? (Multiple Choice)
+Options:
+A. A four-leaf clover
+B. A sphere
+C. A dumbbell
+D. A flat ring
+Correct Answer: B. A sphere
+Reason: An s orbital has l = 0, which has spherical symmetry.
+
+16. Which sub-shell is filled immediately after 4s? (Multiple Choice)
+Options:
+A. 3d
+B. 4d
+C. 5s
+D. 4p
+Correct Answer: A. 3d
+Reason: According to the Aufbau principle (n + l rule), after 4s (n+l = 4), electrons fill 3d (n+l = 5).
+
+17. Which photon can be absorbed by the hydrogen atom to go to an excited state. (Multiple Choice)
+Options:
+A. Photon of energy 7.2 eV
+B. Photon of energy 20.1 eV
+C. Photon of energy 13.1 eV
+D. Photon of energy 10.2 eV
+Correct Answer: D. Photon of energy 10.2 eV
+Reason: Transition from ground state n = 1 (-13.6 eV) to n = 2 (-3.4 eV) requires exactly ΔE = 10.2 eV.
+
+18. Match the suitable pairs (Isotopes of Hydrogen) (Matching)
+Items: Hydrogen-3, Hydrogen-2, Hydrogen-1
+Dropdown Options:
+- Two neutron and two proton
+- No neutron only one proton
+- One neutron and one proton
+- Two neutron and one proton
+Correct Matches:
+- Hydrogen-3 -> Two neutron and one proton
+- Hydrogen-2 -> One neutron and one proton
+- Hydrogen-1 -> No neutron only one proton
+
+19. Match each quantum number with what it describes. (Matching)
+Items: ml (magnetic), l (azimuthal), ms (spin), n (principal)
+Dropdown Options:
+- Shape of the orbital
+- Mass of the nucleus
+- Spin of the electron, +1/2 or -1/2
+- Size and energy of the shell
+- Orientation of the orbital in space
+Correct Matches:
+- ml (magnetic) -> Orientation of the orbital in space
+- l (azimuthal) -> Shape of the orbital
+- ms (spin) -> Spin of the electron, +1/2 or -1/2
+- n (principal) -> Size and energy of the shell
+
+20. For n = 3, which values of l are allowed? (Multiple Choice)
+Options:
+A. 0, 1, 2, 3
+B. 1, 2, 3
+C. 0 only
+D. 0, 1, 2
+Correct Answer: D. 0, 1, 2
+Reason: For any principal quantum number n, l takes integer values from 0 up to n - 1. For n = 3: 0, 1, 2.
+
+21. An electron with 11.0 eV of kinetic energy collides with a ground-state hydrogen atom. What can happen? (Multiple Choice)
+Options:
+A. Nothing, because 11.0 eV matches no gap
+B. It can excite the atom to n = 2 and keep 0.8 eV
+C. It must ionise the atom
+D. It can excite the atom to n = 3
+Correct Answer: B. It can excite the atom to n = 2 and keep 0.8 eV
+Reason: Colliding particles can transfer part of their kinetic energy. Excitations to n = 2 requires 10.2 eV; the electron keeps 11.0 - 10.2 = 0.8 eV.
+
+22. A p sub-shell contains three orbitals. (True or False)
+Options: True, False
+Correct Answer: True
+Reason: For l = 1 (p sub-shell), ml = -1, 0, +1 (three orbitals: px, py, pz).
+
+23. Ground-state hydrogen is bombarded with electrons of 12.8 eV. Find the LONGEST wavelength of light (in nm) that the gas can then emit. (Numeric)
+Correct Answer: 656.1 (or 656)
+Reason: 12.8 eV can excite atoms up to n = 4 (requires 12.75 eV). De-excitation includes n = 3 -> 2 emitting H-alpha at 656.1 nm.
+
+24. Explain why light from an ordinary bulb is incoherent while laser light is coherent. Refer to spontaneous and stimulated emission in your answer. (Essay)
+Correct Answer: An ordinary bulb produces light via spontaneous emission, where excited atoms release photons independently at random times, directions, phases, and wavelengths (incoherent). A laser uses stimulated emission, where an incoming photon triggers an excited atom to emit an identical photon with the exact same wavelength, phase, and direction (coherent).
+
+25. What is the maximum number of electrons that the n = 4 shell can hold? (Numeric)
+Correct Answer: 32
+Reason: Max electrons in shell n is 2n² = 2(4²) = 32.
+
+26. If the speed of an electron doubles, its de Broglie wavelength halves. (True or False)
+Options: True, False
+Correct Answer: True
+Reason: λ = h / (mv); wavelength is inversely proportional to speed.
+
+27. Which set of quantum numbers (n, l, ml, ms) is NOT allowed? (Multiple Choice)
+Options:
+A. (2, 2, 0, +1/2)
+B. (2, 1, -1, +1/2)
+C. (3, 2, -2, -1/2)
+D. (1, 0, 0, -1/2)
+Correct Answer: A. (2, 2, 0, +1/2)
+Reason: The orbital quantum number l must satisfy 0 <= l <= n - 1. When n = 2, l can only be 0 or 1.
+
+28. Why was the gold-foil apparatus kept in a vacuum? (Multiple Choice)
+Options:
+A. So that air molecules would not stop or scatter the alpha particles
+B. So that the alpha particles would travel faster than light
+C. So that the gold foil would not melt
+D. So that the electrons could leave the gold atoms
+Correct Answer: A. So that air molecules would not stop or scatter the alpha particles
+Reason: Alpha particles have low penetration and would easily be stopped or scattered by collisions with air molecules.
+
+29. Two lasers have the same power. Laser A emits 400 nm light and laser B emits 800 nm light. Which statement is correct? (Multiple Choice)
+Options:
+A. Both emit the same number of photons per second
+B. Laser A emits four times as many photons per second
+C. Laser B emits twice as many photons per second as laser A
+D. Laser A emits twice as many photons per second as laser B
+Correct Answer: C. Laser B emits twice as many photons per second as laser A
+Reason: Photon energy E = hc/λ. Each 800 nm photon carries half as much energy as a 400 nm photon, so laser B needs twice as many photons per second to reach the same power.
+
+30. What colour is the light from a helium-neon laser? (Multiple Choice)
+Options:
+A. Red (about 633 nm)
+B. Green (about 532 nm)
+C. Blue (about 450 nm)
+D. Ultraviolet (about 250 nm)
+Correct Answer: A. Red (about 633 nm)
+Reason: The primary visible wavelength of a He-Ne laser is 632.8 nm in the red portion of the spectrum.
+
+31. Match the suitable pairs (Spectra Types) (Matching)
+Items: Continuous Spectrum, Absorption Spectrum, Emission Spectrum
+Dropdown Options: C, B, A
+Correct Matches:
+- Continuous Spectrum -> A
+- Absorption Spectrum -> C
+- Emission Spectrum -> B
+
+32. Roughly how large is a whole atom? (Multiple Choice)
+Options:
+A. About 10⁻²⁰ m
+B. About 10⁻⁵ m
+C. About 10⁻¹⁵ m
+D. About 10⁻¹⁰ m
+Correct Answer: D. About 10⁻¹⁰ m
+Reason: An atom has a typical diameter of approximately 10⁻¹⁰ m (0.1 nm), while the nucleus is around 10⁻¹⁵ m.
+
+33. How much energy is needed to ionise a hydrogen atom that is already in the n = 2 level? (Multiple Choice)
+Options:
+A. 13.6 eV
+B. 10.2 eV
+C. 3.4 eV
+D. 1.51 eV
+Correct Answer: C. 3.4 eV
+Reason: At n = 2, electron energy is -13.6/2² = -3.4 eV. Ionisation requires reaching 0 eV: 0 - (-3.4) = 3.4 eV.

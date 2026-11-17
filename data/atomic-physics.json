@@ -1,0 +1,372 @@
+{
+  "id": "atomic-physics",
+  "title": "Atomic Physics & Quantum Theory (33 Questions)",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "tf",
+      "prompt": "Glow-in-the-dark stickers are an example of fluorescence.",
+      "answer": false,
+      "explanation": "Glow-in-the-dark materials are an example of phosphorescence (which slowly releases stored energy over time), not fluorescence (which ceases almost immediately when the excitation light stops)."
+    },
+    {
+      "id": "q2",
+      "type": "writing",
+      "prompt": "Explain why every element produces its own unique line spectrum, and how astronomers use this to find out which elements are present in a distant star.",
+      "modelAnswer": "Each element has unique electron energy levels, emitting or absorbing specific wavelengths of light (a spectral fingerprint). Astronomers compare the lines in a star's spectrum against known laboratory spectra of elements to identify which elements are present in the star.",
+      "explanation": "Because energy levels are quantised and unique to each atom's nuclear charge and electron configuration, spectral transitions act like a chemical barcode."
+    },
+    {
+      "id": "q3",
+      "type": "mcq",
+      "prompt": "As the electron in hydrogen moves to higher values of n, which quantity INCREASES?",
+      "choices": [
+        "Kinetic energy",
+        "Size of the potential energy",
+        "Speed",
+        "Total energy (it becomes less negative)"
+      ],
+      "answer": 3,
+      "explanation": "As n increases, the electron moves farther from the nucleus; its speed and kinetic energy decrease, while its total energy En = -13.6/n² eV increases (becomes less negative, approaching 0 eV at n = ∞)."
+    },
+    {
+      "id": "q4",
+      "type": "numeric",
+      "prompt": "Find the wavelength (in nm) of the first line of the Lyman series (n = 2 → 1) of hydrogen.",
+      "answer": "121.6",
+      "acceptedAnswers": ["121.6", "121.5", "122", "121.6 nm", "121.57"],
+      "answerText": "121.6 nm",
+      "explanation": "Using the Rydberg formula: 1/λ = R(1/1² - 1/2²) = 0.75 R. With R ≈ 1.097 × 10⁷ m⁻¹, λ = 1 / (0.75 × 1.097 × 10⁷) ≈ 1.216 × 10⁻⁷ m = 121.6 nm."
+    },
+    {
+      "id": "q5",
+      "type": "tf",
+      "prompt": "The 2s orbital is smaller than the 1s orbital.",
+      "answer": false,
+      "explanation": "The 2s orbital has a higher principal quantum number (n = 2) and is larger in size and higher in energy than the 1s orbital (n = 1)."
+    },
+    {
+      "id": "q6",
+      "type": "mcq",
+      "prompt": "Please Confirm!",
+      "choices": [
+        "I confirm that I have read, understood, and agree to abide by all exam rules and academic integrity policies..",
+        "I confirm that I have read, understood, and agree to abide by all exam rules and academic integrity policies."
+      ],
+      "answer": [0, 1],
+      "acceptedAnswers": [0, 1],
+      "explanation": "Academic integrity confirmation. Either option is accepted."
+    },
+    {
+      "id": "q7",
+      "type": "numeric",
+      "prompt": "Find the energy of the electron in the n = 4 level of He⁺ (Z = 2), in eV (include the sign).",
+      "answer": "-3.4",
+      "acceptedAnswers": ["-3.4", "-3.40", "-3.4 eV", "-3.4eV"],
+      "answerText": "-3.4 eV",
+      "explanation": "En = -13.6 × (Z² / n²) eV = -13.6 × (2² / 4²) = -13.6 × (4 / 16) = -13.6 / 4 = -3.4 eV."
+    },
+    {
+      "id": "q8",
+      "type": "mcq",
+      "prompt": "Why do the electrons in the gold atoms have almost no effect on the paths of the α particles?",
+      "choices": [
+        "Electrons move too slowly to meet the α particles",
+        "Electrons are far too light to deflect the much heavier α particles",
+        "Electrons have no charge",
+        "Electrons are inside the nucleus"
+      ],
+      "answer": 1,
+      "explanation": "Alpha particles are approximately 7300 times more massive than electrons. Because of this enormous mass difference, collisions with electrons produce virtually no noticeable deflection of the alpha particles."
+    },
+    {
+      "id": "q9",
+      "type": "mcq",
+      "prompt": "Which element was discovered in the spectrum of the Sun before it was found on Earth?",
+      "choices": [
+        "Neon",
+        "Sodium",
+        "Hydrogen",
+        "Helium"
+      ],
+      "answer": 3,
+      "explanation": "Helium was first detected by astronomers analyzing solar emission lines during an 1868 eclipse and named after Helios (Greek god of the Sun) before it was isolated on Earth."
+    },
+    {
+      "id": "q10",
+      "type": "tf",
+      "prompt": "The energy levels of hydrogen get closer together as n increases.",
+      "answer": true,
+      "explanation": "The energy difference ΔE = 13.6(1/n² - 1/(n+1)²) decreases rapidly as n increases, crowding closer together toward 0 eV as n approaches infinity."
+    },
+    {
+      "id": "q11",
+      "type": "match",
+      "prompt": "Match each item with its description.",
+      "pairs": [
+        { "left": "Electron", "right": "Very light particle with charge -e" },
+        { "left": "Nucleus", "right": "Tiny, heavy, positive centre of the atom" },
+        { "left": "Photon", "right": "Packet of light energy, E = hf" },
+        { "left": "α particle", "right": "Helium nucleus with charge +2e" }
+      ],
+      "distractors": ["Neutral particle with the mass of an electron"],
+      "explanation": "Electron: negative charge (-e) and very small mass. Nucleus: dense, positively charged core. Photon: quantum of light with energy E = hf. Alpha particle: helium-4 nucleus with charge +2e."
+    },
+    {
+      "id": "q12",
+      "type": "mcq",
+      "prompt": "Which equation is Bohr's quantum condition for the allowed orbits?",
+      "choices": [
+        "mv²/r = kZe²/r²",
+        "mvr = nh/(2π)",
+        "E = mc²",
+        "λ = h/(mv)"
+      ],
+      "answer": 1,
+      "explanation": "Bohr postulated that orbital angular momentum is quantised in integral multiples of h/(2π): L = mvr = nh/(2π)."
+    },
+    {
+      "id": "q13",
+      "type": "mcq",
+      "prompt": "What does the word LASER stand for?",
+      "choices": [
+        "Low Amplitude Stimulated Energy Radiation",
+        "Light Absorption by Stimulated Emission of Rays",
+        "Light Amplification by Stimulated Emission of Radiation",
+        "Light Amplification by Spontaneous Emission of Radiation"
+      ],
+      "answer": 2,
+      "explanation": "LASER stands for Light Amplification by Stimulated Emission of Radiation."
+    },
+    {
+      "id": "q14",
+      "type": "writing",
+      "prompt": "A 1 mW laser pointer can permanently damage the eye, but looking briefly at a 60 W light bulb does not. Using the properties of laser light, explain why. Include a calculation or estimate to support your argument.",
+      "modelAnswer": "A laser emits a coherent, parallel beam that the eye's lens focuses onto a tiny retinal spot (A ≈ 10⁻⁸ m²), creating a dangerous intensity (I = P/A = 0.001 W / 10⁻⁸ m² = 10⁵ W/m²). A 60 W bulb emits incoherent light in all directions, so at 1 m away its intensity spreads over a sphere (A = 4πr² ≈ 12.6 m²), yielding only I ≈ 4.8 W/m².",
+      "explanation": "The extreme directionality and spatial coherence of a laser beam allows it to be focused to a diffraction-limited spot on the retina, yielding dangerously high power densities."
+    },
+    {
+      "id": "q15",
+      "type": "mcq",
+      "prompt": "What is the shape of an s orbital?",
+      "choices": [
+        "A four-leaf clover",
+        "A sphere",
+        "A dumbbell",
+        "A flat ring"
+      ],
+      "answer": 1,
+      "explanation": "An s orbital has azimuthal quantum number l = 0, which corresponds to a spherically symmetric probability distribution."
+    },
+    {
+      "id": "q16",
+      "type": "mcq",
+      "prompt": "Which sub-shell is filled immediately after 4s?",
+      "choices": [
+        "3d",
+        "4d",
+        "5s",
+        "4p"
+      ],
+      "answer": 0,
+      "explanation": "According to the Aufbau principle / Madelung rule, sub-shells fill in order of increasing (n + l). For 4s, n + l = 4 + 0 = 4. The next lowest is 3d with n + l = 3 + 2 = 5."
+    },
+    {
+      "id": "q17",
+      "type": "mcq",
+      "prompt": "Which photon can be absorbed by the hydrogen atom to go to an excited state.",
+      "choices": [
+        "Photon of energy 7.2 eV",
+        "Photon of energy 20.1 eV",
+        "Photon of energy 13.1 eV",
+        "Photon of energy 10.2 eV"
+      ],
+      "answer": 3,
+      "explanation": "A ground-state hydrogen atom (n = 1, E₁ = -13.6 eV) can only absorb a photon whose energy precisely matches an energy level difference. For n = 2 (E₂ = -3.4 eV), ΔE = -3.4 - (-13.6) = 10.2 eV."
+    },
+    {
+      "id": "q18",
+      "type": "match",
+      "prompt": "Match the suitable pairs (Isotopes of Hydrogen)",
+      "pairs": [
+        {
+          "left": "Hydrogen-3",
+          "right": "Two neutron and one proton",
+          "acceptedMatches": ["Two neutron and one proton", "Two neutron and two proton"]
+        },
+        { "left": "Hydrogen-2", "right": "One neutron and one proton" },
+        { "left": "Hydrogen-1", "right": "No neutron only one proton" }
+      ],
+      "distractors": ["Two neutron and two proton"],
+      "explanation": "Hydrogen-1 (protium): 1 proton, 0 neutrons. Hydrogen-2 (deuterium): 1 proton, 1 neutron. Hydrogen-3 (tritium): 1 proton, 2 neutrons."
+    },
+    {
+      "id": "q19",
+      "type": "match",
+      "prompt": "Match each quantum number with what it describes.",
+      "pairs": [
+        { "left": "m_l (magnetic)", "right": "Orientation of the orbital in space" },
+        { "left": "l (azimuthal)", "right": "Shape of the orbital" },
+        { "left": "m_s (spin)", "right": "Spin of the electron, +1/2 or -1/2" },
+        { "left": "n (principal)", "right": "Size and energy of the shell" }
+      ],
+      "distractors": ["Mass of the nucleus"],
+      "explanation": "n designates shell size/energy; l designates orbital angular momentum/shape; ml designates orbital orientation in space; ms designates intrinsic electron spin."
+    },
+    {
+      "id": "q20",
+      "type": "mcq",
+      "prompt": "For n = 3, which values of l are allowed?",
+      "choices": [
+        "0, 1, 2, 3",
+        "1, 2, 3",
+        "0 only",
+        "0, 1, 2"
+      ],
+      "answer": 3,
+      "explanation": "For any principal quantum number n, the azimuthal quantum number l can take integer values from 0 up to n - 1. For n = 3, l = 0 (s), 1 (p), 2 (d)."
+    },
+    {
+      "id": "q21",
+      "type": "mcq",
+      "prompt": "An electron with 11.0 eV of kinetic energy collides with a ground-state hydrogen atom. What can happen?",
+      "choices": [
+        "Nothing, because 11.0 eV matches no gap",
+        "It can excite the atom to n = 2 and keep 0.8 eV",
+        "It must ionise the atom",
+        "It can excite the atom to n = 3"
+      ],
+      "answer": 1,
+      "explanation": "Unlike photons, colliding electrons can undergo inelastic scattering and transfer part of their kinetic energy. Excitations from n = 1 to n = 2 requires 10.2 eV. Since 11.0 eV > 10.2 eV (and < 12.09 eV for n = 3), the electron excites the atom to n = 2 and keeps 11.0 - 10.2 = 0.8 eV."
+    },
+    {
+      "id": "q22",
+      "type": "tf",
+      "prompt": "A p sub-shell contains three orbitals.",
+      "answer": true,
+      "explanation": "For a p sub-shell (l = 1), ml has 2l + 1 = 3 allowed values (-1, 0, +1), corresponding to three mutually perpendicular orbitals (px, py, pz)."
+    },
+    {
+      "id": "q23",
+      "type": "numeric",
+      "prompt": "Ground-state hydrogen is bombarded with electrons of 12.8 eV. Find the LONGEST wavelength of light (in nm) that the gas can then emit.",
+      "answer": "656.1",
+      "acceptedAnswers": ["656.1", "656", "656.3", "656 nm"],
+      "answerText": "656.1 nm (or 656)",
+      "explanation": "Electrons with 12.8 eV can excite hydrogen up to n = 4 (requires 12.75 eV). De-excitation pathways include the transition from n = 3 to n = 2 in the Balmer series, which emits the H-α line at 656.1 nm (or 656 nm)."
+    },
+    {
+      "id": "q24",
+      "type": "writing",
+      "prompt": "Explain why light from an ordinary bulb is incoherent while laser light is coherent. Refer to spontaneous and stimulated emission in your answer.",
+      "modelAnswer": "An ordinary bulb produces light via spontaneous emission, where excited atoms release photons independently at random times, directions, phases, and wavelengths (incoherent). A laser uses stimulated emission, where an incoming photon triggers an excited atom to emit an identical photon with the exact same wavelength, phase, and direction (coherent).",
+      "explanation": "Spontaneous emission produces randomly phased wave packets with low coherence, while stimulated emission clones identical photons that are in phase with one another."
+    },
+    {
+      "id": "q25",
+      "type": "numeric",
+      "prompt": "What is the maximum number of electrons that the n = 4 shell can hold?",
+      "answer": "32",
+      "acceptedAnswers": ["32", "32 electrons"],
+      "answerText": "32",
+      "explanation": "The maximum capacity of an electron shell is 2n². For n = 4: 2(4²) = 2(16) = 32 electrons."
+    },
+    {
+      "id": "q26",
+      "type": "tf",
+      "prompt": "If the speed of an electron doubles, its de Broglie wavelength halves.",
+      "answer": true,
+      "explanation": "The de Broglie wavelength is given by λ = h / (mv). Since λ is inversely proportional to velocity v, doubling the speed halves the wavelength."
+    },
+    {
+      "id": "q27",
+      "type": "mcq",
+      "prompt": "Which set of quantum numbers (n, l, m_l, m_s) is NOT allowed?",
+      "choices": [
+        "(2, 2, 0, +1/2)",
+        "(2, 1, -1, +1/2)",
+        "(3, 2, -2, -1/2)",
+        "(1, 0, 0, -1/2)"
+      ],
+      "answer": 0,
+      "explanation": "The azimuthal quantum number l is restricted to 0 ≤ l ≤ n - 1. When n = 2, l can only be 0 or 1. Hence, (2, 2, 0, +1/2) is not permitted."
+    },
+    {
+      "id": "q28",
+      "type": "mcq",
+      "prompt": "Why was the gold-foil apparatus kept in a vacuum?",
+      "choices": [
+        "So that air molecules would not stop or scatter the α particles",
+        "So that the α particles would travel faster than light",
+        "So that the gold foil would not melt",
+        "So that the electrons could leave the gold atoms"
+      ],
+      "answer": 0,
+      "explanation": "Alpha particles strongly ionise matter and have very short range in air (only a few centimetres). A vacuum ensures that observed scattering is due only to the gold atoms."
+    },
+    {
+      "id": "q29",
+      "type": "mcq",
+      "prompt": "Two lasers have the same power. Laser A emits 400 nm light and laser B emits 800 nm light. Which statement is correct?",
+      "choices": [
+        "Both emit the same number of photons per second",
+        "Laser A emits four times as many photons per second",
+        "Laser B emits twice as many photons per second as laser A",
+        "Laser A emits twice as many photons per second as laser B"
+      ],
+      "answer": 2,
+      "explanation": "Each photon has energy E = hc/λ. An 800 nm photon has half the energy of a 400 nm photon. For both lasers to emit the same total power (energy per second), laser B must emit twice as many photons per second."
+    },
+    {
+      "id": "q30",
+      "type": "mcq",
+      "prompt": "What colour is the light from a helium–neon laser?",
+      "choices": [
+        "Red (about 633 nm)",
+        "Green (about 532 nm)",
+        "Blue (about 450 nm)",
+        "Ultraviolet (about 250 nm)"
+      ],
+      "answer": 0,
+      "explanation": "The most common emission line of a helium-neon laser is at 632.8 nm (roughly 633 nm), which is vibrant red visible light."
+    },
+    {
+      "id": "q31",
+      "type": "match",
+      "prompt": "Match the suitable pairs (Spectra Types)",
+      "pairs": [
+        { "left": "Continuous Spectrum", "right": "A" },
+        { "left": "Absorption Spectrum", "right": "C" },
+        { "left": "Emission Spectrum", "right": "B" }
+      ],
+      "options": ["A", "B", "C"],
+      "explanation": "Continuous Spectrum corresponds to A, Absorption Spectrum corresponds to C, and Emission Spectrum corresponds to B."
+    },
+    {
+      "id": "q32",
+      "type": "mcq",
+      "prompt": "Roughly how large is a whole atom?",
+      "choices": [
+        "About 10⁻²⁰ m",
+        "About 10⁻⁵ m",
+        "About 10⁻¹⁵ m",
+        "About 10⁻¹⁰ m"
+      ],
+      "answer": 3,
+      "explanation": "Typical atomic diameters are on the order of 10⁻¹⁰ m (0.1 nm or 1 Å). In contrast, the nucleus is about 10⁻¹⁵ m."
+    },
+    {
+      "id": "q33",
+      "type": "mcq",
+      "prompt": "How much energy is needed to ionise a hydrogen atom that is already in the n = 2 level?",
+      "choices": [
+        "13.6 eV",
+        "10.2 eV",
+        "3.4 eV",
+        "1.51 eV"
+      ],
+      "answer": 2,
+      "explanation": "In the n = 2 state, the electron's binding energy is E₂ = -13.6/2² = -3.4 eV. Ionisation requires providing enough energy to lift the electron to n = ∞ (0 eV): E_ion = 0 - (-3.4 eV) = 3.4 eV."
+    }
+  ]
+}

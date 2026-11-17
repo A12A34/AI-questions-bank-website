@@ -1055,6 +1055,34 @@ select.incorrect,
   min-height: 10rem;
 }
 
+input.numeric-answer {
+  width: 100%;
+  max-width: 340px;
+  padding: 0.65rem 0.85rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--fg);
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+input.numeric-answer:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+input.numeric-answer.correct {
+  border-color: var(--ok);
+  background: var(--ok-bg);
+}
+
+input.numeric-answer.incorrect {
+  border-color: var(--err);
+  background: var(--err-bg);
+}
+
 .model-answer,
 .explanation {
   margin: 0.9rem 0 0;

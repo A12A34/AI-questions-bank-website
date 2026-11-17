@@ -183,6 +183,14 @@
       "subject": "chemistry",
       "gradeLevel": "University",
       "difficulty": "Intermediate"
+    },
+    {
+      "id": "atomic-physics",
+      "title": "Atomic Physics & Quantum Theory (33 Questions)",
+      "file": "atomic-physics.json",
+      "subject": "phyisics",
+      "gradeLevel": "Grade 12",
+      "difficulty": "Intermediate"
     }
   ]
 }

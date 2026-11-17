@@ -595,7 +595,17 @@ function prepareQuestion(question, shuffleChoices) {
   }
 
   if (prepared.type === "match") {
-    const rights = prepared.pairs.map((pair, i) => ({ originalIndex: i, text: pair.right }));
+    let rights;
+    if (Array.isArray(prepared.options)) {
+      rights = prepared.options.map((opt, i) => ({ originalIndex: i, text: opt }));
+    } else {
+      rights = prepared.pairs.map((pair, i) => ({ originalIndex: i, text: pair.right }));
+      if (Array.isArray(prepared.distractors)) {
+        prepared.distractors.forEach((d, di) => {
+          rights.push({ originalIndex: prepared.pairs.length + di, text: d });
+        });
+      }
+    }
     prepared.rightOptions = shuffleChoices ? shuffle(rights) : rights;
   }
 
@@ -999,10 +1009,29 @@ function gradeQuestion(question) {
       answered: typeof answer === "string" && answer.length > 0,
     };
   }
+  if (question.type === "numeric") {
+    const raw = typeof answer === "string" ? answer.trim() : (answer !== undefined && answer !== null ? String(answer).trim() : "");
+    const answered = raw.length > 0;
+    if (!answered) return { scored: true, correct: false, answered: false };
+    const accepted = (question.acceptedAnswers ?? [question.answer]).map(String);
+    const textMatch = accepted.some((a) => a.trim().toLowerCase() === raw.toLowerCase());
+    if (textMatch) return { scored: true, correct: true, answered: true };
+    const num = parseFloat(raw);
+    const numMatch = !isNaN(num) && accepted.some((a) => {
+      const target = parseFloat(a);
+      return !isNaN(target) && Math.abs(num - target) < 1e-3;
+    });
+    return { scored: true, correct: numMatch, answered: true };
+  }
   if (answer === undefined || answer === null || (Array.isArray(answer) && answer.some((item) => item === null || item === undefined || item === ""))) {
     return { scored: true, correct: false, answered: false };
   }
-  if (question.type === "mcq") return { scored: true, correct: answer === question.answer, answered: true };
+  if (question.type === "mcq") {
+    const isCorrect = Array.isArray(question.answer)
+      ? question.answer.includes(answer)
+      : (question.acceptedAnswers ? question.acceptedAnswers.includes(answer) : answer === question.answer);
+    return { scored: true, correct: isCorrect, answered: true };
+  }
   if (question.type === "tf") return { scored: true, correct: answer === question.answer, answered: true };
   if (question.type === "multi") {
     const expected = Array.isArray(question.answer) ? question.answer : [question.answer];
@@ -1011,10 +1040,13 @@ function gradeQuestion(question) {
   if (question.type === "match") {
     const ok = question.pairs.every((pair, i) => {
       const selectedIndex = Number(answer[i]);
-      return Number.isInteger(selectedIndex)
-        && selectedIndex >= 0
-        && selectedIndex < question.pairs.length
-        && matchValue(question.pairs[selectedIndex].right) === matchValue(pair.right);
+      if (!Number.isInteger(selectedIndex) || selectedIndex < 0) return false;
+      const opt = question.rightOptions?.find((o) => o.originalIndex === selectedIndex);
+      const selectedText = matchValue(opt ? opt.text : (question.pairs[selectedIndex] ? question.pairs[selectedIndex].right : undefined));
+      const expectedText = matchValue(pair.right);
+      if (selectedText !== undefined && selectedText === expectedText) return true;
+      if (Array.isArray(pair.acceptedMatches) && pair.acceptedMatches.includes(selectedText)) return true;
+      return false;
     });
     return { scored: true, correct: ok, answered: true };
   }
@@ -1225,6 +1257,7 @@ function renderQuestionCard(article, question, index) {
   if (question.type === "match") renderMatch(article, question, locked, result);
   if (question.type === "writing") renderWriting(article, question, locked);
   if (question.type === "reading") renderReading(article, question);
+  if (question.type === "numeric") renderNumeric(article, question, locked, result);
   if (isCodeQuestion(question)) renderCode(article, question, locked, result);
 
   if ((locked || state.submitted) && question.explanation) {
@@ -1296,7 +1329,10 @@ function choiceClass(question, originalIndex, locked, result) {
   if (!locked && !state.submitted) return "choice";
   const answer = userAnswer(question);
   if (question.type === "mcq") {
-    if (originalIndex === question.answer) return "choice correct";
+    const isExpected = Array.isArray(question.answer)
+      ? question.answer.includes(originalIndex)
+      : (question.acceptedAnswers ? question.acceptedAnswers.includes(originalIndex) : originalIndex === question.answer);
+    if (isExpected) return "choice correct";
     if (answer === originalIndex && result && !result.correct) return "choice incorrect";
   }
   if (question.type === "tf") {
@@ -1425,10 +1461,11 @@ function renderMatch(host, question, locked) {
     select.value = current[leftIndex] === "" || current[leftIndex] === undefined ? "" : String(current[leftIndex]);
     if (locked || state.submitted) {
       const selectedIndex = Number(current[leftIndex]);
-      const ok = Number.isInteger(selectedIndex)
-        && selectedIndex >= 0
-        && selectedIndex < question.pairs.length
-        && matchValue(question.pairs[selectedIndex].right) === matchValue(pair.right);
+      const opt = question.rightOptions?.find((o) => o.originalIndex === selectedIndex);
+      const selectedText = matchValue(opt ? opt.text : (question.pairs[selectedIndex] ? question.pairs[selectedIndex].right : undefined));
+      const expectedText = matchValue(pair.right);
+      const ok = (selectedText !== undefined && selectedText === expectedText)
+        || (Array.isArray(pair.acceptedMatches) && pair.acceptedMatches.includes(selectedText));
       select.classList.add(ok ? "correct" : "incorrect");
       row.classList.add(ok ? "correct" : "incorrect");
     }
@@ -1466,6 +1503,29 @@ function renderWriting(host, question, locked) {
       model.dir = "rtl";
       model.classList.add("dir-rtl");
     }
+    host.append(model);
+  }
+}
+
+function renderNumeric(host, question, locked, result) {
+  const hint = document.createElement("p");
+  hint.className = "writing-hint";
+  hint.textContent = question.hint ?? "Enter a numeric value (e.g. 121.6).";
+  const input = document.createElement("input");
+  input.type = "text";
+  input.className = "numeric-answer";
+  input.value = userAnswer(question) ?? "";
+  input.placeholder = "Enter your answer...";
+  input.disabled = locked || state.submitted;
+  input.addEventListener("input", () => setUserAnswer(question, input.value));
+  host.append(hint, input);
+
+  if (locked || state.submitted) {
+    input.classList.add(result && result.correct ? "correct" : "incorrect");
+    const model = document.createElement("p");
+    model.className = "model-answer";
+    const ansDisplay = question.answerText ?? (Array.isArray(question.acceptedAnswers) ? question.acceptedAnswers[0] : question.answer);
+    model.innerHTML = `<strong>Correct answer:</strong> ${escapeHtml(ansDisplay)}`;
     host.append(model);
   }
 }
