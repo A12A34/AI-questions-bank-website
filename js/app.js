@@ -8,6 +8,10 @@ const STORAGE_KEYS = {
   folderConfig: "qb-folder-config",
   progress: "qb-progress",
   feedback: "qb-feedback",
+  users: "qb-users",
+  session: "qb-session",
+  authoredQuizzes: "qb-authored-quizzes",
+  activity: "qb-activity",
 };
 
 const ARABIC_RE = /[\u0600-\u06FF]/;
@@ -48,6 +52,35 @@ const els = {
   feedbackButton: document.getElementById("btn-feedback"),
   closeFeedback: document.getElementById("btn-close-feedback"),
   exportFeedback: document.getElementById("btn-export-feedback"),
+  accountBar: document.getElementById("account-bar"),
+  createQuiz: document.getElementById("btn-create-quiz"),
+  creator: document.getElementById("quiz-creator"),
+  closeCreator: document.getElementById("btn-close-creator"),
+  quizForm: document.getElementById("quiz-form"),
+  quizFormTitle: document.getElementById("quiz-form-title"),
+  quizFormSubject: document.getElementById("quiz-form-subject"),
+  quizFormGrade: document.getElementById("quiz-form-grade"),
+  quizFormDifficulty: document.getElementById("quiz-form-difficulty"),
+  quizFormDescription: document.getElementById("quiz-form-description"),
+  quizFormQuestions: document.getElementById("quiz-form-questions"),
+  quizFormStatus: document.getElementById("quiz-form-status"),
+  search: document.getElementById("quiz-search"),
+  searchStatus: document.getElementById("quiz-search-status"),
+  adminButton: document.getElementById("btn-admin"),
+  admin: document.getElementById("admin-dashboard"),
+  closeAdmin: document.getElementById("btn-close-admin"),
+  adminQuizList: document.getElementById("admin-quiz-list"),
+  activityList: document.getElementById("activity-list"),
+  authDialog: document.getElementById("auth-dialog"),
+  authForm: document.getElementById("auth-form"),
+  authTitle: document.getElementById("auth-title"),
+  authNameLabel: document.getElementById("auth-name-label"),
+  authName: document.getElementById("auth-name"),
+  authEmail: document.getElementById("auth-email"),
+  authPassword: document.getElementById("auth-password"),
+  authStatus: document.getElementById("auth-status"),
+  authSubmit: document.getElementById("auth-submit"),
+  authSwitch: document.getElementById("auth-switch"),
   homeStatus: document.getElementById("home-status"),
   title: document.getElementById("quiz-title"),
   progress: document.getElementById("progress"),
@@ -87,6 +120,10 @@ const state = {
   timedIndex: 0,
   timedSeconds: 20,
   timerId: null,
+  user: null,
+  authMode: "login",
+  authoredQuizzes: [],
+  searchTerm: "",
 };
 
 let observer = null;
@@ -152,6 +189,156 @@ function persist(key, value) {
   } catch {
     /* ignore quota / private mode */
   }
+}
+
+function readJson(key, fallback) {
+  try {
+    const raw = localStorage.getItem(key);
+    return raw ? JSON.parse(raw) : fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+function saveJson(key, value) {
+  try {
+    localStorage.setItem(key, JSON.stringify(value));
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+async function hashPassword(password) {
+  const data = new TextEncoder().encode(password);
+  const digest = await crypto.subtle.digest("SHA-256", data);
+  return [...new Uint8Array(digest)].map((byte) => byte.toString(16).padStart(2, "0")).join("");
+}
+
+async function loadAccountState() {
+  const users = readJson(STORAGE_KEYS.users, []);
+  if (!users.some((user) => user.role === "admin")) {
+    users.push({
+      email: "admin@quiz.local",
+      name: "Quiz Administrator",
+      passwordHash: await hashPassword("admin123"),
+      role: "admin",
+      createdAt: new Date().toISOString(),
+    });
+    saveJson(STORAGE_KEYS.users, users);
+  }
+  state.authoredQuizzes = readJson(STORAGE_KEYS.authoredQuizzes, []);
+  const sessionEmail = readStored(STORAGE_KEYS.session, "");
+  state.user = users.find((user) => user.email === sessionEmail) ?? null;
+}
+
+function logActivity(type, detail) {
+  const activity = readJson(STORAGE_KEYS.activity, []);
+  activity.unshift({
+    type,
+    detail,
+    email: state.user?.email ?? "visitor",
+    at: new Date().toISOString(),
+  });
+  saveJson(STORAGE_KEYS.activity, activity.slice(0, 100));
+}
+
+function isAdmin() {
+  return state.user?.role === "admin";
+}
+
+function renderAccountBar() {
+  els.accountBar.innerHTML = "";
+  if (!state.user) {
+    const login = document.createElement("button");
+    login.type = "button";
+    login.className = "btn btn-secondary btn-small";
+    login.textContent = "Log in";
+    login.addEventListener("click", () => openAuth("login"));
+    const register = document.createElement("button");
+    register.type = "button";
+    register.className = "btn btn-ghost btn-small";
+    register.textContent = "Register";
+    register.addEventListener("click", () => openAuth("register"));
+    els.accountBar.append(login, register);
+  } else {
+    const name = document.createElement("span");
+    name.textContent = `Signed in as ${state.user.name || state.user.email}`;
+    const logout = document.createElement("button");
+    logout.type = "button";
+    logout.className = "btn btn-ghost btn-small";
+    logout.textContent = "Log out";
+    logout.addEventListener("click", logoutUser);
+    els.accountBar.append(name, logout);
+  }
+  els.createQuiz.hidden = !state.user;
+  els.adminButton.hidden = !isAdmin();
+}
+
+function openAuth(mode) {
+  state.authMode = mode;
+  els.authTitle.textContent = mode === "login" ? "Log in" : "Create your account";
+  els.authNameLabel.hidden = mode === "login";
+  els.authSubmit.textContent = mode === "login" ? "Log in" : "Register";
+  els.authSwitch.textContent = mode === "login" ? "Create an account" : "I already have an account";
+  els.authStatus.textContent = "";
+  els.authForm.reset();
+  els.authDialog.showModal();
+  els.authEmail.focus();
+}
+
+async function submitAuth() {
+  const email = els.authEmail.value.trim().toLowerCase();
+  const password = els.authPassword.value;
+  const name = els.authName.value.trim();
+  if (!email || password.length < 6 || (state.authMode === "register" && !name)) {
+    els.authStatus.textContent = state.authMode === "login"
+      ? "Enter a valid email and a password of at least 6 characters."
+      : "Enter your name, email, and a password of at least 6 characters.";
+    return;
+  }
+  const users = readJson(STORAGE_KEYS.users, []);
+  if (state.authMode === "register") {
+    if (users.some((user) => user.email === email)) {
+      els.authStatus.textContent = "An account with that email already exists.";
+      return;
+    }
+    const user = { email, name, passwordHash: await hashPassword(password), role: "user", createdAt: new Date().toISOString() };
+    users.push(user);
+    saveJson(STORAGE_KEYS.users, users);
+    state.user = user;
+    persist(STORAGE_KEYS.session, email);
+    logActivity("registered", "Created an account");
+  } else {
+    const user = users.find((candidate) => candidate.email === email);
+    if (!user || user.passwordHash !== await hashPassword(password)) {
+      els.authStatus.textContent = "Email or password is incorrect.";
+      return;
+    }
+    state.user = user;
+    persist(STORAGE_KEYS.session, email);
+    logActivity("logged-in", "Logged in");
+  }
+  els.authDialog.close();
+  renderAccountBar();
+  renderHome();
+}
+
+function logoutUser() {
+  if (state.user) logActivity("logged-out", "Logged out");
+  localStorage.removeItem(STORAGE_KEYS.session);
+  state.user = null;
+  els.creator.hidden = true;
+  els.admin.hidden = true;
+  renderAccountBar();
+  renderHome();
+}
+
+function allQuizMetadata() {
+  const approved = state.authoredQuizzes
+    .filter((quiz) => quiz.status === "approved")
+    .map((quiz) => ({ ...quiz, authored: true, file: null }));
+  return [...state.banks.filter((bank) => !bank.authored), ...approved];
 }
 
 function loadFeedback() {
@@ -455,15 +642,24 @@ async function loadBanks() {
 function renderHome() {
   setView("home");
   els.bankList.innerHTML = "";
+  const search = state.searchTerm.trim().toLocaleLowerCase();
+  const banks = allQuizMetadata().filter((bank) => {
+    if (!search) return true;
+    return [bank.title, bank.description, bank.subject, bank.gradeLevel, bank.difficulty, bank.authorName]
+      .filter(Boolean)
+      .join(" ")
+      .toLocaleLowerCase()
+      .includes(search);
+  });
+  els.searchStatus.textContent = search ? `${banks.length} matching quiz${banks.length === 1 ? "" : "zes"} found.` : `${banks.length} quizzes available.`;
   const folders = new Map(visibleFolders().map((folder) => [folder.name, []]));
-  state.banks.forEach((bank) => {
+  banks.forEach((bank) => {
     const subject = folderForBank(bank);
-    if (!folders.has(subject)) return;
     if (!folders.has(subject)) folders.set(subject, []);
     folders.get(subject).push(bank);
   });
 
-  [...folders.entries()].forEach(([subject, banks]) => {
+  [...folders.entries()].filter(([, folderBanks]) => folderBanks.length).forEach(([subject, banks]) => {
       const folder = document.createElement("details");
       folder.className = "bank-folder";
       folder.open = false;
@@ -492,6 +688,12 @@ function renderHome() {
       folder.append(list);
       els.bankList.append(folder);
     });
+  if (!banks.length) {
+    const empty = document.createElement("p");
+    empty.className = "status";
+    empty.textContent = "No quizzes match your search.";
+    els.bankList.append(empty);
+  }
 }
 
 function renderFolderManager() {
@@ -612,6 +814,11 @@ function exportCurrentBank() {
 }
 
 async function openBank(meta) {
+  if (meta.authored) {
+    logActivity("opened-quiz", `Opened ${meta.title}`);
+    startAttempt(meta);
+    return;
+  }
   const response = await fetch(`./data/${meta.file}`);
   if (!response.ok) {
     showHomeError(`Could not load ${meta.title}.`);
@@ -619,6 +826,107 @@ async function openBank(meta) {
   }
   const bank = await response.json();
   startAttempt({ ...bank, file: meta.file, title: bank.title || meta.title });
+}
+
+function showFormStatus(message, isError = false) {
+  els.quizFormStatus.textContent = message;
+  els.quizFormStatus.classList.toggle("error", isError);
+}
+
+function submitQuiz(event) {
+  event.preventDefault();
+  if (!state.user) {
+    showFormStatus("Log in before submitting a quiz.", true);
+    return;
+  }
+  let questions;
+  try {
+    questions = JSON.parse(els.quizFormQuestions.value);
+  } catch {
+    showFormStatus("Questions must be valid JSON.", true);
+    return;
+  }
+  if (!Array.isArray(questions) || !questions.length || questions.some((question) => !question || !question.type || !question.prompt && question.type !== "reading")) {
+    showFormStatus("Add at least one valid question with a type and prompt.", true);
+    return;
+  }
+  const quiz = {
+    id: `user-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+    title: els.quizFormTitle.value.trim(),
+    subject: els.quizFormSubject.value.trim(),
+    gradeLevel: els.quizFormGrade.value.trim() || "Mixed",
+    difficulty: els.quizFormDifficulty.value,
+    description: els.quizFormDescription.value.trim(),
+    questions: questions.map((question, index) => ({ ...question, id: question.id || `q${index + 1}` })),
+    author: state.user.email,
+    authorName: state.user.name,
+    status: "pending",
+    createdAt: new Date().toISOString(),
+  };
+  if (!quiz.title || !quiz.subject) {
+    showFormStatus("Title and subject are required.", true);
+    return;
+  }
+  state.authoredQuizzes.push(quiz);
+  if (!saveJson(STORAGE_KEYS.authoredQuizzes, state.authoredQuizzes)) {
+    state.authoredQuizzes.pop();
+    showFormStatus("Could not save this quiz in browser storage.", true);
+    return;
+  }
+  logActivity("submitted-quiz", `Submitted ${quiz.title} for approval`);
+  els.quizForm.reset();
+  els.creator.hidden = true;
+  showFormStatus("");
+  renderHome();
+  window.alert("Your quiz was submitted for admin approval.");
+}
+
+function renderAdminDashboard() {
+  els.adminQuizList.innerHTML = "";
+  const pending = state.authoredQuizzes.filter((quiz) => quiz.status === "pending");
+  if (!pending.length) {
+    const empty = document.createElement("p");
+    empty.className = "feedback-empty";
+    empty.textContent = "No quizzes are waiting for review.";
+    els.adminQuizList.append(empty);
+  }
+  pending.forEach((quiz) => {
+    const row = document.createElement("article");
+    row.className = "admin-item";
+    const info = document.createElement("div");
+    info.innerHTML = `<strong>${escapeHtml(quiz.title)}</strong><span>${escapeHtml(quiz.subject)} · ${quiz.questions.length} question${quiz.questions.length === 1 ? "" : "s"} · by ${escapeHtml(quiz.authorName || quiz.author)}</span>`;
+    const actions = document.createElement("div");
+    const approve = document.createElement("button");
+    approve.type = "button";
+    approve.className = "btn btn-primary btn-small";
+    approve.textContent = "Approve";
+    approve.addEventListener("click", () => moderateQuiz(quiz.id, "approved"));
+    const reject = document.createElement("button");
+    reject.type = "button";
+    reject.className = "btn btn-ghost btn-small";
+    reject.textContent = "Reject";
+    reject.addEventListener("click", () => moderateQuiz(quiz.id, "rejected"));
+    actions.append(approve, reject);
+    row.append(info, actions);
+    els.adminQuizList.append(row);
+  });
+  els.activityList.innerHTML = "";
+  readJson(STORAGE_KEYS.activity, []).slice(0, 25).forEach((item) => {
+    const row = document.createElement("p");
+    const date = new Date(item.at);
+    row.textContent = `${Number.isNaN(date.getTime()) ? item.at : date.toLocaleString()} · ${item.email} · ${item.detail}`;
+    els.activityList.append(row);
+  });
+}
+
+function moderateQuiz(id, status) {
+  const quiz = state.authoredQuizzes.find((item) => item.id === id);
+  if (!quiz) return;
+  quiz.status = status;
+  saveJson(STORAGE_KEYS.authoredQuizzes, state.authoredQuizzes);
+  logActivity(status === "approved" ? "approved-quiz" : "rejected-quiz", `${status === "approved" ? "Approved" : "Rejected"} ${quiz.title}`);
+  renderAdminDashboard();
+  renderHome();
 }
 
 function startAttempt(bank) {
@@ -1336,10 +1644,45 @@ function bindControls() {
   if (els.btnExport) {
     els.btnExport.addEventListener("click", exportCurrentBank);
   }
+  els.search.addEventListener("input", () => {
+    state.searchTerm = els.search.value;
+    renderHome();
+  });
+  els.createQuiz.addEventListener("click", () => {
+    if (!state.user) {
+      openAuth("login");
+      return;
+    }
+    els.creator.hidden = false;
+    els.admin.hidden = true;
+    els.quizFormTitle.focus();
+  });
+  els.closeCreator.addEventListener("click", () => {
+    els.creator.hidden = true;
+  });
+  els.quizForm.addEventListener("submit", submitQuiz);
+  els.adminButton.addEventListener("click", () => {
+    els.admin.hidden = false;
+    els.creator.hidden = true;
+    renderAdminDashboard();
+  });
+  els.closeAdmin.addEventListener("click", () => {
+    els.admin.hidden = true;
+  });
+  els.authSubmit.addEventListener("click", submitAuth);
+  els.authSwitch.addEventListener("click", () => openAuth(state.authMode === "login" ? "register" : "login"));
+  els.authForm.addEventListener("submit", (event) => {
+    if (event.submitter === els.authSubmit) {
+      event.preventDefault();
+      submitAuth();
+    }
+  });
+  renderAccountBar();
 }
 
 async function init() {
   state.folders = loadFolderConfig();
+  await loadAccountState();
   bindControls();
   try {
     await loadBanks();

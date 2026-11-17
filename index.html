@@ -20,15 +20,23 @@
           <span>Question Bank</span>
         </div>
         <p class="tagline">Practice or test — English UI, mixed-language questions</p>
+        <div id="account-bar" class="account-bar"></div>
       </header>
 
       <main id="view-home" class="view">
         <h1>Choose a bank</h1>
         <p class="lede">Open a set of questions, then switch between Practice (feedback after each item) and Test (score after you submit).</p>
         <div class="home-actions">
+          <button type="button" id="btn-create-quiz" class="btn btn-primary">Create a quiz</button>
+          <button type="button" id="btn-admin" class="btn btn-secondary" hidden>Admin dashboard</button>
           <button type="button" id="btn-manage-folders" class="btn btn-secondary">Manage folders</button>
           <button type="button" id="btn-feedback" class="btn btn-secondary">Send feedback</button>
         </div>
+        <section class="search-panel" aria-labelledby="quiz-search-title">
+          <label id="quiz-search-title" for="quiz-search">Search quizzes</label>
+          <input id="quiz-search" type="search" placeholder="Search by title, subject, grade, or difficulty" autocomplete="off" />
+          <p id="quiz-search-status" class="search-status" role="status"></p>
+        </section>
         <section id="feedback-panel" class="feedback-panel" hidden aria-labelledby="feedback-title">
           <div class="feedback-header">
             <div>
@@ -93,6 +101,32 @@
             </div>
             <div id="feedback-list" class="feedback-list"></div>
           </details>
+        </section>
+        <section id="quiz-creator" class="manager-panel" hidden aria-labelledby="quiz-creator-title">
+          <div class="manager-header">
+            <div>
+              <h2 id="quiz-creator-title">Create a quiz</h2>
+              <p class="manager-note">Your quiz will be submitted for admin approval. Use the JSON editor to create any supported question type.</p>
+            </div>
+            <button type="button" id="btn-close-creator" class="btn btn-ghost">Close</button>
+          </div>
+          <form id="quiz-form" class="quiz-form">
+            <div class="form-grid">
+              <label>Title<input id="quiz-form-title" required maxlength="120" /></label>
+              <label>Subject<input id="quiz-form-subject" required maxlength="60" placeholder="e.g. Biology" /></label>
+              <label>Grade level<input id="quiz-form-grade" maxlength="60" placeholder="e.g. University" /></label>
+              <label>Difficulty<select id="quiz-form-difficulty"><option>Beginner</option><option selected>Intermediate</option><option>Advanced</option></select></label>
+            </div>
+            <label>Description<textarea id="quiz-form-description" maxlength="500" placeholder="What will learners practice?"></textarea></label>
+            <label>Questions JSON<textarea id="quiz-form-questions" class="json-editor" required spellcheck="false" placeholder='[{"id":"q1","type":"mcq","prompt":"...","choices":["A","B"],"answer":0}]'></textarea></label>
+            <p class="form-hint">Supported types: <code>mcq</code>, <code>multi</code>, <code>tf</code>, <code>match</code>, <code>writing</code>, <code>reading</code>, and <code>code</code>.</p>
+            <div class="form-actions"><button type="submit" class="btn btn-primary">Submit for approval</button><p id="quiz-form-status" class="form-status" role="status"></p></div>
+          </form>
+        </section>
+        <section id="admin-dashboard" class="manager-panel" hidden aria-labelledby="admin-title">
+          <div class="manager-header"><div><h2 id="admin-title">Admin dashboard</h2><p class="manager-note">Review submitted quizzes and monitor recent activity.</p></div><button type="button" id="btn-close-admin" class="btn btn-ghost">Close</button></div>
+          <div id="admin-quiz-list" class="admin-list"></div>
+          <h3>Recent activity</h3><div id="activity-list" class="activity-list"></div>
         </section>
         <section id="folder-manager" class="folder-manager" hidden aria-labelledby="folder-manager-title">
           <div class="folder-manager-header">
@@ -174,6 +208,17 @@
         </div>
       </main>
     </div>
+    <dialog id="auth-dialog" class="auth-dialog">
+      <form method="dialog" id="auth-form" class="auth-form">
+        <div class="auth-header"><h2 id="auth-title">Log in</h2><button type="submit" value="cancel" class="btn btn-ghost">Close</button></div>
+        <label id="auth-name-label" hidden>Display name<input id="auth-name" maxlength="60" /></label>
+        <label>Email<input id="auth-email" type="email" required autocomplete="username" /></label>
+        <label>Password<input id="auth-password" type="password" required minlength="6" autocomplete="current-password" /></label>
+        <p id="auth-status" class="form-status" role="status"></p>
+        <button id="auth-submit" type="button" class="btn btn-primary">Log in</button>
+        <button id="auth-switch" type="button" class="btn btn-ghost">Create an account</button>
+      </form>
+    </dialog>
     <script src="./js/app.js?v=4" type="module"></script>
   </body>
 </html>
