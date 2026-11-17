@@ -27,7 +27,73 @@
         <p class="lede">Open a set of questions, then switch between Practice (feedback after each item) and Test (score after you submit).</p>
         <div class="home-actions">
           <button type="button" id="btn-manage-folders" class="btn btn-secondary">Manage folders</button>
+          <button type="button" id="btn-feedback" class="btn btn-secondary">Send feedback</button>
         </div>
+        <section id="feedback-panel" class="feedback-panel" hidden aria-labelledby="feedback-title">
+          <div class="feedback-header">
+            <div>
+              <h2 id="feedback-title">Feedback</h2>
+              <p class="manager-note">Tell us what worked well or what we can improve. Feedback is saved in this browser.</p>
+            </div>
+            <button type="button" id="btn-close-feedback" class="btn btn-ghost">Close</button>
+          </div>
+          <form id="feedback-form" class="feedback-form">
+            <label>
+              Feedback
+              <textarea id="feedback-message" maxlength="2000" required placeholder="Share a comment or suggestion"></textarea>
+            </label>
+            <div class="feedback-fields">
+              <label>
+                Category
+                <select id="feedback-category" required>
+                  <option value="bug">Bug or error</option>
+                  <option value="content">Question/content issue</option>
+                  <option value="feature">Feature request</option>
+                  <option value="usability">Usability</option>
+                  <option value="other">Other</option>
+                </select>
+              </label>
+              <label>
+                Priority
+                <select id="feedback-priority" required>
+                  <option value="low">Low</option>
+                  <option value="medium" selected>Medium</option>
+                  <option value="high">High</option>
+                  <option value="urgent">Urgent</option>
+                </select>
+              </label>
+            </div>
+            <fieldset class="rating-field">
+              <legend>Rate your experience</legend>
+              <div class="rating-options">
+                <label><input type="radio" name="feedback-rating" value="1" /> 1</label>
+                <label><input type="radio" name="feedback-rating" value="2" /> 2</label>
+                <label><input type="radio" name="feedback-rating" value="3" checked /> 3</label>
+                <label><input type="radio" name="feedback-rating" value="4" /> 4</label>
+                <label><input type="radio" name="feedback-rating" value="5" /> 5</label>
+              </div>
+            </fieldset>
+            <div class="feedback-actions">
+              <button type="submit" class="btn btn-primary">Submit feedback</button>
+              <p id="feedback-status" class="feedback-status" role="status" hidden></p>
+            </div>
+          </form>
+          <details class="feedback-review">
+            <summary>Review saved feedback</summary>
+            <div class="feedback-review-toolbar">
+              <select id="feedback-filter" aria-label="Filter feedback by category">
+                <option value="all">All categories</option>
+                <option value="bug">Bug or error</option>
+                <option value="content">Question/content issue</option>
+                <option value="feature">Feature request</option>
+                <option value="usability">Usability</option>
+                <option value="other">Other</option>
+              </select>
+              <button type="button" id="btn-export-feedback" class="btn btn-ghost btn-small">Download JSON</button>
+            </div>
+            <div id="feedback-list" class="feedback-list"></div>
+          </details>
+        </section>
         <section id="folder-manager" class="folder-manager" hidden aria-labelledby="folder-manager-title">
           <div class="folder-manager-header">
             <h2 id="folder-manager-title">Manage folders</h2>
@@ -108,6 +174,6 @@
         </div>
       </main>
     </div>
-    <script src="./js/app.js?v=3" type="module"></script>
+    <script src="./js/app.js?v=4" type="module"></script>
   </body>
 </html>

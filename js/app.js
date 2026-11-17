@@ -7,11 +7,26 @@ const STORAGE_KEYS = {
   bookmarksOnly: "qb-bookmarks-only",
   folderConfig: "qb-folder-config",
   progress: "qb-progress",
+  feedback: "qb-feedback",
 };
 
 const ARABIC_RE = /[\u0600-\u06FF]/;
 const SUBJECT_FOLDERS = ["ML", "DL", "IoT", "Arabic", "Islamic Studies", "Math", "Biology", "GRD", "phyisics", "chemistry"];
 const DEFAULT_FOLDER_PERMISSION = "public";
+const FEEDBACK_CATEGORIES = {
+  bug: "Bug or error",
+  content: "Question/content issue",
+  feature: "Feature request",
+  usability: "Usability",
+  other: "Other",
+};
+const FEEDBACK_PRIORITIES = {
+  urgent: "Urgent",
+  high: "High",
+  medium: "Medium",
+  low: "Low",
+};
+const FEEDBACK_PRIORITY_ORDER = { urgent: 0, high: 1, medium: 2, low: 3 };
 
 const els = {
   home: document.getElementById("view-home"),
@@ -22,6 +37,17 @@ const els = {
   folderManager: document.getElementById("folder-manager"),
   folderManagerList: document.getElementById("folder-manager-list"),
   addFolder: document.getElementById("btn-add-folder"),
+  feedback: document.getElementById("feedback-panel"),
+  feedbackForm: document.getElementById("feedback-form"),
+  feedbackMessage: document.getElementById("feedback-message"),
+  feedbackCategory: document.getElementById("feedback-category"),
+  feedbackPriority: document.getElementById("feedback-priority"),
+  feedbackStatus: document.getElementById("feedback-status"),
+  feedbackFilter: document.getElementById("feedback-filter"),
+  feedbackList: document.getElementById("feedback-list"),
+  feedbackButton: document.getElementById("btn-feedback"),
+  closeFeedback: document.getElementById("btn-close-feedback"),
+  exportFeedback: document.getElementById("btn-export-feedback"),
   homeStatus: document.getElementById("home-status"),
   title: document.getElementById("quiz-title"),
   progress: document.getElementById("progress"),
@@ -126,6 +152,119 @@ function persist(key, value) {
   } catch {
     /* ignore quota / private mode */
   }
+}
+
+function loadFeedback() {
+  try {
+    const raw = localStorage.getItem(STORAGE_KEYS.feedback);
+    const items = raw ? JSON.parse(raw) : [];
+    return Array.isArray(items)
+      ? items.filter((item) => item && typeof item.message === "string" && FEEDBACK_CATEGORIES[item.category])
+      : [];
+  } catch {
+    return [];
+  }
+}
+
+function saveFeedback(items) {
+  try {
+    localStorage.setItem(STORAGE_KEYS.feedback, JSON.stringify(items));
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+function showFeedbackStatus(message, isError = false) {
+  els.feedbackStatus.hidden = false;
+  els.feedbackStatus.textContent = message;
+  els.feedbackStatus.classList.toggle("error", isError);
+}
+
+function renderFeedbackReview() {
+  const filter = els.feedbackFilter.value;
+  const feedback = loadFeedback()
+    .filter((item) => filter === "all" || item.category === filter)
+    .sort((left, right) => {
+      const priorityDifference = (FEEDBACK_PRIORITY_ORDER[left.priority] ?? 3) - (FEEDBACK_PRIORITY_ORDER[right.priority] ?? 3);
+      return priorityDifference || String(right.createdAt).localeCompare(String(left.createdAt));
+    });
+  els.feedbackList.innerHTML = "";
+  if (!feedback.length) {
+    const empty = document.createElement("p");
+    empty.className = "feedback-empty";
+    empty.textContent = "No saved feedback matches this filter.";
+    els.feedbackList.append(empty);
+    return;
+  }
+  feedback.forEach((item) => {
+    const article = document.createElement("article");
+    article.className = "feedback-item";
+    const header = document.createElement("div");
+    header.className = "feedback-item-header";
+    const badges = document.createElement("div");
+    const category = document.createElement("span");
+    category.className = "feedback-badge";
+    category.textContent = FEEDBACK_CATEGORIES[item.category];
+    const priority = document.createElement("span");
+    priority.className = `feedback-badge priority-${item.priority}`;
+    priority.textContent = FEEDBACK_PRIORITIES[item.priority] ?? "Medium";
+    badges.append(category, priority);
+    const meta = document.createElement("span");
+    meta.className = "feedback-item-meta";
+    const date = new Date(item.createdAt);
+    meta.textContent = `${item.rating}/5 · ${Number.isNaN(date.getTime()) ? "Unknown date" : date.toLocaleString()}`;
+    header.append(badges, meta);
+    const message = document.createElement("p");
+    message.className = "feedback-item-message";
+    message.textContent = item.message;
+    article.append(header, message);
+    els.feedbackList.append(article);
+  });
+}
+
+function submitFeedback(event) {
+  event.preventDefault();
+  const message = els.feedbackMessage.value.trim();
+  if (!message) {
+    showFeedbackStatus("Please enter your feedback.", true);
+    return;
+  }
+  const rating = Number(new FormData(els.feedbackForm).get("feedback-rating"));
+  const item = {
+    id: `feedback-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+    message,
+    category: els.feedbackCategory.value,
+    priority: els.feedbackPriority.value,
+    rating: rating >= 1 && rating <= 5 ? rating : 3,
+    createdAt: new Date().toISOString(),
+  };
+  const feedback = loadFeedback();
+  feedback.push(item);
+  if (!saveFeedback(feedback)) {
+    showFeedbackStatus("Could not save feedback in this browser. Please try again.", true);
+    return;
+  }
+  els.feedbackForm.reset();
+  els.feedbackPriority.value = "medium";
+  document.querySelector('input[name="feedback-rating"][value="3"]').checked = true;
+  showFeedbackStatus("Thanks — your feedback was saved.");
+  renderFeedbackReview();
+}
+
+function exportFeedback() {
+  const feedback = loadFeedback();
+  if (!feedback.length) {
+    showFeedbackStatus("There is no saved feedback to download.", true);
+    return;
+  }
+  const blob = new Blob([JSON.stringify(feedback, null, 2)], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = `question-bank-feedback-${new Date().toISOString().slice(0, 10)}.json`;
+  link.click();
+  URL.revokeObjectURL(url);
 }
 
 function bookmarkStorageKey(bankId) {
@@ -1183,6 +1322,17 @@ function bindControls() {
     els.folderManager.hidden = true;
   });
   els.addFolder.addEventListener("click", addFolder);
+  els.feedbackButton.addEventListener("click", () => {
+    els.feedback.hidden = false;
+    renderFeedbackReview();
+    els.feedbackMessage.focus();
+  });
+  els.closeFeedback.addEventListener("click", () => {
+    els.feedback.hidden = true;
+  });
+  els.feedbackForm.addEventListener("submit", submitFeedback);
+  els.feedbackFilter.addEventListener("change", renderFeedbackReview);
+  els.exportFeedback.addEventListener("click", exportFeedback);
   if (els.btnExport) {
     els.btnExport.addEventListener("click", exportCurrentBank);
   }
