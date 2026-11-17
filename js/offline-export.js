@@ -99,7 +99,8 @@ function getOfflineStyles() {
     }
 
     .app {
-      max-width: 1020px;
+      width: min(100% - 2rem, 1600px);
+      max-width: none;
       margin: 0 auto;
       padding: 1.5rem 1.25rem 4rem;
     }
@@ -244,17 +245,106 @@ function getOfflineStyles() {
     /* Two-column layout with sidebar */
     .quiz-layout {
       display: grid;
-      grid-template-columns: 140px minmax(0, 1fr);
+      grid-template-columns: 140px minmax(0, 1fr) minmax(260px, 360px);
+      grid-template-areas: "jump content reference";
       gap: 1.25rem;
       align-items: start;
+    }
+
+    .jump-nav { grid-area: jump; }
+    .quiz-content { grid-area: content; }
+
+    .pinned-reference {
+      grid-area: reference;
+      position: sticky;
+      top: 1rem;
+      max-height: calc(100vh - 2rem);
+      overflow: auto;
+      padding: 0.85rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--bg-elev);
+      box-shadow: var(--shadow);
+    }
+
+    .pinned-reference[hidden] {
+      display: none;
+    }
+
+    .pinned-reference-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      margin-bottom: 0.65rem;
+    }
+
+    .pinned-reference-header h2 {
+      margin: 0;
+      color: var(--accent);
+      font-size: 1.05rem;
+    }
+
+    .pinned-reference-badge {
+      color: var(--muted);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+    }
+
+    .pinned-reference-content {
+      display: grid;
+      gap: 0.65rem;
+    }
+
+    .pinned-reference-text {
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      font-size: 0.86rem;
+      line-height: 1.45;
+    }
+
+    .pinned-reference-media {
+      margin: 0;
+    }
+
+    .pinned-reference-media img,
+    .pinned-reference-media video {
+      display: block;
+      width: 100%;
+      max-height: 24rem;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      object-fit: contain;
+      background: var(--surface);
+    }
+
+    @media (max-width: 1050px) {
+      .quiz-layout {
+        grid-template-columns: 140px minmax(0, 1fr);
+        grid-template-areas:
+          "jump content"
+          "reference reference";
+      }
+
+      .pinned-reference {
+        position: static;
+        max-height: none;
+      }
     }
 
     @media (max-width: 768px) {
       .quiz-layout {
         grid-template-columns: 1fr;
+        grid-template-areas:
+          "jump"
+          "content"
+          "reference";
       }
       .jump-nav {
         max-height: 220px;
+      }
+      .pinned-reference {
+        position: static;
       }
     }
 
@@ -830,6 +920,49 @@ function getOfflineClientScript() {
       wrap.append(el);
     });
     target.append(wrap);
+  }
+
+  function renderPinnedReference() {
+    const panel = document.getElementById("pinned-reference");
+    const content = document.getElementById("pinned-reference-content");
+    const reference = state.bank?.pinnedReferences;
+    if (!panel || !content || !reference) return;
+    content.replaceChildren();
+
+    if (reference.text) {
+      const text = document.createElement("div");
+      text.className = "pinned-reference-text";
+      text.textContent = String(reference.text);
+      content.append(text);
+    }
+
+    safeImages(reference.images ?? reference.image).forEach((image) => {
+      const figure = document.createElement("figure");
+      figure.className = "pinned-reference-media";
+      const element = document.createElement("img");
+      element.src = image.src;
+      element.alt = image.alt || "";
+      element.loading = "lazy";
+      figure.append(element);
+      content.append(figure);
+    });
+
+    const videos = Array.isArray(reference.videos) ? reference.videos : reference.video ? [reference.video] : [];
+    videos.forEach((item) => {
+      const video = typeof item === "string" ? { src: item } : item;
+      if (!video?.src || !/^(https?:\/\/|\/|\.\/|\.\.\/|data:video\/)/i.test(video.src)) return;
+      const figure = document.createElement("figure");
+      figure.className = "pinned-reference-media";
+      const element = document.createElement("video");
+      element.src = video.src;
+      element.controls = true;
+      element.preload = "metadata";
+      element.title = String(video.title ?? "Pinned reference video");
+      figure.append(element);
+      content.append(figure);
+    });
+
+    panel.hidden = content.childElementCount === 0;
   }
 
   function parseBankData() {
@@ -1419,6 +1552,7 @@ function getOfflineClientScript() {
   }
 
   function render() {
+    renderPinnedReference();
     updateProgress();
     els.btnSubmit.hidden = state.mode !== "test" || state.submitted;
 
@@ -1625,6 +1759,14 @@ export function buildOfflineQuizHtml(bank) {
             </div>
             <div id="jump-grid" class="jump-grid"></div>
           </nav>
+
+          <aside id="pinned-reference" class="pinned-reference" aria-labelledby="pinned-reference-title" hidden>
+            <div class="pinned-reference-header">
+              <h2 id="pinned-reference-title">Pinned reference</h2>
+              <span class="pinned-reference-badge">Reference</span>
+            </div>
+            <div id="pinned-reference-content" class="pinned-reference-content"></div>
+          </aside>
 
           <section class="quiz-content" aria-labelledby="quiz-title">
             <div id="questions" class="question-list"></div>

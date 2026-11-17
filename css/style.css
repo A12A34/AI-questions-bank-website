@@ -55,7 +55,8 @@ body {
 }
 
 .app {
-  max-width: 800px;
+  width: min(100% - 2rem, 1600px);
+  max-width: none;
   margin: 0 auto;
   padding: 1.5rem 1.25rem 4rem;
 }
@@ -193,6 +194,10 @@ h1 {
 
 .json-editor {
   min-height: 15rem;
+}
+
+.compact-editor {
+  min-height: 5rem;
 }
 
 .form-hint,
@@ -666,7 +671,8 @@ h1 {
 
 .quiz-layout {
   display: grid;
-  grid-template-columns: minmax(120px, 150px) minmax(0, 1fr);
+  grid-template-columns: minmax(120px, 150px) minmax(0, 1fr) minmax(260px, 360px);
+  grid-template-areas: "jump content reference";
   gap: 0.8rem;
   align-items: start;
   margin-left: 0;
@@ -674,11 +680,75 @@ h1 {
 }
 
 .quiz-content {
+  grid-area: content;
   min-width: 0;
   width: 100%;
 }
 
+.pinned-reference {
+  grid-area: reference;
+  position: sticky;
+  top: 1rem;
+  max-height: calc(100vh - 2rem);
+  overflow: auto;
+  padding: 0.85rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-elev);
+  box-shadow: var(--shadow);
+}
+
+.pinned-reference-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.65rem;
+}
+
+.pinned-reference-header h2 {
+  margin: 0;
+  color: var(--accent);
+  font-size: 1.05rem;
+}
+
+.pinned-reference-badge {
+  color: var(--muted);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.pinned-reference-content {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.pinned-reference-text {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  color: var(--text);
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+
+.pinned-reference-media {
+  margin: 0;
+}
+
+.pinned-reference-media img,
+.pinned-reference-media video {
+  display: block;
+  width: 100%;
+  max-height: 24rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  object-fit: contain;
+  background: var(--surface);
+}
+
 .jump-nav {
+  grid-area: jump;
   position: sticky;
   top: 1rem;
   z-index: 5;
@@ -1185,6 +1255,40 @@ input.numeric-answer.incorrect {
 .btn:focus-visible {
   filter: brightness(1.08);
   outline: none;
+}
+
+@media (max-width: 1050px) {
+  .quiz-layout {
+    grid-template-columns: minmax(110px, 140px) minmax(0, 1fr);
+    grid-template-areas:
+      "jump content"
+      "reference reference";
+  }
+
+  .pinned-reference {
+    position: static;
+    max-height: none;
+  }
+}
+
+@media (max-width: 680px) {
+  .app {
+    width: min(100% - 1rem, 1600px);
+    padding-inline: 0.5rem;
+  }
+
+  .quiz-layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "jump"
+      "content"
+      "reference";
+  }
+
+  .jump-nav {
+    max-width: none;
+    position: static;
+  }
 }
 
 @media (max-width: 560px) {

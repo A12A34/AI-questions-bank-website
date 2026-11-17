@@ -62,6 +62,9 @@ const els = {
   quizFormGrade: document.getElementById("quiz-form-grade"),
   quizFormDifficulty: document.getElementById("quiz-form-difficulty"),
   quizFormDescription: document.getElementById("quiz-form-description"),
+  quizFormPinnedText: document.getElementById("quiz-form-pinned-text"),
+  quizFormPinnedImages: document.getElementById("quiz-form-pinned-images"),
+  quizFormPinnedVideos: document.getElementById("quiz-form-pinned-videos"),
   quizFormQuestions: document.getElementById("quiz-form-questions"),
   quizFormStatus: document.getElementById("quiz-form-status"),
   search: document.getElementById("quiz-search"),
@@ -91,6 +94,8 @@ const els = {
   jumpGrid: document.getElementById("jump-grid"),
   jumpPrev: document.getElementById("jump-prev"),
   jumpNext: document.getElementById("jump-next"),
+  pinnedReference: document.getElementById("pinned-reference"),
+  pinnedReferenceContent: document.getElementById("pinned-reference-content"),
   emptyFilter: document.getElementById("empty-filter"),
   btnBack: document.getElementById("btn-back"),
   btnSubmit: document.getElementById("btn-submit"),
@@ -489,6 +494,10 @@ function isSafeImageSource(src) {
   return /^(https?:\/\/|\/|\.\/|\.\.\/|data:image\/)/i.test(src);
 }
 
+function isSafeMediaSource(src) {
+  return /^(https?:\/\/|\/|\.\/|\.\.\/|data:video\/)/i.test(String(src ?? ""));
+}
+
 function appendImages(host, value, className = "question-images") {
   const images = imageSources(value).filter((image) => isSafeImageSource(image.src));
   if (!images.length) return;
@@ -502,6 +511,51 @@ function appendImages(host, value, className = "question-images") {
     wrap.append(element);
   });
   host.append(wrap);
+}
+
+function renderPinnedReference(bank) {
+  const reference = bank?.pinnedReferences;
+  if (!els.pinnedReference || !els.pinnedReferenceContent) return;
+  els.pinnedReferenceContent.innerHTML = "";
+  els.pinnedReference.hidden = true;
+  if (!reference) return;
+
+  if (reference.text) {
+    const text = document.createElement("div");
+    text.className = "pinned-reference-text";
+    text.textContent = String(reference.text);
+    els.pinnedReferenceContent.append(text);
+  }
+
+  imageSources(reference.images ?? reference.image)
+    .filter((image) => isSafeImageSource(image.src))
+    .forEach((image) => {
+      const figure = document.createElement("figure");
+      figure.className = "pinned-reference-media";
+      const imageElement = document.createElement("img");
+      imageElement.src = image.src;
+      imageElement.alt = image.alt;
+      imageElement.loading = "lazy";
+      figure.append(imageElement);
+      els.pinnedReferenceContent.append(figure);
+    });
+
+  const videos = Array.isArray(reference.videos) ? reference.videos : reference.video ? [reference.video] : [];
+  videos.forEach((item) => {
+    const video = typeof item === "string" ? { src: item } : item;
+    if (!video || !isSafeMediaSource(video.src)) return;
+    const wrapper = document.createElement("figure");
+    wrapper.className = "pinned-reference-media";
+    const videoElement = document.createElement("video");
+    videoElement.src = video.src;
+    videoElement.controls = true;
+    videoElement.preload = "metadata";
+    videoElement.title = String(video.title ?? "Pinned reference video");
+    wrapper.append(videoElement);
+    els.pinnedReferenceContent.append(wrapper);
+  });
+
+  els.pinnedReference.hidden = !els.pinnedReferenceContent.childElementCount;
 }
 
 function appendContent(host, value, imageClass = "question-images") {
@@ -867,6 +921,11 @@ function submitQuiz(event) {
     gradeLevel: els.quizFormGrade.value.trim() || "Mixed",
     difficulty: els.quizFormDifficulty.value,
     description: els.quizFormDescription.value.trim(),
+    pinnedReferences: {
+      text: els.quizFormPinnedText.value.trim(),
+      images: els.quizFormPinnedImages.value.split(/\r?\n/).map((src) => src.trim()).filter(Boolean),
+      videos: els.quizFormPinnedVideos.value.split(/\r?\n/).map((src) => src.trim()).filter(Boolean),
+    },
     questions: questions.map((question, index) => ({ ...question, id: question.id || `q${index + 1}` })),
     author: state.user.email,
     authorName: state.user.name,
@@ -876,6 +935,9 @@ function submitQuiz(event) {
   if (!quiz.title || !quiz.subject) {
     showFormStatus("Title and subject are required.", true);
     return;
+  }
+  if (!quiz.pinnedReferences.text && !quiz.pinnedReferences.images.length && !quiz.pinnedReferences.videos.length) {
+    delete quiz.pinnedReferences;
   }
   state.authoredQuizzes.push(quiz);
   if (!saveJson(STORAGE_KEYS.authoredQuizzes, state.authoredQuizzes)) {
@@ -952,6 +1014,7 @@ function startAttempt(bank) {
   state.timedIndex = 0;
   state.timedSeconds = 20;
   els.title.textContent = bank.title;
+  renderPinnedReference(bank);
   setView("quiz");
   renderQuiz();
 }

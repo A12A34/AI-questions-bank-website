@@ -118,6 +118,11 @@
               <label>Difficulty<select id="quiz-form-difficulty"><option>Beginner</option><option selected>Intermediate</option><option>Advanced</option></select></label>
             </div>
             <label>Description<textarea id="quiz-form-description" maxlength="500" placeholder="What will learners practice?"></textarea></label>
+            <label>Pinned reference text<textarea id="quiz-form-pinned-text" maxlength="12000" placeholder="Formula sheet, notes, or instructions shown beside the quiz"></textarea></label>
+            <div class="form-grid">
+              <label>Pinned image URLs<textarea id="quiz-form-pinned-images" class="compact-editor" placeholder="One image URL per line"></textarea></label>
+              <label>Pinned video URLs<textarea id="quiz-form-pinned-videos" class="compact-editor" placeholder="One video URL per line"></textarea></label>
+            </div>
             <label>Questions JSON<textarea id="quiz-form-questions" class="json-editor" required spellcheck="false" placeholder='[{"id":"q1","type":"mcq","prompt":"...","choices":["A","B"],"answer":0}]'></textarea></label>
             <p class="form-hint">Supported types: <code>mcq</code>, <code>multi</code>, <code>tf</code>, <code>match</code>, <code>numeric</code>, <code>writing</code>, <code>reading</code>, and <code>code</code>.</p>
             <div class="form-actions"><button type="submit" class="btn btn-primary">Submit for approval</button><p id="quiz-form-status" class="form-status" role="status"></p></div>
@@ -195,6 +200,14 @@
             </div>
             <div id="jump-grid" class="jump-grid"></div>
           </nav>
+
+          <aside id="pinned-reference" class="pinned-reference" aria-labelledby="pinned-reference-title" hidden>
+            <div class="pinned-reference-header">
+              <h2 id="pinned-reference-title">Pinned reference</h2>
+              <span class="pinned-reference-badge">Reference</span>
+            </div>
+            <div id="pinned-reference-content" class="pinned-reference-content"></div>
+          </aside>
 
           <div class="quiz-content">
             <div id="question-list" class="question-list"></div>

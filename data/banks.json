@@ -191,6 +191,14 @@
       "subject": "phyisics",
       "gradeLevel": "Grade 12",
       "difficulty": "Intermediate"
+    },
+    {
+      "id": "test-2-practice-question-ai-generate",
+      "title": "test 2 practice question AI generate",
+      "file": "test-2-practice-question-ai-generate.json",
+      "subject": "phyisics",
+      "gradeLevel": "University",
+      "difficulty": "Intermediate"
     }
   ]
 }

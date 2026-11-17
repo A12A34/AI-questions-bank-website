@@ -1,0 +1,1959 @@
+{
+  "id": "test-2-practice-question-ai-generate",
+  "title": "test 2 practice question AI generate",
+  "questions": [
+    {
+      "id": "phy-mcq-1",
+      "type": "mcq",
+      "prompt": "Who discovered the electron in 1897?",
+      "choices": [
+        "Ernest Rutherford",
+        "J. J. Thomson",
+        "Niels Bohr",
+        "James Chadwick"
+      ],
+      "answer": 1,
+      "explanation": "Thomson discovered the electron through experiments involving cathode rays. He showed that atoms contain negatively charged particles."
+    },
+    {
+      "id": "phy-mcq-2",
+      "type": "mcq",
+      "prompt": "What are cathode rays made of?",
+      "choices": [
+        "Protons",
+        "Neutrons",
+        "Electrons",
+        "Alpha particles"
+      ],
+      "answer": 2,
+      "explanation": "Cathode rays are streams of negatively charged electrons."
+    },
+    {
+      "id": "phy-mcq-3",
+      "type": "mcq",
+      "prompt": "According to Thomson's plum-pudding model, how is an atom structured?",
+      "choices": [
+        "Electrons are embedded in a sphere of positive charge.",
+        "Electrons move around a small nucleus.",
+        "The atom contains only positive particles.",
+        "Electrons are located outside the atom."
+      ],
+      "answer": 0,
+      "explanation": "Thomson suggested that negative electrons were spread throughout a positively charged sphere. The positive and negative charges balanced each other."
+    },
+    {
+      "id": "phy-mcq-4",
+      "type": "mcq",
+      "prompt": "Why did Thomson believe atoms contained positive charge?",
+      "choices": [
+        "Electrons were positively charged.",
+        "Atoms contained only neutrons.",
+        "The nucleus was positively charged.",
+        "Atoms were electrically neutral despite containing negative electrons."
+      ],
+      "answer": 3,
+      "explanation": "Since atoms are electrically neutral, Thomson concluded that positive charge must balance the negative charge of electrons."
+    },
+    {
+      "id": "phy-mcq-5",
+      "type": "mcq",
+      "prompt": "Which scientists worked with Rutherford on the gold-foil experiment?",
+      "choices": [
+        "Bohr and Planck",
+        "Geiger and Marsden",
+        "Thomson and Chadwick",
+        "Schrödinger and Heisenberg"
+      ],
+      "answer": 1,
+      "explanation": "Geiger and Marsden worked with Rutherford to investigate how alpha particles behaved when directed towards thin gold foil."
+    },
+    {
+      "id": "phy-mcq-6",
+      "type": "mcq",
+      "prompt": "What is the electrical charge of an alpha particle?",
+      "choices": [
+        "−1e",
+        "+1e",
+        "+2e",
+        "−2e"
+      ],
+      "answer": 2,
+      "explanation": "An alpha particle contains two protons and two neutrons. The two protons give it a total positive charge of +2e."
+    },
+    {
+      "id": "phy-mcq-7",
+      "type": "mcq",
+      "prompt": "What happens when most alpha particles pass straight through gold foil?",
+      "choices": [
+        "Atoms are mostly empty space.",
+        "Atoms contain no electrons.",
+        "The nucleus is negatively charged.",
+        "The atom has a uniform positive charge."
+      ],
+      "answer": 0,
+      "explanation": "Most alpha particles passed through without being deflected, showing that most of an atom's volume is empty space."
+    },
+    {
+      "id": "phy-mcq-8",
+      "type": "mcq",
+      "prompt": "What does the deflection of some alpha particles indicate?",
+      "choices": [
+        "Electrons are inside the nucleus.",
+        "The atom is completely solid.",
+        "The nucleus has a negative charge.",
+        "Positive charge is concentrated in a small region."
+      ],
+      "answer": 3,
+      "explanation": "Alpha particles are positively charged, so they are repelled by the positively charged nucleus."
+    },
+    {
+      "id": "phy-mcq-9",
+      "type": "mcq",
+      "prompt": "Why did a very small number of alpha particles bounce backwards?",
+      "choices": [
+        "They collided with electrons.",
+        "They approached the dense, positively charged nucleus closely.",
+        "They passed through empty space.",
+        "They became negatively charged."
+      ],
+      "answer": 1,
+      "explanation": "Strong electrostatic repulsion occurs when a positively charged alpha particle approaches the positively charged nucleus."
+    },
+    {
+      "id": "phy-mcq-10",
+      "type": "mcq",
+      "prompt": "What is the main conclusion of Rutherford's gold-foil experiment?",
+      "choices": [
+        "Electrons are embedded in positive charge.",
+        "Atoms are completely solid.",
+        "Atoms contain a tiny, dense, positively charged nucleus.",
+        "Electrons cannot move around atoms."
+      ],
+      "answer": 2,
+      "explanation": "Rutherford proposed the nuclear model, with most atomic mass and positive charge concentrated in a small central nucleus."
+    },
+    {
+      "id": "phy-mcq-11",
+      "type": "mcq",
+      "prompt": "Approximately what is the size of an atom?",
+      "choices": [
+        "\\(10^{-10}\\) m",
+        "\\(10^{-15}\\) m",
+        "\\(10^{-20}\\) m",
+        "\\(10^{-5}\\) m"
+      ],
+      "answer": 0,
+      "explanation": "The typical atomic size is approximately \\(10^{-10}\\) metres, which is much larger than the nucleus."
+    },
+    {
+      "id": "phy-mcq-12",
+      "type": "mcq",
+      "prompt": "What is the impact parameter?",
+      "choices": [
+        "The mass of an alpha particle.",
+        "The speed of an electron.",
+        "The radius of the atom.",
+        "The perpendicular distance between the original particle path and the nucleus centre."
+      ],
+      "answer": 3,
+      "explanation": "The impact parameter describes how close an incoming particle's original path would pass to the nucleus."
+    },
+    {
+      "id": "phy-mcq-13",
+      "type": "mcq",
+      "prompt": "What happens when an alpha particle has a large impact parameter?",
+      "choices": [
+        "It always bounces backwards.",
+        "It experiences a relatively small deflection.",
+        "It enters the nucleus.",
+        "It loses all its kinetic energy."
+      ],
+      "answer": 1,
+      "explanation": "A large impact parameter means the particle passes relatively far from the nucleus, experiencing weaker electrostatic repulsion."
+    },
+    {
+      "id": "phy-mcq-14",
+      "type": "mcq",
+      "prompt": "What happens at the distance of closest approach in a head-on collision?",
+      "choices": [
+        "The particle's kinetic energy becomes zero momentarily.",
+        "The particle gains maximum kinetic energy.",
+        "The particle becomes neutral.",
+        "The nucleus loses its positive charge."
+      ],
+      "answer": 0,
+      "explanation": "At the closest point, the alpha particle stops momentarily before moving backwards. Its initial kinetic energy has been converted into electrical potential energy."
+    },
+    {
+      "id": "phy-mcq-15",
+      "type": "mcq",
+      "prompt": "An alpha particle's kinetic energy doubles. What happens to its distance of closest approach?",
+      "choices": [
+        "It doubles.",
+        "It becomes four times larger.",
+        "It becomes half as large.",
+        "It remains unchanged."
+      ],
+      "answer": 2,
+      "explanation": "The formula is:\n\\[\nr_0=\\frac{2kZe^2}{K}\n\\]\n\nDistance is inversely proportional to kinetic energy. Doubling the energy halves the distance.\n\nPart 2: Atomic Spectra and Bohr's Model (16–40)"
+    },
+    {
+      "id": "phy-mcq-16",
+      "type": "mcq",
+      "prompt": "What is a continuous spectrum?",
+      "choices": [
+        "Bright lines on a black background.",
+        "Dark lines on a rainbow background.",
+        "A spectrum containing only ultraviolet light.",
+        "A spectrum containing all colours without gaps."
+      ],
+      "answer": 3,
+      "explanation": "A continuous spectrum contains an uninterrupted range of wavelengths and is commonly produced by hot solids, liquids, and dense gases."
+    },
+    {
+      "id": "phy-mcq-17",
+      "type": "mcq",
+      "prompt": "Which object commonly produces a continuous spectrum?",
+      "choices": [
+        "A hot solid filament.",
+        "A low-pressure hydrogen gas.",
+        "A fluorescent gas discharge tube.",
+        "A cool gas absorbing light."
+      ],
+      "answer": 0,
+      "explanation": "Hot solid objects produce continuous spectra because they emit a broad range of wavelengths."
+    },
+    {
+      "id": "phy-mcq-18",
+      "type": "mcq",
+      "prompt": "What does an emission spectrum look like?",
+      "choices": [
+        "A continuous rainbow without lines.",
+        "Bright lines against a dark background.",
+        "Dark lines against a rainbow background.",
+        "Only black and white colours."
+      ],
+      "answer": 1,
+      "explanation": "Excited atoms release photons at specific wavelengths, producing bright spectral lines."
+    },
+    {
+      "id": "phy-mcq-19",
+      "type": "mcq",
+      "prompt": "What produces an absorption spectrum?",
+      "choices": [
+        "A hot solid emitting light.",
+        "An excited gas releasing photons.",
+        "White light passing through a cooler gas.",
+        "A laser reflecting from a mirror."
+      ],
+      "answer": 2,
+      "explanation": "The cooler gas absorbs particular wavelengths, leaving dark lines in the continuous spectrum."
+    },
+    {
+      "id": "phy-mcq-20",
+      "type": "mcq",
+      "prompt": "Why does every element have a unique line spectrum?",
+      "choices": [
+        "Every element has the same electron arrangement.",
+        "All atoms release identical photons.",
+        "Every element has the same nucleus size.",
+        "Each element has its own electron energy levels."
+      ],
+      "answer": 3,
+      "explanation": "Different energy-level differences produce different photon wavelengths. Therefore, each element has a unique spectral fingerprint."
+    },
+    {
+      "id": "phy-mcq-21",
+      "type": "mcq",
+      "prompt": "How can astronomers identify elements in distant stars?",
+      "choices": [
+        "By measuring the star's physical size only.",
+        "By comparing the star's spectral lines with known element spectra.",
+        "By measuring the star's temperature only.",
+        "By observing the star's movement."
+      ],
+      "answer": 1,
+      "explanation": "Scientists compare the wavelengths of absorption or emission lines with laboratory spectra to identify the elements present."
+    },
+    {
+      "id": "phy-mcq-22",
+      "type": "mcq",
+      "prompt": "Which formula is used to calculate hydrogen's spectral wavelength?",
+      "choices": [
+        "Rydberg formula",
+        "Newton's law",
+        "Ohm's law",
+        "Stefan's law"
+      ],
+      "answer": 0,
+      "explanation": "The Rydberg formula calculates the wavelengths produced when hydrogen electrons move between energy levels."
+    },
+    {
+      "id": "phy-mcq-23",
+      "type": "mcq",
+      "prompt": "In the Rydberg formula, what does \\(R\\) represent?",
+      "choices": [
+        "The electron radius.",
+        "The atomic mass.",
+        "The Rydberg constant.",
+        "The electron speed."
+      ],
+      "answer": 2,
+      "explanation": "The Rydberg constant is approximately \\(1.097\\times10^7\\text{ m}^{-1}\\)."
+    },
+    {
+      "id": "phy-mcq-24",
+      "type": "mcq",
+      "prompt": "Which condition must be satisfied in the Rydberg formula?",
+      "choices": [
+        "\\(n_1>n_2\\)",
+        "\\(n_1=n_2\\)",
+        "Both quantum numbers must be zero.",
+        "\\(n_2>n_1\\)"
+      ],
+      "answer": 3,
+      "explanation": "\\(n_2\\) represents the higher energy level, while \\(n_1\\) represents the lower energy level."
+    },
+    {
+      "id": "phy-mcq-25",
+      "type": "mcq",
+      "prompt": "Which hydrogen spectral series ends at \\(n=1\\)?",
+      "choices": [
+        "Balmer",
+        "Lyman",
+        "Paschen",
+        "Brackett"
+      ],
+      "answer": 1,
+      "explanation": "The Lyman series contains transitions that finish at the first energy level and produces ultraviolet radiation."
+    },
+    {
+      "id": "phy-mcq-26",
+      "type": "mcq",
+      "prompt": "Which hydrogen spectral series produces visible light?",
+      "choices": [
+        "Balmer",
+        "Lyman",
+        "Paschen",
+        "Pfund"
+      ],
+      "answer": 0,
+      "explanation": "The Balmer series ends at \\(n=2\\), and some of its spectral lines are visible to the human eye."
+    },
+    {
+      "id": "phy-mcq-27",
+      "type": "mcq",
+      "prompt": "The Paschen series ends at which energy level?",
+      "choices": [
+        "\\(n=1\\)",
+        "\\(n=2\\)",
+        "\\(n=3\\)",
+        "\\(n=5\\)"
+      ],
+      "answer": 2,
+      "explanation": "The Paschen series consists of electron transitions from higher levels to \\(n=3\\). It produces infrared radiation."
+    },
+    {
+      "id": "phy-mcq-28",
+      "type": "mcq",
+      "prompt": "Which series ends at \\(n=4\\)?",
+      "choices": [
+        "Lyman",
+        "Balmer",
+        "Pfund",
+        "Brackett"
+      ],
+      "answer": 3,
+      "explanation": "The Brackett series ends at the fourth energy level and belongs to the infrared region."
+    },
+    {
+      "id": "phy-mcq-29",
+      "type": "mcq",
+      "prompt": "Which series ends at \\(n=5\\)?",
+      "choices": [
+        "Paschen",
+        "Pfund",
+        "Balmer",
+        "Lyman"
+      ],
+      "answer": 1,
+      "explanation": "The Pfund series contains transitions ending at \\(n=5\\), producing far-infrared radiation."
+    },
+    {
+      "id": "phy-mcq-30",
+      "type": "mcq",
+      "prompt": "For a particular hydrogen series, which transition produces the longest wavelength?",
+      "choices": [
+        "The transition with the smallest energy difference.",
+        "The transition with the largest energy difference.",
+        "The transition to infinite energy.",
+        "The transition with zero wavelength."
+      ],
+      "answer": 0,
+      "explanation": "Photon energy and wavelength are inversely related:\n\\[\nE=\\frac{hc}{\\lambda}\n\\]\n\nA smaller energy difference produces a longer wavelength."
+    },
+    {
+      "id": "phy-mcq-31",
+      "type": "mcq",
+      "prompt": "What is the shortest wavelength in a hydrogen spectral series?",
+      "choices": [
+        "The first transition in the series.",
+        "The transition with the smallest energy gap.",
+        "The series limit, when \\(n_2\\rightarrow\\infty\\).",
+        "The transition where \\(n_1=n_2\\)."
+      ],
+      "answer": 2,
+      "explanation": "The series limit represents the largest possible energy difference for transitions ending at a particular lower level."
+    },
+    {
+      "id": "phy-mcq-32",
+      "type": "mcq",
+      "prompt": "Who developed the Bohr model of the atom?",
+      "choices": [
+        "Rutherford",
+        "Thomson",
+        "Schrödinger",
+        "Niels Bohr"
+      ],
+      "answer": 3,
+      "explanation": "Bohr introduced quantised electron orbits in 1913 to explain atomic stability and hydrogen's line spectrum."
+    },
+    {
+      "id": "phy-mcq-33",
+      "type": "mcq",
+      "prompt": "According to Bohr, what happens when an electron remains in an allowed stationary orbit?",
+      "choices": [
+        "It continuously releases energy.",
+        "It does not radiate energy.",
+        "It falls into the nucleus.",
+        "It becomes a proton."
+      ],
+      "answer": 1,
+      "explanation": "Bohr proposed that electrons in allowed stationary orbits do not lose energy through radiation."
+    },
+    {
+      "id": "phy-mcq-34",
+      "type": "mcq",
+      "prompt": "Which formula represents Bohr's angular momentum condition?",
+      "choices": [
+        "\\(mvr=\\frac{nh}{2\\pi}\\)",
+        "\\(E=mc^2\\)",
+        "\\(F=ma\\)",
+        "\\(V=IR\\)"
+      ],
+      "answer": 0,
+      "explanation": "Bohr's angular momentum rule states that only certain quantised angular momentum values are allowed."
+    },
+    {
+      "id": "phy-mcq-35",
+      "type": "mcq",
+      "prompt": "What happens when an electron moves from a lower energy level to a higher energy level?",
+      "choices": [
+        "It emits a photon.",
+        "It loses energy.",
+        "It absorbs energy.",
+        "It becomes neutral."
+      ],
+      "answer": 2,
+      "explanation": "Moving to a higher energy level requires the electron to gain energy, usually by absorbing a photon or through a collision."
+    },
+    {
+      "id": "phy-mcq-36",
+      "type": "mcq",
+      "prompt": "What happens when an electron moves from a higher energy level to a lower energy level?",
+      "choices": [
+        "It absorbs a photon.",
+        "It stops existing.",
+        "It gains mass.",
+        "It emits a photon."
+      ],
+      "answer": 3,
+      "explanation": "The energy difference between the two levels is released as a photon."
+    },
+    {
+      "id": "phy-mcq-37",
+      "type": "mcq",
+      "prompt": "What is the ground-state energy of hydrogen?",
+      "choices": [
+        "−3.4 eV",
+        "−13.6 eV",
+        "+13.6 eV",
+        "0 eV"
+      ],
+      "answer": 1,
+      "explanation": "The ground state is the lowest energy level, \\(n=1\\). Its energy is −13.6 eV."
+    },
+    {
+      "id": "phy-mcq-38",
+      "type": "mcq",
+      "prompt": "Why are the energy levels of a bound hydrogen electron negative?",
+      "choices": [
+        "Because the electron has a negative mass.",
+        "Because the nucleus has no charge.",
+        "Because the electron is bound to the nucleus.",
+        "Because photons have negative energy."
+      ],
+      "answer": 2,
+      "explanation": "Zero energy is defined as an electron completely free from the atom. A bound electron has less energy than this reference point."
+    },
+    {
+      "id": "phy-mcq-39",
+      "type": "mcq",
+      "prompt": "What is the first excitation energy of hydrogen?",
+      "choices": [
+        "10.2 eV",
+        "13.6 eV",
+        "3.4 eV",
+        "1.51 eV"
+      ],
+      "answer": 0,
+      "explanation": "The electron moves from \\(n=1\\), at −13.6 eV, to \\(n=2\\), at −3.4 eV.\n\\[\n\\Delta E=-3.4-(-13.6)=10.2\\text{ eV}\n\\]"
+    },
+    {
+      "id": "phy-mcq-40",
+      "type": "mcq",
+      "prompt": "What is the ionisation energy of hydrogen in its ground state?",
+      "choices": [
+        "3.4 eV",
+        "10.2 eV",
+        "12.09 eV",
+        "13.6 eV"
+      ],
+      "answer": 3,
+      "explanation": "Ionisation requires moving the electron from −13.6 eV to 0 eV, so 13.6 eV must be supplied.\n\nPart 3: Bohr Model Calculations (41–55)"
+    },
+    {
+      "id": "phy-mcq-41",
+      "type": "mcq",
+      "prompt": "What is the Bohr radius of hydrogen in its first orbit?",
+      "choices": [
+        "1.06 Å",
+        "0.529 Å",
+        "2.18 Å",
+        "13.6 Å"
+      ],
+      "answer": 1,
+      "explanation": "Using:\n\\[\nr_n=0.529\\frac{n^2}{Z}\\text{ Å}\n\\]\n\nFor hydrogen, \\(n=1\\) and \\(Z=1\\), giving 0.529 Å."
+    },
+    {
+      "id": "phy-mcq-42",
+      "type": "mcq",
+      "prompt": "What is the energy of hydrogen at \\(n=2\\)?",
+      "choices": [
+        "−13.6 eV",
+        "−6.8 eV",
+        "−3.4 eV",
+        "−1.51 eV"
+      ],
+      "answer": 2,
+      "explanation": "\\[\nE_n=-\\frac{13.6}{n^2}\n\\]\n\n\\[\nE_2=-\\frac{13.6}{4}=-3.4\\text{ eV}\n\\]"
+    },
+    {
+      "id": "phy-mcq-43",
+      "type": "mcq",
+      "prompt": "What is the energy of hydrogen at \\(n=4\\)?",
+      "choices": [
+        "−0.85 eV",
+        "−1.51 eV",
+        "−3.4 eV",
+        "−13.6 eV"
+      ],
+      "answer": 0,
+      "explanation": "\\[\nE_4=-\\frac{13.6}{4^2}\n=-\\frac{13.6}{16}\n=-0.85\\text{ eV}\n\\]"
+    },
+    {
+      "id": "phy-mcq-44",
+      "type": "mcq",
+      "prompt": "What is the radius of hydrogen at \\(n=3\\)?",
+      "choices": [
+        "0.529 Å",
+        "1.06 Å",
+        "3.18 Å",
+        "4.76 Å"
+      ],
+      "answer": 3,
+      "explanation": "\\[\nr_3=0.529(3^2)\n\\]\n\n\\[\nr_3=4.761\\text{ Å}\n\\]"
+    },
+    {
+      "id": "phy-mcq-45",
+      "type": "mcq",
+      "prompt": "What is the relationship between kinetic energy and total energy in Bohr's model?",
+      "choices": [
+        "\\(KE=E\\)",
+        "\\(KE=-E\\)",
+        "\\(KE=2E\\)",
+        "\\(KE=0\\)"
+      ],
+      "answer": 1,
+      "explanation": "Kinetic energy is positive, while the total energy of a bound electron is negative."
+    },
+    {
+      "id": "phy-mcq-46",
+      "type": "mcq",
+      "prompt": "What is the relationship between potential energy and total energy?",
+      "choices": [
+        "\\(PE=-E\\)",
+        "\\(PE=E/2\\)",
+        "\\(PE=2E\\)",
+        "\\(PE=0\\)"
+      ],
+      "answer": 2,
+      "explanation": "In the Bohr model, potential energy is twice the total energy and is negative."
+    },
+    {
+      "id": "phy-mcq-47",
+      "type": "mcq",
+      "prompt": "An electron moves from \\(n=3\\) to \\(n=2\\). What is the approximate emitted wavelength?",
+      "choices": [
+        "656 nm",
+        "486 nm",
+        "121.6 nm",
+        "102.6 nm"
+      ],
+      "answer": 0,
+      "explanation": "The energy difference is approximately 1.89 eV.\n\\[\n\\lambda=\\frac{1240}{1.89}\n\\approx656\\text{ nm}\n\\]\n\nThis is red light in the Balmer series."
+    },
+    {
+      "id": "phy-mcq-48",
+      "type": "mcq",
+      "prompt": "An electron moves from \\(n=4\\) to \\(n=2\\). Which spectral series does this belong to?",
+      "choices": [
+        "Lyman",
+        "Paschen",
+        "Brackett",
+        "Balmer"
+      ],
+      "answer": 3,
+      "explanation": "The series is identified by its final energy level. Since the electron finishes at \\(n=2\\), it belongs to the Balmer series."
+    },
+    {
+      "id": "phy-mcq-49",
+      "type": "mcq",
+      "prompt": "What is the approximate wavelength of a photon with an energy of 2.0 eV?",
+      "choices": [
+        "310 nm",
+        "620 nm",
+        "1240 nm",
+        "2480 nm"
+      ],
+      "answer": 1,
+      "explanation": "\\[\n\\lambda=\\frac{1240}{\\Delta E}\n\\]\n\n\\[\n\\lambda=\\frac{1240}{2.0}=620\\text{ nm}\n\\]"
+    },
+    {
+      "id": "phy-mcq-50",
+      "type": "mcq",
+      "prompt": "An atom is excited to \\(n=5\\). How many different spectral lines can it produce?",
+      "choices": [
+        "5",
+        "8",
+        "10",
+        "15"
+      ],
+      "answer": 2,
+      "explanation": "\\[\nN=\\frac{n(n-1)}{2}\n\\]\n\n\\[\nN=\\frac{5(4)}{2}=10\n\\]"
+    },
+    {
+      "id": "phy-mcq-51",
+      "type": "mcq",
+      "prompt": "An atom is excited to \\(n=3\\). How many possible spectral lines can it produce?",
+      "choices": [
+        "3",
+        "6",
+        "2",
+        "1"
+      ],
+      "answer": 0,
+      "explanation": "\\[\nN=\\frac{3(3-1)}{2}=3\n\\]\n\nThe possible transitions are 3→2, 3→1, and 2→1."
+    },
+    {
+      "id": "phy-mcq-52",
+      "type": "mcq",
+      "prompt": "What is the ground-state energy of a hydrogen-like helium ion (\\(He^+\\))?",
+      "choices": [
+        "−13.6 eV",
+        "−27.2 eV",
+        "−40.8 eV",
+        "−54.4 eV"
+      ],
+      "answer": 3,
+      "explanation": "\\[\nE_1=-13.6Z^2\n\\]\n\nFor helium, \\(Z=2\\).\n\\[\nE_1=-13.6(2^2)=-54.4\\text{ eV}\n\\]"
+    },
+    {
+      "id": "phy-mcq-53",
+      "type": "mcq",
+      "prompt": "What is the ground-state energy of \\(Li^{2+}\\)?",
+      "choices": [
+        "−40.8 eV",
+        "−122.4 eV",
+        "−13.6 eV",
+        "−27.2 eV"
+      ],
+      "answer": 1,
+      "explanation": "\\[\nE_1=-13.6(3^2)\n\\]\n\n\\[\nE_1=-122.4\\text{ eV}\n\\]\n\nLithium ion \\(Li^{2+}\\) has one electron and atomic number 3."
+    },
+    {
+      "id": "phy-mcq-54",
+      "type": "mcq",
+      "prompt": "What is the first-orbit radius of \\(Li^{2+}\\)?",
+      "choices": [
+        "0.529 Å",
+        "1.587 Å",
+        "0.176 Å",
+        "4.761 Å"
+      ],
+      "answer": 2,
+      "explanation": "\\[\nr_1=0.529\\frac{1^2}{3}\n\\]\n\n\\[\nr_1=0.176\\text{ Å}\n\\]"
+    },
+    {
+      "id": "phy-mcq-55",
+      "type": "mcq",
+      "prompt": "Which statement about the Bohr model is correct?",
+      "choices": [
+        "It accurately explains hydrogen's spectrum but does not fully explain multi-electron atoms.",
+        "It explains all chemical bonding perfectly.",
+        "It states that electrons have no energy levels.",
+        "It explains every detail of all atomic spectra."
+      ],
+      "answer": 0,
+      "explanation": "Bohr's model successfully explains hydrogen and hydrogen-like ions, but it has limitations for more complicated atoms.\n\nPart 4: Matter Waves and de Broglie (56–70)"
+    },
+    {
+      "id": "phy-mcq-56",
+      "type": "mcq",
+      "prompt": "Who proposed the matter-wave hypothesis?",
+      "choices": [
+        "Max Planck",
+        "Albert Einstein",
+        "Louis de Broglie",
+        "Ernest Rutherford"
+      ],
+      "answer": 2,
+      "explanation": "De Broglie proposed that moving particles, such as electrons, have wave properties."
+    },
+    {
+      "id": "phy-mcq-57",
+      "type": "mcq",
+      "prompt": "What is wave-particle duality?",
+      "choices": [
+        "Only light behaves as a particle.",
+        "Matter and light can display both wave and particle properties.",
+        "Electrons are always stationary.",
+        "Waves cannot carry energy."
+      ],
+      "answer": 1,
+      "explanation": "Light can behave like a wave or a particle, and de Broglie extended this idea to matter."
+    },
+    {
+      "id": "phy-mcq-58",
+      "type": "mcq",
+      "prompt": "Which formula calculates de Broglie wavelength?",
+      "choices": [
+        "\\(\\lambda=mv/h\\)",
+        "\\(\\lambda=hv\\)",
+        "\\(\\lambda=h+mv\\)",
+        "\\(\\lambda=h/mv\\)"
+      ],
+      "answer": 3,
+      "explanation": "The de Broglie wavelength equals Planck's constant divided by the particle's momentum."
+    },
+    {
+      "id": "phy-mcq-59",
+      "type": "mcq",
+      "prompt": "What happens to a particle's wavelength when its momentum increases?",
+      "choices": [
+        "The wavelength decreases.",
+        "The wavelength increases.",
+        "The wavelength remains unchanged.",
+        "The wavelength becomes infinite."
+      ],
+      "answer": 0,
+      "explanation": "Since \\(\\lambda=h/p\\), wavelength is inversely proportional to momentum."
+    },
+    {
+      "id": "phy-mcq-60",
+      "type": "mcq",
+      "prompt": "Why are electron waves easier to observe than waves associated with cars?",
+      "choices": [
+        "Electrons travel slower than cars.",
+        "Electrons have no mass.",
+        "Electrons have much smaller momentum, producing larger wavelengths.",
+        "Cars do not have momentum."
+      ],
+      "answer": 2,
+      "explanation": "Electrons have extremely small mass, allowing their matter-wave wavelengths to become measurable."
+    },
+    {
+      "id": "phy-mcq-61",
+      "type": "mcq",
+      "prompt": "Which experiment demonstrated electron diffraction using a nickel crystal?",
+      "choices": [
+        "Rutherford experiment",
+        "Davisson–Germer experiment",
+        "Franck–Hertz experiment",
+        "Gold-foil experiment"
+      ],
+      "answer": 1,
+      "explanation": "Electrons scattered from a nickel crystal produced diffraction patterns, demonstrating wave behaviour.\n\nNote: Your study guide marks the Davisson–Germer experiment as NOT in the exam."
+    },
+    {
+      "id": "phy-mcq-62",
+      "type": "mcq",
+      "prompt": "What is the main purpose of an electron microscope?",
+      "choices": [
+        "To measure electrical resistance.",
+        "To produce visible light.",
+        "To measure temperature.",
+        "To observe extremely small structures using electrons."
+      ],
+      "answer": 3,
+      "explanation": "Electron microscopes use electrons with short wavelengths to reveal details that ordinary optical microscopes cannot easily resolve."
+    },
+    {
+      "id": "phy-mcq-63",
+      "type": "mcq",
+      "prompt": "What happens in an electron double-slit experiment?",
+      "choices": [
+        "Electrons produce an interference pattern after many detections.",
+        "Electrons stop moving.",
+        "Electrons become protons.",
+        "Electrons produce only a continuous spectrum."
+      ],
+      "answer": 0,
+      "explanation": "Individual electrons are detected as particles, but many detections build up a wave-like interference pattern."
+    },
+    {
+      "id": "phy-mcq-64",
+      "type": "mcq",
+      "prompt": "An electron is accelerated through 100 V. What is its approximate de Broglie wavelength?",
+      "choices": [
+        "1.227 nm",
+        "12.27 nm",
+        "0.123 nm",
+        "123 nm"
+      ],
+      "answer": 2,
+      "explanation": "\\[\n\\lambda=\\frac{1.227}{\\sqrt V}\n\\]\n\n\\[\n\\lambda=\\frac{1.227}{\\sqrt{100}}\n=0.1227\\text{ nm}\n\\]"
+    },
+    {
+      "id": "phy-mcq-65",
+      "type": "mcq",
+      "prompt": "An electron is accelerated through 25 V. What is its approximate wavelength?",
+      "choices": [
+        "0.049 nm",
+        "0.245 nm",
+        "1.227 nm",
+        "0.123 nm"
+      ],
+      "answer": 1,
+      "explanation": "\\[\n\\lambda=\\frac{1.227}{\\sqrt{25}}\n\\]\n\n\\[\n\\lambda=\\frac{1.227}{5}=0.2454\\text{ nm}\n\\]"
+    },
+    {
+      "id": "phy-mcq-66",
+      "type": "mcq",
+      "prompt": "If an electron's momentum doubles, what happens to its de Broglie wavelength?",
+      "choices": [
+        "It doubles.",
+        "It becomes four times larger.",
+        "It remains unchanged.",
+        "It becomes half as large."
+      ],
+      "answer": 3,
+      "explanation": "Wavelength is inversely proportional to momentum. Doubling momentum halves the wavelength."
+    },
+    {
+      "id": "phy-mcq-67",
+      "type": "mcq",
+      "prompt": "Which condition connects de Broglie waves with Bohr's allowed orbits?",
+      "choices": [
+        "\\(2\\pi r=n\\lambda\\)",
+        "\\(r=n^2\\lambda\\)",
+        "\\(mvr=0\\)",
+        "\\(E=mc^2\\)"
+      ],
+      "answer": 0,
+      "explanation": "A stable electron wave must fit a whole number of wavelengths around the orbit. This produces Bohr's quantised angular momentum condition."
+    },
+    {
+      "id": "phy-mcq-68",
+      "type": "mcq",
+      "prompt": "An electron and a proton have equal kinetic energies. Which has the longer de Broglie wavelength?",
+      "choices": [
+        "Proton",
+        "Both have the same wavelength.",
+        "Electron",
+        "Neither has a wavelength."
+      ],
+      "answer": 2,
+      "explanation": "At equal kinetic energy:\n\\[\n\\lambda=\\frac{h}{\\sqrt{2mK}}\n\\]\n\nThe electron has much smaller mass, so it has a longer wavelength."
+    },
+    {
+      "id": "phy-mcq-69",
+      "type": "mcq",
+      "prompt": "Approximately how many times longer is an electron's wavelength than a proton's when both have the same kinetic energy?",
+      "choices": [
+        "2 times",
+        "43 times",
+        "10 times",
+        "100 times"
+      ],
+      "answer": 1,
+      "explanation": "\\[\n\\frac{\\lambda_e}{\\lambda_p}\n=\\sqrt{\\frac{m_p}{m_e}}\n\\approx43\n\\]"
+    },
+    {
+      "id": "phy-mcq-70",
+      "type": "mcq",
+      "prompt": "What is the approximate de Broglie wavelength of a 1000 kg car moving at 27.8 m/s?",
+      "choices": [
+        "\\(10^{-10}\\) m",
+        "\\(10^{-20}\\) m",
+        "\\(10^{-30}\\) m",
+        "\\(2.4\\times10^{-38}\\) m"
+      ],
+      "answer": 3,
+      "explanation": "\\[\n\\lambda=\\frac{h}{mv}\n\\]\n\n\\[\n\\lambda=\\frac{6.63\\times10^{-34}}{1000(27.8)}\n\\]\n\n\\[\n\\lambda\\approx2.4\\times10^{-38}\\text{ m}\n\\]\n\nThe wavelength is far too small to observe in everyday situations.\n\nPart 5: Heisenberg's Uncertainty Principle (71–80)"
+    },
+    {
+      "id": "phy-mcq-71",
+      "type": "mcq",
+      "prompt": "Who introduced the uncertainty principle?",
+      "choices": [
+        "Niels Bohr",
+        "Werner Heisenberg",
+        "Louis de Broglie",
+        "J. J. Thomson"
+      ],
+      "answer": 1,
+      "explanation": "Heisenberg introduced the uncertainty principle in 1927."
+    },
+    {
+      "id": "phy-mcq-72",
+      "type": "mcq",
+      "prompt": "What does the uncertainty principle state?",
+      "choices": [
+        "Electrons cannot move.",
+        "All particles have the same momentum.",
+        "The exact position and momentum cannot both be known simultaneously with unlimited precision.",
+        "Atoms have no energy levels."
+      ],
+      "answer": 2,
+      "explanation": "This is a fundamental property of quantum physics, not simply a limitation of measuring equipment."
+    },
+    {
+      "id": "phy-mcq-73",
+      "type": "mcq",
+      "prompt": "Which formula represents the uncertainty principle?",
+      "choices": [
+        "\\(\\Delta x\\Delta p\\geq\\frac{h}{4\\pi}\\)",
+        "\\(\\Delta x\\Delta p=0\\)",
+        "\\(\\Delta x=mv\\)",
+        "\\(\\Delta p=h\\lambda\\)"
+      ],
+      "answer": 0,
+      "explanation": "The product of position uncertainty and momentum uncertainty must be at least \\(h/4\\pi\\)."
+    },
+    {
+      "id": "phy-mcq-74",
+      "type": "mcq",
+      "prompt": "If the uncertainty in position decreases, what happens to the minimum uncertainty in momentum?",
+      "choices": [
+        "It decreases.",
+        "It becomes zero.",
+        "It remains unchanged.",
+        "It increases."
+      ],
+      "answer": 3,
+      "explanation": "Position and momentum uncertainties are inversely related. Improving position accuracy increases the minimum possible momentum uncertainty."
+    },
+    {
+      "id": "phy-mcq-75",
+      "type": "mcq",
+      "prompt": "Why is the uncertainty principle more noticeable for electrons than for cricket balls?",
+      "choices": [
+        "Cricket balls have no momentum.",
+        "Electrons have much smaller mass.",
+        "Electrons are positively charged.",
+        "Cricket balls are made of atoms."
+      ],
+      "answer": 1,
+      "explanation": "For a given position uncertainty, the smaller electron mass results in a much larger uncertainty in speed."
+    },
+    {
+      "id": "phy-mcq-76",
+      "type": "mcq",
+      "prompt": "Which equation connects momentum uncertainty with velocity uncertainty?",
+      "choices": [
+        "\\(\\Delta p=\\Delta x/m\\)",
+        "\\(\\Delta p=m/\\Delta v\\)",
+        "\\(\\Delta p=m\\Delta v\\)",
+        "\\(\\Delta p=\\Delta v/m\\)"
+      ],
+      "answer": 2,
+      "explanation": "Momentum is mass multiplied by velocity. For a particle with constant mass, its momentum uncertainty is \\(m\\Delta v\\)."
+    },
+    {
+      "id": "phy-mcq-77",
+      "type": "mcq",
+      "prompt": "What is the value of \\(h/4\\pi\\) approximately?",
+      "choices": [
+        "\\(5.28\\times10^{-35}\\) J·s",
+        "\\(6.63\\times10^{-34}\\) J·s",
+        "\\(9.0\\times10^9\\) J·s",
+        "\\(1.6\\times10^{-19}\\) J·s"
+      ],
+      "answer": 0,
+      "explanation": "This is the constant used in the position-momentum uncertainty relationship."
+    },
+    {
+      "id": "phy-mcq-78",
+      "type": "mcq",
+      "prompt": "An electron is located within a very small position range. What can be said about its momentum?",
+      "choices": [
+        "It must be exactly zero.",
+        "It becomes negative.",
+        "It becomes constant.",
+        "It has greater uncertainty."
+      ],
+      "answer": 3,
+      "explanation": "A smaller position uncertainty requires a larger minimum momentum uncertainty."
+    },
+    {
+      "id": "phy-mcq-79",
+      "type": "mcq",
+      "prompt": "Is the uncertainty principle caused only by poor measuring instruments?",
+      "choices": [
+        "Yes, better instruments completely remove it.",
+        "No, it is a fundamental property of quantum systems.",
+        "Yes, but only for electrons.",
+        "No, because electrons have no momentum."
+      ],
+      "answer": 1,
+      "explanation": "Even perfect measuring instruments cannot remove the fundamental uncertainty described by quantum mechanics."
+    },
+    {
+      "id": "phy-mcq-80",
+      "type": "mcq",
+      "prompt": "Why is the speed uncertainty of a cricket ball extremely small?",
+      "choices": [
+        "It has no kinetic energy.",
+        "It has a positive charge.",
+        "Its large mass makes the resulting speed uncertainty extremely small.",
+        "Its position is always exactly known."
+      ],
+      "answer": 2,
+      "explanation": "From:\n\\[\n\\Delta v\\geq\\frac{h}{4\\pi m\\Delta x}\n\\]\n\nA large mass results in a very small minimum speed uncertainty for the same position uncertainty.\n\nPart 6: Quantum Model and Quantum Numbers (81–100)"
+    },
+    {
+      "id": "phy-mcq-81",
+      "type": "mcq",
+      "prompt": "Who developed the mathematical quantum mechanical model of the atom?",
+      "choices": [
+        "Erwin Schrödinger",
+        "Rutherford",
+        "Thomson",
+        "Geiger"
+      ],
+      "answer": 0,
+      "explanation": "Schrödinger developed the wave equation used to describe the quantum behaviour of electrons."
+    },
+    {
+      "id": "phy-mcq-82",
+      "type": "mcq",
+      "prompt": "What does an atomic orbital represent?",
+      "choices": [
+        "The exact circular path of an electron.",
+        "The position of the nucleus.",
+        "A region where an electron is likely to be found.",
+        "The electrical charge of an atom."
+      ],
+      "answer": 2,
+      "explanation": "An orbital describes the probability distribution of an electron around the nucleus."
+    },
+    {
+      "id": "phy-mcq-83",
+      "type": "mcq",
+      "prompt": "What does \\(|\\psi|^2\\) represent?",
+      "choices": [
+        "Electron mass",
+        "Probability density",
+        "Atomic radius",
+        "Nuclear charge"
+      ],
+      "answer": 1,
+      "explanation": "The square of the wave function's magnitude gives the probability density of finding an electron in a particular region."
+    },
+    {
+      "id": "phy-mcq-84",
+      "type": "mcq",
+      "prompt": "What is the main difference between Bohr's orbit and a quantum orbital?",
+      "choices": [
+        "Both represent exact circular paths.",
+        "Both describe the nucleus.",
+        "An orbital is always two-dimensional.",
+        "An orbit is an assumed path, while an orbital is a probability region."
+      ],
+      "answer": 3,
+      "explanation": "Bohr described electrons in fixed circular orbits, while the quantum model describes probability distributions."
+    },
+    {
+      "id": "phy-mcq-85",
+      "type": "mcq",
+      "prompt": "How many quantum numbers describe an electron?",
+      "choices": [
+        "Two",
+        "Four",
+        "Three",
+        "Five"
+      ],
+      "answer": 1,
+      "explanation": "The four quantum numbers are principal, azimuthal, magnetic, and spin."
+    },
+    {
+      "id": "phy-mcq-86",
+      "type": "mcq",
+      "prompt": "What does the principal quantum number \\(n\\) describe?",
+      "choices": [
+        "Electron spin only.",
+        "Orbital direction only.",
+        "Shell and energy level.",
+        "Sub-shell shape only."
+      ],
+      "answer": 2,
+      "explanation": "The principal quantum number identifies the main energy level and is related to the electron's average distance from the nucleus."
+    },
+    {
+      "id": "phy-mcq-87",
+      "type": "mcq",
+      "prompt": "What does the azimuthal quantum number \\(l\\) describe?",
+      "choices": [
+        "Sub-shell and orbital shape.",
+        "Electron charge.",
+        "Electron speed.",
+        "Nuclear mass."
+      ],
+      "answer": 0,
+      "explanation": "The azimuthal quantum number identifies the sub-shell: s, p, d, or f."
+    },
+    {
+      "id": "phy-mcq-88",
+      "type": "mcq",
+      "prompt": "What does the magnetic quantum number \\(m_l\\) describe?",
+      "choices": [
+        "Electron mass.",
+        "Electron energy in joules only.",
+        "Shell number.",
+        "Orbital orientation."
+      ],
+      "answer": 3,
+      "explanation": "The magnetic quantum number specifies the orientation of an orbital within a sub-shell."
+    },
+    {
+      "id": "phy-mcq-89",
+      "type": "mcq",
+      "prompt": "What does the spin quantum number \\(m_s\\) describe?",
+      "choices": [
+        "Orbital shape.",
+        "Electron spin.",
+        "Nuclear radius.",
+        "Number of shells."
+      ],
+      "answer": 1,
+      "explanation": "An electron can have one of two spin values: \\(+\\frac12\\) or \\(-\\frac12\\)."
+    },
+    {
+      "id": "phy-mcq-90",
+      "type": "mcq",
+      "prompt": "Which values are allowed for the principal quantum number?",
+      "choices": [
+        "Only 0 and 1.",
+        "Any negative integer.",
+        "Positive integers starting from 1.",
+        "Only fractions."
+      ],
+      "answer": 2,
+      "explanation": "\\[\nn=1,2,3,4,\\ldots\n\\]\n\nThe principal quantum number cannot be zero or negative."
+    },
+    {
+      "id": "phy-mcq-91",
+      "type": "mcq",
+      "prompt": "If \\(n=3\\), which values of \\(l\\) are allowed?",
+      "choices": [
+        "0, 1, 2",
+        "1, 2, 3",
+        "0, 1, 2, 3",
+        "Only 3"
+      ],
+      "answer": 0,
+      "explanation": "The azimuthal quantum number ranges from 0 to \\(n-1\\)."
+    },
+    {
+      "id": "phy-mcq-92",
+      "type": "mcq",
+      "prompt": "Which sub-shell corresponds to \\(l=0\\)?",
+      "choices": [
+        "p",
+        "d",
+        "f",
+        "s"
+      ],
+      "answer": 3,
+      "explanation": "The correspondence is s = 0, p = 1, d = 2, and f = 3."
+    },
+    {
+      "id": "phy-mcq-93",
+      "type": "mcq",
+      "prompt": "Which sub-shell corresponds to \\(l=2\\)?",
+      "choices": [
+        "s",
+        "d",
+        "p",
+        "f"
+      ],
+      "answer": 1,
+      "explanation": "The d sub-shell has an azimuthal quantum number of 2."
+    },
+    {
+      "id": "phy-mcq-94",
+      "type": "mcq",
+      "prompt": "If \\(l=1\\), what are the possible values of \\(m_l\\)?",
+      "choices": [
+        "0 only",
+        "−2, −1, 0, +1, +2",
+        "−1, 0, +1",
+        "+1 only"
+      ],
+      "answer": 2,
+      "explanation": "The magnetic quantum number ranges from \\(-l\\) to \\(+l\\), including zero."
+    },
+    {
+      "id": "phy-mcq-95",
+      "type": "mcq",
+      "prompt": "How many orbitals are present in a p sub-shell?",
+      "choices": [
+        "3",
+        "1",
+        "5",
+        "7"
+      ],
+      "answer": 0,
+      "explanation": "A p sub-shell has three orbitals corresponding to \\(m_l=-1,0,+1\\)."
+    },
+    {
+      "id": "phy-mcq-96",
+      "type": "mcq",
+      "prompt": "How many electrons can an s sub-shell hold?",
+      "choices": [
+        "6",
+        "10",
+        "14",
+        "2"
+      ],
+      "answer": 3,
+      "explanation": "An s sub-shell contains one orbital, and each orbital can hold two electrons with opposite spins."
+    },
+    {
+      "id": "phy-mcq-97",
+      "type": "mcq",
+      "prompt": "How many electrons can a d sub-shell hold?",
+      "choices": [
+        "2",
+        "10",
+        "6",
+        "14"
+      ],
+      "answer": 1,
+      "explanation": "A d sub-shell contains five orbitals. Each orbital holds two electrons.\n\\[\n5\\times2=10\n\\]"
+    },
+    {
+      "id": "phy-mcq-98",
+      "type": "mcq",
+      "prompt": "How many orbitals are present in the third shell?",
+      "choices": [
+        "3",
+        "6",
+        "9",
+        "18"
+      ],
+      "answer": 2,
+      "explanation": "\\[\n\\text{Number of orbitals}=n^2\n\\]\n\n\\[\n3^2=9\n\\]"
+    },
+    {
+      "id": "phy-mcq-99",
+      "type": "mcq",
+      "prompt": "What is the maximum number of electrons in the fourth shell?",
+      "choices": [
+        "32",
+        "16",
+        "8",
+        "18"
+      ],
+      "answer": 0,
+      "explanation": "\\[\n\\text{Maximum electrons}=2n^2\n\\]\n\n\\[\n2(4^2)=32\n\\]"
+    },
+    {
+      "id": "phy-mcq-100",
+      "type": "mcq",
+      "prompt": "Which quantum number set is valid?",
+      "choices": [
+        "\\((2,2,0,+\\frac12)\\)",
+        "\\((1,0,+1,+\\frac12)\\)",
+        "\\((3,2,-2,0)\\)",
+        "\\((2,1,-1,+\\frac12)\\)"
+      ],
+      "answer": 3,
+      "explanation": "All four values satisfy the rules:\n- \\(n=2\\) is allowed.\n- \\(l=1\\) is allowed because \\(l=0\\) or 1.\n- \\(m_l=-1\\) is allowed.\n- \\(m_s=+\\frac12\\) is allowed.\n\nPart 7: Electron Configuration (101–115)"
+    },
+    {
+      "id": "phy-mcq-101",
+      "type": "mcq",
+      "prompt": "What does electron configuration describe?",
+      "choices": [
+        "The number of neutrons only.",
+        "How electrons are distributed among atomic orbitals.",
+        "The size of the nucleus.",
+        "The movement of protons."
+      ],
+      "answer": 1,
+      "explanation": "Electron configuration shows which energy levels and sub-shells contain electrons."
+    },
+    {
+      "id": "phy-mcq-102",
+      "type": "mcq",
+      "prompt": "What does the Aufbau principle state?",
+      "choices": [
+        "Electrons fill higher-energy orbitals first.",
+        "Every orbital holds one electron only.",
+        "Electrons fill the lowest-energy orbitals first.",
+        "Electrons cannot have spin."
+      ],
+      "answer": 2,
+      "explanation": "The Aufbau principle means electrons occupy available orbitals in increasing energy order."
+    },
+    {
+      "id": "phy-mcq-103",
+      "type": "mcq",
+      "prompt": "Which orbital fills before 3d in the usual filling order?",
+      "choices": [
+        "4s",
+        "5p",
+        "4d",
+        "3f"
+      ],
+      "answer": 0,
+      "explanation": "The filling order places 4s before 3d because 4s is lower in energy when these orbitals are filled."
+    },
+    {
+      "id": "phy-mcq-104",
+      "type": "mcq",
+      "prompt": "What does the Pauli exclusion principle state?",
+      "choices": [
+        "Electrons must have identical spins.",
+        "An orbital can hold unlimited electrons.",
+        "Electrons always pair immediately.",
+        "No two electrons in an atom can have the same four quantum numbers."
+      ],
+      "answer": 3,
+      "explanation": "This means an orbital can contain a maximum of two electrons, and they must have opposite spins."
+    },
+    {
+      "id": "phy-mcq-105",
+      "type": "mcq",
+      "prompt": "What does Hund's rule state?",
+      "choices": [
+        "Electrons fill orbitals randomly.",
+        "Electrons occupy equal-energy orbitals singly before pairing.",
+        "Electrons always fill 3d before 4s.",
+        "Each orbital can hold four electrons."
+      ],
+      "answer": 1,
+      "explanation": "Electrons spread out across orbitals of the same energy before pairing, reducing electron repulsion."
+    },
+    {
+      "id": "phy-mcq-106",
+      "type": "mcq",
+      "prompt": "What is the electron configuration of nitrogen (Z = 7)?",
+      "choices": [
+        "\\(1s^2 2s^2 2p^1\\)",
+        "\\(1s^2 2s^2 2p^2\\)",
+        "\\(1s^2 2s^2 2p^3\\)",
+        "\\(1s^2 2s^2 2p^4\\)"
+      ],
+      "answer": 2,
+      "explanation": "Nitrogen has seven electrons: two fill 1s, two fill 2s, and the remaining three fill 2p."
+    },
+    {
+      "id": "phy-mcq-107",
+      "type": "mcq",
+      "prompt": "How many unpaired electrons does nitrogen have in its ground state?",
+      "choices": [
+        "3",
+        "1",
+        "2",
+        "0"
+      ],
+      "answer": 0,
+      "explanation": "The three 2p electrons occupy separate p orbitals according to Hund's rule."
+    },
+    {
+      "id": "phy-mcq-108",
+      "type": "mcq",
+      "prompt": "What is the electron configuration of potassium (Z = 19)?",
+      "choices": [
+        "\\([Ar]3d^1\\)",
+        "\\([Ar]4s^2\\)",
+        "\\([Ne]3s^2\\)",
+        "\\([Ar]4s^1\\)"
+      ],
+      "answer": 3,
+      "explanation": "Potassium has 19 electrons. After filling the argon configuration, the nineteenth electron enters 4s."
+    },
+    {
+      "id": "phy-mcq-109",
+      "type": "mcq",
+      "prompt": "How many unpaired electrons does potassium have?",
+      "choices": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 1,
+      "explanation": "Potassium has one electron in its 4s orbital, which is unpaired."
+    },
+    {
+      "id": "phy-mcq-110",
+      "type": "mcq",
+      "prompt": "What is the electron configuration of iron (Z = 26)?",
+      "choices": [
+        "\\([Ar]3d^8\\)",
+        "\\([Ar]3d^4 4s^2\\)",
+        "\\([Ar]3d^6 4s^2\\)",
+        "\\([Ar]3d^{10}\\)"
+      ],
+      "answer": 2,
+      "explanation": "Iron has 26 electrons. After the argon core, two electrons occupy 4s and six occupy 3d."
+    },
+    {
+      "id": "phy-mcq-111",
+      "type": "mcq",
+      "prompt": "How many unpaired electrons does iron have in its ground state?",
+      "choices": [
+        "4",
+        "2",
+        "1",
+        "0"
+      ],
+      "answer": 0,
+      "explanation": "The six 3d electrons occupy five orbitals. Four remain unpaired after one orbital contains a pair."
+    },
+    {
+      "id": "phy-mcq-112",
+      "type": "mcq",
+      "prompt": "What is the special electron configuration of chromium?",
+      "choices": [
+        "\\([Ar]3d^4 4s^2\\)",
+        "\\([Ar]3d^6\\)",
+        "\\([Ar]3d^2 4s^4\\)",
+        "\\([Ar]3d^5 4s^1\\)"
+      ],
+      "answer": 3,
+      "explanation": "Chromium has a special arrangement because a half-filled d sub-shell provides extra stability."
+    },
+    {
+      "id": "phy-mcq-113",
+      "type": "mcq",
+      "prompt": "What is the special electron configuration of copper?",
+      "choices": [
+        "\\([Ar]3d^9 4s^2\\)",
+        "\\([Ar]3d^{10}4s^1\\)",
+        "\\([Ar]3d^8 4s^3\\)",
+        "\\([Ar]3d^6 4s^3\\)"
+      ],
+      "answer": 1,
+      "explanation": "Copper achieves a completely filled 3d sub-shell, which provides extra stability."
+    },
+    {
+      "id": "phy-mcq-114",
+      "type": "mcq",
+      "prompt": "Why do elements in the same periodic-table group often have similar chemical properties?",
+      "choices": [
+        "They have identical atomic masses.",
+        "They have the same number of neutrons.",
+        "They have similar outer-electron arrangements.",
+        "They have identical nuclei."
+      ],
+      "answer": 2,
+      "explanation": "Valence electrons largely determine chemical behaviour. Elements in the same group often have similar valence-electron configurations."
+    },
+    {
+      "id": "phy-mcq-115",
+      "type": "mcq",
+      "prompt": "A student fills three p orbitals by pairing electrons in the first orbital before using the others. Which rule is being violated?",
+      "choices": [
+        "Hund's rule",
+        "Aufbau principle",
+        "Pauli exclusion principle",
+        "Conservation of energy"
+      ],
+      "answer": 0,
+      "explanation": "Hund's rule requires electrons to occupy equal-energy orbitals singly before pairing.\n\nPart 8: Excitation, Emission and Franck–Hertz Experiment (116–130)"
+    },
+    {
+      "id": "phy-mcq-116",
+      "type": "mcq",
+      "prompt": "What is the ground state of an atom?",
+      "choices": [
+        "The highest possible energy state.",
+        "A state where the atom is ionised.",
+        "A state with no electrons.",
+        "The lowest available energy state."
+      ],
+      "answer": 3,
+      "explanation": "In the ground state, electrons occupy the lowest available energy levels."
+    },
+    {
+      "id": "phy-mcq-117",
+      "type": "mcq",
+      "prompt": "What happens during excitation?",
+      "choices": [
+        "An electron moves to a higher energy level.",
+        "An electron leaves the atom completely.",
+        "The nucleus becomes negatively charged.",
+        "An electron disappears."
+      ],
+      "answer": 0,
+      "explanation": "Excitation occurs when an electron receives energy but remains attached to the atom."
+    },
+    {
+      "id": "phy-mcq-118",
+      "type": "mcq",
+      "prompt": "What is the difference between excitation and ionisation?",
+      "choices": [
+        "They are exactly the same process.",
+        "Excitation removes the nucleus.",
+        "Excitation raises an electron's energy, while ionisation removes it from the atom.",
+        "Ionisation always produces visible light."
+      ],
+      "answer": 2,
+      "explanation": "During excitation, the electron remains bound to the atom. During ionisation, it gains enough energy to escape."
+    },
+    {
+      "id": "phy-mcq-119",
+      "type": "mcq",
+      "prompt": "A photon has 10.2 eV of energy and hydrogen is in its ground state. What happens?",
+      "choices": [
+        "Hydrogen is ionised.",
+        "The photon can be absorbed, exciting the electron to \\(n=2\\).",
+        "The photon is converted into a proton.",
+        "The electron moves directly to \\(n=\\infty\\)."
+      ],
+      "answer": 1,
+      "explanation": "The energy gap between \\(n=1\\) and \\(n=2\\) is exactly 10.2 eV."
+    },
+    {
+      "id": "phy-mcq-120",
+      "type": "mcq",
+      "prompt": "A photon with 11.0 eV hits ground-state hydrogen. What happens?",
+      "choices": [
+        "It excites the electron to \\(n=2\\).",
+        "It excites the electron to \\(n=3\\).",
+        "It ionises hydrogen.",
+        "It is not absorbed because its energy does not match an allowed transition and is below ionisation energy."
+      ],
+      "answer": 3,
+      "explanation": "Photon absorption requires an exact energy match. Since 11.0 eV does not match a transition from the ground state and is less than 13.6 eV, it is not absorbed."
+    },
+    {
+      "id": "phy-mcq-121",
+      "type": "mcq",
+      "prompt": "A photon with 14.0 eV hits ground-state hydrogen. What happens?",
+      "choices": [
+        "Hydrogen is ionised.",
+        "Hydrogen moves to \\(n=2\\).",
+        "Hydrogen moves to \\(n=3\\).",
+        "The photon is reflected with no interaction."
+      ],
+      "answer": 0,
+      "explanation": "Hydrogen needs 13.6 eV for ionisation. The extra energy becomes the released electron's kinetic energy.\n\\[\n14.0-13.6=0.4\\text{ eV}\n\\]"
+    },
+    {
+      "id": "phy-mcq-122",
+      "type": "mcq",
+      "prompt": "How is an atom excited through an electron collision?",
+      "choices": [
+        "The electron must have exactly the energy gap.",
+        "The incoming electron disappears.",
+        "The incoming electron transfers at least the required excitation energy.",
+        "The atom must be cooled."
+      ],
+      "answer": 2,
+      "explanation": "Unlike photon absorption, an incoming electron can transfer only part of its kinetic energy and retain the rest."
+    },
+    {
+      "id": "phy-mcq-123",
+      "type": "mcq",
+      "prompt": "A hydrogen atom requires 10.2 eV to reach \\(n=2\\). An incoming electron has 12.5 eV. How much energy can it retain after transferring 10.2 eV?",
+      "choices": [
+        "12.5 eV",
+        "2.3 eV",
+        "10.2 eV",
+        "22.7 eV"
+      ],
+      "answer": 1,
+      "explanation": "\\[\n12.5-10.2=2.3\\text{ eV}\n\\]\n\nThe incoming electron retains the remaining kinetic energy."
+    },
+    {
+      "id": "phy-mcq-124",
+      "type": "mcq",
+      "prompt": "What is the main conclusion of the Franck–Hertz experiment?",
+      "choices": [
+        "Electrons have no mass.",
+        "Atoms are completely empty.",
+        "All photons have the same energy.",
+        "Atoms absorb energy in specific, quantised amounts."
+      ],
+      "answer": 3,
+      "explanation": "The experiment showed that mercury atoms absorb energy through specific excitation steps rather than continuously."
+    },
+    {
+      "id": "phy-mcq-125",
+      "type": "mcq",
+      "prompt": "At what energy do mercury atoms first become excited in the Franck–Hertz experiment?",
+      "choices": [
+        "4.9 eV",
+        "10.2 eV",
+        "13.6 eV",
+        "20.6 eV"
+      ],
+      "answer": 0,
+      "explanation": "Mercury atoms require approximately 4.9 eV for their first excitation in this experiment."
+    },
+    {
+      "id": "phy-mcq-126",
+      "type": "mcq",
+      "prompt": "What type of light does excited mercury release when it returns to a lower energy level in the Franck–Hertz experiment?",
+      "choices": [
+        "Infrared",
+        "Radio waves",
+        "Ultraviolet",
+        "X-rays"
+      ],
+      "answer": 2,
+      "explanation": "The 4.9 eV energy difference produces a wavelength of approximately 253 nm, which is ultraviolet."
+    },
+    {
+      "id": "phy-mcq-127",
+      "type": "mcq",
+      "prompt": "What is spontaneous emission?",
+      "choices": [
+        "A photon forces an atom to absorb energy.",
+        "An excited atom releases a photon without an incoming photon triggering it.",
+        "Two atoms combine to produce a nucleus.",
+        "A photon becomes an electron."
+      ],
+      "answer": 1,
+      "explanation": "Spontaneous emission occurs naturally when an excited atom moves to a lower energy level."
+    },
+    {
+      "id": "phy-mcq-128",
+      "type": "mcq",
+      "prompt": "What is a cascade transition?",
+      "choices": [
+        "An electron remains permanently excited.",
+        "An atom absorbs several photons simultaneously.",
+        "An electron jumps directly from the nucleus.",
+        "An electron returns to a lower level through several smaller transitions."
+      ],
+      "answer": 3,
+      "explanation": "Instead of making one large transition, the electron passes through intermediate energy levels and emits several photons."
+    },
+    {
+      "id": "phy-mcq-129",
+      "type": "mcq",
+      "prompt": "What is fluorescence?",
+      "choices": [
+        "A material absorbs energy and emits light that stops almost immediately when the excitation source is removed.",
+        "A material glows forever.",
+        "A material produces light without absorbing energy.",
+        "A material emits only radio waves."
+      ],
+      "answer": 0,
+      "explanation": "Fluorescence is rapid light emission following absorption of energy, often ultraviolet light."
+    },
+    {
+      "id": "phy-mcq-130",
+      "type": "mcq",
+      "prompt": "Which statement correctly describes phosphorescence?",
+      "choices": [
+        "It stops instantly when the energy source is removed.",
+        "It only occurs in lasers.",
+        "It continues emitting light after the energy source is removed.",
+        "It produces only infrared radiation."
+      ],
+      "answer": 2,
+      "explanation": "Phosphorescent materials release stored energy over time. Glow-in-the-dark stickers are a common example.\n\nPart 9: Lasers and Laser Physics (131–145)"
+    },
+    {
+      "id": "phy-mcq-131",
+      "type": "mcq",
+      "prompt": "What does LASER stand for?",
+      "choices": [
+        "Light Absorption by Simple Electronic Radiation",
+        "Light Amplification by Stimulated Emission of Radiation",
+        "Light Activation by Spontaneous Electronic Reflection",
+        "Laser Amplification by Solar Energy Reflection"
+      ],
+      "answer": 1,
+      "explanation": "A laser amplifies light through stimulated emission, producing a concentrated and coherent beam."
+    },
+    {
+      "id": "phy-mcq-132",
+      "type": "mcq",
+      "prompt": "Which process is responsible for laser amplification?",
+      "choices": [
+        "Absorption",
+        "Reflection",
+        "Fluorescence",
+        "Stimulated emission"
+      ],
+      "answer": 3,
+      "explanation": "Stimulated emission allows an incoming photon to trigger an excited atom to release another identical photon."
+    },
+    {
+      "id": "phy-mcq-133",
+      "type": "mcq",
+      "prompt": "What happens during stimulated emission?",
+      "choices": [
+        "An incoming photon causes an excited atom to release an identical photon.",
+        "An atom absorbs a photon and becomes neutral.",
+        "A photon disappears without transferring energy.",
+        "An electron turns into a neutron."
+      ],
+      "answer": 0,
+      "explanation": "The two photons have the same energy, frequency, direction, and phase."
+    },
+    {
+      "id": "phy-mcq-134",
+      "type": "mcq",
+      "prompt": "What is population inversion?",
+      "choices": [
+        "More atoms occupy the ground state.",
+        "All atoms have the same mass.",
+        "More atoms occupy the upper laser level than the lower laser level.",
+        "All electrons leave the atom."
+      ],
+      "answer": 2,
+      "explanation": "Population inversion is necessary for stimulated emission to dominate over absorption in a laser medium."
+    },
+    {
+      "id": "phy-mcq-135",
+      "type": "mcq",
+      "prompt": "What is pumping in laser physics?",
+      "choices": [
+        "Removing the laser mirrors.",
+        "Supplying energy to the active medium to produce population inversion.",
+        "Cooling the laser until it stops working.",
+        "Increasing the wavelength of every photon."
+      ],
+      "answer": 1,
+      "explanation": "Pumping excites atoms into higher energy states, helping establish the population inversion required for laser operation."
+    },
+    {
+      "id": "phy-mcq-136",
+      "type": "mcq",
+      "prompt": "What is the purpose of a metastable state in a laser?",
+      "choices": [
+        "To make photons disappear.",
+        "To remove all electrons.",
+        "To decrease the speed of light.",
+        "To allow excited atoms to remain in an upper energy level longer."
+      ],
+      "answer": 3,
+      "explanation": "Metastable states have relatively long lifetimes, allowing atoms to accumulate in the upper laser level."
+    },
+    {
+      "id": "phy-mcq-137",
+      "type": "mcq",
+      "prompt": "Which laser is an example of a three-level laser?",
+      "choices": [
+        "Ruby laser",
+        "He–Ne laser",
+        "Nd:YAG laser",
+        "Semiconductor laser"
+      ],
+      "answer": 0,
+      "explanation": "The ruby laser is a classic three-level laser. Its laser transition ends at the ground state."
+    },
+    {
+      "id": "phy-mcq-138",
+      "type": "mcq",
+      "prompt": "Which is an example of a four-level laser?",
+      "choices": [
+        "Ruby laser",
+        "Hydrogen lamp",
+        "He–Ne laser",
+        "Ordinary light bulb"
+      ],
+      "answer": 2,
+      "explanation": "The He–Ne laser is commonly classified as a four-level laser. Its lower laser level is above the ground state."
+    },
+    {
+      "id": "phy-mcq-139",
+      "type": "mcq",
+      "prompt": "Why are four-level lasers generally easier to operate?",
+      "choices": [
+        "They do not need pumping.",
+        "Their lower laser level empties quickly, making population inversion easier.",
+        "They do not need an active medium.",
+        "They produce no heat."
+      ],
+      "answer": 1,
+      "explanation": "Because the lower laser level remains relatively unpopulated, fewer atoms need to be pumped into the upper level to achieve population inversion."
+    },
+    {
+      "id": "phy-mcq-140",
+      "type": "mcq",
+      "prompt": "What is the function of the active medium?",
+      "choices": [
+        "It reflects all light.",
+        "It measures the laser's temperature.",
+        "It converts light into sound.",
+        "It is the material where stimulated emission occurs."
+      ],
+      "answer": 3,
+      "explanation": "The active medium contains the atoms or particles that produce laser amplification."
+    },
+    {
+      "id": "phy-mcq-141",
+      "type": "mcq",
+      "prompt": "What is the function of the energy pump?",
+      "choices": [
+        "It supplies energy to create and maintain population inversion.",
+        "It absorbs the laser beam completely.",
+        "It changes the mirrors into lenses.",
+        "It prevents stimulated emission."
+      ],
+      "answer": 0,
+      "explanation": "The pump provides the energy required to excite atoms in the active medium."
+    },
+    {
+      "id": "phy-mcq-142",
+      "type": "mcq",
+      "prompt": "What is the function of the optical resonator?",
+      "choices": [
+        "It removes the active medium.",
+        "It converts light into electrical energy.",
+        "It reflects light back and forth through the active medium.",
+        "It prevents photons from travelling."
+      ],
+      "answer": 2,
+      "explanation": "The two mirrors allow photons to travel repeatedly through the active medium, stimulating further emission. One mirror allows some light to escape as the laser beam."
+    },
+    {
+      "id": "phy-mcq-143",
+      "type": "mcq",
+      "prompt": "What is the approximate gas ratio of helium to neon in a He–Ne laser according to the study guide?",
+      "choices": [
+        "1:10",
+        "10:1",
+        "2:1",
+        "1:1"
+      ],
+      "answer": 1,
+      "explanation": "The He–Ne laser contains approximately ten parts helium for every one part neon. Helium transfers excitation energy to neon."
+    },
+    {
+      "id": "phy-mcq-144",
+      "type": "mcq",
+      "prompt": "What is the approximate wavelength of the red He–Ne laser?",
+      "choices": [
+        "253 nm",
+        "486 nm",
+        "656 nm",
+        "633 nm"
+      ],
+      "answer": 3,
+      "explanation": "The neon laser transition releases approximately 1.96 eV.\n\\[\n\\lambda=\\frac{1240}{1.96}\n\\approx633\\text{ nm}\n\\]"
+    },
+    {
+      "id": "phy-mcq-145",
+      "type": "mcq",
+      "prompt": "Which statement correctly compares ordinary light and laser light?",
+      "choices": [
+        "Laser light is generally more coherent and directional than ordinary light.",
+        "Ordinary light is always monochromatic.",
+        "Laser light always has more total power than ordinary light.",
+        "Ordinary light is always coherent."
+      ],
+      "answer": 0,
+      "explanation": "Laser light has a more organised phase relationship and a narrow beam. However, a laser does not necessarily have more total power than an ordinary lamp.\n\nPart 10: Laser Calculations and Applications (146–150)"
+    },
+    {
+      "id": "phy-mcq-146",
+      "type": "mcq",
+      "prompt": "A laser produces light with a wavelength of 620 nm. What is the energy of one photon?",
+      "choices": [
+        "1.0 eV",
+        "3.0 eV",
+        "2.0 eV",
+        "4.0 eV"
+      ],
+      "answer": 2,
+      "explanation": "\\[\nE=\\frac{1240}{\\lambda}\n\\]\n\n\\[\nE=\\frac{1240}{620}=2.0\\text{ eV}\n\\]"
+    },
+    {
+      "id": "phy-mcq-147",
+      "type": "mcq",
+      "prompt": "A laser has a power of 2 mW. Each photon has an energy of \\(4\\times10^{-19}\\) J. How many photons does it produce per second?",
+      "choices": [
+        "\\(5\\times10^{15}\\) photons/s",
+        "\\(5\\times10^{12}\\) photons/s",
+        "\\(8\\times10^{15}\\) photons/s",
+        "\\(2\\times10^{19}\\) photons/s"
+      ],
+      "answer": 0,
+      "explanation": "First convert power:\n\\[\nP=2\\times10^{-3}\\text{ W}\n\\]\n\nThen:\n\\[\nN=\\frac{P}{E}\n\\]\n\n\\[\nN=\\frac{2\\times10^{-3}}{4\\times10^{-19}}\n\\]\n\n\\[\n\\boxed{N=5\\times10^{15}\\text{ photons/s}}\n\\]"
+    },
+    {
+      "id": "phy-mcq-148",
+      "type": "mcq",
+      "prompt": "A laser produces 4 mW of power over an area of \\(2\\times10^{-6}\\text{ m}^2\\). What is its intensity?",
+      "choices": [
+        "\\(200\\text{ W/m}^2\\)",
+        "\\(2000\\text{ W/m}^2\\)",
+        "\\(20000\\text{ W/m}^2\\)",
+        "\\(40000\\text{ W/m}^2\\)"
+      ],
+      "answer": 2,
+      "explanation": "Convert power:\n\\[\nP=4\\times10^{-3}\\text{ W}\n\\]\n\nUse:\n\\[\nI=\\frac{P}{A}\n\\]\n\n\\[\nI=\\frac{4\\times10^{-3}}{2\\times10^{-6}}\n\\]\n\n\\[\n\\boxed{I=2000\\text{ W/m}^2}\n\\]"
+    },
+    {
+      "id": "phy-mcq-149",
+      "type": "mcq",
+      "prompt": "A laser has a circular beam diameter of 2 mm. What is its radius in metres?",
+      "choices": [
+        "\\(2\\times10^{-3}\\) m",
+        "\\(1\\times10^{-3}\\) m",
+        "\\(2\\times10^{-2}\\) m",
+        "\\(1\\times10^{-2}\\) m"
+      ],
+      "answer": 1,
+      "explanation": "Radius is half the diameter.\n\\[\nr=\\frac{2}{2}=1\\text{ mm}\n\\]\n\nConverting to metres:\n\\[\nr=1\\times10^{-3}\\text{ m}\n\\]"
+    },
+    {
+      "id": "phy-mcq-150",
+      "type": "mcq",
+      "prompt": "Atoms are pumped from 0 eV to 3.0 eV, then move to a metastable level of 2.3 eV. The laser transition ends at 0.4 eV. Which statement is correct?",
+      "choices": [
+        "The laser produces ultraviolet light and is three-level.",
+        "The laser produces infrared light and is three-level.",
+        "The laser produces blue light and is four-level.",
+        "The laser produces approximately 653 nm red light and is four-level."
+      ],
+      "answer": 3,
+      "explanation": "First, calculate the laser transition energy:\n\\[\n\\Delta E=2.3-0.4=1.9\\text{ eV}\n\\]\n\nCalculate the wavelength:\n\\[\n\\lambda=\\frac{1240}{1.9}\n\\]\n\n\\[\n\\lambda\\approx653\\text{ nm}\n\\]\n\nThis is red visible light.\n\nThe laser transition ends at 0.4 eV rather than the ground state (0 eV), so it is a four-level laser.\n\nFinal Answer Distribution\nUse this table to check the distribution of correct answers across the 150 questions.\nCorrect choice\tNumber of answers\nA\t38\nB\t38\nC\t37\nD\t37\nTotal\t150\n\nImportant Topics to Revise Before Test 2\nThese are the areas covered by the questions that require particular attention:"
+    }
+  ],
+  "pinnedReferences": {
+    "text": "1. Formula sheet\n\nClosest approach (alpha particle): r0 = 2kZe^2 / K\nClosest approach (proton): r0 = kZe^2 / K\nRydberg formula: 1/lambda = R(1/n1^2 - 1/n2^2)\nBohr radius: rn = 0.529 n^2 / Z Angstrom\nBohr speed: vn = 2.18 x 10^6 Z / n m/s\nBohr energy: En = -13.6 Z^2 / n^2 eV\nKinetic energy: KE = -E\nPotential energy: PE = 2E\nPhoton energy: E = hf = hc/lambda\nWavelength shortcut: lambda = 1240 / Delta E nm\nSpectral lines: N = n(n - 1) / 2\nde Broglie wavelength: lambda = h / mv\nde Broglie using kinetic energy: lambda = h / sqrt(2mK)\nElectron through voltage: lambda = 1.227 / sqrt(V) nm\nBohr quantum condition: mvr = nh / 2pi\nMatter-wave orbit: 2pi r = n lambda\nUncertainty principle: Delta x Delta p >= h / 4pi\nOrbitals per shell: n^2\nMaximum electrons per shell: 2n^2\nElectrons per sub-shell: 2(2l + 1)\nLaser photons per second: N = P / E\nLaser intensity: I = P / A\nCircular area: A = pi r^2\n\n2. Important constants\nPlanck constant h = 6.63 x 10^-34 J s\nSpeed of light c = 3.0 x 10^8 m/s\nElectron mass me = 9.11 x 10^-31 kg\nProton mass mp = 1.67 x 10^-27 kg\nElectron charge e = 1.6 x 10^-19 C\nCoulomb constant k = 9.0 x 10^9 N m^2/C^2\nRydberg constant R = 1.097 x 10^7 m^-1\n1 eV = 1.6 x 10^-19 J\nhc = 1240 eV nm\nh / 4pi = 5.28 x 10^-35 J s"
+  }
+}
