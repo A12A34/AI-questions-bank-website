@@ -104,6 +104,11 @@ const els = {
   shuffleQuestions: document.getElementById("shuffle-questions"),
   shuffleChoices: document.getElementById("shuffle-choices"),
   bookmarksOnly: document.getElementById("bookmarks-only"),
+  quizFilterContainer: document.getElementById("quiz-filter-container"),
+  quizTypeFilters: document.getElementById("quiz-type-filters"),
+  quizTypeButtons: document.getElementById("quiz-type-buttons"),
+  quizTopicFilters: document.getElementById("quiz-topic-filters"),
+  quizTopicButtons: document.getElementById("quiz-topic-buttons"),
 };
 
 const state = {
@@ -114,6 +119,8 @@ const state = {
   shuffleQuestions: readStoredBool(STORAGE_KEYS.shuffleQuestions, false),
   shuffleChoices: readStoredBool(STORAGE_KEYS.shuffleChoices, false),
   bookmarksOnly: readStoredBool(STORAGE_KEYS.bookmarksOnly, false),
+  selectedType: "all",
+  selectedTopic: "all",
   bookmarks: new Set(),
   answers: {},
   revealed: {},
@@ -1001,7 +1008,7 @@ function moderateQuiz(id, status) {
   renderHome();
 }
 
-function startAttempt(bank) {
+function startAttempt(bank, resetFilters = true) {
   stopTimedTimer();
   state.bank = bank;
   state.questions = prepareAttempt(bank);
@@ -1009,14 +1016,150 @@ function startAttempt(bank) {
   state.revealed = {};
   state.submitted = false;
   state.score = null;
+  if (resetFilters) {
+    state.selectedType = "all";
+    state.selectedTopic = "all";
+  }
   state.bookmarks = loadBookmarks(bank.id);
   state.activeId = state.questions[0]?.id ?? null;
   state.timedIndex = 0;
   state.timedSeconds = 20;
   els.title.textContent = bank.title;
   renderPinnedReference(bank);
+  renderQuizFilters();
   setView("quiz");
   renderQuiz();
+}
+
+function renderQuizFilters() {
+  if (!state.bank || !state.questions.length) {
+    if (els.quizFilterContainer) els.quizFilterContainer.hidden = true;
+    return;
+  }
+
+  const typeCounts = new Map();
+  state.questions.forEach((q) => {
+    const t = isCodeQuestion(q) ? "coding" : q.type;
+    typeCounts.set(t, (typeCounts.get(t) || 0) + 1);
+  });
+
+  const topicCounts = new Map();
+  state.questions.forEach((q) => {
+    const topic = q.topic || q.section;
+    if (topic && String(topic).trim()) {
+      const trimmed = String(topic).trim();
+      topicCounts.set(trimmed, (topicCounts.get(trimmed) || 0) + 1);
+    }
+  });
+
+  els.quizFilterContainer.hidden = false;
+
+  if (els.quizTypeFilters && els.quizTypeButtons) {
+    if (typeCounts.size) {
+      els.quizTypeFilters.hidden = false;
+      els.quizTypeButtons.innerHTML = "";
+
+      const allBtn = document.createElement("button");
+      allBtn.type = "button";
+      allBtn.className = `filter-chip ${state.selectedType === "all" ? "is-active" : ""}`;
+      allBtn.dataset.type = "all";
+      allBtn.innerHTML = `All <span class="chip-count">${state.questions.length}</span>`;
+      allBtn.addEventListener("click", () => setTypeFilter("all"));
+      els.quizTypeButtons.append(allBtn);
+
+      const typeLabels = {
+        coding: "Coding",
+        mcq: "Multiple Choice",
+        tf: "True / False",
+        match: "Matching",
+        numeric: "Numeric",
+        writing: "Short Answer",
+        reading: "Reading",
+        multi: "Multi-Select",
+      };
+
+      const order = ["coding", "mcq", "tf", "numeric", "match", "multi", "writing", "reading"];
+      const sortedTypes = [...typeCounts.keys()].sort((a, b) => {
+        const ia = order.indexOf(a);
+        const ib = order.indexOf(b);
+        if (ia !== -1 && ib !== -1) return ia - ib;
+        if (ia !== -1) return -1;
+        if (ib !== -1) return 1;
+        return a.localeCompare(b);
+      });
+
+      sortedTypes.forEach((typeKey) => {
+        const count = typeCounts.get(typeKey);
+        const label = typeLabels[typeKey] || typeKey;
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = `filter-chip ${state.selectedType === typeKey ? "is-active" : ""}`;
+        btn.dataset.type = typeKey;
+        btn.innerHTML = `${label} <span class="chip-count">${count}</span>`;
+        btn.addEventListener("click", () => setTypeFilter(typeKey));
+        els.quizTypeButtons.append(btn);
+      });
+    } else {
+      els.quizTypeFilters.hidden = true;
+    }
+  }
+
+  if (els.quizTopicFilters && els.quizTopicButtons) {
+    if (topicCounts.size) {
+      els.quizTopicFilters.hidden = false;
+      els.quizTopicButtons.innerHTML = "";
+
+      const allTopicBtn = document.createElement("button");
+      allTopicBtn.type = "button";
+      allTopicBtn.className = `filter-chip ${state.selectedTopic === "all" ? "is-active" : ""}`;
+      allTopicBtn.dataset.topic = "all";
+      allTopicBtn.innerHTML = `All Topics <span class="chip-count">${state.questions.length}</span>`;
+      allTopicBtn.addEventListener("click", () => setTopicFilter("all"));
+      els.quizTopicButtons.append(allTopicBtn);
+
+      topicCounts.forEach((count, topicName) => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = `filter-chip ${state.selectedTopic === topicName ? "is-active" : ""}`;
+        btn.dataset.topic = topicName;
+        btn.innerHTML = `${escapeHtml(topicName)} <span class="chip-count">${count}</span>`;
+        btn.addEventListener("click", () => setTopicFilter(topicName));
+        els.quizTopicButtons.append(btn);
+      });
+    } else {
+      els.quizTopicFilters.hidden = true;
+    }
+  }
+}
+
+function setTypeFilter(typeKey) {
+  state.selectedType = state.selectedType === typeKey ? "all" : typeKey;
+  if (els.quizTypeButtons) {
+    els.quizTypeButtons.querySelectorAll(".filter-chip").forEach((btn) => {
+      btn.classList.toggle("is-active", btn.dataset.type === state.selectedType);
+    });
+  }
+  if (state.mode === "timed") {
+    state.timedIndex = 0;
+    renderQuiz();
+  } else {
+    applyVisibility();
+  }
+}
+
+function setTopicFilter(topicKey) {
+  state.selectedTopic = state.selectedTopic === topicKey ? "all" : topicKey;
+  if (els.quizTopicButtons) {
+    els.quizTopicButtons.querySelectorAll(".filter-chip").forEach((btn) => {
+      btn.classList.toggle("is-active", btn.dataset.topic === state.selectedTopic);
+    });
+  }
+  if (state.mode === "timed") {
+    state.timedIndex = 0;
+    renderQuiz();
+  } else {
+    applyVisibility();
+  }
 }
 
 function getProgress(bankId) {
@@ -1117,7 +1260,9 @@ function gradeQuestion(question) {
 }
 
 function computeScore() {
-  const scored = state.questions.filter((question) => isScoredType(question.type));
+  const visible = visibleQuestions().map(({ question }) => question);
+  const target = visible.length ? visible : state.questions;
+  const scored = target.filter((question) => isScoredType(question.type));
   const correct = scored.filter((question) => gradeQuestion(question).correct).length;
   return { correct, total: scored.length };
 }
@@ -1126,17 +1271,41 @@ function questionIsLocked(question) {
   return state.submitted || Boolean(state.revealed[question.id] && state.mode === "practice");
 }
 
+function matchesTypeFilter(question) {
+  if (!state.selectedType || state.selectedType === "all") return true;
+  if (state.selectedType === "coding") {
+    return isCodeQuestion(question);
+  }
+  return question.type === state.selectedType;
+}
+
+function matchesTopicFilter(question) {
+  if (!state.selectedTopic || state.selectedTopic === "all") return true;
+  const topic = (question.topic || question.section || "").trim();
+  return topic === state.selectedTopic;
+}
+
+function matchesQuestionFilter(question) {
+  if (state.bookmarksOnly && !state.bookmarks.has(question.id)) return false;
+  if (!matchesTypeFilter(question)) return false;
+  if (!matchesTopicFilter(question)) return false;
+  return true;
+}
+
 function visibleQuestions() {
-  if (!state.bookmarksOnly) return state.questions.map((question, index) => ({ question, index }));
   return state.questions
     .map((question, index) => ({ question, index }))
-    .filter(({ question }) => state.bookmarks.has(question.id));
+    .filter(({ question }) => matchesQuestionFilter(question));
 }
 
 function updateProgress() {
-  const answered = state.questions.filter(isAnswered).length;
+  const visible = visibleQuestions();
+  const total = state.questions.length;
+  const isFiltered = visible.length !== total;
+  const answered = visible.filter(({ question }) => isAnswered(question)).length;
   const bookmarked = state.questions.filter((question) => state.bookmarks.has(question.id)).length;
-  els.progress.textContent = `${state.questions.length} questions · ${answered} answered · ${bookmarked} bookmarked`;
+  const countStr = isFiltered ? `${visible.length} of ${total} questions shown` : `${total} questions`;
+  els.progress.textContent = `${countStr} · ${answered} answered · ${bookmarked} bookmarked`;
   if (state.submitted && state.score) {
     els.scoreBanner.hidden = false;
     els.scoreBanner.textContent =
@@ -1195,7 +1364,14 @@ function refreshJumpNav() {
   });
   const visibleItems = visibleJumpIds.length;
   const activeIndex = visibleJumpIds.indexOf(state.activeId);
-  els.emptyFilter.hidden = !(state.bookmarksOnly && visibleItems === 0);
+  els.emptyFilter.hidden = visibleItems > 0;
+  if (visibleItems === 0) {
+    if (state.bookmarksOnly && state.selectedType === "all" && state.selectedTopic === "all") {
+      els.emptyFilter.textContent = "No bookmarked questions yet. Star a question to save it here.";
+    } else {
+      els.emptyFilter.textContent = "No questions match the selected filter. Try choosing a different type, topic, or resetting filters.";
+    }
+  }
   if (els.jumpPrev) els.jumpPrev.disabled = activeIndex <= 0;
   if (els.jumpNext) els.jumpNext.disabled = activeIndex === -1 || activeIndex >= visibleItems - 1;
   lastActiveId = state.activeId;
@@ -1235,14 +1411,27 @@ function applyVisibility() {
   state.questions.forEach((question) => {
     const card = document.getElementById(`question-${question.id}`);
     if (!card) return;
-    const show = !state.bookmarksOnly || state.bookmarks.has(question.id);
+    const show = matchesQuestionFilter(question);
     card.classList.toggle("is-hidden", !show);
   });
-  const visibleIds = visibleQuestions().map(({ question }) => question.id);
+  const visible = visibleQuestions();
+  const visibleSections = new Set(
+    visible
+      .map(({ question }) => question.section)
+      .filter(Boolean)
+  );
+  if (els.list) {
+    els.list.querySelectorAll(".question-section").forEach((h) => {
+      const sec = h.dataset.section || h.textContent.trim();
+      h.classList.toggle("is-hidden", !visibleSections.has(sec));
+    });
+  }
+  const visibleIds = visible.map(({ question }) => question.id);
   if (visibleIds.length && !visibleIds.includes(state.activeId)) {
     state.activeId = visibleIds[0];
   }
   updateJumpNav();
+  updateProgress();
 }
 
 function renderQuiz() {
@@ -1252,16 +1441,20 @@ function renderQuiz() {
   els.timer.hidden = state.mode !== "timed" || state.submitted;
   els.jumpNav.hidden = state.mode === "timed";
   els.list.innerHTML = "";
+  const visible = visibleQuestions();
   const questions = state.mode === "timed"
-    ? state.questions.slice(state.timedIndex, state.timedIndex + 1)
+    ? (visible[state.timedIndex] ? [visible[state.timedIndex].question] : [])
     : state.questions;
   let previousSection = null;
   questions.forEach((question, index) => {
-    const actualIndex = state.mode === "timed" ? state.timedIndex : index;
+    const actualIndex = state.mode === "timed"
+      ? (visible[state.timedIndex] ? visible[state.timedIndex].index : state.timedIndex)
+      : index;
     if (question.section && question.section !== previousSection) {
       const heading = document.createElement("h2");
       heading.className = "question-section";
       heading.textContent = question.section;
+      heading.dataset.section = question.section;
       els.list.append(heading);
       previousSection = question.section;
     }
@@ -1269,19 +1462,21 @@ function renderQuiz() {
     article.className = "card question-card";
     article.id = `question-${question.id}`;
     article.dataset.id = question.id;
-    if (state.bookmarksOnly && !state.bookmarks.has(question.id)) {
+    if (!matchesQuestionFilter(question)) {
       article.classList.add("is-hidden");
     }
     renderQuestionCard(article, question, actualIndex);
     els.list.append(article);
   });
-  updateJumpNav();
+  applyVisibility();
   observeQuestions();
   if (state.mode === "timed" && !state.submitted) {
-    els.btnNextTimed.textContent = state.timedIndex === state.questions.length - 1 ? "Finish" : "Next question";
+    els.btnNextTimed.textContent = state.timedIndex >= visible.length - 1 ? "Finish" : "Next question";
     startTimedTimer();
   }
 }
+
+
 
 function renderQuestionCard(article, question, index) {
   article.innerHTML = "";
@@ -1678,12 +1873,15 @@ function updateTimer() {
 
 function nextTimedQuestion() {
   if (state.mode !== "timed" || state.submitted) return;
-  if (state.timedIndex >= state.questions.length - 1) {
+  const visible = visibleQuestions();
+  const maxIndex = (visible.length ? visible.length : state.questions.length) - 1;
+  if (state.timedIndex >= maxIndex) {
     submitTest();
     return;
   }
   state.timedIndex += 1;
-  state.activeId = state.questions[state.timedIndex]?.id ?? null;
+  const target = visible.length ? visible[state.timedIndex]?.question : state.questions[state.timedIndex];
+  state.activeId = target?.id ?? null;
   renderQuiz();
 }
 
@@ -1715,18 +1913,18 @@ function bindControls() {
     input.addEventListener("change", () => {
       state.mode = input.value;
       persist(STORAGE_KEYS.mode, state.mode);
-      if (state.bank) startAttempt(state.bank);
+      if (state.bank) startAttempt(state.bank, false);
     });
   });
   els.shuffleQuestions.addEventListener("change", () => {
     state.shuffleQuestions = els.shuffleQuestions.checked;
     persist(STORAGE_KEYS.shuffleQuestions, state.shuffleQuestions ? "1" : "0");
-    if (state.bank) startAttempt(state.bank);
+    if (state.bank) startAttempt(state.bank, false);
   });
   els.shuffleChoices.addEventListener("change", () => {
     state.shuffleChoices = els.shuffleChoices.checked;
     persist(STORAGE_KEYS.shuffleChoices, state.shuffleChoices ? "1" : "0");
-    if (state.bank) startAttempt(state.bank);
+    if (state.bank) startAttempt(state.bank, false);
   });
   els.bookmarksOnly.addEventListener("change", () => {
     state.bookmarksOnly = els.bookmarksOnly.checked;
@@ -1741,6 +1939,8 @@ function bindControls() {
   }
   els.btnBack.addEventListener("click", () => {
     state.bank = null;
+    state.selectedType = "all";
+    state.selectedTopic = "all";
     renderHome();
   });
   els.btnSubmit.addEventListener("click", submitTest);

@@ -13,7 +13,9 @@
         "The program stops."
       ],
       "answer": 1,
-      "explanation": "The WS6 sequence requires green to turn off before the yellow transition begins."
+      "explanation": "The WS6 sequence requires green to turn off before the yellow transition begins.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q2",
@@ -26,7 +28,9 @@
         "10"
       ],
       "answer": 2,
-      "explanation": "One complete flash takes one second, so five flashes take five seconds."
+      "explanation": "One complete flash takes one second, so five flashes take five seconds.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q3",
@@ -39,7 +43,9 @@
         "6 seconds"
       ],
       "answer": 1,
-      "explanation": "Each iteration takes one second, so three iterations take three seconds."
+      "explanation": "Each iteration takes one second, so three iterations take three seconds.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q4",
@@ -52,7 +58,9 @@
         "The program waits for a button press."
       ],
       "answer": 1,
-      "explanation": "sleep(5) pauses the program for five seconds."
+      "explanation": "sleep(5) pauses the program for five seconds.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q5",
@@ -65,7 +73,9 @@
         "yellow.off()"
       ],
       "answer": 2,
-      "explanation": "Waiting for release separates one button press from the next cycle."
+      "explanation": "Waiting for release separates one button press from the next cycle.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q6",
@@ -78,7 +88,9 @@
         "The program runs more slowly."
       ],
       "answer": 1,
-      "explanation": "Each colour channel needs current limiting."
+      "explanation": "Each colour channel needs current limiting.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q7",
@@ -91,7 +103,9 @@
         "All channels turn off."
       ],
       "answer": 0,
-      "explanation": "Common-cathode channels turn on with HIGH."
+      "explanation": "Common-cathode channels turn on with HIGH.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q8",
@@ -104,7 +118,9 @@
         "The Raspberry Pi ignores the LED."
       ],
       "answer": 0,
-      "explanation": "Common-anode logic is inverted."
+      "explanation": "Common-anode logic is inverted.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q9",
@@ -117,7 +133,9 @@
         "(0, 1, 1)"
       ],
       "answer": 1,
-      "explanation": "Yellow combines red and green."
+      "explanation": "Yellow combines red and green.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q10",
@@ -130,7 +148,9 @@
         "White"
       ],
       "answer": 2,
-      "explanation": "Green and blue together produce cyan."
+      "explanation": "Green and blue together produce cyan.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q11",
@@ -143,7 +163,9 @@
         "All three"
       ],
       "answer": 2,
-      "explanation": "The first and third values are active."
+      "explanation": "The first and third values are active.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q12",
@@ -156,7 +178,9 @@
         "(0, 1, 1)"
       ],
       "answer": 1,
-      "explanation": "All three channels must be zero."
+      "explanation": "All three channels must be zero.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q13",
@@ -169,7 +193,9 @@
         "All colours off"
       ],
       "answer": 1,
-      "explanation": "A channel value of 0.5 represents intermediate brightness."
+      "explanation": "A channel value of 0.5 represents intermediate brightness.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q14",
@@ -182,7 +208,9 @@
         "led.color = (1, 1, 1)"
       ],
       "answer": 3,
-      "explanation": "White activates all three channels."
+      "explanation": "White activates all three channels.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q15",
@@ -195,7 +223,9 @@
         "300 ohms"
       ],
       "answer": 3,
-      "explanation": "Series resistance is the sum: 100 + 200 = 300 ohms."
+      "explanation": "Series resistance is the sum: 100 + 200 = 300 ohms.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q16",
@@ -208,7 +238,9 @@
         "300 ohms"
       ],
       "answer": 0,
-      "explanation": "The parallel formula gives approximately 66.7 ohms."
+      "explanation": "The parallel formula gives approximately 66.7 ohms.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q17",
@@ -221,7 +253,9 @@
         "Use one resistor for the button."
       ],
       "answer": 1,
-      "explanation": "Each colour channel needs its own current-limiting resistor."
+      "explanation": "Each colour channel needs its own current-limiting resistor.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q18",
@@ -234,7 +268,9 @@
         "The GPIO changes automatically."
       ],
       "answer": 1,
-      "explanation": "Higher resistance reduces current and brightness."
+      "explanation": "Higher resistance reduces current and brightness.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q19",
@@ -247,7 +283,9 @@
         "random"
       ],
       "answer": 2,
-      "explanation": "colorzero provides the Color class."
+      "explanation": "colorzero provides the Color class.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q20",
@@ -260,7 +298,9 @@
         "Color.led(\"blue\")"
       ],
       "answer": 0,
-      "explanation": "Color(\"blue\") can be assigned to the color property."
+      "explanation": "Color(\"blue\") can be assigned to the color property.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q21",
@@ -273,7 +313,9 @@
         "run.py"
       ],
       "answer": 1,
-      "explanation": "python3 launches the Python 3 interpreter."
+      "explanation": "python3 launches the Python 3 interpreter.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q22",
@@ -286,7 +328,9 @@
         "Common cathode"
       ],
       "answer": 1,
-      "explanation": "RGBLED arguments are red, green, then blue."
+      "explanation": "RGBLED arguments are red, green, then blue.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q23",
@@ -299,7 +343,9 @@
         "The button pin changes."
       ],
       "answer": 1,
-      "explanation": "The second and third arguments represent green and blue."
+      "explanation": "The second and third arguments represent green and blue.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q24",
@@ -312,7 +358,9 @@
         "9"
       ],
       "answer": 2,
-      "explanation": "There are 2^3, or eight, combinations."
+      "explanation": "There are 2^3, or eight, combinations.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q25",
@@ -325,7 +373,9 @@
         "Wait for three presses."
       ],
       "answer": 1,
-      "explanation": "Each loop controls one binary channel."
+      "explanation": "Each loop controls one binary channel.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q26",
@@ -338,7 +388,9 @@
         "The LED stays off."
       ],
       "answer": 0,
-      "explanation": "The delay controls display duration."
+      "explanation": "The delay controls display duration.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q27",
@@ -351,7 +403,9 @@
         "(1, 1, 1)"
       ],
       "answer": 1,
-      "explanation": "Green is the second channel."
+      "explanation": "Green is the second channel.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q28",
@@ -364,7 +418,9 @@
         "led.on() and buzzer.close()"
       ],
       "answer": 1,
-      "explanation": "These calls start matching red flashing and beeping."
+      "explanation": "These calls start matching red flashing and beeping.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q29",
@@ -377,7 +433,9 @@
         "loop=False"
       ],
       "answer": 0,
-      "explanation": "background=True makes the operation non-blocking."
+      "explanation": "background=True makes the operation non-blocking.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q30",
@@ -390,7 +448,9 @@
         "It becomes a button event."
       ],
       "answer": 1,
-      "explanation": "A blocking indefinite operation prevents later instructions."
+      "explanation": "A blocking indefinite operation prevents later instructions.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q31",
@@ -403,7 +463,9 @@
         "Start the traffic-light sequence."
       ],
       "answer": 1,
-      "explanation": "The second press ends the alarm state."
+      "explanation": "The second press ends the alarm state.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q32",
@@ -416,7 +478,9 @@
         "It changes GPIO numbers."
       ],
       "answer": 1,
-      "explanation": "Waiting for release separates distinct presses."
+      "explanation": "Waiting for release separates distinct presses.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q33",
@@ -429,7 +493,9 @@
         "break"
       ],
       "answer": 1,
-      "explanation": "while True creates an infinite loop."
+      "explanation": "while True creates an infinite loop.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q34",
@@ -442,7 +508,9 @@
         "Wait before turning green on."
       ],
       "answer": 0,
-      "explanation": "The WS6 sequence returns to green."
+      "explanation": "The WS6 sequence returns to green.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q35",
@@ -455,7 +523,9 @@
         "Remove the loop."
       ],
       "answer": 0,
-      "explanation": "The stages should not overlap."
+      "explanation": "The stages should not overlap.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q36",
@@ -468,7 +538,9 @@
         "LED(30)"
       ],
       "answer": 1,
-      "explanation": "sleep(30) pauses while red remains on."
+      "explanation": "sleep(30) pauses while red remains on.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q37",
@@ -481,7 +553,9 @@
         "Remove all delays."
       ],
       "answer": 0,
-      "explanation": "Short delays are suitable for testing only."
+      "explanation": "Short delays are suitable for testing only.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q38",
@@ -494,7 +568,9 @@
         "Remove the loop."
       ],
       "answer": 1,
-      "explanation": "Pedestrian perspective uses the opposite default role."
+      "explanation": "Pedestrian perspective uses the opposite default role.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q39",
@@ -507,7 +583,9 @@
         "5 seconds"
       ],
       "answer": 1,
-      "explanation": "The two half-second periods total one second."
+      "explanation": "The two half-second periods total one second.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q40",
@@ -520,7 +598,9 @@
         "Button delay."
       ],
       "answer": 0,
-      "explanation": "The software channel order must match the wiring."
+      "explanation": "The software channel order must match the wiring.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q41",
@@ -533,7 +613,9 @@
         "led.color = sleep(\"red\")"
       ],
       "answer": 0,
-      "explanation": "Color(\"red\") creates the named colour value."
+      "explanation": "Color(\"red\") creates the named colour value.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q42",
@@ -546,7 +628,9 @@
         "led = gpiozero.LED(17, 27, 22)"
       ],
       "answer": 1,
-      "explanation": "The module prefix is required after import gpiozero."
+      "explanation": "The module prefix is required after import gpiozero.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q43",
@@ -559,7 +643,9 @@
         "led = RGBLED(\"red\")"
       ],
       "answer": 1,
-      "explanation": "Direct import allows RGBLED without a prefix."
+      "explanation": "Direct import allows RGBLED without a prefix.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q44",
@@ -572,7 +658,9 @@
         "led.color = (1, 1, 0)"
       ],
       "answer": 0,
-      "explanation": "Magenta combines red and blue."
+      "explanation": "Magenta combines red and blue.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q45",
@@ -585,7 +673,9 @@
         "led.color = (1, 0, 1)"
       ],
       "answer": 1,
-      "explanation": "Cyan combines green and blue."
+      "explanation": "Cyan combines green and blue.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q46",
@@ -598,7 +688,9 @@
         "Leave it unconnected"
       ],
       "answer": 0,
-      "explanation": "The common cathode is the shared negative connection."
+      "explanation": "The common cathode is the shared negative connection.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q47",
@@ -611,7 +703,9 @@
         "It removes the need for GND."
       ],
       "answer": 0,
-      "explanation": "Separate resistors protect each channel."
+      "explanation": "Separate resistors protect each channel.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q48",
@@ -624,7 +718,9 @@
         "They remove the button."
       ],
       "answer": 0,
-      "explanation": "Background operations are non-blocking."
+      "explanation": "Background operations are non-blocking.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q49",
@@ -637,7 +733,9 @@
         "Turn the traffic light green."
       ],
       "answer": 1,
-      "explanation": "The off methods end the alarm state."
+      "explanation": "The off methods end the alarm state.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q50",
@@ -650,707 +748,909 @@
         "Leave the LED red."
       ],
       "answer": 1,
-      "explanation": "The loop returns to the default state."
+      "explanation": "The loop returns to the default state.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q51",
       "type": "tf",
       "prompt": "The program should turn green off before beginning yellow flashing.",
       "answer": true,
-      "explanation": "This follows the required traffic-light sequence."
+      "explanation": "This follows the required traffic-light sequence.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q52",
       "type": "tf",
       "prompt": "The final WS6 program keeps red on for five seconds.",
       "answer": false,
-      "explanation": "The final program requires 30 seconds; five seconds is for testing."
+      "explanation": "The final program requires 30 seconds; five seconds is for testing.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q53",
       "type": "tf",
       "prompt": "Yellow ON for 0.5 seconds and OFF for 0.5 seconds makes a one-second flash.",
       "answer": true,
-      "explanation": "The two delays add up to one second."
+      "explanation": "The two delays add up to one second.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q54",
       "type": "tf",
       "prompt": "Changing range(5) to range(10) with the same delays makes the transition last ten seconds.",
       "answer": true,
-      "explanation": "Each iteration takes one second."
+      "explanation": "Each iteration takes one second.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q55",
       "type": "tf",
       "prompt": "sleep(30) turns the red LED on automatically.",
       "answer": false,
-      "explanation": "sleep only pauses; red.on() turns the LED on."
+      "explanation": "sleep only pauses; red.on() turns the LED on.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q56",
       "type": "tf",
       "prompt": "The traffic-light program uses while True to repeat continuously.",
       "answer": true,
-      "explanation": "An infinite loop keeps the system operating."
+      "explanation": "An infinite loop keeps the system operating.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q57",
       "type": "tf",
       "prompt": "wait_for_release can prevent a held button from triggering another cycle.",
       "answer": true,
-      "explanation": "It waits until the button is released."
+      "explanation": "It waits until the button is released.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q58",
       "type": "tf",
       "prompt": "The optional buzzer is required for the pedestrian simulator.",
       "answer": false,
-      "explanation": "The buzzer is optional."
+      "explanation": "The buzzer is optional.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q59",
       "type": "tf",
       "prompt": "Green is the default light in the car-perspective simulator.",
       "answer": true,
-      "explanation": "The system normally allows cars to pass."
+      "explanation": "The system normally allows cars to pass.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q60",
       "type": "tf",
       "prompt": "The pedestrian-perspective version inverts red and green roles.",
       "answer": true,
-      "explanation": "Pedestrians receive green temporarily when safe."
+      "explanation": "Pedestrians receive green temporarily when safe.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q61",
       "type": "tf",
       "prompt": "A common-cathode RGB LED uses HIGH to turn on a colour channel.",
       "answer": true,
-      "explanation": "Its cathode is connected to GND."
+      "explanation": "Its cathode is connected to GND.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q62",
       "type": "tf",
       "prompt": "A common-anode RGB LED uses HIGH to turn on a colour channel.",
       "answer": false,
-      "explanation": "Common-anode logic is inverted."
+      "explanation": "Common-anode logic is inverted.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q63",
       "type": "tf",
       "prompt": "A common-cathode RGB LED has three channels sharing one cathode.",
       "answer": true,
-      "explanation": "The red, green, and blue channels share the negative connection."
+      "explanation": "The red, green, and blue channels share the negative connection.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q64",
       "type": "tf",
       "prompt": "The common-cathode pin should connect directly to GND.",
       "answer": true,
-      "explanation": "That is the required WS7 connection."
+      "explanation": "That is the required WS7 connection.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q65",
       "type": "tf",
       "prompt": "One 330-ohm resistor is enough for all three RGB channels.",
       "answer": false,
-      "explanation": "Each channel needs its own resistor."
+      "explanation": "Each channel needs its own resistor.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q66",
       "type": "tf",
       "prompt": "A resistor helps protect both the LED and GPIO pins.",
       "answer": true,
-      "explanation": "It limits current."
+      "explanation": "It limits current.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q67",
       "type": "tf",
       "prompt": "Very high resistance can make an LED dim or fail to light.",
       "answer": true,
-      "explanation": "Higher resistance reduces current."
+      "explanation": "Higher resistance reduces current.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q68",
       "type": "tf",
       "prompt": "Very low resistance can risk damage to the LED and GPIO pins.",
       "answer": true,
-      "explanation": "Too much current can flow."
+      "explanation": "Too much current can flow.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q69",
       "type": "tf",
       "prompt": "100 ohms and 200 ohms in series total 200 ohms.",
       "answer": false,
-      "explanation": "Series resistance is 300 ohms."
+      "explanation": "Series resistance is 300 ohms.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q70",
       "type": "tf",
       "prompt": "100 ohms and 200 ohms in parallel total approximately 67 ohms.",
       "answer": true,
-      "explanation": "The parallel formula gives about 66.7 ohms."
+      "explanation": "The parallel formula gives about 66.7 ohms.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q71",
       "type": "tf",
       "prompt": "In led.color = (1, 0, 0), values represent red, green, and blue in that order.",
       "answer": true,
-      "explanation": "The tuple follows RGB order."
+      "explanation": "The tuple follows RGB order.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q72",
       "type": "tf",
       "prompt": "The value (0, 0, 1) produces red.",
       "answer": false,
-      "explanation": "It produces blue."
+      "explanation": "It produces blue.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q73",
       "type": "tf",
       "prompt": "The value (1, 1, 0) produces yellow.",
       "answer": true,
-      "explanation": "Red and green combine to make yellow."
+      "explanation": "Red and green combine to make yellow.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q74",
       "type": "tf",
       "prompt": "The value (1, 0, 1) produces cyan.",
       "answer": false,
-      "explanation": "It produces magenta."
+      "explanation": "It produces magenta.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q75",
       "type": "tf",
       "prompt": "The value (1, 1, 1) activates all three channels.",
       "answer": true,
-      "explanation": "All channels are at full brightness."
+      "explanation": "All channels are at full brightness.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q76",
       "type": "tf",
       "prompt": "The value (0, 0, 0) turns the RGB LED off.",
       "answer": true,
-      "explanation": "All channels are zero."
+      "explanation": "All channels are zero.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q77",
       "type": "tf",
       "prompt": "RGB channels can only use 0 or 1, never decimal values.",
       "answer": false,
-      "explanation": "Values between 0 and 1 control intermediate brightness."
+      "explanation": "Values between 0 and 1 control intermediate brightness.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q78",
       "type": "tf",
       "prompt": "A value of 0.5 represents half brightness.",
       "answer": true,
-      "explanation": "It is halfway between off and full brightness."
+      "explanation": "It is halfway between off and full brightness.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q79",
       "type": "tf",
       "prompt": "An RGB LED has eight ON/OFF combinations including OFF.",
       "answer": true,
-      "explanation": "Three binary channels produce 2^3 combinations."
+      "explanation": "Three binary channels produce 2^3 combinations.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q80",
       "type": "tf",
       "prompt": "There are eight illuminated colours plus a separate OFF state with binary channels.",
       "answer": false,
-      "explanation": "There are eight total combinations including OFF."
+      "explanation": "There are eight total combinations including OFF.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q81",
       "type": "tf",
       "prompt": "colorzero supports setting a colour by name.",
       "answer": true,
-      "explanation": "The Color class accepts names such as red."
+      "explanation": "The Color class accepts names such as red.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q82",
       "type": "tf",
       "prompt": "led.color = Color(\"red\") works after importing Color.",
       "answer": true,
-      "explanation": "This is the colour-name method."
+      "explanation": "This is the colour-name method.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q83",
       "type": "tf",
       "prompt": "gpiozero provides the RGBLED class used in WS7.",
       "answer": true,
-      "explanation": "RGBLED is part of gpiozero."
+      "explanation": "RGBLED is part of gpiozero.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q84",
       "type": "tf",
       "prompt": "python3 starts the Python 3 interpreter.",
       "answer": true,
-      "explanation": "It is the Raspberry Pi command used in the worksheet."
+      "explanation": "It is the Raspberry Pi command used in the worksheet.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q85",
       "type": "tf",
       "prompt": "After import gpiozero, RGBLED can be used without a prefix.",
       "answer": false,
-      "explanation": "Use gpiozero.RGBLED or import the class directly."
+      "explanation": "Use gpiozero.RGBLED or import the class directly.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q86",
       "type": "tf",
       "prompt": "After from gpiozero import RGBLED, RGBLED(17, 27, 22) is valid.",
       "answer": true,
-      "explanation": "The class was imported directly."
+      "explanation": "The class was imported directly.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q87",
       "type": "tf",
       "prompt": "GPIO17, GPIO27, and GPIO22 represent red, green, and blue in that order.",
       "answer": true,
-      "explanation": "This is the WS7 pin order."
+      "explanation": "This is the WS7 pin order.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q88",
       "type": "tf",
       "prompt": "Swapping green and blue GPIO connections can change displayed colours.",
       "answer": true,
-      "explanation": "Software assumes the configured order matches wiring."
+      "explanation": "Software assumes the configured order matches wiring.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q89",
       "type": "tf",
       "prompt": "The RGB alarm LED should be green by default.",
       "answer": true,
-      "explanation": "Green is the normal state."
+      "explanation": "Green is the normal state.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q90",
       "type": "tf",
       "prompt": "The first button press should stop the buzzer.",
       "answer": false,
-      "explanation": "The first press starts the alarm; the second stops it."
+      "explanation": "The first press starts the alarm; the second stops it.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q91",
       "type": "tf",
       "prompt": "The RGB alarm uses GPIO2 for the button and GPIO3 for the buzzer.",
       "answer": true,
-      "explanation": "These are the worksheet connections."
+      "explanation": "These are the worksheet connections.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q92",
       "type": "tf",
       "prompt": "The alarm RGB LED uses GPIO17, GPIO27, and GPIO22.",
       "answer": true,
-      "explanation": "These pins control red, green, and blue."
+      "explanation": "These pins control red, green, and blue.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q93",
       "type": "tf",
       "prompt": "led.blink(0.2, 0.2, on_color=(1, 0, 0), off_color=(0, 0, 0)) flashes red with 0.2-second periods.",
       "answer": true,
-      "explanation": "The ON and OFF periods are both 0.2 seconds."
+      "explanation": "The ON and OFF periods are both 0.2 seconds.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q94",
       "type": "tf",
       "prompt": "buzzer.beep(0.2, 0.2) uses 0.2-second ON and OFF periods.",
       "answer": true,
-      "explanation": "The arguments control active and inactive periods."
+      "explanation": "The arguments control active and inactive periods.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q95",
       "type": "tf",
       "prompt": "background=True lets blink or beep continue while other instructions execute.",
       "answer": true,
-      "explanation": "The operation runs in the background."
+      "explanation": "The operation runs in the background.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q96",
       "type": "tf",
       "prompt": "background=False always lets the program continue immediately.",
       "answer": false,
-      "explanation": "It makes the operation blocking."
+      "explanation": "It makes the operation blocking.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q97",
       "type": "tf",
       "prompt": "An indefinite operation with background=False may never reach the next instruction.",
       "answer": true,
-      "explanation": "The operation blocks the program."
+      "explanation": "The operation blocks the program.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q98",
       "type": "tf",
       "prompt": "The second button press stops both the LED flashing and buzzer.",
       "answer": true,
-      "explanation": "The program calls the off methods."
+      "explanation": "The program calls the off methods.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q99",
       "type": "tf",
       "prompt": "After the alarm stops, the RGB project can repeat.",
       "answer": true,
-      "explanation": "while True returns it to green and waits again."
+      "explanation": "while True returns it to green and waits again.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q100",
       "type": "tf",
       "prompt": "Nested loops can test every RGB ON/OFF combination.",
       "answer": true,
-      "explanation": "Each loop changes one channel between 0 and 1."
+      "explanation": "Each loop changes one channel between 0 and 1.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q101",
       "type": "code",
       "prompt": "Create a green LED named green connected to GPIO17.",
       "answer": "green = LED(17)",
-      "explanation": "This creates the LED object."
+      "explanation": "This creates the LED object.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q102",
       "type": "code",
       "prompt": "Create a yellow LED named yellow connected to GPIO27.",
       "answer": "yellow = LED(27)",
-      "explanation": "This creates the yellow LED object."
+      "explanation": "This creates the yellow LED object.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q103",
       "type": "code",
       "prompt": "Create a red LED named red connected to GPIO22.",
       "answer": "red = LED(22)",
-      "explanation": "This creates the red LED object."
+      "explanation": "This creates the red LED object.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q104",
       "type": "code",
       "prompt": "Create pedestrian_button connected to GPIO23.",
       "answer": "pedestrian_button = Button(23)",
-      "explanation": "This creates the button object."
+      "explanation": "This creates the button object.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q105",
       "type": "code",
       "prompt": "Turn the green LED off.",
       "answer": "green.off()",
-      "explanation": "off() switches the LED off."
+      "explanation": "off() switches the LED off.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q106",
       "type": "code",
       "prompt": "Turn the yellow LED on.",
       "answer": "yellow.on()",
-      "explanation": "on() activates the yellow LED."
+      "explanation": "on() activates the yellow LED.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q107",
       "type": "code",
       "prompt": "Turn the yellow LED off.",
       "answer": "yellow.off()",
-      "explanation": "This switches yellow off."
+      "explanation": "This switches yellow off.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q108",
       "type": "code",
       "prompt": "Turn the red LED on.",
       "answer": "red.on()",
-      "explanation": "This activates red."
+      "explanation": "This activates red.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q109",
       "type": "code",
       "prompt": "Turn the red LED off.",
       "answer": "red.off()",
-      "explanation": "This switches red off."
+      "explanation": "This switches red off.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q110",
       "type": "code",
       "prompt": "Keep the red LED on for 30 seconds using imported sleep.",
       "answer": "sleep(30)",
-      "explanation": "This pauses for 30 seconds."
+      "explanation": "This pauses for 30 seconds.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q111",
       "type": "code",
       "prompt": "Keep yellow on for half a second.",
       "answer": "sleep(0.5)",
-      "explanation": "This creates a half-second delay."
+      "explanation": "This creates a half-second delay.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q112",
       "type": "code",
       "prompt": "Write the loop header to flash yellow five times.",
       "answer": "for _ in range(5):",
-      "explanation": "The loop repeats five times."
+      "explanation": "The loop repeats five times.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q113",
       "type": "code",
       "prompt": "Turn yellow on and wait 0.5 seconds.",
       "answer": "yellow.on()\\nsleep(0.5)",
-      "explanation": "This starts the ON part of a flash."
+      "explanation": "This starts the ON part of a flash.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q114",
       "type": "code",
       "prompt": "Turn yellow off and wait 0.5 seconds.",
       "answer": "yellow.off()\\nsleep(0.5)",
-      "explanation": "This completes the OFF part."
+      "explanation": "This completes the OFF part.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q115",
       "type": "code",
       "prompt": "Write the loop header for continuous traffic-light operation.",
       "answer": "while True:",
-      "explanation": "This creates an infinite loop."
+      "explanation": "This creates an infinite loop.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q116",
       "type": "code",
       "prompt": "Wait for pedestrian_button to be pressed.",
       "answer": "pedestrian_button.wait_for_press()",
-      "explanation": "The program pauses until a press."
+      "explanation": "The program pauses until a press.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q117",
       "type": "code",
       "prompt": "Wait for pedestrian_button to be released.",
       "answer": "pedestrian_button.wait_for_release()",
-      "explanation": "This prevents held-button retriggering."
+      "explanation": "This prevents held-button retriggering.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q118",
       "type": "code",
       "prompt": "Turn the default green light on.",
       "answer": "green.on()",
-      "explanation": "This activates green."
+      "explanation": "This activates green.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q119",
       "type": "code",
       "prompt": "Turn yellow and red off before a new cycle.",
       "answer": "yellow.off()\\nred.off()",
-      "explanation": "This establishes the default state."
+      "explanation": "This establishes the default state.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q120",
       "type": "code",
       "prompt": "Use a five-second testing delay for red.",
       "answer": "sleep(5)",
-      "explanation": "This is a faster testing delay."
+      "explanation": "This is a faster testing delay.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q121",
       "type": "code",
       "prompt": "Use a 0.1-second testing ON delay for yellow.",
       "answer": "yellow.on()\\nsleep(0.1)",
-      "explanation": "This shortens the test flash."
+      "explanation": "This shortens the test flash.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q122",
       "type": "code",
       "prompt": "Create led as an RGBLED on GPIO17, GPIO27, and GPIO22.",
       "answer": "led = RGBLED(17, 27, 22)",
-      "explanation": "The arguments are red, green, and blue."
+      "explanation": "The arguments are red, green, and blue.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q123",
       "type": "code",
       "prompt": "Display full red.",
       "answer": "led.color = (1, 0, 0)",
-      "explanation": "Only red is active."
+      "explanation": "Only red is active.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q124",
       "type": "code",
       "prompt": "Display full green.",
       "answer": "led.color = (0, 1, 0)",
-      "explanation": "Only green is active."
+      "explanation": "Only green is active.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q125",
       "type": "code",
       "prompt": "Display full blue.",
       "answer": "led.color = (0, 0, 1)",
-      "explanation": "Only blue is active."
+      "explanation": "Only blue is active.",
+      "section": "WS6: Traffic Light System",
+      "topic": "WS6: Traffic Light System"
     },
     {
       "id": "iot301-ws6-ws7-q126",
       "type": "code",
       "prompt": "Display yellow.",
       "answer": "led.color = (1, 1, 0)",
-      "explanation": "Red and green combine."
+      "explanation": "Red and green combine.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q127",
       "type": "code",
       "prompt": "Display cyan.",
       "answer": "led.color = (0, 1, 1)",
-      "explanation": "Green and blue combine."
+      "explanation": "Green and blue combine.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q128",
       "type": "code",
       "prompt": "Display magenta.",
       "answer": "led.color = (1, 0, 1)",
-      "explanation": "Red and blue combine."
+      "explanation": "Red and blue combine.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q129",
       "type": "code",
       "prompt": "Display white.",
       "answer": "led.color = (1, 1, 1)",
-      "explanation": "All channels are active."
+      "explanation": "All channels are active.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q130",
       "type": "code",
       "prompt": "Turn the RGB LED completely off.",
       "answer": "led.color = (0, 0, 0)",
-      "explanation": "All channels are off."
+      "explanation": "All channels are off.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q131",
       "type": "code",
       "prompt": "Set red to half brightness with green and blue off.",
       "answer": "led.color = (0.5, 0, 0)",
-      "explanation": "Red is set to half brightness."
+      "explanation": "Red is set to half brightness.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q132",
       "type": "code",
       "prompt": "Set green to half brightness with red and blue off.",
       "answer": "led.color = (0, 0.5, 0)",
-      "explanation": "Green is set to half brightness."
+      "explanation": "Green is set to half brightness.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q133",
       "type": "code",
       "prompt": "Set blue to half brightness with red and green off.",
       "answer": "led.color = (0, 0, 0.5)",
-      "explanation": "Blue is set to half brightness."
+      "explanation": "Blue is set to half brightness.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q134",
       "type": "code",
       "prompt": "Set led to orange using imported Color.",
       "answer": "led.color = Color(\"orange\")",
-      "explanation": "Color supports named colours."
+      "explanation": "Color supports named colours.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q135",
       "type": "code",
       "prompt": "Set led to purple using Color.",
       "answer": "led.color = Color(\"purple\")",
-      "explanation": "This assigns a named colour."
+      "explanation": "This assigns a named colour.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q136",
       "type": "code",
       "prompt": "Pause for one second using imported time.",
       "answer": "time.sleep(1)",
-      "explanation": "This delays one second."
+      "explanation": "This delays one second.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q137",
       "type": "code",
       "prompt": "Create the red-channel loop for the RGB cycle.",
       "answer": "for r in range(2):",
-      "explanation": "r takes values 0 and 1."
+      "explanation": "r takes values 0 and 1.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q138",
       "type": "code",
       "prompt": "Create the green-channel loop for the RGB cycle.",
       "answer": "for g in range(2):",
-      "explanation": "g takes values 0 and 1."
+      "explanation": "g takes values 0 and 1.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q139",
       "type": "code",
       "prompt": "Create the blue-channel loop for the RGB cycle.",
       "answer": "for b in range(2):",
-      "explanation": "b takes values 0 and 1."
+      "explanation": "b takes values 0 and 1.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q140",
       "type": "code",
       "prompt": "Assign current r, g, and b values to led.",
       "answer": "led.color = (r, g, b)",
-      "explanation": "This displays the current combination."
+      "explanation": "This displays the current combination.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q141",
       "type": "code",
       "prompt": "Create button connected to GPIO2.",
       "answer": "button = Button(2)",
-      "explanation": "This creates the alarm button."
+      "explanation": "This creates the alarm button.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q142",
       "type": "code",
       "prompt": "Create buzzer connected to GPIO3.",
       "answer": "buzzer = Buzzer(3)",
-      "explanation": "This creates the buzzer object."
+      "explanation": "This creates the buzzer object.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q143",
       "type": "code",
       "prompt": "Set the alarm LED green by default.",
       "answer": "led.color = (0, 1, 0)",
-      "explanation": "Green is the normal state."
+      "explanation": "Green is the normal state.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q144",
       "type": "code",
       "prompt": "Flash red for 0.2 seconds ON and OFF.",
       "answer": "led.blink(0.2, 0.2, on_color=(1, 0, 0), off_color=(0, 0, 0))",
-      "explanation": "This flashes red."
+      "explanation": "This flashes red.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q145",
       "type": "code",
       "prompt": "Beep for 0.2 seconds ON and OFF.",
       "answer": "buzzer.beep(0.2, 0.2)",
-      "explanation": "This starts the repeating beep."
+      "explanation": "This starts the repeating beep.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q146",
       "type": "code",
       "prompt": "Stop the RGB LED alarm.",
       "answer": "led.off()",
-      "explanation": "This stops the LED output."
+      "explanation": "This stops the LED output.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q147",
       "type": "code",
       "prompt": "Stop the buzzer alarm.",
       "answer": "buzzer.off()",
-      "explanation": "This stops the buzzer."
+      "explanation": "This stops the buzzer.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q148",
       "type": "code",
       "prompt": "Beep in the background with 0.2-second periods.",
       "answer": "buzzer.beep(0.2, 0.2, background=True)",
-      "explanation": "The program can continue while it beeps."
+      "explanation": "The program can continue while it beeps.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q149",
       "type": "code",
       "prompt": "Flash red in the background with 0.5-second periods.",
       "answer": "led.blink(0.5, 0.5, on_color=(1, 0, 0), off_color=(0, 0, 0), background=True)",
-      "explanation": "The LED flashes without blocking."
+      "explanation": "The LED flashes without blocking.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     },
     {
       "id": "iot301-ws6-ws7-q150",
       "type": "code",
       "prompt": "Wait for the second alarm button press.",
       "answer": "button.wait_for_press()",
-      "explanation": "The program pauses for the next press."
+      "explanation": "The program pauses for the next press.",
+      "section": "WS7: RGB LED System",
+      "topic": "WS7: RGB LED System"
     }
   ]
 }

@@ -1,0 +1,1956 @@
+{
+  "id": "iot301-ws9-pir-motion-sensor",
+  "title": "IoT301 – WS9: PIR Motion Sensor (150 Questions)",
+  "questions": [
+    {
+      "id": "iot301-ws9-q1",
+      "type": "mcq",
+      "prompt": "What does PIR stand for?",
+      "choices": [
+        "Passive Infrared",
+        "Personal Input Receiver",
+        "Programmed Infrared Resistance",
+        "Passive Internal Receiver"
+      ],
+      "answer": 0,
+      "explanation": "A PIR sensor detects changes in infrared radiation.",
+      "section": "PIR Sensor Fundamentals",
+      "topic": "PIR Sensor Fundamentals"
+    },
+    {
+      "id": "iot301-ws9-q2",
+      "type": "mcq",
+      "prompt": "What is the main purpose of a PIR sensor?",
+      "choices": [
+        "Measure sound",
+        "Detect motion",
+        "Measure humidity",
+        "Produce light"
+      ],
+      "answer": 1,
+      "explanation": "It detects changes in infrared radiation from objects, including the human body.",
+      "section": "PIR Sensor Fundamentals",
+      "topic": "PIR Sensor Fundamentals"
+    },
+    {
+      "id": "iot301-ws9-q3",
+      "type": "mcq",
+      "prompt": "What type of device is a PIR sensor?",
+      "choices": [
+        "Output device",
+        "Storage device",
+        "Input device",
+        "Display device"
+      ],
+      "answer": 2,
+      "explanation": "It collects information from the environment and sends a signal to the Raspberry Pi.",
+      "section": "PIR Sensor Fundamentals",
+      "topic": "PIR Sensor Fundamentals"
+    },
+    {
+      "id": "iot301-ws9-q4",
+      "type": "mcq",
+      "prompt": "What type of signal does the PIR sensor in WS9 produce?",
+      "choices": [
+        "Analogue only",
+        "Digital",
+        "Audio",
+        "Video"
+      ],
+      "answer": 1,
+      "explanation": "Its output is either HIGH (1) or LOW (0).",
+      "section": "PIR Sensor Fundamentals",
+      "topic": "PIR Sensor Fundamentals"
+    },
+    {
+      "id": "iot301-ws9-q5",
+      "type": "mcq",
+      "prompt": "What does HIGH (1) usually indicate?",
+      "choices": [
+        "No power",
+        "No motion",
+        "Motion detected",
+        "Sensor disconnected"
+      ],
+      "answer": 2,
+      "explanation": "The sensor sends a HIGH signal when it detects motion.",
+      "section": "PIR Sensor Fundamentals",
+      "topic": "PIR Sensor Fundamentals"
+    },
+    {
+      "id": "iot301-ws9-q6",
+      "type": "mcq",
+      "prompt": "What does LOW (0) usually indicate?",
+      "choices": [
+        "Motion detected",
+        "No motion detected",
+        "High temperature",
+        "Button pressed"
+      ],
+      "answer": 1,
+      "explanation": "LOW indicates that the sensor is not currently reporting motion.",
+      "section": "PIR Sensor Fundamentals",
+      "topic": "PIR Sensor Fundamentals"
+    },
+    {
+      "id": "iot301-ws9-q7",
+      "type": "mcq",
+      "prompt": "How many pins does the HC-SR501 PIR sensor have?",
+      "choices": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": 1,
+      "explanation": "Its pins are VCC, OUT, and GND.",
+      "section": "PIR Sensor Fundamentals",
+      "topic": "PIR Sensor Fundamentals"
+    },
+    {
+      "id": "iot301-ws9-q8",
+      "type": "mcq",
+      "prompt": "What is the purpose of the VCC pin?",
+      "choices": [
+        "Send motion data",
+        "Connect to ground",
+        "Supply power",
+        "Control the LED"
+      ],
+      "answer": 2,
+      "explanation": "VCC supplies electrical power to the PIR sensor.",
+      "section": "PIR Sensor Fundamentals",
+      "topic": "PIR Sensor Fundamentals"
+    },
+    {
+      "id": "iot301-ws9-q9",
+      "type": "mcq",
+      "prompt": "What is the purpose of the OUT pin?",
+      "choices": [
+        "Send the sensor's signal",
+        "Supply 5V power",
+        "Connect to ground",
+        "Control the buzzer directly"
+      ],
+      "answer": 0,
+      "explanation": "OUT sends the digital signal indicating whether motion is detected.",
+      "section": "PIR Sensor Fundamentals",
+      "topic": "PIR Sensor Fundamentals"
+    },
+    {
+      "id": "iot301-ws9-q10",
+      "type": "mcq",
+      "prompt": "What is the purpose of the GND pin?",
+      "choices": [
+        "Increase sensitivity",
+        "Complete the electrical circuit's ground connection",
+        "Send a HIGH signal",
+        "Detect infrared radiation"
+      ],
+      "answer": 1,
+      "explanation": "GND provides the ground connection for the circuit.",
+      "section": "PIR Sensor Fundamentals",
+      "topic": "PIR Sensor Fundamentals"
+    },
+    {
+      "id": "iot301-ws9-q11",
+      "type": "mcq",
+      "prompt": "Which PIR pin connects to a Raspberry Pi GPIO pin in the WS9 circuit?",
+      "choices": [
+        "VCC",
+        "GND",
+        "OUT",
+        "All three"
+      ],
+      "answer": 2,
+      "explanation": "OUT is the signal pin. VCC connects to 5V and GND connects to ground.",
+      "section": "PIR Sensor Fundamentals",
+      "topic": "PIR Sensor Fundamentals"
+    },
+    {
+      "id": "iot301-ws9-q12",
+      "type": "mcq",
+      "prompt": "Which Raspberry Pi power pin is used for the PIR VCC connection in WS9?",
+      "choices": [
+        "3.3V",
+        "5V",
+        "GPIO 4",
+        "GND"
+      ],
+      "answer": 1,
+      "explanation": "The worksheet's wiring summary connects PIR VCC to the Raspberry Pi's 5V pin.",
+      "section": "PIR Sensor Fundamentals",
+      "topic": "PIR Sensor Fundamentals"
+    },
+    {
+      "id": "iot301-ws9-q13",
+      "type": "mcq",
+      "prompt": "Which GPIO pin receives the PIR signal in WS9?",
+      "choices": [
+        "GPIO 17",
+        "GPIO 23",
+        "GPIO 4",
+        "GPIO 27"
+      ],
+      "answer": 2,
+      "explanation": "The PIR OUT pin connects to GPIO 4.",
+      "section": "PIR Sensor Fundamentals",
+      "topic": "PIR Sensor Fundamentals"
+    },
+    {
+      "id": "iot301-ws9-q14",
+      "type": "mcq",
+      "prompt": "Which pin connects the PIR sensor to ground?",
+      "choices": [
+        "VCC",
+        "OUT",
+        "GND",
+        "GPIO 4"
+      ],
+      "answer": 2,
+      "explanation": "The sensor's GND pin connects to a Raspberry Pi GND pin.",
+      "section": "PIR Sensor Fundamentals",
+      "topic": "PIR Sensor Fundamentals"
+    },
+    {
+      "id": "iot301-ws9-q15",
+      "type": "mcq",
+      "prompt": "How many PIR sensor pins need to connect to GPIO pins?",
+      "choices": [
+        "One",
+        "Two",
+        "Three",
+        "None"
+      ],
+      "answer": 0,
+      "explanation": "Only OUT connects to a GPIO pin. VCC and GND connect to power and ground.",
+      "section": "PIR Sensor Fundamentals",
+      "topic": "PIR Sensor Fundamentals"
+    },
+    {
+      "id": "iot301-ws9-q16",
+      "type": "mcq",
+      "prompt": "Does the WS9 PIR connection require a resistor?",
+      "choices": [
+        "Yes, a 330 Ω resistor",
+        "Yes, a 1 kΩ resistor",
+        "No",
+        "Yes, two resistors"
+      ],
+      "answer": 2,
+      "explanation": "The worksheet states that the PIR sensor does not require a resistor in this connection.",
+      "section": "PIR Sensor Fundamentals",
+      "topic": "PIR Sensor Fundamentals"
+    },
+    {
+      "id": "iot301-ws9-q17",
+      "type": "mcq",
+      "prompt": "Why are resistors used with ordinary LEDs?",
+      "choices": [
+        "To increase motion detection",
+        "To limit current",
+        "To supply 5V",
+        "To store electricity"
+      ],
+      "answer": 1,
+      "explanation": "A current-limiting resistor helps protect the LED from excessive current.",
+      "section": "PIR Sensor Fundamentals",
+      "topic": "PIR Sensor Fundamentals"
+    },
+    {
+      "id": "iot301-ws9-q18",
+      "type": "mcq",
+      "prompt": "What is the purpose of the PIR sensor's Fresnel lens?",
+      "choices": [
+        "It is the sensor's removable protective and optical dome",
+        "It stores the program",
+        "It supplies power",
+        "It produces sound"
+      ],
+      "answer": 0,
+      "explanation": "The worksheet explains that the pin labels can be found underneath the white dome.",
+      "section": "PIR Sensor Fundamentals",
+      "topic": "PIR Sensor Fundamentals"
+    },
+    {
+      "id": "iot301-ws9-q19",
+      "type": "mcq",
+      "prompt": "Where can you find the PIR sensor's pin labels according to WS9?",
+      "choices": [
+        "On the Raspberry Pi screen",
+        "Under the white dome",
+        "On the USB port",
+        "Inside the Python program"
+      ],
+      "answer": 1,
+      "explanation": "The labels VCC, OUT, and GND are printed on the board underneath the dome.",
+      "section": "PIR Sensor Fundamentals",
+      "topic": "PIR Sensor Fundamentals"
+    },
+    {
+      "id": "iot301-ws9-q20",
+      "type": "mcq",
+      "prompt": "What does the sensitivity knob control?",
+      "choices": [
+        "How long the buzzer sounds",
+        "How sensitive the sensor is to motion",
+        "The LED brightness",
+        "The Raspberry Pi speed"
+      ],
+      "answer": 1,
+      "explanation": "It controls how easily the sensor detects changes in infrared radiation.",
+      "section": "PIR Sensor Fundamentals",
+      "topic": "PIR Sensor Fundamentals"
+    },
+    {
+      "id": "iot301-ws9-q21",
+      "type": "mcq",
+      "prompt": "What happens when the sensitivity knob is turned clockwise?",
+      "choices": [
+        "Sensitivity decreases",
+        "Sensitivity increases",
+        "The sensor switches off",
+        "The output becomes permanently LOW"
+      ],
+      "answer": 1,
+      "explanation": "Turning it clockwise increases sensitivity according to the worksheet.",
+      "section": "PIR Sensor Fundamentals",
+      "topic": "PIR Sensor Fundamentals"
+    },
+    {
+      "id": "iot301-ws9-q22",
+      "type": "mcq",
+      "prompt": "What happens when the sensitivity knob is turned counterclockwise?",
+      "choices": [
+        "Sensitivity decreases",
+        "Sensitivity increases",
+        "The delay increases",
+        "The sensor receives more power"
+      ],
+      "answer": 0,
+      "explanation": "Turning it counterclockwise reduces sensitivity.",
+      "section": "PIR Sensor Fundamentals",
+      "topic": "PIR Sensor Fundamentals"
+    },
+    {
+      "id": "iot301-ws9-q23",
+      "type": "mcq",
+      "prompt": "What does the Delay/Time knob control?",
+      "choices": [
+        "Motion sensitivity",
+        "How long the output remains HIGH",
+        "The Raspberry Pi clock",
+        "The LED colour"
+      ],
+      "answer": 1,
+      "explanation": "It controls the time the sensor's output stays active after motion is detected.",
+      "section": "PIR Sensor Fundamentals",
+      "topic": "PIR Sensor Fundamentals"
+    },
+    {
+      "id": "iot301-ws9-q24",
+      "type": "mcq",
+      "prompt": "What happens when the Delay/Time knob is turned clockwise?",
+      "choices": [
+        "The delay increases",
+        "The delay decreases",
+        "The sensor loses power",
+        "The sensitivity decreases"
+      ],
+      "answer": 0,
+      "explanation": "The output remains HIGH for a longer period.",
+      "section": "PIR Sensor Fundamentals",
+      "topic": "PIR Sensor Fundamentals"
+    },
+    {
+      "id": "iot301-ws9-q25",
+      "type": "mcq",
+      "prompt": "Which environment can interfere with PIR detection?",
+      "choices": [
+        "A stable indoor environment",
+        "Direct sunlight or strong heat sources",
+        "A normal covered room",
+        "A room with no movement"
+      ],
+      "answer": 1,
+      "explanation": "Strong heat sources and temperature changes can interfere with infrared detection.",
+      "section": "PIR Sensor Fundamentals",
+      "topic": "PIR Sensor Fundamentals"
+    },
+    {
+      "id": "iot301-ws9-q26",
+      "type": "mcq",
+      "prompt": "Which Raspberry Pi model is listed in the WS9 required components?",
+      "choices": [
+        "Raspberry Pi Zero",
+        "Raspberry Pi 3B",
+        "Raspberry Pi 4B",
+        "Raspberry Pi Pico"
+      ],
+      "answer": 2,
+      "explanation": "The required components list specifies a Raspberry Pi motherboard (4B).",
+      "section": "Wiring and Components",
+      "topic": "Wiring and Components"
+    },
+    {
+      "id": "iot301-ws9-q27",
+      "type": "mcq",
+      "prompt": "Which GPIO pin controls the red LED?",
+      "choices": [
+        "GPIO 4",
+        "GPIO 17",
+        "GPIO 23",
+        "GPIO 24"
+      ],
+      "answer": 1,
+      "explanation": "The WS9 wiring summary connects the red LED to GPIO 17 through a 330 Ω resistor.",
+      "section": "Wiring and Components",
+      "topic": "Wiring and Components"
+    },
+    {
+      "id": "iot301-ws9-q28",
+      "type": "mcq",
+      "prompt": "Which GPIO pin controls the green LED?",
+      "choices": [
+        "GPIO 27",
+        "GPIO 17",
+        "GPIO 4",
+        "GPIO 24"
+      ],
+      "answer": 0,
+      "explanation": "The green LED connects to GPIO 27 through a 330 Ω resistor.",
+      "section": "Wiring and Components",
+      "topic": "Wiring and Components"
+    },
+    {
+      "id": "iot301-ws9-q29",
+      "type": "mcq",
+      "prompt": "Which GPIO pin controls the buzzer?",
+      "choices": [
+        "GPIO 17",
+        "GPIO 27",
+        "GPIO 23",
+        "GPIO 4"
+      ],
+      "answer": 2,
+      "explanation": "The buzzer's positive leg connects to GPIO 23.",
+      "section": "Wiring and Components",
+      "topic": "Wiring and Components"
+    },
+    {
+      "id": "iot301-ws9-q30",
+      "type": "mcq",
+      "prompt": "Which GPIO pin connects to the button?",
+      "choices": [
+        "GPIO 24",
+        "GPIO 23",
+        "GPIO 17",
+        "GPIO 4"
+      ],
+      "answer": 0,
+      "explanation": "The button connects between GPIO 24 and GND.",
+      "section": "Wiring and Components",
+      "topic": "Wiring and Components"
+    },
+    {
+      "id": "iot301-ws9-q31",
+      "type": "mcq",
+      "prompt": "What resistor value is specified for each ordinary LED in WS9?",
+      "choices": [
+        "10 Ω",
+        "100 Ω",
+        "330 Ω",
+        "1 MΩ"
+      ],
+      "answer": 2,
+      "explanation": "The wiring summary specifies a 330 Ω resistor in series with each LED.",
+      "section": "Wiring and Components",
+      "topic": "Wiring and Components"
+    },
+    {
+      "id": "iot301-ws9-q32",
+      "type": "mcq",
+      "prompt": "Which LED leg is the anode?",
+      "choices": [
+        "The short leg",
+        "The long leg",
+        "The flat side",
+        "The leg connected to GND"
+      ],
+      "answer": 1,
+      "explanation": "The worksheet identifies the long leg as the anode.",
+      "section": "Wiring and Components",
+      "topic": "Wiring and Components"
+    },
+    {
+      "id": "iot301-ws9-q33",
+      "type": "mcq",
+      "prompt": "Which LED leg is the cathode?",
+      "choices": [
+        "The long leg",
+        "The short leg",
+        "Both legs",
+        "The resistor leg"
+      ],
+      "answer": 1,
+      "explanation": "The worksheet identifies the short leg as the cathode.",
+      "section": "Wiring and Components",
+      "topic": "Wiring and Components"
+    },
+    {
+      "id": "iot301-ws9-q34",
+      "type": "mcq",
+      "prompt": "Where does the ordinary LED cathode connect in the WS9 wiring?",
+      "choices": [
+        "5V",
+        "GPIO 4",
+        "GND",
+        "GPIO 23"
+      ],
+      "answer": 2,
+      "explanation": "The short leg (cathode) connects to ground.",
+      "section": "Wiring and Components",
+      "topic": "Wiring and Components"
+    },
+    {
+      "id": "iot301-ws9-q35",
+      "type": "mcq",
+      "prompt": "Which buzzer leg connects to GPIO 23?",
+      "choices": [
+        "Negative leg",
+        "Positive leg",
+        "Both legs",
+        "Neither leg"
+      ],
+      "answer": 1,
+      "explanation": "The positive buzzer leg connects to GPIO 23, and the negative leg connects to GND.",
+      "section": "Wiring and Components",
+      "topic": "Wiring and Components"
+    },
+    {
+      "id": "iot301-ws9-q36",
+      "type": "mcq",
+      "prompt": "Which button connection is specified in WS9?",
+      "choices": [
+        "GPIO 24 and GND",
+        "GPIO 17 and 5V",
+        "GPIO 4 and GPIO 27",
+        "GPIO 23 and 5V"
+      ],
+      "answer": 0,
+      "explanation": "One button leg connects to GPIO 24 and the diagonally opposite leg connects to GND.",
+      "section": "Wiring and Components",
+      "topic": "Wiring and Components"
+    },
+    {
+      "id": "iot301-ws9-q37",
+      "type": "mcq",
+      "prompt": "Why does the WS9 button connection not need an external resistor?",
+      "choices": [
+        "The button generates its own power",
+        "gpiozero enables the Pi's built-in pull-up resistor",
+        "The PIR sensor provides the resistance",
+        "The LED limits the current"
+      ],
+      "answer": 1,
+      "explanation": "The worksheet states that gpiozero uses the Raspberry Pi's built-in pull-up resistor.",
+      "section": "Wiring and Components",
+      "topic": "Wiring and Components"
+    },
+    {
+      "id": "iot301-ws9-q38",
+      "type": "mcq",
+      "prompt": "Which component is an output device?",
+      "choices": [
+        "PIR sensor",
+        "Button",
+        "LED",
+        "Motion sensor"
+      ],
+      "answer": 2,
+      "explanation": "An LED produces light as an output.",
+      "section": "Wiring and Components",
+      "topic": "Wiring and Components"
+    },
+    {
+      "id": "iot301-ws9-q39",
+      "type": "mcq",
+      "prompt": "Which component is used to produce sound?",
+      "choices": [
+        "PIR sensor",
+        "Buzzer",
+        "LED",
+        "Button"
+      ],
+      "answer": 1,
+      "explanation": "The buzzer produces sound to indicate an event such as detected motion.",
+      "section": "Wiring and Components",
+      "topic": "Wiring and Components"
+    },
+    {
+      "id": "iot301-ws9-q40",
+      "type": "mcq",
+      "prompt": "Which component allows the user to arm or disarm the alarm?",
+      "choices": [
+        "PIR sensor",
+        "Button",
+        "Red LED",
+        "Green LED"
+      ],
+      "answer": 1,
+      "explanation": "The button is used to control the alarm system's state.",
+      "section": "Wiring and Components",
+      "topic": "Wiring and Components"
+    },
+    {
+      "id": "iot301-ws9-q41",
+      "type": "mcq",
+      "prompt": "What does the green LED represent in Tasks 4–5?",
+      "choices": [
+        "Motion detected",
+        "No motion detected",
+        "Low battery",
+        "Button failure"
+      ],
+      "answer": 1,
+      "explanation": "The green LED indicates that no motion is detected.",
+      "section": "Wiring and Components",
+      "topic": "Wiring and Components"
+    },
+    {
+      "id": "iot301-ws9-q42",
+      "type": "mcq",
+      "prompt": "What does the red LED represent in Tasks 3–5?",
+      "choices": [
+        "No motion",
+        "Motion detected",
+        "Alarm disarmed",
+        "Raspberry Pi shutdown"
+      ],
+      "answer": 1,
+      "explanation": "The red LED turns on when the PIR detects motion.",
+      "section": "Wiring and Components",
+      "topic": "Wiring and Components"
+    },
+    {
+      "id": "iot301-ws9-q43",
+      "type": "mcq",
+      "prompt": "In Task 4, what should happen to the green LED when motion is detected?",
+      "choices": [
+        "It turns on",
+        "It turns off",
+        "It blinks",
+        "It changes colour"
+      ],
+      "answer": 1,
+      "explanation": "The red LED indicates motion, while the green LED indicates no motion.",
+      "section": "Wiring and Components",
+      "topic": "Wiring and Components"
+    },
+    {
+      "id": "iot301-ws9-q44",
+      "type": "mcq",
+      "prompt": "In Task 4, what should happen to the red LED when no motion is detected?",
+      "choices": [
+        "It turns on",
+        "It turns off",
+        "It beeps",
+        "It stays blinking"
+      ],
+      "answer": 1,
+      "explanation": "The red LED should only indicate detected motion.",
+      "section": "Wiring and Components",
+      "topic": "Wiring and Components"
+    },
+    {
+      "id": "iot301-ws9-q45",
+      "type": "mcq",
+      "prompt": "In Task 4, can both LEDs be ON at the same time?",
+      "choices": [
+        "Yes, always",
+        "Yes, when the button is pressed",
+        "No",
+        "Only when the buzzer is on"
+      ],
+      "answer": 2,
+      "explanation": "The task requires the two LEDs to display opposite motion states.",
+      "section": "Wiring and Components",
+      "topic": "Wiring and Components"
+    },
+    {
+      "id": "iot301-ws9-q46",
+      "type": "mcq",
+      "prompt": "Which component is added in Task 4?",
+      "choices": [
+        "Button",
+        "Green LED",
+        "Buzzer",
+        "RGB LED"
+      ],
+      "answer": 1,
+      "explanation": "Task 4 expands the circuit by adding a green LED.",
+      "section": "Wiring and Components",
+      "topic": "Wiring and Components"
+    },
+    {
+      "id": "iot301-ws9-q47",
+      "type": "mcq",
+      "prompt": "Which component is added in Task 5?",
+      "choices": [
+        "Buzzer",
+        "Button",
+        "Second PIR sensor",
+        "Display"
+      ],
+      "answer": 0,
+      "explanation": "Task 5 adds a buzzer to indicate motion.",
+      "section": "Wiring and Components",
+      "topic": "Wiring and Components"
+    },
+    {
+      "id": "iot301-ws9-q48",
+      "type": "mcq",
+      "prompt": "Which component is added in Task 6?",
+      "choices": [
+        "Another red LED",
+        "Button",
+        "Temperature sensor",
+        "Motor"
+      ],
+      "answer": 1,
+      "explanation": "Task 6 introduces a button to arm and disarm the alarm.",
+      "section": "Wiring and Components",
+      "topic": "Wiring and Components"
+    },
+    {
+      "id": "iot301-ws9-q49",
+      "type": "mcq",
+      "prompt": "What is the main purpose of the breadboard?",
+      "choices": [
+        "Run Python code",
+        "Connect electronic components without soldering",
+        "Detect motion",
+        "Store sensor readings"
+      ],
+      "answer": 1,
+      "explanation": "A breadboard allows components and jumper wires to be connected to build a circuit.",
+      "section": "Wiring and Components",
+      "topic": "Wiring and Components"
+    },
+    {
+      "id": "iot301-ws9-q50",
+      "type": "mcq",
+      "prompt": "Which item is used to connect components on the breadboard?",
+      "choices": [
+        "Jumper cables",
+        "HDMI cable",
+        "Ethernet cable",
+        "Power button"
+      ],
+      "answer": 0,
+      "explanation": "WS9 lists male-to-female and male-to-male jumper cables for circuit connections.",
+      "section": "Wiring and Components",
+      "topic": "Wiring and Components"
+    },
+    {
+      "id": "iot301-ws9-q51",
+      "type": "mcq",
+      "prompt": "Which Python library is used in WS9 to control the components?",
+      "choices": [
+        "pandas",
+        "gpiozero",
+        "matplotlib",
+        "tkinter"
+      ],
+      "answer": 1,
+      "explanation": "The programs use gpiozero classes such as LED, MotionSensor, Buzzer, and Button.",
+      "section": "Python and GPIO Zero",
+      "topic": "Python and GPIO Zero"
+    },
+    {
+      "id": "iot301-ws9-q52",
+      "type": "mcq",
+      "prompt": "Which import creates access to the LED and PIR classes only?",
+      "choices": [
+        "import time",
+        "from gpiozero import LED, MotionSensor",
+        "import pandas",
+        "from time import sleep"
+      ],
+      "answer": 1,
+      "explanation": "This imports only the two required classes from gpiozero.",
+      "section": "Python and GPIO Zero",
+      "topic": "Python and GPIO Zero"
+    },
+    {
+      "id": "iot301-ws9-q53",
+      "type": "mcq",
+      "prompt": "Which command imports the entire gpiozero library's names directly?",
+      "choices": [
+        "from gpiozero import *",
+        "from gpiozero import LED",
+        "import time",
+        "from time import *"
+      ],
+      "answer": 0,
+      "explanation": "The asterisk imports all names exposed by the library.",
+      "section": "Python and GPIO Zero",
+      "topic": "Python and GPIO Zero"
+    },
+    {
+      "id": "iot301-ws9-q54",
+      "type": "mcq",
+      "prompt": "Which approach is recommended for a finished product in WS9?",
+      "choices": [
+        "Import everything using *",
+        "Import only the required classes",
+        "Never import a library",
+        "Import pandas"
+      ],
+      "answer": 1,
+      "explanation": "Explicit imports make dependencies clearer and reduce possible name clashes.",
+      "section": "Python and GPIO Zero",
+      "topic": "Python and GPIO Zero"
+    },
+    {
+      "id": "iot301-ws9-q55",
+      "type": "mcq",
+      "prompt": "What is the correct command to import only the PIR class?",
+      "choices": [
+        "import PIR",
+        "from gpiozero import MotionSensor",
+        "from gpiozero import Sensor",
+        "import MotionSensor"
+      ],
+      "answer": 1,
+      "explanation": "MotionSensor is the gpiozero class used for the PIR sensor.",
+      "section": "Python and GPIO Zero",
+      "topic": "Python and GPIO Zero"
+    },
+    {
+      "id": "iot301-ws9-q56",
+      "type": "mcq",
+      "prompt": "Which command creates a PIR object connected to GPIO 4?",
+      "choices": [
+        "pir = LED(4)",
+        "pir = MotionSensor(4)",
+        "pir = Button(4)",
+        "pir = Buzzer(4)"
+      ],
+      "answer": 1,
+      "explanation": "MotionSensor(4) creates a motion sensor object using GPIO 4.",
+      "section": "Python and GPIO Zero",
+      "topic": "Python and GPIO Zero"
+    },
+    {
+      "id": "iot301-ws9-q57",
+      "type": "mcq",
+      "prompt": "Which command creates a red LED object on GPIO 17?",
+      "choices": [
+        "red_led = LED(17)",
+        "red_led = MotionSensor(17)",
+        "red_led = Button(17)",
+        "red_led = Buzzer(17)"
+      ],
+      "answer": 0,
+      "explanation": "LED() creates an LED object using the specified GPIO pin.",
+      "section": "Python and GPIO Zero",
+      "topic": "Python and GPIO Zero"
+    },
+    {
+      "id": "iot301-ws9-q58",
+      "type": "mcq",
+      "prompt": "Which command creates a green LED object on GPIO 27?",
+      "choices": [
+        "green_led = LED(17)",
+        "green_led = LED(27)",
+        "green_led = Button(27)",
+        "green_led = MotionSensor(27)"
+      ],
+      "answer": 1,
+      "explanation": "The green LED is connected to GPIO 27.",
+      "section": "Python and GPIO Zero",
+      "topic": "Python and GPIO Zero"
+    },
+    {
+      "id": "iot301-ws9-q59",
+      "type": "mcq",
+      "prompt": "Which command creates a buzzer object on GPIO 23?",
+      "choices": [
+        "bzr = LED(23)",
+        "bzr = Button(23)",
+        "bzr = Buzzer(23)",
+        "bzr = MotionSensor(23)"
+      ],
+      "answer": 2,
+      "explanation": "Buzzer(23) creates a buzzer object on GPIO 23.",
+      "section": "Python and GPIO Zero",
+      "topic": "Python and GPIO Zero"
+    },
+    {
+      "id": "iot301-ws9-q60",
+      "type": "mcq",
+      "prompt": "Which command creates a button object on GPIO 24?",
+      "choices": [
+        "btn = Button(24)",
+        "btn = LED(24)",
+        "btn = Buzzer(24)",
+        "btn = MotionSensor(24)"
+      ],
+      "answer": 0,
+      "explanation": "The button is connected to GPIO 24.",
+      "section": "Python and GPIO Zero",
+      "topic": "Python and GPIO Zero"
+    },
+    {
+      "id": "iot301-ws9-q61",
+      "type": "mcq",
+      "prompt": "Which command turns an LED on?",
+      "choices": [
+        ".off()",
+        ".on()",
+        ".wait_for_motion()",
+        ".is_pressed"
+      ],
+      "answer": 1,
+      "explanation": "The .on() method switches the LED on.",
+      "section": "Python and GPIO Zero",
+      "topic": "Python and GPIO Zero"
+    },
+    {
+      "id": "iot301-ws9-q62",
+      "type": "mcq",
+      "prompt": "Which command turns an LED off?",
+      "choices": [
+        ".off()",
+        ".on()",
+        ".beep()",
+        ".blink()"
+      ],
+      "answer": 0,
+      "explanation": "The .off() method switches the LED off.",
+      "section": "Python and GPIO Zero",
+      "topic": "Python and GPIO Zero"
+    },
+    {
+      "id": "iot301-ws9-q63",
+      "type": "mcq",
+      "prompt": "Which command waits until motion is detected?",
+      "choices": [
+        "pir.wait_for_no_motion()",
+        "pir.wait_for_motion()",
+        "pir.wait_for_press()",
+        "pir.off()"
+      ],
+      "answer": 1,
+      "explanation": "It pauses the program until the PIR detects motion.",
+      "section": "Python and GPIO Zero",
+      "topic": "Python and GPIO Zero"
+    },
+    {
+      "id": "iot301-ws9-q64",
+      "type": "mcq",
+      "prompt": "Which command waits until motion stops?",
+      "choices": [
+        "pir.wait_for_motion()",
+        "pir.wait_for_no_motion()",
+        "pir.wait_for_release()",
+        "pir.on()"
+      ],
+      "answer": 1,
+      "explanation": "It pauses the program until the sensor reports no motion.",
+      "section": "Python and GPIO Zero",
+      "topic": "Python and GPIO Zero"
+    },
+    {
+      "id": "iot301-ws9-q65",
+      "type": "mcq",
+      "prompt": "Which property checks whether the PIR currently detects motion?",
+      "choices": [
+        "pir.is_pressed",
+        "pir.motion_detected",
+        "pir.wait_for_press()",
+        "pir.value_on"
+      ],
+      "answer": 1,
+      "explanation": "The property returns whether motion is currently detected.",
+      "section": "Python and GPIO Zero",
+      "topic": "Python and GPIO Zero"
+    },
+    {
+      "id": "iot301-ws9-q66",
+      "type": "mcq",
+      "prompt": "Which property checks whether the button is currently pressed?",
+      "choices": [
+        "btn.motion_detected",
+        "btn.is_pressed",
+        "btn.wait_for_motion()",
+        "btn.is_on"
+      ],
+      "answer": 1,
+      "explanation": ".is_pressed checks the current button state.",
+      "section": "Python and GPIO Zero",
+      "topic": "Python and GPIO Zero"
+    },
+    {
+      "id": "iot301-ws9-q67",
+      "type": "mcq",
+      "prompt": "Which method waits until a button is pressed?",
+      "choices": [
+        "btn.wait_for_press()",
+        "btn.wait_for_motion()",
+        "btn.wait_for_no_motion()",
+        "btn.beep()"
+      ],
+      "answer": 0,
+      "explanation": "It pauses the program until the button is pressed.",
+      "section": "Python and GPIO Zero",
+      "topic": "Python and GPIO Zero"
+    },
+    {
+      "id": "iot301-ws9-q68",
+      "type": "mcq",
+      "prompt": "Which method waits until the button is released?",
+      "choices": [
+        "btn.wait_for_press()",
+        "btn.wait_for_release()",
+        "btn.motion_detected()",
+        "btn.off()"
+      ],
+      "answer": 1,
+      "explanation": "It waits until the button is no longer pressed.",
+      "section": "Python and GPIO Zero",
+      "topic": "Python and GPIO Zero"
+    },
+    {
+      "id": "iot301-ws9-q69",
+      "type": "mcq",
+      "prompt": "Which method makes an LED blink?",
+      "choices": [
+        ".beep()",
+        ".blink()",
+        ".wait_for_motion()",
+        ".is_pressed"
+      ],
+      "answer": 1,
+      "explanation": "The LED's .blink() method repeatedly switches the LED on and off.",
+      "section": "Python and GPIO Zero",
+      "topic": "Python and GPIO Zero"
+    },
+    {
+      "id": "iot301-ws9-q70",
+      "type": "mcq",
+      "prompt": "Which method makes a buzzer beep repeatedly?",
+      "choices": [
+        ".blink()",
+        ".beep()",
+        ".wait_for_release()",
+        ".motion_detected"
+      ],
+      "answer": 1,
+      "explanation": "The buzzer's .beep() method repeatedly turns the buzzer on and off.",
+      "section": "Python and GPIO Zero",
+      "topic": "Python and GPIO Zero"
+    },
+    {
+      "id": "iot301-ws9-q71",
+      "type": "mcq",
+      "prompt": "Which Python module provides the sleep() function in Task 5?",
+      "choices": [
+        "gpiozero",
+        "time",
+        "random",
+        "math"
+      ],
+      "answer": 1,
+      "explanation": "Task 5 imports time and uses time.sleep(0.1).",
+      "section": "Python and GPIO Zero",
+      "topic": "Python and GPIO Zero"
+    },
+    {
+      "id": "iot301-ws9-q72",
+      "type": "mcq",
+      "prompt": "What does sleep(0.1) do?",
+      "choices": [
+        "Waits for 10 seconds",
+        "Pauses for 0.1 seconds",
+        "Turns off the Raspberry Pi",
+        "Detects motion"
+      ],
+      "answer": 1,
+      "explanation": "The value is measured in seconds.",
+      "section": "Python and GPIO Zero",
+      "topic": "Python and GPIO Zero"
+    },
+    {
+      "id": "iot301-ws9-q73",
+      "type": "mcq",
+      "prompt": "What does while True: mean?",
+      "choices": [
+        "Run once",
+        "Run while the button is pressed",
+        "Repeat continuously",
+        "Stop the program"
+      ],
+      "answer": 2,
+      "explanation": "True remains true, so the loop continues until the program is interrupted or exits.",
+      "section": "Python and GPIO Zero",
+      "topic": "Python and GPIO Zero"
+    },
+    {
+      "id": "iot301-ws9-q74",
+      "type": "mcq",
+      "prompt": "What is the purpose of print(\"Motion Detected\")?",
+      "choices": [
+        "Turn on the red LED",
+        "Display a message in the console",
+        "Detect infrared radiation",
+        "Start the buzzer"
+      ],
+      "answer": 1,
+      "explanation": "print() displays text in the program's output.",
+      "section": "Python and GPIO Zero",
+      "topic": "Python and GPIO Zero"
+    },
+    {
+      "id": "iot301-ws9-q75",
+      "type": "mcq",
+      "prompt": "What does from time import sleep allow you to write?",
+      "choices": [
+        "time.sleep(0.1) only",
+        "sleep(0.1) directly",
+        "gpiozero.sleep(0.1)",
+        "pir.sleep(0.1)"
+      ],
+      "answer": 1,
+      "explanation": "It imports the sleep function directly from the time module.",
+      "section": "Python and GPIO Zero",
+      "topic": "Python and GPIO Zero"
+    },
+    {
+      "id": "iot301-ws9-q76",
+      "type": "mcq",
+      "prompt": "What is the purpose of motionDetected = False in Task 5?",
+      "choices": [
+        "It creates a button",
+        "It stores whether motion is being handled as detected",
+        "It turns off the PIR sensor",
+        "It creates an LED"
+      ],
+      "answer": 1,
+      "explanation": "The Boolean variable controls the inner loop that operates the buzzer.",
+      "section": "Alarm Logic and Program Behaviour",
+      "topic": "Alarm Logic and Program Behaviour"
+    },
+    {
+      "id": "iot301-ws9-q77",
+      "type": "mcq",
+      "prompt": "Which two values can a Boolean variable store?",
+      "choices": [
+        "HIGH and LOW only",
+        "True and False",
+        "0 and 2",
+        "Red and Green"
+      ],
+      "answer": 1,
+      "explanation": "A Boolean represents one of two logical states.",
+      "section": "Alarm Logic and Program Behaviour",
+      "topic": "Alarm Logic and Program Behaviour"
+    },
+    {
+      "id": "iot301-ws9-q78",
+      "type": "mcq",
+      "prompt": "In Task 5, what happens when motion is detected?",
+      "choices": [
+        "The green LED turns on and the buzzer stops",
+        "The red LED turns on and the buzzer starts beeping",
+        "Both LEDs turn on permanently",
+        "The program closes"
+      ],
+      "answer": 1,
+      "explanation": "Task 5 uses the red LED and buzzer to indicate detected motion.",
+      "section": "Alarm Logic and Program Behaviour",
+      "topic": "Alarm Logic and Program Behaviour"
+    },
+    {
+      "id": "iot301-ws9-q79",
+      "type": "mcq",
+      "prompt": "In Task 5, what happens when motion stops?",
+      "choices": [
+        "The buzzer continues forever",
+        "The red LED turns off and the program reports that motion stopped",
+        "The Raspberry Pi restarts",
+        "The button is pressed automatically"
+      ],
+      "answer": 1,
+      "explanation": "The inner loop ends when pir.motion_detected becomes false.",
+      "section": "Alarm Logic and Program Behaviour",
+      "topic": "Alarm Logic and Program Behaviour"
+    },
+    {
+      "id": "iot301-ws9-q80",
+      "type": "mcq",
+      "prompt": "What is the purpose of if not pir.motion_detected:?",
+      "choices": [
+        "Check if motion is detected",
+        "Check if motion is not detected",
+        "Turn the PIR sensor off",
+        "Press the button"
+      ],
+      "answer": 1,
+      "explanation": "not reverses the Boolean value of pir.motion_detected.",
+      "section": "Alarm Logic and Program Behaviour",
+      "topic": "Alarm Logic and Program Behaviour"
+    },
+    {
+      "id": "iot301-ws9-q81",
+      "type": "mcq",
+      "prompt": "What does motionDetected = True do in Task 5?",
+      "choices": [
+        "Marks motion as detected for the program's loop",
+        "Turns the green LED on",
+        "Disables the PIR sensor",
+        "Stops the buzzer"
+      ],
+      "answer": 0,
+      "explanation": "The inner while motionDetected: loop uses this variable to continue the alarm behaviour.",
+      "section": "Alarm Logic and Program Behaviour",
+      "topic": "Alarm Logic and Program Behaviour"
+    },
+    {
+      "id": "iot301-ws9-q82",
+      "type": "mcq",
+      "prompt": "Why does Task 5 use an inner while loop?",
+      "choices": [
+        "To repeat the buzzer sound while motion remains detected",
+        "To import gpiozero repeatedly",
+        "To restart the Raspberry Pi",
+        "To wait for a new button"
+      ],
+      "answer": 0,
+      "explanation": "The inner loop repeatedly turns the buzzer on and off until motion stops.",
+      "section": "Alarm Logic and Program Behaviour",
+      "topic": "Alarm Logic and Program Behaviour"
+    },
+    {
+      "id": "iot301-ws9-q83",
+      "type": "mcq",
+      "prompt": "What is the purpose of time.sleep(0.1) between buzzer operations?",
+      "choices": [
+        "To create a pause between on and off states",
+        "To increase PIR sensitivity",
+        "To change the GPIO pin",
+        "To stop the program permanently"
+      ],
+      "answer": 0,
+      "explanation": "The pauses create repeated audible beeps instead of leaving the buzzer continuously on.",
+      "section": "Alarm Logic and Program Behaviour",
+      "topic": "Alarm Logic and Program Behaviour"
+    },
+    {
+      "id": "iot301-ws9-q84",
+      "type": "mcq",
+      "prompt": "In Task 6, what is the initial state of both LEDs?",
+      "choices": [
+        "Both ON",
+        "Red ON, green OFF",
+        "Both OFF",
+        "Red blinking, green ON"
+      ],
+      "answer": 2,
+      "explanation": "Both LEDs being off indicates that the security system is initially disabled.",
+      "section": "Alarm Logic and Program Behaviour",
+      "topic": "Alarm Logic and Program Behaviour"
+    },
+    {
+      "id": "iot301-ws9-q85",
+      "type": "mcq",
+      "prompt": "In Task 6, what action arms the alarm?",
+      "choices": [
+        "PIR detects motion",
+        "The button is pressed",
+        "The red LED turns on",
+        "The buzzer beeps"
+      ],
+      "answer": 1,
+      "explanation": "The program waits for a button press before arming the system.",
+      "section": "Alarm Logic and Program Behaviour",
+      "topic": "Alarm Logic and Program Behaviour"
+    },
+    {
+      "id": "iot301-ws9-q86",
+      "type": "mcq",
+      "prompt": "What does the green LED indicate in Task 6 after the alarm is armed?",
+      "choices": [
+        "The system is ON and monitoring",
+        "Motion has been detected",
+        "The system is OFF",
+        "The buzzer is broken"
+      ],
+      "answer": 0,
+      "explanation": "The green LED indicates that the security system is armed.",
+      "section": "Alarm Logic and Program Behaviour",
+      "topic": "Alarm Logic and Program Behaviour"
+    },
+    {
+      "id": "iot301-ws9-q87",
+      "type": "mcq",
+      "prompt": "What happens when motion is detected in Task 6?",
+      "choices": [
+        "Green LED turns on",
+        "Green LED turns off, and the red LED and buzzer activate",
+        "All components turn off",
+        "The button is disabled permanently"
+      ],
+      "answer": 1,
+      "explanation": "The system changes from monitoring to alarm mode.",
+      "section": "Alarm Logic and Program Behaviour",
+      "topic": "Alarm Logic and Program Behaviour"
+    },
+    {
+      "id": "iot301-ws9-q88",
+      "type": "mcq",
+      "prompt": "When does the alarm stop in Task 6?",
+      "choices": [
+        "When motion stops",
+        "When the button is pressed again",
+        "After 0.1 seconds",
+        "When the green LED turns on"
+      ],
+      "answer": 1,
+      "explanation": "Task 6 keeps the red LED blinking and buzzer beeping until the user presses the button to disarm.",
+      "section": "Alarm Logic and Program Behaviour",
+      "topic": "Alarm Logic and Program Behaviour"
+    },
+    {
+      "id": "iot301-ws9-q89",
+      "type": "mcq",
+      "prompt": "What does btn.wait_for_press() do in Task 6?",
+      "choices": [
+        "Waits until motion stops",
+        "Waits until the button is pressed",
+        "Makes the button blink",
+        "Turns on the buzzer"
+      ],
+      "answer": 1,
+      "explanation": "It pauses the program until the user presses the button.",
+      "section": "Alarm Logic and Program Behaviour",
+      "topic": "Alarm Logic and Program Behaviour"
+    },
+    {
+      "id": "iot301-ws9-q90",
+      "type": "mcq",
+      "prompt": "Why does Task 6 use btn.wait_for_release() after a press?",
+      "choices": [
+        "To wait for the user to release the button",
+        "To detect motion",
+        "To turn off the green LED",
+        "To increase sensitivity"
+      ],
+      "answer": 0,
+      "explanation": "It ensures the program waits for the button to return to its unpressed state.",
+      "section": "Alarm Logic and Program Behaviour",
+      "topic": "Alarm Logic and Program Behaviour"
+    },
+    {
+      "id": "iot301-ws9-q91",
+      "type": "mcq",
+      "prompt": "What is the purpose of sleep(0.2) after releasing the button?",
+      "choices": [
+        "Increase the alarm volume",
+        "Allow the button contacts to settle",
+        "Detect motion faster",
+        "Change the LED colour"
+      ],
+      "answer": 1,
+      "explanation": "The short pause helps prevent unwanted repeated readings caused by button contact changes.",
+      "section": "Alarm Logic and Program Behaviour",
+      "topic": "Alarm Logic and Program Behaviour"
+    },
+    {
+      "id": "iot301-ws9-q92",
+      "type": "mcq",
+      "prompt": "Why can blink() and beep() be useful in Task 6?",
+      "choices": [
+        "They keep running in the background",
+        "They turn the Raspberry Pi off",
+        "They replace the PIR sensor",
+        "They automatically press the button"
+      ],
+      "answer": 0,
+      "explanation": "The program can wait for the button while the LED continues blinking and the buzzer continues beeping.",
+      "section": "Alarm Logic and Program Behaviour",
+      "topic": "Alarm Logic and Program Behaviour"
+    },
+    {
+      "id": "iot301-ws9-q93",
+      "type": "mcq",
+      "prompt": "What is the main improvement in Task 7 compared with Task 6?",
+      "choices": [
+        "It removes the PIR sensor",
+        "It allows the alarm to be disarmed before motion is detected",
+        "It removes the button",
+        "It uses only one LED"
+      ],
+      "answer": 1,
+      "explanation": "Task 7 checks for both motion and a button press while the alarm is armed.",
+      "section": "Alarm Logic and Program Behaviour",
+      "topic": "Alarm Logic and Program Behaviour"
+    },
+    {
+      "id": "iot301-ws9-q94",
+      "type": "mcq",
+      "prompt": "Why can Task 7 no longer use pir.wait_for_motion() while armed?",
+      "choices": [
+        "It is not supported by gpiozero",
+        "The program must also check whether the button is pressed",
+        "It turns off the buzzer",
+        "It changes the sensor pin"
+      ],
+      "answer": 1,
+      "explanation": "Waiting only for motion would prevent the program from responding to a button press that happens first.",
+      "section": "Alarm Logic and Program Behaviour",
+      "topic": "Alarm Logic and Program Behaviour"
+    },
+    {
+      "id": "iot301-ws9-q95",
+      "type": "mcq",
+      "prompt": "Which property does Task 7 use to check the button state?",
+      "choices": [
+        "btn.wait_for_press()",
+        "btn.is_pressed",
+        "btn.motion_detected",
+        "btn.wait_for_motion()"
+      ],
+      "answer": 1,
+      "explanation": "It checks the button's current state without blocking the program.",
+      "section": "Alarm Logic and Program Behaviour",
+      "topic": "Alarm Logic and Program Behaviour"
+    },
+    {
+      "id": "iot301-ws9-q96",
+      "type": "mcq",
+      "prompt": "Which property does Task 7 use to check the PIR state?",
+      "choices": [
+        "pir.motion_detected",
+        "pir.is_pressed",
+        "pir.wait_for_release()",
+        "pir.is_on"
+      ],
+      "answer": 0,
+      "explanation": "It checks whether motion is currently detected.",
+      "section": "Alarm Logic and Program Behaviour",
+      "topic": "Alarm Logic and Program Behaviour"
+    },
+    {
+      "id": "iot301-ws9-q97",
+      "type": "mcq",
+      "prompt": "What does this condition mean: while not pir.motion_detected and not btn.is_pressed:?",
+      "choices": [
+        "Continue while motion is detected or the button is pressed",
+        "Continue while no motion is detected and the button is not pressed",
+        "Stop whenever the button is released",
+        "Continue only when both are pressed"
+      ],
+      "answer": 1,
+      "explanation": "The loop ends when either motion is detected or the button is pressed.",
+      "section": "Alarm Logic and Program Behaviour",
+      "topic": "Alarm Logic and Program Behaviour"
+    },
+    {
+      "id": "iot301-ws9-q98",
+      "type": "mcq",
+      "prompt": "What is the purpose of continue in Task 7?",
+      "choices": [
+        "Restart the current loop iteration from its beginning",
+        "Stop Python permanently",
+        "Turn on the buzzer",
+        "Wait for motion"
+      ],
+      "answer": 0,
+      "explanation": "After disarming before motion, continue returns to the start of the main loop.",
+      "section": "Alarm Logic and Program Behaviour",
+      "topic": "Alarm Logic and Program Behaviour"
+    },
+    {
+      "id": "iot301-ws9-q99",
+      "type": "mcq",
+      "prompt": "Why does Task 7 use sleep(0.05) inside the checking loop?",
+      "choices": [
+        "To make the buzzer louder",
+        "To avoid checking continuously without a pause",
+        "To increase LED brightness",
+        "To keep the alarm permanently armed"
+      ],
+      "answer": 1,
+      "explanation": "The worksheet recommends a short delay to avoid overworking the processor.",
+      "section": "Alarm Logic and Program Behaviour",
+      "topic": "Alarm Logic and Program Behaviour"
+    },
+    {
+      "id": "iot301-ws9-q100",
+      "type": "mcq",
+      "prompt": "In Task 7, what happens if the button is pressed before motion is detected?",
+      "choices": [
+        "The alarm triggers",
+        "The system is disarmed and returns to the start of the main loop",
+        "The red LED blinks",
+        "The buzzer starts beeping"
+      ],
+      "answer": 1,
+      "explanation": "The program detects the button press, waits for its release, prints the disarmed message, and executes continue.",
+      "section": "Alarm Logic and Program Behaviour",
+      "topic": "Alarm Logic and Program Behaviour"
+    },
+    {
+      "id": "iot301-ws9-q101",
+      "type": "code",
+      "prompt": "Import the LED class from the gpiozero library.",
+      "answer": "from gpiozero import LED",
+      "explanation": "LED is the class used to control LEDs.",
+      "section": "Importing and Creating Objects",
+      "topic": "Importing and Creating Objects"
+    },
+    {
+      "id": "iot301-ws9-q102",
+      "type": "code",
+      "prompt": "Import the MotionSensor class from the gpiozero library.",
+      "answer": "from gpiozero import MotionSensor",
+      "explanation": "MotionSensor is used to receive input from the PIR sensor.",
+      "section": "Importing and Creating Objects",
+      "topic": "Importing and Creating Objects"
+    },
+    {
+      "id": "iot301-ws9-q103",
+      "type": "code",
+      "prompt": "Import the Buzzer class from the gpiozero library.",
+      "answer": "from gpiozero import Buzzer",
+      "explanation": "Buzzer is used to control the buzzer.",
+      "section": "Importing and Creating Objects",
+      "topic": "Importing and Creating Objects"
+    },
+    {
+      "id": "iot301-ws9-q104",
+      "type": "code",
+      "prompt": "Import the Button class from the gpiozero library.",
+      "answer": "from gpiozero import Button",
+      "explanation": "Button is used to read button input.",
+      "section": "Importing and Creating Objects",
+      "topic": "Importing and Creating Objects"
+    },
+    {
+      "id": "iot301-ws9-q105",
+      "type": "code",
+      "prompt": "Import the sleep function directly from the time library.",
+      "answer": "from time import sleep",
+      "explanation": "This allows you to use sleep() to pause the program.",
+      "section": "Importing and Creating Objects",
+      "topic": "Importing and Creating Objects"
+    },
+    {
+      "id": "iot301-ws9-q106",
+      "type": "code",
+      "prompt": "Create a red LED object using the variable red_led on GPIO 17.",
+      "answer": "red_led = LED(17)",
+      "explanation": "LED(17) creates an LED object connected to GPIO 17.",
+      "section": "Importing and Creating Objects",
+      "topic": "Importing and Creating Objects"
+    },
+    {
+      "id": "iot301-ws9-q107",
+      "type": "code",
+      "prompt": "Create a green LED object using the variable green_led on GPIO 27.",
+      "answer": "green_led = LED(27)",
+      "explanation": "The green LED is connected to GPIO 27.",
+      "section": "Importing and Creating Objects",
+      "topic": "Importing and Creating Objects"
+    },
+    {
+      "id": "iot301-ws9-q108",
+      "type": "code",
+      "prompt": "Create a PIR sensor object using the variable pir on GPIO 4.",
+      "answer": "pir = MotionSensor(4)",
+      "explanation": "MotionSensor(4) creates the PIR sensor object.",
+      "section": "Importing and Creating Objects",
+      "topic": "Importing and Creating Objects"
+    },
+    {
+      "id": "iot301-ws9-q109",
+      "type": "code",
+      "prompt": "Create a buzzer object using the variable bzr on GPIO 23.",
+      "answer": "bzr = Buzzer(23)",
+      "explanation": "Buzzer(23) creates the buzzer object.",
+      "section": "Importing and Creating Objects",
+      "topic": "Importing and Creating Objects"
+    },
+    {
+      "id": "iot301-ws9-q110",
+      "type": "code",
+      "prompt": "Create a button object using the variable btn on GPIO 24.",
+      "answer": "btn = Button(24)",
+      "explanation": "Button(24) creates the button object.",
+      "section": "Importing and Creating Objects",
+      "topic": "Importing and Creating Objects"
+    },
+    {
+      "id": "iot301-ws9-q111",
+      "type": "code",
+      "prompt": "Import only the LED and MotionSensor classes from gpiozero in one statement.",
+      "answer": "from gpiozero import LED, MotionSensor",
+      "explanation": "This imports only the two required classes.",
+      "section": "Importing and Creating Objects",
+      "topic": "Importing and Creating Objects"
+    },
+    {
+      "id": "iot301-ws9-q112",
+      "type": "code",
+      "prompt": "Import the LED, MotionSensor, Buzzer, and Button classes in one statement.",
+      "answer": "from gpiozero import LED, MotionSensor, Buzzer, Button",
+      "explanation": "These are the four gpiozero classes required for the WS9 alarm system.",
+      "section": "Importing and Creating Objects",
+      "topic": "Importing and Creating Objects"
+    },
+    {
+      "id": "iot301-ws9-q113",
+      "type": "code",
+      "prompt": "Create a PIR sensor object named pir using the MotionSensor class on GPIO 4.",
+      "answer": "pir = MotionSensor(4)",
+      "explanation": "The variable pir stores the PIR sensor object.",
+      "section": "Importing and Creating Objects",
+      "topic": "Importing and Creating Objects"
+    },
+    {
+      "id": "iot301-ws9-q114",
+      "type": "code",
+      "prompt": "Create an LED object named red_led using GPIO 17.",
+      "answer": "red_led = LED(17)",
+      "explanation": "The variable red_led represents the red LED.",
+      "section": "Importing and Creating Objects",
+      "topic": "Importing and Creating Objects"
+    },
+    {
+      "id": "iot301-ws9-q115",
+      "type": "code",
+      "prompt": "Create a button object named btn using GPIO 24.",
+      "answer": "btn = Button(24)",
+      "explanation": "The variable btn represents the physical button.",
+      "section": "Importing and Creating Objects",
+      "topic": "Importing and Creating Objects"
+    },
+    {
+      "id": "iot301-ws9-q116",
+      "type": "code",
+      "prompt": "Use the variable red_led to turn the red LED ON.",
+      "answer": "red_led.on()",
+      "explanation": ".on() switches the LED on.",
+      "section": "LED and PIR Commands",
+      "topic": "LED and PIR Commands"
+    },
+    {
+      "id": "iot301-ws9-q117",
+      "type": "code",
+      "prompt": "Use the variable red_led to turn the red LED OFF.",
+      "answer": "red_led.off()",
+      "explanation": ".off() switches the LED off.",
+      "section": "LED and PIR Commands",
+      "topic": "LED and PIR Commands"
+    },
+    {
+      "id": "iot301-ws9-q118",
+      "type": "code",
+      "prompt": "Use the variable green_led to turn the green LED ON.",
+      "answer": "green_led.on()",
+      "explanation": ".on() activates the green LED.",
+      "section": "LED and PIR Commands",
+      "topic": "LED and PIR Commands"
+    },
+    {
+      "id": "iot301-ws9-q119",
+      "type": "code",
+      "prompt": "Use the variable green_led to turn the green LED OFF.",
+      "answer": "green_led.off()",
+      "explanation": ".off() deactivates the green LED.",
+      "section": "LED and PIR Commands",
+      "topic": "LED and PIR Commands"
+    },
+    {
+      "id": "iot301-ws9-q120",
+      "type": "code",
+      "prompt": "Use the variable red_led to make the red LED blink continuously, with 0.1 seconds ON and 0.1 seconds OFF.",
+      "answer": "red_led.blink(on_time=0.1, off_time=0.1)",
+      "explanation": "blink() repeatedly switches the LED on and off using the specified times.",
+      "section": "LED and PIR Commands",
+      "topic": "LED and PIR Commands"
+    },
+    {
+      "id": "iot301-ws9-q121",
+      "type": "code",
+      "prompt": "Use the variable pir to make the program wait until motion is detected.",
+      "answer": "pir.wait_for_motion()",
+      "explanation": "The program pauses until the PIR sensor detects motion.",
+      "section": "LED and PIR Commands",
+      "topic": "LED and PIR Commands"
+    },
+    {
+      "id": "iot301-ws9-q122",
+      "type": "code",
+      "prompt": "Use the variable pir to make the program wait until no motion is detected.",
+      "answer": "pir.wait_for_no_motion()",
+      "explanation": "The program pauses until the PIR sensor reports that motion has stopped.",
+      "section": "LED and PIR Commands",
+      "topic": "LED and PIR Commands"
+    },
+    {
+      "id": "iot301-ws9-q123",
+      "type": "code",
+      "prompt": "Write the expression using the variable pir to check whether motion is currently detected.",
+      "answer": "pir.motion_detected",
+      "explanation": "The property returns True when motion is detected.",
+      "section": "LED and PIR Commands",
+      "topic": "LED and PIR Commands"
+    },
+    {
+      "id": "iot301-ws9-q124",
+      "type": "code",
+      "prompt": "Write the expression using the variable pir to check whether motion is NOT currently detected.",
+      "answer": "not pir.motion_detected",
+      "explanation": "not reverses the Boolean value of the motion property.",
+      "section": "LED and PIR Commands",
+      "topic": "LED and PIR Commands"
+    },
+    {
+      "id": "iot301-ws9-q125",
+      "type": "code",
+      "prompt": "Write a Python statement that checks whether the variable pir has detected motion.",
+      "answer": "if pir.motion_detected:",
+      "explanation": "The if condition runs its code block when motion is detected.",
+      "section": "LED and PIR Commands",
+      "topic": "LED and PIR Commands"
+    },
+    {
+      "id": "iot301-ws9-q126",
+      "type": "code",
+      "prompt": "Write a Python statement that checks whether the variable pir has NOT detected motion.",
+      "answer": "if not pir.motion_detected:",
+      "explanation": "The condition becomes true when no motion is detected.",
+      "section": "LED and PIR Commands",
+      "topic": "LED and PIR Commands"
+    },
+    {
+      "id": "iot301-ws9-q127",
+      "type": "code",
+      "prompt": "Use the variable green_led to turn the green LED OFF when motion is detected.",
+      "answer": "green_led.off()",
+      "explanation": "In Task 4, the green LED indicates no motion, so it must turn off when motion is detected.",
+      "section": "LED and PIR Commands",
+      "topic": "LED and PIR Commands"
+    },
+    {
+      "id": "iot301-ws9-q128",
+      "type": "code",
+      "prompt": "Use the variable red_led to turn the red LED ON when motion is detected.",
+      "answer": "red_led.on()",
+      "explanation": "The red LED indicates that motion has been detected.",
+      "section": "LED and PIR Commands",
+      "topic": "LED and PIR Commands"
+    },
+    {
+      "id": "iot301-ws9-q129",
+      "type": "code",
+      "prompt": "Use the variable green_led to turn the green LED ON when motion stops.",
+      "answer": "green_led.on()",
+      "explanation": "The green LED indicates that no motion is detected.",
+      "section": "LED and PIR Commands",
+      "topic": "LED and PIR Commands"
+    },
+    {
+      "id": "iot301-ws9-q130",
+      "type": "code",
+      "prompt": "Use the variable red_led to turn the red LED OFF when motion stops.",
+      "answer": "red_led.off()",
+      "explanation": "The red LED should only indicate detected motion.",
+      "section": "LED and PIR Commands",
+      "topic": "LED and PIR Commands"
+    },
+    {
+      "id": "iot301-ws9-q131",
+      "type": "code",
+      "prompt": "Use the variable bzr to turn the buzzer ON.",
+      "answer": "bzr.on()",
+      "explanation": ".on() activates the buzzer.",
+      "section": "Buzzer and Button Commands",
+      "topic": "Buzzer and Button Commands"
+    },
+    {
+      "id": "iot301-ws9-q132",
+      "type": "code",
+      "prompt": "Use the variable bzr to turn the buzzer OFF.",
+      "answer": "bzr.off()",
+      "explanation": ".off() deactivates the buzzer.",
+      "section": "Buzzer and Button Commands",
+      "topic": "Buzzer and Button Commands"
+    },
+    {
+      "id": "iot301-ws9-q133",
+      "type": "code",
+      "prompt": "Use the variable bzr to make the buzzer beep repeatedly, with 0.1 seconds ON and 0.1 seconds OFF.",
+      "answer": "bzr.beep(on_time=0.1, off_time=0.1)",
+      "explanation": "beep() repeatedly activates and deactivates the buzzer.",
+      "section": "Buzzer and Button Commands",
+      "topic": "Buzzer and Button Commands"
+    },
+    {
+      "id": "iot301-ws9-q134",
+      "type": "code",
+      "prompt": "Use the variable btn to make the program wait until the button is pressed.",
+      "answer": "btn.wait_for_press()",
+      "explanation": "The program pauses until the user presses the button.",
+      "section": "Buzzer and Button Commands",
+      "topic": "Buzzer and Button Commands"
+    },
+    {
+      "id": "iot301-ws9-q135",
+      "type": "code",
+      "prompt": "Use the variable btn to make the program wait until the button is released.",
+      "answer": "btn.wait_for_release()",
+      "explanation": "The program pauses until the button is no longer pressed.",
+      "section": "Buzzer and Button Commands",
+      "topic": "Buzzer and Button Commands"
+    },
+    {
+      "id": "iot301-ws9-q136",
+      "type": "code",
+      "prompt": "Write the expression using the variable btn to check whether the button is currently pressed.",
+      "answer": "btn.is_pressed",
+      "explanation": ".is_pressed returns True when the button is pressed.",
+      "section": "Buzzer and Button Commands",
+      "topic": "Buzzer and Button Commands"
+    },
+    {
+      "id": "iot301-ws9-q137",
+      "type": "code",
+      "prompt": "Write a Python statement that checks whether the variable btn is currently pressed.",
+      "answer": "if btn.is_pressed:",
+      "explanation": "The condition runs its code block when the button is pressed.",
+      "section": "Buzzer and Button Commands",
+      "topic": "Buzzer and Button Commands"
+    },
+    {
+      "id": "iot301-ws9-q138",
+      "type": "code",
+      "prompt": "Use the sleep() function to pause the program for 0.2 seconds.",
+      "answer": "sleep(0.2)",
+      "explanation": "The value represents the pause duration in seconds.",
+      "section": "Buzzer and Button Commands",
+      "topic": "Buzzer and Button Commands"
+    },
+    {
+      "id": "iot301-ws9-q139",
+      "type": "code",
+      "prompt": "Use the sleep() function to pause the program for 0.05 seconds.",
+      "answer": "sleep(0.05)",
+      "explanation": "Task 7 uses a short delay while repeatedly checking the sensor and button.",
+      "section": "Buzzer and Button Commands",
+      "topic": "Buzzer and Button Commands"
+    },
+    {
+      "id": "iot301-ws9-q140",
+      "type": "code",
+      "prompt": "Write a Python statement that continuously repeats the code inside a loop.",
+      "answer": "while True:",
+      "explanation": "The loop repeats continuously because the condition is always true.",
+      "section": "Buzzer and Button Commands",
+      "topic": "Buzzer and Button Commands"
+    },
+    {
+      "id": "iot301-ws9-q141",
+      "type": "code",
+      "prompt": "Create a Boolean variable named motionDetected and set its initial value to False.",
+      "answer": "motionDetected = False",
+      "explanation": "The variable starts as False because motion has not yet been registered.",
+      "section": "Task 5, Task 6, and Task 7 Logic",
+      "topic": "Task 5, Task 6, and Task 7 Logic"
+    },
+    {
+      "id": "iot301-ws9-q142",
+      "type": "code",
+      "prompt": "Change the Boolean variable motionDetected to True after motion is detected.",
+      "answer": "motionDetected = True",
+      "explanation": "True represents the detected state in the Task 5 program.",
+      "section": "Task 5, Task 6, and Task 7 Logic",
+      "topic": "Task 5, Task 6, and Task 7 Logic"
+    },
+    {
+      "id": "iot301-ws9-q143",
+      "type": "code",
+      "prompt": "Write a while statement that repeats as long as the Boolean variable motionDetected is True.",
+      "answer": "while motionDetected:",
+      "explanation": "The loop continues while motionDetected remains True.",
+      "section": "Task 5, Task 6, and Task 7 Logic",
+      "topic": "Task 5, Task 6, and Task 7 Logic"
+    },
+    {
+      "id": "iot301-ws9-q144",
+      "type": "code",
+      "prompt": "Inside the Task 5 loop, use the variable bzr to turn the buzzer ON.",
+      "answer": "bzr.on()",
+      "explanation": "This activates the buzzer during the alarm.",
+      "section": "Task 5, Task 6, and Task 7 Logic",
+      "topic": "Task 5, Task 6, and Task 7 Logic"
+    },
+    {
+      "id": "iot301-ws9-q145",
+      "type": "code",
+      "prompt": "Inside the Task 5 loop, use the sleep() function to pause for 0.1 seconds after turning the buzzer ON.",
+      "answer": "sleep(0.1)",
+      "explanation": "The pause controls the duration of the buzzer's ON state.",
+      "section": "Task 5, Task 6, and Task 7 Logic",
+      "topic": "Task 5, Task 6, and Task 7 Logic"
+    },
+    {
+      "id": "iot301-ws9-q146",
+      "type": "code",
+      "prompt": "In Task 5, write the condition that checks whether the PIR sensor named pir has stopped detecting motion.",
+      "answer": "if not pir.motion_detected:",
+      "explanation": "The condition becomes true when the PIR sensor reports no motion.",
+      "section": "Task 5, Task 6, and Task 7 Logic",
+      "topic": "Task 5, Task 6, and Task 7 Logic"
+    },
+    {
+      "id": "iot301-ws9-q147",
+      "type": "code",
+      "prompt": "In Task 7, write a while condition that keeps checking while there is NO motion and the button is NOT pressed. Use the variables pir and btn.",
+      "answer": "while not pir.motion_detected and not btn.is_pressed:",
+      "explanation": "The loop continues only while both conditions are true.",
+      "section": "Task 5, Task 6, and Task 7 Logic",
+      "topic": "Task 5, Task 6, and Task 7 Logic"
+    },
+    {
+      "id": "iot301-ws9-q148",
+      "type": "code",
+      "prompt": "In Task 7, write an if statement that checks whether the button named btn was pressed before motion was detected.",
+      "answer": "if btn.is_pressed:",
+      "explanation": "The program checks whether the button was pressed to disarm the system.",
+      "section": "Task 5, Task 6, and Task 7 Logic",
+      "topic": "Task 5, Task 6, and Task 7 Logic"
+    },
+    {
+      "id": "iot301-ws9-q149",
+      "type": "code",
+      "prompt": "After the system is disarmed before motion is detected, write the statement that skips the remaining code and returns to the beginning of the main loop.",
+      "answer": "continue",
+      "explanation": "continue starts the next iteration of the nearest enclosing loop.",
+      "section": "Task 5, Task 6, and Task 7 Logic",
+      "topic": "Task 5, Task 6, and Task 7 Logic"
+    },
+    {
+      "id": "iot301-ws9-q150",
+      "type": "code",
+      "prompt": "In Task 7, write the command to make the buzzer named bzr beep in the background with 0.1 seconds ON and 0.1 seconds OFF.",
+      "answer": "bzr.beep(on_time=0.1, off_time=0.1)",
+      "explanation": "The buzzer continues beeping while the program waits for the button to disarm the alarm.",
+      "section": "Task 5, Task 6, and Task 7 Logic",
+      "topic": "Task 5, Task 6, and Task 7 Logic"
+    }
+  ]
+}

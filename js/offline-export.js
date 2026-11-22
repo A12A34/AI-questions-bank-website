@@ -1,4 +1,4 @@
-﻿/**
+/**
  * offline-export.js
  * Generates and downloads a self-contained, standalone offline HTML quiz.
  * Completely standalone: zero server, zero build step, zero external dependencies required.
@@ -240,6 +240,99 @@ function getOfflineStyles() {
 
     .controls-actions {
       margin-inline-start: auto;
+    }
+
+    .quiz-filter-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      margin-top: 0.75rem;
+      padding: 0.75rem 1rem;
+      background: var(--bg-elev);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+
+    .quiz-filter-container[hidden] {
+      display: none !important;
+    }
+
+    .filter-group {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem 0.65rem;
+    }
+
+    .filter-group[hidden] {
+      display: none !important;
+    }
+
+    .filter-label {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      min-width: 4.2rem;
+      flex-shrink: 0;
+    }
+
+    .filter-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.4rem 0.5rem;
+    }
+
+    .filter-chip {
+      appearance: none;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      font-family: inherit;
+      font-size: 0.85rem;
+      font-weight: 500;
+      padding: 0.32rem 0.75rem;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all 0.15s ease-in-out;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      line-height: 1.2;
+    }
+
+    .filter-chip:hover {
+      border-color: var(--accent);
+      color: #fff;
+      background: rgba(110, 168, 254, 0.15);
+    }
+
+    .filter-chip.is-active {
+      background: var(--accent);
+      border-color: var(--accent-strong);
+      color: #0b1118;
+      font-weight: 600;
+      box-shadow: 0 0 12px rgba(110, 168, 254, 0.35);
+    }
+
+    .filter-chip .chip-count {
+      font-size: 0.76rem;
+      font-weight: 600;
+      opacity: 0.85;
+      padding: 0.1rem 0.45rem;
+      border-radius: 999px;
+      background: rgba(0, 0, 0, 0.28);
+    }
+
+    .filter-chip.is-active .chip-count {
+      background: rgba(0, 0, 0, 0.22);
+      color: #0b1118;
+    }
+
+    .question-section.is-hidden {
+      display: none !important;
     }
 
     /* Two-column layout with sidebar */
@@ -852,6 +945,15 @@ function getOfflineClientScript() {
   const ARABIC_RE = /[\\u0600-\\u06FF]/;
   const ALLOWED_TYPES = new Set(["mcq", "multi", "tf", "match", "writing", "reading", "code", "code-writing", "numeric"]);
 
+  function escapeHtml(value) {
+    return String(value ?? "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#39;");
+  }
+
   const hasArabic = (text) => ARABIC_RE.test(String(text ?? ""));
 
   function shuffle(items) {
@@ -977,11 +1079,13 @@ function getOfflineClientScript() {
     const validQuestions = [];
 
     parsed.questions.forEach((q, index) => {
-      if (!q || typeof q !== "object" || !q.id || seenIds.has(q.id)) return;
+      if (!q || typeof q !== "object") return;
+      const id = q.id || ("q" + (index + 1));
+      if (seenIds.has(id)) return;
       if (!ALLOWED_TYPES.has(q.type)) return;
-      if (q.prompt === undefined && q.text === undefined) return;
-      seenIds.add(q.id);
-      validQuestions.push({ ...q });
+      if (q.prompt === undefined && q.text === undefined && q.type !== "reading") return;
+      seenIds.add(id);
+      validQuestions.push({ ...q, id });
     });
 
     if (!validQuestions.length) throw new Error("The bank has no valid questions.");
@@ -1000,6 +1104,8 @@ function getOfflineClientScript() {
     shuffleQuestions: false,
     shuffleChoices: false,
     bookmarksOnly: false,
+    selectedType: "all",
+    selectedTopic: "all",
     bookmarks: new Set(),
     answers: new Map(),
     revealed: new Set(),
@@ -1010,6 +1116,29 @@ function getOfflineClientScript() {
 
   const els = {};
   let observer = null;
+
+  function isCodeQuestion(q) {
+    return q.type === "code" || q.type === "code-writing";
+  }
+
+  function matchesTypeFilter(q) {
+    if (!state.selectedType || state.selectedType === "all") return true;
+    if (state.selectedType === "coding") return isCodeQuestion(q);
+    return q.type === state.selectedType;
+  }
+
+  function matchesTopicFilter(q) {
+    if (!state.selectedTopic || state.selectedTopic === "all") return true;
+    const topic = (q.topic || q.section || "").trim();
+    return topic === state.selectedTopic;
+  }
+
+  function matchesQuestionFilter(q) {
+    if (state.bookmarksOnly && !state.bookmarks.has(q.id)) return false;
+    if (!matchesTypeFilter(q)) return false;
+    if (!matchesTopicFilter(q)) return false;
+    return true;
+  }
 
   function prepareQuestions() {
     let list = state.bank.questions.map((q) => ({ ...q }));
@@ -1113,7 +1242,7 @@ function getOfflineClientScript() {
 
   function renderJumpNav() {
     els.jumpGrid.innerHTML = "";
-    const visibleQuestions = state.questions.filter((q) => !state.bookmarksOnly || state.bookmarks.has(q.id));
+    const visibleQuestions = state.questions.filter(matchesQuestionFilter);
 
     visibleQuestions.forEach((q, visibleIdx) => {
       const originalIdx = state.questions.findIndex((item) => item.id === q.id);
@@ -1153,7 +1282,7 @@ function getOfflineClientScript() {
   }
 
   function moveStepper(delta) {
-    const visible = state.questions.filter((q) => !state.bookmarksOnly || state.bookmarks.has(q.id));
+    const visible = state.questions.filter(matchesQuestionFilter);
     if (!visible.length) return;
     const curIdx = visible.findIndex((q) => q.id === state.activeId);
     const nextIdx = Math.max(0, Math.min(visible.length - 1, (curIdx === -1 ? 0 : curIdx) + delta));
@@ -1166,7 +1295,7 @@ function getOfflineClientScript() {
     card.id = "question-" + q.id;
     card.dataset.id = q.id;
 
-    if (state.bookmarksOnly && !state.bookmarks.has(q.id)) {
+    if (!matchesQuestionFilter(q)) {
       card.classList.add("is-hidden");
     }
 
@@ -1521,8 +1650,12 @@ function getOfflineClientScript() {
   }
 
   function updateProgress() {
-    const answered = state.questions.filter((q) => gradeQuestion(q).answered).length;
-    els.progress.textContent = state.questions.length + " questions · " + answered + " answered · " + state.bookmarks.size + " bookmarked";
+    const visible = state.questions.filter(matchesQuestionFilter);
+    const total = state.questions.length;
+    const isFiltered = visible.length !== total;
+    const answered = visible.filter((q) => gradeQuestion(q).answered).length;
+    const countStr = isFiltered ? (visible.length + " of " + total + " questions shown") : (total + " questions");
+    els.progress.textContent = countStr + " · " + answered + " answered · " + state.bookmarks.size + " bookmarked";
 
     if (state.submitted && state.score) {
       els.score.hidden = false;
@@ -1532,6 +1665,153 @@ function getOfflineClientScript() {
     } else {
       els.score.hidden = true;
     }
+  }
+
+  function applyVisibility() {
+    state.questions.forEach((q) => {
+      const card = document.getElementById("question-" + q.id);
+      if (!card) return;
+      card.classList.toggle("is-hidden", !matchesQuestionFilter(q));
+    });
+    const visible = state.questions.filter(matchesQuestionFilter);
+    const visibleSections = new Set(visible.map((q) => q.section).filter(Boolean));
+    if (els.questionList) {
+      els.questionList.querySelectorAll(".question-section").forEach((h) => {
+        const sec = h.dataset.section || h.textContent.trim();
+        h.classList.toggle("is-hidden", !visibleSections.has(sec));
+      });
+    }
+    const visibleIds = visible.map((q) => q.id);
+    if (visibleIds.length && !visibleIds.includes(state.activeId)) {
+      state.activeId = visibleIds[0];
+    }
+    renderJumpNav();
+    updateProgress();
+    els.emptyFilter.hidden = visible.length > 0;
+    if (visible.length === 0) {
+      els.emptyFilter.textContent = "No questions match the selected filter.";
+    }
+  }
+
+  function renderQuizFilters() {
+    if (!state.bank || !state.questions.length) {
+      if (els.quizFilterContainer) els.quizFilterContainer.hidden = true;
+      return;
+    }
+
+    const typeCounts = new Map();
+    state.questions.forEach((q) => {
+      const t = isCodeQuestion(q) ? "coding" : q.type;
+      typeCounts.set(t, (typeCounts.get(t) || 0) + 1);
+    });
+
+    const topicCounts = new Map();
+    state.questions.forEach((q) => {
+      const topic = q.topic || q.section;
+      if (topic && String(topic).trim()) {
+        const trimmed = String(topic).trim();
+        topicCounts.set(trimmed, (topicCounts.get(trimmed) || 0) + 1);
+      }
+    });
+
+    els.quizFilterContainer.hidden = false;
+
+    if (els.quizTypeFilters && els.quizTypeButtons) {
+      if (typeCounts.size) {
+        els.quizTypeFilters.hidden = false;
+        els.quizTypeButtons.innerHTML = "";
+
+        const allBtn = document.createElement("button");
+        allBtn.type = "button";
+        allBtn.className = "filter-chip " + (state.selectedType === "all" ? "is-active" : "");
+        allBtn.dataset.type = "all";
+        allBtn.innerHTML = 'All <span class="chip-count">' + state.questions.length + '</span>';
+        allBtn.addEventListener("click", () => setTypeFilter("all"));
+        els.quizTypeButtons.append(allBtn);
+
+        const typeLabels = {
+          coding: "Coding",
+          mcq: "Multiple Choice",
+          tf: "True / False",
+          match: "Matching",
+          numeric: "Numeric",
+          writing: "Short Answer",
+          reading: "Reading",
+          multi: "Multi-Select",
+        };
+
+        const order = ["coding", "mcq", "tf", "numeric", "match", "multi", "writing", "reading"];
+        const sortedTypes = [...typeCounts.keys()].sort((a, b) => {
+          const ia = order.indexOf(a);
+          const ib = order.indexOf(b);
+          if (ia !== -1 && ib !== -1) return ia - ib;
+          if (ia !== -1) return -1;
+          if (ib !== -1) return 1;
+          return a.localeCompare(b);
+        });
+
+        sortedTypes.forEach((typeKey) => {
+          const count = typeCounts.get(typeKey);
+          const label = typeLabels[typeKey] || typeKey;
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "filter-chip " + (state.selectedType === typeKey ? "is-active" : "");
+          btn.dataset.type = typeKey;
+          btn.innerHTML = label + ' <span class="chip-count">' + count + '</span>';
+          btn.addEventListener("click", () => setTypeFilter(typeKey));
+          els.quizTypeButtons.append(btn);
+        });
+      } else {
+        els.quizTypeFilters.hidden = true;
+      }
+    }
+
+    if (els.quizTopicFilters && els.quizTopicButtons) {
+      if (topicCounts.size) {
+        els.quizTopicFilters.hidden = false;
+        els.quizTopicButtons.innerHTML = "";
+
+        const allTopicBtn = document.createElement("button");
+        allTopicBtn.type = "button";
+        allTopicBtn.className = "filter-chip " + (state.selectedTopic === "all" ? "is-active" : "");
+        allTopicBtn.dataset.topic = "all";
+        allTopicBtn.innerHTML = 'All Topics <span class="chip-count">' + state.questions.length + '</span>';
+        allTopicBtn.addEventListener("click", () => setTopicFilter("all"));
+        els.quizTopicButtons.append(allTopicBtn);
+
+        topicCounts.forEach((count, topicName) => {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "filter-chip " + (state.selectedTopic === topicName ? "is-active" : "");
+          btn.dataset.topic = topicName;
+          btn.innerHTML = escapeHtml(topicName) + ' <span class="chip-count">' + count + '</span>';
+          btn.addEventListener("click", () => setTopicFilter(topicName));
+          els.quizTopicButtons.append(btn);
+        });
+      } else {
+        els.quizTopicFilters.hidden = true;
+      }
+    }
+  }
+
+  function setTypeFilter(typeKey) {
+    state.selectedType = state.selectedType === typeKey ? "all" : typeKey;
+    if (els.quizTypeButtons) {
+      els.quizTypeButtons.querySelectorAll(".filter-chip").forEach((btn) => {
+        btn.classList.toggle("is-active", btn.dataset.type === state.selectedType);
+      });
+    }
+    applyVisibility();
+  }
+
+  function setTopicFilter(topicKey) {
+    state.selectedTopic = state.selectedTopic === topicKey ? "all" : topicKey;
+    if (els.quizTopicButtons) {
+      els.quizTopicButtons.querySelectorAll(".filter-chip").forEach((btn) => {
+        btn.classList.toggle("is-active", btn.dataset.topic === state.selectedTopic);
+      });
+    }
+    applyVisibility();
   }
 
   function observeQuestions() {
@@ -1564,6 +1844,7 @@ function getOfflineClientScript() {
         const secHeading = document.createElement("h2");
         secHeading.className = "question-section";
         secHeading.textContent = q.section;
+        secHeading.dataset.section = q.section;
         frag.append(secHeading);
         prevSection = q.section;
       }
@@ -1571,11 +1852,7 @@ function getOfflineClientScript() {
     });
 
     els.questionList.replaceChildren(frag);
-    renderJumpNav();
-
-    const visibleCount = state.questions.filter((q) => !state.bookmarksOnly || state.bookmarks.has(q.id)).length;
-    els.emptyFilter.hidden = visibleCount > 0;
-
+    applyVisibility();
     observeQuestions();
   }
 
@@ -1593,7 +1870,9 @@ function getOfflineClientScript() {
 
   function submitTest() {
     state.submitted = true;
-    const scored = state.questions.filter(isScoredQuestion);
+    const visible = state.questions.filter(matchesQuestionFilter);
+    const target = visible.length ? visible : state.questions;
+    const scored = target.filter(isScoredQuestion);
     const correct = scored.filter((q) => gradeQuestion(q).correct).length;
     const total = scored.length;
     const percent = total > 0 ? Math.round((correct / total) * 100) : 100;
@@ -1620,6 +1899,13 @@ function getOfflineClientScript() {
       els.shuffleQ = document.getElementById("shuffle-questions");
       els.shuffleC = document.getElementById("shuffle-choices");
       els.bookmarksOnly = document.getElementById("bookmarks-only");
+      els.quizFilterContainer = document.getElementById("quiz-filter-container");
+      els.quizTypeFilters = document.getElementById("quiz-type-filters");
+      els.quizTypeButtons = document.getElementById("quiz-type-buttons");
+      els.quizTopicFilters = document.getElementById("quiz-topic-filters");
+      els.quizTopicButtons = document.getElementById("quiz-topic-buttons");
+
+      renderQuizFilters();
 
       document.querySelectorAll('input[name="mode"]').forEach((input) => {
         input.addEventListener("change", () => {
@@ -1742,6 +2028,16 @@ export function buildOfflineQuizHtml(bank) {
               <button type="button" id="btn-restart" class="btn btn-ghost" title="Reset all answers and re-shuffle">↺ Restart</button>
             </div>
           </form>
+          <div id="quiz-filter-container" class="quiz-filter-container" hidden>
+            <div id="quiz-type-filters" class="filter-group" hidden>
+              <span class="filter-label">Type:</span>
+              <div id="quiz-type-buttons" class="filter-buttons" role="group" aria-label="Filter by question type"></div>
+            </div>
+            <div id="quiz-topic-filters" class="filter-group" hidden>
+              <span class="filter-label">Topic:</span>
+              <div id="quiz-topic-buttons" class="filter-buttons" role="group" aria-label="Filter by topic"></div>
+            </div>
+          </div>
         </header>
 
         <div class="quiz-layout">

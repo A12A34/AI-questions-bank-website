@@ -1,0 +1,1510 @@
+{
+  "id": "rad-rapid-application-development",
+  "title": "Rapid Application Development (RAD) - 100 MCQs",
+  "subject": "GRD",
+  "gradeLevel": "University",
+  "difficulty": "Intermediate",
+  "description": "100 Multiple-Choice Questions covering RAD fundamentals, stages, technical debt, advantages, disadvantages, and scenario-based applications.",
+  "questions": [
+    {
+      "id": "rad-mcq-1",
+      "type": "mcq",
+      "prompt": "What does RAD stand for?",
+      "choices": [
+        "Rapid Agile Design",
+        "Rapid Application Development",
+        "Reliable Application Design",
+        "Responsive Application Development"
+      ],
+      "answer": 1,
+      "explanation": "RAD is a software development methodology that focuses on developing applications quickly through prototypes and continuous feedback.",
+      "section": "Section 1: RAD Fundamentals and History",
+      "topic": "RAD Fundamentals and History"
+    },
+    {
+      "id": "rad-mcq-2",
+      "type": "mcq",
+      "prompt": "Who is credited with designing the RAD software development model?",
+      "choices": [
+        "Winston Royce",
+        "Alan Turing",
+        "James Martin",
+        "Charles Babbage"
+      ],
+      "answer": 2,
+      "explanation": "James Martin recognized that software is infinitely malleable and used this idea when designing the RAD model.",
+      "section": "Section 1: RAD Fundamentals and History",
+      "topic": "RAD Fundamentals and History"
+    },
+    {
+      "id": "rad-mcq-3",
+      "type": "mcq",
+      "prompt": "During which decade was RAD developed?",
+      "choices": [
+        "1960s",
+        "1970s",
+        "1990s",
+        "1980s"
+      ],
+      "answer": 3,
+      "explanation": "According to the presentation, James Martin developed the RAD model in the 1980s.",
+      "section": "Section 1: RAD Fundamentals and History",
+      "topic": "RAD Fundamentals and History"
+    },
+    {
+      "id": "rad-mcq-4",
+      "type": "mcq",
+      "prompt": "What did James Martin recognize about software?",
+      "choices": [
+        "Software cannot be changed after implementation.",
+        "Software is infinitely malleable.",
+        "Software must follow a fixed development process.",
+        "Software requires all specifications to be completed before development."
+      ],
+      "answer": 1,
+      "explanation": "Infinitely malleable means software can be modified, changed, and improved throughout its development.",
+      "section": "Section 1: RAD Fundamentals and History",
+      "topic": "RAD Fundamentals and History"
+    },
+    {
+      "id": "rad-mcq-5",
+      "type": "mcq",
+      "prompt": "What is the main idea behind RAD?",
+      "choices": [
+        "Complete all planning before writing any code.",
+        "Follow a strict sequence without returning to previous stages.",
+        "Develop prototypes, collect feedback, and improve the software.",
+        "Deliver the final product before testing it."
+      ],
+      "answer": 2,
+      "explanation": "RAD focuses on rapid development and continuous improvements through prototypes and feedback.",
+      "section": "Section 1: RAD Fundamentals and History",
+      "topic": "RAD Fundamentals and History"
+    },
+    {
+      "id": "rad-mcq-6",
+      "type": "mcq",
+      "prompt": "Which statement best describes RAD?",
+      "choices": [
+        "A methodology that focuses on extensive documentation before development.",
+        "A methodology that uses prototypes and client feedback to develop software quickly.",
+        "A methodology that prevents changes after requirements are defined.",
+        "A methodology that separates clients from the development team."
+      ],
+      "answer": 1,
+      "explanation": "RAD involves clients throughout development and allows developers to improve the software based on their feedback.",
+      "section": "Section 1: RAD Fundamentals and History",
+      "topic": "RAD Fundamentals and History"
+    },
+    {
+      "id": "rad-mcq-7",
+      "type": "mcq",
+      "prompt": "What does the term \"infinitely malleable\" mean in the context of RAD?",
+      "choices": [
+        "Software can only be modified during testing.",
+        "Software can be modified and improved.",
+        "Software must be rebuilt whenever requirements change.",
+        "Software cannot be changed once the prototype is created."
+      ],
+      "answer": 1,
+      "explanation": "Software is flexible, allowing developers to make changes and improvements during its development.",
+      "section": "Section 1: RAD Fundamentals and History",
+      "topic": "RAD Fundamentals and History"
+    },
+    {
+      "id": "rad-mcq-8",
+      "type": "mcq",
+      "prompt": "Which characteristic is most closely associated with RAD?",
+      "choices": [
+        "Fixed requirements",
+        "Sequential development",
+        "Continuous feedback",
+        "Limited client involvement"
+      ],
+      "answer": 2,
+      "explanation": "Clients regularly review prototypes and provide feedback that developers use to improve the application.",
+      "section": "Section 1: RAD Fundamentals and History",
+      "topic": "RAD Fundamentals and History"
+    },
+    {
+      "id": "rad-mcq-9",
+      "type": "mcq",
+      "prompt": "Why does RAD allow requirements to change during development?",
+      "choices": [
+        "Because the requirements are initially defined as a loose set.",
+        "Because requirements are completely ignored.",
+        "Because developers do not need to understand the project.",
+        "Because the final product is developed without planning."
+      ],
+      "answer": 0,
+      "explanation": "RAD begins with basic requirements rather than spending months creating detailed specifications. These requirements can be adjusted.",
+      "section": "Section 1: RAD Fundamentals and History",
+      "topic": "RAD Fundamentals and History"
+    },
+    {
+      "id": "rad-mcq-10",
+      "type": "mcq",
+      "prompt": "Which of the following best explains why RAD is considered flexible?",
+      "choices": [
+        "It does not require developers to communicate with clients.",
+        "It allows requirements and prototypes to be modified based on feedback.",
+        "It requires developers to follow the original plan without changes.",
+        "It prevents clients from requesting improvements."
+      ],
+      "answer": 1,
+      "explanation": "RAD allows changes throughout the software development lifecycle.",
+      "section": "Section 1: RAD Fundamentals and History",
+      "topic": "RAD Fundamentals and History"
+    },
+    {
+      "id": "rad-mcq-11",
+      "type": "mcq",
+      "prompt": "A company wants to develop an application quickly and involve its customers during development. Which methodology best matches this approach?",
+      "choices": [
+        "Waterfall",
+        "RAD",
+        "Traditional sequential development",
+        "Fixed-scope development"
+      ],
+      "answer": 1,
+      "explanation": "RAD is suitable for projects that require rapid development and frequent customer feedback.",
+      "section": "Section 1: RAD Fundamentals and History",
+      "topic": "RAD Fundamentals and History"
+    },
+    {
+      "id": "rad-mcq-12",
+      "type": "mcq",
+      "prompt": "Which statement about James Martin is correct according to the presentation?",
+      "choices": [
+        "He introduced the Waterfall model in 1970.",
+        "He designed RAD based on the idea that software is infinitely malleable.",
+        "He created the first programming language.",
+        "He believed software requirements should never change."
+      ],
+      "answer": 1,
+      "explanation": "James Martin used the flexibility of software as the foundation of the RAD development model.",
+      "section": "Section 1: RAD Fundamentals and History",
+      "topic": "RAD Fundamentals and History"
+    },
+    {
+      "id": "rad-mcq-13",
+      "type": "mcq",
+      "prompt": "Which of the following is NOT a main characteristic of RAD?",
+      "choices": [
+        "Prototype development",
+        "Client feedback",
+        "Repeated improvements",
+        "Strictly fixed requirements"
+      ],
+      "answer": 3,
+      "explanation": "RAD uses loose requirements that can be modified during development.",
+      "section": "Section 1: RAD Fundamentals and History",
+      "topic": "RAD Fundamentals and History"
+    },
+    {
+      "id": "rad-mcq-14",
+      "type": "mcq",
+      "prompt": "What is the primary reason for using prototypes in RAD?",
+      "choices": [
+        "To replace the need for client involvement.",
+        "To demonstrate an early version of the software.",
+        "To complete all documentation before development.",
+        "To prevent changes to the application."
+      ],
+      "answer": 1,
+      "explanation": "Prototypes allow clients to see and evaluate the application before the final product is completed.",
+      "section": "Section 1: RAD Fundamentals and History",
+      "topic": "RAD Fundamentals and History"
+    },
+    {
+      "id": "rad-mcq-15",
+      "type": "mcq",
+      "prompt": "Which statement best represents the philosophy of RAD?",
+      "choices": [
+        "Plan everything first and avoid changing the original requirements.",
+        "Develop an initial version, receive feedback, and improve it repeatedly.",
+        "Complete implementation before showing anything to the client.",
+        "Focus on documentation instead of demonstrating the software."
+      ],
+      "answer": 1,
+      "explanation": "RAD emphasizes building, demonstrating, collecting feedback, and improving the software.",
+      "section": "Section 1: RAD Fundamentals and History",
+      "topic": "RAD Fundamentals and History"
+    },
+    {
+      "id": "rad-mcq-16",
+      "type": "mcq",
+      "prompt": "How many main stages are illustrated in the RAD process in the presentation?",
+      "choices": [
+        "Three",
+        "Five",
+        "Four",
+        "Six"
+      ],
+      "answer": 2,
+      "explanation": "The four stages are Define Requirements, Prototype, Absorb Feedback, and Finalize Product.",
+      "section": "Section 2: RAD Development Stages",
+      "topic": "RAD Development Stages"
+    },
+    {
+      "id": "rad-mcq-17",
+      "type": "mcq",
+      "prompt": "Which of the following represents the correct order of the RAD stages?",
+      "choices": [
+        "Prototype → Define Requirements → Finalize Product → Absorb Feedback",
+        "Define Requirements → Prototype → Absorb Feedback → Finalize Product",
+        "Define Requirements → Absorb Feedback → Prototype → Finalize Product",
+        "Absorb Feedback → Prototype → Define Requirements → Finalize Product"
+      ],
+      "answer": 1,
+      "explanation": "RAD begins by defining requirements, then creates a prototype, collects feedback, and finally completes the product.",
+      "section": "Section 2: RAD Development Stages",
+      "topic": "RAD Development Stages"
+    },
+    {
+      "id": "rad-mcq-18",
+      "type": "mcq",
+      "prompt": "What is the first stage of RAD?",
+      "choices": [
+        "Prototype",
+        "Absorb Feedback",
+        "Finalize Product",
+        "Define Requirements"
+      ],
+      "answer": 3,
+      "explanation": "Developers first identify the basic requirements of the software before creating a prototype.",
+      "section": "Section 2: RAD Development Stages",
+      "topic": "RAD Development Stages"
+    },
+    {
+      "id": "rad-mcq-19",
+      "type": "mcq",
+      "prompt": "What happens during the Define Requirements stage?",
+      "choices": [
+        "Developers deliver the final application.",
+        "Developers identify a loose set of software requirements.",
+        "Developers connect the backend to production data.",
+        "Developers collect feedback on the completed product."
+      ],
+      "answer": 1,
+      "explanation": "This stage establishes the initial requirements, which can be changed later.",
+      "section": "Section 2: RAD Development Stages",
+      "topic": "RAD Development Stages"
+    },
+    {
+      "id": "rad-mcq-20",
+      "type": "mcq",
+      "prompt": "Why does RAD avoid spending months developing detailed specifications with users?",
+      "choices": [
+        "Because RAD allows requirements to be changed throughout development.",
+        "Because clients are not allowed to provide requirements.",
+        "Because prototypes do not require requirements.",
+        "Because developers are responsible for deciding every feature."
+      ],
+      "answer": 0,
+      "explanation": "RAD starts with a loose set of requirements instead of requiring every detail to be finalized before development.",
+      "section": "Section 2: RAD Development Stages",
+      "topic": "RAD Development Stages"
+    },
+    {
+      "id": "rad-mcq-21",
+      "type": "mcq",
+      "prompt": "What is the second stage of RAD?",
+      "choices": [
+        "Testing",
+        "Finalize Product",
+        "Prototype",
+        "Absorb Feedback"
+      ],
+      "answer": 2,
+      "explanation": "After defining the requirements, developers create an early version of the software.",
+      "section": "Section 2: RAD Development Stages",
+      "topic": "RAD Development Stages"
+    },
+    {
+      "id": "rad-mcq-22",
+      "type": "mcq",
+      "prompt": "What is a prototype in RAD?",
+      "choices": [
+        "A document containing the project's financial information.",
+        "An early version of the software demonstrated to the client.",
+        "The final version of the application.",
+        "A report containing only the software requirements."
+      ],
+      "answer": 1,
+      "explanation": "A prototype is created to demonstrate the software's appearance and functionality before final delivery.",
+      "section": "Section 2: RAD Development Stages",
+      "topic": "RAD Development Stages"
+    },
+    {
+      "id": "rad-mcq-23",
+      "type": "mcq",
+      "prompt": "Which statement about a prototype is correct?",
+      "choices": [
+        "It must satisfy every requirement before it can be demonstrated.",
+        "It can satisfy all or only a portion of the defined requirements.",
+        "It must contain all final features.",
+        "It can only be created after the final product is delivered."
+      ],
+      "answer": 1,
+      "explanation": "The presentation explains that a prototype may satisfy all or only part of the requirements.",
+      "section": "Section 2: RAD Development Stages",
+      "topic": "RAD Development Stages"
+    },
+    {
+      "id": "rad-mcq-24",
+      "type": "mcq",
+      "prompt": "What is the main goal of the Prototype stage?",
+      "choices": [
+        "To create something that can be demonstrated to the client.",
+        "To prevent changes to the software.",
+        "To write detailed documentation for the final product.",
+        "To connect the backend to production data."
+      ],
+      "answer": 0,
+      "explanation": "Developers build an early version of the application so the client can review it.",
+      "section": "Section 2: RAD Development Stages",
+      "topic": "RAD Development Stages"
+    },
+    {
+      "id": "rad-mcq-25",
+      "type": "mcq",
+      "prompt": "What is the third stage of RAD?",
+      "choices": [
+        "Define Requirements",
+        "Prototype",
+        "Finalize Product",
+        "Absorb Feedback"
+      ],
+      "answer": 3,
+      "explanation": "After demonstrating the prototype, developers collect feedback from clients or end-users.",
+      "section": "Section 2: RAD Development Stages",
+      "topic": "RAD Development Stages"
+    },
+    {
+      "id": "rad-mcq-26",
+      "type": "mcq",
+      "prompt": "Who provides feedback during the Absorb Feedback stage?",
+      "choices": [
+        "Only the project manager",
+        "The client or end-users",
+        "Only the software developers",
+        "Only the documentation team"
+      ],
+      "answer": 1,
+      "explanation": "Developers present the prototype to the client or end-users and collect their opinions about the software.",
+      "section": "Section 2: RAD Development Stages",
+      "topic": "RAD Development Stages"
+    },
+    {
+      "id": "rad-mcq-27",
+      "type": "mcq",
+      "prompt": "What aspects of the software can users provide feedback on?",
+      "choices": [
+        "Only the user interface",
+        "Only the application's functionality",
+        "Everything from user interface to functionality",
+        "Only the project's budget"
+      ],
+      "answer": 2,
+      "explanation": "The presentation states that feedback is collected on everything from user interface to functionality.",
+      "section": "Section 2: RAD Development Stages",
+      "topic": "RAD Development Stages"
+    },
+    {
+      "id": "rad-mcq-28",
+      "type": "mcq",
+      "prompt": "What happens when feedback is received and improvements are required?",
+      "choices": [
+        "The developer returns to the Prototype stage.",
+        "The developer immediately delivers the final product.",
+        "The developer deletes the existing requirements.",
+        "The developer stops the project permanently."
+      ],
+      "answer": 0,
+      "explanation": "Developers use the feedback to modify and improve the prototype before presenting it again.",
+      "section": "Section 2: RAD Development Stages",
+      "topic": "RAD Development Stages"
+    },
+    {
+      "id": "rad-mcq-29",
+      "type": "mcq",
+      "prompt": "What happens if the feedback is positive and the client is satisfied?",
+      "choices": [
+        "The developer returns to Define Requirements.",
+        "The developer creates another unrelated project.",
+        "The developer moves to Finalize Product.",
+        "The developer stops collecting feedback but does not complete the software."
+      ],
+      "answer": 2,
+      "explanation": "Once the client is satisfied with the prototype, the developer proceeds to finalize the product.",
+      "section": "Section 2: RAD Development Stages",
+      "topic": "RAD Development Stages"
+    },
+    {
+      "id": "rad-mcq-30",
+      "type": "mcq",
+      "prompt": "Why is the RAD process considered iterative?",
+      "choices": [
+        "Because every stage must be completed only once.",
+        "Because developers can return to previous stages to make improvements.",
+        "Because the client cannot request changes.",
+        "Because development follows a fixed sequence without feedback."
+      ],
+      "answer": 1,
+      "explanation": "The feedback process can send developers back to the Prototype stage repeatedly.",
+      "section": "Section 2: RAD Development Stages",
+      "topic": "RAD Development Stages"
+    },
+    {
+      "id": "rad-mcq-31",
+      "type": "mcq",
+      "prompt": "What is the final stage of RAD?",
+      "choices": [
+        "Absorb Feedback",
+        "Define Requirements",
+        "Prototype",
+        "Finalize Product"
+      ],
+      "answer": 3,
+      "explanation": "In this stage, developers prepare the software for completion and delivery.",
+      "section": "Section 2: RAD Development Stages",
+      "topic": "RAD Development Stages"
+    },
+    {
+      "id": "rad-mcq-32",
+      "type": "mcq",
+      "prompt": "Which activity is associated with Finalize Product?",
+      "choices": [
+        "Defining a loose set of requirements",
+        "Presenting the first prototype",
+        "Connecting the backend to production data",
+        "Collecting initial project requirements"
+      ],
+      "answer": 2,
+      "explanation": "The Finalize Product stage includes connecting the backend to production data, writing detailed documentation, and other completion tasks.",
+      "section": "Section 2: RAD Development Stages",
+      "topic": "RAD Development Stages"
+    },
+    {
+      "id": "rad-mcq-33",
+      "type": "mcq",
+      "prompt": "What does the developer do to make the project more stable and easier to maintain?",
+      "choices": [
+        "Optimize or re-engineer the project.",
+        "Remove all feedback from the development process.",
+        "Return to the initial requirements without making changes.",
+        "Avoid connecting the backend to production data."
+      ],
+      "answer": 0,
+      "explanation": "During Finalize Product, the developer may optimize or re-engineer the project to improve stability and maintainability.",
+      "section": "Section 2: RAD Development Stages",
+      "topic": "RAD Development Stages"
+    },
+    {
+      "id": "rad-mcq-34",
+      "type": "mcq",
+      "prompt": "Which task is specifically mentioned in the Finalize Product stage?",
+      "choices": [
+        "Creating a loose set of requirements",
+        "Writing detailed documentation",
+        "Collecting the first client requirements",
+        "Creating the initial prototype"
+      ],
+      "answer": 1,
+      "explanation": "Detailed documentation is one of the tasks required before the project can be completed with confidence.",
+      "section": "Section 2: RAD Development Stages",
+      "topic": "RAD Development Stages"
+    },
+    {
+      "id": "rad-mcq-35",
+      "type": "mcq",
+      "prompt": "A developer has completed the initial requirements and is now creating an early version of the application. Which stage is taking place?",
+      "choices": [
+        "Absorb Feedback",
+        "Finalize Product",
+        "Define Requirements",
+        "Prototype"
+      ],
+      "answer": 3,
+      "explanation": "Creating an early version of the software is the main activity of the Prototype stage.",
+      "section": "Section 2: RAD Development Stages",
+      "topic": "RAD Development Stages"
+    },
+    {
+      "id": "rad-mcq-36",
+      "type": "mcq",
+      "prompt": "A client reviews an application and requests changes to its navigation and functionality. Which stage is taking place?",
+      "choices": [
+        "Define Requirements",
+        "Absorb Feedback",
+        "Finalize Product",
+        "Initial planning"
+      ],
+      "answer": 1,
+      "explanation": "The client is reviewing the prototype and providing feedback about its interface and functionality.",
+      "section": "Section 2: RAD Development Stages",
+      "topic": "RAD Development Stages"
+    },
+    {
+      "id": "rad-mcq-37",
+      "type": "mcq",
+      "prompt": "Developers have received feedback that the dashboard is difficult to use. What should they do next according to RAD?",
+      "choices": [
+        "Ignore the feedback and finalize the product.",
+        "Return to the Prototype stage and improve the dashboard.",
+        "Delete the original requirements.",
+        "Deliver the current version immediately."
+      ],
+      "answer": 1,
+      "explanation": "RAD allows developers to return to the Prototype stage to incorporate feedback and make improvements.",
+      "section": "Section 2: RAD Development Stages",
+      "topic": "RAD Development Stages"
+    },
+    {
+      "id": "rad-mcq-38",
+      "type": "mcq",
+      "prompt": "A developer is connecting the application's backend to production data and preparing documentation. Which stage is this?",
+      "choices": [
+        "Prototype",
+        "Absorb Feedback",
+        "Define Requirements",
+        "Finalize Product"
+      ],
+      "answer": 3,
+      "explanation": "Connecting the backend to production data and writing documentation are activities of the final stage.",
+      "section": "Section 2: RAD Development Stages",
+      "topic": "RAD Development Stages"
+    },
+    {
+      "id": "rad-mcq-39",
+      "type": "mcq",
+      "prompt": "Which stage allows developers to understand whether the prototype satisfies the client's expectations?",
+      "choices": [
+        "Absorb Feedback",
+        "Finalize Product",
+        "Define Requirements",
+        "Project closure"
+      ],
+      "answer": 0,
+      "explanation": "Feedback helps developers identify whether the prototype meets user expectations and what improvements are needed.",
+      "section": "Section 2: RAD Development Stages",
+      "topic": "RAD Development Stages"
+    },
+    {
+      "id": "rad-mcq-40",
+      "type": "mcq",
+      "prompt": "Which statement best describes the relationship between Prototype and Absorb Feedback?",
+      "choices": [
+        "Prototype happens after the final product is delivered.",
+        "Feedback is collected before a prototype exists.",
+        "A prototype is demonstrated, and feedback is used to improve it.",
+        "Both stages are responsible only for writing documentation."
+      ],
+      "answer": 2,
+      "explanation": "These stages work together in a repeated cycle: demonstrate the prototype, collect feedback, and make improvements.",
+      "section": "Section 2: RAD Development Stages",
+      "topic": "RAD Development Stages"
+    },
+    {
+      "id": "rad-mcq-41",
+      "type": "mcq",
+      "prompt": "What is Technical Debt?",
+      "choices": [
+        "The money borrowed to purchase development equipment.",
+        "The consequence of choosing quick and cheap technology solutions over robust and efficient ones.",
+        "The cost of hiring additional developers.",
+        "The time required to collect client feedback."
+      ],
+      "answer": 1,
+      "explanation": "Technical Debt occurs when developers use quick solutions that may create problems in the future.",
+      "section": "Section 3: Technical Debt",
+      "topic": "Technical Debt"
+    },
+    {
+      "id": "rad-mcq-42",
+      "type": "mcq",
+      "prompt": "Which of the following can cause Technical Debt?",
+      "choices": [
+        "Time constraints",
+        "Budget limitations",
+        "Lack of awareness about future needs",
+        "All of the above"
+      ],
+      "answer": 3,
+      "explanation": "The presentation identifies time constraints, budget limitations, and lack of awareness about future needs as causes of Technical Debt.",
+      "section": "Section 3: Technical Debt",
+      "topic": "Technical Debt"
+    },
+    {
+      "id": "rad-mcq-43",
+      "type": "mcq",
+      "prompt": "A developer uses a quick but poorly organized coding solution to finish an application before the deadline. What problem might occur later?",
+      "choices": [
+        "The application becomes easier to maintain automatically.",
+        "The application requires no further improvements.",
+        "Technical Debt may increase future maintenance difficulties.",
+        "The project no longer requires documentation."
+      ],
+      "answer": 2,
+      "explanation": "Choosing quick solutions over robust ones can make future modifications and maintenance more difficult.",
+      "section": "Section 3: Technical Debt",
+      "topic": "Technical Debt"
+    },
+    {
+      "id": "rad-mcq-44",
+      "type": "mcq",
+      "prompt": "Why might developers choose quick and cheap technology solutions?",
+      "choices": [
+        "Because of time constraints and budget limitations.",
+        "Because they want to increase documentation quality.",
+        "Because they have unlimited development time.",
+        "Because future requirements are always known."
+      ],
+      "answer": 0,
+      "explanation": "Limited time and money can encourage developers to choose faster, cheaper solutions.",
+      "section": "Section 3: Technical Debt",
+      "topic": "Technical Debt"
+    },
+    {
+      "id": "rad-mcq-45",
+      "type": "mcq",
+      "prompt": "What does \"lack of awareness about future needs\" mean?",
+      "choices": [
+        "Developers do not know how to create prototypes.",
+        "Developers do not consider what the software may require in the future.",
+        "Developers do not understand the initial requirements.",
+        "Developers are not allowed to receive feedback."
+      ],
+      "answer": 1,
+      "explanation": "Developers may make decisions based only on current needs, creating difficulties when future requirements appear.",
+      "section": "Section 3: Technical Debt",
+      "topic": "Technical Debt"
+    },
+    {
+      "id": "rad-mcq-46",
+      "type": "mcq",
+      "prompt": "Which situation is the clearest example of Technical Debt?",
+      "choices": [
+        "A developer writes organized code that supports future improvements.",
+        "A developer uses a robust solution even though it requires more planning.",
+        "A developer chooses a quick coding solution that later becomes difficult to maintain.",
+        "A developer collects detailed feedback before making changes."
+      ],
+      "answer": 2,
+      "explanation": "Technical Debt is associated with quick and cheap solutions that create future problems.",
+      "section": "Section 3: Technical Debt",
+      "topic": "Technical Debt"
+    },
+    {
+      "id": "rad-mcq-47",
+      "type": "mcq",
+      "prompt": "Which statement about Technical Debt is correct?",
+      "choices": [
+        "It only occurs when a project exceeds its budget.",
+        "It can result from choosing quick solutions instead of robust solutions.",
+        "It always improves software maintainability.",
+        "It prevents developers from making future changes."
+      ],
+      "answer": 1,
+      "explanation": "Technical Debt can result from decisions made under time or budget pressure.",
+      "section": "Section 3: Technical Debt",
+      "topic": "Technical Debt"
+    },
+    {
+      "id": "rad-mcq-48",
+      "type": "mcq",
+      "prompt": "A development team has very little time and decides to skip proper code organization. Which factor is most directly responsible?",
+      "choices": [
+        "Client satisfaction",
+        "Time constraints",
+        "Prototype feedback",
+        "Product optimization"
+      ],
+      "answer": 1,
+      "explanation": "Limited time can encourage developers to choose quick solutions that may create Technical Debt.",
+      "section": "Section 3: Technical Debt",
+      "topic": "Technical Debt"
+    },
+    {
+      "id": "rad-mcq-49",
+      "type": "mcq",
+      "prompt": "Why can Technical Debt become a problem in the future?",
+      "choices": [
+        "Because quick solutions can be less robust and efficient.",
+        "Because clients always reject prototypes.",
+        "Because software cannot be modified.",
+        "Because documentation automatically becomes unnecessary."
+      ],
+      "answer": 0,
+      "explanation": "Less robust solutions can create difficulties when developers need to maintain or improve the application.",
+      "section": "Section 3: Technical Debt",
+      "topic": "Technical Debt"
+    },
+    {
+      "id": "rad-mcq-50",
+      "type": "mcq",
+      "prompt": "Which action is most likely to reduce the risk of Technical Debt?",
+      "choices": [
+        "Choosing the quickest solution regardless of quality.",
+        "Ignoring future software requirements.",
+        "Prioritizing robust and efficient technology solutions.",
+        "Skipping software improvements to save time."
+      ],
+      "answer": 2,
+      "explanation": "Technical Debt is associated with choosing quick and cheap solutions over robust and efficient ones.",
+      "section": "Section 3: Technical Debt",
+      "topic": "Technical Debt"
+    },
+    {
+      "id": "rad-mcq-51",
+      "type": "mcq",
+      "prompt": "Which of the following is an advantage of RAD?",
+      "choices": [
+        "Limited client involvement",
+        "Speed",
+        "Increased maintenance difficulties",
+        "Difficult communication"
+      ],
+      "answer": 1,
+      "explanation": "Speed is one of the advantages identified in the presentation.",
+      "section": "Section 4: Advantages of RAD",
+      "topic": "Advantages of RAD"
+    },
+    {
+      "id": "rad-mcq-52",
+      "type": "mcq",
+      "prompt": "Why does RAD help projects finish on time?",
+      "choices": [
+        "Because developers avoid showing prototypes to clients.",
+        "Because clients are not allowed to request improvements.",
+        "Because rapid development and feedback help developers address requirements earlier.",
+        "Because developers skip the finalization stage."
+      ],
+      "answer": 2,
+      "explanation": "The presentation explains that RAD projects are very likely to finish on time and receive client approval on delivery.",
+      "section": "Section 4: Advantages of RAD",
+      "topic": "Advantages of RAD"
+    },
+    {
+      "id": "rad-mcq-53",
+      "type": "mcq",
+      "prompt": "What is the relationship between RAD and client approval?",
+      "choices": [
+        "RAD prevents clients from reviewing the product.",
+        "Frequent feedback increases the likelihood of client satisfaction and approval.",
+        "Client approval is only requested before requirements are defined.",
+        "RAD requires the client to approve every line of code."
+      ],
+      "answer": 1,
+      "explanation": "Clients are involved throughout development and can review improvements before the final product is delivered.",
+      "section": "Section 4: Advantages of RAD",
+      "topic": "Advantages of RAD"
+    },
+    {
+      "id": "rad-mcq-54",
+      "type": "mcq",
+      "prompt": "How does RAD help reduce project costs?",
+      "choices": [
+        "By developing every possible feature.",
+        "By avoiding client communication.",
+        "By building the exact system the client requires and reducing unwanted features.",
+        "By removing the prototype stage."
+      ],
+      "answer": 2,
+      "explanation": "RAD helps reduce the risk of building unwanted features and spending the project budget unnecessarily.",
+      "section": "Section 4: Advantages of RAD",
+      "topic": "Advantages of RAD"
+    },
+    {
+      "id": "rad-mcq-55",
+      "type": "mcq",
+      "prompt": "Which statement best explains the Cost advantage of RAD?",
+      "choices": [
+        "Developers spend the budget on as many features as possible.",
+        "Developers build the exact system the client requires and nothing more.",
+        "Developers avoid discussing requirements with clients.",
+        "Developers spend more money on unnecessary functionality."
+      ],
+      "answer": 1,
+      "explanation": "The presentation identifies reducing unnecessary features and project spending as a benefit of RAD.",
+      "section": "Section 4: Advantages of RAD",
+      "topic": "Advantages of RAD"
+    },
+    {
+      "id": "rad-mcq-56",
+      "type": "mcq",
+      "prompt": "A school requests an attendance system, but the development team avoids adding unrelated features that the school does not need. Which RAD advantage does this demonstrate?",
+      "choices": [
+        "Scale",
+        "Commitment",
+        "Cost",
+        "Interface-Focus"
+      ],
+      "answer": 2,
+      "explanation": "Building only the required system reduces the risk of spending the budget on unwanted features.",
+      "section": "Section 4: Advantages of RAD",
+      "topic": "Advantages of RAD"
+    },
+    {
+      "id": "rad-mcq-57",
+      "type": "mcq",
+      "prompt": "Which of the following is another advantage of RAD?",
+      "choices": [
+        "Developer Satisfaction",
+        "Increased Feature Requests",
+        "Limited Client Input",
+        "Deadline Creep"
+      ],
+      "answer": 0,
+      "explanation": "Developer Satisfaction is listed as one of the main advantages of RAD.",
+      "section": "Section 4: Advantages of RAD",
+      "topic": "Advantages of RAD"
+    },
+    {
+      "id": "rad-mcq-58",
+      "type": "mcq",
+      "prompt": "Why can RAD increase Developer Satisfaction?",
+      "choices": [
+        "Developers work without communicating with clients.",
+        "Developers receive no feedback until the final product is delivered.",
+        "Developers frequently present their work and receive client feedback.",
+        "Developers are not responsible for improving the prototype."
+      ],
+      "answer": 2,
+      "explanation": "Frequent presentations give developers confidence that their work is appreciated and that the client is satisfied.",
+      "section": "Section 4: Advantages of RAD",
+      "topic": "Advantages of RAD"
+    },
+    {
+      "id": "rad-mcq-59",
+      "type": "mcq",
+      "prompt": "How does client involvement affect developers in RAD?",
+      "choices": [
+        "It prevents developers from completing their work.",
+        "It gives developers confidence that the final product will satisfy the client.",
+        "It removes the need to demonstrate prototypes.",
+        "It prevents developers from receiving appreciation."
+      ],
+      "answer": 1,
+      "explanation": "Developers receive regular feedback, helping them understand whether their work meets the client's expectations.",
+      "section": "Section 4: Advantages of RAD",
+      "topic": "Advantages of RAD"
+    },
+    {
+      "id": "rad-mcq-60",
+      "type": "mcq",
+      "prompt": "Which advantage is directly related to avoiding unnecessary functionality?",
+      "choices": [
+        "Speed",
+        "Developer Satisfaction",
+        "Cost",
+        "Commitment"
+      ],
+      "answer": 2,
+      "explanation": "Building only the system required by the client reduces unnecessary development and spending.",
+      "section": "Section 4: Advantages of RAD",
+      "topic": "Advantages of RAD"
+    },
+    {
+      "id": "rad-mcq-61",
+      "type": "mcq",
+      "prompt": "A development team regularly demonstrates its work to the client. The client appreciates the improvements, and the developers feel confident about delivery. Which advantage is demonstrated?",
+      "choices": [
+        "Cost",
+        "Scale",
+        "Speed",
+        "Developer Satisfaction"
+      ],
+      "answer": 3,
+      "explanation": "Regular presentations and client appreciation contribute to developer confidence and satisfaction.",
+      "section": "Section 4: Advantages of RAD",
+      "topic": "Advantages of RAD"
+    },
+    {
+      "id": "rad-mcq-62",
+      "type": "mcq",
+      "prompt": "Which statement about RAD's Speed advantage is correct?",
+      "choices": [
+        "Projects are guaranteed to finish without any delays.",
+        "Projects are very likely to finish on time and have the client's approval on delivery.",
+        "Projects always require less development work.",
+        "Projects do not require prototypes."
+      ],
+      "answer": 1,
+      "explanation": "This matches the explanation of Speed in the presentation. It describes a likelihood, not a guarantee.",
+      "section": "Section 4: Advantages of RAD",
+      "topic": "Advantages of RAD"
+    },
+    {
+      "id": "rad-mcq-63",
+      "type": "mcq",
+      "prompt": "Which combination represents the three advantages highlighted in the RAD presentation?",
+      "choices": [
+        "Speed, Cost, Developer Satisfaction",
+        "Speed, Scale, Commitment",
+        "Cost, Technical Debt, Interface-Focus",
+        "Developer Satisfaction, Deadline Creep, Speed"
+      ],
+      "answer": 0,
+      "explanation": "These are the three advantages presented in the slides.",
+      "section": "Section 4: Advantages of RAD",
+      "topic": "Advantages of RAD"
+    },
+    {
+      "id": "rad-mcq-64",
+      "type": "mcq",
+      "prompt": "Which advantage focuses on the developer's confidence that the client will appreciate the final work?",
+      "choices": [
+        "Speed",
+        "Cost",
+        "Developer Satisfaction",
+        "Scale"
+      ],
+      "answer": 2,
+      "explanation": "Frequent presentations and feedback help developers feel confident that the final product will satisfy the client.",
+      "section": "Section 4: Advantages of RAD",
+      "topic": "Advantages of RAD"
+    },
+    {
+      "id": "rad-mcq-65",
+      "type": "mcq",
+      "prompt": "A company wants to avoid spending its budget on features that customers do not need. Which RAD advantage is most relevant?",
+      "choices": [
+        "Developer Satisfaction",
+        "Cost",
+        "Commitment",
+        "Interface-Focus"
+      ],
+      "answer": 1,
+      "explanation": "RAD reduces the risk of building unwanted features and spending money unnecessarily.",
+      "section": "Section 4: Advantages of RAD",
+      "topic": "Advantages of RAD"
+    },
+    {
+      "id": "rad-mcq-66",
+      "type": "mcq",
+      "prompt": "Why is frequent presentation of work useful in RAD?",
+      "choices": [
+        "It allows developers to avoid all future changes.",
+        "It gives the client opportunities to review the work and helps developers gain confidence.",
+        "It removes the need to develop a prototype.",
+        "It ensures that no technical problems will occur."
+      ],
+      "answer": 1,
+      "explanation": "Frequent presentations support client involvement and Developer Satisfaction.",
+      "section": "Section 4: Advantages of RAD",
+      "topic": "Advantages of RAD"
+    },
+    {
+      "id": "rad-mcq-67",
+      "type": "mcq",
+      "prompt": "Which statement is NOT supported by the Speed advantage described in the presentation?",
+      "choices": [
+        "RAD projects are very likely to finish on time.",
+        "Clients may approve the product upon delivery.",
+        "RAD focuses on rapid application development.",
+        "RAD guarantees that every project will finish without delays."
+      ],
+      "answer": 3,
+      "explanation": "The presentation says projects are very likely to finish on time, not that delays are impossible.",
+      "section": "Section 4: Advantages of RAD",
+      "topic": "Advantages of RAD"
+    },
+    {
+      "id": "rad-mcq-68",
+      "type": "mcq",
+      "prompt": "What is the main reason RAD can reduce unnecessary project spending?",
+      "choices": [
+        "It removes the need for developers.",
+        "It focuses on building the exact system the client requires.",
+        "It requires all features to be developed immediately.",
+        "It prevents clients from changing their requirements."
+      ],
+      "answer": 1,
+      "explanation": "RAD reduces the risk of spending money on unwanted features.",
+      "section": "Section 4: Advantages of RAD",
+      "topic": "Advantages of RAD"
+    },
+    {
+      "id": "rad-mcq-69",
+      "type": "mcq",
+      "prompt": "Which situation best demonstrates the advantage of Speed?",
+      "choices": [
+        "Developers repeatedly delay presenting the prototype.",
+        "Developers complete a project on time and receive client approval.",
+        "Developers spend the budget on unnecessary features.",
+        "Developers avoid making improvements."
+      ],
+      "answer": 1,
+      "explanation": "The Speed advantage is directly related to finishing on time and obtaining client approval on delivery.",
+      "section": "Section 4: Advantages of RAD",
+      "topic": "Advantages of RAD"
+    },
+    {
+      "id": "rad-mcq-70",
+      "type": "mcq",
+      "prompt": "Which of the following correctly describes Developer Satisfaction?",
+      "choices": [
+        "Developers are satisfied because they never receive feedback.",
+        "Developers are confident because the client is involved and appreciates their work.",
+        "Developers are satisfied because the client cannot request improvements.",
+        "Developers are satisfied because they do not need to present their work."
+      ],
+      "answer": 1,
+      "explanation": "The client participates throughout development, allowing developers to present their work frequently and receive appreciation.",
+      "section": "Section 4: Advantages of RAD",
+      "topic": "Advantages of RAD"
+    },
+    {
+      "id": "rad-mcq-71",
+      "type": "mcq",
+      "prompt": "Which of the following is a disadvantage of RAD?",
+      "choices": [
+        "Speed",
+        "Cost",
+        "Scale",
+        "Developer Satisfaction"
+      ],
+      "answer": 2,
+      "explanation": "Scale is one of the disadvantages identified in the presentation.",
+      "section": "Section 5: Disadvantages of RAD",
+      "topic": "Disadvantages of RAD"
+    },
+    {
+      "id": "rad-mcq-72",
+      "type": "mcq",
+      "prompt": "Why can RAD become difficult when a project grows?",
+      "choices": [
+        "Because developers are no longer allowed to communicate.",
+        "Because communication becomes more difficult and project direction becomes less clear.",
+        "Because prototypes cannot be modified.",
+        "Because clients are no longer involved in software development."
+      ],
+      "answer": 1,
+      "explanation": "Larger projects involving multiple teams require more coordination, making it harder to keep everyone aligned.",
+      "section": "Section 5: Disadvantages of RAD",
+      "topic": "Disadvantages of RAD"
+    },
+    {
+      "id": "rad-mcq-73",
+      "type": "mcq",
+      "prompt": "Why are small teams generally able to incorporate RAD practices more easily?",
+      "choices": [
+        "They do not require any client feedback.",
+        "They can communicate quickly with each other.",
+        "They do not need to develop prototypes.",
+        "They are not affected by changing requirements."
+      ],
+      "answer": 1,
+      "explanation": "The presentation explains that small teams can easily incorporate RAD because they can communicate quickly.",
+      "section": "Section 5: Disadvantages of RAD",
+      "topic": "Disadvantages of RAD"
+    },
+    {
+      "id": "rad-mcq-74",
+      "type": "mcq",
+      "prompt": "What happens when a RAD project involves multiple teams?",
+      "choices": [
+        "The development process always becomes faster.",
+        "The project automatically becomes easier to manage.",
+        "Development may slow down and the project's direction may become less clear.",
+        "Requirements become permanently fixed."
+      ],
+      "answer": 2,
+      "explanation": "Multiple teams make communication and alignment more difficult.",
+      "section": "Section 5: Disadvantages of RAD",
+      "topic": "Disadvantages of RAD"
+    },
+    {
+      "id": "rad-mcq-75",
+      "type": "mcq",
+      "prompt": "Which is another disadvantage of RAD?",
+      "choices": [
+        "Commitment",
+        "Speed",
+        "Cost",
+        "Developer Satisfaction"
+      ],
+      "answer": 0,
+      "explanation": "Commitment is listed as a disadvantage because RAD requires frequent meetings between developers and clients.",
+      "section": "Section 5: Disadvantages of RAD",
+      "topic": "Disadvantages of RAD"
+    },
+    {
+      "id": "rad-mcq-76",
+      "type": "mcq",
+      "prompt": "Why can Commitment become a disadvantage in RAD?",
+      "choices": [
+        "Developers are not allowed to demonstrate prototypes.",
+        "Clients must attend frequent meetings, which might seem time-consuming at first.",
+        "Developers are required to work without clients.",
+        "Clients cannot provide feedback during development."
+      ],
+      "answer": 1,
+      "explanation": "Creating prototypes often requires frequent meetings between developers and clients.",
+      "section": "Section 5: Disadvantages of RAD",
+      "topic": "Disadvantages of RAD"
+    },
+    {
+      "id": "rad-mcq-77",
+      "type": "mcq",
+      "prompt": "What is the main reason RAD requires frequent meetings?",
+      "choices": [
+        "To discuss unrelated projects.",
+        "To demonstrate prototypes and collect feedback.",
+        "To prevent developers from making changes.",
+        "To finalize the product before development begins."
+      ],
+      "answer": 1,
+      "explanation": "Frequent meetings allow clients to review prototypes and communicate their requirements.",
+      "section": "Section 5: Disadvantages of RAD",
+      "topic": "Disadvantages of RAD"
+    },
+    {
+      "id": "rad-mcq-78",
+      "type": "mcq",
+      "prompt": "Which of the following is the third disadvantage of RAD?",
+      "choices": [
+        "Technical Debt",
+        "Speed",
+        "Interface-Focus",
+        "Developer Satisfaction"
+      ],
+      "answer": 2,
+      "explanation": "The presentation identifies Scale, Commitment, and Interface-Focus as the three disadvantages.",
+      "section": "Section 5: Disadvantages of RAD",
+      "topic": "Disadvantages of RAD"
+    },
+    {
+      "id": "rad-mcq-79",
+      "type": "mcq",
+      "prompt": "What is the main problem associated with Interface-Focus?",
+      "choices": [
+        "Developers spend too much time improving backend structure.",
+        "Developers may focus too much on the frontend and neglect backend best practices.",
+        "Developers avoid creating user interfaces.",
+        "Clients are not allowed to evaluate the software."
+      ],
+      "answer": 1,
+      "explanation": "Clients often judge software by what they can see and use, which may encourage developers to prioritize the frontend.",
+      "section": "Section 5: Disadvantages of RAD",
+      "topic": "Disadvantages of RAD"
+    },
+    {
+      "id": "rad-mcq-80",
+      "type": "mcq",
+      "prompt": "Why might developers focus heavily on the frontend in RAD?",
+      "choices": [
+        "Because clients usually judge the solution by what they can see and use.",
+        "Because the backend is not part of software development.",
+        "Because frontend development automatically solves backend problems.",
+        "Because developers are not allowed to modify the backend."
+      ],
+      "answer": 0,
+      "explanation": "The presentation explains that clients usually judge the solution based on the visible frontend.",
+      "section": "Section 5: Disadvantages of RAD",
+      "topic": "Disadvantages of RAD"
+    },
+    {
+      "id": "rad-mcq-81",
+      "type": "mcq",
+      "prompt": "What might developers do instead of properly refactoring the backend?",
+      "choices": [
+        "Improve the backend's internal structure.",
+        "Write detailed documentation.",
+        "Quickly fix makeshift backend code instead of properly refactoring it.",
+        "Rebuild the entire application from the beginning."
+      ],
+      "answer": 2,
+      "explanation": "The presentation warns that developers may quickly fix makeshift backend code instead of properly refactoring it.",
+      "section": "Section 5: Disadvantages of RAD",
+      "topic": "Disadvantages of RAD"
+    },
+    {
+      "id": "rad-mcq-82",
+      "type": "mcq",
+      "prompt": "A project has 40 developers working across several teams. Communication becomes difficult, and the project direction is unclear. Which disadvantage does this demonstrate?",
+      "choices": [
+        "Commitment",
+        "Scale",
+        "Interface-Focus",
+        "Speed"
+      ],
+      "answer": 1,
+      "explanation": "Scale becomes a problem when projects grow and involve multiple teams.",
+      "section": "Section 5: Disadvantages of RAD",
+      "topic": "Disadvantages of RAD"
+    },
+    {
+      "id": "rad-mcq-83",
+      "type": "mcq",
+      "prompt": "A client must attend frequent meetings to review prototypes. The meetings become time-consuming. Which disadvantage is demonstrated?",
+      "choices": [
+        "Interface-Focus",
+        "Cost",
+        "Commitment",
+        "Scale"
+      ],
+      "answer": 2,
+      "explanation": "RAD requires frequent meetings between developers and clients, which may seem time-consuming.",
+      "section": "Section 5: Disadvantages of RAD",
+      "topic": "Disadvantages of RAD"
+    },
+    {
+      "id": "rad-mcq-84",
+      "type": "mcq",
+      "prompt": "Developers create an attractive frontend but use poorly structured backend code to save time. Which disadvantage is demonstrated?",
+      "choices": [
+        "Scale",
+        "Commitment",
+        "Speed",
+        "Interface-Focus"
+      ],
+      "answer": 3,
+      "explanation": "Interface-Focus occurs when developers prioritize visible frontend features and neglect backend best practices.",
+      "section": "Section 5: Disadvantages of RAD",
+      "topic": "Disadvantages of RAD"
+    },
+    {
+      "id": "rad-mcq-85",
+      "type": "mcq",
+      "prompt": "Which combination correctly identifies the three disadvantages of RAD?",
+      "choices": [
+        "Scale, Commitment, Interface-Focus",
+        "Speed, Cost, Interface-Focus",
+        "Technical Debt, Cost, Scale",
+        "Commitment, Developer Satisfaction, Speed"
+      ],
+      "answer": 0,
+      "explanation": "These are the three disadvantages explained in the final slides of the presentation.",
+      "section": "Section 5: Disadvantages of RAD",
+      "topic": "Disadvantages of RAD"
+    },
+    {
+      "id": "rad-mcq-86",
+      "type": "mcq",
+      "prompt": "A software company starts developing a mobile application with three basic requirements. After showing the prototype, the client requests additional features. The developers modify the prototype and present it again. Which RAD characteristic is demonstrated?",
+      "choices": [
+        "Fixed requirements",
+        "Iterative development",
+        "Sequential development",
+        "Limited client involvement"
+      ],
+      "answer": 1,
+      "explanation": "Developers return to the Prototype stage after receiving feedback and make improvements.",
+      "section": "Section 6: Scenario-Based and Critical Thinking Questions",
+      "topic": "Scenario-Based and Critical Thinking Questions"
+    },
+    {
+      "id": "rad-mcq-87",
+      "type": "mcq",
+      "prompt": "A developer creates a prototype that only contains a login page and a basic dashboard. The client complains that some requested features are missing. Is this necessarily against RAD principles?",
+      "choices": [
+        "Yes, because every prototype must contain all requirements.",
+        "Yes, because prototypes cannot be demonstrated before completion.",
+        "No, because a prototype can satisfy only a portion of the requirements.",
+        "No, because prototypes do not need to relate to requirements."
+      ],
+      "answer": 2,
+      "explanation": "The presentation explicitly states that a prototype can satisfy all or only a portion of the defined requirements.",
+      "section": "Section 6: Scenario-Based and Critical Thinking Questions",
+      "topic": "Scenario-Based and Critical Thinking Questions"
+    },
+    {
+      "id": "rad-mcq-88",
+      "type": "mcq",
+      "prompt": "A company wants to build an application, but the client is unavailable for regular meetings. Which disadvantage of RAD is most relevant?",
+      "choices": [
+        "Commitment",
+        "Speed",
+        "Cost",
+        "Developer Satisfaction"
+      ],
+      "answer": 0,
+      "explanation": "RAD requires frequent client meetings to demonstrate prototypes and collect feedback.",
+      "section": "Section 6: Scenario-Based and Critical Thinking Questions",
+      "topic": "Scenario-Based and Critical Thinking Questions"
+    },
+    {
+      "id": "rad-mcq-89",
+      "type": "mcq",
+      "prompt": "A development team has excellent communication because it consists of only four developers and two designers. Which RAD disadvantage is less likely to affect this team?",
+      "choices": [
+        "Technical Debt",
+        "Scale",
+        "Interface-Focus",
+        "Commitment"
+      ],
+      "answer": 1,
+      "explanation": "Small teams can communicate quickly and incorporate RAD practices more easily than large teams.",
+      "section": "Section 6: Scenario-Based and Critical Thinking Questions",
+      "topic": "Scenario-Based and Critical Thinking Questions"
+    },
+    {
+      "id": "rad-mcq-90",
+      "type": "mcq",
+      "prompt": "A company develops an application using quick solutions because of a limited budget. Six months later, adding new features becomes difficult. What is the most likely explanation?",
+      "choices": [
+        "Developer Satisfaction",
+        "Technical Debt",
+        "Speed",
+        "Client Approval"
+      ],
+      "answer": 1,
+      "explanation": "Budget limitations can encourage quick and cheap technology solutions that create future maintenance difficulties.",
+      "section": "Section 6: Scenario-Based and Critical Thinking Questions",
+      "topic": "Scenario-Based and Critical Thinking Questions"
+    },
+    {
+      "id": "rad-mcq-91",
+      "type": "mcq",
+      "prompt": "A client reviews a prototype and says that the application is difficult to navigate. The developers change the navigation and present the updated version. Which two stages are working together?",
+      "choices": [
+        "Define Requirements and Finalize Product",
+        "Prototype and Absorb Feedback",
+        "Define Requirements and Prototype",
+        "Finalize Product and Define Requirements"
+      ],
+      "answer": 1,
+      "explanation": "Developers demonstrate the prototype, receive feedback, and return to the prototype stage to make improvements.",
+      "section": "Section 6: Scenario-Based and Critical Thinking Questions",
+      "topic": "Scenario-Based and Critical Thinking Questions"
+    },
+    {
+      "id": "rad-mcq-92",
+      "type": "mcq",
+      "prompt": "A developer spends too much time making the application visually attractive while ignoring backend best practices. Which problem is most likely to occur?",
+      "choices": [
+        "Scale",
+        "Commitment",
+        "Interface-Focus",
+        "Speed"
+      ],
+      "answer": 2,
+      "explanation": "The focus on visible frontend features may cause developers to neglect the backend's internal structure and best practices.",
+      "section": "Section 6: Scenario-Based and Critical Thinking Questions",
+      "topic": "Scenario-Based and Critical Thinking Questions"
+    },
+    {
+      "id": "rad-mcq-93",
+      "type": "mcq",
+      "prompt": "A client requests an application with many features. The developers decide to build only the features that satisfy the client's actual requirements. What advantage does this demonstrate?",
+      "choices": [
+        "Developer Satisfaction",
+        "Cost",
+        "Commitment",
+        "Scale"
+      ],
+      "answer": 1,
+      "explanation": "Building the exact system the client requires reduces the risk of spending the project budget on unwanted features.",
+      "section": "Section 6: Scenario-Based and Critical Thinking Questions",
+      "topic": "Scenario-Based and Critical Thinking Questions"
+    },
+    {
+      "id": "rad-mcq-94",
+      "type": "mcq",
+      "prompt": "A developer finishes a prototype and presents it to the client. The client approves the prototype and is satisfied with the results. What should happen next?",
+      "choices": [
+        "Return to Define Requirements.",
+        "Restart the Prototype stage without any reason.",
+        "Move to Finalize Product.",
+        "Stop development without completing the application."
+      ],
+      "answer": 2,
+      "explanation": "According to the presentation, positive feedback and client satisfaction allow the developer to move to Finalize Product.",
+      "section": "Section 6: Scenario-Based and Critical Thinking Questions",
+      "topic": "Scenario-Based and Critical Thinking Questions"
+    },
+    {
+      "id": "rad-mcq-95",
+      "type": "mcq",
+      "prompt": "A project manager notices that the software is becoming difficult to maintain because developers used quick solutions during development. Which concept explains this situation?",
+      "choices": [
+        "Developer Satisfaction",
+        "Technical Debt",
+        "Prototype",
+        "Scale"
+      ],
+      "answer": 1,
+      "explanation": "Technical Debt results from choosing quick and cheap solutions over robust and efficient ones.",
+      "section": "Section 6: Scenario-Based and Critical Thinking Questions",
+      "topic": "Scenario-Based and Critical Thinking Questions"
+    },
+    {
+      "id": "rad-mcq-96",
+      "type": "mcq",
+      "prompt": "A client participates throughout development and frequently approves the developer's improvements. The developer feels confident that the final product will be appreciated. Which advantage is demonstrated?",
+      "choices": [
+        "Cost",
+        "Speed",
+        "Developer Satisfaction",
+        "Scale"
+      ],
+      "answer": 2,
+      "explanation": "Frequent client involvement and appreciation help developers feel confident about their work.",
+      "section": "Section 6: Scenario-Based and Critical Thinking Questions",
+      "topic": "Scenario-Based and Critical Thinking Questions"
+    },
+    {
+      "id": "rad-mcq-97",
+      "type": "mcq",
+      "prompt": "A company is developing a large application with several teams. Every time requirements change, different teams become confused about the project's direction. Which disadvantage best explains this situation?",
+      "choices": [
+        "Commitment",
+        "Interface-Focus",
+        "Cost",
+        "Scale"
+      ],
+      "answer": 3,
+      "explanation": "Large projects with multiple teams make communication and alignment more difficult, especially when requirements keep changing.",
+      "section": "Section 6: Scenario-Based and Critical Thinking Questions",
+      "topic": "Scenario-Based and Critical Thinking Questions"
+    },
+    {
+      "id": "rad-mcq-98",
+      "type": "mcq",
+      "prompt": "A developer is preparing an application for final delivery. The application needs optimization, backend connection to production data, and detailed documentation. Which stage should the developer be working on?",
+      "choices": [
+        "Prototype",
+        "Define Requirements",
+        "Absorb Feedback",
+        "Finalize Product"
+      ],
+      "answer": 3,
+      "explanation": "These activities are specifically mentioned in the Finalize Product stage.",
+      "section": "Section 6: Scenario-Based and Critical Thinking Questions",
+      "topic": "Scenario-Based and Critical Thinking Questions"
+    },
+    {
+      "id": "rad-mcq-99",
+      "type": "mcq",
+      "prompt": "A company chooses RAD because it wants the client to participate throughout the development process. However, the client complains that reviewing prototypes requires too many meetings. Which statement is most accurate?",
+      "choices": [
+        "RAD has no disadvantages related to client participation.",
+        "The situation demonstrates Commitment, even though client involvement is also a key part of RAD.",
+        "The situation demonstrates Cost because meetings increase the project budget.",
+        "The situation demonstrates Scale because the client is involved."
+      ],
+      "answer": 1,
+      "explanation": "Frequent client meetings support feedback and Developer Satisfaction, but they can also become time-consuming. This is the Commitment disadvantage.",
+      "section": "Section 6: Scenario-Based and Critical Thinking Questions",
+      "topic": "Scenario-Based and Critical Thinking Questions"
+    },
+    {
+      "id": "rad-mcq-100",
+      "type": "mcq",
+      "prompt": "A software development company wants to deliver applications quickly, reduce spending on unwanted features, and ensure developers receive regular client feedback. However, the company must also manage large teams, frequent meetings, and backend quality. Which statement best summarizes RAD?",
+      "choices": [
+        "RAD provides flexibility and rapid development but can create challenges related to scale, commitment, and interface-focus.",
+        "RAD provides fixed requirements and eliminates the need for client feedback.",
+        "RAD focuses on backend development and prevents changes after prototyping.",
+        "RAD guarantees low costs and removes all communication difficulties."
+      ],
+      "answer": 0,
+      "explanation": "RAD offers Speed, Cost, and Developer Satisfaction as advantages. However, it also has disadvantages involving Scale, Commitment, and Interface-Focus.",
+      "section": "Section 6: Scenario-Based and Critical Thinking Questions",
+      "topic": "Scenario-Based and Critical Thinking Questions"
+    }
+  ]
+}

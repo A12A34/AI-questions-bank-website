@@ -129,6 +129,14 @@
       "difficulty": "Intermediate"
     },
     {
+      "id": "iot301-ws9-pir-motion-sensor",
+      "title": "IoT301 – WS9: PIR Motion Sensor (150 Questions)",
+      "file": "iot301-ws9-pir-motion-sensor.json",
+      "subject": "IoT",
+      "gradeLevel": "University",
+      "difficulty": "Intermediate"
+    },
+    {
       "id": "code-practice-ws4-ws7",
       "title": "code practice for WS4-WS7",
       "file": "code-practice-ws4-ws7.json",
@@ -197,6 +205,14 @@
       "title": "test 2 practice question AI generate",
       "file": "test-2-practice-question-ai-generate.json",
       "subject": "phyisics",
+      "gradeLevel": "University",
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "rad-rapid-application-development",
+      "title": "Rapid Application Development (RAD) - 100 MCQs",
+      "file": "rad-rapid-application-development.json",
+      "subject": "GRD",
       "gradeLevel": "University",
       "difficulty": "Intermediate"
     }
