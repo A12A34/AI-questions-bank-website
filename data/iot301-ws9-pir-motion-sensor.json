@@ -1677,7 +1677,7 @@
       "id": "iot301-ws9-q120",
       "type": "code",
       "prompt": "Use the variable red_led to make the red LED blink continuously, with 0.1 seconds ON and 0.1 seconds OFF.",
-      "answer": "red_led.blink(on_time=0.1, off_time=0.1)",
+      "answer": "red_led.blink(0.1, 0.1)",
       "explanation": "blink() repeatedly switches the LED on and off using the specified times.",
       "section": "LED and PIR Commands",
       "topic": "LED and PIR Commands"
@@ -1794,7 +1794,7 @@
       "id": "iot301-ws9-q133",
       "type": "code",
       "prompt": "Use the variable bzr to make the buzzer beep repeatedly, with 0.1 seconds ON and 0.1 seconds OFF.",
-      "answer": "bzr.beep(on_time=0.1, off_time=0.1)",
+      "answer": "bzr.beep(0.1, 0.1)",
       "explanation": "beep() repeatedly activates and deactivates the buzzer.",
       "section": "Buzzer and Button Commands",
       "topic": "Buzzer and Button Commands"
@@ -1947,7 +1947,7 @@
       "id": "iot301-ws9-q150",
       "type": "code",
       "prompt": "In Task 7, write the command to make the buzzer named bzr beep in the background with 0.1 seconds ON and 0.1 seconds OFF.",
-      "answer": "bzr.beep(on_time=0.1, off_time=0.1)",
+      "answer": "bzr.beep(0.1,0.1)",
       "explanation": "The buzzer continues beeping while the program waits for the button to disarm the alarm.",
       "section": "Task 5, Task 6, and Task 7 Logic",
       "topic": "Task 5, Task 6, and Task 7 Logic"
