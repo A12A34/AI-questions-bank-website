@@ -196,7 +196,7 @@
       "id": "atomic-physics",
       "title": "Atomic Physics & Quantum Theory (33 Questions)",
       "file": "atomic-physics.json",
-      "subject": "phyisics",
+      "subject": "physics",
       "gradeLevel": "Grade 12",
       "difficulty": "Intermediate"
     },
@@ -204,7 +204,7 @@
       "id": "test-2-practice-question-ai-generate",
       "title": "test 2 practice question AI generate",
       "file": "test-2-practice-question-ai-generate.json",
-      "subject": "phyisics",
+      "subject": "physics",
       "gradeLevel": "University",
       "difficulty": "Intermediate"
     },
@@ -214,6 +214,14 @@
       "file": "rad-rapid-application-development.json",
       "subject": "GRD",
       "gradeLevel": "University",
+      "difficulty": "Intermediate"
+    },
+    {
+      "id": "ne-summative-test-activities-3-4",
+      "title": "NE Summative test 2, activity 3,4",
+      "file": "ne-summative-test-activities-3-4.json",
+      "subject": "history",
+      "gradeLevel": "High School",
       "difficulty": "Intermediate"
     }
   ]

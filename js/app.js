@@ -15,7 +15,7 @@ const STORAGE_KEYS = {
 };
 
 const ARABIC_RE = /[\u0600-\u06FF]/;
-const SUBJECT_FOLDERS = ["ML", "DL", "IoT", "Arabic", "Islamic Studies", "Math", "Biology", "GRD", "phyisics", "chemistry"];
+const SUBJECT_FOLDERS = ["ML", "DL", "IoT", "Arabic", "Islamic Studies", "Math", "Biology", "GRD", "phyisics", "chemistry", "history"];
 const DEFAULT_FOLDER_PERMISSION = "public";
 const FEEDBACK_CATEGORIES = {
   bug: "Bug or error",
@@ -161,6 +161,9 @@ function loadFolderConfig() {
     const folders = Array.isArray(saved) ? saved : saved.folders;
     if (!Array.isArray(folders)) return defaults;
     const valid = folders.filter((folder) => folder && typeof folder.name === "string" && folder.name.trim());
+    if (!valid.some((folder) => folder.name === "history")) {
+      valid.push({ name: "history", permission: DEFAULT_FOLDER_PERMISSION });
+    }
     state.folderAssignments = saved.assignments && typeof saved.assignments === "object" ? saved.assignments : {};
     return valid.length ? valid : defaults;
   } catch {
