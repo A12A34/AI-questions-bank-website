@@ -231,17 +231,29 @@
         </div>
       </main>
     </div>
-    <dialog id="auth-dialog" class="auth-dialog">
-      <form method="dialog" id="auth-form" class="auth-form">
-        <div class="auth-header"><h2 id="auth-title">Log in</h2><button type="submit" value="cancel" class="btn btn-ghost">Close</button></div>
-        <label id="auth-name-label" hidden>Display name<input id="auth-name" maxlength="60" /></label>
-        <label>Email<input id="auth-email" type="email" required autocomplete="username" /></label>
+    <dialog id="auth-dialog" class="auth-dialog" aria-labelledby="auth-title">
+      <form id="auth-form" class="auth-form">
+        <div class="auth-header">
+          <div>
+            <h2 id="auth-title">Log in</h2>
+            <p id="auth-description" class="auth-description">Sign in to create quizzes and save your work.</p>
+          </div>
+          <button type="button" id="auth-close" class="btn btn-ghost btn-small">Close</button>
+        </div>
+        <label id="auth-name-label" hidden>Display name<input id="auth-name" maxlength="60" autocomplete="name" /></label>
+        <label>
+          Username
+          <input id="auth-username" type="text" required minlength="3" maxlength="30" pattern="[A-Za-z0-9_-]+" autocomplete="username" autocapitalize="none" spellcheck="false" placeholder="Username" />
+          <small class="auth-hint">3–30 characters: letters, numbers, underscores, or hyphens.</small>
+        </label>
         <label>Password<input id="auth-password" type="password" required minlength="6" autocomplete="current-password" /></label>
-        <p id="auth-status" class="form-status" role="status"></p>
-        <button id="auth-submit" type="button" class="btn btn-primary">Log in</button>
-        <button id="auth-switch" type="button" class="btn btn-ghost">Create an account</button>
+        <p id="auth-status" class="form-status" role="status" aria-live="polite"></p>
+        <div class="auth-actions">
+          <button id="auth-submit" type="submit" class="btn btn-primary">Log in</button>
+          <button id="auth-switch" type="button" class="btn btn-ghost">Create an account</button>
+        </div>
       </form>
     </dialog>
-    <script src="./js/app.js?v=5" type="module"></script>
+    <script src="./js/app.js?v=6" type="module"></script>
   </body>
 </html>

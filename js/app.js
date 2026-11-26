@@ -77,9 +77,11 @@ const els = {
   authDialog: document.getElementById("auth-dialog"),
   authForm: document.getElementById("auth-form"),
   authTitle: document.getElementById("auth-title"),
+  authDescription: document.getElementById("auth-description"),
+  authClose: document.getElementById("auth-close"),
   authNameLabel: document.getElementById("auth-name-label"),
   authName: document.getElementById("auth-name"),
-  authEmail: document.getElementById("auth-email"),
+  authUsername: document.getElementById("auth-username"),
   authPassword: document.getElementById("auth-password"),
   authStatus: document.getElementById("auth-status"),
   authSubmit: document.getElementById("auth-submit"),
@@ -235,16 +237,39 @@ async function loadAccountState() {
   if (!users.some((user) => user.role === "admin")) {
     users.push({
       email: "admin@quiz.local",
+      username: "admin",
       name: "Quiz Administrator",
       passwordHash: await hashPassword("admin123"),
       role: "admin",
       createdAt: new Date().toISOString(),
     });
-    saveJson(STORAGE_KEYS.users, users);
   }
+  const orderedUsers = [
+    ...users.filter((user) => user.role === "admin"),
+    ...users.filter((user) => user.role !== "admin"),
+  ];
+  const usernames = new Set();
+  orderedUsers.forEach((user, index) => {
+    const original = user.role === "admin" && !usernames.has("admin")
+      ? "admin"
+      : user.username || user.email?.split("@")[0] || `user${index + 1}`;
+    let username = original.toLowerCase().replace(/[^a-z0-9_-]+/g, "-").replace(/^[-_]+|[-_]+$/g, "").slice(0, 30);
+    if (username.length < 3) username = `user${index + 1}`;
+    if (user.role === "admin" && !usernames.has("admin")) username = "admin";
+    const base = username;
+    let suffix = 2;
+    while (usernames.has(username)) {
+      const ending = `-${suffix++}`;
+      username = `${base.slice(0, 30 - ending.length)}${ending}`;
+    }
+    usernames.add(username);
+    user.username = username;
+  });
+  saveJson(STORAGE_KEYS.users, orderedUsers);
   state.authoredQuizzes = readJson(STORAGE_KEYS.authoredQuizzes, []);
-  const sessionEmail = readStored(STORAGE_KEYS.session, "");
-  state.user = users.find((user) => user.email === sessionEmail) ?? null;
+  const savedSession = readStored(STORAGE_KEYS.session, "");
+  state.user = orderedUsers.find((user) => user.username === savedSession || user.email === savedSession) ?? null;
+  if (state.user) persist(STORAGE_KEYS.session, state.user.username);
 }
 
 function logActivity(type, detail) {
@@ -252,7 +277,7 @@ function logActivity(type, detail) {
   activity.unshift({
     type,
     detail,
-    email: state.user?.email ?? "visitor",
+    username: state.user?.username ?? "visitor",
     at: new Date().toISOString(),
   });
   saveJson(STORAGE_KEYS.activity, activity.slice(0, 100));
@@ -278,7 +303,7 @@ function renderAccountBar() {
     els.accountBar.append(login, register);
   } else {
     const name = document.createElement("span");
-    name.textContent = `Signed in as ${state.user.name || state.user.email}`;
+    name.textContent = `Signed in as ${state.user.name || state.user.username}`;
     const logout = document.createElement("button");
     logout.type = "button";
     logout.className = "btn btn-ghost btn-small";
@@ -293,45 +318,59 @@ function renderAccountBar() {
 function openAuth(mode) {
   state.authMode = mode;
   els.authTitle.textContent = mode === "login" ? "Log in" : "Create your account";
+  els.authDescription.textContent = mode === "login"
+    ? "Sign in to create quizzes and save your work."
+    : "Choose a username and password to get started.";
   els.authNameLabel.hidden = mode === "login";
   els.authSubmit.textContent = mode === "login" ? "Log in" : "Register";
   els.authSwitch.textContent = mode === "login" ? "Create an account" : "I already have an account";
   els.authStatus.textContent = "";
+  els.authStatus.classList.remove("error");
   els.authForm.reset();
+  els.authPassword.autocomplete = mode === "login" ? "current-password" : "new-password";
   els.authDialog.showModal();
-  els.authEmail.focus();
+  els.authUsername.focus();
 }
 
 async function submitAuth() {
-  const email = els.authEmail.value.trim().toLowerCase();
+  const username = els.authUsername.value.trim().toLowerCase();
   const password = els.authPassword.value;
   const name = els.authName.value.trim();
-  if (!email || password.length < 6 || (state.authMode === "register" && !name)) {
+  els.authStatus.textContent = "";
+  els.authStatus.classList.remove("error");
+  if (!/^[a-z0-9_-]{3,30}$/.test(username) || password.length < 6 || (state.authMode === "register" && !name)) {
     els.authStatus.textContent = state.authMode === "login"
-      ? "Enter a valid email and a password of at least 6 characters."
-      : "Enter your name, email, and a password of at least 6 characters.";
+      ? "Enter a username (3–30 letters, numbers, underscores, or hyphens) and a password of at least 6 characters."
+      : "Enter your display name, a username (3–30 letters, numbers, underscores, or hyphens), and a password of at least 6 characters.";
+    els.authStatus.classList.add("error");
     return;
   }
   const users = readJson(STORAGE_KEYS.users, []);
   if (state.authMode === "register") {
-    if (users.some((user) => user.email === email)) {
-      els.authStatus.textContent = "An account with that email already exists.";
+    if (users.some((user) => user.username === username)) {
+      els.authStatus.textContent = "That username is already taken.";
+      els.authStatus.classList.add("error");
       return;
     }
-    const user = { email, name, passwordHash: await hashPassword(password), role: "user", createdAt: new Date().toISOString() };
+    const user = { username, name, passwordHash: await hashPassword(password), role: "user", createdAt: new Date().toISOString() };
     users.push(user);
-    saveJson(STORAGE_KEYS.users, users);
+    if (!saveJson(STORAGE_KEYS.users, users)) {
+      els.authStatus.textContent = "Could not save your account in this browser. Check available storage and try again.";
+      els.authStatus.classList.add("error");
+      return;
+    }
     state.user = user;
-    persist(STORAGE_KEYS.session, email);
+    persist(STORAGE_KEYS.session, username);
     logActivity("registered", "Created an account");
   } else {
-    const user = users.find((candidate) => candidate.email === email);
+    const user = users.find((candidate) => candidate.username === username);
     if (!user || user.passwordHash !== await hashPassword(password)) {
-      els.authStatus.textContent = "Email or password is incorrect.";
+      els.authStatus.textContent = "Username or password is incorrect.";
+      els.authStatus.classList.add("error");
       return;
     }
     state.user = user;
-    persist(STORAGE_KEYS.session, email);
+    persist(STORAGE_KEYS.session, username);
     logActivity("logged-in", "Logged in");
   }
   els.authDialog.close();
@@ -937,7 +976,7 @@ function submitQuiz(event) {
       videos: els.quizFormPinnedVideos.value.split(/\r?\n/).map((src) => src.trim()).filter(Boolean),
     },
     questions: questions.map((question, index) => ({ ...question, id: question.id || `q${index + 1}` })),
-    author: state.user.email,
+    author: state.user.username,
     authorName: state.user.name,
     status: "pending",
     createdAt: new Date().toISOString(),
@@ -1995,13 +2034,11 @@ function bindControls() {
   els.closeAdmin.addEventListener("click", () => {
     els.admin.hidden = true;
   });
-  els.authSubmit.addEventListener("click", submitAuth);
+  els.authClose.addEventListener("click", () => els.authDialog.close());
   els.authSwitch.addEventListener("click", () => openAuth(state.authMode === "login" ? "register" : "login"));
   els.authForm.addEventListener("submit", (event) => {
-    if (event.submitter === els.authSubmit) {
-      event.preventDefault();
-      submitAuth();
-    }
+    event.preventDefault();
+    submitAuth();
   });
   renderAccountBar();
 }
